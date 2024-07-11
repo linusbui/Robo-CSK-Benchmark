@@ -1,6 +1,6 @@
 import ai2thor.controller
 
-from object_location_tuple import ObjectLocationTuple
+from object_location_tuple import ObjectLocationTuple, combine_all_tuples
 
 
 def generate_object_data(scenes: [str], room_name: str, batch_size=30) -> [ObjectLocationTuple]:
@@ -28,18 +28,7 @@ def generate_object_data(scenes: [str], room_name: str, batch_size=30) -> [Objec
     return obj_loc_tuples
 
 
-def combine_all_tuples(tuples: [ObjectLocationTuple]) -> [ObjectLocationTuple]:
-    combined = {}
-    for tup in tuples:
-        obj = tup.get_object()
-        if obj in combined:
-            combined[obj].combine_tuples(tup)
-        else:
-            combined[obj] = tup
-    return list(combined.values())
-
-
-def get_object_locations() -> [ObjectLocationTuple]:
+def get_object_locations_from_ai2thor() -> [ObjectLocationTuple]:
     kitchens = [f"FloorPlan{i}" for i in range(1, 31)]
     living_rooms = [f"FloorPlan{200 + i}" for i in range(1, 31)]
     bedrooms = [f"FloorPlan{300 + i}" for i in range(1, 31)]
@@ -54,6 +43,6 @@ def get_object_locations() -> [ObjectLocationTuple]:
 
 
 if __name__ == '__main__':
-    res = get_object_locations()
+    res = get_object_locations_from_ai2thor()
     for r in res:
         print(r)

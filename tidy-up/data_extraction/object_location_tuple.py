@@ -29,3 +29,14 @@ class ObjectLocationTuple:
             self.add_location(loc)
 
         tup._is_active = False
+
+
+def combine_all_tuples(tuples: [ObjectLocationTuple]) -> [ObjectLocationTuple]:
+    combined = {}
+    for tup in tuples:
+        obj = tup.get_object()
+        if obj in combined:
+            combined[obj].combine_tuples(tup)
+        else:
+            combined[obj] = tup
+    return list(combined.values())
