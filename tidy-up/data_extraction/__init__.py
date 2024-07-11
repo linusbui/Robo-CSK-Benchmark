@@ -1,3 +1,4 @@
 from .object_location_tuple import ObjectLocationTuple, combine_all_tuples
 from .ai2thor_extractor import get_object_locations_from_ai2thor
 from .ascent_extractor import get_object_locations_from_ascent
+from .coco_extractor import get_object_locations_from_coco
