@@ -1,0 +1,2 @@
+from .object_location_tuple import ObjectLocationTuple
+from .ai2thor_extractor import get_object_locations
