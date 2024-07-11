@@ -1,11 +1,12 @@
-import ai2thor.controller
+from ai2thor.controller import Controller
+from ai2thor.platform import CloudRendering
 
 from object_location_tuple import ObjectLocationTuple, combine_all_tuples
 
 
 def generate_object_data(scenes: [str], room_name: str, batch_size=30) -> [ObjectLocationTuple]:
     # Initialize an AI2-THOR controller
-    controller = ai2thor.controller.Controller()
+    controller = Controller(platform=CloudRendering)
     obj_loc_tuples = []
 
     # Iterate over scenes (batch_size = scenes per iteration)
