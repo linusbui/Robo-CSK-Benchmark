@@ -4,9 +4,9 @@ from wordnet_filter import check_if_household_location, check_if_household_objec
 class ObjectLocationTuple:
     def __init__(self, obj: str, initial_loc: str, source: str):
         self._is_correct = check_if_household_object(obj) & check_if_household_location(initial_loc)
-        self._object = obj
+        self._object = obj.lower().strip().replace('the', '')
         self._source = source
-        self._locations = [initial_loc]
+        self._locations = [initial_loc.lower().strip().replace('the', '')]
 
     def __str__(self):
         return f'[{str(self.verify()).upper()}] {self._object} located at/in: {self._locations} (Source: {self._source})'

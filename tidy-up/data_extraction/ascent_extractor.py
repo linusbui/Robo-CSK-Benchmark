@@ -9,8 +9,8 @@ def get_object_locations_from_ascent() -> [ObjectLocationTuple]:
     obj_loc_tuples = []
 
     for index, row in filtered.iterrows():
-        obj = row['subject'].lower().strip().replace('the', '')
-        loc = row['object'].lower().strip().replace('the', '')
+        obj = row['subject']
+        loc = row['object']
         obj_loc = ObjectLocationTuple(obj, loc, 'Ascent++')
         obj_loc_tuples.append(obj_loc)
 
