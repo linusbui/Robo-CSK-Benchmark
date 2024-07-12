@@ -20,7 +20,7 @@ def generate_object_data(scenes: [str], room_name: str, batch_size=30) -> [Objec
             objects = event.metadata['objects']
 
             for obj in objects:
-                obj_loc = ObjectLocationTuple(obj['objectType'], room_name, 'AI2Thor')
+                obj_loc = ObjectLocationTuple(obj['objectType'], room_name, 'AI2Thor', False)
                 obj_loc_tuples.append(obj_loc)
 
     # End the AI2-THOR environment

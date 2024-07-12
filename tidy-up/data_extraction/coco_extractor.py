@@ -12,7 +12,7 @@ def get_object_locations_from_coco() -> [ObjectLocationTuple]:
         loc = e['supercategory']
         if loc == 'kitchen':
             obj = e['name']
-            obj_loc = ObjectLocationTuple(obj, loc, 'Microsoft COCO')
+            obj_loc = ObjectLocationTuple(obj, loc, 'Microsoft COCO', False)
             obj_loc_tuples.append(obj_loc)
     return combine_all_tuples(obj_loc_tuples)
 
