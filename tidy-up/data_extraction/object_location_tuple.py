@@ -1,4 +1,5 @@
 from wordnet_filter import check_if_household_location, check_if_household_object
+from ranked_location import RankedLocation
 
 
 class ObjectLocationTuple:
@@ -8,11 +9,12 @@ class ObjectLocationTuple:
         else:
             self._is_correct = True
         self._object = obj.lower().strip().replace('the', '').replace('_', ' ')
-        self._source = source
-        self._locations = [initial_loc.lower().strip().replace('the', '').replace('_', ' ')]
+        processed_loc = initial_loc.lower().strip().replace('the', '').replace('_', ' ')
+        loc = RankedLocation(processed_loc, [source])
+        self._locations = [loc]
 
     def __str__(self):
-        return f'[{str(self.verify()).upper()}] {self._object} located at/in: {self._locations} (Source: {self._source})'
+        return f'[{str(self.verify()).upper()}] {self._object} located at/in: {self._locations}'
 
     def verify(self) -> bool:
         return self._is_correct
@@ -20,15 +22,17 @@ class ObjectLocationTuple:
     def get_object(self) -> str:
         return self._object
 
-    def get_locations(self) -> [str]:
+    def get_locations(self) -> [RankedLocation]:
         return self._locations
 
-    def get_source(self) -> str:
-        return self._source
+    def add_location(self, location: RankedLocation):
+        for loc in self._locations:
+            if loc.get_location() == location.get_location():
+                for source in location.get_sources():
+                    loc.add_source(source)
+                return
 
-    def add_location(self, location: str):
-        if location not in self._locations and check_if_household_location(location):
-            self._locations.append(location)
+        self._locations.append(location)
 
     def combine_tuples(self, tup: 'ObjectLocationTuple'):
         if not tup.verify():
@@ -41,6 +45,14 @@ class ObjectLocationTuple:
             self.add_location(loc)
 
         tup._is_correct = False
+
+    def rank_locations(self):
+        rank = 1
+        for loc in sorted(self._locations):
+            loc.change_rank(rank)
+            rank += 1
+
+
 
 
 def combine_all_tuples(tuples: [ObjectLocationTuple]) -> [ObjectLocationTuple]:
