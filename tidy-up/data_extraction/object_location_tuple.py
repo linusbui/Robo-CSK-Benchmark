@@ -1,16 +1,19 @@
-from wordnet_filter import check_if_household_location, check_if_household_object
+from pattern.text.en import singularize
+
 from ranked_location import RankedLocation
+from wordnet_filter import check_if_household_location, check_if_household_object
 
 
 class ObjectLocationTuple:
     def __init__(self, obj: str, initial_loc: str, source: str, should_check=True):
+        proc_obj = preprocess_string(obj)
+        proc_loc = preprocess_string(initial_loc)
         if should_check:
-            self._is_correct = check_if_household_object(obj) & check_if_household_location(initial_loc)
+            self._is_correct = check_if_household_object(proc_obj) & check_if_household_location(proc_loc)
         else:
             self._is_correct = True
-        self._object = obj.lower().strip().replace('the', '').replace('_', ' ')
-        processed_loc = initial_loc.lower().strip().replace('the', '').replace('_', ' ')
-        loc = RankedLocation(processed_loc, [source])
+        self._object = proc_obj
+        loc = RankedLocation(proc_loc, [source])
         self._locations = [loc]
 
     def __str__(self):
@@ -64,6 +67,11 @@ class ObjectLocationTuple:
             'Location4': locs[3],
             'Location5': locs[4],
         }
+
+
+def preprocess_string(word: str) -> str:
+    processed = word.lower().strip().replace('the', '').replace('_', ' ')
+    return singularize(processed)
 
 
 def combine_all_tuples(tuples: [ObjectLocationTuple]) -> [ObjectLocationTuple]:
