@@ -54,7 +54,7 @@ class ObjectLocationTuple:
         rank = 1
         sorted_locs = sorted(self._locations)
         for l in sorted_locs:
-            locs[rank] = l.get_location()
+            locs[rank] = (l.get_location(), l.get_trust())
             rank += 1
 
         return {
