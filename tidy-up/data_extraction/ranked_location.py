@@ -5,16 +5,12 @@ class RankedLocation:
         self._location = location
         self._sources = sources
         self._trust = self.calculate_trust()
-        self._rank = -1
 
     def get_location(self) -> str:
         return self._location
 
     def get_trust(self) -> float:
         return self._trust
-
-    def get_rank(self) -> int:
-        return self._rank
 
     def get_sources(self) -> [str]:
         return self._sources
@@ -29,9 +25,6 @@ class RankedLocation:
         for s in self._sources:
             trust += self.trust_mapping[s]
         return trust
-
-    def change_rank(self, rank: int):
-        self._rank = rank
 
     def _cmp(self, other: 'RankedLocation') -> float:
         return self._trust - other.get_trust()
