@@ -1,7 +1,7 @@
 from pattern.text.en import singularize
 
 from ranked_location import RankedLocation
-from wordnet_filter import check_if_household_location, check_if_household_object
+from utils import check_if_household_location, check_if_household_object
 
 
 class ObjectLocationTuple:

@@ -1,12 +1,18 @@
 from pattern.text.en import singularize
+
 from extracted_affordance import ExtractedAffordance
+from utils import check_if_household_object
 
 
 class ObjectAffordanceTuple:
-    def __init__(self, obj: str,  initial_aff: str, source: str, should_check=True):
-        self._object = preprocess_string(obj)
+    def __init__(self, obj: str, initial_aff: str, source: str, should_check=True):
+        proc_obj = preprocess_string(obj)
+        if should_check:
+            self._is_correct = check_if_household_object(proc_obj)
+        else:
+            self._is_correct = True
+        self._object = proc_obj
         self._affordances = [ExtractedAffordance(initial_aff, [source])]
-        self._is_correct = True
 
     def __str__(self):
         return f'[{str(self.verify()).upper()}] {self._object} affords: {[str(aff) for aff in self._affordances]}'

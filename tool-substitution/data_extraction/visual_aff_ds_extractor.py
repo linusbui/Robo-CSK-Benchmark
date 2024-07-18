@@ -13,7 +13,7 @@ def get_affordances_from_visual_dataset() -> [ObjectAffordanceTuple]:
         for col in data.columns[2:]:
             aff = row[col]
             if not pd.isna(aff):
-                obj_aff = ObjectAffordanceTuple(obj, aff, "Visual Dataset")
+                obj_aff = ObjectAffordanceTuple(obj, aff, "Visual Dataset", False)
                 tuples.append(obj_aff)
 
     return combine_all_tuples(tuples)
