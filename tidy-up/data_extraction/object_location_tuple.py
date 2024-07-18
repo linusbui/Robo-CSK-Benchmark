@@ -50,22 +50,16 @@ class ObjectLocationTuple:
         tup._is_correct = False
 
     def to_dict(self):
-        locs = []
-        count_max = 5
+        locs = {}
+        rank = 1
         sorted_locs = sorted(self._locations)
-        for c in range(count_max):
-            if c < len(sorted_locs):
-                locs.append(sorted_locs[c].get_location())
-            else:
-                locs.append('None')
+        for l in sorted_locs:
+            locs[rank] = l.get_location()
+            rank += 1
 
         return {
             'Object': self.get_object(),
-            'Location1': locs[0],
-            'Location2': locs[1],
-            'Location3': locs[2],
-            'Location4': locs[3],
-            'Location5': locs[4],
+            'Locations': locs
         }
 
 
