@@ -1,6 +1,6 @@
 import pandas as pd
 
-from object_affordance_tuple import ObjectAffordanceTuple, combine_all_tuples, get_trust_for_source
+from object_affordance_tuple import ObjectAffordanceTuple, combine_all_tuples
 
 
 def get_affordances_from_visual_dataset() -> [ObjectAffordanceTuple]:
@@ -13,8 +13,7 @@ def get_affordances_from_visual_dataset() -> [ObjectAffordanceTuple]:
         for col in data.columns[2:]:
             aff = row[col]
             if not pd.isna(aff):
-                obj_aff = ObjectAffordanceTuple(obj)
-                obj_aff.add_affordance(aff, source="Visual Dataset")
+                obj_aff = ObjectAffordanceTuple(obj, aff, "Visual Dataset")
                 tuples.append(obj_aff)
 
     return combine_all_tuples(tuples)
