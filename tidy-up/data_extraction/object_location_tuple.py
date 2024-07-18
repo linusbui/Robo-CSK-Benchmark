@@ -64,7 +64,7 @@ class ObjectLocationTuple:
 
 
 def preprocess_string(word: str) -> str:
-    processed = word.lower().strip().replace('the', '').replace('_', ' ')
+    processed = word.lower().replace('the', '').replace('_', ' ').strip()
     return singularize(processed)
 
 
