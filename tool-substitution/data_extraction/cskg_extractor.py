@@ -19,5 +19,16 @@ def get_affordances_from_cskg() -> [ObjectAffordanceTuple]:
 
 if __name__ == '__main__':
     res = get_affordances_from_cskg()
+    count_aff = 0
+    count_fil = 0
+    unique_aff = set()
     for r in res:
+        r.process_affordances()
+        if r.verify():
+            count_fil += 1
+            count_aff += len(r.get_affordances())
+            for aff in r.get_affordances():
+                unique_aff.add(aff.get_affordance())
         print(r)
+    print(
+        f'Objects: {len(res)}\nFiltered Objects: {count_fil}\nAffordances: {count_aff}\nUnique Affordances: {len(unique_aff)}')

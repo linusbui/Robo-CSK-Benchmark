@@ -1,13 +1,18 @@
+import spacy
+
+
 class ExtractedAffordance:
     trust_mapping = {'Visual Dataset': 1.0, 'CSKG': 0.5}
+    nlp = spacy.load("en_core_web_trf")
 
-    def __init__(self, affordance: str, sources: [str]):
-        self._affordance = affordance
+    def __init__(self, sentence: str, sources: [str]):
+        self._sentence = sentence
         self._sources = sources
         self._trust = self.calculate_trust()
+        self._affordance = sentence
 
     def __str__(self):
-        return f'[Trust: {self._trust}] {self._affordance} from: {self._sources}'
+        return f'[Trust: {self._trust}] {self._affordance} (Orig: {self._sentence}) from: {self._sources}'
 
     def get_affordance(self) -> str:
         return self._affordance
@@ -28,6 +33,14 @@ class ExtractedAffordance:
         for s in self._sources:
             trust += self.trust_mapping[s]
         return trust
+
+    def process_sentence_to_affordance(self):
+        doc = ExtractedAffordance.nlp(self._sentence)
+        for token in doc:
+            if token.pos_ == "VERB":
+                self._affordance = f'{token.text}able'
+                return
+        self._affordance = "None"
 
     def _cmp(self, other: 'ExtractedAffordance') -> float:
         return self._trust - other.get_trust()

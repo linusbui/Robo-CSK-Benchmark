@@ -13,7 +13,7 @@ def get_affordances_from_visual_dataset() -> [ObjectAffordanceTuple]:
         for col in data.columns[2:]:
             aff = row[col]
             if not pd.isna(aff):
-                obj_aff = ObjectAffordanceTuple(obj, aff, "Visual Dataset", False)
+                obj_aff = ObjectAffordanceTuple(obj, aff.lower().strip(), "Visual Dataset", False)
                 tuples.append(obj_aff)
 
     return combine_all_tuples(tuples)
@@ -21,5 +21,11 @@ def get_affordances_from_visual_dataset() -> [ObjectAffordanceTuple]:
 
 if __name__ == '__main__':
     res = get_affordances_from_visual_dataset()
+    count_aff = 0
+    unique_aff = set()
     for r in res:
+        count_aff += len(r.get_affordances())
+        for aff in r.get_affordances():
+            unique_aff.add(aff.get_affordance())
         print(r)
+    print(f'Objects: {len(res)}\nAffordances: {count_aff}\nUnique Affordances: {len(unique_aff)}')

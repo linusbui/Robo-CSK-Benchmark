@@ -60,6 +60,16 @@ class ObjectAffordanceTuple:
             'Affordances': affs
         }
 
+    def process_affordances(self):
+        valid_affordances = False
+        for aff in self._affordances:
+            aff.process_sentence_to_affordance()
+            valid_affordances = aff.get_affordance() != 'None'
+        self._is_correct = valid_affordances
+        for a in self._affordances :
+            if a.get_affordance() == "None":
+                self._affordances.remove(a)
+
 
 def preprocess_string(word: str) -> str:
     processed = word.lower().replace('_', ' ').strip()
