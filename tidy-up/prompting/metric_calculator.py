@@ -23,3 +23,11 @@ def calculate_precision_at_k(k: int, retrieved: [str], gold_standard: [str]) -> 
         if r in gold_standard:
             c += 1
     return c / k
+
+
+def calculate_reciprocal_rank(retrieved: [str], gold_standard: [str]) -> float:
+    for r in retrieved:
+        if r in gold_standard:
+            return 1 / (retrieved.index(r)+1)
+
+    return 0.0
