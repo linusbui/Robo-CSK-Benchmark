@@ -5,14 +5,14 @@ from utils import check_if_household_object
 
 
 class ObjectAffordanceTuple:
-    def __init__(self, obj: str, initial_aff: str, source: str, should_check=True):
+    def __init__(self, obj: str, initial_aff: str, source: str, should_check=True, rocs_trust=-1.0):
         proc_obj = preprocess_string(obj)
         if should_check:
             self._is_correct = check_if_household_object(proc_obj)
         else:
             self._is_correct = True
         self._object = proc_obj
-        self._affordances = [ExtractedAffordance(initial_aff, [source])]
+        self._affordances = [ExtractedAffordance(initial_aff, [source], rocs_trust)]
 
     def __str__(self):
         return f'[{str(self.verify()).upper()}] {self._object} affords: {[str(aff) for aff in self._affordances]}'
@@ -30,7 +30,10 @@ class ObjectAffordanceTuple:
         for aff in self._affordances:
             if aff.get_affordance() == affordance.get_affordance():
                 for source in affordance.get_sources():
-                    aff.add_source(source)
+                    if source == 'RoCS':
+                        aff.add_source(source, aff.get_rocs_trust())
+                    else:
+                        aff.add_source(source)
                 return
 
         self._affordances.append(affordance)
