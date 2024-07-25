@@ -164,6 +164,7 @@ cython_debug/
 # data sources
 /tidy-up/data/
 /tool-substitution/data/
+!/tool-substitution/data/narrative_tools.json
 
 # OpenAI credentials
 credentials.json
