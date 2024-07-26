@@ -39,6 +39,11 @@ class ObjectAffordanceTuple:
 
         self._affordances.append(affordance)
 
+    def remove_affordance(self, affordance: ExtractedAffordance):
+        self._affordances.remove(affordance)
+        if len(self._affordances) == 0:
+            self._is_correct = False
+
     def combine_tuples(self, tup: 'ObjectAffordanceTuple'):
         if not tup.verify():
             return
