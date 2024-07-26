@@ -5,15 +5,15 @@ class ExtractedAffordance:
     trust_mapping = {'Visual Dataset': 1.0, 'CSKG': 0.5, 'Narrative Objects': 0.75, 'COAT': 1.0}
     nlp = spacy.load("en_core_web_trf")
 
-    def __init__(self, sentence: str, sources: [str], rocs_trust=-1.0):
-        self._sentence = sentence
-        self._affordance = sentence
+    def __init__(self, unprocessed: str, sources: [str], rocs_trust=-1.0):
+        self._unprocessed = unprocessed
+        self._affordance = unprocessed
         self._sources = sources
         self._rocs_trust = rocs_trust
         self._trust = self.calculate_trust()
 
     def __str__(self):
-        return f'[Trust: {self._trust}] {self._affordance} (Orig: {self._sentence}) from: {self._sources}'
+        return f'[Trust: {self._trust}] {self._affordance} (Orig: {self._unprocessed}) from: {self._sources}'
 
     def get_affordance(self) -> str:
         return self._affordance
@@ -42,13 +42,15 @@ class ExtractedAffordance:
                 trust += self.trust_mapping[s]
         return trust
 
-    def process_sentence_to_affordance(self):
-        doc = ExtractedAffordance.nlp(self._sentence)
+    def process_affordance(self, use_none=False):
+        doc = ExtractedAffordance.nlp(self._unprocessed)
         for token in doc:
             if token.pos_ == "VERB":
-                self._affordance = f'{token.text}able'
+                base_form = token.lemma_
+                self._affordance = base_form
                 return
-        self._affordance = "None"
+        if use_none:
+            self._affordance = "None"
 
     def _cmp(self, other: 'ExtractedAffordance') -> float:
         return self._trust - other.get_trust()

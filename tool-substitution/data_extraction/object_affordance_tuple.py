@@ -12,7 +12,8 @@ class ObjectAffordanceTuple:
         else:
             self._is_correct = True
         self._object = proc_obj
-        self._affordances = [ExtractedAffordance(initial_aff, [source], rocs_trust)]
+        proc_aff = preprocess_string(initial_aff)
+        self._affordances = [ExtractedAffordance(proc_aff, [source], rocs_trust)]
 
     def __str__(self):
         return f'[{str(self.verify()).upper()}] {self._object} affords: {[str(aff) for aff in self._affordances]}'
@@ -55,7 +56,7 @@ class ObjectAffordanceTuple:
         rank = 1
         sorted_affs = sorted(self._affordances)
         for aff in sorted_affs:
-            affs[rank] = aff
+            affs[rank] = (aff.get_affordance(), aff.get_trust())
             rank += 1
 
         return {
@@ -66,7 +67,7 @@ class ObjectAffordanceTuple:
     def process_affordances(self):
         valid_affordances = False
         for aff in self._affordances:
-            aff.process_sentence_to_affordance()
+            aff.process_affordance()
             valid_affordances = aff.get_affordance() != 'None'
         self._is_correct = valid_affordances
         for a in self._affordances :

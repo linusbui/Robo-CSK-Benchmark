@@ -14,7 +14,10 @@ def get_affordances_from_cskg() -> [ObjectAffordanceTuple]:
         obj_aff = ObjectAffordanceTuple(obj, aff, "CSKG")
         tuples.append(obj_aff)
 
-    return combine_all_tuples(tuples)
+    res = combine_all_tuples(tuples)
+    for r in res:
+        r.process_affordances()
+    return res
 
 
 if __name__ == '__main__':
@@ -23,7 +26,6 @@ if __name__ == '__main__':
     count_fil = 0
     unique_aff = set()
     for r in res:
-        r.process_affordances()
         if r.verify():
             count_fil += 1
             count_aff += len(r.get_affordances())

@@ -29,6 +29,7 @@ if __name__ == '__main__':
     count_aff = 0
     unique_aff = set()
     for r in res:
+        r.process_affordances()
         count_aff += len(r.get_affordances())
         for aff in r.get_affordances():
             unique_aff.add(aff.get_affordance())
