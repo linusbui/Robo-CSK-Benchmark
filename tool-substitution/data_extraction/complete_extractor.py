@@ -30,7 +30,7 @@ def write_affordance_list(res: [ObjectAffordanceTuple]):
 
 
 def write_results_to_file(results: [ObjectAffordanceTuple]):
-    dict_list = [re.to_dict() for re in results]
+    dict_list = [re.to_dict() for re in sorted(results, key=lambda r:r.get_object())]
     df = pd.DataFrame(dict_list)
     df.to_csv('../affordance_data.csv', index=False)
 
