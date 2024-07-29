@@ -38,9 +38,11 @@ def write_results_to_file(results: [ObjectAffordanceTuple]):
 def filter_combined_results(results: [ObjectAffordanceTuple]):
     thresh = 0.5
     for r in results:
+        to_rem = []
         for aff in r.get_affordances():
             if aff.get_trust() <= thresh:
-                r.remove_affordance(aff)
+                to_rem.append(aff)
+        r.remove_affordances(to_rem)
 
 
 if __name__ == '__main__':

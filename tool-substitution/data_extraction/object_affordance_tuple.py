@@ -39,8 +39,9 @@ class ObjectAffordanceTuple:
 
         self._affordances.append(affordance)
 
-    def remove_affordance(self, affordance: ExtractedAffordance):
-        self._affordances.remove(affordance)
+    def remove_affordances(self, affordances: [ExtractedAffordance]):
+        for rem in affordances:
+            self._affordances.remove(rem)
         if len(self._affordances) == 0:
             self._is_correct = False
 
