@@ -40,10 +40,11 @@ class ObjectAffordanceTuple:
         self._affordances.append(affordance)
 
     def remove_affordances(self, affordances: [ExtractedAffordance]):
-        for rem in affordances:
-            self._affordances.remove(rem)
+        len_bef = len(self._affordances)
+        self._affordances = [aff for aff in self._affordances if aff not in affordances]
         if len(self._affordances) == 0:
             self._is_correct = False
+        assert len_bef == len(self._affordances) + len(affordances)
 
     def combine_tuples(self, tup: 'ObjectAffordanceTuple'):
         if not tup.verify():

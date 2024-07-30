@@ -27,6 +27,9 @@ class ExtractedAffordance:
     def get_sources(self) -> [str]:
         return self._sources
 
+    def rename_affordance(self, new_name: str):
+        self._affordance = new_name
+
     def add_source(self, source: str, rocs_trust=-1.0):
         if source not in self._sources:
             self._sources.append(source)
@@ -52,23 +55,23 @@ class ExtractedAffordance:
         if use_none:
             self._affordance = "None"
 
-    def _cmp(self, other: 'ExtractedAffordance') -> float:
+    def _compare(self, other: 'ExtractedAffordance') -> float:
         return self._trust - other.get_trust()
 
     def __lt__(self, other: 'ExtractedAffordance') -> bool:
-        return self._cmp(other) > 0
+        return self._compare(other) > 0
 
     def __le__(self, other: 'ExtractedAffordance') -> bool:
-        return self._cmp(other) >= 0
+        return self._compare(other) >= 0
 
     def __eq__(self, other: 'ExtractedAffordance') -> bool:
-        return self._cmp(other) == 0
+        return (self.get_affordance() == other.get_affordance()) & (self.get_sources() == other.get_sources())
 
     def __ne__(self, other: 'ExtractedAffordance') -> bool:
-        return self._cmp(other) != 0
+        return (self.get_affordance() != other.get_affordance()) | (self.get_sources() != other.get_sources())
 
     def __ge__(self, other: 'ExtractedAffordance') -> bool:
-        return self._cmp(other) <= 0
+        return self._compare(other) <= 0
 
     def __gt__(self, other: 'ExtractedAffordance') -> bool:
-        return self._cmp(other) < 0
+        return self._compare(other) < 0

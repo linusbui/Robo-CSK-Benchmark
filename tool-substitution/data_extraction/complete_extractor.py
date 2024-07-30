@@ -19,22 +19,6 @@ def extract_from_all_sources() -> [ObjectAffordanceTuple]:
     return res_cskg + res_narrative_objects + res_rocs + res_visual_dataset + res_coat
 
 
-def write_affordance_list(res: [ObjectAffordanceTuple]):
-    unique_aff = set()
-    for r in res:
-        for aff in r.get_affordances():
-            unique_aff.add(aff.get_affordance())
-
-    with open("../affordances.json", "w") as f:
-        json.dump(sorted(list(unique_aff)), f)
-
-
-def write_results_to_file(results: [ObjectAffordanceTuple]):
-    dict_list = [re.to_dict() for re in sorted(results, key=lambda r:r.get_object())]
-    df = pd.DataFrame(dict_list)
-    df.to_csv('../affordance_data.csv', index=False)
-
-
 def filter_combined_results(results: [ObjectAffordanceTuple]):
     thresh = 0.5
     for r in results:
@@ -45,6 +29,38 @@ def filter_combined_results(results: [ObjectAffordanceTuple]):
         r.remove_affordances(to_rem)
 
 
+def write_affordance_list(res: [ObjectAffordanceTuple]):
+    unique_aff = set()
+    for r in res:
+        for aff in r.get_affordances():
+            unique_aff.add(aff.get_affordance())
+
+    with open("../affordances.json", "w") as f:
+        json.dump(sorted(list(unique_aff)), f)
+
+
+def map_affordances(res: [ObjectAffordanceTuple]) -> [ObjectAffordanceTuple]:
+    with open("../affordance_map.json") as f:
+        aff_map = json.load(f)
+
+    for r in res:
+        to_rem = []
+        for aff in r.get_affordances():
+            mapped = aff_map.get(aff.get_affordance())
+            if mapped == "None":
+                to_rem.append(aff)
+            else:
+                aff.rename_affordance(mapped)
+        r.remove_affordances(to_rem)
+    return res
+
+
+def write_results_to_file(results: [ObjectAffordanceTuple]):
+    dict_list = [re.to_dict() for re in sorted(results, key=lambda r: r.get_object())]
+    df = pd.DataFrame(dict_list)
+    df.to_csv('../affordance_data.csv', index=False)
+
+
 if __name__ == '__main__':
     res = extract_from_all_sources()
     for r in res:
@@ -53,4 +69,5 @@ if __name__ == '__main__':
     filter_combined_results(res)
     res = [r for r in res if r.verify()]
     write_affordance_list(res)
-    write_results_to_file(res)
+    res = map_affordances(res)
+    write_results_to_file(combine_all_tuples(res))
