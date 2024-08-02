@@ -324,7 +324,7 @@
 		"prepare",
 		"repair"
 	],
-	"bevel..hand_tool": [
+	"bevel": [
 		"Graspability",
 		"change",
 		"fix",
@@ -332,7 +332,7 @@
 		"prepare",
 		"repair"
 	],
-	"bill..tool": [
+	"bill": [
 		"CanCut",
 		"Graspability",
 		"change",
@@ -344,7 +344,7 @@
 		"repair",
 		"separate"
 	],
-	"bit..cutting_implement": [
+	"bit": [
 		"CanCut",
 		"change",
 		"change",
@@ -354,7 +354,7 @@
 		"repair",
 		"separate"
 	],
-	"blade..cutting_implement": [
+	"blade": [
 		"CanCut",
 		"change",
 		"change",
@@ -392,7 +392,7 @@
 		"prepare",
 		"repair"
 	],
-	"bodkin..tool": [
+	"bodkin": [
 		"Graspability",
 		"change",
 		"fix",
@@ -683,7 +683,7 @@
 		"unplug",
 		"wash"
 	],
-	"buffer..power_tool": [
+	"buffer": [
 		"break",
 		"change",
 		"clean",
@@ -787,7 +787,7 @@
 		"stab",
 		"strike"
 	],
-	"burr..power_tool": [
+	"burr": [
 		"break",
 		"change",
 		"clean",
@@ -949,29 +949,7 @@
 		"slice",
 		"stab"
 	],
-	"case_knife..knife_tool": [
-		"CanCut",
-		"carve",
-		"carve",
-		"change",
-		"change",
-		"crack",
-		"cube",
-		"cut",
-		"cut",
-		"dice",
-		"fix",
-		"open",
-		"peel",
-		"prepare",
-		"repair",
-		"separate",
-		"serve",
-		"skin",
-		"slice",
-		"stab"
-	],
-	"case_knife..table_knife": [
+	"case_knife": [
 		"CanCut",
 		"Graspability",
 		"carve",
@@ -1274,24 +1252,7 @@
 		"prepare",
 		"repair"
 	],
-	"clipper..scissors": [
-		"CanCut",
-		"Graspability",
-		"change",
-		"change",
-		"cut",
-		"cut",
-		"fix",
-		"hold",
-		"open",
-		"peel",
-		"prepare",
-		"repair",
-		"separate",
-		"skin",
-		"stab"
-	],
-	"clipper..shear": [
+	"clipper": [
 		"CanCut",
 		"Graspability",
 		"change",
@@ -1333,7 +1294,7 @@
 		"stab",
 		"strike"
 	],
-	"comb..tool": [
+	"comb": [
 		"change",
 		"fix",
 		"prepare",
@@ -1488,7 +1449,7 @@
 		"repair",
 		"separate"
 	],
-	"crampon..grapnel": [
+	"crampon": [
 		"change",
 		"fix",
 		"prepare",
@@ -1607,7 +1568,7 @@
 		"unplug",
 		"wash"
 	],
-	"cutter..cutting_implement": [
+	"cutter": [
 		"CanCut",
 		"change",
 		"change",
@@ -1690,20 +1651,7 @@
 		"prepare",
 		"repair"
 	],
-	"die..cutter": [
-		"CanCut",
-		"change",
-		"change",
-		"cut",
-		"cut",
-		"fix",
-		"prepare",
-		"repair",
-		"separate",
-		"skin",
-		"stab"
-	],
-	"die..shaping_tool": [
+	"die": [
 		"Shaping",
 		"Variability",
 		"change",
@@ -1996,7 +1944,7 @@
 		"repair",
 		"separate"
 	],
-	"file..tool": [
+	"file": [
 		"Graspability",
 		"beautify",
 		"change",
@@ -2102,7 +2050,7 @@
 		"screw",
 		"screw"
 	],
-	"float..tool": [
+	"float": [
 		"Graspability",
 		"change",
 		"fix",
@@ -2167,7 +2115,7 @@
 		"skin",
 		"stab"
 	],
-	"fork..tool": [
+	"fork": [
 		"change",
 		"fix",
 		"prepare",
@@ -2294,7 +2242,7 @@
 		"skin",
 		"stab"
 	],
-	"grapnel..tool": [
+	"grapnel": [
 		"change",
 		"fix",
 		"prepare",
@@ -2335,7 +2283,7 @@
 		"strike",
 		"transport"
 	],
-	"gutter..hand_tool": [
+	"gutter": [
 		"Graspability",
 		"change",
 		"fix",
@@ -2409,19 +2357,7 @@
 		"skin",
 		"stab"
 	],
-	"hammer..hand_tool": [
-		"Graspability",
-		"beat",
-		"change",
-		"fix",
-		"hammer",
-		"hit",
-		"hold",
-		"prepare",
-		"repair",
-		"strike"
-	],
-	"hammer..power_tool": [
+	"hammer": [
 		"beat",
 		"break",
 		"change",
@@ -2606,7 +2542,7 @@
 		"repair",
 		"separate"
 	],
-	"hob..edge_tool": [
+	"hob": [
 		"CanCut",
 		"change",
 		"change",
@@ -2700,7 +2636,7 @@
 		"strike",
 		"transport"
 	],
-	"jack..tool": [
+	"jack": [
 		"break",
 		"change",
 		"control",
@@ -2906,29 +2842,7 @@
 		"slice",
 		"stab"
 	],
-	"knife..tool": [
-		"CanCut",
-		"carve",
-		"carve",
-		"change",
-		"change",
-		"crack",
-		"cube",
-		"cut",
-		"cut",
-		"dice",
-		"fix",
-		"open",
-		"peel",
-		"prepare",
-		"repair",
-		"separate",
-		"serve",
-		"skin",
-		"slice",
-		"stab"
-	],
-	"knife..weapon": [
+	"knife": [
 		"CanCut",
 		"carve",
 		"carve",
@@ -3124,7 +3038,7 @@
 		"slice",
 		"stab"
 	],
-	"mallet..hammer": [
+	"mallet": [
 		"Graspability",
 		"beat",
 		"change",
@@ -3307,7 +3221,7 @@
 		"repair",
 		"spread"
 	],
-	"pallet..hand_tool": [
+	"pallet": [
 		"Graspability",
 		"change",
 		"fix",
@@ -3394,20 +3308,7 @@
 		"slice",
 		"stab"
 	],
-	"pestle..hand_tool": [
-		"Graspability",
-		"change",
-		"crunch",
-		"fix",
-		"grind",
-		"grind",
-		"hold",
-		"mix",
-		"prepare",
-		"press",
-		"repair"
-	],
-	"pestle..tool": [
+	"pestle": [
 		"change",
 		"crunch",
 		"fix",
@@ -3431,15 +3332,7 @@
 		"screw",
 		"screw"
 	],
-	"pick..implement": [
-		"Graspability",
-		"change",
-		"fix",
-		"hold",
-		"prepare",
-		"repair"
-	],
-	"pick..tool": [
+	"pick": [
 		"CanCut",
 		"change",
 		"change",
@@ -3558,22 +3451,7 @@
 		"unplug",
 		"wash"
 	],
-	"plane..edge_tool": [
-		"CanCut",
-		"Graspability",
-		"change",
-		"change",
-		"cut",
-		"cut",
-		"fix",
-		"hold",
-		"prepare",
-		"repair",
-		"separate",
-		"skin",
-		"stab"
-	],
-	"plane..power_tool": [
+	"plane": [
 		"break",
 		"change",
 		"clean",
@@ -3726,22 +3604,7 @@
 		"scoop",
 		"spread"
 	],
-	"poleax..ax": [
-		"CanCut",
-		"change",
-		"change",
-		"chop",
-		"chop",
-		"cut",
-		"cut",
-		"fix",
-		"prepare",
-		"repair",
-		"separate",
-		"skin",
-		"stab"
-	],
-	"poleax..battle_ax": [
+	"poleax": [
 		"CanCut",
 		"change",
 		"change",
@@ -4157,7 +4020,7 @@
 		"slit",
 		"slit"
 	],
-	"reamer..drill": [
+	"reamer": [
 		"CanCut",
 		"bore",
 		"change",
@@ -4501,7 +4364,7 @@
 		"skin",
 		"stab"
 	],
-	"scoop..shovel": [
+	"scoop": [
 		"Graspability",
 		"change",
 		"dig",
@@ -4599,7 +4462,7 @@
 		"stab",
 		"strike"
 	],
-	"seal..signet": [
+	"seal": [
 		"Graspability",
 		"change",
 		"change",
@@ -4659,20 +4522,7 @@
 		"stab",
 		"strike"
 	],
-	"shear..edge_tool": [
-		"CanCut",
-		"change",
-		"change",
-		"cut",
-		"cut",
-		"fix",
-		"prepare",
-		"repair",
-		"separate",
-		"skin",
-		"stab"
-	],
-	"shear..scissors": [
+	"shear": [
 		"CanCut",
 		"Graspability",
 		"change",
@@ -4709,7 +4559,7 @@
 		"slice",
 		"stab"
 	],
-	"shovel..hand_tool": [
+	"shovel": [
 		"Graspability",
 		"change",
 		"dig",
@@ -4754,7 +4604,7 @@
 		"repair",
 		"spread"
 	],
-	"slicer..knife": [
+	"slicer": [
 		"CanCut",
 		"carve",
 		"carve",
@@ -4776,7 +4626,7 @@
 		"slice",
 		"stab"
 	],
-	"slick..trowel": [
+	"slick": [
 		"Graspability",
 		"change",
 		"fix",
@@ -4882,7 +4732,7 @@
 		"repair",
 		"solder"
 	],
-	"spade..hand_shovel": [
+	"spade": [
 		"Graspability",
 		"change",
 		"dig",
@@ -4910,7 +4760,7 @@
 		"repair",
 		"wrench"
 	],
-	"spatula..hand_tool": [
+	"spatula": [
 		"Graspability",
 		"change",
 		"fix",
@@ -4966,7 +4816,7 @@
 		"prepare",
 		"repair"
 	],
-	"square..hand_tool": [
+	"square": [
 		"Graspability",
 		"change",
 		"fix",
@@ -4974,7 +4824,7 @@
 		"prepare",
 		"repair"
 	],
-	"stamp..die": [
+	"stamp": [
 		"Shaping",
 		"Variability",
 		"change",
@@ -5065,7 +4915,7 @@
 		"smooth",
 		"smoothen"
 	],
-	"stemmer..tamp": [
+	"stemmer": [
 		"change",
 		"compress",
 		"fix",
@@ -5144,7 +4994,7 @@
 		"prepare",
 		"repair"
 	],
-	"strickle..tool": [
+	"strickle": [
 		"change",
 		"fix",
 		"prepare",
@@ -5289,7 +5139,7 @@
 		"tamp",
 		"tamp_down"
 	],
-	"tap..tool": [
+	"tap": [
 		"CanCut",
 		"change",
 		"change",
@@ -5408,7 +5258,7 @@
 		"slice",
 		"stab"
 	],
-	"trepan..drill": [
+	"trepan": [
 		"CanCut",
 		"bore",
 		"change",

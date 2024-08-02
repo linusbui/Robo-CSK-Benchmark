@@ -11,7 +11,7 @@ dl.buildCache()
 tools = dl.whatSubclasses("dfl:tool.n.wn.artifact")
 for tool in tools:
     disp = dl.whatDispositionsDoesObjectHave(tool)
-    proc_tool = tool.replace(".n.wn.artifact", "").replace("dfl:", "").strip()
+    proc_tool = tool.replace(".n.wn.artifact", "").replace("dfl:", "").split("..")[0].strip()
     proc_disp = [d.split(".v")[0].replace("dfl:", "").strip() for d in disp]
     res[proc_tool] = proc_disp
 
