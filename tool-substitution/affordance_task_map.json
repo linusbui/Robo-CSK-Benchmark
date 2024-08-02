@@ -1,0 +1,464 @@
+{
+	"absorb": [
+		"cleaning up spills",
+		"drying the dishes",
+		"removing moisture"
+	],
+	"be heated": [
+        "reheating coffee",
+        "cooking a fried egg",
+        "cooking an omelette",
+        "reheating soup",
+        "boiling water"
+    ],
+	"beautify": [
+		"decorating a room",
+		"arranging flowers",
+		"painting walls",
+		"apply make-up"
+	],
+	"bend": [
+		"shaping wire",
+		"adjusting blinds",
+		"fitting flexible piping"
+	],
+	"bore": [
+		"installing shelves",
+		"hanging pictures",
+		"assembling furniture"
+	],
+	"break": [
+        "preparing food",
+        "opening packaging",
+		"breaking apart food items"
+    ],
+	"carry": [
+        "serving food",
+        "transporting liquids",
+        "serving a dish",
+        "watering plants"
+    ],
+	"carve": [
+		"decorating pumpkins",
+		"preparing meat",
+		"crafting with wood"
+	],
+	"change": [
+		"replacing light bulbs",
+		"changing bed sheets",
+		"swapping out filters"
+	],
+	"chop": [
+		"preparing cooking ingredients",
+		"cutting meat",
+		"making firewood"
+	],
+	"clean": [
+        "washing dishes",
+        "throwing away uneaten food",
+        "cleaning spilled milk",
+        "cleaning the mirror",
+        "cleaning the fridge",
+        "cleaning the blinds",
+        "cleaning the shower head",
+        "dusting the statue",
+        "cleaning the toilet",
+        "cleaning the floor",
+        "washing your face"
+    ],
+	"comfort": [
+        "watching a movie",
+		"setting up bedding",
+		"choosing a comfortable seat"
+    ],
+	"compress": [
+		"storing clothes",
+		"reducing space in bin",
+		"preparing food"
+	],
+	"contain": [
+		"storing food",
+		"measuring liquids",
+		"managing waste",
+		"being filled with a liquid"
+	],
+	"control": [
+		"adjusting device settings",
+		"managing lighting",
+		"operating appliances"
+	],
+	"cover": [
+		"protecting food",
+		"shielding surfaces",
+		"securing items"
+	],
+	"crack": [
+		"opening a nut",
+		"breaking an egg",
+		"opening packages"
+	],
+	"crumble": [
+		"baking pastries",
+		"preparing toppings",
+		"making breadcrumbs"
+	],
+	"crunch": [
+		"preparing snacks",
+		"making toppings",
+		"crushing ice"
+	],
+	"cube": [
+		"making ice cubes",
+		"preparing fruits and vegetables",
+		"preparing meats"
+	],
+	"cut": [
+        "preparing a sliced apple",
+        "cutting an apple",
+        "opening an envelope",
+        "applying butter",
+        "serving cake"
+    ],
+	"decorate":  [
+        "decorating table",
+        "decorating bed",
+        "decorating wall",
+        "decorating lobby",
+		"increasing beauty of the room"
+    ],
+	"dice": [
+		"preparing vegetables",
+		"creating garnishes",
+		"making salsa",
+		"measuring ingredients"
+	],
+	"dig": [
+		"gardening",
+		"preparing soil",
+		"finding buried treasures"
+	],
+	"display": [
+		"showcasing decorations",
+		"organizing collectibles",
+		"presenting information"
+	],
+	"dispose": [
+        "throwing away uneaten food",
+        "cleaning spilled milk",
+        "throwing away used soap bottle",
+        "throwing away toilet paper"
+    ],
+	"drill": [
+		"hanging items on a wall",
+		"assembling furniture",
+		"installing fixtures"
+	],
+	"dry": [
+        "drying washed dishes",
+		"hanging cleaned laundry",
+		"drying up spilled liquids"
+	],
+	"eat": [
+		"having a meal",
+		"preparing food",
+		"being cooked"
+	],
+	"engrave": [
+		"personalising items",
+		"creating decorative art",
+		"labelling belongings"
+	],
+	"entertain": [
+        "watching a movie",
+        "listening to a song",
+        "surfing the internet"
+    ],
+	"exercise": [
+		"playing active games",
+		"exercising",
+		"cleaning as a home workout"
+	],
+	"file": [
+		"organizing documents",
+		"cleaning fingernails",
+		"smoothing surfaces"
+	],
+	"fix": [
+		"repairing appliances",
+		"mending clothes",
+		"patching walls"
+	],
+	"flex": [
+		"adjusting cables",
+		"bending pipes",
+		"grinding surfaces"
+	],
+	"frost": [
+		"freezing food",
+		"making ice",
+		"creating frost patterns as decoration"
+	],
+	"grasp": [
+		"picking-up objects",
+		"opening jars",
+		"carrying items",
+		"placing objects down"
+	],
+	"grind": [
+		"preparing spices",
+		"making coffee powder",
+		"processing grains"
+	],
+	"hammer": [
+		"hanging a picture on a wall",
+		"assembling furniture",
+		"removing old fixtures",
+		"repairing items",
+		"hammering nails"
+	],
+	"handle": [
+		"opening doors and cabinets",
+		"carrying containers",
+		"using appliances"
+	],
+	"heat": [
+		"heating coffee",
+		"cooking food",
+		"reheating soup",
+		"boiling water",
+		"melting envelope wax",
+		"melting butter"
+	],
+	"hold": [
+		"carrying items",
+		"using tools",
+		"stabilising objects"
+	],
+	"illuminate":  [
+        "increasing brightness of the room",
+		"lighten up a room",
+		"decrease darkness"
+    ],
+	"increase": [
+        "hanging poster",
+        "hanging painting",
+        "cleaning shower head",
+        "getting a book from a high shelf",
+        "placing a very delicate artifact on a shelf",
+        "fixing light bulb outside your house",
+        "putting objects on high shelf"
+    ],
+	"install": [
+		"mounting fixtures",
+		"setting up appliances",
+		"assembling furniture"
+	],
+	"lift": [
+		"moving furniture",
+		"carrying objects",
+		"accessing high shelves"
+	],
+	"mark": [
+		"labeling items",
+		"measuring distances",
+		"tracking events"
+	],
+	"melt": [
+		"melting butter",
+		"removing adhesives",
+		"defrosting frozen food"
+	],
+	"mix": [
+		"mixing ingredients",
+		"preparing drinks",
+		"combining cleaning solutions"
+	],
+	"operate": [
+		"using appliances",
+		"controlling devices",
+		"handling tools"
+	],
+	"peel": [
+		"removing skin from fruits and vegetables",
+		"creating compost",
+		"making garnishes"
+	],
+	"pick": [
+		"harvesting produce",
+		"sorting items",
+		"picking up items"
+	],
+	"pierce": [
+		"creating a drainage",
+		"opening packages",
+		"making a small hole",
+		"preparing food"
+	],
+	"plow": [
+		"clearing snow",
+		"tilling soil",
+		"breaking up compacted soil"
+	],
+	"plug": [
+		"connecting appliances",
+		"charging devices",
+		"plugging devices in"
+	],
+	"poke": [
+		"checking the readiness of food",
+		"creating a drainage",
+		"pinning items on a wall"
+	],
+	"polish": [
+		"polishing metal objects",
+		"cleaning surfaces",
+		"enhancing glass surfaces",
+		"maintaining floors"
+	],
+	"pour": [
+		"pouring liquids",
+		"preparing drinks",
+		"preparing cleaning solutions"
+	],
+	"press": [
+		"using appliances with a button",
+		"ironing clothes",
+		"operating gadgets"
+	],
+	"read": [
+        "reading a good night story",
+		"reading instructions",
+		"keeping up to date",
+		"enjoying leisure time"
+    ],
+	"repair": [
+		"fixing broken appliances",
+		"patching damages furniture",
+		"maintaining plumbing"
+	],
+	"roll": [
+		"rolling out dough",
+		"painting walls"
+	],
+	"rub": [
+		"cleaning surfaces",
+		"polishing furniture",
+		"removing stains"
+	],
+	"saw": [
+		"cutting wood",
+		"trimming branches",
+		"sawing flooring planks"
+	],
+	"scoop": [
+		"serving ice cream",
+		"measuring ingredients",
+		"cleaning a litter box"
+	],
+	"screw": [
+		"assembling furniture",
+		"mounting hardware",
+		"screwing in screws",
+		"repairing appliances"
+	],
+	"separate": [
+		"dividing food into portions",
+		"cutting items in halve"
+	],
+	"shape": [
+		"changing an objects shape"
+	],
+	"skin": [
+		"removing skin from meat",
+		"removing the peel from fruits and vegetables",
+		"remove unhealthy plant parts"
+	],
+	"slit": [
+		"opening packages",
+		"creating ventilation",
+		"cutting open food objects"
+	],
+	"smoothen": [
+		"sanding surfaces",
+		"ironing clothes",
+		"polishing furniture"
+	],
+	"solder": [
+		"repairing electronics",
+		"making jewelery",
+		"fixing plumbing"
+	],
+	"spread": [
+		"applying spreads on bread",
+		"spreading icing on a cake",
+		"distributing cleaning products"
+	],
+	"staple": [
+		"organizing documents",
+		"repairing books"
+	],
+	"stick": [
+		"remove dirt from your teeth"
+	],
+	"store": [
+        "storing fruits and vegetables",
+        "storing clean utensils",
+        "packing books for house shifting",
+        "keeping sporting equipment",
+        "storing important documents",
+        "storing cereal box",
+        "keeping dirty clothes",
+        "storing dog treats",
+		"organizing items"
+	],
+	"strip": [
+		"removing isolation from wires"
+	],
+	"support": [
+        "supporting a laptop",
+        "displaying a statue",
+        "eating dinner"
+    ],
+	"tamp": [
+		"packing soil",
+		"preparing coffee in a filter",
+		"setting tiles"
+	],
+	"time": [
+        "telling the time",
+		"managing schedules"
+    ],
+	"unclog": [
+		"clearing the drain",
+		"fixing a toilet",
+		"cleaning pipes"
+	],
+	"wash": [
+        "washing dishes",
+        "washing a fruit before cutting",
+        "washing your face",
+		"doing laundry",
+		"cleaning dishes"
+    ],
+	"wipe": [
+		"cleaning a surface",
+		"removing stains",
+		"wiping a surface clean"
+	],
+	"wrap": [
+		"storing food",
+		"protecting items"
+	],
+	"wrench": [
+		"tightening bolts",
+		"loosening bolts",
+		"adjusting fixtures",
+		"changing bicycle components"
+	],
+	"write": [
+		"making a shopping list",
+		"keeping a journal",
+		"labelling items",
+		"writing a letter"
+	]
+}
