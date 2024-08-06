@@ -36,10 +36,11 @@ Additionally, to create the ranking of the locations, we manually assign each so
 | CSKG           | 0.50        | 9264       | 462      | [4] |
 | Housekeep      | 1.00        | 268        | 268      | [5] |
 | Microsoft COCO | 0.75        | 7          | 7        | [6] |
+| **SUM**        | -           | **13966**  | **851**  |     |
 
 ## References
 
-[1]: G. A. Miller, ‘WordNet: A Lexical Database for English’, Communications of the ACM, vol. 38, no. 11, pp. 39–41, 1995, doi: 10.1145/219717.219748.
+[1] G. A. Miller, ‘WordNet: A Lexical Database for English’, Communications of the ACM, vol. 38, no. 11, pp. 39–41, 1995, doi: 10.1145/219717.219748.
 
 [2] E. Kolve et al., ‘AI2-THOR: An Interactive 3D Environment for Visual AI’, 2017, arXiv. doi: 10.48550/ARXIV.1712.05474.
 
