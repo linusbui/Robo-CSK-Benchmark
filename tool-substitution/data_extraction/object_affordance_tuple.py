@@ -58,6 +58,19 @@ class ObjectAffordanceTuple:
 
         tup._is_correct = False
 
+    def combine_affordances(self):
+        combined_list = {}
+        if self.get_object() == "plastic box":
+            x = 45
+        for aff in self.get_affordances():
+            aff_name = aff.get_affordance()
+            if aff_name not in combined_list:
+                combined_list[aff_name] = aff
+            else:
+                for src in aff.get_sources():
+                    combined_list[aff_name].add_source(src)
+        self._affordances = sorted(list(combined_list.values()))
+
     def to_dict(self):
         affs = {}
         rank = 1
@@ -77,7 +90,7 @@ class ObjectAffordanceTuple:
             aff.process_affordance()
             valid_affordances = aff.get_affordance() != 'None'
         self._is_correct = valid_affordances
-        for a in self._affordances :
+        for a in self._affordances:
             if a.get_affordance() == "None":
                 self._affordances.remove(a)
 

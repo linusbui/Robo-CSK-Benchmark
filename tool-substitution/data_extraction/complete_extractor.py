@@ -52,6 +52,7 @@ def map_affordances(res: [ObjectAffordanceTuple]) -> [ObjectAffordanceTuple]:
             else:
                 aff.rename_affordance(mapped)
         r.remove_affordances(to_rem)
+        r.combine_affordances()
     return res
 
 
