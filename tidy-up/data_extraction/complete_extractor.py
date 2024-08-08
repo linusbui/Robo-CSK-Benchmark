@@ -23,8 +23,23 @@ def write_results_to_file(results: [ObjectLocationTuple]):
     df.to_csv('../tidy_up_data.csv', index=False)
 
 
+def create_and_write_reverse_dataset(results: [ObjectLocationTuple]):
+    loc_dict = {}
+    for res in results:
+        for loc in res.get_locations():
+            key = loc.get_location()
+            if key not in loc_dict:
+                loc_dict[key] = [res.get_object()]
+            else:
+                loc_dict[key].append(res.get_object())
+    loc_dict_list = [{'Location': key, 'Objects': sorted(val)} for key, val in sorted(loc_dict.items())]
+    df = pd.DataFrame(loc_dict_list)
+    df.to_csv('../tidy_up_data_reversed.csv', index=False)
+
+
 if __name__ == '__main__':
     res = extract_from_all_sources()
     res = [r for r in res if r.verify()]
     res = combine_all_tuples(res)
     write_results_to_file(sorted(res, key=lambda r: r.get_object()))
+    create_and_write_reverse_dataset(res)
