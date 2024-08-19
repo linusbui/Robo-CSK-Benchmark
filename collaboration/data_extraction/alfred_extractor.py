@@ -16,7 +16,7 @@ def get_activity_body_combinations_from_alfred() -> [(TaskCapability, str)]:
                 goal = task['task_desc']
                 desc = task['high_descs']
                 count_arms, walk = analyse_task_steps(desc)
-                tsk = TaskCapability(goal, count_arms, walk)
+                tsk = TaskCapability(goal, count_arms, 6 ,walk)
                 res.append((tsk, json_file.name))
     return res
 

@@ -1,7 +1,8 @@
 class TaskCapability:
-    def __init__(self, task: str, no_arms: int, mobile: bool):
+    def __init__(self, task: str, no_arms: int, arm_dof: int, mobile: bool):
         self._tsk = preprocess_string(task)
         self._arms = no_arms
+        self._arm_dof = arm_dof
         self._mobile = mobile
         self._is_correct = True
 
@@ -10,7 +11,7 @@ class TaskCapability:
             walk = 'does need to walk'
         else:
             walk = 'does NOT need to walk'
-        return f'To {self._tsk} the robot needs {self._arms} arm(s) and {walk}'
+        return f'To {self._tsk} the robot needs {self._arms} arm(s) with {self._arm_dof} DoFs and {walk}'
 
     def verify(self) -> bool:
         return self._is_correct
@@ -21,6 +22,9 @@ class TaskCapability:
     def get_arms(self) -> int:
         return self._arms
 
+    def get_arm_dofs(self) -> int:
+        return self._arm_dof
+
     def is_mobile(self) -> bool:
         return self._mobile
 
@@ -29,6 +33,7 @@ class TaskCapability:
             return
 
         self._arms = min(cap.get_arms(), self._arms)
+        self._arm_dof = min(cap.get_arm_dofs(), self._arm_dof)
         self._mobile = cap.is_mobile() and self._mobile
         cap._is_correct = False
 
@@ -36,6 +41,7 @@ class TaskCapability:
         return {
             'Task': self.get_task(),
             'Arms': self.get_arms(),
+            'DoFs': self.get_arm_dofs(),
             'Mobile?': self.is_mobile()
         }
 
