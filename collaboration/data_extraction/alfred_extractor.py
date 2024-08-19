@@ -1,8 +1,10 @@
 import json
 from pathlib import Path
 
+from task_capability import TaskCapability
 
-def get_activity_body_combinations_from_alfred() -> [(str, int, bool, str)]:
+
+def get_activity_body_combinations_from_alfred() -> [(TaskCapability, str)]:
     folder_path = Path('../data/alfred_data/')
     res = []
 
@@ -14,7 +16,8 @@ def get_activity_body_combinations_from_alfred() -> [(str, int, bool, str)]:
                 goal = task['task_desc']
                 desc = task['high_descs']
                 count_arms, walk = analyse_task_steps(desc)
-                res.append((goal, count_arms, walk, json_file.name))
+                tsk = TaskCapability(goal, count_arms, walk)
+                res.append((tsk, json_file.name))
     return res
 
 
@@ -35,12 +38,12 @@ def analyse_task_steps(desc: str) -> (int, bool):
 
 
 def is_pick_up_step(step: str) -> bool:
-    if ("pick" in step and "up" in step) or "grab" in step:
+    if ("pick" in step and "up" in step) or "grab" in step or "take" in step:
         return True
 
 
 def is_place_down_step(step: str) -> bool:
-    if "place" in step:
+    if "place" in step or "put" in step:
         return True
 
 
@@ -51,9 +54,8 @@ def is_walk_step(step: str) -> bool:
 
 if __name__ == '__main__':
     res = get_activity_body_combinations_from_alfred()
+    avg_arms = 0
     for r in res:
-        if r[2]:
-            walk = 'does need to walk'
-        else:
-            walk = 'doesn\'t need to walk'
-        print(f'To {r[0].lower().strip()} the robot needs {r[1]} arms and {walk} ({r[3]}).')
+        avg_arms += r[0].get_arms()
+        print(f'{r[0]} ({r[1]}).')
+    print(f'{len(res)} tasks found that use {avg_arms/len(res)} arms on average')
