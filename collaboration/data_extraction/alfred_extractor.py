@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+from gripper_configs import GripperConfig
 from task_capability import TaskCapability
 
 
@@ -16,7 +17,7 @@ def get_activity_body_combinations_from_alfred() -> [(TaskCapability, str)]:
                 goal = task['task_desc']
                 desc = task['high_descs']
                 count_arms, walk = analyse_task_steps(desc)
-                tsk = TaskCapability(goal, count_arms, 6 ,walk)
+                tsk = TaskCapability(goal, walk, count_arms, 6, GripperConfig.NO, False)
                 res.append((tsk, json_file.name))
     return res
 

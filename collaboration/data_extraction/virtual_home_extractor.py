@@ -1,5 +1,6 @@
 import os
 
+from gripper_configs import GripperConfig
 from task_capability import TaskCapability
 
 
@@ -12,7 +13,7 @@ def get_task_capabilities_from_virtualhome() -> [TaskCapability]:
             try:
                 with open(file_path, 'r') as f:
                     goal = f.readline().strip()
-                    task = TaskCapability(goal, 2, 6, True)
+                    task = TaskCapability(goal, True, 2, 6, GripperConfig.NO, False)
                     res.append(task)
             except Exception as e:
                 print(f"Error reading file {file_name}: {e}")

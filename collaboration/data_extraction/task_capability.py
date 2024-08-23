@@ -1,9 +1,13 @@
+from gripper_configs import GripperConfig
+
 class TaskCapability:
-    def __init__(self, task: str, no_arms: int, arm_dof: int, mobile: bool):
+    def __init__(self, task: str, mobile: bool, no_arms: int, arm_dof: int, gripper_conf: GripperConfig, rigid_gripper: bool):
         self._tsk = preprocess_string(task)
+        self._mobile = mobile
         self._arms = no_arms
         self._arm_dof = arm_dof
-        self._mobile = mobile
+        self._gripper_conf = gripper_conf
+        self._rigid_gripper = rigid_gripper
         self._is_correct = True
 
     def __str__(self):
@@ -11,7 +15,14 @@ class TaskCapability:
             walk = 'does need to walk'
         else:
             walk = 'does NOT need to walk'
-        return f'To {self._tsk} the robot needs {self._arms} arm(s) with {self._arm_dof} DoFs and {walk}'
+
+        if self._rigid_gripper:
+            rigidity = 'rigid'
+        else:
+            rigidity = 'soft'
+
+        return (f'To {self._tsk} the robot needs {self._arms} arm(s) with {self._arm_dof} DoFs and {rigidity} {self._gripper_conf.lower()}.'
+                f' It {walk}.')
 
     def verify(self) -> bool:
         return self._is_correct
@@ -19,14 +30,20 @@ class TaskCapability:
     def get_task(self) -> str:
         return self._tsk
 
+    def is_mobile(self) -> bool:
+        return self._mobile
+
     def get_arms(self) -> int:
         return self._arms
 
     def get_arm_dofs(self) -> int:
         return self._arm_dof
 
-    def is_mobile(self) -> bool:
-        return self._mobile
+    def get_gripper_config(self) -> GripperConfig:
+        return self._gripper_conf
+
+    def is_rigid_gripper(self) -> bool:
+        return self._rigid_gripper
 
     def combine_task(self, cap: 'TaskCapability'):
         if not cap.verify():
@@ -40,9 +57,11 @@ class TaskCapability:
     def to_dict(self):
         return {
             'Task': self.get_task(),
+            'Mobile?': self.is_mobile(),
             'Arms': self.get_arms(),
             'DoFs': self.get_arm_dofs(),
-            'Mobile?': self.is_mobile()
+            'Gripper Config': self.get_gripper_config(),
+            'Rigid Gripper?': self.is_rigid_gripper()
         }
 
 
