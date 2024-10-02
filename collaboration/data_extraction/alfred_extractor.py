@@ -5,7 +5,7 @@ from gripper_configs import GripperConfig
 from task_capability import TaskCapability
 
 
-def get_activity_body_combinations_from_alfred() -> [(TaskCapability, str)]:
+def get_task_capabilities_from_alfred() -> [TaskCapability]:
     folder_path = Path('../data/alfred_data/')
     res = []
 
@@ -18,7 +18,7 @@ def get_activity_body_combinations_from_alfred() -> [(TaskCapability, str)]:
                 desc = task['high_descs']
                 count_arms, walk = analyse_task_steps(desc)
                 tsk = TaskCapability(goal, walk, count_arms, 6, GripperConfig.NO, False)
-                res.append((tsk, json_file.name))
+                res.append(tsk)
     return res
 
 
@@ -54,9 +54,9 @@ def is_walk_step(step: str) -> bool:
 
 
 if __name__ == '__main__':
-    res = get_activity_body_combinations_from_alfred()
+    res = get_task_capabilities_from_alfred()
     avg_arms = 0
     for r in res:
-        avg_arms += r[0].get_arms()
-        print(f'{r[0]} ({r[1]}).')
+        avg_arms += r.get_arms()
+        print(r)
     print(f'{len(res)} tasks found that use {avg_arms/len(res)} arms on average')

@@ -5,11 +5,38 @@ from enum import Enum
 # in 2019 IEEE Canadian Conference of Electrical and Computer Engineering (CCECE), Edmonton, AB, Canada, May 2019.
 # doi: 10.1109/CCECE.2019.8861780.
 class GripperConfig(str, Enum):
-    NO = "No specified Gripper",
-    TWO_FINGERS = "Robot Grippers with 2 Fingers",
-    THREE_FINGERS = "Robot Grippers with 3 Fingers",
-    FLEX_FINGERS = "Robot Grippers with Flexible Fingers",
-    MULTI_ADAPT = "Multi-Finger and Adaptive Grippers",
-    BALL = "Grain-Filled Flexible Ball Grippers",
-    BELLOWS = "Bellows Grippers",
-    O_RING = "O-ring Grippers"
+    NO = ("No specified Gripper", 0)
+    TWO_FINGERS = ("Robot Grippers with 2 Fingers", 1)
+    THREE_FINGERS = ("Robot Grippers with 3 Fingers", 2)
+    FLEX_FINGERS = ("Robot Grippers with Flexible Fingers", 3)
+    MULTI_ADAPT = ("Multi-Finger and Adaptive Grippers", 4)
+    BALL = ("Grain-Filled Flexible Ball Grippers", 5)
+    BELLOWS = ("Bellows Grippers", 6)
+    O_RING = ("O-ring Grippers", 7)
+
+    def __new__(cls, value, rank):
+        obj = str.__new__(cls, value)
+        obj._value_ = value
+        obj.rank = rank
+        return obj
+
+    # Comparison based on rank
+    def __lt__(self, other):
+        if isinstance(other, GripperConfig):
+            return self.rank < other.rank
+        return NotImplemented
+
+    def __le__(self, other):
+        if isinstance(other, GripperConfig):
+            return self.rank <= other.rank
+        return NotImplemented
+
+    def __gt__(self, other):
+        if isinstance(other, GripperConfig):
+            return self.rank > other.rank
+        return NotImplemented
+
+    def __ge__(self, other):
+        if isinstance(other, GripperConfig):
+            return self.rank >= other.rank
+        return NotImplemented

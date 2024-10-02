@@ -1,5 +1,6 @@
 from gripper_configs import GripperConfig
 
+
 class TaskCapability:
     def __init__(self, task: str, mobile: bool, no_arms: int, arm_dof: int, gripper_conf: GripperConfig, rigid_gripper: bool):
         self._tsk = preprocess_string(task)
@@ -52,6 +53,8 @@ class TaskCapability:
         self._arms = min(cap.get_arms(), self._arms)
         self._arm_dof = min(cap.get_arm_dofs(), self._arm_dof)
         self._mobile = cap.is_mobile() and self._mobile
+        self._gripper_conf = min(cap._gripper_conf, self._gripper_conf)
+        self._rigid_gripper = cap.is_rigid_gripper() or self._rigid_gripper
         cap._is_correct = False
 
     def to_dict(self):

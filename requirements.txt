@@ -7,3 +7,4 @@ pattern~=3.6
 spacy~=3.7.2
 openai~=0.27.6
 tensorflow-datasets~=4.9.2
+sentence-transformers~=3.1.1
