@@ -66,7 +66,7 @@ class TaskCapability:
 
 
 def preprocess_string(word: str) -> str:
-    return word.lower().replace('_', ' ').strip()
+    return word.lower().replace('_', ' ').replace('\"', "").strip()
 
 
 def combine_all_tasks(caps: [TaskCapability]) -> [TaskCapability]:

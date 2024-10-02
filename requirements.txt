@@ -6,3 +6,4 @@ numpy~=1.24.3
 pattern~=3.6
 spacy~=3.7.2
 openai~=0.27.6
+tensorflow-datasets~=4.9.2
