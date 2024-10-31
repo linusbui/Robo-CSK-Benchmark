@@ -8,6 +8,7 @@ from narrative_objects_extractor import get_affordances_from_narrative_objects_e
 from object_affordance_tuple import ObjectAffordanceTuple, combine_all_tuples
 from rocs_extractor import get_affordances_from_rocs
 from visual_aff_ds_extractor import get_affordances_from_visual_dataset
+from ai2thor_extractor import get_object_affordances_from_ai2thor
 
 
 def extract_from_all_sources() -> [ObjectAffordanceTuple]:
@@ -16,7 +17,8 @@ def extract_from_all_sources() -> [ObjectAffordanceTuple]:
     res_rocs = get_affordances_from_rocs()
     res_visual_dataset = get_affordances_from_visual_dataset()
     res_coat = get_affordances_from_coat()
-    return res_cskg + res_narrative_objects + res_rocs + res_visual_dataset + res_coat
+    res_ai2thor = get_object_affordances_from_ai2thor()
+    return res_cskg + res_narrative_objects + res_rocs + res_visual_dataset + res_coat + res_ai2thor
 
 
 def filter_combined_results(results: [ObjectAffordanceTuple]):
@@ -29,14 +31,17 @@ def filter_combined_results(results: [ObjectAffordanceTuple]):
         r.remove_affordances(to_rem)
 
 
-def write_affordance_list(res: [ObjectAffordanceTuple]):
+def write_affordance_list(res: [ObjectAffordanceTuple], before_map=True):
     unique_aff = set()
     for r in res:
         for aff in r.get_affordances():
             unique_aff.add(aff.get_affordance())
-
-    with open("../affordances.json", "w") as f:
-        json.dump(sorted(list(unique_aff)), f)
+    if before_map:
+        with open("../affordances.json", "w") as f:
+            json.dump(sorted(list(unique_aff)), f)
+    else:
+        with open("../affordances_after_mapping.json", "w") as f:
+            json.dump(sorted(list(unique_aff)), f)
 
 
 def map_affordances(res: [ObjectAffordanceTuple]) -> [ObjectAffordanceTuple]:
@@ -63,12 +68,24 @@ def write_results_to_file(results: [ObjectAffordanceTuple]):
 
 
 if __name__ == '__main__':
+    # extract and pre-process affordance data
     res = extract_from_all_sources()
     for r in res:
         r.process_affordances()
     res = combine_all_tuples(res)
     filter_combined_results(res)
     res = [r for r in res if r.verify()]
+
+    # handle the affordance mapping
     write_affordance_list(res)
     res = map_affordances(res)
-    write_results_to_file(combine_all_tuples(res))
+
+    # count the final results
+    aff_count = 0
+    for r in res:
+        aff_count += len(r.get_affordances())
+    print(f"Affordance count: {aff_count}")
+
+    # write final results
+    write_affordance_list(res, False)
+    write_results_to_file(res)

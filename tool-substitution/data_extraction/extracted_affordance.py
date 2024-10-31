@@ -2,7 +2,7 @@ import spacy
 
 
 class ExtractedAffordance:
-    trust_mapping = {'Visual Dataset': 1.0, 'CSKG': 0.5, 'Narrative Objects': 0.75, 'COAT': 1.0}
+    trust_mapping = {'Visual Dataset': 1.0, 'CSKG': 0.5, 'Narrative Objects': 0.75, 'COAT': 1.0, 'AI2Thor': 1.0}
     nlp = spacy.load("en_core_web_trf")
 
     def __init__(self, unprocessed: str, sources: [str], rocs_trust=-1.0):

@@ -87,6 +87,12 @@
 		"managing lighting",
 		"operating appliances"
 	],
+	"cool": [
+		"keeping food from going bad",
+		"freezing food",
+		"making ice",
+		"creating frost patterns as decoration"
+	],
 	"cover": [
 		"protecting food",
 		"shielding surfaces",
@@ -192,11 +198,6 @@
 		"adjusting cables",
 		"bending pipes",
 		"grinding surfaces"
-	],
-	"frost": [
-		"freezing food",
-		"making ice",
-		"creating frost patterns as decoration"
 	],
 	"grasp": [
 		"picking-up objects",

@@ -33,30 +33,35 @@ The affordance *illuminate* is employed for the three tasks *increasing (the) br
 
 ## Data Sources
 
-We combine five different data sources to gather the information on object affordances and one source (COAT [2]) for the affordance-task-mapping.
+We combine six different data sources to gather the information on object affordances.
+Additionally, we extend the affordance-task-mapping from [3] to include at least 3 exemplary tasks for each unique affordance.
 For each source, we provide a single file focused on the data extraction.
-We use WordNet [1] to ensure that the found object candidates are actually household objects.
+We use WordNet [1] to ensure that the found object candidates in the CSKG [4] are actually household objects.
 Additionally, to create the ranking of the locations, we manually assign each source a specific trust value based on the reliability.
+If an object-affordance-tuple occurs in multiple sources, their trust value is accumulated.
 
 | Source               | Trust Value | Filtered Objects | Affordances | Unique Affordances | Ref |
 |----------------------|-------------|------------------|-------------|--------------------|-----|
-| COAT                 | 1.00        | 100              | 166         | 22                 | [2] |
-| CSKG                 | 0.50        | 973              | 8215        | 1259               | [3] |
-| Narrative Objects    | 0.75        | 376              | 4511        | 101                | [4] |
-| RoCS                 | 0.75        | 11               | 108         | 10                 | [5] |
-| Visual Affordance DS | 1.00        | 37               | 80          | 15                 | [6] |
-| **SUM**              | -           | **494**          | **3328**    | **86**             |     |
+| AI2Thor              | 1.00        | 115              | 201         | 11                 | [2] |
+| COAT                 | 1.00        | 100              | 166         | 22                 | [3] |
+| CSKG                 | 0.50        | 973              | 8215        | 1259               | [4] |
+| Narrative Objects    | 0.75        | 376              | 4511        | 101                | [5] |
+| RoCS                 | 0.75        | 11               | 108         | 10                 | [6] |
+| Visual Affordance DS | 1.00        | 37               | 80          | 15                 | [7] |
+| **SUM**              | -           | **557**          | **3222**    | **86**             |     |
 
 ## References
 
 [1] G. A. Miller, ‘WordNet: A Lexical Database for English’, Communications of the ACM, vol. 38, no. 11, pp. 39–41, 1995, doi: 10.1145/219717.219748.
 
-[2] A. Agrawal, R. Prabhakar, A. Goyal, and D. Liu, ‘Physical Reasoning and Object Planning for Household Embodied Agents’, Transactions on Machine Learning Research, May 2024, doi: 10.48550/ARXIV.2311.13577.
+[2] E. Kolve et al., ‘AI2-THOR: An Interactive 3D Environment for Visual AI’, 2017, arXiv. doi: 10.48550/ARXIV.1712.05474.
 
-[3] F. Ilievski, P. Szekely, and B. Zhang, ‘CSKG: The CommonSense Knowledge Graph’, in The Semantic Web, vol. 12731, R. Verborgh, K. Hose, H. Paulheim, P.-A. Champin, M. Maleshkova, O. Corcho, P. Ristoski, and M. Alam, Eds., in Lecture Notes in Computer Science, vol. 12731. , Cham: Springer International Publishing, 2021, pp. 680–696. doi: 10.1007/978-3-030-77385-4_41.
+[3] A. Agrawal, R. Prabhakar, A. Goyal, and D. Liu, ‘Physical Reasoning and Object Planning for Household Embodied Agents’, Transactions on Machine Learning Research, May 2024, doi: 10.48550/ARXIV.2311.13577.
 
-[4] M. Pomarlan and R. Porzel, ‘Narrative Objects’, in Proceedings of the IJCAI/ECAI Workshop on Semantic Techniques for Narrative-based Understanding, Jul. 2022.
+[4] F. Ilievski, P. Szekely, and B. Zhang, ‘CSKG: The CommonSense Knowledge Graph’, in The Semantic Web, vol. 12731, R. Verborgh, K. Hose, H. Paulheim, P.-A. Champin, M. Maleshkova, O. Corcho, P. Ristoski, and M. Alam, Eds., in Lecture Notes in Computer Science, vol. 12731. , Cham: Springer International Publishing, 2021, pp. 680–696. doi: 10.1007/978-3-030-77385-4_41.
 
-[5] M. Thosar et al., ‘From Multi-Modal Property Dataset to Robot-Centric Conceptual Knowledge About Household Objects’, Frontiers in Robotics and AI, vol. 8, 2021, doi: 10.3389/frobt.2021.476084.
+[5] M. Pomarlan and R. Porzel, ‘Narrative Objects’, in Proceedings of the IJCAI/ECAI Workshop on Semantic Techniques for Narrative-based Understanding, Jul. 2022.
 
-[6] Z. Khalifa and S. A. A. Shah, ‘A Large Scale Multi-View RGBD Visual Affordance Learning Dataset’, in 2023 IEEE International Conference on Image Processing (ICIP), Kuala Lumpur, Malaysia: IEEE, Oct. 2023, pp. 1325–1329. doi: 10.1109/ICIP49359.2023.10222906.
+[6] M. Thosar et al., ‘From Multi-Modal Property Dataset to Robot-Centric Conceptual Knowledge About Household Objects’, Frontiers in Robotics and AI, vol. 8, 2021, doi: 10.3389/frobt.2021.476084.
+
+[7] Z. Khalifa and S. A. A. Shah, ‘A Large Scale Multi-View RGBD Visual Affordance Learning Dataset’, in 2023 IEEE International Conference on Image Processing (ICIP), Kuala Lumpur, Malaysia: IEEE, Oct. 2023, pp. 1325–1329. doi: 10.1109/ICIP49359.2023.10222906.
