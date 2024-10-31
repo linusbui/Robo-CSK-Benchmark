@@ -166,6 +166,7 @@ cython_debug/
 /tool-substitution/data/
 !/tool-substitution/data/narrative_tools.json
 /collaboration/data/
+/task-specific-csk/data/
 
 # OpenAI credentials
 credentials.json
