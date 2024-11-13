@@ -22,7 +22,7 @@ def get_meal_settings_from_wwd() -> [MealSetting]:
     return res
 
 
-def _get_plate_type_from_dish_type(dish_type: str) -> str:
+def _get_plate_type_from_dish_type(dish_type: str) -> Plate:
     if 'Soup' in dish_type or 'Sauce' in dish_type or 'Salad' in dish_type:
         return Plate.BOWL
     if 'Dessert' in dish_type or 'Side dish' in dish_type or 'Starter' in dish_type:
