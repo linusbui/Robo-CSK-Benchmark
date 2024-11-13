@@ -1,6 +1,7 @@
 import pandas as pd
 
 from meal_setting import MealSetting
+from utensils_plates import Utensil, Plate
 
 
 def get_meal_settings_from_wwd() -> [MealSetting]:
@@ -23,13 +24,13 @@ def get_meal_settings_from_wwd() -> [MealSetting]:
 
 def _get_plate_type_from_dish_type(dish_type: str) -> str:
     if 'Soup' in dish_type or 'Sauce' in dish_type or 'Salad' in dish_type:
-        return 'Bowl'
+        return Plate.BOWL
     if 'Dessert' in dish_type or 'Side dish' in dish_type or 'Starter' in dish_type:
-        return 'Small Plate'
+        return Plate.SMALL
     if 'Small plate / bowl for sharing' in dish_type:
-        return 'Small Plate or Bowl'
+        return Plate.SMALL_OR_BOWL
     if 'Main dish' in dish_type:
-        return 'Normal Plate'
+        return Plate.NORMAL
 
 
 def analyse_utensils() -> [str]:
@@ -54,13 +55,13 @@ def _process_utensils(utensils: [str]) -> [str]:
     for ut in utensils.split(","):
         ut_proc = ut.strip().lower()
         if "fork" in ut_proc:
-            result.append("fork")
+            result.append(Utensil.FORK)
         if "knife" in ut_proc:
-            result.append("knife")
+            result.append(Utensil.KNIFE)
         if "spoon" in ut_proc:
-            result.append("spoon")
+            result.append(Utensil.SPOON)
         if "chopstick" in ut_proc:
-            result.append("chopsticks")
+            result.append(Utensil.CHOPS)
     return result
 
 if __name__ == '__main__':
