@@ -166,7 +166,8 @@ cython_debug/
 /tool-substitution/data/
 !/tool-substitution/data/narrative_tools.json
 /collaboration/data/
-/task-specific-csk/data/
+/table setting/data/
+!/table setting/data/recipe_id_mapping.csv
 
 # OpenAI credentials
 credentials.json

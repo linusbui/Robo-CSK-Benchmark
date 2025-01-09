@@ -1,11 +1,14 @@
 from enum import Enum
 
+
 class Utensil(str, Enum):
+    HANDS = "Hands"
+    TONGS = "Tongs"
     KNIFE = "Knife"
     FORK = "Fork"
-    SPOON = "Spoon"
+    SKEWER = "Skewer"
     CHOPS = "Chopsticks"
-    HAND = "Hand"
+    SPOON = "Spoon"
 
     def __new__(cls, value):
         obj = str.__new__(cls, value)
@@ -15,11 +18,12 @@ class Utensil(str, Enum):
     def __str__(self):
         return self.value
 
+
 class Plate(str, Enum):
+    DINNER = "Dinner Plate"
+    DESSERT = "Dessert Plate"
     BOWL = "Bowl"
-    SMALL = "Small Plate"
-    NORMAL = "Normal Plate"
-    SMALL_OR_BOWL = "Small Plate or Bowl"
+    COUPE = "Coupe Plate"
 
     def __new__(cls, value):
         obj = str.__new__(cls, value)
