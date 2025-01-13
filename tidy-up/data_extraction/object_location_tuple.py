@@ -1,7 +1,9 @@
-from pattern.text.en import singularize
+from nltk.stem import WordNetLemmatizer
 
 from ranked_location import RankedLocation
 from utils import check_if_household_location, check_if_household_object
+
+wnl = WordNetLemmatizer()
 
 
 class ObjectLocationTuple:
@@ -65,7 +67,7 @@ class ObjectLocationTuple:
 
 def preprocess_string(word: str) -> str:
     processed = word.lower().replace('the', '').replace('_', ' ').strip()
-    return singularize(processed)
+    return wnl.lemmatize(processed)
 
 
 def combine_all_tuples(tuples: [ObjectLocationTuple]) -> [ObjectLocationTuple]:
