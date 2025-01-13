@@ -23,7 +23,7 @@ class PreferredMealSetting:
         self._user_id = user_id
         self._meal = meal
         self._recipe1m_id = r_id
-        self._plate = ""
+        self._plate = Plate.COUPE
         self._utensils = _get_utensil_mapping("")
 
     def __str__(self):
@@ -47,7 +47,7 @@ class PreferredMealSetting:
     def needs_specific_utensil(self, utl: Utensil) -> bool:
         return self._utensils.get(Utensil(utl))
 
-    def get_plate(self) -> str:
+    def get_plate(self) -> Plate:
         return self._plate
 
     def _get_utensils_as_str_arr(self) -> [str]:
@@ -69,6 +69,5 @@ class PreferredMealSetting:
             'Skewer?': self.needs_specific_utensil(Utensil.SKEWER),
             'Chopsticks?': self.needs_specific_utensil(Utensil.CHOPS),
             'Spoon?': self.needs_specific_utensil(Utensil.SPOON),
-            'Utensils': self._get_utensils_as_str_arr(),
             'User ID': self.get_user_id()
         }

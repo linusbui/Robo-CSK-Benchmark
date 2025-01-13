@@ -5,6 +5,7 @@ import re
 import pandas as pd
 
 from preferred_meal_setting import PreferredMealSetting
+from utensils_plates import Plate, Utensil
 
 
 def _get_id_for_recipe(recipe: str) -> str:
@@ -49,8 +50,35 @@ def get_user_preferred_settings() -> [PreferredMealSetting]:
     return meals
 
 
+def combine_user_preferences(meals: [PreferredMealSetting]):
+    mapping = pd.read_csv("../data/recipe_id_mapping.csv", delimiter=',', on_bad_lines='skip')
+    result = pd.DataFrame(
+        columns=['recipe_id', 'name', 'hands', 'tongs', 'knife', 'fork', 'skewer', 'chopsticks', 'spoon',
+                 'dinner plate', 'dessert plate', 'bowl', 'coupe plate'])
+
+    for idx, meal in mapping.iterrows():
+        utensils = {uts: 0 for uts in Utensil}
+        plates = {plt: 0 for plt in Plate}
+        for m in meals:
+            if m.get_recipe_id() != meal["Recipe1M+ ID"]:
+                continue
+            for u in Utensil:
+                if m.needs_specific_utensil(u):
+                    utensils[u] += 1
+            plates[m.get_plate()] += 1
+        new_row = pd.Series({"recipe_id": meal["Recipe1M+ ID"], "name": meal["Name"], "hands": utensils[Utensil.HANDS],
+                             "tongs": utensils[Utensil.TONGS], "knife": utensils[Utensil.KNIFE],
+                             "fork": utensils[Utensil.FORK], "skewer": utensils[Utensil.SKEWER],
+                             "chopsticks": utensils[Utensil.CHOPS], "spoon": utensils[Utensil.SPOON],
+                             "dinner plate": plates[Plate.DINNER], "dessert plate": plates[Plate.DESSERT],
+                             "bowl": plates[Plate.BOWL], "coupe plate": plates[Plate.COUPE]})
+        result = pd.concat([result, new_row.to_frame().T], ignore_index=True)
+    result.to_csv('../combined_prolific_data.csv', index=False)
+
+
 if __name__ == '__main__':
     res = get_user_preferred_settings()
-    dict_list = [re.to_dict() for re in sorted(res, key=lambda r: r.get_meal())]
+    dict_list = [re.to_dict() for re in sorted(res, key=lambda r: r.get_recipe_id())]
     df = pd.DataFrame(dict_list)
     df.to_csv('../prolific_user_data.csv', index=False)
+    combine_user_preferences(res)
