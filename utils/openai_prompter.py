@@ -1,5 +1,4 @@
 import json
-import os
 
 from openai import OpenAI
 
@@ -9,7 +8,7 @@ from utils.prompter import Prompter
 class OpenAIPrompter(Prompter):
     def __init__(self):
         super().__init__("o1-2024-12-17")
-        json_text = json.load(open(os.path.join("./credentials.json")))
+        json_text = json.load(open("../credentials.json"))
         self.client = OpenAI(
             api_key=json_text["api_key"],
         )
@@ -21,7 +20,6 @@ class OpenAIPrompter(Prompter):
                 {"role": "system", "content": system_msg},
                 {"role": "user", "content": user_msg},
                 {"role": "user", "content": question},
-            ],
-            temperature=self.temperature,
+            ]
         )
         return response.choices[0].message.content
