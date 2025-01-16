@@ -34,7 +34,7 @@ def write_results_to_file(results: [ModelResultTuple], model: str):
 
 
 def format_generated_locations(locations: str) -> [str]:
-    return locations.lower().split(',')
+    return [location.strip() for location in locations.lower().split(',')]
 
 
 def format_gold_standard_locations(locations) -> [str]:
