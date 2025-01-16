@@ -65,13 +65,13 @@ class ModelResultTuple:
 
     def to_dict(self):
         return {
-            'Object': self.get_object(),
-            'Predicted Locations': self.get_predicted_locations(),
-            'Reciprocal Rank': self.get_reciprocal_rank(),
-            'Average Precision@1': self.get_average_precision_at1(),
-            'Average Precision@3': self.get_average_precision_at3(),
-            'Average Precision@5': self.get_average_precision_at5(),
-            'Recall@1': self.get_recall_at1(),
-            'Recall@3': self.get_recall_at3(),
-            'Recall@5': self.get_recall_at5()
+            'object': self.get_object(),
+            'pred_locations': self.get_predicted_locations(),
+            'rr': self.get_reciprocal_rank(),
+            'ap@1': self.get_average_precision_at1(),
+            'ap@3': self.get_average_precision_at3(),
+            'ap@5': self.get_average_precision_at5(),
+            'rec@1': self.get_recall_at1(),
+            'rec@3': self.get_recall_at3(),
+            'rec@5': self.get_recall_at5()
         }

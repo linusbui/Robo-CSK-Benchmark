@@ -20,7 +20,8 @@ def calculate_average_precision_at_k(k: int, retrieved: [str], gold_standard: [s
 
 def calculate_precision_at_k(k: int, retrieved: [str], gold_standard: [str]) -> float:
     assert k >= 1
-    assert k <= len(gold_standard)
+    if k > len(gold_standard):
+        k = len(gold_standard)
     c = 0
     for r in retrieved[0:k]:
         if r in gold_standard:
@@ -30,7 +31,8 @@ def calculate_precision_at_k(k: int, retrieved: [str], gold_standard: [str]) -> 
 
 def calculate_recall_at_k(k: int, retrieved: [str], gold_standard: [str]) -> float:
     assert k >= 1
-    assert k <= len(gold_standard)
+    if k > len(gold_standard):
+        k = len(gold_standard)
     c = 0
     for r in retrieved[0:k]:
         if r in gold_standard:

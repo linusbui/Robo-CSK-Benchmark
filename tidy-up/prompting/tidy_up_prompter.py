@@ -43,7 +43,7 @@ def format_gold_standard_locations(locations) -> [str]:
 
 
 def calculate_average(results: [ModelResultTuple], model: str):
-    average = {met: 0 for met in ['rr', 'ap@1', 'ap@3', 'ap@5', 'rec@1', 'reca@3', 'rec@5']}
+    average = {met: 0 for met in ['rr', 'ap@1', 'ap@3', 'ap@5', 'rec@1', 'rec@3', 'rec@5']}
     for res in results:
         average['rr'] += res.get_reciprocal_rank()
         average['ap@1'] += res.get_average_precision_at1()
@@ -57,3 +57,7 @@ def calculate_average(results: [ModelResultTuple], model: str):
                          'rec@1': (average['rec@1'] / len(results)), 'rec@3': (average['rec@3'] / len(results)),
                          'rec@5': (average['rec@5'] / len(results))})
     return new_row.to_frame().T
+
+
+if __name__ == "__main__":
+    prompt_all_models()
