@@ -52,10 +52,10 @@ def calculate_average(results: [ModelResultTuple], model: str):
         average['rec@1'] += res.get_recall_at1()
         average['rec@3'] += res.get_recall_at3()
         average['rec@5'] += res.get_recall_at5()
-    new_row = pd.Series({'model': model, 'rr': (average['rr'] / len(results)), 'ap@1': (average['ap@1'] / len(results)),
-                         'ap@3': (average['ap@3'] / len(results)), 'ap@5': (average['ap@5'] / len(results)),
-                         'rec@1': (average['rec@1'] / len(results)), 'rec@3': (average['rec@3'] / len(results)),
-                         'rec@5': (average['rec@5'] / len(results))})
+    new_row = pd.Series({'model': model, 'mrr': (average['rr'] / len(results)), 'map@1': (average['ap@1'] / len(results)),
+                         'map@3': (average['ap@3'] / len(results)), 'map@5': (average['ap@5'] / len(results)),
+                         'mrec@1': (average['rec@1'] / len(results)), 'mrec@3': (average['rec@3'] / len(results)),
+                         'mrec@5': (average['rec@5'] / len(results))})
     return new_row.to_frame().T
 
 
