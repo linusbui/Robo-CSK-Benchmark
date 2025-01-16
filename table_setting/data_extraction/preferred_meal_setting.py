@@ -23,7 +23,7 @@ class PreferredMealSetting:
         self._user_id = user_id
         self._meal = meal
         self._recipe1m_id = r_id
-        self._plate = Plate.COUPE
+        self._plate = Plate.NONE
         self._utensils = _get_utensil_mapping("")
 
     def __str__(self):

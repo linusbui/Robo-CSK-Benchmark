@@ -24,6 +24,7 @@ class Plate(str, Enum):
     DESSERT = "Dessert Plate"
     BOWL = "Bowl"
     COUPE = "Coupe Plate"
+    NONE = "None"
 
     def __new__(cls, value):
         obj = str.__new__(cls, value)
