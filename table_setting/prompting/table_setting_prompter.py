@@ -8,8 +8,8 @@ prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
 utensils_string = ', '.join([str(utensil) for utensil in Utensil])
 plates_string = ', '.join([str(plate) for plate in Plate])
 system_msg = 'Imagine you are a robot setting a table for a meal.'
-user_msg_cut = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}'
-user_msg_plat = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string}'
+user_msg_cut = f'What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}'
+user_msg_plat = f'What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}'
 
 
 def prompt_all_models():
@@ -58,8 +58,8 @@ def get_utensils(row) -> [Utensil]:
     thresh = 10
     for c in columns:
         val = row[c]
-        if val > thresh:
-            utensils.append(Utensil(c))
+        if val >= thresh:
+            utensils.append(transform_utensil_prediction(c))
     return utensils
 
 
