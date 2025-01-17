@@ -20,7 +20,7 @@ def prompt_all_models():
             is_mobile = row['Mobile?']
             no_arms = row['Arms']
             dofs = row['DoFs']
-            gripper = row['Gripper Config'].lower()
+            gripper = row['Gripper Config']
             has_rigid_gripper = row['Rigid Gripper?']
 
             # create & evaluate positive question (-> correct configuration)
@@ -72,19 +72,36 @@ def write_results_to_file(results: [CollaborationModelResult], model: str):
 
 
 def get_binary_answer(answer: str) -> bool:
-    return answer.lower() == 'yes'
+    return 'yes' in answer.lower()
 
 
 def calculate_metrics(results: [CollaborationModelResult], model: str):
+    assert len(results) > 0
     counter = {met: 0 for met in ['tn', 'tp', 'fn', 'fp']}
     for res in results:
         ct = res.get_classification_type()
         counter[ct] += 1
     assert (counter['tn'] + counter['tp'] + counter['fn'] + counter['fp']) == len(results)
+
+    if (counter['tp'] + counter['fp']) == 0:
+        precision = 0.0
+    else:
+        precision = counter['tp'] / (counter['tp'] + counter['fp'])
+    if (counter['tp'] + counter['fn']) == 0:
+        recall = 0.0
+    else:
+        recall = counter['tp'] / (counter['tp'] + counter['fn'])
+    if (counter['tn'] + counter['fp']) == 0:
+        specificity = 0.0
+    else:
+        specificity = counter['tn'] / (counter['tn'] + counter['fp'])
+
     new_row = pd.Series(
         {'model': model, 'tn': counter['tn'], 'tp': counter['tp'], 'fn': counter['fn'], 'fp': counter['fp'],
-         'acc': (counter['tp'] + counter['tn']) / len(results), 'prec': counter['tp'] / (counter['tp'] + counter['fp']),
-         'rec': counter['tp'] / (counter['tp'] + counter['fn']),
-         'spec': counter['tn'] / (counter['tn'] + counter['fp']),
-         'f1': 2*counter['tp'] / (2*counter['tp'] + counter['fp'] + counter['fn'])})
+         'acc': (counter['tp'] + counter['tn']) / len(results), 'prec': precision, 'rec': recall, 'spec': specificity,
+         'f1': 2 * precision * recall / (precision + recall)})
     return new_row.to_frame().T
+
+
+if __name__ == "__main__":
+    prompt_all_models()

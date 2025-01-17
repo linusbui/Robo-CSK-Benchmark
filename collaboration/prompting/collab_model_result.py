@@ -29,8 +29,8 @@ class CollaborationModelResult:
 
     def to_dict(self):
         return {
-            'Task': self.get_task(),
-            'Hardware Config': self.get_hardware(),
-            'Model Answer': self.get_predicted_answer(),
-            'Correct Answer': self.get_correct_answer()
+            'task': self.get_task(),
+            'hardware_config': self.get_hardware(),
+            'model_answer': self.get_predicted_answer(),
+            'correct_answer': self.get_correct_answer()
         }
