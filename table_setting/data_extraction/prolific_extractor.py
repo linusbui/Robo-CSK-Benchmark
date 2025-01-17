@@ -20,7 +20,11 @@ def get_user_preferred_settings() -> [PreferredMealSetting]:
         if filename.endswith('.json'):
             file_path = os.path.join(folder_path, filename)
             with open(file_path, 'r') as file:
-                data = json.load(file)
+                try:
+                    data = json.load(file)
+                except json.decoder.JSONDecodeError:
+                    print(f'DecoderError on file: {file_path}')
+                    continue
                 user_id = data['id']
                 for header, answer in data['answers'].items():
                     # get the recipe title and thus also the recipe ID
@@ -29,7 +33,7 @@ def get_user_preferred_settings() -> [PreferredMealSetting]:
                     if recipe_name is None:
                         continue
                     recipe_wo_brackets = re.sub(r'\s*\(.*?\)', '', recipe_name)
-                    recipe_id = _get_id_for_recipe(recipe_wo_brackets)
+                    recipe_id = _get_id_for_recipe(fix_prolific_data_errors(recipe_wo_brackets))
                     # Get the meal if it already exists (same id & same user id)
                     meal = None
                     for m in meals:
@@ -48,6 +52,18 @@ def get_user_preferred_settings() -> [PreferredMealSetting]:
 
                     meals.append(meal)
     return meals
+
+
+def fix_prolific_data_errors(recipe: str) -> str:
+    if recipe == "Vegan Sushi Roll with Avocado (Carrot and Cucumber)":
+        return "Vegan Sushi Roll with Avocado, Carrot and Cucumber"
+    if recipe == "Eggplant Curry":
+        return "Eggplant Curry (Indian)"
+    if recipe == "Banh Mi":
+        return "Banh Mi (Vietnamese Pulled Pork Sandwich)"
+    if recipe == "Tom Kha Gai":
+        return "Tom Kha Gai (Thai Spicy Coconut Soup)"
+    return recipe
 
 
 def combine_user_preferences(meals: [PreferredMealSetting]):
