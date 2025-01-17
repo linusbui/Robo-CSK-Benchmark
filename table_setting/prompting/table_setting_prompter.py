@@ -59,7 +59,7 @@ def get_utensils(row) -> [Utensil]:
     for c in columns:
         val = row[c]
         if val >= thresh:
-            utensils.append(transform_utensil_prediction(c))
+            utensils.append(transform_utensil_prediction(c)[0])
     return utensils
 
 
@@ -97,3 +97,7 @@ def calculate_average(results: [TableSettingModelResult], model: str):
     new_row = pd.Series(
         {'model': model, 'acc': (average['acc'] / len(results)), 'jacc': (average['jacc'] / len(results))})
     return new_row.to_frame().T
+
+
+if __name__ == "__main__":
+    prompt_all_models()

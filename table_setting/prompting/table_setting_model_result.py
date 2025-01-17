@@ -12,7 +12,7 @@ class TableSettingModelResult:
     def add_predicted_plate(self, predicted_plate: Plate):
         self._pred_plate = predicted_plate
 
-    def add_predicted_utensils(self, predicted_utensils: Utensil):
+    def add_predicted_utensils(self, predicted_utensils: [Utensil]):
         self._pred_utensils = predicted_utensils
 
     def get_meal(self) -> str:
@@ -40,11 +40,11 @@ class TableSettingModelResult:
 
     def to_dict(self):
         return {
-            'Meal': self.get_meal(),
-            'Predicted Plate': str(self.get_predicted_plate()),
-            'Correct Plate': str(self.get_correct_plate()),
-            'Predicted Utensils': str(self.get_predicted_utensils()),
-            'Correct Utensils': str(self.get_correct_utensils()),
-            'Correct Plate?': self.get_plate_pred_correctness(),
-            'Jaccard Utensils': self.get_jaccard_for_utensils()
+            'meal': self.get_meal(),
+            'predicted_plate': str(self.get_predicted_plate()),
+            'correct_plate': str(self.get_correct_plate()),
+            'predicted_utensils': str(self.get_predicted_utensils()),
+            'correct_utensils': str(self.get_correct_utensils()),
+            'plate_is_correct': self.get_plate_pred_correctness(),
+            'jaccard_utensil': self.get_jaccard_for_utensils()
         }
