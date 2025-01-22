@@ -4,7 +4,8 @@ from table_setting.data_extraction.utensils_plates import Utensil, Plate
 from table_setting.prompting.table_setting_model_result import TableSettingModelResult
 from utils import OpenAIPrompter, LlamaPrompter, GemmaPrompter
 
-prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
+#prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
+prompters = [LlamaPrompter(), GemmaPrompter()]
 utensils_string = ', '.join([str(utensil) for utensil in Utensil])
 plates_string = ', '.join([str(plate) for plate in Plate])
 system_msg = 'Imagine you are a robot setting a table for a meal.'

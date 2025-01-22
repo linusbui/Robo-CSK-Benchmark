@@ -4,11 +4,11 @@ import random
 
 import pandas as pd
 
-from tool_sub_result import ToolSubstitutionResult
-from utils import OpenAIPrompter
+from tool_use_result import ToolSubstitutionResult
+from utils import LlamaPrompter, GemmaPrompter
 
 # prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
-prompters = [OpenAIPrompter()]
+prompters = [LlamaPrompter(), GemmaPrompter()]
 system_msg = 'Imagine you are a robot in a household environment being confronted with a task a list of tools.'
 user_msg = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
 
@@ -81,6 +81,9 @@ def calculate_average(results: [ToolSubstitutionResult], model: str):
     return new_row.to_frame().T
 
 
-if __name__ == "__main__":
+def execute_prompting():
     preprocess_affordance_data()
     prompt_all_models()
+
+if __name__ == "__main__":
+    execute_prompting()

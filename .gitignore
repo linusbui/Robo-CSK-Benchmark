@@ -162,9 +162,9 @@ cython_debug/
 .idea/
 
 # data sources
-/tidy-up/data/
-/tool-substitution/data/
-!/tool-substitution/data/narrative_tools.json
+/tidy_up/data/
+/tool_usage/data/
+!/tool_usage/data/narrative_tools.json
 /collaboration/data/
 /table_setting/data/
 !/table_setting/data/recipe_id_mapping.csv

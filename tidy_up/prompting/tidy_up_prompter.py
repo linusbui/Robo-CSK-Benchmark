@@ -5,7 +5,8 @@ import pandas as pd
 from model_result import ModelResultTuple
 from utils import OpenAIPrompter, LlamaPrompter, GemmaPrompter
 
-prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
+# prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
+prompters = [LlamaPrompter(), GemmaPrompter()]
 system_msg = 'Imagine you are a robot tidying up a household.'
 user_msg = 'What are the prototypical locations in a household where the following object can be found? Please only answer with a comma separated & ranked list of locations.'
 

@@ -4,7 +4,8 @@ from collaboration.data_extraction.gripper_configs import GripperConfig
 from collaboration.prompting.collab_model_result import CollaborationModelResult
 from utils import OpenAIPrompter, LlamaPrompter, GemmaPrompter
 
-prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
+# prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
+prompters = [LlamaPrompter(), GemmaPrompter()]
 system_msg = 'Imagine you are a robot with a given hardware configuration and you should decide whether you are capable of executing a task.'
 user_msg = 'Please only answer with Yes or No.'
 

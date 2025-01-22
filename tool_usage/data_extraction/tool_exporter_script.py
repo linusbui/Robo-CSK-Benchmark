@@ -1,6 +1,6 @@
 # This script has been used to create an extract from the complete 'Narrative Objects' KG To execute it, follow the
 # instructions here: https://github.com/ease-crc/ease_lexical_resources/wiki/Querying-DFL-with-a-DL-reasoner The
-# resulting JSON file can be found in tool-substitution/data and is further processed through the
+# resulting JSON file can be found in tool_usage/data and is further processed through the
 # narrative_objects_extractor.py
 
 import json
