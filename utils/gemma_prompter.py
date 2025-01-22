@@ -24,7 +24,7 @@ class GemmaPrompter(Prompter):
         outputs = self.model.generate(input_ids=inputs.to(self.model.device),
                                       max_new_tokens=self.max_new_tokens,
                                       do_sample=False,  # No randomness if False
-                                      temperature=self.temperature,
+                                      temperature=None,
                                       top_p=None)
         outputs = self.tokenizer.decode(outputs[0, len(inputs):])
         match = re.search(r"<start_of_turn>model(.*?)<end_of_turn>", outputs, re.DOTALL)
