@@ -17,7 +17,7 @@ class LlamaPrompter(Prompter):
             bnb_4bit_use_double_quant=True,
         )
         model_id = transformers.AutoModelForCausalLM.from_pretrained(
-            self.model_name,
+            f'meta-llama/{self.model_name}',
             quantization_config=bnb_config,
             device_map="auto",
             trust_remote_code=True,

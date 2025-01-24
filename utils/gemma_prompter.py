@@ -11,7 +11,7 @@ class GemmaPrompter(Prompter):
         super().__init__("gemma-2-27b-it")
         self.tokenizer = transformers.AutoTokenizer.from_pretrained(f'google/{self.model_name}')
         self.model = transformers.AutoModelForCausalLM.from_pretrained(
-            self.model_name,
+            f'google/{self.model_name}',
             device_map="auto",
             torch_dtype=torch.bfloat16
         )
