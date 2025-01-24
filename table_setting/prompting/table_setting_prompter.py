@@ -2,10 +2,8 @@ import pandas as pd
 
 from table_setting.data_extraction.utensils_plates import Utensil, Plate
 from table_setting.prompting.table_setting_model_result import TableSettingModelResult
-from utils import OpenAIPrompter, LlamaPrompter, GemmaPrompter
+from utils.prompter import Prompter
 
-#prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
-prompters = [LlamaPrompter(), GemmaPrompter()]
 utensils_string = ', '.join([str(utensil) for utensil in Utensil])
 plates_string = ', '.join([str(plate) for plate in Plate])
 system_msg = 'Imagine you are a robot setting a table for a meal.'
@@ -13,7 +11,7 @@ user_msg_cut = f'What are the types of cutlery you would use to eat that meal? P
 user_msg_plat = f'What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}'
 
 
-def prompt_all_models():
+def prompt_all_models(prompters: [Prompter]):
     comb_result = pd.DataFrame(columns=['model', 'acc', 'jacc'])
     for prompter in prompters:
         data = pd.read_csv('../combined_prolific_data.csv', delimiter=',', on_bad_lines='skip')
@@ -98,7 +96,3 @@ def calculate_average(results: [TableSettingModelResult], model: str):
     new_row = pd.Series(
         {'model': model, 'acc': (average['acc'] / len(results)), 'jacc': (average['jacc'] / len(results))})
     return new_row.to_frame().T
-
-
-if __name__ == "__main__":
-    prompt_all_models()

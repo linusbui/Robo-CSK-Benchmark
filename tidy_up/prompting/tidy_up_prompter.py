@@ -3,15 +3,13 @@ import ast
 import pandas as pd
 
 from model_result import ModelResultTuple
-from utils import OpenAIPrompter, LlamaPrompter, GemmaPrompter
+from utils.prompter import Prompter
 
-# prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
-prompters = [LlamaPrompter(), GemmaPrompter()]
 system_msg = 'Imagine you are a robot tidying up a household.'
 user_msg = 'What are the prototypical locations in a household where the following object can be found? Please only answer with a comma separated & ranked list of locations.'
 
 
-def prompt_all_models():
+def prompt_all_models(prompters: [Prompter]):
     comb_result = pd.DataFrame(columns=['model', 'rr', 'ap@1', 'ap@3', 'ap@5', 'rec@1', 'rec@3', 'rec@5'])
     for prompter in prompters:
         data = pd.read_csv('../tidy_up_data.csv', delimiter=',', on_bad_lines='skip')
@@ -58,7 +56,3 @@ def calculate_average(results: [ModelResultTuple], model: str):
                          'mrec@1': (average['rec@1'] / len(results)), 'mrec@3': (average['rec@3'] / len(results)),
                          'mrec@5': (average['rec@5'] / len(results))})
     return new_row.to_frame().T
-
-
-if __name__ == "__main__":
-    prompt_all_models()

@@ -2,15 +2,13 @@ import pandas as pd
 
 from collaboration.data_extraction.gripper_configs import GripperConfig
 from collaboration.prompting.collab_model_result import CollaborationModelResult
-from utils import OpenAIPrompter, LlamaPrompter, GemmaPrompter
+from utils.prompter import Prompter
 
-# prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
-prompters = [LlamaPrompter(), GemmaPrompter()]
 system_msg = 'Imagine you are a robot with a given hardware configuration and you should decide whether you are capable of executing a task.'
 user_msg = 'Please only answer with Yes or No.'
 
 
-def prompt_all_models():
+def prompt_all_models(prompters: [Prompter]):
     comb_result = pd.DataFrame(columns=['model', 'tn', 'tp', 'fn', 'fp', 'acc', 'prec', 'rec', 'spec', 'f1'])
     for prompter in prompters:
         data = pd.read_csv('../collaboration_data.csv', delimiter=',', on_bad_lines='skip')
@@ -102,7 +100,3 @@ def calculate_metrics(results: [CollaborationModelResult], model: str):
          'acc': (counter['tp'] + counter['tn']) / len(results), 'prec': precision, 'rec': recall, 'spec': specificity,
          'f1': 2 * precision * recall / (precision + recall)})
     return new_row.to_frame().T
-
-
-if __name__ == "__main__":
-    prompt_all_models()

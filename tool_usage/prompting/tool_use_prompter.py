@@ -5,10 +5,8 @@ import random
 import pandas as pd
 
 from tool_use_result import ToolSubstitutionResult
-from utils import LlamaPrompter, GemmaPrompter
+from utils.prompter import Prompter
 
-# prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
-prompters = [LlamaPrompter(), GemmaPrompter()]
 system_msg = 'Imagine you are a robot in a household environment being confronted with a task a list of tools.'
 user_msg = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
 
@@ -27,7 +25,7 @@ def preprocess_affordance_data():
                 affordance_map[aff].append(row['Object'])
 
 
-def prompt_all_models():
+def prompt_all_models(prompters: [Prompter]):
     comb_result = pd.DataFrame(columns=['model', 'acc'])
     for prompter in prompters:
         with open("../affordance_task_map.json") as f:
@@ -81,9 +79,6 @@ def calculate_average(results: [ToolSubstitutionResult], model: str):
     return new_row.to_frame().T
 
 
-def execute_prompting():
+def execute_prompting(prompters: [Prompter]):
     preprocess_affordance_data()
-    prompt_all_models()
-
-if __name__ == "__main__":
-    execute_prompting()
+    prompt_all_models(prompters)
