@@ -1,4 +1,4 @@
-from metric_calculator import calculate_reciprocal_rank, calculate_average_precision_at_k, calculate_recall_at_k
+from tidy_up.prompting.metric_calculator import calculate_reciprocal_rank, calculate_average_precision_at_k, calculate_recall_at_k
 
 
 class TidyUpResult:

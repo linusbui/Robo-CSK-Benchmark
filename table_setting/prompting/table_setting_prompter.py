@@ -14,7 +14,7 @@ user_msg_plat = f'What is the type of plate you would use to eat that meal? Plea
 def prompt_all_models(prompters: [Prompter]):
     comb_result = pd.DataFrame(columns=['model', 'acc', 'jacc'])
     for prompter in prompters:
-        data = pd.read_csv('../combined_prolific_data.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
         for index, row in data.iterrows():
             # setup meal name & get gold standard data
@@ -36,7 +36,7 @@ def prompt_all_models(prompters: [Prompter]):
             results.append(tup)
         write_results_to_file(results, prompter.model_name)
         comb_result = pd.concat([comb_result, calculate_average(results, prompter.model_name)], ignore_index=True)
-    comb_result.to_csv('../results/model_overview.csv', index=False)
+    comb_result.to_csv('table_setting/results/model_overview.csv', index=False)
 
 
 def get_fitting_plate(row) -> Plate:
@@ -84,7 +84,7 @@ def transform_plate_prediction(pred: str) -> Plate:
 def write_results_to_file(results: [TableSettingModelResult], model: str):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv(f'../results/{model}.csv', index=False)
+    df.to_csv(f'table_setting/results/{model}.csv', index=False)
 
 
 def calculate_average(results: [TableSettingModelResult], model: str):

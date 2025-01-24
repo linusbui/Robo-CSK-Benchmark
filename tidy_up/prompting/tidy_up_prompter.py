@@ -2,7 +2,7 @@ import ast
 
 import pandas as pd
 
-from tidy_up_result import TidyUpResult
+from tidy_up.prompting.tidy_up_result import TidyUpResult
 from utils.prompter import Prompter
 
 system_msg = 'Imagine you are a robot tidying up a household.'
@@ -12,7 +12,7 @@ user_msg = 'What are the prototypical locations in a household where the followi
 def prompt_all_models(prompters: [Prompter]):
     comb_result = pd.DataFrame(columns=['model', 'rr', 'ap@1', 'ap@3', 'ap@5', 'rec@1', 'rec@3', 'rec@5'])
     for prompter in prompters:
-        data = pd.read_csv('../tidy_up_data.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('tidy_up/tidy_up_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
         for index, row in data.iterrows():
             obj = row['Object']
@@ -23,13 +23,13 @@ def prompt_all_models(prompters: [Prompter]):
             results.append(tup)
         write_results_to_file(results, prompter.model_name)
         comb_result = pd.concat([comb_result, calculate_average(results, prompter.model_name)], ignore_index=True)
-    comb_result.to_csv('../results/model_overview.csv', index=False)
+    comb_result.to_csv('tidy_up/results/model_overview.csv', index=False)
 
 
 def write_results_to_file(results: [TidyUpResult], model: str):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv(f'../results/{model}.csv', index=False)
+    df.to_csv(f'tidy_up/results/{model}.csv', index=False)
 
 
 def format_generated_locations(locations: str) -> [str]:

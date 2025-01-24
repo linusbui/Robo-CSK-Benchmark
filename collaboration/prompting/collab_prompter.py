@@ -11,7 +11,7 @@ user_msg = 'Please only answer with Yes or No.'
 def prompt_all_models(prompters: [Prompter]):
     comb_result = pd.DataFrame(columns=['model', 'tn', 'tp', 'fn', 'fp', 'acc', 'prec', 'rec', 'spec', 'f1'])
     for prompter in prompters:
-        data = pd.read_csv('../collaboration_data.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('collaboration/collaboration_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
         for index, row in data.iterrows():
             # get data from csv
@@ -38,7 +38,7 @@ def prompt_all_models(prompters: [Prompter]):
                 results.append(neg_tup)
         write_results_to_file(results, prompter.model_name)
         comb_result = pd.concat([comb_result, calculate_metrics(results, prompter.model_name)], ignore_index=True)
-    comb_result.to_csv('../results/model_overview.csv', index=False)
+    comb_result.to_csv('collaboration/results/model_overview.csv', index=False)
 
 
 def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: str, is_rigid: bool, is_positive=True) -> str:
@@ -67,7 +67,7 @@ def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: 
 def write_results_to_file(results: [CollaborationModelResult], model: str):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv(f'../results/{model}.csv', index=False)
+    df.to_csv(f'collaboration/results/{model}.csv', index=False)
 
 
 def get_binary_answer(answer: str) -> bool:
