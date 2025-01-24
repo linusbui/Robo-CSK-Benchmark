@@ -66,7 +66,7 @@ def get_unhelpful_tools_for_affordance(affordance: str, amount=4) -> [str]:
 def write_results_to_file(results: [ToolSubstitutionResult], model: str):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv(f'tool_usage/results/{model}.csv', index=False)
+    df.to_csv(f'tool_usage/results/{model.lower()}.csv', index=False)
 
 
 def calculate_average(results: [ToolSubstitutionResult], model: str):

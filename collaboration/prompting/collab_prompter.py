@@ -67,7 +67,7 @@ def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: 
 def write_results_to_file(results: [CollaborationModelResult], model: str):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv(f'collaboration/results/{model}.csv', index=False)
+    df.to_csv(f'collaboration/results/{model.lower()}.csv', index=False)
 
 
 def get_binary_answer(answer: str) -> bool:

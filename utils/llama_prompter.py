@@ -6,8 +6,8 @@ from utils.prompter import Prompter
 
 class LlamaPrompter(Prompter):
     def __init__(self, max_new_tokens=10):
-        super().__init__("meta-llama/Llama-3.3-70B-Instruct")
-        self.tokenizer = transformers.AutoTokenizer.from_pretrained(self.model_name)
+        super().__init__("Llama-3.3-70B-Instruct")
+        self.tokenizer = transformers.AutoTokenizer.from_pretrained(f'meta-llama/{self.model_name}')
         self.tokenizer.pad_token_id = self.tokenizer.eos_token_id  # for open-ended generation
         self.max_new_tokens = max_new_tokens
         bnb_config = transformers.BitsAndBytesConfig(

@@ -8,8 +8,8 @@ from utils.prompter import Prompter
 
 class GemmaPrompter(Prompter):
     def __init__(self, max_new_tokens=10):
-        super().__init__("google/gemma-2-27b-it")
-        self.tokenizer = transformers.AutoTokenizer.from_pretrained(self.model_name)
+        super().__init__("gemma-2-27b-it")
+        self.tokenizer = transformers.AutoTokenizer.from_pretrained(f'google/{self.model_name}')
         self.model = transformers.AutoModelForCausalLM.from_pretrained(
             self.model_name,
             device_map="auto",

@@ -9,6 +9,10 @@ prompters = [GemmaPrompter()]
 
 if __name__ == "__main__":
     table_setting_prompter.prompt_all_models(prompters)
+    print('Finished the Table Setting task')
     collab_prompter.prompt_all_models(prompters)
+    print('Finished the Meta-Reasoning task')
     tool_use_prompter.execute_prompting(prompters)
+    print('Finished the Tool Usage task')
     tidy_up_prompter.prompt_all_models(prompters)
+    print('Finished the Tidy Up task')

@@ -84,7 +84,7 @@ def transform_plate_prediction(pred: str) -> Plate:
 def write_results_to_file(results: [TableSettingModelResult], model: str):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv(f'table_setting/results/{model}.csv', index=False)
+    df.to_csv(f'table_setting/results/{model.lower()}.csv', index=False)
 
 
 def calculate_average(results: [TableSettingModelResult], model: str):

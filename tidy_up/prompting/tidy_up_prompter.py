@@ -29,7 +29,7 @@ def prompt_all_models(prompters: [Prompter]):
 def write_results_to_file(results: [TidyUpResult], model: str):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv(f'tidy_up/results/{model}.csv', index=False)
+    df.to_csv(f'tidy_up/results/{model.lower()}.csv', index=False)
 
 
 def format_generated_locations(locations: str) -> [str]:
