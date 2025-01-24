@@ -1,7 +1,7 @@
 from metric_calculator import calculate_reciprocal_rank, calculate_average_precision_at_k, calculate_recall_at_k
 
 
-class ModelResultTuple:
+class TidyUpResult:
     def __init__(self, obj: str, pred_locations: [str], corr_locations: [str]):
         self._object = obj
         self._pred_locations = []

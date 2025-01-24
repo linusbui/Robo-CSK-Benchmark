@@ -2,7 +2,7 @@ import ast
 
 import pandas as pd
 
-from model_result import ModelResultTuple
+from tidy_up_result import TidyUpResult
 from utils.prompter import Prompter
 
 system_msg = 'Imagine you are a robot tidying up a household.'
@@ -19,14 +19,14 @@ def prompt_all_models(prompters: [Prompter]):
             locs = row['Locations']
             question = f'Object: {obj}\nLocations:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            tup = ModelResultTuple(obj, format_generated_locations(res), format_gold_standard_locations(locs))
+            tup = TidyUpResult(obj, format_generated_locations(res), format_gold_standard_locations(locs))
             results.append(tup)
         write_results_to_file(results, prompter.model_name)
         comb_result = pd.concat([comb_result, calculate_average(results, prompter.model_name)], ignore_index=True)
     comb_result.to_csv('../results/model_overview.csv', index=False)
 
 
-def write_results_to_file(results: [ModelResultTuple], model: str):
+def write_results_to_file(results: [TidyUpResult], model: str):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
     df.to_csv(f'../results/{model}.csv', index=False)
@@ -41,7 +41,7 @@ def format_gold_standard_locations(locations) -> [str]:
     return [value[0].lower() for value in data_dict.values()]
 
 
-def calculate_average(results: [ModelResultTuple], model: str):
+def calculate_average(results: [TidyUpResult], model: str):
     average = {met: 0 for met in ['rr', 'ap@1', 'ap@3', 'ap@5', 'rec@1', 'rec@3', 'rec@5']}
     for res in results:
         average['rr'] += res.get_reciprocal_rank()
