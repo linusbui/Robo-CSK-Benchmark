@@ -2,10 +2,10 @@ from collaboration.prompting import collab_prompter
 from table_setting.prompting import table_setting_prompter
 from tidy_up.prompting import tidy_up_prompter
 from tool_usage.prompting import tool_use_prompter
-from utils import GemmaPrompter
+from utils import LlamaPrompter
 
 #prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter()]
-prompters = [GemmaPrompter()]
+prompters = [LlamaPrompter()]
 
 if __name__ == "__main__":
     table_setting_prompter.prompt_all_models(prompters)
