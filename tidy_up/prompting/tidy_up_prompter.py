@@ -20,6 +20,9 @@ def prompt_all_models(prompters: [Prompter]):
             question = f'Object: {obj}\nLocations:'
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = TidyUpResult(obj, format_generated_locations(res), format_gold_standard_locations(locs))
+            if len(tup.get_predicted_locations()) == 0:
+                print(f'Error formatting the generated locations for {obj}: {res}')
+                continue
             results.append(tup)
         write_results_to_file(results, prompter.model_name)
         comb_result = pd.concat([comb_result, calculate_average(results, prompter.model_name)], ignore_index=True)
@@ -33,6 +36,8 @@ def write_results_to_file(results: [TidyUpResult], model: str):
 
 
 def format_generated_locations(locations: str) -> [str]:
+    if locations is None:
+        return []
     return [location.strip() for location in locations.lower().split(',')]
 
 
