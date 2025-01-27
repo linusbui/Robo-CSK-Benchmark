@@ -1,0 +1,292 @@
+task,affordance,correct_tool,predicted_tool,tool_choices,correct_prediction
+cleaning up spills,absorb,sponge,sponge,"['tomato', 'coffee machine', 'sponge', 'box', 'wrench']",True
+drying the dishes,absorb,sponge,sponge,"['table knife', 'bore bit', 'sponge', 'remotecontrol', 'rubber eraser']",True
+removing moisture,absorb,sponge,sponge,"['food can', 'sponge', 'bolo', 'counter top', 'switchblade']",True
+reheating coffee,be heated,plate,plate,"['tamp', 'brace wrench', 'jackscrew', 'plate', 'broadax']",True
+cooking a fried egg,be heated,kettle,kettle,"['kettle', 'showerdoor', 'beading plane', 'block plane', 'stool']",True
+cooking an omelette,be heated,cup,cup,"['designedspade', 'sinkbasin', 'cup', 'houseplant', 'cloth']",True
+reheating soup,be heated,plate,plate,"['plate', 'handsaw', 'snuffer', 'pointing trowel', 'drill']",True
+boiling water,be heated,mug,faucet,"['t square', 'faucet', 'mug', 'ravehook', 'ottoman']",False
+decorating a room,beautify,rat tail file,jointer,"['rat tail file', 'trap and drain auger', 'dagger', 'jointer', 'sawmill']",False
+arranging flowers,beautify,nailfile,kitchenknife,"['catling', 'rib joint plier', 'kitchenknife', 'remote control', 'nailfile']",False
+painting walls,beautify,taper file,carpenter's hammer,"['garden rake', 'blunt file', 'taper file', 'carpenter zz s hammer', 'mirror']",False
+applying make-up,beautify,rat tail file,none of the given tools are suitable for applying makeup,"['bottle opener', 'drove', 'cabinet', 'fireman zz s ax', 'rat tail file']",False
+shaping wire,bend,saw set,pliers,"['saw set', 'bill', 'sinkbasin', 'ditch spade', 'shovel']",False
+adjusting blinds,bend,saw set,edger,"['ice ax', 'edger', 'saw set', 'watering can', 'garden trowel']",False
+fitting flexible piping,bend,bender,bender,"['eolith', 'remotecontrol', 'bender', 'kirpan', 'spiral ratchet screwdriver']",True
+installing shelves,bore,pruning saw,bradawl,"['piston ring', 'pruning saw', 'bradawl', 'salt', 'cereal box']",False
+hanging pictures,bore,hand drill,hand drill,"['hand drill', 'bull tongue', 'broadax', 'toiletpaper', 'rasp']",True
+assembling furniture,bore,brace and bit,portable saw,"['stove burner', 'brace and bit', 'portable saw', 'dogbed', 'power mower']",False
+preparing food,break,knife,knife,"['knife', 'case knife', 'lochaber ax', 'stoveburner', 'poleax']",True
+opening packaging,break,burr,carving knife,"['floor lamp', 'burr', 'carving knife', 'steel wool pad', 'expansion bit']",False
+breaking apart food items,break,bumper jack,butterknife,"['boot', 'bumper jack', 'slip joint plier', 'butterknife', 'tissuebox']",False
+serving food,carry,watering can,none of the given tools are suitable for serving food,"['watering can', 'bolt cutter', 'abrader', 'wire stripper', 'parang']",False
+transporting liquids,carry,wine bottle,wine bottle,"['phillips screwdriver', 'wine bottle', 'safe', 'toiletpaper', 'jackscrew']",True
+serving a dish,carry,pan,pan,"['eolith', 'set square', 'edger', 'pan', 'gangsaw']",True
+watering plants,carry,kettle,bottle,"['bottle', 'kettle', 'reamer', 'kettle', 'tomato']",False
+decorating pumpkins,carve,switchblade,switchblade,"['bolt cutter', 'soldering iron', 'creditcard', 'flashlight', 'switchblade']",True
+preparing meat,carve,shiv,shiv,"['lawn mower', 'showerhead', 'shiv', 'cereal box', 'cellphone']",True
+crafting with wood,carve,trench knife,center punch,"['snip', 'center punch', 'chair', 'trench knife', 'spray bottle']",False
+replacing light bulbs,change,gouge,none of the given tools are suitable for replacing light,"['gouge', 'shaping tool', 'kitchen knife', 'dresser', 'dagger']",False
+changing bed sheets,change,hand mower,none of the given tools are suitable for changing bed,"['vacuumcleaner', 'set square', 'butcher knife', 'sickle', 'hand mower']",False
+swapping out filters,change,drum sander,plumber's snake,"['table top decor', 'drum sander', 'plumber zz s snake', 'tissuebox', 'gutter']",False
+preparing cooking ingredients,chop,poleax,none of the given tools are suitable for preparing cooking,"['hand ax', 'poleax', 'tamp', 'shovel', 'crown saw']",False
+cutting meat,chop,hatchet,hatchet,"['hatchet', 'diningtable', 'axe', 'miter box', 'showerdoor']",True
+making firewood,chop,broad hatchet,broad hatchet,"['half hatchet', 'screw wrench', 'broad hatchet', 'riding mower', 'screw key']",True
+washing dishes,clean,burr,sponge,"['pruner', 'sponge', 'burr', 'tomato', 'saw']",False
+throwing away uneaten food,clean,compass saw,toilet,"['head gasket', 'wire cutter', 'toilet', 'gasket', 'compass saw']",False
+cleaning spilled milk,clean,crown saw,laundry hamper,"['television', 'laundry hamper', 'lettuce', 'crown saw', 'lettuce']",False
+cleaning the mirror,clean,plunger,bodkin,"['plunger', 'food cup', 'laptop', 'bodkin', 'catling']",False
+cleaning the fridge,clean,case knife,case knife,"['parang', 'side table', 'case knife', 'pot', 'ax']",True
+cleaning the blinds,clean,folding saw,folding saw,"['block plane', 'plate', 'shiv', 'folding saw', 'armchair']",True
+cleaning the shower head,clean,table knife,spiral ratchet screwdriver,"['star drill', 'spiral ratchet screwdriver', 'room decor', 'table knife', 'bit']",False
+dusting the statue,clean,table saw,garden rake,"['pocketknife', 'bottle opener', 'table saw', 'open end wrench', 'garden rake']",False
+cleaning the toilet,clean,plane,bullnose,"['plane', 'pestle', 'bullnose', 'stamp', 'dry battery']",False
+cleaning the floor,clean,power drill,scauper,"['scauper', 'sawmill', 'power drill', 'fishtail bit', 'handtowel']",False
+washing your face,clean,pruner,sink,"['desktop', 'sink', 't square', 'pruner', 'putty knife']",False
+watching a movie,comfort,ottoman,ottoman,"['coffeemachine', 'stool', 'bender', 'ottoman', 'tennisracket']",True
+setting up bedding,comfort,chair,chair,"['screw wrench', 'chair', 'butter knife', 'shelf', 'spokeshave']",True
+choosing a comfortable seat,comfort,bed,bed,"['bed', 'entrenching tool', 'drilling bit', 'center bit', 'spud']",True
+storing clothes,compress,stemmer,showerdoor,"['drill', 'ram', 'stemmer', 'showerdoor', 'electric drill']",False
+reducing space in bin,compress,tamp,tamp,"['remotecontrol', 'stool', 'tamp', 'flat file', 'pump type plier']",True
+preparing food,compress,stemmer,knife blade,"['trap and drain auger', 'arm chair', 'knife blade', 'stemmer', 'stove burner']",False
+storing food,contain,sofa,showerglas,"['sofa', 'jack plane', 'kettle', 'creditcard', 'showerglas']",False
+measuring liquids,contain,coffeemachine,coffeemachine,"['toiletpaperhanger', 'blade', 'coffeemachine', 'rasp', 'abrading stone']",True
+managing waste,contain,wateringcan,entrenching tool,"['entrenching tool', 'painting', 'wateringcan', 'teddy bear', 'hammer']",False
+being filled with a liquid,contain,cup,cup,"['soapbottle', 'towelholder', 'cup', 'sinkbasin', 'cellphone']",True
+adjusting device settings,control,power drill,jackscrew,"['hedge trimmer', 'jackscrew', 'power drill', 'tap wrench', 'spray bottle']",False
+managing lighting,control,two handed saw,none of the given tools are suitable for managing lighting,"['toothbrush', 'battle ax', 'bathtubbasin', 'parang', 'two handed saw']",False
+operating appliances,control,jigsaw,vacuum cleaner,"['desk', 'blunt file', 'jigsaw', 'vaccum cleaner', 'hammer']",False
+keeping food from going bad,cool,drum sander,cabinet,"['file', 'bayonet', 'drum sander', 'stoveburner', 'cabinet']",False
+freezing food,cool,fridge,fridge,"['sink basin', 'router plane', 'fridge', 'wood chisel', 'roach clip']",True
+making ice,cool,drum sander,none of the given tools are suitable for making ice,"['microwave', 'stamp', 'drum sander', 'bowie knife', 'coffeetable']",False
+creating frost patterns as decoration,cool,drum sander,kleenex,"['drum sander', 'kleenex', 'open end wrench', 'double bitted ax', 'lightswitch']",False
+protecting food,cover,drum sander,pallet,"['scauper', 'pallet', 'drum sander', 'expansion bit', 'carpenter zz s hammer']",False
+shielding surfaces,cover,drum sander,garbage bag,"['window', 'drum sander', 'garbagebag', 'eolith', 'trap and drain auger']",False
+securing items,cover,drum sander,glue stick,"['shovel', 'glue stick', 'bathtubbasin', 'awl', 'drum sander']",False
+opening a nut,crack,barong,dagger,"['tap', 'barong', 'razorblade', 'stamp', 'dagger']",False
+breaking an egg,crack,carving knife,carving knife,"['pick', 'pipe cutter', 'carpenter zz s hammer', 'flashlight', 'carving knife']",True
+opening packages,crack,table knife,cutting implement,"['table knife', 'dumbbell', 'grapnel', 'cutting implement', 'food cup']",False
+baking pastries,crumble,battering ram,combination plane,"['battering ram', 'eolith', 'battle ax', 'table saw', 'combination plane']",False
+preparing toppings,crumble,battering ram,toothbrush,"['battering ram', 'safe', 'toothbrush', 'alligator wrench', 'paper box']",False
+making breadcrumbs,crumble,battering ram,cleaver,"['cleaver', 'battering ram', 'cloth', 'glass cutter', 'straightedge']",False
+preparing snacks,crunch,pestle,pestle,"['maul', 'flashlight', 'glue stick', 'pestle', 'dog bed']",True
+making toppings,crunch,pestle,pestle,"['pestle', 'teddy bear', 'pincer', 'surgical knife', 'riding mower']",True
+crushing ice,crunch,pestle,pestle,"['scauper', 'coffeemachine', 'edger', 'pestle', 'stoveknob']",True
+making ice cubes,cube,kitchen knife,kitchen knife,"['palette knife', 'paleolith', 'snuffer', 'switchblade', 'kitchen knife']",True
+preparing fruits and vegetables,cube,kri,kri (assuming it's a typo and you,"['pitsaw', 'gouge', 'burr', 'kri', 'ottoman']",False
+preparing meats,cube,lancet,lancet,"['bolt cutter', 'tack hammer', 'cell phone', 'dovetail plane', 'lancet']",True
+preparing a sliced apple,cut,paper cutter,paper cutter,"['mallet', 'coffeetable', 'auger', 'paper cutter', 'boot']",True
+cutting an apple,cut,wood chisel,poniard,"['poniard', 'center bit', 'brace wrench', 'mallet', 'wood chisel']",False
+opening an envelope,cut,gouge,linoleum knife,"['saw', 'bevel', 'gouge', 'allen wrench', 'linoleum knife']",False
+applying butter,cut,two handed saw,rubber eraser,"['core bit', 'center punch', 'rubber eraser', 'two handed saw', 'blunt file']",False
+serving cake,cut,cutting implement,tableknife,"['cutting implement', 'saw set', 'crosscut saw', 'tableknife', 'entrenching tool']",False
+decorating table,decorate,room decor,room decor,"['room decor', 'power drill', 'desk', 'pruning shear', 'parang']",True
+decorating bed,decorate,teddy bear,teddy bear,"['lug wrench', 'teddy bear', 'fridge', 'calculator', 'edge tool']",True
+decorating wall,decorate,room decor,pitsaw,"['square', 'base ball bat', 'food cup', 'pitsaw', 'room decor']",False
+decorating lobby,decorate,painting,painting,"['dog bed', 'icepick', 'desk lamp', 'painting', 'bolt cutter']",True
+increasing beauty of the room,decorate,room decor,room decor,"['kri', 'soldering iron', 'glue stick', 'room decor', 'hayfork']",True
+preparing vegetables,dice,stiletto,hand tool,"['spray bottle', 'houseplant', 'hand tool', 'ripsaw', 'stiletto']",False
+creating garnishes,dice,tableknife,tableknife,"['bolo', 'file', 'carriage wrench', 'tableknife', 'blade']",True
+making salsa,dice,hunting knife,hunting knife,"['hunting knife', 'basketball', 'cabinet', 'binder', 'lightbulb']",True
+measuring ingredients,dice,steak knife,none of the given tools are suitable for measuring ingredients,"['gavel', 'weeder', 'steak knife', 'ball', 'undercoat']",False
+gardening,dig,posthole digger,posthole digger,"['tableknife', 'tack hammer', 'posthole digger', 'drawknife', 'snuffer']",True
+preparing soil,dig,coal shovel,coal shovel,"['coal shovel', 'fish knife', 'shampoo', 'grapnel', 'pneumatic drill']",True
+finding buried treasures,dig,garden spade,garden spade,"['cell phone', 'garden spade', 'cloth', 'toiletpaperhanger', 'scissors']",True
+showcasing decorations,display,calculator,clipper,"['to go cup', 'bradawl', 'scrub plane', 'calculator', 'clipper']",False
+organizing collectibles,display,calculator,stool,"['folding saw', 'weeder', 'saltshaker', 'stool', 'calculator']",False
+presenting information,display,cell phone,cell phone,"['sidetable', 'cell phone', 'cup', 'lightswitch', 'basket ball']",True
+throwing away uneaten food,dispose,bath tub basin,spade,"['winebottle', 'needlenose plier', 'bath tub basin', 'spade', 'pruning shear']",False
+cleaning spilled milk,dispose,garbage can,garbage can,"['star drill', 'carpenter zz s mallet', 'apple', 'floorlamp', 'garbage can']",True
+throwing away used soap bottle,dispose,sink basin,sink basin,"['straightedge', 'drilling bit', 'flat file', 'sink basin', 'nailfile']",True
+throwing away toilet paper,dispose,garbage can,garbage can,"['hand towel', 'garbage can', 'opener', 'round file', 'plastic box']",True
+hanging items on a wall,drill,ripsaw,ripsaw,"['rasp', 'spoon', 'towel', 'shiv', 'ripsaw']",True
+assembling furniture,drill,chain saw,monkey wrench,"['chain saw', 'bathtub', 'butterknife', 'monkey wrench', 'blind']",False
+installing fixtures,drill,core drill,core drill,"['soapbar', 'core drill', 'die', 'wine bottle', 'window']",True
+drying washed dishes,dry,hand towel,hand towel,"['hand towel', 'wood chisel', 'bottle', 'electric drill', 'paleolith']",True
+hanging cleaned laundry,dry,hand towel,ravehook,"['bed', 'hand towel', 'ravehook', 'paleolith', 'plane']",False
+drying up spilled liquids,dry,kleenex,kleenex,"['camera', 'paper cutter', 'catling', 'roomdecor', 'kleenex']",True
+having a meal,eat,salt,salt,"['clasp knife', 'miter box', 'firmer chisel', 'salt', 'safe']",True
+preparing food,eat,egg,penknife,"['penknife', 'breast drill', 'egg', 'secateur', 'allen wrench']",False
+being cooked,eat,apple,steak knife,"['vase', 'apple', 'steak knife', 'try square', 'crank']",False
+personalising items,engrave,scauper,snip,"['scauper', 'entrenching tool', 'snip', 'mallet', 'egg']",False
+creating decorative art,engrave,scauper,newspaper,"['scauper', 'punch plier', 'newspaper', 'rock bit', 'expansion bit']",False
+labelling belongings,engrave,scauper,paper box,"['desk', 'sink basin', 'paper box', 'scauper', 'pruner']",False
+watching a movie,entertain,desktop,desktop,"['toothpaste', 'phillips screwdriver', 'trap and drain auger', 'paper towel roll', 'desktop']",True
+listening to a song,entertain,television,television,"['television', 'dresser', 'pilot bit', 'bolo', 'bed']",True
+surfing the internet,entertain,c d,cd,"['c d', 'bill', 'claw hatchet', 'coffeetable', 'hook wrench']",False
+playing active games,exercise,dumbell,dumbell,"['binder', 'power mower', 'coffee machine', 'dumbell', 'trepan']",True
+exercising,exercise,tennis racket,tennis racket,"['houseplant', 'bodkin', 'vacuumcleaner', 'router plane', 'tennis racket']",True
+cleaning as a home workout,exercise,basket ball,spray bottle,"['basket ball', 'spray bottle', 'spud', 'newspaper', 'toiletpaperhanger']",False
+organizing documents,file,rat tail file,rat tail file,"['rat tail file', 'pillow', 'wire stripper', 'kitchenknife', 'switchblade']",True
+cleaning fingernails,file,blunt file,blunt file,"['double bitted ax', 'blunt file', 'bowie knife', 'trench knife', 'cigar cutter']",True
+smoothing surfaces,file,rat tail file,rat tail file,"['blind', 'shelvingunit', 'fireman zz s ax', 'rammer', 'rat tail file']",True
+repairing appliances,fix,pruning shear,twist bit,"['twist bit', 'chamfer plane', 'pruning shear', 'microwave', 'bottle opener']",False
+mending clothes,fix,steel wool pad,needle,"['bur', 'steel wool pad', 'steel wool pad', 'portable saw', 'cd']",False
+patching walls,fix,stemmer,fore plane,"['fridge', 'fore plane', 'stemmer', 'cabinet', 'posthole digger']",False
+adjusting cables,flex,bender,clincher,"['dining table', 'soapbottle', 'floorlamp', 'clincher', 'bender']",False
+bending pipes,flex,bender,bender,"['bender', 'ripping chisel', 'desktop', 'toiletpaperhanger', 'pan']",True
+grinding surfaces,flex,bender,trench knife,"['bender', 'punch', 'trench knife', 'bathtub', 'instant noodle']",False
+picking-up objects,grasp,church key,none of the given tools are suitable for picking up,"['bowie knife', 'center punch', 'marker', 'church key', 'book']",False
+opening jars,grasp,tableknife,tableknife,"['case knife', 'bumper jack', 'hand shovel', 'tableknife', 'ripping chisel']",True
+carrying items,grasp,bullnose,none of the given tools are suitable for carrying items,"['bullnose', 'desktop', 'steel wool pad', 'knife', 'ripsaw']",False
+placing objects down,grasp,blunt file,drawer,"['statue', 'reamer', 'drawer', 'blunt file', 'firmer chisel']",False
+preparing spices,grind,pestle,pestle,"['pestle', 'seal', 'beading plane', 'teddy bear', 'comb']",True
+making coffee powder,grind,pestle,pestle,"['pestle', 'bulldog wrench', 'bumper jack', 'expansion bit', 'ax']",True
+processing grains,grind,pestle,pestle,"['star drill', 'spray bottle', 'drove', 'pestle', 'bill']",True
+hanging a picture on a wall,hammer,firmer chisel,firmer chisel,"['bolo', 'torque wrench', 'firmer chisel', 'clasp knife', 'bolt cutter']",True
+assembling furniture,hammer,triphammer,brace wrench,"['shovel', 'brace wrench', 'triphammer', 'desklamp', 'food jar']",False
+removing old fixtures,hammer,tack hammer,tack hammer,"['tamp', 'scoop', 'hayfork', 'pen', 'tack hammer']",True
+repairing items,hammer,shaver,miter box,"['miter box', 'shaver', 'marlinespike', 'creditcard', 'notebook']",False
+hammering nails,hammer,bricklayer zz s hammer,bricklayer's hammer,"['bricklayer zz s hammer', 'stapler', 'circular plane', 'cap opener', 'clasp knife']",False
+opening doors and cabinets,handle,power drill,latchstring,"['power drill', 'latchstring', 'lochaber ax', 'bull tongue', 'gang']",False
+carrying containers,handle,power drill,pincer,"['power drill', 'pincer', 'chair', 'food can', 'electric hammer']",False
+using appliances,handle,two handed saw,two handed saw,"['fireman zz s ax', 'edger', 'edger', 'two handed saw', 'backsaw']",True
+heating coffee,heat,candle,candle,"['candle', 'watering can', 'breast drill', 'bit', 'dumbbell']",True
+cooking food,heat,microwave,microwave,"['comb', 'crank handle', 'paleolith', 'microwave', 'food box']",True
+reheating soup,heat,candle,case knife,"['allen wrench', 'candle', 'marker', 'dovetail plane', 'case knife']",False
+boiling water,heat,microwave,microwave,"['hayfork', 'hack', 'microwave', 'yataghan', 'window']",True
+melting envelope wax,heat,coffeemachine,coffeemachine,"['pilot bit', 'battle ax', 'saltshaker', 'coffeemachine', 'food box']",True
+melting butter,heat,stove burner,stove burner,"['pan', 'cell phone', 'watch', 'stove burner', 'rat tail file']",True
+carrying items,hold,putty knife,pick,"['dirk', 'thinning shear', 'pick', 'putty knife', 'tap']",False
+using tools,hold,s wrench,stillson wrench,"['s wrench', 'parer', 'c d', 'saw', 'stillson wrench']",False
+stabilising objects,hold,miter box,miter box,"['base ball bat', 'fore plane', 'miter box', 'handsaw', 'wood chisel']",True
+increasing brightness of the room,illuminate,window,window,"['cleaver', 'window', 'carpenter zz s hammer', 'set square', 'poniard']",True
+lighting up a room,illuminate,desk lamp,desk lamp,"['food cup', 'desk lamp', 'lightswitch', 'table knife', 'hack']",True
+decreasing darkness,illuminate,desk lamp,desk lamp,"['toothbrush', 'catling', 'room decor', 'desk lamp', 'lightbulb']",True
+hanging poster,increase,ottoman,electric hammer,"['fish knife', 'electric hammer', 'ottoman', 'bulldog wrench', 'ball']",False
+hanging painting,increase,counter top,clipper,"['thinning shear', 'undercoat', 'sidetable', 'counter top', 'clipper']",False
+cleaning shower head,increase,coffee table,none of the provided tools seem suitable for cleaning a,"['common ax', 'upset', 'kirpan', 'pen', 'coffee table']",False
+getting a book from a high shelf,increase,ottoman,ottoman,"['hand shovel', 'statue', 'seal', 'ottoman', 'watch']",True
+placing a very delicate artifact on a shelf,increase,desk,tissuebox,"['television', 'safety razor', 'burin', 'tissuebox', 'desk']",False
+fixing light bulb outside your house,increase,bed,hatchet,"['room decor', 'carriage wrench', 'bed', 'hatchet', 'ditch spade']",False
+putting objects on high shelf,increase,arm chair,arm chair,"['cloth', 'wateringcan', 'bender', 'arm chair', 'laundryhamper']",True
+mounting fixtures,install,power drill,power drill,"['cellphone', 'parer', 'dado plane', 'power drill', 'stemmer']",True
+setting up appliances,install,power tool,power tool,"['dogbed', 'compass saw', 'box', 'power tool', 'chamfer plane']",True
+assembling furniture,install,jigsaw,jigsaw,"['comb', 'steak knife', 'butterknife', 'ravehook', 'jigsaw']",True
+moving furniture,lift,jack,jack,"['shelvingunit', 'jack', 'butterknife', 'straightedge', 'cap opener']",True
+carrying objects,lift,pitchfork,pitchfork,"['chamfer plane', 'pitchfork', 'church key', 'to go cup', 'faucet']",True
+accessing high shelves,lift,pitchfork,pitchfork,"['wire cutter', 'broadax', 'seal', 'electric drill', 'pitchfork']",True
+labeling items,mark,head gasket,painting,"['head gasket', 'painting', 'posthole digger', 'paleolith', 'dresser']",False
+measuring distances,mark,awl,calculator,"['blind', 'sickle', 'punch', 'awl', 'calculator']",False
+tracking events,mark,handstamp,desktop,"['desktop', 'float', 'cap', 'stoveknob', 'handstamp']",False
+melting butter,melt,soldering iron,soldering iron,"['compass saw', 'alligator wrench', 'plastering trowel', 'watering can', 'soldering iron']",True
+removing adhesives,melt,soldering iron,soldering iron,"['remotecontrol', 'paper cutter', 'paper towel roll', 'pitsaw', 'soldering iron']",True
+defrosting frozen food,melt,soldering iron,soldering iron,"['bolo', 'eolith', 'soldering iron', 'cd', 'bodkin']",True
+mixing ingredients,mix,butter knife,pestle,"['butter knife', 'pruning shear', 'pestle', 'rat tail file', 'clincher']",False
+preparing drinks,mix,pestle,pestle,"['crank handle', 'latchstring', 'pestle', 'maul', 'gavel']",True
+combining cleaning solutions,mix,pestle,pestle,"['glue stick', 'rib joint plier', 'can opener', 'floorlamp', 'pestle']",True
+using appliances,operate,coping saw,breast drill,"['watering can', 'razor', 'coping saw', 'breast drill', 'garbagebag']",False
+controlling devices,operate,electric hammer,allen wrench,"['bullnose', 'double bitted ax', 'electric hammer', 'drawer', 'allen wrench']",False
+handling tools,operate,compass saw,t square,"['toaster', 'compass saw', 'surgical knife', 'lightbulb', 't square']",False
+removing skin from fruits and vegetables,peel,barong,barong,"['triphammer', 'to go cup', 'barong', 'tap wrench', 'hook wrench']",True
+creating compost,peel,breadknife,garden tool,"['bottle', 'showerglas', 'garden tool', 'breadknife', 'pruning knife']",False
+making garnishes,peel,thinning shear,thinning shear,"['shovel', 'bolo', 'croupier zz s rake', 'thinning shear', 'dado plane']",True
+harvesting produce,pick,remotecontrol,hand ax,"['tableknife', 'salt', 'electric hammer', 'hand ax', 'remotecontrol']",False
+sorting items,pick,tabletopdecor,shaping tool,"['safe', 'tabletopdecor', 'egg', 'shaping tool', 'bullnose']",False
+picking up items,pick,creditcard,spade bit,"['rubber eraser', 'cabinet', 'abrader', 'spade bit', 'creditcard']",False
+creating a drainage,pierce,punch,power saw,"['backsaw', 'gang', 'coffeemachine', 'punch', 'power saw']",False
+opening packages,pierce,punch,auger,"['dagger', 'auger', 'stapler', 'punch', 'shampoo']",False
+making a small hole,pierce,scriber,bradawl,"['bandsaw', 'scrub brush', 'bender', 'scriber', 'bradawl']",False
+preparing food,pierce,toothpick,toothpick,"['dog wrench', 'chair', 'bradawl', 'towelholder', 'toothpick']",True
+clearing snow,plow,plow,plow,"['camera', 'arm chair', 'bolt cutter', 'plow', 'remotecontrol']",True
+tilling soil,plow,plow,plow,"['plow', 'double bitted ax', 'maul', 'hand ax', 'pump type plier']",True
+breaking up compacted soil,plow,plow,plow,"['slicer', 'riding mower', 'cap opener', 'plow', 'tissue box']",True
+connecting appliances,plug,buffer,cable (cd likely stands for cable),"['axe', 'plumber zz s snake', 'buffer', 'trepan', 'c d']",False
+charging devices,plug,pneumatic drill,none of the given tools are suitable for charging devices,"['pneumatic drill', 'winebottle', 'drum sander', 'designedspade', 'soap bar']",False
+plugging devices in,plug,crown saw,stillson wrench,"['table saw', 'stillson wrench', 'stamp', 'pointing trowel', 'crown saw']",False
+checking the readiness of food,poke,phillips screwdriver,none of the given tools are suitable for checking the,"['flat tip screwdriver', 'baseballbat', 'glue stick', 'awl', 'phillips screwdriver']",False
+creating a drainage,poke,spiral ratchet screwdriver,bricklayer's hammer,"['soap bottle', 'bricklayer zz s hammer', 'carving knife', 'side table', 'spiral ratchet screwdriver']",False
+pinning items on a wall,poke,spiral ratchet screwdriver,spiral ratchet screwdriver,"['scythe', 'spiral ratchet screwdriver', 'garden spade', 'tissue box', 'jackscrew']",True
+polishing metal objects,polish,rat tail file,rat tail file,"['base ball bat', 'putty knife', 'rat tail file', 'rat tail file', 'plunger']",True
+cleaning surfaces,polish,file,none of the given tools are suitable for cleaning surfaces,"['trepan', 'clincher', 'beading plane', 'flat tip screwdriver', 'file']",False
+enhancing glass surfaces,polish,blunt file,blunt file,"['window', 'dentist zz s drill', 'papertowelroll', 'kettle', 'blunt file']",True
+maintaining floors,polish,nailfile,block plane,"['nailfile', 'comb', 'table saw', 'block plane', 'sawmill']",False
+pouring liquids,pour,coffee mug,coffee mug,"['coffee mug', 'ottoman', 'lancet', 'bill', 'shiv']",True
+preparing drinks,pour,coffee mug,cup,"['coffee mug', 'carriage wrench', 'mallet', 'cup', 'spiral ratchet screwdriver']",False
+preparing cleaning solutions,pour,pitcher,pitcher,"['pitcher', 'upset', 'pilot bit', 'painting', 'alarmclock']",True
+using appliances with a button,press,tamp,square,"['desk', 'tamp', 'trap and drain auger', 'square', 'house plant']",False
+ironing clothes,press,pestle,none of the given tools are suitable for ironing,"['wire stripper', 'glass cutter', 'scauper', 'pestle', 'fishtail bit']",False
+operating gadgets,press,tamp,sparkplug wrench,"['letter opener', 'wood chisel', 'chamfer bit', 'tamp', 'sparkplug wrench']",False
+reading a good night story,read,cell phone,cell phone,"['moldboard plow', 'coal shovel', 'cell phone', 'chair', 'upset']",True
+reading instructions,read,cell phone,cell phone,"['dining table', 'soapbar', 'penknife', 'scoop', 'cell phone']",True
+keeping up to date,read,laptop,laptop,"['laptop', 'sickle', 'sparkplug wrench', 'towel', 'wrench']",True
+enjoying leisure time,read,desktop,desktop,"['alligator wrench', 'mug', 'sinkbasin', 'bowie knife', 'desktop']",True
+fixing broken appliances,repair,crown saw,lister,"['scrub plane', 'crown saw', 'lister', 'croupier zz s rake', 'wateringcan']",False
+patching damages furniture,repair,trap and drain auger,bradawl,"['bradawl', 'mug', 'core bit', 'trap and drain auger', 'bathtub']",False
+maintaining plumbing,repair,seal,reamer,"['cold chisel', 'seal', 'reamer', 'file', 'bill']",False
+rolling out dough,roll,food can,rolling pin,"['cold chisel', 'food can', 'sponge', 'electric drill', 'cd']",False
+painting walls,roll,flashlight,brace and bit,"['flashlight', 'bread', 'moldboard plow', 'brace and bit', 'candle']",False
+cleaning surfaces,rub,steak knife,sink basin,"['sink basin', 'basketball', 'steak knife', 'allen wrench', 'plate']",False
+polishing furniture,rub,case knife,case knife,"['drilling bit', 'auger', 'roach clip', 'ravehook', 'case knife']",True
+removing stains,rub,fish knife,fish knife,"['bucksaw', 'fish knife', 'showerdoor', 'armchair', 'spokeshave']",True
+cutting wood,saw,backsaw,backsaw,"['armchair', 'burin', 'cereal box', 'backsaw', 'crown saw']",True
+trimming branches,saw,compass saw,compass saw,"['bottle', 'compass saw', 'awl', 'cutting implement', 'broad hatchet']",True
+sawing flooring planks,saw,folding saw,folding saw,"['metal box', 'desktop', 'apple', 'folding saw', 'hand ax']",True
+serving ice cream,scoop,pointing trowel,spoon,"['hedge trimmer', 'toothpaste', 'breast drill', 'dovetail plane', 'pointing trowel']",False
+measuring ingredients,scoop,trowel,"none of the above, but if i had to","['carving knife', 'trowel', 'lightswitch', 'plastic box', 'bevel']",False
+cleaning a litter box,scoop,plastering trowel,rake,"['hand mower', 'plastering trowel', 'metal box', 'plastering trowel', 'rake']",False
+assembling furniture,screw,spiral ratchet screwdriver,spiral ratchet screwdriver,"['crown saw', 'toilet paper', 'spatula', 'slicer', 'spiral ratchet screwdriver']",True
+mounting hardware,screw,screwdriver,screwdriver,"['drawer', 'bur', 'screwdriver', 'coping saw', 'crampon']",True
+screwing in screws,screw,screwdriver,screwdriver,"['butcher knife', 'screwdriver', 'floorlamp', 'rammer', 'safe']",True
+repairing appliances,screw,flat tip screwdriver,flat tip screwdriver,"['flat tip screwdriver', 'metal box', 'saber saw', 'salt', 'flat tip screwdriver']",True
+dividing food into portions,separate,breadknife,breadknife,"['burin', 'circular saw', 'breadknife', 'drum sander', 'pocketknife']",True
+cutting items in halve,separate,lancet,lancet,"['lancet', 'marker', 'pencil', 'gutter', 'straightedge']",True
+changing an objects shape,shape,stamp,sawmill,"['plastic box', 'power drill', 'chain tong', 'stamp', 'sawmill']",False
+removing skin from meat,skin,table knife,table knife,"['scissors', 'tissuebox', 'table knife', 'cross bit', 'butter knife']",True
+removing the peel from fruits and vegetables,skin,letter opener,letter opener,"['reamer', 'dibble', 'gavel', 'plastic box', 'letter opener']",True
+removing unhealthy plant parts,skin,half hatchet,pruning shear,"['pruning shear', 'half hatchet', 'alligator wrench', 'bowl', 'cap']",False
+opening packages,slit,razorblade,razorblade,"['mallet', 'razorblade', 'flashlight', 'seal', 'hob']",True
+creating ventilation,slit,blade,blade,"['garden rake', 'router plane', 'pallet', 'lettuce', 'blade']",True
+cutting open food objects,slit,knife blade,knife blade,"['knife blade', 'chamfer bit', 'bore bit', 'cross bit', 'fork']",True
+sanding surfaces,smoothen,abrading stone,abrading stone,"['crosscut saw', 'abrading stone', 'crosscut saw', 'church key', 'cleaver']",True
+ironing clothes,smoothen,float,iron,"['glue stick', 'dumbell', 'float', 'food cup', 'air hammer']",False
+polishing furniture,smoothen,abrader,abrader,"['tamp', 'bread knife', 'abrader', 'expansion bit', 'bradawl']",True
+repairing electronics,solder,soldering iron,soldering iron,"['gavel', 'soldering iron', 'bandsaw', 'blunt file', 'dado plane']",True
+making jewelery,solder,soldering iron,soldering iron,"['water bottle', 'drawer', 'alarmclock', 'garbagecan', 'soldering iron']",True
+fixing plumbing,solder,soldering iron,core bit,"['shelving unit', 'core bit', 'hatchel', 'soldering iron', 'center bit']",False
+applying spreads on bread,spread,steak knife,steak knife,"['pestle', 'surgical knife', 'steak knife', 'double bitted ax', 'beading plane']",True
+spreading icing on a cake,spread,spreader,spreader,"['hand shovel', 'dumbell', 'spreader', 'bore bit', 'razor']",True
+distributing cleaning products,spread,slick,slick,"['pencil', 'toothbrush', 'stoveknob', 'wine bottle', 'slick']",True
+organizing documents,staple,stapler,stapler,"['apple', 'stapler', 'wood chisel', 'lawn mower', 'rammer']",True
+repairing books,staple,stapler,stapler,"['core drill', 'spokeshave', 'stapler', 'wine bottle', 'cleaver']",True
+removing dirt from your teeth,stick,toothpick,toothpick,"['spatula', 'house plant', 'toothpick', 'tap wrench', 'spreader']",True
+storing fruits and vegetables,store,shelf,shelf,"['handtowel', 'blade', 'shelf', 'table top decor', 'screw key']",True
+storing clean utensils,store,shelving unit,shelving unit,"['marker', 'shelving unit', 'open end wrench', 'auger', 'tray']",True
+packing books for house shifting,store,box,box,"['box', 'church key', 'maul', 'bender', 'floorlamp']",True
+keeping sporting equipment,store,shelf,shelf,"['chamfer plane', 'light switch', 'shelf', 'glue stick', 'desklamp']",True
+storing important documents,store,safe,safe,"['bayonet', 'round file', 'tennisracket', 'safe', 'shelvingunit']",True
+storing cereal box,store,shelving unit,shelving unit,"['shelving unit', 'riding mower', 'spreader', 'saltshaker', 'square']",True
+keeping dirty clothes,store,safe,"hamper (not available), but from the list","['hand tool', 'rasp', 'pick', 'stemmer', 'safe']",False
+storing dog treats,store,shelving unit,shelving unit,"['set square', 'saw', 'shiv', 'ravehook', 'shelving unit']",True
+organizing items,store,laundry hamper,laundry hamper,"['fore plane', 'laundry hamper', 'binder', 'c d', 'compass saw']",True
+removing isolation from wires,strip,wire stripper,wire stripper,"['fore plane', 'slouse', 'putty knife', 'sickle', 'wire stripper']",True
+supporting a laptop,support,bed,sidetable,"['bed', 'lochaber ax', 'steak knife', 'sidetable', 'blade']",False
+displaying a statue,support,coffee table,coffee table,"['handtowel', 'keyhole saw', 'spade', 'coffee table', 'sponge']",True
+eating dinner,support,desk,none of the given tools are suitable for eating dinner,"['desk', 'carpenter zz s mallet', 'lawn mower', 'footstool', 'lawn mower']",False
+packing soil,tamp,tamp,tamp,"['linoleum knife', 'battle ax', 'portable saw', 'tamp', 'parang']",True
+preparing coffee in a filter,tamp,tamp,tamp,"['tamp', 'neolith', 'alarm clock', 'poleax', 'desklamp']",True
+setting tiles,tamp,tamp,tamp,"['bullnose', 'lochaber ax', 'scraper', 'tamp', 'edger']",True
+telling the time,time,laptop,laptop,"['laptop', 'chain tong', 'coffeemachine', 'sink', 'bradawl']",True
+managing schedules,time,cell phone,cell phone,"['twist bit', 'cell phone', 'open end wrench', 'flat file', 'backsaw']",True
+clearing the drain,unclog,plumber zz s snake,plumber's snake,"['table knife', 'pitsaw', 'carriage wrench', 'plumber zz s snake', 'drove']",False
+fixing a toilet,unclog,plunger,plunger,"['bowie knife', 'rounder', 'scrub plane', 'plunger', 'palette knife']",True
+cleaning pipes,unclog,plumber zz s snake,plumber's snake,"['plumber zz s snake', 'scrubbrush', 'hand mower', 'stillson wrench', 'bayonet']",False
+washing dishes,wash,bandsaw,mug,"['mug', 'bandsaw', 'rib joint plier', 'punch plier', 'teddy bear']",False
+washing a fruit before cutting,wash,gangsaw,watering can,"['portable saw', 'watering can', 'plastering trowel', 'gangsaw', 'cleaver']",False
+washing your face,wash,power drill,none of the given tools are suitable for washing your,"['tableknife', 'trap and drain auger', 'box', 'spade', 'power drill']",False
+doing laundry,wash,backsaw,comb,"['backsaw', 'tableknife', 'comb', 'square', 'triphammer']",False
+cleaning dishes,wash,portable saw,none of the given tools are suitable for cleaning dishes,"['adz', 'portable saw', 'coffee table', 'newspaper', 'bumper jack']",False
+cleaning a surface,wipe,steak knife,showerglas,"['showerglas', 'steak knife', 'showercurtain', 'plow', 'burr']",False
+removing stains,wipe,case knife,papertowelroll,"['broadax', 'case knife', 'papertowelroll', 'dagger', 'remote control']",False
+wiping a surface clean,wipe,butter knife,butter knife,"['bradawl', 'designedspade', 'marlinespike', 'butter knife', 'ball peen hammer']",True
+storing food,wrap,food cup,food cup,"['food cup', 'steel wool pad', 'common ax', 'snuffer', 'bore bit']",True
+protecting items,wrap,coffee mug,none of the given tools seem directly suitable for protecting,"['soldering iron', 'painting', 'plane', 'wrench', 'coffee mug']",False
+tightening bolts,wrench,sparkplug wrench,lug wrench,"['lug wrench', 'pen', 'garden rake', 'sparkplug wrench', 'chair']",False
+loosening bolts,wrench,chain wrench,chain wrench,"['lawn mower', 'chain wrench', 'plate', 'cd', 'bucksaw']",True
+adjusting fixtures,wrench,carriage wrench,carriage wrench,"['rake', 'cap opener', 'razorblade', 'carriage wrench', 'laptop']",True
+changing bicycle components,wrench,stillson wrench,stillson wrench,"['stillson wrench', 'sidetable', 'egg', 'bumper jack', 'toilet paper']",True
+making a shopping list,write,pencil,pencil,"['pencil', 'desk', 'desklamp', 'teddybear', 'yataghan']",True
+keeping a journal,write,pen,pen,"['pen', 'monkey wrench', 'jointer', 'pump type plier', 'pipe wrench']",True
+labelling items,write,desktop,pen,"['pen', 'tissuebox', 'needlenose plier', 'tissuebox', 'desktop']",False
+writing a letter,write,laptop,laptop,"['scriber', 'laptop', 'router', 'roach clip', 'riding mower']",True
