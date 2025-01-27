@@ -10,7 +10,7 @@ user_msg = 'What are the prototypical locations in a household where the followi
 
 
 def prompt_all_models(prompters: [Prompter]):
-    comb_result = pd.DataFrame(columns=['model', 'rr', 'ap@1', 'ap@3', 'ap@5', 'rec@1', 'rec@3', 'rec@5'])
+    comb_result = pd.DataFrame(columns=['model', 'mrr', 'map@1', 'map@3', 'map@5', 'mrec@1', 'mrec@3', 'mrec@5'])
     for prompter in prompters:
         data = pd.read_csv('tidy_up/tidy_up_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
