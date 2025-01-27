@@ -9,7 +9,7 @@ user_msg = 'Please only answer with Yes or No.'
 
 
 def prompt_all_models(prompters: [Prompter]):
-    comb_result = pd.DataFrame(columns=['model', 'tn', 'tp', 'fn', 'fp', 'acc', 'prec', 'rec', 'spec', 'f1'])
+    comb_result = pd.DataFrame(columns=['model', 'tn', 'tp', 'fn', 'fp', 'ratio', 'acc', 'prec', 'rec', 'spec', 'f1'])
     for prompter in prompters:
         data = pd.read_csv('collaboration/collaboration_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
@@ -22,16 +22,15 @@ def prompt_all_models(prompters: [Prompter]):
             gripper = row['Gripper Config']
             has_rigid_gripper = row['Rigid Gripper?']
 
-            # create & evaluate positive question (-> correct configuration)
+            # create the two hardware descriptions
             pos_hardware = create_hardware_description(is_mobile, no_arms, dofs, gripper, has_rigid_gripper)
-            pos_question = f'Task: {task}\nHardware: {pos_hardware}'
-            pos_res = prompter.prompt_model(system_msg, user_msg, pos_question)
-            pos_tup = CollaborationModelResult(task, pos_hardware, get_binary_answer(pos_res))
-            results.append(pos_tup)
-
-            # create & evaluate negative question (-> incorrect configuration)
-            neg_hardware = create_hardware_description(is_mobile, no_arms, dofs, gripper, has_rigid_gripper, False)
+            neg_hardware = make_hardware_negative(is_mobile, no_arms, dofs, gripper, has_rigid_gripper)
+            # only include both of them if a negative configuration can be created
             if neg_hardware != "minimal":
+                pos_question = f'Task: {task}\nHardware: {pos_hardware}'
+                pos_res = prompter.prompt_model(system_msg, user_msg, pos_question)
+                pos_tup = CollaborationModelResult(task, pos_hardware, get_binary_answer(pos_res))
+                results.append(pos_tup)
                 neg_question = f'Task: {task}\nHardware: {neg_hardware}'
                 neg_res = prompter.prompt_model(system_msg, user_msg, neg_question)
                 neg_tup = CollaborationModelResult(task, neg_hardware, get_binary_answer(neg_res), False)
@@ -41,18 +40,20 @@ def prompt_all_models(prompters: [Prompter]):
     comb_result.to_csv('collaboration/results/model_overview.csv', index=False)
 
 
-def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: str, is_rigid: bool, is_positive=True) -> str:
-    if not is_positive:
-        if arms > 1:
-            arms = 1
-        elif is_mobile:
-            is_mobile = False
-        else:
-            gripper = GripperConfig(gripper)
-            if gripper == GripperConfig.TWO_FINGERS:
-                return "minimal"
-            gripper = GripperConfig.TWO_FINGERS
+def make_hardware_negative(is_mobile: bool, arms: int, dofs: int, gripper: str, is_rigid: bool) -> str:
+    original = create_hardware_description(is_mobile, arms, dofs, gripper, is_rigid)
+    arms = 1
+    dofs = 1
+    is_mobile = False
+    gripper = GripperConfig.NO
+    changed = create_hardware_description(is_mobile, arms, dofs, gripper, is_rigid)
+    if changed == original:
+        return "minimal"
+    else:
+        return changed
 
+
+def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: str, is_rigid: bool) -> str:
     if is_mobile:
         walk = 'can walk'
     else:
@@ -76,7 +77,7 @@ def get_binary_answer(answer: str) -> bool:
 
 def calculate_metrics(results: [CollaborationModelResult], model: str):
     assert len(results) > 0
-    counter = {met: 0 for met in ['tn', 'tp', 'fn', 'fp']}
+    counter = {met: 0 for met in ['tn', 'tp', 'fn', 'fp', 'ratio']}
     for res in results:
         ct = res.get_classification_type()
         counter[ct] += 1
@@ -97,6 +98,7 @@ def calculate_metrics(results: [CollaborationModelResult], model: str):
 
     new_row = pd.Series(
         {'model': model, 'tn': counter['tn'], 'tp': counter['tp'], 'fn': counter['fn'], 'fp': counter['fp'],
+         'ratio': (counter['tp'] + counter['fp']) / (counter['tn'] + counter['fn']),
          'acc': (counter['tp'] + counter['tn']) / len(results), 'prec': precision, 'rec': recall, 'spec': specificity,
          'f1': 2 * precision * recall / (precision + recall)})
     return new_row.to_frame().T
