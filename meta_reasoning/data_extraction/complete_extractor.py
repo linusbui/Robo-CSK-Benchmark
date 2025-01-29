@@ -19,7 +19,7 @@ def extract_from_all_sources() -> [TaskCapability]:
 def write_results_to_file(results: [TaskCapability]):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv('../collaboration_data.csv', index=False)
+    df.to_csv('../meta_reasoning_data.csv', index=False)
 
 
 if __name__ == '__main__':

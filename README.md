@@ -20,7 +20,7 @@ The main focus is on providing the model with a specific household object and re
 The data can also be used to reason about objects that are out of place at their current location and thus need to be moved to a different place.
 - **[Tool Usage](./tool_usage/README.md)**: The second task focuses on the concept of affordances, which describe what an object or the environment offers an agent [3].
 We provide a list of objects with their respective affordances and a list of example tasks for each affordance. 
-- **[Meta-Reasoning](./collaboration/README.md)**: To evaluate the models capabilities in evaluating whether a specific robotic hardware setup is capable of executing a specific task, we propose this task.
+- **[Meta-Reasoning](./meta_reasoning/README.md)**: To evaluate the models capabilities in evaluating whether a specific robotic hardware setup is capable of executing a specific task, we propose this task.
 In the data, we provide different tasks written as single sentence natural language instructions and a robotic setup that has was demonstrated to be capable of executing the task.
 For each robotic setup, we provide the following information: Is the robot stationary or can it move? How many arms does it have? How many degrees of freedom does the arms have? What type of gripper is used? Are the grippers soft or rigid?
 - **[Table Setting](./table_setting/README.md)**: In this task, the embodied agent should set the dinner table for a specific meal. 

@@ -1,4 +1,4 @@
-# Collaboration Task
+# Meta-Reasoning Task
 
 The idea behind this task is that a specific task as well as a specific robotic hardware setup is provided.
 The commonsense problem is to decide, whether the given robotic setup is equipped with the necessary hardware to execute this task.
