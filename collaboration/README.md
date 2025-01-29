@@ -47,6 +47,32 @@ To combine the different tasks, we use SentenceBERT-based embeddings and cluster
 | Virtual Home   | 49545    | [6] |
 | **SUM**        | **4788** |     |
 
+## Experiments
+
+To evaluate this tasks, we provide the LLMs with the following prompt:
+```
+System: Imagine you are a robot with a given hardware configuration and you should decide whether you are capable of executing a task.
+User: Please only answer with Yes or No.
+Task: [Task]
+Hardware: [Hardware Configuration] 
+```
+
+For each of the 4788 tasks, which consists of a robot hardware configuration capable of executing it, we also create a negative sample by setting all robotic capabilities to the minimal configuration.
+So each model is provided with 9576 samples.
+We analyse the results for each model using the following metrics:
+- Amount of true positives (TPs), true negatives (TNs), false positives (FPs) & false negatives (FNs)
+- Ratio of positive to negative answers by the model (Formula: (TPs + FPs) / (TNs + FNs))
+- Accuracy, Precision, Recall, Specificity
+- F1-Score
+
+## Results
+
+| LLM                 | TNs  | TPs  | FNs  | FPs | Ratio | Acc   | Prec  | Rec   | Spec  | F1    |
+| ------------------- | ---- | ---- | ---- | --- | ----- | ----- | ----- | ----- | ----- | ----- |
+| GPT-4o             | 4772 | 2616 | 2172 | 16  | 0.379 | 0.772 | 0.994 | 0.546 | 0.997 | 0.705 |
+| Llama-3.3-70B-Instruct | 4737 | 4294 | 494  | 51  | 0.831 | 0.943 | 0.988 | 0.897 | 0.989 | 0.940 |
+| gemma-2-27b-it      | 4621 | 4061 | 727  | 167 | 0.791 | 0.907 | 0.961 | 0.848 | 0.965 | 0.901 |
+
 ## References
 
 [1] Z. Samadikhoshkho, K. Zareinia, and F. Janabi-Sharifi, ‘A Brief Review on Robotic Grippers Classifications’, in 2019 IEEE Canadian Conference of Electrical and Computer Engineering (CCECE), Edmonton, AB, Canada, May 2019. doi: 10.1109/CCECE.2019.8861780.

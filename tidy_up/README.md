@@ -6,7 +6,7 @@ This problem is encapsulated by the following two commonsense questions the robo
 - What objects in my environment are out of place?
 - What are the prototypical locations for these objects?
 
-To answer these questions, we provide a list of 851 household objects and their associated locations.
+To answer these questions, we provide a list of 868 household objects and their associated locations.
 
 ## Data Structure
 
@@ -36,7 +36,32 @@ Additionally, to create the ranking of the locations, we manually assign each so
 | CSKG           | 0.50        | 9264       | 462      | [4] |
 | Housekeep      | 1.00        | 268        | 268      | [5] |
 | Microsoft COCO | 0.75        | 7          | 7        | [6] |
-| **SUM**        | -           | **13966**  | **851**  |     |
+| **SUM**        | -           | **13966**  | **986**  |     |
+
+After removing duplicates from the list of 986 included objects, *868* distinct objects and their locations remain.
+
+## Experiments
+
+To evaluate this tasks, we provide the LLMs with the following prompt:
+```
+System: Imagine you are a robot tidying up a household.
+User: What are the prototypical locations in a household where the following object can be found? Please only answer with a comma separated & ranked list of locations.
+Object: [Object] 
+Locations:
+```
+
+We analyse the results for each model using the following metrics:
+- Mean Reciprocal Rank (MRR) of the generated answers when compared to the gold standard ranked list
+- Mean Average Precision @k (MAP@k) over all objects (evaluated for k=1, k=3 & k=5)
+- Mean Average Recall @k (MAR@k) over all objects (evaluated for k=1, k=3 & k=5)
+
+## Results
+
+| LLM                 | MRR   | MAP@1 | MAP@3 | MAP@5 | MAR@1 | MAR@3 | MAR@5 |
+| ------------------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| GPT-4o             | 0.412 | 0.345 | 0.387 | 0.365 | 0.100 | 0.146 | 0.163 |
+| Llama-3.3-70B-Instruct | 0.424 | 0.364 | 0.392 | 0.372 | 0.104 | 0.144 | 0.154 |
+| gemma-2-27b-it      | 0.276 | 0.218 | 0.255 | 0.248 | 0.086 | 0.117 | 0.125 |
 
 ## References
 

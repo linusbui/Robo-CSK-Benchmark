@@ -50,6 +50,32 @@ If an object-affordance-tuple occurs in multiple sources, their trust value is a
 | Visual Affordance DS | 1.00        | 37               | 80          | 15                 | [7] |
 | **SUM**              | -           | **557**          | **3222**    | **86**             |     |
 
+## Experiments
+
+To evaluate this tasks, we provide the LLMs with the following prompt:
+```
+System: Imagine you are a robot in a household environment being confronted with a task a list of tools.
+User: What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.
+Task: [Task Name]
+Tools: [List of Objects to choose from]
+Your Choice:
+```
+
+In each prompt we provide a list of five objects to choose from.
+One object has the correct affordance necessary for executing the given task.
+The other four objects are randomly chosen from the list of objects without the necessary affordance. 
+
+We analyse the results for each model using the following metric:
+- Accuracy (of choosing the correct tool)
+
+## Results
+
+| LLM                | Acc   |
+| ------------------ | ----- |
+| GPT-4o             | 0.529 |
+| Llama-3.3-70B-Instruct | 0.522 |
+| gemma-2-27b-it     | 0.526 |
+
 ## References
 
 [1] G. A. Miller, ‘WordNet: A Lexical Database for English’, Communications of the ACM, vol. 38, no. 11, pp. 39–41, 1995, doi: 10.1145/219717.219748.
