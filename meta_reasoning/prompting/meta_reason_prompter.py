@@ -1,6 +1,5 @@
 import pandas as pd
 
-from meta_reasoning.data_extraction.gripper_configs import GripperConfig
 from meta_reasoning.prompting.meta_reason_model_result import MetaReasoningModelResult
 from utils.prompter import Prompter
 
@@ -22,35 +21,14 @@ def prompt_all_models(prompters: [Prompter]):
             gripper = row['Gripper Config']
             has_rigid_gripper = row['Rigid Gripper?']
 
-            # create the two hardware descriptions
-            pos_hardware = create_hardware_description(is_mobile, no_arms, dofs, gripper, has_rigid_gripper)
-            neg_hardware = make_hardware_negative(is_mobile, no_arms, dofs, gripper, has_rigid_gripper)
-            # only include both of them if a negative configuration can be created
-            if neg_hardware != "minimal":
-                pos_question = f'Task: {task}\nHardware: {pos_hardware}'
-                pos_res = prompter.prompt_model(system_msg, user_msg, pos_question)
-                pos_tup = MetaReasoningModelResult(task, pos_hardware, get_binary_answer(pos_res))
-                results.append(pos_tup)
-                neg_question = f'Task: {task}\nHardware: {neg_hardware}'
-                neg_res = prompter.prompt_model(system_msg, user_msg, neg_question)
-                neg_tup = MetaReasoningModelResult(task, neg_hardware, get_binary_answer(neg_res), False)
-                results.append(neg_tup)
+            hardware = create_hardware_description(is_mobile, no_arms, dofs, gripper, has_rigid_gripper)
+            question = f'Task: {task}\nHardware: {hardware}'
+            res = prompter.prompt_model(system_msg, user_msg, question)
+            tup = MetaReasoningModelResult(task, hardware, get_binary_answer(res))
+            results.append(tup)
         write_results_to_file(results, prompter.model_name)
         comb_result = pd.concat([comb_result, calculate_metrics(results, prompter.model_name)], ignore_index=True)
     comb_result.to_csv('meta_reasoning/results/model_overview.csv', index=False)
-
-
-def make_hardware_negative(is_mobile: bool, arms: int, dofs: int, gripper: str, is_rigid: bool) -> str:
-    original = create_hardware_description(is_mobile, arms, dofs, gripper, is_rigid)
-    arms = 1
-    dofs = 1
-    is_mobile = False
-    gripper = GripperConfig.NO
-    changed = create_hardware_description(is_mobile, arms, dofs, gripper, is_rigid)
-    if changed == original:
-        return "minimal"
-    else:
-        return changed
 
 
 def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: str, is_rigid: bool) -> str:
