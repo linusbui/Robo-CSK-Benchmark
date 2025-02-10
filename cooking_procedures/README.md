@@ -1,93 +1,61 @@
-# Temporal CS
+# Cooking Procedures Knowledge Task
+
+The idea behind this task is that a cooking recipe title and two instructions from a recipe are provided.
+The commonsense problem is to decide, which instructions happens before or after the other. 
+This problem is encapsulated by the following two temporal commonsense questions the robot should be able to answer:
+
+- In the recipe {title}, did {step_1} occur before {step_2}? 
+- In the recipe {title}, did {step_1} occur after {step_2}?
+
+To ensure a balanced dataset, we alternate the order of step_1 and step_2 in the queries.
 
 
+## Data Generation
 
-## Getting started
+The data generation process is automated using gpt-4o-2024-08-06, sourced from the Recipe 1M+ Dataset (https://paperswithcode.com/dataset/recipe1m-1) [1]. 
+For each recipe, GPT selects the two steps with the highest temporal relationship. 
+These selected steps are then saved, along with the recipe title and all other steps, in the *data_generation/questions_components* folder. 
+Afterward, we manually review each file to remove any steps that are not temporally related.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Example:
+```json
+{
+  "goal": "World's Best Mac and Cheese",
+  "step_1": "Cook pasta for less time than directed.",
+  "step_2": "Bake pasta with a cheese topping."
+}
+```
+To generate questions based on your own recipes or recreate these questions, 
+simply download the Recipe 1M+ dataset or your recipes into the *data_generation/* folder and execute the *askgpt_temporalorder.py* in this folder.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Experiments
 
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+To evaluate this tasks, we provide the LLMs with the following prompt:
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.ub.uni-bielefeld.de/s.kenneweg/temporal-cs.git
-git branch -M main
-git push -uf origin main
+System: Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred before another.
+User: Answer only with 'Yes' or 'No'.
+Question: [Question]
 ```
 
-## Integrate with your tools
+If the question contains the temporal relation "after", we modify the temporal relation in the system prompt accordingly. 
+For our experiment, we selected 776 recipes during the data generation process. 
+For each recipe, we ask two questions: one regarding the "before" temporal relation and one regarding the "after" temporal relation. 
+Additionally, we also reverse the order of the steps in each question to have a positive and negative correct answer. This results in a total of 776 * 4 = 3104 questions.
+We analyse the results for each model using the following metrics:
+- Amount of true positives (TPs), true negatives (TNs), false positives (FPs) & false negatives (FNs)
+- Ratio of positive to negative answers by the model (Formula: (TPs + FPs) / (TNs + FNs))
+- Accuracy, Precision, Recall, Specificity
+- F1-Score
 
-- [ ] [Set up project integrations](https://gitlab.ub.uni-bielefeld.de/s.kenneweg/temporal-cs/-/settings/integrations)
+## Results
 
-## Collaborate with your team
+| LLM                    | TNs   | TPs  | FNs | FPs | Ratio | Acc   | Prec  | Rec   | Spec  | F1    |
+|------------------------|-------| ---- |-----| --- |-------|-------|-------|-------|-------|-------|
+| GPT-4o                 | 1362  | 1511 | 41  | 190 | 1.212 | 0.926 | 0.888 | 0.974 | 0.878 | 0.929 |
+| Llama-3.3-70B-Instruct | 1339  | 1501 | 494 | 51  | 1.233 | 0.915 | 0.876 | 0.967 | 0.863 | 0.919 |
+| gemma-2-27b-it         | 754   | 1543 | 9   | 798 | 3.068 | 0.740 | 0.659 | 0.994 | 0.486 | 0.793 |
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+## References
 
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+[1] J. Marin, et al., ‘Recipe1M+: a dataset for learning cross-modal embeddings for cooking recipes and food images’, in 2018 arXiv preprint arXiv:1810.06553
