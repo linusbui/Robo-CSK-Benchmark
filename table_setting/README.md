@@ -47,11 +47,11 @@ We analyse the results for each model using different metrics for the plates and
 
 ## Results
 
-| LLM                 | Acc   | Jaccard |
-| ------------------- | ----- | ------- |
-| GPT-4o             | 0.730 | 0.702   |
-| Llama-3.3-70B-Instruct | 0.790 | 0.739   |
-| gemma-2-27b-it      | 0.790 | 0.642   |
+| LLM                    | Acc       | Jaccard   |
+|------------------------|-----------|-----------|
+| gpt-4o-2024-08-06      | 0.730     | 0.702     |
+| Llama-3.3-70B-Instruct | **0.790** | **0.739** |
+| gemma-2-27b-it         | **0.790** | 0.642     |
 
 ## References
 

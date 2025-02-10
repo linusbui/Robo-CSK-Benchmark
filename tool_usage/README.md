@@ -70,11 +70,11 @@ We analyse the results for each model using the following metric:
 
 ## Results
 
-| LLM                | Acc   |
-| ------------------ | ----- |
-| GPT-4o             | 0.529 |
-| Llama-3.3-70B-Instruct | 0.522 |
-| gemma-2-27b-it     | 0.526 |
+| LLM                    | Acc       |
+|------------------------|-----------|
+| gpt-4o-2024-08-06      | **0.529** |
+| Llama-3.3-70B-Instruct | 0.522     |
+| gemma-2-27b-it         | 0.526     |
 
 ## References
 
