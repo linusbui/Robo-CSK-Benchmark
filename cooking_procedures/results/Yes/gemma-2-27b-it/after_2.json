@@ -1,0 +1,1172 @@
+[
+    {
+        "title": "Ranch Mushrooms",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Ranch Mushrooms', did 'Cook on low heat' occur after 'Put ingredients in crock pot'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Barbecue Hamburger Patties Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Barbecue Hamburger Patties Recipe', did 'Pour sauce over patties' occur after 'Brown patties in skillet'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Chicken Prepared-Mustard",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Chicken Prepared-Mustard', did 'Add mustard, stir, heat' occur after 'Add chicken and butter'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Bower's Hunter's Chili",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Bower's Hunter's Chili', did 'Add meats to bean pot' occur after 'Brown ground meat, drain grease'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Christmas Sugar Biscuits",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Christmas Sugar Biscuits', did 'Bake at 350F' occur after 'Mix buttermilk and flour'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Baked Sausage N Taters",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Baked Sausage N Taters', did 'Bake at 450F' occur after 'Mix ingredients in pan'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Barbecued Spam Sandwiches",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Barbecued Spam Sandwiches', did 'Assemble sandwich with coleslaw' occur after 'Cook meat with sauce'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Salmon Pasta",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Salmon Pasta', did 'Fry bacon until crispy' occur after 'Cook pasta until al dente'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Vegetable Burgers(Welch)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Vegetable Burgers(Welch)', did 'Shape into patties, cook' occur after 'Mix vegetables with spices'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Avocado and Cilantro Salsa",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Avocado and Cilantro Salsa', did 'Mix with onions, cilantro' occur after 'Dice avocados and tomatoes'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Oat Muffins",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Oat Muffins', did 'Bake in preheated oven' occur after 'Spoon pastry into muffin cups'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Barry's Beef Marinade Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Barry's Beef Marinade Recipe', did 'Turn steak often' occur after 'Marinate steak in refrigerator'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Shrimp Stir Fry",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Shrimp Stir Fry', did 'Add shrimp and cook' occur after 'Saute garlic and ginger'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Easter Basket Cake Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Easter Basket Cake Recipe', did 'Garnish with jelly beans' occur after 'Frost cake with topping'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Chocolate Chestnut Cake With Hazelnuts and Chestnut Cream Glaze",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Chocolate Chestnut Cake With Hazelnuts and Chestnut Cream Glaze', did 'Drizzle cake top decorative when cool' occur after 'Beat together first 6 ingredients'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pecan Glazed Ham Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pecan Glazed Ham Recipe', did 'Spread pecans, pour syrup' occur after 'Bake ham in oven'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Turtle Pumpkin Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Turtle Pumpkin Pie', did 'Refrigerate at least 1 hour' occur after 'Pour caramel into crust'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Winter Warm-Up Beef Simmer",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Winter Warm-Up Beef Simmer', did 'Bake until fork tender' occur after 'Brown bacon and roast'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Halloween White Chocolate Peanut Butter Fudge",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Halloween White Chocolate Peanut Butter Fudge', did 'Pour into lined pan' occur after 'Heat ingredients until melted'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Jam & Buttercream Sandwich Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Jam & Buttercream Sandwich Cookies', did 'Spread buttercream and jam' occur after 'Bake cookies in pre-heated oven'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Kickin' BBQ Chicken Quesadilla",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Kickin' BBQ Chicken Quesadilla', did 'Cook quesadilla until golden' occur after 'Place ingredients on tortilla'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Cheesy Burgers With Sauteed Mushrooms",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Cheesy Burgers With Sauteed Mushrooms', did 'Grill patties until cooked' occur after 'Mix meat and mushrooms'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Sausage And Egg Brunch Casserole Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Sausage And Egg Brunch Casserole Recipe', did 'Bake at 350 degrees' occur after 'Brown sausage; drain fat'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Crustless Acorn Squash Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Crustless Acorn Squash Pie', did 'Bake squash until very tender' occur after 'Preheat oven to 375 degrees'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Grilled Spam, Tomato, Cheddar Cheese and Sweet Onion Sandwiches",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Grilled Spam, Tomato, Cheddar Cheese and Sweet Onion Sandwiches', did 'Cook until cheese melts' occur after 'Assemble sandwich ingredients'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Puritan's Pride Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Puritan's Pride Recipe', did 'Add ice and stir' occur after 'Combine juice and syrup'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Mushroom-Stuffed Pork Chops",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Mushroom-Stuffed Pork Chops', did 'Bake until juices run clear' occur after 'Stuff chops with mixture'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Frozen Lemonade Squares",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Frozen Lemonade Squares', did 'Beat yogurt and concentrate' occur after 'Mix crumbs and margarine'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pulled Chicken Minis with Ranch Slaw",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pulled Chicken Minis with Ranch Slaw', did 'Combine coleslaw and dressing' occur after 'Cook chicken with sauce'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Onion Bhaji",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Onion Bhaji', did 'Fry onions until brown' occur after 'Mix onions into batter'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Peanut Butter Fudge Brownie Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Peanut Butter Fudge Brownie Bars', did 'Drizzle with melted chocolate' occur after 'Bake until edges pull'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Country Pate",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Country Pate', did 'Bake until thermometer reads 165F' occur after 'Preheat oven to 350F'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Broccoli Cheddar Rolls Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Broccoli Cheddar Rolls Recipe', did 'Bake at 375 degrees' occur after 'Spread mixture over dough'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Artichoke Heart Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Artichoke Heart Salad', did 'Add dressing and toss' occur after 'Combine ingredients in bowl'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Surprise Chocolate Bites",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Surprise Chocolate Bites', did 'Bake until set' occur after 'Preheat oven'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Homemade BBQ Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Homemade BBQ Sauce', did 'Whisk until blended' occur after 'Place ingredients in bowl'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Strawberry Lemonade",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Strawberry Lemonade', did 'Combine ingredients in pitcher' occur after 'Puree strawberries in blender'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Sweet & Creamy Sour Cream Flan",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Sweet & Creamy Sour Cream Flan', did 'Blend ingredients until smooth' occur after 'Pour syrup into pan'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Quick Italian Spinach Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Quick Italian Spinach Pie', did 'Pour into pie plate' occur after 'Mix ingredients'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Herbed Cheese-and-Cracker Bits",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Herbed Cheese-and-Cracker Bits', did 'Pour mixture over crackers' occur after 'Mix oil and seasonings'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Easy JELL-O Tub Mousse",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Easy JELL-O Tub Mousse', did 'Refrigerate until serving' occur after 'Mix pudding and topping'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Black Velvet Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Black Velvet Recipe', did 'Serve' occur after 'Pour into beer glass'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "French Onion Soup IV",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'French Onion Soup IV', did 'Simmer soup on low' occur after 'Saute onions in butter'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Packet Potatoes",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Packet Potatoes', did 'Bake or grill packet' occur after 'Preheat oven or grill'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Frisee and Watercress Salad with Jicama and Oranges",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Frisee and Watercress Salad with Jicama and Oranges', did 'Add vinaigrette and shake' occur after 'Combine salad ingredients in bag'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Creme De Menthe Balls (No-Bake Cookies)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Creme De Menthe Balls (No-Bake Cookies)', did 'Roll balls, coat in sugar' occur after 'Combine ingredients, make dough'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Tossed Toasted Tempeh",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Tossed Toasted Tempeh', did 'Toss with salt and pepper' occur after 'Toast tempeh slices'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Fassoulei Bil Zeit (Green Beans With Onion)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Fassoulei Bil Zeit (Green Beans With Onion)', did 'Simmer until green beans cooked' occur after 'Saute onion and garlic'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Blender Vegetable Dip",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Blender Vegetable Dip', did 'Blend all ingredients smooth' occur after 'Saute onions until softened'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Guava-Candied Ginger Gelato",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Guava-Candied Ginger Gelato', did 'Stir chopped ginger into mixture' occur after 'Combine dry milk, evaporated milk'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Raspberry Pie III",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Raspberry Pie III', did 'Bake until crust is golden' occur after 'Mix raspberries with ingredients'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Mexican Tamarind Cooler (Agua de Tamarindo)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Mexican Tamarind Cooler (Agua de Tamarindo)', did 'Sieve remaining pulp threads' occur after 'Boil unpeeled tamarind'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Coconut Ice Candy",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Coconut Ice Candy', did 'Let sit before cutting' occur after 'Mix ingredients, add dye'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Sweet Knots",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Sweet Knots', did 'Tie into a knot' occur after 'Dip rolls in butter'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pinto Bean Burgers Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pinto Bean Burgers Recipe', did 'Brown patties in pan' occur after 'Puree beans in processor'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Peanut Butter and Honey Sandwich",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Peanut Butter and Honey Sandwich', did 'Spread and sandwich bread slices' occur after 'Stir ingredients until smooth'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Cod Fish and Potato Chowder",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Cod Fish and Potato Chowder', did 'Serve with parsley, butter' occur after 'Add cod, simmer soup'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Easy Chicken Pot Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Easy Chicken Pot Pie', did 'Pour Bisquick mixture over' occur after 'Mix chicken, vegetables, soup'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Sauteed Plums in Maple Syrup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Sauteed Plums in Maple Syrup', did 'Cook plums with syrup' occur after 'Warm butter until brown'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Beans And Beef Corn Bread Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Beans And Beef Corn Bread Recipe', did 'Bake till done' occur after 'Saute/fry meat; drain'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Southwest Casserole",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Southwest Casserole', did 'Bake covered until crust brown' occur after 'Brown beef, onions, garlic'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Thai Sweetcorn Fritters",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Thai Sweetcorn Fritters', did 'Fry batter until golden' occur after 'Blend half the sweetcorn'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "No Cook Freezer Jam",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'No Cook Freezer Jam', did 'Add crushed fruit' occur after 'Stir sugar and package'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Lemonade Stand Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Lemonade Stand Pie', did 'Freeze until firm' occur after 'Spoon into pie crust'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Raspberry-Coconut Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Raspberry-Coconut Bars', did 'Spread coconut mixture over jam' occur after 'Spread jam over crust'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Orange Harvard Beets",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Orange Harvard Beets', did 'Add beets and heat' occur after 'Combine and cook mixture'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Chicken Biscuit Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Chicken Biscuit Pie', did 'Add peas, carrots, chicken' occur after 'Saute onion in butter'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "California Roll Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'California Roll Salad', did 'Stir in vinegar mixture' occur after 'Boil and steam rice'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Eggplant Lasagna",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Eggplant Lasagna', did 'Layer eggplant, sauce, cheese' occur after 'Dip eggplant in mixtures'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Sylvia's Version of Greek Tortellini Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Sylvia's Version of Greek Tortellini Salad', did 'Crumble feta on top' occur after 'Add dressing and ingredients'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pesto Veggie Frittata",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pesto Veggie Frittata', did 'Transfer to oven' occur after 'Pour eggs into skillet'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Garlic Macaroni and Cheese",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Garlic Macaroni and Cheese', did 'Bake until golden brown' occur after 'Cook pasta until al dente'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Raspberry Clafoutis",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Raspberry Clafoutis', did 'Pour batter over raspberries' occur after 'Blend ingredients for batter'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Cheese Muffins",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Cheese Muffins', did 'Bake in greased muffin tins' occur after 'Preheat oven to 350 degrees'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Kha'geena - a Super Easy yet Impressive Egg Recipe From",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Kha'geena - a Super Easy yet Impressive Egg Recipe From', did 'Add eggs, stir ingredients' occur after 'Saute onions until golden'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Fondue Suisse",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Fondue Suisse', did 'Add cheese, stir until melted' occur after 'Rub pot with garlic'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Classic Snickerdoodles",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Classic Snickerdoodles', did 'Mix flours and spices' occur after 'Preheat oven'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Individual Gingerbreads",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Individual Gingerbreads', did 'Bake until tester is clean' occur after 'Divide batter between pans'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Ginger Carrot Pancakes",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Ginger Carrot Pancakes', did 'Cook pancakes until browned' occur after 'Combine carrot, onion, garlic, ginger'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Dilly Cheese Pinwheels",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Dilly Cheese Pinwheels', did 'Slice dough into pieces' occur after 'Spread cream cheese on dough'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Winter Carrots",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Winter Carrots', did 'Blend sauce and spoon over' occur after 'Boil carrots in salted water'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Peppery Maple Chicken",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Peppery Maple Chicken', did 'Pour maple syrup over chicken' occur after 'Saute chicken until golden'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Layered Dessert Mold",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Layered Dessert Mold', did 'Refrigerate dessert until set' occur after 'Arrange cake slices in pan'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Weight Watchers Chicken Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Weight Watchers Chicken Salad', did 'Mix chicken with ingredients' occur after 'Boil chicken until cooked'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Strawberry and Cream Butter Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Strawberry and Cream Butter Cookies', did 'Beat cream cheese and butter' occur after 'Preheat oven'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Spiced Ginger Pancakes with Date Philly Confit",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Spiced Ginger Pancakes with Date Philly Confit', did 'Cook batter until golden brown' occur after 'Sift dry ingredients'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Zesty Veggie Pizza",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Zesty Veggie Pizza', did 'Layer crust with toppings' occur after 'Grill vegetables until tender-crisp'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Greek-Style Couscous Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Greek-Style Couscous Salad', did 'Add ingredients, mix lightly' occur after 'Cook couscous, omit salt'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Avocado Grilled Cheese Sandwiches",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Avocado Grilled Cheese Sandwiches', did 'Flip and serve sandwiches' occur after 'Toast bread with toppings'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Orange Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Orange Sauce', did 'Add cream, stir well' occur after 'Combine sugar, juice, zest'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Apple Maple Bread Pudding",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Apple Maple Bread Pudding', did 'Bake until bubbly, brown' occur after 'Mix bread, butter, syrup'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Gado Gado With Sambal Kacang (Spicy Peanut Sauce)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Gado Gado With Sambal Kacang (Spicy Peanut Sauce)', did 'Cook vegetables, then drain' occur after 'Pan-fry the marinaded tofu'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Gone Bananas Shake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Gone Bananas Shake', did 'Add ice, blend again' occur after 'Blend milk, cream cheese, banana'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Healthy Blueberry Coffee Cake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Healthy Blueberry Coffee Cake', did 'Stir in blueberries' occur after 'Blend oats into powder'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Round and Cute Hatcho Miso Quail Egg Meatballs For Bento",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Round and Cute Hatcho Miso Quail Egg Meatballs For Bento', did 'Wrap mixture around quail eggs' occur after 'Combine and knead ingredients'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Chocolate Peanut Butter Oatmeal Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Chocolate Peanut Butter Oatmeal Bars', did 'Mix peanut butter and honey' occur after 'Preheat oven and prepare pan'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Rhubarb Crumbles",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Rhubarb Crumbles', did 'Cut in butter/margarine' occur after 'Mix sugar, flour, cinnamon'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Mom's Pickled Beets",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Mom's Pickled Beets', did 'Chill for several hours' occur after 'Add beets to saucepan'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "PHILADELPHIA 3-STEP Chocolate Layer Cheesecake Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'PHILADELPHIA 3-STEP Chocolate Layer Cheesecake Bars', did 'Pour chocolate batter over crust' occur after 'Mix crumbs and butter'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Lemon Pancakes With Fresh Berries",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Lemon Pancakes With Fresh Berries', did 'Serve berries over pancakes' occur after 'Cook pancakes until browned'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Shelly's More Expensive and Elaborate Carb Fix",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Shelly's More Expensive and Elaborate Carb Fix', did 'Toss with pasta' occur after 'Saute mushrooms, onion, garlic'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Special Oatmeal Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Special Oatmeal Cookies', did 'Bake cookies' occur after 'Preheat oven'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Seven-Minute Frosting",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Seven-Minute Frosting', did 'Cook and beat until stiff' occur after 'Combine ingredients in double boiler'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Rosy Raisin Nut Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Rosy Raisin Nut Cookies', did 'Bake until edges browned' occur after 'Drop batter onto sheets'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Sausage Stew Pasta",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Sausage Stew Pasta', did 'Add tomatoes and beans' occur after 'Cook sausage until browned'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pizza Tot Casserole",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pizza Tot Casserole', did 'Bake until golden brown' occur after 'Cook beef, pepper, onion'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Raspberry Meltaways",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Raspberry Meltaways', did 'Spread filling on cookie' occur after 'Bake until edges browned'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Corn Flake Jam Filled Muffins",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Corn Flake Jam Filled Muffins', did 'Bake until golden brown' occur after 'Fill indentations with preserves'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Classic Beef-Barley Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Classic Beef-Barley Soup', did 'Transfer to crockpot, add ingredients' occur after 'Brown meat, onion, garlic'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Swordfish Steaks with Maitre d'Hotel Butter",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Swordfish Steaks with Maitre d'Hotel Butter', did 'Broil swordfish until opaque' occur after 'Preheat broiler'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Spatzle",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Spatzle', did 'Add spatzle to boiling water' occur after 'Boil water with salt'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Warm Potato Salad with Celery, Tomatoes, and Chives",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Warm Potato Salad with Celery, Tomatoes, and Chives', did 'Toss with dressing, celery, tomatoes' occur after 'Simmer potatoes until tender'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Baby Bird Food Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Baby Bird Food Recipe', did 'Offer to birds regularly' occur after 'Form into large pellets'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Healthy Whole Wheat Bread",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Healthy Whole Wheat Bread', did 'Bake in slow cooker' occur after 'Mix ingredients in mixer'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Brandied Berry Compote Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Brandied Berry Compote Recipe', did 'Sprinkle with powdered sugar' occur after 'Pour mixture over fruit'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Boston Baked Bean Salad Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Boston Baked Bean Salad Recipe', did 'Mix in remaining ingredients' occur after 'Combine beans with vegetables'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pan-Seared Barramundi with \"Caruru\"",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pan-Seared Barramundi with \"Caruru\"', did 'Roast fish in oven' occur after 'Sear fish, skin side down'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Latin-Spiced Chicken in Lettuce Cups",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Latin-Spiced Chicken in Lettuce Cups', did 'Shred chicken and serve' occur after 'Roast chicken until cooked'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Linguini with Raisins, Pine Nuts and Bread Crumbs",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Linguini with Raisins, Pine Nuts and Bread Crumbs', did 'Add pasta to sauce' occur after 'Cook pasta until tender'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Stove Top Smoker Smoked Whole Trout",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Stove Top Smoker Smoked Whole Trout', did 'Smoke trout until meat opaque' occur after 'Season trout with salt, pepper'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "One Pot Spicy Turkey Rice Taco Bowl",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'One Pot Spicy Turkey Rice Taco Bowl', did 'Simmer until liquid absorbed' occur after 'Add turkey, cook until browned'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Raspberry Lemon Muffins",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Raspberry Lemon Muffins', did 'Combine wet and dry ingredients' occur after 'Preheat oven'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Sparkling Fruit Cooler",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Sparkling Fruit Cooler', did 'Serve over ice, add lemon' occur after 'Mix drink, juices, water'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Easy Parmesan-Garlic Chicken and Pasta",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Easy Parmesan-Garlic Chicken and Pasta', did 'Cook pasta as directed' occur after 'Bake chicken until cooked'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Picnic Macaroni Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Picnic Macaroni Salad', did 'Refrigerate before serving' occur after 'Combine ingredients in bowl'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Beef Tenderloin in Mushroom Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Beef Tenderloin in Mushroom Sauce', did 'Spoon sauce over steaks' occur after 'Cook steaks until desired doneness'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Simple Summer Tomato Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Simple Summer Tomato Salad', did 'Drizzle olive oil, balsamic' occur after 'Slice tomatoes, add mozzarella'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Spiked Pumpkin Pie White Hot Chocolate",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Spiked Pumpkin Pie White Hot Chocolate', did 'Stir rum, top marshmallows' occur after 'Cook ingredients until thickened'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Easy Pork Belly Wraps with Umeboshi and Shiso Leaves in the Microwave",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Easy Pork Belly Wraps with Umeboshi and Shiso Leaves in the Microwave', did 'Microwave until cooked' occur after 'Wrap pork with shiso'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Baked Ham with Mustard and Brown Sugar Crust",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Baked Ham with Mustard and Brown Sugar Crust', did 'Coat ham with bread crumbs' occur after 'Smear ham with mustard'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Lunch Box Tuna Salad Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Lunch Box Tuna Salad Recipe', did 'Fold in tuna' occur after 'Grate cabbage and carrot'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Oven Caramel Corn",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Oven Caramel Corn', did 'Bake, stirring every 15 minutes' occur after 'Pour mixture over popcorn'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Baked Basmati Rice",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Baked Basmati Rice', did 'Cover with aluminum foil' occur after 'Grease pan with olive oil'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Upside-Down Caramel Apple Cake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Upside-Down Caramel Apple Cake', did 'Spoon batter over apples' occur after 'Arrange apple slices in tin'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Chicken and Sweet Potato Stew",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Chicken and Sweet Potato Stew', did 'Simmer until chicken and potatoes are tender' occur after 'Add chicken; cook until browned'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Cheese Naan Bread",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Cheese Naan Bread', did 'Flip and cook other side' occur after 'Cook naan in frying pan'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Chicken Pesto Pizza",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Chicken Pesto Pizza', did 'Bake until cheese melts' occur after 'Spread pesto on crust'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Redibase Beef and Barley Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Redibase Beef and Barley Soup', did 'Add water, Base, barley' occur after 'Saut\u00e9 beef, onions, garlic'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Tomato Braised Steak",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Tomato Braised Steak', did 'Bake covered in oven' occur after 'Brown steak, transfer to dish'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Grilled Carrot Salad with Brown Butter Vinaigrette",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Grilled Carrot Salad with Brown Butter Vinaigrette', did 'Toss carrots with vinaigrette' occur after 'Grill carrots until crisp-tender'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Ginger Beef Steak With Dipping Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Ginger Beef Steak With Dipping Sauce', did 'Cook steaks in pan' occur after 'Marinate steaks overnight'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Easy Turkey & Rice Stoup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Easy Turkey & Rice Stoup', did 'Add turkey, cover, sit' occur after 'Add broth, rice, celery'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Sticky Toffee Pudding",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Sticky Toffee Pudding', did 'Cook dates until softened' occur after 'Preheat oven, grease ramekins'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Lobster Cakes with Tartar Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Lobster Cakes with Tartar Sauce', did 'Fry cakes until golden' occur after 'Form mixture into cakes'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Root Vegetable Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Root Vegetable Soup', did 'Puree soup until smooth' occur after 'Add root vegetables, water'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Sun-Dried Tomato Risotto",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Sun-Dried Tomato Risotto', did 'Stir in Parmesan, season' occur after 'Cook onion, garlic, rice'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Breakfast Pudding",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Breakfast Pudding', did 'Mix ingredients' occur after 'Preheat oven'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Barbeque Meatballs Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Barbeque Meatballs Recipe', did 'Bake meatballs with sauce' occur after 'Brown meatballs in oil'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Cheesy Chicken Tostadas",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Cheesy Chicken Tostadas', did 'Top tostadas with remaining ingredients' occur after 'Bake tostadas with toppings'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pizza Dough Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pizza Dough Recipe', did 'Add toppings, bake pizza' occur after 'Mix flour, salt, yeast'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Cod BLT",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Cod BLT', did 'Broil fish and tomatoes' occur after 'Cook bacon until crispy'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Strawberry Cream Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Strawberry Cream Pie', did 'Top with COOL WHIP, strawberries' occur after 'Refrigerate for several hours'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Peanut Butter Chocolate Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Peanut Butter Chocolate Cookies', did 'Bake until golden brown' occur after 'Preheat oven to 190 C'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Super thick homemade spaghetti sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Super thick homemade spaghetti sauce', did 'Simmer sauce on low' occur after 'Add tomatoes and seasoning'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Apple Cider Cranberry Relish Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Apple Cider Cranberry Relish Recipe', did 'Cook until cranberries pop' occur after 'Add cranberries, bring to boil'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Garam Masala for Cunswim",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Garam Masala for Cunswim', did 'Grind to a powder' occur after 'Roast ingredients in pan'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Vegetarian 15-Bean Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Vegetarian 15-Bean Soup', did 'Simmer until beans soften' occur after 'Add beans to soup'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Lovely, Tender Angel Food Cake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Lovely, Tender Angel Food Cake', did 'Fold flour into meringue' occur after 'Beat egg whites until peaks'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Chocolate Marshmallow Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Chocolate Marshmallow Bars', did 'Spread chocolate mixture over bars' occur after 'Sprinkle marshmallows over cake'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Breaded Pork Chops",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Breaded Pork Chops', did 'Brown chops in skillet' occur after 'Dip chops in egg mixture'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Crispy Pork Chops with Roasted Pepper Relish",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Crispy Pork Chops with Roasted Pepper Relish', did 'Cook pork chops until golden' occur after 'Broil peppers until charred'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Shrimp and Scallop Ceviche (No Onions)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Shrimp and Scallop Ceviche (No Onions)', did 'Pour seafood into vegetable mix' occur after 'Drain brine from seafood'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pimenocheese and Homemade MayoIts a Southern Thang!",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pimenocheese and Homemade MayoIts a Southern Thang!', did 'Add mayonnaise, mix until creamy' occur after 'Mix cheeses in bowl'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Half-Baked Taco Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Half-Baked Taco Salad', did 'Mix spices into beef' occur after 'Cook beef until browned'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Hazelnut Dukka",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Hazelnut Dukka', did 'Grind spices and nuts' occur after 'Toast hazelnuts in oven'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Bacon, Egg & Cheese Hand Pies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Bacon, Egg & Cheese Hand Pies', did 'Bake until golden brown' occur after 'Fill and fold dough'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Stir Fry Asian Chicken Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Stir Fry Asian Chicken Soup', did 'Add chicken, garlic, cook' occur after 'Heat olive oil, cook vegetables'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Orange Chicken Crock Pot",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Orange Chicken Crock Pot', did 'Pour sauce over chicken' occur after 'Place chicken on vegetables'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "1,2,3,4,5 Chinese Spareribs",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe '1,2,3,4,5 Chinese Spareribs', did 'Add ingredients and mix' occur after 'Brown the spare ribs'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Potato Lasagna",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Potato Lasagna', did 'Sprinkle with cheese' occur after 'Cover with potatoes'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Chicken Curry",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Chicken Curry', did 'Add broth and heat' occur after 'Cook chicken and garlic'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Gluten Free Dark Rye Bread",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Gluten Free Dark Rye Bread', did 'Bake at 350 degrees' occur after 'Stir wet into dry'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Savory Pasta Shells W/ Creamy Crab Filling",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Savory Pasta Shells W/ Creamy Crab Filling', did 'Bake shells in dish' occur after 'Preheat oven to 350 degrees'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pistachio Baklava With Orange-Cardamom Syrup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pistachio Baklava With Orange-Cardamom Syrup', did 'Cool in pan on rack' occur after 'Drizzle syrup over baklava'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Calypso Beans, Tomato and Poblano Stew",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Calypso Beans, Tomato and Poblano Stew', did 'Cook until beans are tender' occur after 'Add beans and seasonings'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Broiled Eggplant Bologna Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Broiled Eggplant Bologna Recipe', did 'Broil with bread crumbs' occur after 'Pan-fry eggplant slices'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Lemon Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Lemon Sauce', did 'Add butter, lemon rind, juice' occur after 'Cook until bubbly and thick'?",
+        "response": "No.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Zardalu Polo - Persian Lamb and Apricot Pilaf",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Zardalu Polo - Persian Lamb and Apricot Pilaf', did 'Layer rice and stew' occur after 'Brown meat with spices'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Asian Barbecue Chicken Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Asian Barbecue Chicken Salad', did 'Toss lettuce with dressing' occur after 'Grill chicken with sauce'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Roasted Butter Herb Turkey",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Roasted Butter Herb Turkey', did 'Place turkey on vegetables' occur after 'Preheat oven to 450\u00b0F'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Peking Style Flank Steak Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Peking Style Flank Steak Recipe', did 'Cut steak into thin slices' occur after 'Broil or grill steak'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Chicken Tortilla Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Chicken Tortilla Soup', did 'Simmer with chicken stock' occur after 'Brown chicken in oil'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Easy Marinara",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Easy Marinara', did 'Simmer until ready' occur after 'Mix all ingredients'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Cajun Injector Ultimate Fried Turkey",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Cajun Injector Ultimate Fried Turkey', did 'Lower turkey into oil' occur after 'Inject Creole Butter Marinade'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Oven Poached Salmon a La Paige (Rachael Ray)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Oven Poached Salmon a La Paige (Rachael Ray)', did 'Roast the fish' occur after 'Preheat oven to 400F'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Cajun Cornmeal Crusted Chicken",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Cajun Cornmeal Crusted Chicken', did 'Coat chicken in cornmeal mixture' occur after 'Preheat oven to 350\u00b0F'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Butternut Squash Tsimmes Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Butternut Squash Tsimmes Recipe', did 'Bake until squash is tender' occur after 'Preheat oven to 400 degrees'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Garlic Rosemary Roasted Pork Loin",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Garlic Rosemary Roasted Pork Loin', did 'Pierce meat, add garlic paste' occur after 'Preheat oven'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Mustard-Glazed Rib Roast",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Mustard-Glazed Rib Roast', did 'Decrease oven temperature' occur after 'Spread rub over roast'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Homemade Pizza Dough",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Homemade Pizza Dough', did 'Knead dough until smooth' occur after 'Dissolve sugar in warm water'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Pork and Rice",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Pork and Rice', did 'Bake covered with foil' occur after 'Brown pork chops'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Homemade Marinara Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Homemade Marinara Sauce', did 'Add tomatoes, basil, bay leaf' occur after 'Combine oil, onion, garlic'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Old Fashioned Ozarks Meatloaf",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Old Fashioned Ozarks Meatloaf', did 'Bake in preheated oven' occur after 'Mix ingredients in bowl'?",
+        "response": "Yes",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Russian Radish-Tomato-Mint Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Russian Radish-Tomato-Mint Salad', did 'Season to taste' occur after 'Combine ingredients and dress'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    },
+    {
+        "title": "Cheddar Chicken Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred after another. Answer only with 'Yes' or 'No'.\nIn the recipe 'Cheddar Chicken Salad', did 'Drizzle with dressing' occur after 'Toss greens with ingredients'?",
+        "response": "Yes.",
+        "correct_response": "Yes"
+    }
+]
