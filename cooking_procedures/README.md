@@ -1,4 +1,4 @@
-# Cooking Procedures Knowledge Task
+# Procedural Knowledge Task
 
 The idea behind this task is that a cooking recipe title and two instructions from a recipe are provided.
 The commonsense problem is to decide, which instructions happens before or after the other. 
