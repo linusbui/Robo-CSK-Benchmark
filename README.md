@@ -39,7 +39,7 @@ In the data, we provide different tasks written as single sentence natural langu
 For each robotic setup, we provide the following information: Is the robot stationary or can it move? How many arms does it have? How many degrees of freedom does the arms have? What type of gripper is used? Are the grippers soft or rigid?
 - **[Table Setting](./table_setting/README.md)**: In this task, the embodied agent should set the dinner table for a specific meal. 
 This includes choosing the correct type of cutlery and the correct type of plate, so we provide a list of meals with their respective cutlery and plate.
-- **[Cooking Procedures Knowledge](./cooking_procedures/README.md)**: The last task evaluates a models ability to reason about the correct chronological sequence of two steps from a cooking recipe. 
+- **[Procedural Knowledge](./cooking_procedures/README.md)**: The last task evaluates a models ability to reason about the correct chronological sequence of two steps from a cooking recipe. 
 Inspired by the *Event Ordering* task[^7], the model must decide whether on step is done before or after another.
 Therefore, we provide the recipe title and two specific cooking steps from this recipe.
 
