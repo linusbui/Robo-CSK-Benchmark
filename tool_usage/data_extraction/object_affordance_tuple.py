@@ -1,8 +1,9 @@
-from pattern.text.en import singularize
+from nltk.stem import WordNetLemmatizer
 
 from extracted_affordance import ExtractedAffordance
 from utils import check_if_household_object
 
+lemmatizer = WordNetLemmatizer()
 
 class ObjectAffordanceTuple:
     def __init__(self, obj: str, initial_aff: str, source: str, should_check=True, rocs_trust=-1.0):
@@ -60,8 +61,6 @@ class ObjectAffordanceTuple:
 
     def combine_affordances(self):
         combined_list = {}
-        if self.get_object() == "plastic box":
-            x = 45
         for aff in self.get_affordances():
             aff_name = aff.get_affordance()
             if aff_name not in combined_list:
@@ -97,7 +96,7 @@ class ObjectAffordanceTuple:
 
 def preprocess_string(word: str) -> str:
     processed = word.lower().replace('_', ' ').strip()
-    return singularize(processed)
+    return lemmatizer.lemmatize(processed)
 
 
 def combine_all_tuples(tuples: [ObjectAffordanceTuple]) -> [ObjectAffordanceTuple]:
