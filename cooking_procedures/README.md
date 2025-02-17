@@ -32,11 +32,14 @@ simply download the Recipe 1M+ dataset or your recipes into the *data_generation
 
 To evaluate this tasks, we provide the LLMs with the following prompt:
 
-```
-System: Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred before another.
-User: Answer only with 'Yes' or 'No'.
+---
+**System**: Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. Based on the recipe title and the two steps provided, identify whether one action occurred before another.
+
+**User**: Answer only with 'Yes' or 'No'.
+
 Question: [Question]
-```
+
+---
 
 If the question contains the temporal relation "after", we modify the temporal relation in the system prompt accordingly. 
 For our experiment, we selected 776 recipes during the data generation process. 

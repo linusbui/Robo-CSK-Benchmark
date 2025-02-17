@@ -50,12 +50,17 @@ To combine the different tasks, we use SentenceBERT-based embeddings and cluster
 ## Experiments
 
 To evaluate this tasks, we provide the LLMs with the following prompt:
-```
-System: Imagine you are a robot with a given hardware configuration and you should decide whether you are capable of executing a task.
-User: Please only answer with Yes or No.
+
+---
+**System**: Imagine you are a robot with a given hardware configuration and you should decide whether you are capable of executing a task.
+
+**User**: Please only answer with Yes or No.
+
 Task: [Task]
+
 Hardware: [Hardware Configuration] 
-```
+
+---
 
 For each of the 4788 tasks, which consists of a robot hardware configuration capable of executing it, we also create a negative sample by setting all robotic capabilities to the minimal configuration.
 So each model is provided with 9576 samples.

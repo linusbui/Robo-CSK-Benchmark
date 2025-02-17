@@ -53,13 +53,19 @@ If an object-affordance-tuple occurs in multiple sources, their trust value is a
 ## Experiments
 
 To evaluate this tasks, we provide the LLMs with the following prompt:
-```
-System: Imagine you are a robot in a household environment being confronted with a task a list of tools.
-User: What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.
+
+---
+**System**: Imagine you are a robot in a household environment being confronted with a task a list of tools.
+
+**User**: What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.
+
 Task: [Task Name]
+
 Tools: [List of Objects to choose from]
+
 Your Choice:
-```
+
+---
 
 In each prompt we provide a list of five objects to choose from.
 One object has the correct affordance necessary for executing the given task.

@@ -27,19 +27,29 @@ For the cutlery, we include every tool that received at least 10 votes (20%) in 
 ## Experiments
 
 To evaluate this tasks, we provide the LLMs with the following prompt for asking about the cutlery...
-```
-System: Imagine you are a robot setting a table for a meal.
-User: What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: [List of utensils]
+
+---
+**System**: Imagine you are a robot setting a table for a meal.
+
+**User**: What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: [List of utensils]
+
 Meal: [Meal]
+
 Cutlery:
-```
+
+---
 ... and for asking about the plate:
-```
-System: Imagine you are a robot setting a table for a meal.
-User: What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: [List of plates]
+
+---
+**System**: Imagine you are a robot setting a table for a meal.
+
+**User**: What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: [List of plates]
+
 Meal: [Meal]
+
 Plate:
-```
+
+---
 
 We analyse the results for each model using different metrics for the plates and the cutlery:
 - For the plates, we calculate the accuracy of the model prediction

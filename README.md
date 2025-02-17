@@ -43,6 +43,17 @@ This includes choosing the correct type of cutlery and the correct type of plate
 Inspired by the *Event Ordering* task[^7], the model must decide whether on step is done before or after another.
 Therefore, we provide the recipe title and two specific cooking steps from this recipe.
 
+## Evaluation Results
+
+You can find the results for each tasks by following these links:
+- **[Tidy Up](./tidy_up/results/model_overview.csv)**
+- **[Tool Usage](./tool_usage/results/model_overview.csv)**
+- **[Meta-Reasoning](./meta_reasoning/results/model_overview.csv)**
+- **[Table Setting](./table_setting/results/model_overview.csv)**
+- **[Procedural Knowledge](./cooking_procedures/results/model_overview.csv)**
+
+You have any new results to report? Please reach out to [Jan-Philipp Töberg](https://www.uni-bielefeld.de/fakultaeten/technische-fakultaet/arbeitsgruppen/semantic-computing/team/jan-philipp-toeberg/) (jtoeberg(at)techfak(dot)uni-bielefeld(dot)de).
+
 ## Setup
 
 Apart from installing the [required](requirements.txt) Python packages, you need to create the "credentials.json" file in the root folder in which you save the OpenAI API key:

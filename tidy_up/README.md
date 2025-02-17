@@ -43,12 +43,17 @@ After removing duplicates from the list of 986 included objects, *868* distinct 
 ## Experiments
 
 To evaluate this tasks, we provide the LLMs with the following prompt:
-```
-System: Imagine you are a robot tidying up a household.
-User: What are the prototypical locations in a household where the following object can be found? Please only answer with a comma separated & ranked list of locations.
+
+---
+**System**: Imagine you are a robot tidying up a household.
+
+**User**: What are the prototypical locations in a household where the following object can be found? Please only answer with a comma separated & ranked list of locations.
+
 Object: [Object] 
+
 Locations:
-```
+
+---
 
 We analyse the results for each model using the following metrics:
 - Mean Reciprocal Rank (MRR) of the generated answers when compared to the gold standard ranked list
