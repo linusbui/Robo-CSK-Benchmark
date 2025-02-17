@@ -1,7 +1,7 @@
 import pandas as pd
 
-from cooking_procedures.json_utils import extract_json, save_to_json
-from cooking_procedures.prompting import evaluate_prompters
+from procedural_knowledge.json_utils import extract_json, save_to_json
+from procedural_knowledge.prompting import evaluate_prompters
 from utils.prompter import Prompter
 
 system_msg = "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. "

@@ -39,7 +39,7 @@ In the data, we provide different tasks written as single sentence natural langu
 For each robotic setup, we provide the following information: Is the robot stationary or can it move? How many arms does it have? How many degrees of freedom does the arms have? What type of gripper is used? Are the grippers soft or rigid?
 - **[Table Setting](./table_setting/README.md)**: In this task, the embodied agent should set the dinner table for a specific meal. 
 This includes choosing the correct type of cutlery and the correct type of plate, so we provide a list of meals with their respective cutlery and plate.
-- **[Procedural Knowledge](./cooking_procedures/README.md)**: The last task evaluates a models ability to reason about the correct chronological sequence of two steps from a cooking recipe. 
+- **[Procedural Knowledge](./procedural_knowledge/README.md)**: The last task evaluates a models ability to reason about the correct chronological sequence of two steps from a cooking recipe. 
 Inspired by the *Event Ordering* task[^7], the model must decide whether on step is done before or after another.
 Therefore, we provide the recipe title and two specific cooking steps from this recipe.
 
@@ -50,7 +50,7 @@ You can find the results for each tasks by following these links:
 - **[Tool Usage](./tool_usage/results/model_overview.csv)**
 - **[Meta-Reasoning](./meta_reasoning/results/model_overview.csv)**
 - **[Table Setting](./table_setting/results/model_overview.csv)**
-- **[Procedural Knowledge](./cooking_procedures/results/model_overview.csv)**
+- **[Procedural Knowledge](./procedural_knowledge/results/model_overview.csv)**
 
 You have any new results to report? Please reach out to [Jan-Philipp Töberg](https://www.uni-bielefeld.de/fakultaeten/technische-fakultaet/arbeitsgruppen/semantic-computing/team/jan-philipp-toeberg/) (jtoeberg(at)techfak(dot)uni-bielefeld(dot)de).
 

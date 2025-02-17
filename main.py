@@ -2,7 +2,7 @@ from meta_reasoning.prompting import meta_reason_prompter
 from table_setting.prompting import table_setting_prompter
 from tidy_up.prompting import tidy_up_prompter
 from tool_usage.prompting import tool_use_prompter
-from cooking_procedures.prompting import cooking_procedures_prompter
+from procedural_knowledge.prompting import cooking_procedures_prompter
 from utils import GemmaPrompter, OpenAIPrompter, LlamaPrompter
 
 # If the default max_new_token value is used for Gemma, the extraction from the prompt fails for the Tidy Up task

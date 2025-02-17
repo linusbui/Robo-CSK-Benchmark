@@ -1,4 +1,4 @@
-from cooking_procedures.json_utils import extract_results_json
+from procedural_knowledge.json_utils import extract_results_json
 import pandas as pd
 
 
@@ -60,7 +60,7 @@ def evaluate(prompters):
         for correct_answer in ["Yes", "No"]:
             for temporal_relation in ["after", "before"]:
                 for recipe_number in range(1, 5):
-                    evaluation_file = f'cooking_procedures/results/{correct_answer}/{prompter.model_name}/{temporal_relation}_{recipe_number}.json'
+                    evaluation_file = f'procedural_knowledge/results/{correct_answer}/{prompter.model_name}/{temporal_relation}_{recipe_number}.json'
 
                     try:
                         results = extract_results_json(evaluation_file)
@@ -78,4 +78,4 @@ def evaluate(prompters):
             overall_metrics['model'] = prompter.model_name
             comb_result = pd.concat([comb_result, overall_metrics], ignore_index=True)
 
-    comb_result.to_csv('cooking_procedures/results/model_overview.csv', index=False)
+    comb_result.to_csv('procedural_knowledge/results/model_overview.csv', index=False)
