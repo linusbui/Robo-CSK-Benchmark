@@ -11,6 +11,20 @@ As an exemplary application, we assess the embodied commonsense capabilities of 
 Our results indicate a diverse foundation, with model performance varying across different tasks, suggesting that no single model serves as the definitive solution.
 On the contrary, all models exhibit limitations, leaving room for further optimization and improvement.
 
+## Publication
+
+The accompanying paper has been accepted at the **22nd International Conference on Ubiquitous Robots (UR 2025)**. 
+Please use the following citation when working with the benchmark:
+```
+@inproceedings{Toberg2025RoboCSKBenchBenchmarking,
+  title = {RoboCSKBench: Benchmarking Embodied Commonsense Capabilities of Large Language Models},
+  booktitle = {UR2025},
+  author = {Töberg, Jan-Philipp and Kenneweg, Svenja and Cimiano, Philipp},
+  year = {2025},
+  address = {College Station, Texas, USA}
+}
+```
+
 ## Embodied Commonsense
 
 **Embodied commonsense knowledge** covers all information that an embodied agent needs to seamlessly interact with and understand its dynamic Everyday environment. 
@@ -63,10 +77,6 @@ Apart from installing the [required](requirements.txt) Python packages, you need
 }
 ```
 You can then adapt the settings (Which LLMs to use? Which tasks to evaluate) in the main.py and start benchmarking!
-
-## Publication
-
-The accompanying paper is currently under review.
 
 [^1]: R. Gupta and M. J. Kochenderfer, ‘Common Sense Data Acquisition for Indoor Mobile Robot’, in Proceedings of the 19th national conference on Artifical intelligence, in AAAI’04. San Jose, California: AAAI Press, Jul. 2004, pp. 605–610.
 
