@@ -7,7 +7,7 @@ import pandas as pd
 from tool_usage.prompting.tool_use_result import ToolSubstitutionResult
 from utils.prompter import Prompter
 
-system_msg = 'Imagine you are a robot in a household environment being confronted with a task a list of tools.'
+system_msg = 'Imagine you are a robot in a household environment being confronted with a task and a list of tools.'
 user_msg = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
 
 aff_data = pd.read_csv('tool_usage/affordance_data.csv', delimiter=',', on_bad_lines='skip')

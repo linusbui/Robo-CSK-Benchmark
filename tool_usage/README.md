@@ -55,7 +55,7 @@ If an object-affordance-tuple occurs in multiple sources, their trust value is a
 To evaluate this tasks, we provide the LLMs with the following prompt:
 
 ---
-**System**: Imagine you are a robot in a household environment being confronted with a task a list of tools.
+**System**: Imagine you are a robot in a household environment being confronted with a task and a list of tools.
 
 **User**: What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.
 
