@@ -1,7 +1,7 @@
 from tidy_up.prompting.metric_calculator import calculate_reciprocal_rank, calculate_average_precision_at_k, calculate_recall_at_k
 
 
-class TidyUpResult:
+class TidyUpOpenResult:
     def __init__(self, obj: str, pred_locations: [str], corr_locations: [str]):
         self._object = obj
         self._pred_locations = []
@@ -74,4 +74,36 @@ class TidyUpResult:
             'rec@1': self.get_recall_at1(),
             'rec@3': self.get_recall_at3(),
             'rec@5': self.get_recall_at5()
+        }
+
+
+class TidyUpMultiChoiceResult:
+    def __init__(self, obj: str, corr_loc: str, prediction: str, loc_choices: [str]):
+        self._object = obj
+        self._corr_loc = corr_loc.lower()
+        self._pred_loc = prediction.lower()
+        self._choices = loc_choices
+
+    def get_object(self) -> str:
+        return self._object
+
+    def get_correct_location(self) -> str:
+        return self._corr_loc
+
+    def get_predicted_location(self) -> str:
+        return self._pred_loc
+
+    def get_choices(self) -> [str]:
+        return self._choices
+
+    def get_pred_correctness(self) -> bool:
+        return self._corr_loc == self._pred_loc
+
+    def to_dict(self):
+        return {
+            'object': self.get_object(),
+            'correct_location': self.get_correct_location(),
+            'predicted_location': self.get_predicted_location(),
+            'location_choices': self.get_choices(),
+            'correct_prediction': self.get_pred_correctness(),
         }

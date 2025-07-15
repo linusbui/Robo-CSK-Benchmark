@@ -2,7 +2,7 @@ import ast
 
 import pandas as pd
 
-from tidy_up.prompting.tidy_up_result import TidyUpResult
+from tidy_up.prompting.tidy_up_result import TidyUpOpenResult
 from utils.prompter import Prompter
 
 system_msg = 'Imagine you are a robot tidying up a household.'
@@ -19,20 +19,20 @@ def prompt_all_models(prompters: [Prompter]):
             locs = row['Locations']
             question = f'Object: {obj}\nLocations:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            tup = TidyUpResult(obj, format_generated_locations(res), format_gold_standard_locations(locs))
+            tup = TidyUpOpenResult(obj, format_generated_locations(res), format_gold_standard_locations(locs))
             if len(tup.get_predicted_locations()) == 0:
                 print(f'Error formatting the generated locations for {obj}: {res}')
                 continue
             results.append(tup)
         write_results_to_file(results, prompter.model_name)
         comb_result = pd.concat([comb_result, calculate_average(results, prompter.model_name)], ignore_index=True)
-    comb_result.to_csv('tidy_up/results/model_overview.csv', index=False)
+    comb_result.to_csv('tidy_up/results_open/model_overview.csv', index=False)
 
 
-def write_results_to_file(results: [TidyUpResult], model: str):
+def write_results_to_file(results: [TidyUpOpenResult], model: str):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv(f'tidy_up/results/{model.lower()}.csv', index=False)
+    df.to_csv(f'tidy_up/results_open/{model.lower()}.csv', index=False)
 
 
 def format_generated_locations(locations: str) -> [str]:
@@ -46,7 +46,7 @@ def format_gold_standard_locations(locations) -> [str]:
     return [value[0].lower() for value in data_dict.values()]
 
 
-def calculate_average(results: [TidyUpResult], model: str):
+def calculate_average(results: [TidyUpOpenResult], model: str):
     average = {met: 0 for met in ['rr', 'ap@1', 'ap@3', 'ap@5', 'rec@1', 'rec@3', 'rec@5']}
     for res in results:
         average['rr'] += res.get_reciprocal_rank()
@@ -56,8 +56,9 @@ def calculate_average(results: [TidyUpResult], model: str):
         average['rec@1'] += res.get_recall_at1()
         average['rec@3'] += res.get_recall_at3()
         average['rec@5'] += res.get_recall_at5()
-    new_row = pd.Series({'model': model, 'mrr': (average['rr'] / len(results)), 'map@1': (average['ap@1'] / len(results)),
-                         'map@3': (average['ap@3'] / len(results)), 'map@5': (average['ap@5'] / len(results)),
-                         'mrec@1': (average['rec@1'] / len(results)), 'mrec@3': (average['rec@3'] / len(results)),
-                         'mrec@5': (average['rec@5'] / len(results))})
+    new_row = pd.Series(
+        {'model': model, 'mrr': (average['rr'] / len(results)), 'map@1': (average['ap@1'] / len(results)),
+         'map@3': (average['ap@3'] / len(results)), 'map@5': (average['ap@5'] / len(results)),
+         'mrec@1': (average['rec@1'] / len(results)), 'mrec@3': (average['rec@3'] / len(results)),
+         'mrec@5': (average['rec@5'] / len(results))})
     return new_row.to_frame().T

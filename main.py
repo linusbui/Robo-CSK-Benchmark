@@ -1,6 +1,6 @@
 from meta_reasoning.prompting import meta_reason_prompter
 from table_setting.prompting import table_setting_prompter
-from tidy_up.prompting import tidy_up_prompter
+from tidy_up.prompting import tidy_up_prompter_open, tidy_up_prompter_multi_choice
 from tool_usage.prompting import tool_use_prompter
 from procedural_knowledge.prompting import cooking_procedures_prompter
 from utils import GemmaPrompter, OpenAIPrompter, LlamaPrompter
@@ -15,8 +15,10 @@ if __name__ == "__main__":
     print('Finished the Meta-Reasoning task')
     tool_use_prompter.execute_prompting(prompters)
     print('Finished the Tool Usage task')
-    tidy_up_prompter.prompt_all_models(prompters)
-    print('Finished the Tidy Up task')
+    tidy_up_prompter_open.prompt_all_models(prompters)
+    print('Finished the Tidy Up task (Open Questions)')
+    tidy_up_prompter_multi_choice.prompt_all_models(prompters)
+    print('Finished the Tidy Up task (Multi Choice Questions)')
     cooking_procedures_prompter.prompt_all_models(prompters)
     print("Finished the Cooking Procedures Knowledge task")
 
