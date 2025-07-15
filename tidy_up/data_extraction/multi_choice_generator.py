@@ -2,6 +2,7 @@ import ast
 import random
 
 import pandas as pd
+from tqdm import tqdm
 
 obj_data = pd.read_csv('../tidy_up_data.csv', delimiter=',', on_bad_lines='skip')
 loc_data = pd.read_csv('../tidy_up_data_reversed.csv', delimiter=',', on_bad_lines='skip')
@@ -32,7 +33,7 @@ def get_wrong_locations_for_object(corr_locs: str, amount=4) -> [str]:
 def create_multi_choice_questions():
     preprocess_location_data()
     question_data = pd.DataFrame(columns=['Object', 'Correct_Location', 'Wrong_Locations'])
-    for idx, row in obj_data.iterrows():
+    for idx, row in tqdm(obj_data.iterrows(), 'Creating multiple choice questions'):
         obj = row['Object']
         corr_locs = turn_ranked_locations_into_list(row['Locations'])
         chosen_corr_loc = random.choice(corr_locs)

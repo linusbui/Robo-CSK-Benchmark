@@ -1,4 +1,5 @@
 import pandas as pd
+from tqdm import tqdm
 
 from table_setting.data_extraction.utensils_plates import Utensil, Plate
 from table_setting.prompting.table_setting_model_result import TableSettingModelResult
@@ -16,7 +17,7 @@ def prompt_all_models(prompters: [Prompter]):
     for prompter in prompters:
         data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
-        for index, row in data.iterrows():
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
             # setup meal name & get gold standard data
             meal = row['name']
             plate = get_fitting_plate(row)

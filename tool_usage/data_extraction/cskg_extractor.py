@@ -1,4 +1,5 @@
 import pandas as pd
+from tqdm import tqdm
 
 from object_affordance_tuple import ObjectAffordanceTuple, combine_all_tuples
 
@@ -8,7 +9,7 @@ def get_affordances_from_cskg() -> [ObjectAffordanceTuple]:
     filtered = data[data['relation;label'] == 'used for']
     tuples = []
 
-    for index, row in filtered.iterrows():
+    for index, row in tqdm(filtered.iterrows(), 'Collecting data from the CSKG'):
         obj = row['node1;label']
         aff = row['node2;label']
         obj_aff = ObjectAffordanceTuple(obj, aff, "CSKG")

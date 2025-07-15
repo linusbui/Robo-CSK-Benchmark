@@ -1,6 +1,7 @@
 import ast
 
 import pandas as pd
+from tqdm import tqdm
 
 from tidy_up.prompting.tidy_up_result import TidyUpOpenResult
 from utils.prompter import Prompter
@@ -14,7 +15,7 @@ def prompt_all_models(prompters: [Prompter]):
     for prompter in prompters:
         data = pd.read_csv('tidy_up/tidy_up_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
-        for index, row in data.iterrows():
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the open Tidy Up task'):
             obj = row['Object']
             locs = row['Locations']
             question = f'Object: {obj}\nLocations:'

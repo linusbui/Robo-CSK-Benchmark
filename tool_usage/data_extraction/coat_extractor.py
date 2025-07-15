@@ -1,6 +1,8 @@
 import json
 import re
 
+from tqdm import tqdm
+
 from object_affordance_tuple import ObjectAffordanceTuple, combine_all_tuples
 
 
@@ -9,7 +11,7 @@ def get_affordances_from_coat() -> [ObjectAffordanceTuple]:
         data = json.load(f)
 
     tuples = []
-    for aff, obj_list in data.items():
+    for aff, obj_list in tqdm(data.items(), 'Collecting data from COAT'):
         proc_aff = aff.lower()
         for obj in obj_list:
             proc_obj = camel_case_to_spaces(obj)

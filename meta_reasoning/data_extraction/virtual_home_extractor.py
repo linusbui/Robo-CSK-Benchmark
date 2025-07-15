@@ -1,5 +1,7 @@
 import os
 
+from tqdm import tqdm
+
 from gripper_configs import GripperConfig
 from task_capability import TaskCapability
 
@@ -7,7 +9,7 @@ from task_capability import TaskCapability
 def get_task_capabilities_from_virtualhome() -> [TaskCapability]:
     res = []
     folder_path = "../data/virtualhome_data/"
-    for file_name in os.listdir(folder_path):
+    for file_name in tqdm(os.listdir(folder_path), 'Collecting data from VirtualHome'):
         if file_name.endswith('.txt'):
             file_path = os.path.join(folder_path, file_name)
             try:

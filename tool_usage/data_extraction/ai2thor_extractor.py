@@ -1,5 +1,6 @@
 from ai2thor.controller import Controller
 from ai2thor.platform import CloudRendering
+from tqdm import tqdm
 
 from object_affordance_tuple import ObjectAffordanceTuple, combine_all_tuples
 
@@ -10,7 +11,7 @@ def extract_object_data(scenes: [str], batch_size=30) -> [ObjectAffordanceTuple]
     tuples = []
 
     # Iterate over scenes (batch_size = scenes per iteration)
-    for i in range(0, len(scenes), batch_size):
+    for i in tqdm(range(0, len(scenes), batch_size), 'Collecting data from AI2Thor'):
         current_scene_batch = scenes[i:i + batch_size]
 
         # Iterate over scenes for each room in the current batch

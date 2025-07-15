@@ -4,6 +4,7 @@
 import random as rndm
 
 import tensorflow_datasets as tfds
+from tqdm import tqdm
 
 if __name__ == '__main__':
     builder = tfds.builder_from_directory('../data/DROID/')
@@ -11,7 +12,7 @@ if __name__ == '__main__':
     counter = 0
 
     print('\nEpisodeNum,Task')
-    for episode in ds:
+    for episode in tqdm(ds, 'Collecting data from DROID'):
         try:
             # choose one step at random since all steps in one episode have the same high-level goal
             rndm_step = rndm.choice(list(episode["steps"]))

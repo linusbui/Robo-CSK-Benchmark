@@ -1,4 +1,5 @@
 import pandas as pd
+from tqdm import tqdm
 
 from meta_reasoning.prompting.meta_reason_model_result import MetaReasoningModelResult
 from utils.prompter import Prompter
@@ -12,7 +13,7 @@ def prompt_all_models(prompters: [Prompter]):
     for prompter in prompters:
         data = pd.read_csv('meta_reasoning/meta_reasoning_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
-        for index, row in data.iterrows():
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Meta-Reasoning task'):
             # get data from csv
             task = row['Task']
             is_mobile = row['Mobile?']

@@ -1,4 +1,5 @@
 import pandas as pd
+from tqdm import tqdm
 
 from ai2thor_extractor import get_object_locations_from_ai2thor
 from ascent_extractor import get_object_locations_from_ascent
@@ -25,7 +26,7 @@ def write_results_to_file(results: [ObjectLocationTuple]):
 
 def create_and_write_reverse_dataset(results: [ObjectLocationTuple]):
     loc_dict = {}
-    for res in results:
+    for res in tqdm(results, 'Creating the reverse version of the dataset'):
         for loc in res.get_locations():
             key = loc.get_location()
             if key not in loc_dict:

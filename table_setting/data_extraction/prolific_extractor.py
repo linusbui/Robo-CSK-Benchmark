@@ -3,6 +3,7 @@ import os
 import re
 
 import pandas as pd
+from tqdm import tqdm
 
 from preferred_meal_setting import PreferredMealSetting
 from utensils_plates import Plate, Utensil
@@ -16,7 +17,7 @@ def _get_id_for_recipe(recipe: str) -> str:
 def get_user_preferred_settings() -> [PreferredMealSetting]:
     meals = []
     folder_path = "../data/"
-    for filename in os.listdir(folder_path):
+    for filename in tqdm(os.listdir(folder_path), 'Collecting and converting prolific data'):
         if filename.endswith('.json'):
             file_path = os.path.join(folder_path, filename)
             with open(file_path, 'r') as file:
@@ -72,7 +73,7 @@ def combine_user_preferences(meals: [PreferredMealSetting]):
         columns=['recipe_id', 'name', 'hands', 'tongs', 'knife', 'fork', 'skewer', 'chopsticks', 'spoon',
                  'dinner plate', 'dessert plate', 'bowl', 'coupe plate'])
 
-    for idx, meal in mapping.iterrows():
+    for idx, meal in tqdm(mapping.iterrows(), 'Combining prolific user data for each meal'):
         utensils = {uts: 0 for uts in Utensil}
         plates = {plt: 0 for plt in Plate}
         for m in meals:

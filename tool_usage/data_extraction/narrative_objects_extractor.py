@@ -1,5 +1,7 @@
 import json
 
+from tqdm import tqdm
+
 from object_affordance_tuple import ObjectAffordanceTuple, combine_all_tuples
 
 
@@ -8,7 +10,7 @@ def get_affordances_from_narrative_objects_export() -> [ObjectAffordanceTuple]:
         data = json.load(f)
 
     tuples = []
-    for tool, disp_list in data.items():
+    for tool, disp_list in tqdm(data.items(), 'Collecting data from Narrative Objects Extract'):
         for disp in disp_list:
             proc_tool = tool.replace("soma:", "")
             proc_disp = disp.replace("soma:", "").lower()

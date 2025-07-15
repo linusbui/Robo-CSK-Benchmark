@@ -1,4 +1,5 @@
 import pandas as pd
+from tqdm import tqdm
 
 from object_location_tuple import ObjectLocationTuple, combine_all_tuples
 
@@ -8,7 +9,7 @@ def get_object_locations_from_cskg() -> [ObjectLocationTuple]:
     filtered = data[data['relation;label'] == 'at location']
     obj_loc_tuples = []
 
-    for index, row in filtered.iterrows():
+    for index, row in tqdm(filtered.iterrows(), 'Collecting data from the CSKG'):
         obj = row['node1;label']
         loc = row['node2;label']
         obj_loc = ObjectLocationTuple(obj, loc, 'CSKG')

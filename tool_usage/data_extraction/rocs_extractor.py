@@ -1,5 +1,7 @@
 import json
 
+from tqdm import tqdm
+
 from object_affordance_tuple import ObjectAffordanceTuple, combine_all_tuples
 
 
@@ -9,7 +11,7 @@ def get_affordances_from_rocs() -> [ObjectAffordanceTuple]:
         data = json.load(f)
 
     aff_tuples = []
-    for key_obj, value_dict in data.items():
+    for key_obj, value_dict in tqdm(data.items(), 'Collecting data from RoCS'):
         for key_aff, value_float in value_dict.items():
             if value_float >= 0.5:
                 aff = key_aff[:-2]

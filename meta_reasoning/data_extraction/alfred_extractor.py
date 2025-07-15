@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+from tqdm import tqdm
+
 from gripper_configs import GripperConfig
 from task_capability import TaskCapability
 
@@ -9,7 +11,7 @@ def get_task_capabilities_from_alfred() -> [TaskCapability]:
     folder_path = Path('../data/alfred_data/')
     res = []
 
-    for json_file in folder_path.glob('*.json'):
+    for json_file in tqdm(folder_path.glob('*.json'), 'Collecting data from ALFRED'):
         with json_file.open('r') as f:
             data = json.load(f)
             tasks = data['turk_annotations']

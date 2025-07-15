@@ -3,6 +3,7 @@ import json
 import random
 
 import pandas as pd
+from tqdm import tqdm
 
 from tool_usage.prompting.tool_use_result import ToolSubstitutionResult
 from utils.prompter import Prompter
@@ -31,7 +32,7 @@ def prompt_all_models(prompters: [Prompter]):
         with open("tool_usage/affordance_task_map.json") as f:
             task_data = json.load(f)
         results = []
-        for affordance, task in task_data.items():
+        for affordance, task in tqdm(task_data.items(), f'Prompting {prompter.model_name} for the Tool Usage task'):
             for t in task:
                 corr_tool = get_tool_for_affordance(affordance)
                 choices = get_unhelpful_tools_for_affordance(affordance) + [corr_tool]

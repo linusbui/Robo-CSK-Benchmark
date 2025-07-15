@@ -1,4 +1,5 @@
 import pandas as pd
+from tqdm import tqdm
 
 from object_affordance_tuple import ObjectAffordanceTuple, combine_all_tuples
 
@@ -8,7 +9,7 @@ def get_affordances_from_visual_dataset() -> [ObjectAffordanceTuple]:
     data = data.dropna(axis=1, how='all')
     tuples = []
 
-    for index, row in data.iterrows():
+    for index, row in tqdm(data.iterrows(), 'Collecting data from the Visual Affordance dataset'):
         obj = row['Object Class']
         for col in data.columns[2:]:
             aff = row[col]

@@ -1,5 +1,7 @@
 import json
 
+from tqdm import tqdm
+
 from object_location_tuple import ObjectLocationTuple, combine_all_tuples
 
 
@@ -8,7 +10,7 @@ def get_object_locations_from_coco() -> [ObjectLocationTuple]:
         data = json.load(f)
 
     obj_loc_tuples = []
-    for e in data['categories']:
+    for e in tqdm(data['categories'], 'Collecting data from Microsoft COCO'):
         loc = e['supercategory']
         if loc == 'kitchen':
             obj = e['name']

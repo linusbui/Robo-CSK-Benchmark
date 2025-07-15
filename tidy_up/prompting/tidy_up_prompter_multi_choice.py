@@ -2,6 +2,7 @@ import ast
 import random
 
 import pandas as pd
+from tqdm import tqdm
 
 from tidy_up.prompting.tidy_up_result import TidyUpMultiChoiceResult
 from utils.prompter import Prompter
@@ -15,7 +16,8 @@ def prompt_all_models(prompters: [Prompter]):
         results = []
         questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
-        for index, row in questions.iterrows():
+        for index, row in tqdm(questions.iterrows(),
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):
             obj = row['Object']
             corr_loc = row['Correct_Location']
             choices = row['Wrong_Locations'] + [corr_loc]

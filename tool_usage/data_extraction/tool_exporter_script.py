@@ -4,12 +4,14 @@
 # narrative_objects_extractor.py
 
 import json
+
 import dfl.dlquery as dl
+from tqdm import tqdm
 
 res = {}
 dl.buildCache()
 tools = dl.whatSubclasses("dfl:tool.n.wn.artifact")
-for tool in tools:
+for tool in tqdm(tools, 'Extracting tools from Narrative Objects'):
     disp = dl.whatDispositionsDoesObjectHave(tool)
     proc_tool = tool.replace(".n.wn.artifact", "").replace("dfl:", "").split("..")[0].strip()
     proc_disp = [d.split(".v")[0].replace("dfl:", "").strip() for d in disp]

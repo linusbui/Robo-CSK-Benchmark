@@ -1,6 +1,7 @@
 from typing import Dict, List
 
 from sentence_transformers import SentenceTransformer, util
+from tqdm import tqdm
 
 from task_capability import TaskCapability
 
@@ -23,7 +24,7 @@ def combine_capabilities(caps: List[TaskCapability]) -> List[TaskCapability]:
 
     # combine all capabilities in one cluster
     cluster_reps = []
-    for cluster in clusters:
+    for cluster in tqdm(clusters, 'Combining clusters'):
         if len(cluster) == 1:
             continue
         cluster_rep = unique_caps[unique_sentences[cluster[0]]]

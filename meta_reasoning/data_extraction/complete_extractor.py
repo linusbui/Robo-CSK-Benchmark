@@ -1,4 +1,5 @@
 import pandas as pd
+from tqdm import tqdm
 
 from alfred_extractor import get_task_capabilities_from_alfred
 from capability_combiner import combine_capabilities
@@ -19,7 +20,7 @@ def extract_from_all_sources() -> [TaskCapability]:
 
 def create_negative_samples(positive_samples: [TaskCapability]) -> [TaskCapability]:
     samples = []
-    for p_s in positive_samples:
+    for p_s in tqdm(positive_samples, 'Creating negative samples'):
         n_s = TaskCapability(p_s.get_task(), False, 1, 1, GripperConfig.NO, True)
         if str(n_s) == str(p_s):
             continue
