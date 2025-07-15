@@ -60,7 +60,8 @@ Therefore, we provide the recipe title and two specific cooking steps from this 
 ## Evaluation Results
 
 You can find the results for each tasks by following these links:
-- **[Tidy Up](./tidy_up/results/model_overview.csv)**
+- **[Tidy Up (Open Questions)](tidy_up/results_open/model_overview.csv)**
+- **[Tidy Up (Multi Choice Questions)](tidy_up/results_multi/model_overview.csv)**
 - **[Tool Usage](./tool_usage/results/model_overview.csv)**
 - **[Meta-Reasoning](./meta_reasoning/results/model_overview.csv)**
 - **[Table Setting](./table_setting/results/model_overview.csv)**
