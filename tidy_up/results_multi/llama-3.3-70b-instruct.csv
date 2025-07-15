@@ -1,0 +1,868 @@
+object,correct_location,predicted_location,location_choices,correct_prediction
+action figure,closet,closet,"['ballroom', 'closet', 'cubicle', 'different room', 'safe']",True
+adjustable wrench,toolbox,childs room,"['ambulance', 'restroom', 'bank', 'childs room', 'trap']",False
+alarmclock,bedroom,bedroom,"['pod', 'floor', 'bedroom', 'icebox', 'board']",True
+aluminumfoil,kitchen,kitchen,"['bath', 'kitchen or bathroom', 'hotel room', 'television room', 'kitchen']",True
+android figure,study,utility room,"['hospital drug storeroom', 'keg', 'utility room', 'different room', 'study']",False
+anti slip tape,deck,kitchen,"['deck', 'handbag', 'kitchen', 'pocket', 'hive']",False
+antidepressant,safe,playroom,"['every bedroom', 'playroom', 'shelf', 'deck', 'safe']",False
+antique,trunk,trunk,"['loungeroom', 'lounge', 'bag', 'trunk', 'toaster']",True
+apple,lobby,lobby,"['card room', 'bottle', 'toolbox', 'lobby', 'camp']",True
+applesauce,jar,jar,"['butt', 'side of  room', 'box', 'bike', 'jar']",True
+appliance,house,house,"['washer', 'butt', 'different room', 'hive', 'house']",True
+apricot,table,table,"['master bedroom', 'boot', 'camp', 'table', 'bedroom drawer']",True
+armchair,living room,living room,"['shell', 'living room', 'room', 'bathroom cabinet', 'breadbox']",True
+armoire,bedroom,bedroom,"['freezer', 'art classroom', 'bedroom', 'kitchen', 'bay']",True
+armrest,car,car,"['car', 'lobby', 'packet', 'press', 'shaker']",True
+arrow,quiver,quiver,"['class room', 'backyard', 'aquarium', 'room', 'quiver']",True
+artichoke,refrigerator,refrigerator,"['delivery room', 'jacket', 'way', 'loft', 'refrigerator']",True
+article,press,press,"['box', 'press', 'oven', 'bed', 'hive']",True
+ashtray,bar,house,"['nest', 'house', 'bicycle', 'bar', 'package']",False
+asparagus,oven,oven,"['plate', 'home', 'basement', 'oven', 'motel room']",True
+atm,bank,bank,"['anor room', 'bank', 'house', 'house', 'jar']",True
+attic,home,home,"['separate room', 'numerous modern washrooms', 'home', ""prostitute's bedroom"", 'carton']",True
+backpack,card room,kitchen,"['deck', 'kitchen', 'card room', 'art classroom', 'kitchen or bathroom']",False
+bacon,fridge,fridge,"['fridge', 'sink', 'boot', ""person's living room"", 'court']",True
+balancing cactus,den,corridor,"['cruet', 'wardrobe', 'corridor', 'cabinet', 'den']",False
+ball,different room,sack,"['attic', 'fridge', 'master bedroom', 'sack', 'different room']",False
+balustrade,grand ballroom,grand ballroom,"['purse', 'handbag', 'grand ballroom', 'cradle', 'mansion']",True
+banana,kitchen,kitchen,"['kitchen', ""children's room"", 'numerous modern washrooms', 'house', 'backyard']",True
+bar,shaker,basement,"['basement', 'shaker', 'range', 'wardrobe', 'dumpster']",False
+baseball,childs room,childs room,"['bathroom drawer', 'childs room', 'bedroom drawer', 'bedroom drawer', 'nest']",True
+baseballbat,foyer,bedroom,"['table', 'bedroom', 'foyer', 'laundry room', 'garbage']",False
+basil,garden,garden,"['barrel', 'bed', 'garden', 'ballroom', 'bar']",True
+basketball,small room,bedroom,"['bedroom', 'purse', 'small room', 'barrel', 'machine']",False
+bat,broom closet,well,"['well', 'broom closet', 'most rooms', 'living rooms', 'pan']",False
+bath sheet,bathroom,bathroom,"['bathroom', 'tea room', 'bottle', 'dumpster', 'hamper']",True
+bathtub,bathroom,bathroom,"['case', 'home office', 'room of house', 'bathroom', 'toolbox']",True
+bathtubbasin,bathroom,bathroom,"['teapot', 'lobby', 'bathroom', 'bedroom', 'bar']",True
+batter,box,box,"['band room', 'box', 'bike', 'bedroom', 'childs room']",True
+battery,none of the given options seem suitable for a battery,television room,"['livin room', 'sofa', 'television room', 'wardrobe', 'dumpster']",False
+beacon,quiver,range,"['well', 'cruet', 'teapot', 'quiver', 'range']",False
+beanbag,child's bedroom,child's bedroom,"['nest', 'safe', ""child's bedroom"", ""cash's room"", 'independant room']",True
+beard color gel,independent room,dining room,"['one room flat', 'pot', 'dining room', 'independant room', 'beehive']",False
+beauty pack,room of house,kitchen,"['cruet', 'kitchen', 'room of house', 'lounge', 'breadbox']",False
+bed,bedroom,bedroom,"['motel room', 'bedroom', 'livin room', 'box', 'box']",True
+bedroom,house,house,"['larder', 'family room', 'house', 'car', 'bathtub']",True
+beer,bar,bar,"['tank', 'class room', 'breadbox', 'bar', 'corridor']",True
+beet,jar,jar,"['stand', 'stand', 'ir rooms', 'jar', 'family room']",True
+belt,chest,suitcase,"['bed', 'purse', 'apartment', 'chest', 'suitcase']",False
+beverage,bar,bar,"['aquarium', 'lobby', 'bathroom', 'bar', 'freezer']",True
+binoculars,living room,backpack,"['backpack', 'cubicle', 'living rooms', 'master bedroom', 'library']",False
+biscuit,carton,oven,"['hatbox', 'carton', 'most rooms', 'dumpster', 'oven']",False
+blanket,closet,closet,"['mailbox', 'loft', 'breadbox', 'closet', 'sedan']",True
+bleach cleanser,laundry room,bedroom,"['laundry room', 'bedroom', 'bicycle', 'machine', 'bay']",False
+blender,kitchen,kitchen,"['kitchen', 'shaker', 'sack', 'teapot', 'stand']",True
+blender jar,boot,garage,"['garage', 'anor room', 'boot', 'loft', 'class room']",False
+blind,living room,living room,"[""child's room"", 'living room', 'small room', 'dumpster', 'family room']",True
+blouse,suitcase,suitcase,"['bottle', 'table', 'study', 'motel room', 'suitcase']",True
+board game,loft,lobby,"['loft', 'loft', 'lobby', 'mailbox', 'trunk']",False
+boat,bay,bay,"['family room', 'hatbox', ""child's bedroom"", 'bay', 'pan']",True
+boater,boat,boat,"['boat', 'icebox', 'dresser', 'bundle', 'bowl']",True
+bolt,jar,jar,"['dormroom', 'bar', 'jar', 'dresser', 'kitchen']",True
+book,childs room,childs room,"['boat', 'bath', 'hamper', 'childs room', 'kitchen or bathroom']",True
+bookcase,house,house,"['drawer', 'shell', 'house', 'dimly lit room', 'automobile']",True
+bookend,childs room,childs room,"['bicycle', 'toaster', 'pocket', 'shaker', 'childs room']",True
+bookshelf,bedroom,bedroom,"['oven', 'drawer', 'hamper', 'mansion', 'bedroom']",True
+boot,small room,living room,"['dumpster', 'bicycle', 'handbag', 'small room', 'living room']",False
+booze,bar,bar,"['dishwasher', 'container', 'corridor', 'bar', 'home office']",True
+bottle,kitchen,kitchen,"['barrel', 'kitchen', 'vault', 'closet', 'cat']",True
+bourbon,barrel,barrel,"['bike', 'pocket', 'ballroom', 'barrel', 'home']",True
+bowl,kitchen,garage,"['independant room', 'boot', 'garage', 'bedroom drawer', 'belfry']",False
+box,lobby,lobby,"['deck', 'lobby', 'waiting room', 'fridge', 'classroom']",True
+bra,guest room,suitcase,"['toolbox', 'toaster', 'range', 'guest room', 'suitcase']",False
+brain,head,head,"['storage room', 'dimly lit room', 'boat', 'pan', 'head']",True
+brandy,bar,bar,"['machine', 'shell', 'bar', 'counter', 'motel room']",True
+bread,kitchen,kitchen,"['kitchen', 'dining room', 'hall', 'motel room', ""child's bedroom""]",True
+breakfast,table,table,"['exercise room', ""prostitute's bedroom"", 'aquarium', 'cradle', 'table']",True
+broccoli,bowl,oven,"['basement', 'bowl', 'jar', 'cellar', 'oven']",False
+broiler,oven,oven,"['chamber', 'chamber', ""children's room"", 'oven', 'trunk']",True
+broom,cabinet,cabinet,"['aquarium', 'most rooms', 'childs room', 'cabinet', 'tin']",True
+bug,garden,garden,"['closet', 'drawer', 'dimly lit room', 'living room', 'garden']",True
+bulb,lamp,lamp,"['sack', 'wallet', 'motorbike', 'lamp', 'pan']",True
+bullet,can,chamber,"['castle', 'cup', 'bundle', 'chamber', 'can']",False
+bumper,car,car,"['classroom', 'car', 'anor room', 'dishwasher', 'pocket']",True
+bun,breadbox,breadbox,"['loft', 'stove', 'wallet', 'breadbox', 'jacket']",True
+bundt pan,freezer,childs room,"['basket', 'cup', 'childs room', 'microwave', 'freezer']",False
+bureau,bedroom,bedroom,"['bedroom', 'ballroom', 'middle of  room', 'case', 'bar']",True
+burner,oven,oven,"['microwave', 'hamper', 'bookshelf', 'oven', 'floor']",True
+butter dish,kitchen,bathroom,"['pot', 'bathroom', 'dwelling', 'barrel', 'bathroom and kitchen']",False
+butterknife,kitchen,kitchen,"['tin', 'loft', 'kitchen', 'hotel room', 'washer']",True
+cabbage,dining room,plate,"['plate', ""prostitute's bedroom"", 'dining room', 'cabin', 'wardrobe']",False
+cabinet,living room,kitchen,"['ballroom', 'home', 'kitchen', 'pot', 'livin room']",False
+cake mix,container,dining room,"['container', 'head', 'car', 'dining room', 'box']",False
+cake pan,pantry,dining room,"['pantry', 'pitcher', 'dining room', 'bathtub', 'band room']",False
+calender,desk,desk,"['oven', 'childs room', 'dining room', 'backpack', 'desk']",True
+camera,closet,closet,"['refrigerator', 'bowl', 'aquarium', 'one room flat', 'closet']",True
+camper,camp,camp,"['belfry', 'camp', 'trunk', 'livingroom', 'chest']",True
+can opener,utility room,utility room,"['utility room', 'apartment', 'spoon', 'garbage', 'hall']",True
+candelabra,table,table,"['apartment', 'table', 'different room', 'chamber', 'guest room']",True
+candle,living room,living room,"['living room', 'bathtub', 'package', 'place', 'beehive']",True
+candle holder,floor,exercise room,"['exercise room', 'lamp', 'floor', 'hamper', 'bathtub']",False
+candlestick,table,table,"['sofa', 'bicycle', 'table', 'basket', 'case']",True
+candy,trunk,corridor,"['corridor', 'bay', 'trunk', 'keg', 'schoolroom']",False
+candy bar,desk,television room,"['television room', 'desk', 'stove', 'barrel', 'laundry room']",False
+canister,box,corridor,"['backyard', 'corridor', 'box', 'dwelling', 'boat']",False
+canteen,pantry,backpack,"['utility room', ""teenager's bedroom"", 'jar', 'backpack', 'pantry']",False
+canvas,art classroom,art classroom,"['pitcher', 'art classroom', 'laundry room', 'storage room', 'wardrobe']",True
+cap,suitcase,suitcase,"['playroom', 'suitcase', 'machine', 'shell', 'dwelling']",True
+carburettor,car,car,"['wardrobe', 'hall', 'car', ""person's living room"", 'pitcher']",True
+card,box,box,"['utility room', 'aquarium', 'box', 'foyer', 'pitcher']",True
+card game,closet,closet,"['spoon', 'jar', 'container', 'closet', 'microwave']",True
+carpeting,dining room,bed,"['independant room', 'bicycle', 'belfry', 'dining room', 'bed']",False
+carrot,refrigerator,refrigerator,"['automobile', 'bathtub', 'refrigerator', 'storage room', 'motel room']",True
+carrying case,bedroom,bedroom,"['hamper', 'hatbox', 'cellar', 'delivery room', 'bedroom']",True
+case,shelf,court,"['bedroom', 'court', 'shoe', 'home', 'shelf']",False
+casserole dish,cabinet,bedroom,"['livin room', 'bedroom', 'washer', 'cabinet', 'pot']",False
+cauliflower,oven,oven,"['oven', 'corridor', 'ir rooms', 'living rooms', 'dumpster']",True
+cd,cabinet,cabinet,"['schoolroom', 'chest', 'cradle', 'cabinet', 'barrel']",True
+celery,refrigerator,refrigerator,"['handbag', 'sedan', 'refrigerator', 'attic', 'machine']",True
+cellar,castle,castle,"['castle', 'aquarium', 'card room', 'head', 'television room']",True
+cellphone,bedroom,bedroom,"['can', ""prostitute's bedroom"", 'bright room', 'utility room', 'bedroom']",True
+centerpiece,table,table,"['mailbox', 'closet', 'bathroom and kitchen', 'table', 'hotel room']",True
+cereal,shelf,shelf,"['shelf', 'deck', 'packet', 'spoon', 'dungeon']",True
+chain,safe,bedroom,"['shelf', 'safe', 'bedroom', 'room', 'wallet']",False
+chair,person's living room,kitchen,"['kitchen', 'range', 'sedan', 'dishwasher', ""person's living room""]",False
+chalk,classroom,classroom,"['hamper', 'bathroom drawer', 'bookshelf', 'every room', 'classroom']",True
+chalkboard,classroom,classroom,"['house', 'classroom', 'chest', 'stand', 'cradle']",True
+check,bank,bank,"[""person's living room"", 'nest', 'bowl', 'bank', 'car']",True
+cheese,refrigerator,refrigerator,"['grand ballroom', 'container', 'bag', 'refrigerator', 'well']",True
+chesterfield,different room,foyer,"['foyer', 'deck', 'different room', 'cabin', 'plate']",False
+chicken,oven,oven,"['cellar', 'oven', 'apartment', 'case', 'family room']",True
+chickpea,kitchen,oven,"['oven', 'bathroom and kitchen', 'garbage', 'stove', 'camp']",False
+china,cabinet,cabinet,"['pocket', 'microwave', 'music room', 'livingroom', 'cabinet']",True
+chip,pot,pot,"[""teenager's bedroom"", 'middle of  room', 'living room', 'corridor', 'pot']",True
+chocolate,kitchen,closet,"['safe', 'closet', 'bathroom or kitchen', ""person's living room"", 'boot']",False
+chocolate box,one room flat,corridor,"['one room flat', 'corridor', 'sink', 'microwave', 'purse']",False
+chocolate milk pods,drawer,utility room,"['chamber', 'truck', 'drawer', 'car', 'utility room']",False
+chocolate powder,can,utility room,"['boat', 'can', 'oven', 'sack', 'utility room']",False
+chopping board,counter,exercise room,"['deck', ""men's restroom"", 'counter', 'independant room', 'exercise room']",False
+cinnamon,kitchen,kitchen,"['trunk', 'kitchen', 'pod', 'belfry', 'cellar']",True
+clamp,classroom,pantry room,"['pantry', 'pantry room', ""men's restroom"", 'dimly lit room', 'classroom']",False
+clay,home,lobby,"['lobby', 'hospital drug storeroom', 'icebox', 'home', 'plate']",False
+clipboard,cubicle,classroom,"['classroom', 'home', 'one room flat', 'press', 'cubicle']",False
+clock,home office,home office,"['plate', 'foyer', 'lamp', 'pan', 'home office']",True
+closet,independant room,house,"['grand ballroom', 'spoon', 'belfry', 'house', 'independant room']",False
+cloth,trunk,childs room,"['bunk', 'foyer', 'trunk', 'childs room', 'foyer']",False
+clothing,box,floor,"['ambulance', 'nest', 'floor', 'range', 'box']",False
+coaster,desk,desk,"[""teenager's bedroom"", 'garden', 'bath', 'stove', 'desk']",True
+coat,closet,closet,"['bus', 'bookshelf', 'barrel', 'closet', 'press']",True
+coating,bath,range,"['bookshelf', 'range', 'bath', 'living rooms', 'living rooms']",False
+cockpit,bus,head,"['head', 'dishwasher', 'aquarium', 'bus', 'shaker']",False
+coffee,pot,pot,"['backyard', 'pot', ""prostitute's bedroom"", 'restroom', 'dwelling']",True
+coffee beans,dining room,dining room,"['boot', 'card room', 'dining room', 'bundle', 'belfry']",True
+coffee pods,counter,closet,"['counter', 'basement', 'closet', 'garbage', 'barrel']",False
+coffeemachine,kitchen,kitchen,"['kitchen', 'floor', 'desk', 'cup', 'lobby']",True
+coffeemaker,cabin,bathroom,"['trap', 'hatbox', 'bathroom', 'art classroom', 'cabin']",False
+coffeetable,living room,living room,"['living room', 'shaker', 'carton', 'package', 'dresser']",True
+coil,utility room,machine,"['bathroom drawer', 'class room', 'machine', 'bath', 'utility room']",False
+coke,pantry room,can,"['bathtub', 'can', 'purse', 'bag', 'pantry room']",False
+cola,fridge,fridge,"['storage room', 'fridge', 'small room', ""child's room"", 'machine']",True
+collage,bookshelf,one of  classrooms,"['bathtub', 'one of  classrooms', ""cash's room"", 'bag', 'bookshelf']",False
+colored wood blocks,playroom,playroom,"['bunk', 'hive', 'dungeon', 'playroom', 'living rooms']",True
+column,person's living room,table,"['bedroom drawer', 'table', ""person's living room"", 'oven', ""child's room""]",False
+comb,child's bedroom,hive,"[""child's bedroom"", 'cradle', 'ir rooms', 'pod', 'hive']",False
+comfort,home,home,"['packet', 'home', 'waiting room', 'bathroom or kitchen', 'shell']",True
+compass,backpack,backpack,"['bowl', 'press', 'plate', 'pod', 'backpack']",True
+compote,jar,jar,"['bright room', 'music room', 'hotel room', 'jar', 'garden']",True
+computer,cubicle,cubicle,"['deck', 'cubicle', 'tank', 'lobby', 'palace']",True
+condiment,kitchen,bedroom,"['bedroom', 'court', 'livin room', 'packet', 'home']",False
+condom,bathroom,package,"['exercise room', 'package', 'bicycle', 'bathroom and kitchen', 'hospital drug storeroom']",False
+conserve,freezer,jar,"['palace', 'every bedroom', 'one room flat', 'freezer', 'jar']",False
+container,broom closet,car,"['car', 'castle', 'broom closet', 'can', 'bathtub']",False
+contraceptive,drawer,drawer,"['quiver', 'deck', 'basement', 'television room', 'drawer']",True
+cookbook,shelf,shelf,"['toolbox', 'separate room', 'guest room', 'shelf', 'art classroom']",True
+cookie,loungeroom,oven,"['oven', 'vault', 'card room', 'loft', 'loungeroom']",False
+cooky,oven,oven,"['handbag', 'pot', 'oven', 'beehive', 'home']",True
+cooler,kitchen,kitchen,"['bathroom drawer', 'bus', 'television room', 'den', 'kitchen']",True
+copyholder,desk,desk,"['desk', 'suitcase', 'bunk', 'palace', 'bottle']",True
+cord,home office,cabinet,"['cabinet', 'home office', 'garden', 'apartment', 'basement']",False
+coronet,cabinet,cabinet,"['carton', 'cabinet', 'delivery room', 'classroom', 'machine']",True
+cosmetic,drawer,drawer,"['cubicle', 'drawer', 'exercise room', 'machine', 'pitcher']",True
+couch,cash's room,cash's room,"['bar', 'washer', 'desk', 'lamp', ""cash's room""]",True
+countertop,dwelling,bathroom,"['pitcher', 'sedan', 'dwelling', 'beehive', 'bathroom']",False
+cracker,pantry,pantry,"['laundry room', 'trap', 'aquarium', 'floor', 'pantry']",True
+cracker box,broom closet,childs room,"['washer', 'broom closet', 'childs room', 'hatbox', 'jacket']",False
+crate,parlor,kitchen,"[""teenager's bedroom"", 'kitchen', 'bedroom', 'suitcase', 'parlor']",False
+crayon,living room,living room,"['cup', 'living room', 'bank', 'attic', 'boot']",True
+creditcard,case,living room,"['can', 'living room', 'ir rooms', 'case', 'independant room']",False
+crisp,refrigerator,table,"['mansion', 'table', 'bundle', 'refrigerator', 'childs room']",False
+crowbar,cabinet,cabinet,"['bed', 'cabinet', 'belfry', 'parlor', 'range']",True
+cube storage box,playroom,playroom,"['furniture', 'larder', 'independant room', 'living rooms', 'playroom']",True
+cubicle,bank,bank,"['hospital drug storeroom', 'jacket', 'garden', 'bank', 'pan']",True
+cup,dishwasher,dishwasher,"['waiting room', 'room of house', 'dishwasher', 'laundry room', 'breadbox']",True
+cupcake,television room,oven,"['most rooms', 'exercise room', 'television room', 'cellar', 'oven']",False
+curtain,livingroom,kitchen,"['kitchen', 'wallet', 'cellar', 'livingroom', 'livin room']",False
+cushion,storage room,storage room,"['freezer', 'pocket', 'boot', 'larder', 'storage room']",True
+custard,refrigerator,refrigerator,"['most rooms', 'refrigerator', 'suitcase', 'guest room', 'band room']",True
+cutlery,table,table,"['backpack', 'cradle', 'table', 'desk', 'shell']",True
+damper,stand,attic,"['attic', 'head', 'stand', 'pod', 'board']",False
+dashboard,car,car,"['locker', 'car', 'quiver', 'court', 'motorbike']",True
+decanter,bar,bar,"['bar', 'different room', 'numerous modern washrooms', 'boot', 'room']",True
+deck,backyard,backyard,"['container', 'backyard', 'living room', 'separate room', 'can']",True
+design,wallet,plate,"['plate', 'hospital drug storeroom', 'vault', 'wallet', 'attic']",False
+desk,table,living room,"['cruet', 'living room', 'packet', 'table', 'package']",False
+desk caddy,class room,television room,"['sedan', 'class room', 'television room', 'toaster', 'loungeroom']",False
+desklamp,desk,bedroom,"['vault', 'bedroom', 'microwave', 'desk', 'dresser']",False
+desktop,bedroom,bedroom,"['floor', 'ballroom', 'bedroom', 'basement', 'lobby']",True
+dessert,refrigerator,refrigerator,"['deck', 'belfry', 'oven', 'refrigerator', 'utility room']",True
+diaper pack,wardrobe,lobby,"['lobby', 'wardrobe', 'shoe', 'hatbox', 'bus']",False
+diary,library,desk,"['bath', 'drawer', 'den', 'library', 'desk']",False
+dictionary,home office,table,"['table', 'suitcase', 'home office', 'barrel', 'music room']",False
+dietary supplement,study,playroom,"['dimly lit room', 'bookshelf', 'study', 'playroom', 'loft']",False
+dime,purse,purse,"['bathtub', 'purse', 'aquarium', 'room of house', 'mansion']",True
+diningtable,living room,living room,"['bunk', 'music room', 'living room', 'camp', 'anor room']",True
+dinner,table,table,"['chest', ""children's room"", 'table', 'cabinet', 'middle of  room']",True
+dish,sink,sink,"['hive', 'band room', 'livin room', 'chest', 'sink']",True
+dish drainer,barrel,playroom,"['playroom', 'automobile', 'barrel', 'dresser', 'cradle']",False
+dishsponge,bathroom,bathroom,"['bathroom', 'separate room', 'wallet', 'way', 'class room']",True
+dishtowel,dining room,dining room,"['dining room', 'trunk', 'orchestra', 'chamber', 'sedan']",True
+dishwasher,apartment,apartment,"['jar', 'locker', 'cabinet', 'castle', 'apartment']",True
+dispensing closure,pantry room,pantry room,"['waiting room', 'shell', 'delivery room', 'pantry room', 'guest room']",True
+document,storage room,suitcase,"['hospital drug storeroom', 'suitcase', 'pocket', 'bath', 'storage room']",False
+dog bowl,dining room,dining room,"['glass', 'basket', 'bathtub', 'pocket', 'dining room']",True
+dog chew toy,exercise room,exercise room,"['exercise room', 'desk', 'counter', 'oven', 'oven']",True
+dogbed,living room,living room,"['ambulance', 'freezer', 'living room', 'lobby', 'bottle']",True
+dollhouse toy,livingroom,garage,"['garage', 'livingroom', 'pantry', 'broom closet', 'carton']",False
+donut,parlor,home office,"['delivery room', 'parlor', 'oven', 'suitcase', 'home office']",False
+door,apartment,apartment,"['range', 'pantry', 'bright room', 'apartment', 'purse']",True
+doughnut,fridge,fridge,"['furniture', 'fridge', 'hotel room', 'home', 'bag']",True
+drawer,dresser,dresser,"['jacket', 'stand', 'stand', 'locker', 'dresser']",True
+dress,closet,closet,"['most rooms', 'purse', 'bowl', 'closet', 'cradle']",True
+dresser,person's living room,home,"['laundry room', 'lobby', 'home', ""person's living room"", 'parlor']",False
+dressing,refrigerator,refrigerator,"['motel room', 'refrigerator', 'class room', 'cellar', 'foyer']",True
+drill,basement,basement,"['tank', ""child's room"", 'basement', 'pan', 'small room']",True
+drink,can,can,"['belfry', 'can', 'chest', 'boot', 'bathroom']",True
+drink coaster,stand,closet,"['pocket', 'stand', 'hotel room', 'closet', 'dormroom']",False
+driveway,driveway,car,"['garden', 'lamp', 'deck', 'room of house', 'car']",False
+drum,case,child's room,"[""child's room"", 'boat', 'sack', 'case', 'cradle']",False
+dryer,basement,basement,"['basement', 'board', 'class room', 'corridor', 'shaker']",True
+duck,carton,oven,"['court', 'oven', 'board', 'carton', 'deck']",False
+duct,house,house,"['hotel room', 'cruet', 'dishwasher', 'mansion', 'house']",True
+duct tape,container,corridor,"['sofa', 'bed', 'container', 'safe', 'corridor']",False
+dumbbell,court,bedroom,"['bedroom', 'court', 'stove', 'jar', 'table']",False
+dumbbell rack,storage room,storage room,"['library', 'storage room', 'tin', 'pitcher', 'car']",True
+dungeon,basement,basement,"['hall', 'trunk', 'bedroom drawer', 'basement', 'bed']",True
+dustbin,kitchen,kitchen,"['kitchen', 'garage', ""prostitute's bedroom"", 'package', 'stand']",True
+dustpan and brush,closet,closet,"['closet', 'spoon', 'machine', 'way', 'dwelling']",True
+dutch oven,kitchen,kitchen,"['bathroom or kitchen', 'kitchen', 'automobile', 'mailbox', 'dimly lit room']",True
+duvet,living room,living room,"['lounge', 'dumpster', 'middle of  room', 'cradle', 'living room']",True
+easter basket,den,kitchen,"['bundle', 'suitcase', 'delivery room', 'kitchen', 'den']",False
+edible,plate,plate,"['pod', 'hamper', 'plate', 'trap', 'loft']",True
+egg,kitchen,kitchen,"['one room flat', 'kitchen', 'washer', 'independant room', 'ballroom']",True
+eggplant,kitchen,oven,"['furniture', 'orchestra', 'kitchen', 'oven', 'exercise room']",False
+electric heater,dwelling,closet,"['closet', 'package', 'dwelling', 'orchestra', 'toaster']",False
+electric toothbrush,tin,exercise room,"['exercise room', 'art classroom', 'tin', 'motorbike', 'freezer']",False
+electronic adapter,case,bedroom,"['bag', 'bedroom', 'machine', 'case', 'board']",False
+electronic cable,band room,dining room,"['packet', 'tea room', 'bed', 'band room', 'dining room']",False
+elevator,apartment,apartment,"['bus', 'hive', 'apartment', 'quiver', 'briefcase']",True
+emperor,palace,palace,"['basement', 'palace', 'small room', 'tea room', 'utility room']",True
+encyclopedia,library,library,"['butt', 'separate room', 'container', 'library', 'grand ballroom']",True
+engraving,plate,plate,"['bath', 'corridor', 'pantry', 'plate', 'toolbox']",True
+envelope,drawer,drawer,"['drawer', 'backyard', 'bay', ""children's room"", ""teenager's bedroom""]",True
+face moisturizer,drawer,pantry room,"['sofa', 'drawer', 'pantry room', 'every room', 'boat']",False
+faucet,restroom,restroom,"['one room flat', ""child's room"", 'bunk', 'dwelling', 'restroom']",True
+fiberglass,boat,boat,"['boat', 'well', 'bookshelf', 'bath', 'mailbox']",True
+figurine,cabinet,cabinet,"['cabinet', 'bank', 'room', 'house', 'home']",True
+file sorter,shelf,childs room,"['shelf', 'den', 'purse', 'boat', 'childs room']",False
+film,box,drawer,"['fridge', 'hamper', 'box', 'kitchen or bathroom', 'drawer']",False
+fingerpaint,independant room,exercise room,"['bus', 'independant room', 'bicycle', 'briefcase', 'exercise room']",False
+fire,kitchen,basement,"['every room', 'car', 'television room', 'bathroom or kitchen', 'basement']",False
+firearm,cabinet,cabinet,"['castle', 'jar', 'cabinet', 'castle', 'shelf']",True
+fireplace,family room,family room,"['locker', 'home office', 'chest', 'family room', 'refrigerator']",True
+fish,icebox,boat,"['cat', 'board', 'icebox', 'boat', 'pocket']",False
+fitness tracker wristband,storage room,storage room,"['pan', 'beehive', 'storage room', 'toaster', 'shelf']",True
+flag,classroom,classroom,"['childs room', 'keg', 'every room', 'classroom', 'desk']",True
+flashlight,utility room,utility room,"['ballroom', 'carton', ""men's restroom"", 'utility room', 'cruet']",True
+flat screwdriver,closet,closet,"['suitcase', 'oven', 'closet', 'car', 'bathroom cabinet']",True
+floor,side of room,kitchen,"['kitchen', 'foyer', 'shell', 'side of  room', 'automobile']",False
+floorlamp,living room,living room,"['bay', 'childs room', 'well', 'living room', 'furniture']",True
+flour,kitchen,kitchen,"['kitchen', 'cellar', 'bowl', 'cat', 'deck']",True
+foam brick,storage room,storage room,"['bank', 'bunk', 'ballroom', 'tank', 'storage room']",True
+folder,furniture,utility room,"['bag', 'utility room', 'loft', 'furniture', 'barrel']",False
+fondant,dining room,dining room,"['house', 'carton', 'bank', 'dining room', 'engine']",True
+food,fridge,fridge,"['art classroom', 'ambulance', 'laundry room', 'fridge', 'most rooms']",True
+foot,shoe,shoe,"['storage room', 'one of  classrooms', 'shoe', 'microwave', 'lounge']",True
+footstool,loft,bathroom,"['icebox', 'bathroom', 'loft', 'beehive', 'container']",False
+foresail,boat,boat,"['bag', 'hamper', 'living rooms', 'boat', 'jar']",True
+fork,kitchen,dining room,"['cup', 'livin room', 'bookshelf', 'bathroom or kitchen', 'dining room']",False
+form,cabinet,cabinet,"['attic', 'cabinet', 'ambulance', 'playroom', ""men's restroom""]",True
+foundation,closet,closet,"['plate', 'shoe', 'one of  classrooms', 'sedan', 'closet']",True
+foyer,home,home,"['bunk', 'most rooms', 'shaker', 'home', 'middle of  room']",True
+frame,cradle,bed,"['bed', 'range', 'bowl', 'cruet', 'cradle']",False
+freezer,kitchen,kitchen,"['dormroom', 'room of house', 'suitcase', 'breadbox', 'kitchen']",True
+fridge,kitchen,kitchen,"['backyard', 'library', ""person's living room"", 'drawer', 'kitchen']",True
+frosting,jar,jar,"['aquarium', 'jar', 'bunk', 'garage', 'dumpster']",True
+fruit,pantry,pantry,"['wardrobe', 'room', 'freezer', 'pantry', 'motel room']",True
+fruit snack,dining room,dining room,"['trunk', 'suitcase', 'cup', 'dining room', 'different room']",True
+fur,cat,cat,"['cat', 'car', 'carton', 'orchestra', 'classroom']",True
+furnace,home,home,"['bag', 'automobile', 'way', 'home', 'pantry']",True
+furniture,floor,floor,"['deck', 'floor', 'bathroom and kitchen', 'castle', 'boat']",True
+galley,boat,boat,"['boat', 'bright room', ""person's living room"", 'chest', 'can']",True
+garage,broom closet,home,"['home', 'handbag', 'bicycle', 'broom closet', 'counter']",False
+garbage,sink,floor,"['sedan', 'butt', 'every bedroom', 'floor', 'sink']",False
+garbagebag,garbage,kitchen,"['separate room', 'garbage', 'kitchen', 'anor room', 'castle']",False
+garbagecan,basement,bedroom,"['guest room', 'bedroom', 'pod', ""cash's room"", 'basement']",False
+garlic,kitchen,kitchen,"['every room', 'lamp', 'lobby', 'bowl', 'kitchen']",True
+garment,master bedroom,suitcase,"['small room', 'stand', 'purse', 'master bedroom', 'suitcase']",False
+garter,drawer,drawer,"['safe', 'cradle', 'pot', 'cabin', 'drawer']",True
+gas,boat,boat,"['dining room', 'independant room', 'boat', 'keg', 'art classroom']",True
+gate,apartment,apartment,"['engine', 'jacket', 'apartment', 'cat', 'attic']",True
+gauze,cabinet,cabinet,"['quiver', 'ir rooms', 'icebox', 'cabinet', 'band room']",True
+gear,car,car,"['kitchen or bathroom', 'exercise room', 'bicycle', 'room of house', 'car']",True
+gel,container,container,"['way', 'locker', 'container', 'bed', 'table']",True
+gelatin box,pantry room,pantry room,"[""teenager's bedroom"", 'pantry room', 'separate room', 'dresser', 'cabin']",True
+gin,bar,bar,"['teapot', 'bar', ""teenager's bedroom"", 'deck', 'library']",True
+glove,utility room,utility room,"['utility room', 'can', ""teenager's bedroom"", 'board', 'jar']",True
+golf ball,"golf course is not an option, so i",kitchen,"['kitchen', 'keg', 'briefcase', 'ambulance', 'palace']",False
+goose,pantry room,oven,"['family room', 'refrigerator', 'oven', 'bath', 'pantry room']",False
+graphics card,pantry room,pantry room,"['kitchen or bathroom', 'restroom', 'pocket', 'pantry room', 'stove']",True
+guard,court,room,"['room', 'bank', 'hive', 'court', 'cup']",False
+guinness,bar,bar,"['cat', ""child's bedroom"", 'bar', 'hive', 'card room']",True
+gun,home,home,"['home', 'bundle', 'table', 'kitchen or bathroom', 'exercise room']",True
+hair color,bathroom,garage,"['broom closet', 'guest room', 'kitchen or bathroom', 'classroom', 'garage']",False
+hair conditioner,utility room,utility room,"['utility room', 'bike', 'table', 'pitcher', 'middle of  room']",True
+hair dryer,bunk,playroom,"['castle', 'bag', 'pod', 'playroom', 'bunk']",False
+hair straightener,teenager's bedroom,playroom,"[""teenager's bedroom"", 'band room', 'garden', 'playroom', 'cabinet']",False
+ham,fridge,fridge,"['fridge', 'dimly lit room', 'sofa', ""child's bedroom"", 'motorbike']",True
+hammer,closet,closet,"['closet', 'purse', 'middle of  room', 'shoe', ""child's room""]",True
+hand,pocket,pocket,"['livingroom', 'foyer', 'automobile', 'pocket', ""cash's room""]",True
+hand bell,television room,television room,"['fridge', 'head', 'television room', 'bay', 'bar']",True
+handbag,bag,television room,"['trunk', 'bag', 'television room', 'pocket', 'pan']",False
+handset,cradle,cradle,"['sink', 'chest', 'independant room', 'cradle', 'backpack']",True
+handtowel,bathroom,bathroom,"['purse', 'library', 'motorbike', 'trunk', 'bathroom']",True
+handtowelholder,bathroom,bathroom,"['waiting room', 'bus', 'bathroom', 'band room', ""teenager's bedroom""]",True
+harbor,boat,boat,"['art classroom', 'counter', 'cup', 'corridor', 'boat']",True
+hard drive,chest,pantry room,"['pantry room', 'bed', 'dishwasher', 'chest', 'bay']",False
+hard drive case,bedroom,bedroom,"['pantry', 'pitcher', 'bedroom', 'schoolroom', ""prostitute's bedroom""]",True
+hardware,cubicle,packet,"['ir rooms', 'packet', 'cubicle', 'bright room', 'pitcher']",False
+hat,garage,garage,"['garage', 'container', 'belfry', 'glass', 'band room']",True
+headlight,car,car,"['one room flat', 'car', 'one of  classrooms', 'pod', 'boat']",True
+headphone,wardrobe,corridor,"['pot', 'bank', 'corridor', 'wardrobe', 'boot']",False
+heater,dormroom,automobile,"['cruet', 'microwave', 'dormroom', 'table', 'automobile']",False
+heavy duty gloves,bathroom,bathroom,"['aquarium', 'way', 'range', 'bathroom', 'numerous modern washrooms']",True
+heavy master chef can,oven,exercise room,"['palace', 'oven', 'package', 'exercise room', 'guest room']",False
+hedge,backyard,backyard,"['hospital drug storeroom', 'art classroom', 'package', 'backyard', 'lamp']",True
+helmet,lobby,lobby,"['garbage', 'lobby', 'bowl', 'engine', 'every room']",True
+herring,jar,jar,"['jar', 'safe', 'bunk', 'board', 'independant room']",True
+herring fillets,board,home office,"['pocket', 'home office', 'floor', 'hamper', 'board']",False
+holdall,closet,closet,"['tea room', 'sink', 'closet', 'lamp', 'engine']",True
+honey,jar,jar,"[""child's bedroom"", 'grand ballroom', 'head', 'apartment', 'jar']",True
+honey dipper,counter,lobby,"['lobby', 'guest room', 'handbag', 'packet', 'counter']",False
+horn,ambulance,truck,"['ambulance', 'one room flat', 'truck', 'dining room', 'livingroom']",False
+house,box,bedroom,"['orchestra', 'bedroom', 'sedan', 'bathtub', 'box']",False
+houseplant,kitchen,kitchen,"[""child's bedroom"", 'art classroom', 'kitchen', 'tin', 'vault']",True
+icecream,freezer,freezer,"[""person's living room"", 'freezer', 'room of house', 'teapot', 'motel room']",True
+incontinence pads,hamper,living room,"['glass', 'hamper', 'living room', 'bike', 'palace']",False
+ingredient,kitchen,kitchen,"['cradle', 'kitchen', 'hive', 'aquarium', 'bedroom']",True
+ink cartridge,bedroom drawer,corridor,"['corridor', 'bedroom drawer', 'plate', ""prostitute's bedroom"", 'cubicle']",False
+instant camera,lounge,bathroom,"['freezer', 'bathroom', 'lounge', 'breadbox', 'glass']",False
+invitation card,lobby,lobby,"[""children's room"", 'bathroom cabinet', 'lobby', 'locker', ""teenager's bedroom""]",True
+ipod,backpack,apartment,"['kitchen or bathroom', 'apartment', 'toaster', 'backpack', 'jacket']",False
+jack,trunk,trunk,"['case', 'sedan', 'trap', 'trunk', 'desk']",True
+jacket,closet,closet,"['dormroom', 'closet', 'orchestra', 'bright room', 'loft']",True
+jam,fridge,jar,"['fridge', 'jar', 'place', 'hamper', ""child's room""]",False
+jar,storage room,storage room,"['class room', 'broom closet', 'orchestra', ""child's room"", 'storage room']",True
+jean,closet,closet,"['closet', 'guest room', 'press', 'anor room', 'washer']",True
+jenga,den,corridor,"['foyer', 'jar', 'corridor', 'den', 'furniture']",False
+jewelry,safe,safe,"['safe', 'pocket', 'press', 'pan', 'pot']",True
+jewelry box,television room,television room,"['belfry', 'press', 'teapot', 'sink', 'television room']",True
+john,person's living room,bathroom,"['cradle', 'music room', 'bathroom', ""person's living room"", 'bathroom or kitchen']",False
+joist,basement,basement,"['bar', 'playroom', 'case', 'basement', 'beehive']",True
+journal,library,library,"['orchestra', 'library', 'boat', 'hotel room', 'trap']",True
+juice,refrigerator,refrigerator,"['cabin', 'bathroom cabinet', 'dimly lit room', 'refrigerator', 'stove']",True
+jukebox,bar,bar,"['drawer', 'bundle', 'bar', ""person's living room"", 'bus']",True
+junk,cellar,cellar,"['mansion', 'cellar', 'room of house', 'bag', 'dishwasher']",True
+kettle,kitchen,kitchen,"['range', 'kitchen', 'bay', 'sofa', 'ballroom']",True
+keyboard,card room,living room,"['living room', 'dishwasher', 'guest room', 'numerous modern washrooms', 'card room']",False
+keychain,bedroom,bedroom,"['cubicle', 'waiting room', 'dining room', 'bedroom', 'boat']",True
+kitchen,breadbox,breadbox,"['band room', 'breadbox', 'cup', ""men's restroom"", 'stand']",True
+kitchenette,house,house,"['cabin', 'trap', 'bottle', 'house', 'basket']",True
+knife,refrigerator,corridor,"['hotel room', 'corridor', ""child's room"", 'refrigerator', 'dimly lit room']",False
+knife block,utility room,utility room,"['independant room', 'bar', 'utility room', 'foyer', 'cabinet']",True
+labeling tape,table,pantry room,"['attic', 'pantry room', 'sack', 'shell', 'table']",False
+ladle,kitchen,kitchen,"['bathroom and kitchen', 'packet', 'kitchen', 'pitcher', 'can']",True
+lamb,oven,oven,"['pan', 'bathroom drawer', 'one room flat', 'cup', 'oven']",True
+lame,shoe,loft,"['shoe', 'loft', 'hatbox', 'lamp', 'table']",False
+lamp,bathroom,utility room,"['bath', 'utility room', ""prostitute's bedroom"", 'safe', 'bathroom or kitchen']",False
+lantern,corridor,corridor,"['bathroom cabinet', 'sack', 'motel room', 'corridor', 'shaker']",True
+laptop,study,storage room,"['bathroom or kitchen', 'study', 'bar', 'storage room', 'lounge']",False
+laptop cover,living room,living room,"['one room flat', 'garbage', 'cellar', 'living room', 'tank']",True
+laptop stand,television room,television room,"['livin room', 'boat', 'cradle', 'television room', 'carton']",True
+large marker,one of the classrooms,garage,"['room of house', 'garage', 'briefcase', 'attic', 'one of  classrooms']",False
+lasagna,plate,plate,"['stove', 'plate', 'way', 'independant room', 'furniture']",True
+laundry,locker,kitchen,"['deck', 'bar', 'pantry', 'locker', 'kitchen']",False
+laundry box,childs room,childs room,"['childs room', 'automobile', 'cubicle', 'lamp', 'bookshelf']",True
+laundryhamper,bedroom,bedroom,"['bedroom', 'pot', 'well', 'livin room', 'boat']",True
+laxative,bathtub,home office,"['library', 'safe', 'bathtub', 'home office', 'hall']",False
+lego duplo,family room,living room,"['floor', 'family room', 'living room', 'livin room', 'ambulance']",False
+lemon,counter,dining room,"['washer', 'counter', 'bag', 'dining room', 'cabinet']",False
+letter holder,lounge,bathroom,"['bed', 'bathroom', 'every bedroom', 'lounge', 'loungeroom']",False
+lettuce,kitchen,kitchen,"['purse', 'jar', 'motel room', 'kitchen', 'stove']",True
+library,room,room,"['range', 'room', 'ballroom', 'fridge', 'pocket']",True
+lid,drawer,drawer,"['drawer', 'range', 'shoe', 'lobby', 'home']",True
+lifeboat,boat,boat,"['bathroom drawer', 'boat', 'every bedroom', 'keg', 'refrigerator']",True
+light,attic,attic,"['exercise room', 'cup', 'boat', 'attic', 'master bedroom']",True
+light bulb,closet,closet,"['bottle', 'card room', 'microwave', 'trunk', 'closet']",True
+lightswitch,bathroom,bathroom,"['ballroom', 'machine', 'mailbox', 'shoe', 'bathroom']",True
+lime squeezer,kitchen,lobby,"['family room', 'band room', 'purse', 'lobby', 'room of house']",False
+linoleum,kitchen,kitchen,"['most rooms', 'apartment', 'bath', 'garbage', 'kitchen']",True
+lip,jar,can,"['delivery room', 'class room', 'can', 'range', 'jar']",False
+lipstick,anor room,utility room,"['utility room', 'cubicle', 'pot', 'tin', 'anor room']",False
+liquor,bar,bar,"['hamper', 'briefcase', 'teapot', 'bar', 'bright room']",True
+loaf,fridge,fridge,"['hotel room', 'desk', 'laundry room', 'fridge', 'laundry room']",True
+lobster,pot,pot,"['orchestra', 'pot', 'dormroom', 'head', 'cubicle']",True
+loft,apartment,apartment,"['apartment', 'lobby', 'board', 'dumpster', 'purse']",True
+lotion,cabinet,cabinet,"['ballroom', 'card room', 'camp', ""child's bedroom"", 'cabinet']",True
+lunch,backpack,backpack,"['class room', 'hall', 'backpack', 'garden', 'storage room']",True
+lunch bag,icebox,dining room,"['pot', 'icebox', 'separate room', 'dining room', 'mailbox']",False
+lunch box,childs room,childs room,"['childs room', 'pan', 'palace', 'bottle', 'tin']",True
+magazine,living room,bed,"['basement', 'middle of  room', 'livin room', 'living room', 'bed']",False
+magnet,utility room,car,"['car', 'packet', 'utility room', ""teenager's bedroom"", 'sink']",False
+magnifying glass,shelf,pantry room,"['truck', 'motorbike', 'shelf', 'motorbike', 'pantry room']",False
+mail,storage room,fridge,"['fridge', 'storage room', 'utility room', 'hamper', 'toaster']",False
+mailbox,lobby,apartment,"['lobby', 'apartment', 'case', 'case', 'desk']",False
+mainsail,boat,boat,"['independant room', 'music room', 'foyer', 'boat', 'dungeon']",True
+makeup,purse,purse,"['purse', 'grand ballroom', 'keg', ""men's restroom"", 'briefcase']",True
+marshmallow,bunk,oven,"['pitcher', 'bunk', 'basement', 'independant room', 'oven']",False
+mascara,bathroom,childs room,"['family room', 'dimly lit room', 'mansion', 'sack', 'childs room']",False
+mast,boat,boat,"['corridor', 'microwave', 'spoon', 'boat', 'hotel room']",True
+master chef can,closet,closet,"['trap', 'closet', 'nest', 'cubicle', 'bicycle']",True
+mat,house,house,"['vault', 'house', 'shelf', 'schoolroom', 'place']",True
+match,box,box,"['garage', 'box', 'music room', 'floor', 'fridge']",True
+mattress,independant room,house,"['house', 'tin', 'parlor', 'larder', 'independant room']",False
+mayo,jar,jar,"['mansion', 'corridor', 'jar', 'jacket', 'mailbox']",True
+mayonnaise,refrigerator,refrigerator,"['middle of  room', 'refrigerator', 'hamper', 'desk', 'pitcher']",True
+measuring tape,cabinet,living room,"[""cash's room"", 'cabinet', 'living room', 'icebox', 'vault']",False
+meatloaf,oven,oven,"['dumpster', 'oven', 'lobby', 'mailbox', 'washer']",True
+medicine,wardrobe,lobby,"['lobby', 'tin', 'quiver', 'wardrobe', 'attic']",False
+memory,waiting room,pantry,"['teapot', 'deck', 'corridor', 'pantry', 'waiting room']",False
+meringue,kitchen,oven,"['master bedroom', 'place', 'keg', 'bathroom and kitchen', 'oven']",False
+mess,house,apartment,"['home office', 'house', 'hotel room', 'beehive', 'apartment']",False
+metronome,cabinet,cabinet,"['basement', 'belfry', 'head', 'cradle', 'cabinet']",True
+microwave,apartment,apartment,"['backpack', 'bowl', 'apartment', 'anor room', 'master bedroom']",True
+milk,kitchen,kitchen,"['kitchen', 'plate', 'backpack', 'hamper', 'dishwasher']",True
+milk fror,freezer,kitchen,"['motorbike', 'master bedroom', 'freezer', 'safe', 'kitchen']",False
+mini soccer ball,apartment,utility room,"['dumpster', 'plate', 'mailbox', 'apartment', 'utility room']",False
+mint,kitchen,refrigerator,"['bathroom and kitchen', 'palace', 'independant room', 'refrigerator', 'middle of  room']",False
+mirror,living room,living room,"['garden', 'pantry', 'handbag', 'living room', 'suitcase']",True
+mit,bookshelf,bed,"['microwave', 'cat', 'bicycle', 'bed', 'bookshelf']",False
+moistener,bathroom,bathroom,"['living room', 'breadbox', 'bathroom', 'pantry room', 'bathroom cabinet']",True
+mold,fridge,fridge,"['cruet', 'castle', 'fridge', 'pot', 'shelf']",True
+monitor,schoolroom,box,"['schoolroom', 'bottle', 'pantry room', 'hotel room', 'box']",False
+moonshine,jar,jar,"['one of  classrooms', 'jar', 'quiver', 'basket', 'hotel room']",True
+mop,numerous modern washrooms,apartment,"['apartment', 'toolbox', 'well', 'numerous modern washrooms', 'lobby']",False
+morboard,corridor,corridor,"['head', 'grand ballroom', 'corridor', 'ballroom', ""child's bedroom""]",True
+mouse,storage room,storage room,"['jacket', 'jacket', 'bathtub', 'bathroom cabinet', 'storage room']",True
+mouse pad,different room,pantry room,"['master bedroom', 'garbage', 'plate', 'pantry room', 'different room']",False
+mousepad,desk,desk,"['bookshelf', 'band room', 'desk', 'bed', ""men's restroom""]",True
+movie dvd,living room,kitchen,"['fridge', 'living rooms', 'kitchen', 'pan', 'house']",False
+muffin,kitchen,oven,"['bottle', ""men's restroom"", 'bathroom and kitchen', 'study', 'oven']",False
+mug,utility room,utility room,"['machine', 'hatbox', 'utility room', 'place', 'wallet']",True
+mule,class room,pitcher,"['garbage', 'refrigerator', 'class room', 'pitcher', 'corridor']",False
+multiport hub,teenager's bedroom,lobby,"['lobby', 'drawer', ""teenager's bedroom"", 'larder', ""men's restroom""]",False
+museum,house,house,"['plate', 'keg', 'pocket', 'suitcase', 'house']",True
+mustard bottle,storage room,storage room,"['microwave', 'bright room', 'storage room', ""person's living room"", 'dresser']",True
+nail,cabinet,cabinet,"['bathroom and kitchen', 'cabinet', 'living rooms', 'hall', 'bike']",True
+napkin,table,table,"['table', 'bathroom cabinet', 'basket', 'hamper', 'quiver']",True
+neck rest,bedroom,bedroom,"['laundry room', 'bedroom', 'classroom', 'toolbox', 'library']",True
+neckwear,closet,closet,"['closet', 'table', 'larder', 'bottle', 'lounge']",True
+net,boat,boat,"['microwave', 'refrigerator', 'sofa', 'lamp', 'boat']",True
+netting,deck,backpack,"['deck', 'place', 'room of house', 'cup', 'backpack']",False
+newspaper,living room,living room,"['dresser', 'livingroom', 'living room', 'safe', 'bath']",True
+nine hole peg test,container,kitchen,"['kitchen', 'one room flat', 'container', 'grand ballroom', 'den']",False
+nintendo switch,small room,bathroom,"['bathroom', 'hospital drug storeroom', 'handbag', 'cubicle', 'small room']",False
+notebook,home office,package,"['washer', 'schoolroom', 'home office', 'package', ""men's restroom""]",False
+oil,car,car,"['wallet', 'butt', 'car', 'automobile', 'bar']",True
+ointment,counter,jar,"['counter', 'dimly lit room', 'jar', 'middle of  room', 'bicycle']",False
+olive,refrigerator,refrigerator,"['bath', 'glass', 'refrigerator', 'corridor', 'camp']",True
+orange,carton,lobby,"['lobby', 'bike', 'card room', 'locker', 'carton']",False
+organiser,desk,desk,"['nest', 'desk', 'oven', 'quiver', 'glass']",True
+ottoman,parlor,parlor,"['palace', 'kitchen', 'parlor', 'bath', 'cubicle']",True
+outfit,closet,closet,"['closet', 'spoon', 'laundry room', 'beehive', 'pot']",True
+oven,garage,home,"['parlor', 'bathroom drawer', 'foyer', 'home', 'garage']",False
+pad,bathroom drawer,bathroom drawer,"['bed', 'bathroom drawer', 'bright room', 'shaker', 'bunk']",True
+padlock,bedroom,bedroom,"['hotel room', 'bowl', 'bedroom', 'breadbox', 'can']",True
+paint,container,container,"['kitchen', 'ambulance', 'parlor', 'container', 'carton']",True
+paint bottle set,package,corridor,"['package', 'corridor', 'pod', 'every room', 'tank']",False
+paint maker,desk,bedroom,"['breadbox', 'bedroom', 'sedan', 'desk', 'hospital drug storeroom']",False
+painting,dresser,bathroom,"['engine', 'well', 'pitcher', 'bathroom', 'dresser']",False
+pajama,suitcase,suitcase,"['teapot', 'suitcase', 'living room', 'stove', 'bike']",True
+pan,kitchen (none of the given options seem suitable,lobby,"['bathroom drawer', 'lobby', 'place', 'machine', 'restroom']",False
+pantry,kitchen,kitchen,"['shelf', 'kitchen', 'waiting room', 'machine', 'boat']",True
+paper,drawer,drawer,"['room', 'nest', 'drawer', 'pantry', 'cubicle']",True
+paper bag,pantry room,pantry room,"['waiting room', 'stove', 'sedan', 'pitcher', 'pantry room']",True
+paperclip,table,cabinet,"['pocket', 'table', 'court', 'one room flat', 'cabinet']",False
+papertowelroll,bathroom,bathroom,"['castle', 'bathroom', 'teapot', 'automobile', 'hospital drug storeroom']",True
+paperweight,desk,desk,"['desk', 'bar', 'separate room', 'different room', 'anor room']",True
+parchment sheet,person's living room,bathroom,"[""child's bedroom"", ""child's bedroom"", 'bathroom', ""person's living room"", 'hatbox']",False
+parsley,plate,plate,"['plate', 'family room', 'sedan', 'teapot', 'art classroom']",True
+pasta,pantry,pantry,"['waiting room', 'pantry', 'bedroom', 'beehive', 'garbage']",True
+paste,kitchen,cabinet,"['hatbox', 'cabinet', 'livingroom', 'kitchen or bathroom', 'pitcher']",False
+pastry,oven,oven,"['television room', 'oven', 'middle of  room', 'boot', 'lamp']",True
+pea,freezer,freezer,"['freezer', 'toolbox', 'quiver', 'garbage', 'pot']",True
+peach,livingroom,home office,"['locker', 'cabin', 'livingroom', 'boat', 'home office']",False
+pear,bar,childs room,"['childs room', 'bright room', 'bar', 'separate room', 'carton']",False
+pedal,car,car,"['vault', 'container', 'car', 'different room', 'playroom']",True
+peg and hammer toy,playroom,playroom,"['master bedroom', ""teenager's bedroom"", 'playroom', 'mansion', 'grand ballroom']",True
+pen,living room,living room,"['bottle', 'tea room', 'home', 'packet', 'living room']",True
+pencil,stand,pocket,"['every room', 'oven', 'pocket', 'every room', 'stand']",False
+pencil case,dresser,lobby,"['lobby', 'breadbox', 'dresser', 'freezer', 'every room']",False
+pepper,side of room,oven,"['bunk', ""prostitute's bedroom"", 'attic', 'oven', 'side of  room']",False
+peppermint,bathroom drawer,corridor,"['safe', 'beehive', 'bathroom drawer', 'backyard', 'corridor']",False
+peppershaker,kitchen,kitchen,"['aquarium', 'playroom', 'bicycle', 'kitchen', 'shoe']",True
+pepsi,fridge,fridge,"['library', 'dishwasher', 'barrel', 'hospital drug storeroom', 'fridge']",True
+pepsi can pack,table,bedroom,"['room of house', 'table', 'furniture', 'bedroom', 'beehive']",False
+perfume,bathroom cabinet,cabinet,"['cabinet', 'house', 'separate room', 'bathroom cabinet', 'kitchen']",False
+pesto,refrigerator,refrigerator,"['refrigerator', 'boat', 'wardrobe', 'television room', ""person's living room""]",True
+pet food supplement,breadbox,playroom,"['nest', 'waiting room', 'breadbox', 'playroom', 'foyer']",False
+phillips screwdriver,numerous modern washrooms,playroom,"['class room', 'playroom', 'toaster', 'shell', 'numerous modern washrooms']",False
+phone,every bedroom,truck,"['way', 'truck', 'restroom', 'lobby', 'every bedroom']",False
+phone armband case,living room,garage,"['castle', 'independant room', 'deck', 'living rooms', 'garage']",False
+phone stand,kitchen,kitchen,"['middle of  room', 'bathroom drawer', 'pitcher', 'kitchen', 'card room']",True
+photo,den,cabinet,"['card room', 'broom closet', 'cabinet', 'den', 'one of  classrooms']",False
+photocopier,library,library,"['machine', 'livingroom', 'closet', 'library', 'camp']",True
+photograph,shelf,shelf,"['bath', 'stove', 'orchestra', 'truck', 'shelf']",True
+piccalilli,jar,jar,"['every room', 'ambulance', 'jar', 'home', 'deck']",True
+picture frame,foyer,bathroom,"['bedroom drawer', 'independant room', 'foyer', 'shaker', 'bathroom']",False
+pie,kitchen,oven,"['bathroom and kitchen', 'floor', 'engine', 'washer', 'oven']",False
+pill,jar,jar,"['jar', 'trap', 'range', 'home', 'bath']",True
+pillow,cradle,playroom,"['cradle', 'playroom', 'one room flat', 'truck', 'bathroom or kitchen']",False
+pillowcase,bedroom,bedroom,"['board', 'separate room', 'basement', 'belfry', 'bedroom']",True
+pineapple,room of house,jar,"['boat', 'place', 'room of house', 'cabin', 'jar']",False
+pirate,boat,boat,"['band room', 'stove', 'dwelling', 'boat', 'briefcase']",True
+pit,backyard,backyard,"['hatbox', 'dumpster', 'backyard', 'belfry', ""cash's room""]",True
+pitcher base,kitchen,exercise room,"['middle of  room', 'ir rooms', 'microwave', 'camp', 'exercise room']",False
+pizza,oven,oven,"['cup', 'sedan', 'board', 'oven', 'room of house']",True
+plant,dining room,dining room,"['beehive', 'truck', 'dining room', ""prostitute's bedroom"", 'garbage']",True
+plant container,lounge,exercise room,"[""cash's room"", 'lounge', 'exercise room', 'bottle', 'loungeroom']",False
+plant saucer,bedroom,bedroom,"['dimly lit room', 'bedroom', 'head', 'motel room', 'bag']",True
+plate,fridge,closet,"['most rooms', 'shoe', 'motel room', 'fridge', 'closet']",False
+platter,cabinet,cabinet,"['dishwasher', 'pan', 'childs room', 'cubicle', 'cabinet']",True
+plum,kitchen,corridor,"['ir rooms', 'boat', 'independant room', 'corridor', 'dimly lit room']",False
+plumbing,house,house,"['car', 'camp', 'study', 'belfry', 'house']",True
+plunger,bathroom,bathroom,"['bathroom', 'shell', 'bathroom or kitchen', 'car', 'kitchen']",True
+popsicle,freezer,freezer,"['closet', 'bicycle', 'parlor', 'one room flat', 'freezer']",True
+pork,oven,oven,"['orchestra', 'floor', 'packet', 'oven', 'camp']",True
+portable speaker,playroom,playroom,"['anor room', 'playroom', 'car', 'every bedroom', 'locker']",True
+poster,bedroom,bedroom,"['trap', 'way', 'bedroom', 'icebox', 'television room']",True
+pot,dishwasher,drawer,"['dishwasher', 'refrigerator', 'drawer', 'class room', 'restroom']",False
+potato,icebox,microwave,"['microwave', ""child's bedroom"", 'schoolroom', ""child's room"", 'icebox']",False
+potpourri,drawer,drawer,"['apartment', 'hatbox', 'range', 'drawer', 'orchestra']",True
+potted meat can,living room,living room,"['dresser', 'trap', 'living room', 'one of  classrooms', 'room']",True
+pottery,lounge,chamber,"['dresser', 'lounge', 'childs room', 'chamber', 'livin room']",False
+pouch,hamper,pantry,"['well', 'pantry', 'sink', 'motorbike', 'hamper']",False
+power drill,home,home office,"['home office', 'suitcase', 'automobile', ""men's restroom"", 'home']",False
+prawn,oven,oven,"['box', 'wardrobe', 'oven', 'cup', 'table']",True
+presentation,independent room,way,"['parlor', ""cash's room"", 'independant room', 'safe', 'way']",False
+preserve,jar,jar,"['nest', 'bedroom drawer', 'sofa', 'jar', 'belfry']",True
+pressure cooker,kitchen,living room,"['bathroom or kitchen', 'bay', 'ir rooms', 'living room', 'bike']",False
+pretzel,dining room,oven,"['dining room', 'playroom', 'oven', 'utility room', 'well']",False
+propellor,boat,boat,"['dining room', 'boat', 'belfry', 'glass', 'dishwasher']",True
+prow,boat,boat,"['trap', 'different room', 'garbage', 'boat', 'deck']",True
+pudding,container,container,"['butt', 'microwave', 'grand ballroom', 'container', 'delivery room']",True
+pudding box,basket,bathroom,"['butt', 'basket', 'basket', 'anor room', 'bathroom']",False
+pump,boat,boat,"['drawer', 'drawer', 'boat', 'carton', 'shelf']",True
+puzzle game,class room,corridor,"['class room', 'fridge', 'bowl', 'corridor', 'pod']",False
+pyjama,bedroom,bedroom,"['bedroom', 'garbage', 'chest', 'motorbike', 'hospital drug storeroom']",True
+quilt,trunk,trunk,"['dishwasher', 'handbag', 'vault', 'music room', 'trunk']",True
+rack,automobile,oven,"['refrigerator', 'pot', 'ambulance', 'oven', 'automobile']",False
+racquetball,exercise room,exercise room,"['exercise room', 'butt', 'deck', 'shoe', 'loungeroom']",True
+radiator,car,car,"['mailbox', 'engine', 'handbag', 'counter', 'car']",True
+radio,library,trunk,"['guest room', 'storage room', 'library', 'camp', 'trunk']",False
+rafter,attic,attic,"['attic', 'chest', 'one room flat', 'vault', 'backpack']",True
+rag,basement,cabinet,"['hive', 'delivery room', 'spoon', 'basement', 'cabinet']",False
+raincoat,trunk,backpack,"['backpack', 'range', 'bay', 'dishwasher', 'trunk']",False
+ramekin,furniture,garage,"['furniture', 'garage', 'safe', 'bed', 'backpack']",False
+reader,library,library,"['bay', 'library', 'hospital drug storeroom', 'glass', 'tea room']",True
+reference,library,library,"['cup', 'library', 'dwelling', 'bath', 'home office']",True
+refrigerator,home,home,"['orchestra', 'closet', 'home', 'tank', ""men's restroom""]",True
+remote control,study,closet,"['side of  room', 'study', ""cash's room"", 'guest room', 'closet']",False
+remotecontrol,loungeroom,bedroom,"['dungeon', 'engine', 'storage room', 'bedroom', 'loungeroom']",False
+residence,home,home,"['family room', 'orchestra', 'icebox', 'desk', 'home']",True
+restroom,corridor,library,"['range', 'library', 'plate', 'tank', 'corridor']",False
+rib,pantry,refrigerator,"['court', 'shaker', 'dungeon', 'pantry', 'refrigerator']",False
+ribbon,box,box,"['bed', 'court', 'engine', 'box', 'car']",True
+rice,pantry,pantry,"['pantry', 'handbag', 'carton', 'bathroom', 'waiting room']",True
+rmal laminator,bright room,kitchen,"['bath', 'kitchen', 'bathroom drawer', 'bright room', 'icebox']",False
+roast,oven,oven,"['nest', 'oven', 'room of house', 'tin', 'bottle']",True
+robe,suitcase,suitcase,"['can', 'court', 'suitcase', 'mansion', 'cat']",True
+rod,engine,engine,"['tank', 'family room', 'engine', 'kitchen', 'freezer']",True
+roll,breadbox,breadbox,"['motorbike', 'engine', 'teapot', 'breadbox', 'room of house']",True
+rolodex,desk,desk,"['board', 'bunk', 'desk', 'most rooms', 'orchestra']",True
+romaine,refrigerator,refrigerator,"['numerous modern washrooms', 'ballroom', 'classroom', 'vault', 'refrigerator']",True
+rook,castle,castle,"['loungeroom', 'castle', 'case', 'palace', 'apartment']",True
+room,apartment,apartment,"['art classroom', 'keg', 'drawer', 'apartment', 'exercise room']",True
+roomdecor,living room,living room,"['tea room', 'tank', 'living room', 'dormroom', 'range']",True
+rope,boat,boat,"['bed', 'dumpster', 'loft', 'boat', 'castle']",True
+rose,garden,garden,"['garden', 'cradle', 'packet', ""men's restroom"", 'truck']",True
+rotisserie,oven,oven,"['oven', 'living rooms', 'grand ballroom', 'ambulance', 'separate room']",True
+router,separate room,lobby,"['classroom', 'bathtub', 'lobby', 'press', 'separate room']",False
+row,range,table,"['range', 'table', 'briefcase', 'engine', 'bunk']",False
+rubiks cube,playroom,playroom,"['hall', ""cash's room"", 'glass', 'playroom', 'pod']",True
+rudder,boat,boat,"['cabinet', 'boat', 'cubicle', 'container', 'pot']",True
+rug,bedroom,bedroom,"['spoon', 'fridge', 'bedroom', 'band room', 'plate']",True
+rule,classroom,classroom,"['classroom', 'can', 'house', ""cash's room"", 'desk']",True
+ruler,desk,desk,"['music room', 'desk', 'stand', ""cash's room"", 'chamber']",True
+sachet,drawer,drawer,"['breadbox', 'drawer', 'trunk', 'pan', 'bath']",True
+safe,classroom,living room,"['living room', 'garbage', 'classroom', 'ballroom', 'barrel']",False
+salad,refrigerator,refrigerator,"['boat', 'bay', 'refrigerator', 'cabinet', 'plate']",True
+salmon,oven,oven,"['bank', 'sack', 'bathtub', 'oven', 'anor room']",True
+salt,shelf,shelf,"['teapot', 'shelf', 'television room', 'purse', 'class room']",True
+salt shaker,most rooms,bathroom,"['camp', 'beehive', 'anor room', 'most rooms', 'bathroom']",False
+saltshaker,larder,cruet,"['can', 'larder', 'cruet', 'anor room', 'floor']",False
+sander,cabinet,cabinet,"['vault', 'tank', 'chamber', 'sedan', 'cabinet']",True
+sandwich,plate,plate,"['plate', ""teenager's bedroom"", 'ir rooms', 'bedroom', 'music room']",True
+sanitary pads,bathroom,bathroom,"['middle of  room', 'bathroom', 'bookshelf', 'backyard', 'court']",True
+sauce,container,plate,"['kitchen', 'most rooms', 'library', 'container', 'plate']",False
+saucepan,kitchen,kitchen,"['ambulance', 'basket', 'purse', 'kitchen', 'board']",True
+saucer,chamber,lobby,"['keg', 'lobby', ""men's restroom"", 'chamber', 'cubicle']",False
+saute pan,"kitchen (not listed, but implied as the",bathroom,"['box', 'jacket', 'bathroom', 'apartment', 'foyer']",False
+saw,basement,basement,"['side of  room', ""teenager's bedroom"", 'basement', 'grand ballroom', 'bed']",True
+scallop,shell,shell,"['bottle', 'shell', 'backpack', 'home office', 'sack']",True
+scarf,drawer,drawer,"['corridor', 'bus', 'drawer', 'automobile', 'camp']",True
+school,backpack,backpack,"['kitchen', 'spoon', 'box', 'motorbike', 'backpack']",True
+schoolbook,backpack,backpack,"['truck', 'backpack', 'bright room', 'fridge', 'parlor']",True
+scissors,storage room,storage room,"['dungeon', 'storage room', 'laundry room', 'bicycle', 'music room']",True
+scone,lounge,oven,"['oven', ""person's living room"", 'lounge', 'chamber', 'floor']",False
+screwdriver,storage room,bar,"['bottle', 'storage room', 'dresser', 'bar', 'house']",False
+scrubbrush,bathroom,bathroom,"['music room', 'bathroom', 'car', 'briefcase', 'dwelling']",True
+set,separate room,washer,"[""cash's room"", 'waiting room', 'washer', 'separate room', 'sedan']",False
+set-top box,desk,childs room,"['orchestra', 'bowl', 'one of  classrooms', 'desk', 'childs room']",False
+setting,table,table,"['table', 'mailbox', 'container', 'barrel', 'bright room']",True
+sextant,boat,boat,"['boat', 'handbag', 'dishwasher', 'trunk', 'safe']",True
+shear,kitchen,machine,"['parlor', 'castle', 'machine', 'bathroom and kitchen', 'house']",False
+shed,backyard,backyard,"['waiting room', 'house', ""teenager's bedroom"", 'backyard', 'box']",True
+sheet,family room,range,"['sack', 'spoon', 'family room', 'ir rooms', 'range']",False
+shelf,library,library,"['tank', 'laundry room', 'carton', 'library', 'handbag']",True
+shellac,barrel,can,"['barrel', 'pan', 'pot', 'lounge', 'can']",False
+shelvingunit,delivery room,kitchen,"['kitchen', 'chamber', 'laundry room', 'delivery room', 'carton']",False
+shirt,bedroom drawer,drawer,"['drawer', 'bedroom drawer', 'barrel', 'bedroom drawer', 'plate']",False
+shoe,shoe,suitcase,"['suitcase', 'parlor', 'shoe', 'jacket', ""prostitute's bedroom""]",False
+shoe box,attic,corridor,"['desk', 'trunk', 'livingroom', 'attic', 'corridor']",False
+shop,container,container,"['hamper', 'container', 'tea room', 'chamber', 'kitchen']",True
+showercurtain,bathroom,bathroom,"['wallet', 'pitcher', 'bathroom', 'closet', 'livingroom']",True
+showerdoor,bathroom,bathroom,"['shaker', 'orchestra', 'oven', 'bathroom', 'master bedroom']",True
+showerglass,bathroom,bathroom,"['bunk', 'hall', 'living rooms', 'bathroom', 'broom closet']",True
+showerhead,bathroom,bathroom,"['bed', 'castle', 'bathroom', 'closet', 'stove']",True
+shredder,cubicle,kitchen,"['kitchen', 'orchestra', 'cubicle', 'ir rooms', 'larder']",False
+shrimp,plate,plate,"['plate', 'grand ballroom', 'every bedroom', 'garbage', 'middle of  room']",True
+sideboard,dining room,dining room,"['dining room', 'dormroom', 'foyer', ""child's room"", 'playroom']",True
+sidetable,dwelling,bathroom,"['bathroom', 'dwelling', 'shell', 'boat', 'floor']",False
+sidewalk chalk,lobby,lobby,"['ir rooms', 'lobby', 'tin', 'sedan', ""cash's room""]",True
+sink,kitchen,kitchen,"['kitchen', 'range', 'bedroom', 'attic', 'drawer']",True
+sinkbasin,kitchen,kitchen,"['band room', 'guest room', 'glass', 'delivery room', 'kitchen']",True
+skeleton,basement,closet,"['press', 'closet', 'bathroom cabinet', 'basement', 'icebox']",False
+skillet,kitchen,closet,"['closet', 'bathroom or kitchen', 'lounge', 'bicycle', 'shelf']",False
+skillet lid,nest,home office,"['nest', 'breadbox', ""child's bedroom"", 'home office', 'boot']",False
+skin care product,bathroom drawer,garage,"['room', 'bathroom drawer', 'music room', 'garage', 'stand']",False
+skin moisturizer,guest room,television room,"['guest room', 'television room', 'loungeroom', 'cellar', 'toaster']",False
+slack,hall,suitcase,"['suitcase', 'sedan', 'washer', 'hatbox', 'hall']",False
+slip,drawer,drawer,"[""person's living room"", 'drawer', 'carton', 'hotel room', 'sedan']",True
+slipper,bed,bed,"['bathroom and kitchen', 'cubicle', 'beehive', 'bed', 'band room']",True
+snack,backpack,backpack,"['purse', 'dwelling', 'home', 'pocket', 'backpack']",True
+snack cake,table,living room,"['living room', 'chamber', 'table', 'music room', 'wallet']",False
+snack dispenser,dining room,dining room,"['machine', ""men's restroom"", 'sofa', 'dining room', 'briefcase']",True
+snail,shell,shell,"['shell', 'loft', 'deck', 'bathroom drawer', 'carton']",True
+soap dish,"bathroom (not listed, but implied as the",storage room,"['storage room', 'handbag', 'briefcase', 'shell', 'well']",False
+soap dispenser,laundry room,lobby,"['trunk', 'carton', 'lobby', 'packet', 'laundry room']",False
+soapbar,bathroom,bathroom,"['most rooms', 'bathroom drawer', 'machine', 'washer', 'bathroom']",True
+soapbottle,bathroom,bathroom,"['ir rooms', 'table', 'bathroom', 'head', 'bike']",True
+socket,bathroom drawer,cabinet,"['nest', 'hive', 'bathroom drawer', 'cabinet', 'anor room']",False
+soda,can,can,"['grand ballroom', 'vault', 'hive', 'can', 'suitcase']",True
+sofa,livingroom,livingroom,"['board', 'spoon', 'counter', 'backpack', 'livingroom']",True
+softball,chest,corridor,"['bright room', 'corridor', 'trap', 'chest', 'mansion']",False
+software cd,case,lobby,"['lobby', 'case', 'keg', 'ir rooms', 'carton']",False
+sorting toy,bedroom,bedroom,"['livingroom', 'bay', 'deck', 'bedroom', 'place']",True
+soup,kitchen,container,"['laundry room', 'teapot', 'kitchen or bathroom', 'butt', 'container']",False
+spa,master bedroom,house,"['master bedroom', ""men's restroom"", 'waiting room', 'bowl', 'house']",False
+spaghetti,fridge,plate,"[""child's room"", 'dwelling', 'motorbike', 'fridge', 'plate']",False
+spam,refrigerator,container,"['pocket', 'refrigerator', 'bag', 'container', 'head']",False
+sparkling water,larder,exercise room,"['livingroom', 'vault', 'every bedroom', 'larder', 'exercise room']",False
+spatula,tea room,bedroom,"['castle', 'boot', 'dimly lit room', 'bedroom', 'tea room']",False
+spice,shaker,cabinet,"['bus', 'grand ballroom', 'trunk', 'shaker', 'cabinet']",False
+spider,outside,bed,"['motel room', 'hatbox', 'livin room', ""person's living room"", 'bed']",False
+spinach,pan,pan,"['pan', 'different room', 'tin', 'pod', 'living rooms']",True
+sponge,kitchen,bathroom,"['den', 'bathroom and kitchen', 'suitcase', 'numerous modern washrooms', 'bathroom']",False
+sponge dish,"kitchen (not an option, but i must",closet,"['closet', 'belfry', 'bay', 'cubicle', 'loft']",False
+spoon,"kitchen (not listed, but assuming a typical",closet,"[""children's room"", 'freezer', 'art classroom', 'closet', 'backpack']",False
+spoon rest,refrigerator,exercise room,"['bundle', 'exercise room', 'lamp', 'refrigerator', 'dumpster']",False
+spraybottle,bathroom,bathroom,"['case', 'backpack', 'palace', 'icebox', 'bathroom']",True
+squash,cabinet,oven,"['way', 'cabinet', 'oven', 'sofa', 'pod']",False
+stacking cups,art classroom,utility room,"['utility room', 'lamp', 'bottle', 'art classroom', 'numerous modern washrooms']",False
+stamper,cabinet,cabinet,"['bathtub', 'schoolroom', 'shoe', 'keg', 'cabinet']",True
+stand mixer,utility room,utility room,"[""child's bedroom"", ""prostitute's bedroom"", 'cruet', ""cash's room"", 'utility room']",True
+stapler,cabinet,cabinet,"['bedroom', ""cash's room"", 'furniture', 'cabinet', 'apartment']",True
+statue,living room,living room,"['bay', 'living room', 'bathroom or kitchen', 'bathroom drawer', 'corridor']",True
+statuette,shelf,shelf,"['floor', 'microwave', 'shelf', 'desk', 'grand ballroom']",True
+steak,freezer,freezer,"['sofa', 'family room', 'freezer', 'kitchen', 'dining room']",True
+steel,shelf,automobile,"['case', 'automobile', 'plate', 'oven', 'shelf']",False
+stereo,home,car,"['bay', 'safe', 'car', 'home', 'garbage']",False
+stew,kitchen,pot,"['bathroom or kitchen', 'study', 'pocket', 'keg', 'pot']",False
+stocking,bathroom cabinet,suitcase,"['schoolroom', 'packet', 'suitcase', 'refrigerator', 'bathroom cabinet']",False
+stool,living room,living room,"['living room', 'one room flat', 'bathroom drawer', 'furniture', 'toolbox']",True
+storage,locker,locker,"['one room flat', 'fridge', 'locker', 'dungeon', 'car']",True
+storage bin,separate room,living room,"['toaster', 'living room', 'hive', 'separate room', 'one room flat']",False
+storehouse,basement,basement,"['bathroom or kitchen', 'dumpster', 'bag', 'basement', 'bathroom cabinet']",True
+storeroom,storage room,basement,"['storage room', 'basement', 'family room', 'motorbike', 'basket']",False
+stove,house,house,"['engine', 'bank', 'foyer', 'house', 'most rooms']",True
+stoveburner,kitchen,kitchen,"['teapot', 'way', 'kitchen', 'one room flat', 'nest']",True
+stoveknob,kitchen,kitchen,"['floor', 'automobile', 'separate room', 'kitchen', 'waiting room']",True
+strawberry,refrigerator,playroom,"['cabinet', 'playroom', 'ir rooms', 'dishwasher', 'hive']",False
+streamer,ballroom,ballroom,"['bank', 'briefcase', 'way', 'kitchen', 'ballroom']",True
+string lights,child's bedroom,dining room,"['dining room', 'barrel', 'art classroom', ""child's bedroom"", 'family room']",False
+stuffed toy,guest room,storage room,"['stove', 'storage room', 'guest room', 'bathroom cabinet', 'place']",False
+sugar,jar,jar,"['jar', 'tea room', 'bundle', 'sofa', 'separate room']",True
+sugar box,"kitchen (not listed, but implied as most",playroom,"['cup', 'foyer', 'playroom', 'dresser', 'numerous modern washrooms']",False
+sugar sprinkles,jar,pantry room,"['pantry room', 'barrel', 'independant room', 'jar', 'restroom']",False
+suit,suitcase,suitcase,"['family room', 'packet', 'garage', 'camp', 'suitcase']",True
+sunglass,car,car,"['car', 'briefcase', 'library', 'hall', 'toaster']",True
+sunscreen,bathroom drawer,backpack,"['nest', 'chamber', 'dwelling', 'bathroom drawer', 'backpack']",False
+supper,oven,oven,"['court', ""men's restroom"", 'trap', 'bath', 'oven']",True
+surface saver ring,dishwasher,closet,"['desk', 'bowl', 'closet', 'dishwasher', 'bookshelf']",False
+sushi,plate,plate,"['tin', 'schoolroom', 'plate', 'kitchen or bathroom', 'living room']",True
+sushi mat,counter,bedroom,"['counter', 'carton', ""child's bedroom"", 'bedroom', 'belfry']",False
+sweater,person's living room,suitcase,"['parlor', 'suitcase', ""person's living room"", 'backyard', 'pot']",False
+tab,bar,bar,"['packet', 'lounge', 'childs room', 'bar', 'numerous modern washrooms']",True
+table,house,house,"['car', 'cabin', 'bathroom', 'chest', 'house']",True
+table lamp,bright room,closet,"['spoon', 'pantry', 'closet', 'engine', 'bright room']",False
+tablet,drawer,bedroom,"['bedroom', 'most rooms', 'bundle', 'bottle', 'drawer']",False
+tablet holder,television room,television room,"['nest', 'motorbike', 'television room', 'locker', 'different room']",True
+tablet stand,childs room,childs room,"['wardrobe', 'icebox', 'ballroom', 'briefcase', 'childs room']",True
+tabletopdecor,guest room,bedroom,"['guest room', 'bedroom', 'bank', 'bag', 'cubicle']",False
+tag,hatbox,range,"['living room', 'hatbox', 'well', 'motel room', 'range']",False
+tampon,dresser,home office,"['home office', 'head', 'basement', 'basement', 'dresser']",False
+tank,bay,range,"['cruet', 'cruet', 'bay', 'ir rooms', 'range']",False
+tap,bar,bar,"['automobile', 'home office', 'bar', 'small room', 'pod']",True
+tape,drawer,drawer,"['drawer', 'head', 'sink', 'room', 'breadbox']",True
+tea,refrigerator,refrigerator,"['bathtub', 'pod', 'hotel room', 'bathroom drawer', 'refrigerator']",True
+tea can pack,kitchen,kitchen,"['court', 'kitchen', 'dresser', 'basket', 'small room']",True
+tea pods,pitcher,lobby,"['chest', ""child's bedroom"", 'lobby', 'toolbox', 'pitcher']",False
+teapot,lobby,lobby,"['bathroom drawer', 'lobby', 'apartment', 'spoon', 'belfry']",True
+teaspoon,cup,cup,"['bank', 'music room', 'utility room', 'every room', 'cup']",True
+teddybear,bedroom,bedroom,"['apartment', 'head', 'bedroom', 'icebox', 'automobile']",True
+telephone,desk,desk,"['desk', 'cubicle', 'utility room', 'teapot', 'room']",True
+television,different room,cabinet,"['truck', 'way', 'teapot', 'different room', 'cabinet']",False
+tenderloin,pan,oven,"['oven', 'home', 'pan', 'livin room', 'band room']",False
+tennis ball,band room,pantry room,"['jar', 'pantry room', 'barrel', 'band room', 'head']",False
+tennisracket,bedroom,bedroom,"['butt', 'truck', 'nest', 'bedroom', 'can']",True
+tent,backpack,backpack,"['carton', 'card room', 'counter', 'oven', 'backpack']",True
+textbook,lounge,locker,"['guest room', 'locker', 'garbage', 'lounge', 'counter']",False
+thimble,toolbox,cabinet,"['cabinet', 'castle', 'toolbox', 'butt', 'motorbike']",False
+thing,house,house,"['bike', 'loft', 'mailbox', 'house', 'library']",True
+thread,cabinet,cabinet,"['dumpster', 'cabinet', 'middle of  room', 'well', 'hall']",True
+thumbtack,desk,desk,"['pitcher', 'purse', 'corridor', 'waiting room', 'desk']",True
+tie,closet,closet,"['closet', 'microwave', 'basement', 'pot', 'press']",True
+tile,livin room,room,"['room', 'castle', 'bottle', 'bunk', 'livin room']",False
+tissuebox,living room,living room,"['suitcase', 'bath', 'living room', 'every bedroom', 'library']",True
+toast,kitchen,pocket,"['pocket', 'bathroom or kitchen', 'cabinet', 'orchestra', ""person's living room""]",False
+toaster,"kitchen (not listed, but implied as the",corridor,"['floor', 'corridor', 'foyer', 'bus', 'icebox']",False
+toffee,jar,jar,"['bus', 'jar', 'backpack', 'bag', 'trap']",True
+tofu,kitchen,oven,"['loungeroom', 'bathroom or kitchen', 'bottle', 'numerous modern washrooms', 'oven']",False
+toilet,basement,basement,"['hall', 'basement', 'garden', 'kitchen', 'family room']",True
+toiletpaper,bathroom,bathroom,"['floor', 'chest', 'bathroom', 'plate', 'bedroom']",True
+toiletpaperhanger,bathroom,bathroom,"['bathroom', 'case', 'hamper', 'side of  room', 'glass']",True
+toiletry,suitcase,suitcase,"['chest', 'bright room', 'cubicle', 'suitcase', 'motel room']",True
+tomato,can,oven,"['tank', 'oven', 'can', 'way', 'keg']",False
+tomato soup can,refrigerator,pantry room,"['delivery room', ""prostitute's bedroom"", 'refrigerator', 'fridge', 'pantry room']",False
+tool,basement,basement,"['basement', 'wardrobe', 'machine', 'loungeroom', 'band room']",True
+toothbrush,cabinet,cabinet,"['stand', 'cabinet', 'way', 'locker', 'childs room']",True
+toothbrush holder,bathroom,corridor,"['den', 'nest', 'corridor', 'art classroom', ""cash's room""]",False
+toothbrush pack,teenager's bedroom,corridor,"['classroom', ""teenager's bedroom"", 'pan', 'library', 'corridor']",False
+toothpick,box,box,"['box', 'most rooms', 'head', 'spoon', ""children's room""]",True
+top,bedroom drawer,suitcase,"[""prostitute's bedroom"", 'suitcase', 'freezer', 'motel room', 'bedroom drawer']",False
+torch,backpack,backpack,"['backpack', 'restroom', 'box', 'cabin', 'hatbox']",True
+tortilla,oven,oven,"['hotel room', 'small room', 'oven', ""cash's room"", 'bag']",True
+tourniquet,ambulance,ambulance,"['livin room', 'bank', 'ambulance', 'larder', 'exercise room']",True
+towel,utility room,utility room,"['icebox', 'dwelling', 'utility room', 'classroom', 'motel room']",True
+towelholder,bathroom,bathroom,"['sofa', 'stove', 'bathroom', 'cabinet', 'oven']",True
+toy,childs room,closet,"['closet', 'dwelling', 'package', 'childs room', 'loft']",False
+toy airplane,room of house,lobby,"['pantry', 'room of house', 'freezer', 'teapot', 'lobby']",False
+toy animal,box,garage,"['garage', 'hall', 'mansion', 'cat', 'box']",False
+toy basketball,hall,lobby,"['lobby', 'glass', 'restroom', 'pod', 'hall']",False
+toy bowling set,playroom,playroom,"['dishwasher', 'garbage', 'bay', 'playroom', 'hive']",True
+toy construction set,home office,home office,"['locker', 'home office', 'castle', 'music room', 'bicycle']",True
+toy fishing,shelf,bathroom,"['bathroom', 'shelf', 'box', 'parlor', 'lamp']",False
+toy food,children's room,home office,"['floor', ""person's living room"", 'home office', 'orchestra', ""children's room""]",False
+toy furniture set,playroom,playroom,"['bookshelf', 'container', 'playroom', 'kitchen or bathroom', 'toaster']",True
+toy instrument,guest room,garage,"['bath', 'guest room', 'packet', 'shaker', 'garage']",False
+toy kitchen set,person's living room,pantry room,"['dungeon', 'bathtub', 'pantry room', ""person's living room"", 'bike']",False
+toy tool kit,basket,kitchen,"['belfry', 'cradle', 'bed', 'kitchen', 'basket']",False
+toy vehicle,every bedroom,kitchen,"['breadbox', 'every bedroom', 'bike', 'nest', 'kitchen']",False
+transmission,car,car,"['press', 'car', 'engine', 'range', 'sack']",True
+transom,boat,boat,"['boat', 'basement', 'barrel', 'way', 'pantry']",True
+tray,sink,corridor,"['dimly lit room', 'bunk', 'hamper', 'sink', 'corridor']",False
+treasure,box,box,"['basement', 'independant room', 'pitcher', 'house', 'box']",True
+trinket,shelf,shelf,"['bed', 'closet', 'trunk', 'kitchen', 'shelf']",True
+trouser,closet,suitcase,"['chest', 'desk', 'bus', 'suitcase', 'closet']",False
+trowel,cabinet,cabinet,"['boat', 'bedroom drawer', 'safe', 'pocket', 'cabinet']",True
+trunk,car,car,"['car', 'one room flat', 'bedroom drawer', 'basket', 'different room']",True
+tub,every bedroom,kitchen,"['kitchen', 'belfry', 'every bedroom', 'bank', 'band room']",False
+tumbler,kitchen,dining room,"['bunk', 'hamper', 'cubicle', 'dining room', 'bathroom and kitchen']",False
+tuna,can,can,"['tank', 'bathroom cabinet', 'drawer', 'can', 'livingroom']",True
+turkey,oven,oven,"['most rooms', 'oven', 'trunk', 'dungeon', 'cabinet']",True
+turtle,box,box,"['guest room', 'box', 'sedan', 'stand', 'mailbox']",True
+tuxedo,ballroom,ballroom,"['ballroom', 'place', ""cash's room"", 'table', 'hospital drug storeroom']",True
+tv,room of house,kitchen,"['room of house', 'kitchen', 'stove', 'carton', 'waiting room']",False
+tvstand,living room,living room,"['refrigerator', 'living room', 'dishwasher', 'drawer', 'bathtub']",True
+tweed,closet,closet,"['dwelling', 'class room', 'closet', 'delivery room', 'cubicle']",True
+umbrella,garage,garage,"['wardrobe', 'cup', 'bicycle', 'garage', 'camp']",True
+underpants,"bathroom, drawer",drawer,"['grand ballroom', 'kitchen or bathroom', 'drawer', 'floor', 'teapot']",False
+undershirt,drawer,drawer,"['range', 'deck', 'ambulance', 'drawer', ""cash's room""]",True
+underwear,drawer,drawer,"['drawer', 'attic', 'freezer', 'hotel room', 'handbag']",True
+urinal,men's restroom,men's restroom,"['classroom', 'bathroom', 'library', ""men's restroom"", 'drawer']",True
+usb drive,safe,storage room,"['handbag', 'every bedroom', 'storage room', 'toolbox', 'safe']",False
+utensil,counter,backpack,"['backpack', 'art classroom', 'bag', 'stand', 'counter']",False
+utensil holder,kitchen,garage,"['card room', 'belfry', 'garage', 'tank', 'belfry']",False
+vacuum,closet,closet,"['bundle', 'cabinet', 'bowl', 'waiting room', 'closet']",True
+vacuumcleaner,cruet,bedroom,"['bedroom', 'study', 'cruet', 'desk', ""teenager's bedroom""]",False
+varnish,storage room,table,"['bathtub', 'most rooms', 'storage room', 'table', 'television room']",False
+vase,side of room,childs room,"['band room', 'vault', 'basement', 'side of  room', 'childs room']",False
+vault,bank,bank,"['shell', 'bank', 'bar', 'television room', 'shaker']",True
+vegetable,refrigerator,refrigerator,"['motorbike', 'vault', 'refrigerator', 'mailbox', 'range']",True
+vent,basement,room,"['deck', 'room', 'basement', 'automobile', 'every room']",False
+vermouth,bar,bar,"['bar', 'bathroom and kitchen', 'lamp', 'livin room', 'castle']",True
+video,study,cabinet,"['bicycle', 'cabinet', 'hatbox', 'plate', 'study']",False
+video game,television room,television room,"['boat', 'box', 'television room', 'livingroom', 'orchestra']",True
+vinyl tape,pocket,lobby,"['cabin', 'one of  classrooms', 'lobby', 'pocket', 'vault']",False
+viola,orchestra,orchestra,"['orchestra', 'basket', 'beehive', 'guest room', 'container']",True
+violin,band room,band room,"[""prostitute's bedroom"", 'bathroom drawer', 'band room', 'sedan', 'suitcase']",True
+virtual reality viewer,loungeroom,kitchen,"['kitchen', 'pod', 'card room', 'bunk', 'loungeroom']",False
+vodka,cabinet,cabinet,"['dishwasher', 'corridor', 'box', 'cabinet', 'cradle']",True
+voltmeter,drawer,drawer,"['belfry', 'pan', 'drawer', 'art classroom', ""cash's room""]",True
+volume,bookshelf,bookshelf,"['home office', 'different room', 'bookshelf', 'mansion', 'dungeon']",True
+waffle,fridge,fridge,"['breadbox', 'fridge', 'boot', 'dungeon', 'sink']",True
+wagon,backyard,backyard,"['shelf', 'cradle', 'backyard', 'chest', 'range']",True
+wallet,pocket,pocket,"['motel room', 'one of  classrooms', 'pocket', 'garage', 'camp']",True
+wardrobe,mansion,mansion,"['lounge', 'tin', 'aquarium', 'mansion', 'garage']",True
+washcloth,motel room,living room,"['living room', 'motel room', 'tea room', 'class room', 'barrel']",False
+washer,range,jar,"['bathtub', 'jar', 'range', 'butt', 'dresser']",False
+waste basket,television room,television room,"['board', 'television room', 'court', 'pod', ""cash's room""]",True
+wastebasket,desk,desk,"['childs room', 'tea room', 'one of  classrooms', 'desk', ""children's room""]",True
+watch,bed,living room,"['storage room', 'living room', 'ballroom', 'card room', 'bed']",False
+water bottle,locker,bathroom,"['bathroom', 'locker', 'suitcase', 'aquarium', 'hamper']",False
+wateringcan,garden,living room,"['pantry room', 'living room', 'living rooms', 'head', 'garden']",False
+weight,basement,basement,"['loft', 'class room', 'jacket', 'master bedroom', 'basement']",True
+weight loss guide,desk,kitchen,"['kitchen', 'desk', 'oven', 'independant room', 'art classroom']",False
+whale whistle,briefcase,pantry room,"['locker', 'wallet', 'pantry room', 'bed', 'briefcase']",False
+wheelchair,small room,home,"['corridor', 'hatbox', 'pod', 'small room', 'home']",False
+whisk,drawer,drawer,"['keg', 'drawer', 'purse', 'keg', 'cruet']",True
+whiskey,bar,bar,"['bathroom drawer', 'bathtub', 'bar', 'bike', 'restroom']",True
+whisky,loungeroom,jar,"['kitchen', 'loungeroom', 'sedan', 'jar', 'hatbox']",False
+window,living room,living room,"['pocket', 'jacket', 'furniture', 'foyer', 'living room']",True
+windshield,sedan,sedan,"['dumpster', 'machine', 'sedan', 'small room', 'tea room']",True
+wine,pantry,glass,"['bathtub', 'den', 'pantry', 'jacket', 'glass']",False
+wine glass,kitchen,kitchen,"['floor', 'kitchen', 'jacket', 'bookshelf', 'locker']",True
+winebottle,kitchen,kitchen,"['pantry room', 'lounge', 'parlor', 'kitchen', 'cubicle']",True
+wipe warmer,pantry room,pantry room,"['home', 'floor', 'pantry room', 'bookshelf', 'orchestra']",True
+wireless accessory,foyer,dining room,"['cat', 'art classroom', 'foyer', 'dining room', 'bathtub']",False
+wood,attic,boat,"['shelf', 'attic', 'music room', ""child's room"", 'boat']",False
+wool,shelf,butt,"['butt', 'grand ballroom', 'study', 'shelf', 'bathroom cabinet']",False
+work,desk,desk,"['trap', 'pocket', 'boot', 'desk', 'separate room']",True
+wristwatch,case,case,"[""child's bedroom"", 'library', 'floor', 'range', 'case']",True
+xylitol sweetener,kitchen,living room,"['living room', 'library', 'bathroom and kitchen', 'chamber', 'safe']",False
+yam,storage room,oven,"['storage room', 'court', 'oven', 'camp', 'closet']",False
+yarn,cabinet,cabinet,"['bookshelf', 'truck', 'class room', 'cabinet', 'locker']",True
+yearbook,children's room,trunk,"['butt', 'automobile', ""children's room"", 'quiver', 'trunk']",False
+yoghurt,fridge,freezer,"['bookshelf', 'freezer', 'motorbike', 'fridge', 'waiting room']",False
+yogurt,fridge,fridge,"['hive', 'separate room', 'lounge', 'fridge', 'handbag']",True
