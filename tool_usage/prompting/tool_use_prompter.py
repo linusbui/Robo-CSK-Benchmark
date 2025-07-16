@@ -6,13 +6,13 @@ from tqdm import tqdm
 
 from tool_usage.prompting.tool_use_result import ToolSubstitutionResult
 from utils.prompter import Prompter
+from utils.result_writer import add_to_model_overview, write_model_results_to_file
 
 system_msg = 'Imagine you are a robot in a household environment being confronted with a task and a list of tools.'
 user_msg = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
 
 
 def prompt_all_models(prompters: [Prompter]):
-    comb_result = pd.DataFrame(columns=['model', 'acc'])
     for prompter in prompters:
         results = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions.csv', delimiter=',', on_bad_lines='skip')
@@ -28,15 +28,8 @@ def prompt_all_models(prompters: [Prompter]):
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, res, choices)
             results.append(tup)
-        write_results_to_file(results, prompter.model_name)
-        comb_result = pd.concat([comb_result, calculate_average(results, prompter.model_name)], ignore_index=True)
-    comb_result.to_csv('tool_usage/results/model_overview.csv', index=False)
-
-
-def write_results_to_file(results: [ToolSubstitutionResult], model: str):
-    dict_list = [re.to_dict() for re in results]
-    df = pd.DataFrame(dict_list)
-    df.to_csv(f'tool_usage/results/{model.lower()}.csv', index=False)
+        write_model_results_to_file(results, prompter.model_name)
+        add_to_model_overview(calculate_average(results, prompter.model_name), 'tool_usage')
 
 
 def calculate_average(results: [ToolSubstitutionResult], model: str):

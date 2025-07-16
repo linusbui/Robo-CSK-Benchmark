@@ -1,4 +1,7 @@
-class ToolSubstitutionResult:
+from utils.eval_result_super import ModelEvaluationResult
+
+
+class ToolSubstitutionResult(ModelEvaluationResult):
     def __init__(self, task: str, affordance: str, correct_tool: str, prediction: str, tool_choices: [str]):
         self._task = task
         self._aff = affordance

@@ -1,7 +1,8 @@
 from tidy_up.prompting.metric_calculator import calculate_reciprocal_rank, calculate_average_precision_at_k, calculate_recall_at_k
+from utils.eval_result_super import ModelEvaluationResult
 
 
-class TidyUpOpenResult:
+class TidyUpOpenResult(ModelEvaluationResult):
     def __init__(self, obj: str, pred_locations: [str], corr_locations: [str]):
         self._object = obj
         self._pred_locations = []
@@ -77,7 +78,7 @@ class TidyUpOpenResult:
         }
 
 
-class TidyUpMultiChoiceResult:
+class TidyUpMultiChoiceResult(ModelEvaluationResult):
     def __init__(self, obj: str, corr_loc: str, prediction: str, loc_choices: [str]):
         self._object = obj
         self._corr_loc = corr_loc.lower()

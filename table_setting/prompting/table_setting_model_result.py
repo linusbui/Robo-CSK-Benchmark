@@ -1,7 +1,8 @@
 from table_setting.data_extraction.utensils_plates import Plate, Utensil
+from utils.eval_result_super import ModelEvaluationResult
 
 
-class TableSettingModelResult:
+class TableSettingModelResult(ModelEvaluationResult):
     def __init__(self, meal: str, correct_plate: Plate, correct_utensils: [Utensil]):
         self._meal = meal
         self._pred_plate = Plate.NONE

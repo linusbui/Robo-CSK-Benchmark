@@ -6,12 +6,12 @@ from tqdm import tqdm
 
 from tidy_up.prompting.tidy_up_result import TidyUpMultiChoiceResult
 from utils.prompter import Prompter
+from utils.result_writer import add_to_model_overview, write_model_results_to_file
 
 system_msg = 'Imagine you are a robot tidying up a household environment, being confronted with an object and a possible list of locations to put it.'
 user_msg = 'What is the single location from the given list that you think is the most suitable place to put the object? Please only answer with the location you chose.'
 
 def prompt_all_models(prompters: [Prompter]):
-    comb_result = pd.DataFrame(columns=['model', 'acc'])
     for prompter in prompters:
         results = []
         questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip')
@@ -27,15 +27,8 @@ def prompt_all_models(prompters: [Prompter]):
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = TidyUpMultiChoiceResult(obj, res, corr_loc, choices)
             results.append(tup)
-        write_results_to_file(results, prompter.model_name)
-        comb_result = pd.concat([comb_result, calculate_average(results, prompter.model_name)], ignore_index=True)
-    comb_result.to_csv('tidy_up/results_multi/model_overview.csv', index=False)
-
-
-def write_results_to_file(results: [TidyUpMultiChoiceResult], model: str):
-    dict_list = [re.to_dict() for re in results]
-    df = pd.DataFrame(dict_list)
-    df.to_csv(f'tidy_up/results_multi/{model.lower()}.csv', index=False)
+        write_model_results_to_file(results, prompter.model_name)
+        add_to_model_overview(calculate_average(results, prompter.model_name), 'tidy_up/results_multi', False)
 
 
 def calculate_average(results: [TidyUpMultiChoiceResult], model: str):

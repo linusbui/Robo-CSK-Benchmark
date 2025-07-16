@@ -1,4 +1,7 @@
-class MetaReasoningModelResult:
+from utils.eval_result_super import ModelEvaluationResult
+
+
+class MetaReasoningModelResult(ModelEvaluationResult):
     def __init__(self, task: str, hardware: str, pred_answer: bool, corr_answer=True):
         self._task = task
         self._hardware = hardware

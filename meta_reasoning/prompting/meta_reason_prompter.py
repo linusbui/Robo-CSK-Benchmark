@@ -3,13 +3,13 @@ from tqdm import tqdm
 
 from meta_reasoning.prompting.meta_reason_model_result import MetaReasoningModelResult
 from utils.prompter import Prompter
+from utils.result_writer import add_to_model_overview, write_model_results_to_file
 
 system_msg = 'Imagine you are a robot with a given hardware configuration and you should decide whether you are capable of executing a task.'
 user_msg = 'Please only answer with Yes or No.'
 
 
 def prompt_all_models(prompters: [Prompter]):
-    comb_result = pd.DataFrame(columns=['model', 'tn', 'tp', 'fn', 'fp', 'ratio', 'acc', 'prec', 'rec', 'spec', 'f1'])
     for prompter in prompters:
         data = pd.read_csv('meta_reasoning/meta_reasoning_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
@@ -27,9 +27,8 @@ def prompt_all_models(prompters: [Prompter]):
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = MetaReasoningModelResult(task, hardware, get_binary_answer(res))
             results.append(tup)
-        write_results_to_file(results, prompter.model_name)
-        comb_result = pd.concat([comb_result, calculate_metrics(results, prompter.model_name)], ignore_index=True)
-    comb_result.to_csv('meta_reasoning/results/model_overview.csv', index=False)
+        write_model_results_to_file(results, prompter.model_name)
+        add_to_model_overview(calculate_metrics(results, prompter.model_name), 'meta_reasoning')
 
 
 def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: str, is_rigid: bool) -> str:
@@ -42,13 +41,6 @@ def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: 
     else:
         rigidity = 'soft'
     return f'The robot has {arms} arm(s) with {dofs} DoFs and {rigidity} {gripper} and it {walk}.'
-
-
-def write_results_to_file(results: [MetaReasoningModelResult], model: str):
-    dict_list = [re.to_dict() for re in results]
-    df = pd.DataFrame(dict_list)
-    df.to_csv(f'meta_reasoning/results/{model.lower()}.csv', index=False)
-
 
 def get_binary_answer(answer: str) -> bool:
     return 'yes' in answer.lower()

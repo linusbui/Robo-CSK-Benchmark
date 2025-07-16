@@ -4,6 +4,7 @@ from tqdm import tqdm
 from table_setting.data_extraction.utensils_plates import Utensil, Plate
 from table_setting.prompting.table_setting_model_result import TableSettingModelResult
 from utils.prompter import Prompter
+from utils.result_writer import add_to_model_overview, write_model_results_to_file
 
 utensils_string = ', '.join([str(utensil) for utensil in Utensil])
 plates_string = ', '.join([str(plate) for plate in Plate])
@@ -13,7 +14,6 @@ user_msg_plat = f'What is the type of plate you would use to eat that meal? Plea
 
 
 def prompt_all_models(prompters: [Prompter]):
-    comb_result = pd.DataFrame(columns=['model', 'acc', 'jacc'])
     for prompter in prompters:
         data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
@@ -35,9 +35,8 @@ def prompt_all_models(prompters: [Prompter]):
             tup.add_predicted_plate(transform_plate_prediction(res))
 
             results.append(tup)
-        write_results_to_file(results, prompter.model_name)
-        comb_result = pd.concat([comb_result, calculate_average(results, prompter.model_name)], ignore_index=True)
-    comb_result.to_csv('table_setting/results/model_overview.csv', index=False)
+        write_model_results_to_file(results, prompter.model_name, 'table_setting')
+        add_to_model_overview(calculate_average(results, prompter.model_name), 'table_setting')
 
 
 def get_fitting_plate(row) -> Plate:
@@ -80,13 +79,6 @@ def transform_plate_prediction(pred: str) -> Plate:
             return Plate(plate)
     print(f'Error: "{pred}" is not a valid type of Plate')
     return Plate.NONE
-
-
-def write_results_to_file(results: [TableSettingModelResult], model: str):
-    dict_list = [re.to_dict() for re in results]
-    df = pd.DataFrame(dict_list)
-    df.to_csv(f'table_setting/results/{model.lower()}.csv', index=False)
-
 
 def calculate_average(results: [TableSettingModelResult], model: str):
     average = {met: 0 for met in ['acc', 'jacc']}

@@ -5,13 +5,13 @@ from tqdm import tqdm
 
 from tidy_up.prompting.tidy_up_result import TidyUpOpenResult
 from utils.prompter import Prompter
+from utils.result_writer import add_to_model_overview, write_model_results_to_file
 
 system_msg = 'Imagine you are a robot tidying up a household.'
 user_msg = 'What are the prototypical locations in a household where the following object can be found? Please only answer with a comma separated & ranked list of locations.'
 
 
 def prompt_all_models(prompters: [Prompter]):
-    comb_result = pd.DataFrame(columns=['model', 'mrr', 'map@1', 'map@3', 'map@5', 'mrec@1', 'mrec@3', 'mrec@5'])
     for prompter in prompters:
         data = pd.read_csv('tidy_up/tidy_up_data.csv', delimiter=',', on_bad_lines='skip')
         results = []
@@ -25,15 +25,8 @@ def prompt_all_models(prompters: [Prompter]):
                 print(f'Error formatting the generated locations for {obj}: {res}')
                 continue
             results.append(tup)
-        write_results_to_file(results, prompter.model_name)
-        comb_result = pd.concat([comb_result, calculate_average(results, prompter.model_name)], ignore_index=True)
-    comb_result.to_csv('tidy_up/results_open/model_overview.csv', index=False)
-
-
-def write_results_to_file(results: [TidyUpOpenResult], model: str):
-    dict_list = [re.to_dict() for re in results]
-    df = pd.DataFrame(dict_list)
-    df.to_csv(f'tidy_up/results_open/{model.lower()}.csv', index=False)
+        write_model_results_to_file(results, prompter.model_name)
+        add_to_model_overview(calculate_average(results, prompter.model_name), 'tidy_up/results_open', False)
 
 
 def format_generated_locations(locations: str) -> [str]:
