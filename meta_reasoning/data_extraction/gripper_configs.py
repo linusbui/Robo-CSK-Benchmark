@@ -40,3 +40,17 @@ class GripperConfig(str, Enum):
         if isinstance(other, GripperConfig):
             return self.rank >= other.rank
         return NotImplemented
+
+    # "Arithmetics" to jump between grippers on different ranks
+    @classmethod
+    def from_rank(cls, rank: int):
+        for member in cls:
+            if member.rank == rank:
+                return member
+        raise ValueError(f"No gripper with rank {rank}")
+
+    def add(self, n: int):
+        new_rank = self.rank + n
+        if not any(member.rank == new_rank for member in GripperConfig):
+            raise IndexError(f"Calculated rank {new_rank} is out of range [0, 7]")
+        return GripperConfig.from_rank(new_rank)
