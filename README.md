@@ -63,7 +63,8 @@ You can find the results for each tasks by following these links:
 - **[Tidy Up (Open Questions)](tidy_up/results_open/model_overview.csv)**
 - **[Tidy Up (Multi Choice Questions)](tidy_up/results_multi/model_overview.csv)**
 - **[Tool Usage](./tool_usage/results/model_overview.csv)**
-- **[Meta-Reasoning](./meta_reasoning/results/model_overview.csv)**
+- **[Meta-Reasoning (Binary Questions)](./meta_reasoning/results_binary/model_overview.csv)**
+- **[Meta-Reasoning (Multi Choice Questions)](./meta_reasoning/results_multi/model_overview.csv)**
 - **[Table Setting](./table_setting/results/model_overview.csv)**
 - **[Procedural Knowledge](./procedural_knowledge/results/model_overview.csv)**
 

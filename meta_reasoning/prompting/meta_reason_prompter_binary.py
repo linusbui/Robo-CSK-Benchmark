@@ -1,7 +1,7 @@
 import pandas as pd
 from tqdm import tqdm
 
-from meta_reasoning.prompting.meta_reason_model_result import MetaReasoningModelResult
+from meta_reasoning.prompting.meta_reason_model_result import MetaReasoningBinaryResult
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
 
@@ -26,10 +26,10 @@ def prompt_all_models(prompters: [Prompter]):
             hardware = create_hardware_description(is_mobile, no_arms, dofs, gripper, has_rigid_gripper)
             question = f'Task: {task}\nHardware: {hardware}'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            tup = MetaReasoningModelResult(task, hardware, get_binary_answer(res), can_execute)
+            tup = MetaReasoningBinaryResult(task, hardware, get_binary_answer(res), can_execute)
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name)
-        add_to_model_overview(calculate_metrics(results, prompter.model_name), 'meta_reasoning')
+        write_model_results_to_file(results, prompter.model_name, 'meta_reasoning/results_binary', False)
+        add_to_model_overview(calculate_metrics(results, prompter.model_name), 'meta_reasoning/results_binary', False)
 
 
 def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: str, is_rigid: bool) -> str:
@@ -48,7 +48,7 @@ def get_binary_answer(answer: str) -> bool:
     return 'yes' in answer.lower()
 
 
-def calculate_metrics(results: [MetaReasoningModelResult], model: str):
+def calculate_metrics(results: [MetaReasoningBinaryResult], model: str):
     assert len(results) > 0
     counter = {met: 0 for met in ['tn', 'tp', 'fn', 'fp', 'ratio']}
     for res in results:

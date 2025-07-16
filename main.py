@@ -1,4 +1,4 @@
-from meta_reasoning.prompting import meta_reason_prompter
+from meta_reasoning.prompting import meta_reason_prompter_binary, meta_reason_prompter_multi_choice
 from table_setting.prompting import table_setting_prompter
 from tidy_up.prompting import tidy_up_prompter_open, tidy_up_prompter_multi_choice
 from tool_usage.prompting import tool_use_prompter
@@ -11,8 +11,10 @@ prompters = [OpenAIPrompter(), LlamaPrompter(), GemmaPrompter(max_new_tokens=50)
 if __name__ == "__main__":
     table_setting_prompter.prompt_all_models(prompters)
     print('Finished the Table Setting task')
-    meta_reason_prompter.prompt_all_models(prompters)
-    print('Finished the Meta-Reasoning task')
+    meta_reason_prompter_binary.prompt_all_models(prompters)
+    print('Finished the Meta-Reasoning task (Binary Questions)')
+    meta_reason_prompter_multi_choice.prompt_all_models(prompters)
+    print('Finished the Meta-Reasoning task (Multi Choice Questions)')
     tool_use_prompter.prompt_all_models(prompters)
     print('Finished the Tool Usage task')
     tidy_up_prompter_open.prompt_all_models(prompters)
