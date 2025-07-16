@@ -2,7 +2,8 @@ from gripper_configs import GripperConfig
 
 
 class TaskCapability:
-    def __init__(self, task: str, mobile: bool, no_arms: int, arm_dof: int, gripper_conf: GripperConfig, rigid_gripper: bool):
+    def __init__(self, task: str, mobile: bool, no_arms: int, arm_dof: int, gripper_conf: GripperConfig,
+                 rigid_gripper: bool, can_do=True):
         self._tsk = preprocess_string(task)
         self._mobile = mobile
         self._arms = no_arms
@@ -10,20 +11,25 @@ class TaskCapability:
         self._gripper_conf = gripper_conf
         self._rigid_gripper = rigid_gripper
         self._is_correct = True
+        self._can_execute = can_do
 
     def __str__(self):
         if self._mobile:
-            walk = 'does need to walk'
+            walk = 'can walk'
         else:
-            walk = 'does NOT need to walk'
+            walk = 'can NOT walk'
 
         if self._rigid_gripper:
             rigidity = 'rigid'
         else:
             rigidity = 'soft'
 
-        return (f'To {self._tsk} the robot needs {self._arms} arm(s) with {self._arm_dof} DoFs and {rigidity} {self._gripper_conf.lower()}.'
-                f' It {walk}.')
+        if self._can_execute:
+            return (
+                f'To {self._tsk} the robot needs {self._arms} arm(s) with {self._arm_dof} DoFs and {rigidity} {self._gripper_conf.lower()}. It {walk}.')
+        else:
+            return (
+                f'A robot that {walk} with {self._arms} arm(s) with {self._arm_dof} DoFs and {rigidity} {self._gripper_conf.lower()} cannot execute the task {self._tsk}.')
 
     def verify(self) -> bool:
         return self._is_correct
@@ -46,6 +52,9 @@ class TaskCapability:
     def is_rigid_gripper(self) -> bool:
         return self._rigid_gripper
 
+    def can_execute(self) -> bool:
+        return self._can_execute
+
     def combine_task(self, cap: 'TaskCapability'):
         if not cap.verify():
             return
@@ -55,6 +64,7 @@ class TaskCapability:
         self._mobile = cap.is_mobile() and self._mobile
         self._gripper_conf = min(cap._gripper_conf, self._gripper_conf)
         self._rigid_gripper = cap.is_rigid_gripper() or self._rigid_gripper
+        self._can_execute = cap.can_execute() or self._can_execute
         cap._is_correct = False
 
     def to_dict(self):
@@ -64,7 +74,8 @@ class TaskCapability:
             'Arms': self.get_arms(),
             'DoFs': self.get_arm_dofs(),
             'Gripper Config': self.get_gripper_config(),
-            'Rigid Gripper?': self.is_rigid_gripper()
+            'Rigid Gripper?': self.is_rigid_gripper(),
+            'Can execute?': self.can_execute()
         }
 
 

@@ -11,7 +11,7 @@ user_msg = 'Please only answer with Yes or No.'
 
 def prompt_all_models(prompters: [Prompter]):
     for prompter in prompters:
-        data = pd.read_csv('meta_reasoning/meta_reasoning_data.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('meta_reasoning/meta_reasoning_with_negatives.csv', delimiter=',', on_bad_lines='skip')
         results = []
         for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Meta-Reasoning task'):
             # get data from csv
@@ -21,11 +21,12 @@ def prompt_all_models(prompters: [Prompter]):
             dofs = row['DoFs']
             gripper = row['Gripper Config']
             has_rigid_gripper = row['Rigid Gripper?']
+            can_execute = row['Can execute?']
 
             hardware = create_hardware_description(is_mobile, no_arms, dofs, gripper, has_rigid_gripper)
             question = f'Task: {task}\nHardware: {hardware}'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            tup = MetaReasoningModelResult(task, hardware, get_binary_answer(res))
+            tup = MetaReasoningModelResult(task, hardware, get_binary_answer(res), can_execute)
             results.append(tup)
         write_model_results_to_file(results, prompter.model_name)
         add_to_model_overview(calculate_metrics(results, prompter.model_name), 'meta_reasoning')
@@ -41,6 +42,7 @@ def create_hardware_description(is_mobile: bool, arms: int, dofs: int, gripper: 
     else:
         rigidity = 'soft'
     return f'The robot has {arms} arm(s) with {dofs} DoFs and {rigidity} {gripper} and it {walk}.'
+
 
 def get_binary_answer(answer: str) -> bool:
     return 'yes' in answer.lower()

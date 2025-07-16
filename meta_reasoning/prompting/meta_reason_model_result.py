@@ -2,7 +2,7 @@ from utils.eval_result_super import ModelEvaluationResult
 
 
 class MetaReasoningModelResult(ModelEvaluationResult):
-    def __init__(self, task: str, hardware: str, pred_answer: bool, corr_answer=True):
+    def __init__(self, task: str, hardware: str, pred_answer: bool, corr_answer: bool):
         self._task = task
         self._hardware = hardware
         self._pred_answer = pred_answer

@@ -21,7 +21,7 @@ def extract_from_all_sources() -> [TaskCapability]:
 def create_negative_samples(positive_samples: [TaskCapability]) -> [TaskCapability]:
     samples = []
     for p_s in tqdm(positive_samples, 'Creating negative samples'):
-        n_s = TaskCapability(p_s.get_task(), False, 1, 1, GripperConfig.NO, True)
+        n_s = TaskCapability(p_s.get_task(), False, 1, 1, GripperConfig.NO, True, False)
         if str(n_s) == str(p_s):
             continue
         samples.append(p_s)
@@ -29,10 +29,13 @@ def create_negative_samples(positive_samples: [TaskCapability]) -> [TaskCapabili
     return samples
 
 
-def write_results_to_file(results: [TaskCapability]):
+def write_results_to_file(results: [TaskCapability], pos_only=True):
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
-    df.to_csv('../meta_reasoning_data.csv', index=False)
+    if pos_only:
+        df.to_csv('../meta_reasoning_data.csv', index=False)
+    else:
+        df.to_csv('../meta_reasoning_with_negatives.csv', index=False)
 
 
 if __name__ == '__main__':
@@ -41,6 +44,7 @@ if __name__ == '__main__':
     print(f'Finished the initial extraction. {len(res)} tasks found.')
     res = combine_capabilities(res)
     print(f'Finished the combination. {len(res)} tasks remain.')
+    write_results_to_file(sorted(res, key=lambda r: r.get_task()))
     res = create_negative_samples(res)
     print(f'Added the negative samples. {len(res)} overall samples.')
-    write_results_to_file(sorted(res, key=lambda r: r.get_task()))
+    write_results_to_file(sorted(res, key=lambda r: r.get_task()), False)
