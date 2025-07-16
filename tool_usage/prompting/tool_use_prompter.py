@@ -28,7 +28,7 @@ def prompt_all_models(prompters: [Prompter]):
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, res, choices)
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name)
+        write_model_results_to_file(results, prompter.model_name, 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name), 'tool_usage')
 
 

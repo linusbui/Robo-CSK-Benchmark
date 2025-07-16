@@ -25,7 +25,7 @@ def prompt_all_models(prompters: [Prompter]):
                 print(f'Error formatting the generated locations for {obj}: {res}')
                 continue
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name)
+        write_model_results_to_file(results, prompter.model_name, 'tidy_up/results_open', False)
         add_to_model_overview(calculate_average(results, prompter.model_name), 'tidy_up/results_open', False)
 
 
