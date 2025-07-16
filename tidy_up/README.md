@@ -42,7 +42,12 @@ After removing duplicates from the list of 986 included objects, *868* distinct 
 
 ## Experiments
 
-To evaluate this tasks, we provide the LLMs with the following prompt:
+For this task, we evaluate the LLM capabilities in two varying ways:
+In the first experiment, we prompt the model to provide a prototypical location *without* giving it any options to choose from (= Open Question). 
+In a second experiment, we provide the model with a list of 5 locations to choose from (= Multi Choice Question). 
+Here are the two prompts we have employed:
+
+### Prompt for Open Questions
 
 ---
 **System**: Imagine you are a robot tidying up a household.
@@ -55,18 +60,36 @@ Locations:
 
 ---
 
-We analyse the results for each model using the following metrics:
+### Prompt for Multi Choice Questions
+
+---
+**System**: Imagine you are a robot tidying up a household environment, being confronted with an object and a possible list of locations to put it.
+
+**User**: What is the single location from the given list that you think is the most suitable place to put the object? Please only answer with the location you chose.
+
+Object: [Object] 
+
+Locations: [List of 5 Locations]
+
+Your Choice:
+
+---
+
+## Results
+
+We analyse the results for each model using different metrics depending on the type of question in the experiment.
+For the open ended questions, we rely on the following ranking-based metrics:
 - Mean Reciprocal Rank (MRR) of the generated answers when compared to the gold standard ranked list
 - Mean Average Precision @k (MAP@k) over all objects (evaluated for k=1, k=3 & k=5)
 - Mean Average Recall @k (MAR@k) over all objects (evaluated for k=1, k=3 & k=5)
 
-## Results
+For the multiple choice questions, we evaluate the Accuracy (Acc) of the model answers.
 
-| LLM                    | MRR       | MAP@1     | MAP@3     | MAP@5     | MAR@1     | MAR@3     | MAR@5     |
-|------------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| gpt-4o-2024-08-06      | 0.412     | 0.345     | 0.387     | 0.365     | 0.100     | **0.146** | **0.163** |
-| Llama-3.3-70B-Instruct | **0.424** | **0.364** | **0.392** | **0.372** | **0.104** | 0.144     | 0.154     |
-| gemma-2-27b-it         | 0.276     | 0.218     | 0.255     | 0.248     | 0.086     | 0.117     | 0.125     |
+| LLM                    | MRR       | MAP@1     | MAP@3     | MAP@5     | MAR@1     | MAR@3     | MAR@5     | Acc       |
+|------------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| gpt-4o-2024-08-06      | 0.412     | 0.345     | 0.387     | 0.365     | 0.100     | **0.146** | **0.163** | **0.595** |
+| Llama-3.3-70B-Instruct | **0.424** | **0.364** | **0.392** | **0.372** | **0.104** | 0.144     | 0.154     | 0.580     |
+| gemma-2-27b-it         | 0.276     | 0.218     | 0.255     | 0.248     | 0.086     | 0.117     | 0.125     | 0.559     |
 
 ## References
 
