@@ -13,7 +13,7 @@ if __name__ == "__main__":
     print('Finished the Table Setting task')
     meta_reason_prompter.prompt_all_models(prompters)
     print('Finished the Meta-Reasoning task')
-    tool_use_prompter.execute_prompting(prompters)
+    tool_use_prompter.prompt_all_models(prompters)
     print('Finished the Tool Usage task')
     tidy_up_prompter_open.prompt_all_models(prompters)
     print('Finished the Tidy Up task (Open Questions)')
