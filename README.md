@@ -13,15 +13,18 @@ On the contrary, all models exhibit limitations, leaving room for further optimi
 
 ## Publication
 
-The accompanying paper has been accepted at the **22nd International Conference on Ubiquitous Robots (UR 2025)**. 
+The accompanying paper has been presented at the **22nd International Conference on Ubiquitous Robots (UR 2025)**. 
+You can find the paper on [IEEEXplore](https://ieeexplore.ieee.org/abstract/document/11078036).
 Please use the following citation when working with the benchmark:
 ```
 @inproceedings{Toberg2025RoboCSKBenchBenchmarking,
   title = {RoboCSKBench: Benchmarking Embodied Commonsense Capabilities of Large Language Models},
-  booktitle = {UR2025},
+  booktitle = {2025 22nd International Conference on Ubiquitous Robots (UR)},
   author = {Töberg, Jan-Philipp and Kenneweg, Svenja and Cimiano, Philipp},
   year = {2025},
-  address = {College Station, Texas, USA}
+  pages = {199--206},
+  address = {College Station, Texas, USA},
+  doi = {10.1109/UR65550.2025.11078036}
 }
 ```
 
