@@ -12,6 +12,9 @@ def add_to_model_overview(new_entry: pd.DataFrame, folder: str, default_res_fold
         file = f'{folder}/model_overview.csv'
     if Path(file).exists():
         model_overview = pd.read_csv(file)
+        # Remove old version if the entry already exists
+        model = new_entry['model'].values
+        model_overview = model_overview[~model_overview['model'].isin(model)]
         result = pd.concat([model_overview, new_entry], ignore_index=True)
     else:
         result = new_entry
