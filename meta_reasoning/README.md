@@ -49,7 +49,12 @@ To combine the different tasks, we use SentenceBERT-based embeddings and cluster
 
 ## Experiments
 
-To evaluate this tasks, we provide the LLMs with the following prompt:
+To evaluate this tasks, we evaluate the LLM capabilities in two varying ways:
+In the first experiment, we prompt the model to decide whether a given hardware configuration is capable of executing a given task (= Binary Question). 
+In a second experiment, we provide the model with a list of 5 hardware configurations to choose the correct one from (= Multi Choice Question). 
+Here are the two prompts we have employed:
+
+### Prompt for Binary Questions
 
 ---
 **System**: Imagine you are a robot with a given hardware configuration and you should decide whether you are capable of executing a task.
@@ -62,21 +67,38 @@ Hardware: [Hardware Configuration]
 
 ---
 
-For each of the 4788 tasks, which consists of a robot hardware configuration capable of executing it, we also create a negative sample by setting all robotic capabilities to the minimal configuration.
-So each model is provided with 9576 samples.
-We analyse the results for each model using the following metrics:
+### Prompt for Multi Choice Questions
+
+---
+**System**: Imagine you are to create a robot for a specific household task.
+
+**User**: What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Please only answer with the complete configuration you chose.
+
+Task: [Task]
+
+nConfigurations: [List of 5 Configurations]
+
+Your Choice:
+
+---
+
+For the binary experiment we create additional negative samples by taking each of the 4788 data points, which consists of a robot hardware configuration capable of executing it, by setting all robotic capabilities to the minimal configuration.
+So each model is provided with 9576 questions for the binary experiment and 4788 questions for the multiple choice experiment.
+For the binary questions, we analyse the results for each model using the following metrics:
 - Amount of true positives (TPs), true negatives (TNs), false positives (FPs) & false negatives (FNs)
 - Ratio of positive to negative answers by the model (Formula: (TPs + FPs) / (TNs + FNs))
 - Accuracy, Precision, Recall, Specificity
 - F1-Score
 
+For the multiple choice questions, we evaluate the Accuracy of the model answers.
+
 ## Results
 
-| LLM                 | TNs  | TPs  | FNs  | FPs | Ratio | Acc   | Prec  | Rec   | Spec  | F1    |
-| ------------------- | ---- | ---- | ---- | --- | ----- | ----- | ----- | ----- | ----- | ----- |
-| GPT-4o             | 4772 | 2616 | 2172 | 16  | 0.379 | 0.772 | 0.994 | 0.546 | 0.997 | 0.705 |
-| Llama-3.3-70B-Instruct | 4737 | 4294 | 494  | 51  | 0.831 | 0.943 | 0.988 | 0.897 | 0.989 | 0.940 |
-| gemma-2-27b-it      | 4621 | 4061 | 727  | 167 | 0.791 | 0.907 | 0.961 | 0.848 | 0.965 | 0.901 |
+| LLM                    | TNs  | TPs  | FNs  | FPs | Ratio | Acc (B)   | Prec      | Rec       | Spec      | F1        | Acc (MC)  |
+|------------------------|------|------|------|-----|-------|-----------|-----------|-----------|-----------|-----------|-----------|
+| GPT-4o                 | 4772 | 2616 | 2172 | 16  | 0.379 | 0.772     | **0.994** | 0.546     | **0.997** | 0.705     | **0.790** |
+| Llama-3.3-70B-Instruct | 4737 | 4294 | 494  | 51  | 0.831 | **0.943** | 0.988     | **0.897** | 0.989     | **0.940** | 0.737     |
+| gemma-2-27b-it         | 4621 | 4061 | 727  | 167 | 0.791 | 0.907     | 0.961     | 0.848     | 0.965     | 0.901     | 0.658     |
 
 ## References
 
