@@ -107,8 +107,8 @@ def evaluate_multi(prompters):
     for prompter in prompters:
         metrics_list = []
         for question_type in ["after", "before"]:
-            for recipe_number in range(1,5):
-                evaluation_file = f'results/{question_type}/{prompter}/{recipe_number}.json'
+            for recipe_number in range(1,2):
+                evaluation_file = f'procedural_knowledge/results_multi/{question_type}/{prompter.model_name}/{recipe_number}.json'
                 results = extract_results_json(evaluation_file)
 
                 metrics = evaluate_multiclass_classification(results)
@@ -120,7 +120,7 @@ def evaluate_multi(prompters):
         accuracy = correct / total if total > 0 else 0.0
 
         all_prompter_results.append({
-            'prompter': prompter,
+            'prompter': prompter.model_name,
             'total': total,
             'correct': correct,
             'accuracy': accuracy
