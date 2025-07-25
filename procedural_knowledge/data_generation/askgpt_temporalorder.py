@@ -27,7 +27,7 @@ class OpenAIChatModel:
               temperature=0)
         return completion.choices[0].message.content, messages
 
-    def _extract_steps(self, text):
+    def _extract_steps_binary(self, text):
         first_step_pattern = r"First step:\s*(.*?)(?=Second step)"
         second_step_pattern = r"Second step:\s*(.*$)"
         first_step = re.search(first_step_pattern, text)
@@ -36,7 +36,12 @@ class OpenAIChatModel:
         second_step = second_step.group(1) if second_step else None
         return first_step, second_step
 
-    def _get_order_questions(self, recipe_title, recipe_instructions):
+    def _extract_steps_multi(self, text):
+        pattern = r"(First step|Second step|Third step):\s*(.+?)\."
+        steps = re.findall(pattern, text)
+        return steps
+
+    def _get_order_questions_binary(self, recipe_title, recipe_instructions):
         instructions = ("I will provide you with cooking instructions for the recipe " + recipe_title + ". "
                         "Extract the two most relevant steps from the cooking instructions."
                         "Shorten each step up to a maximum of 5 words. Remove exact time details. "
@@ -45,11 +50,19 @@ class OpenAIChatModel:
         instructions_str = "; ".join(recipe_instructions)
         prompt = "Instructions: " + instructions_str
         response, old_messages = self._answer(instructions, prompt)
-
-        print(response)
-        step_1, step_2 = self._extract_steps(response)
+        step_1, step_2 = self._extract_steps_binary(response)
         return step_1, step_2
 
+    def _get_order_questions_multi(self, recipe_title, recipe_instructions):
+        instructions = ("I will provide you with cooking instructions for the recipe " + recipe_title + ". "
+                        "Extract the three most relevant steps from the cooking instructions."
+                        "Shorten each step up to a maximum of 5 words. Remove exact time details. "
+                        "Return the steps in the order they should be performed:\nFirst step: <first>. Second step: <second> . Third step: <third>"
+                        "Each step should be comprehensible independently of the other.")
+        instructions_str = "; ".join(recipe_instructions)
+        prompt = "Instructions: " + instructions_str
+        response, old_messages = self._answer(instructions, prompt)
+        return self._extract_steps_multi(response)
 
 
 # Function to extract the cooking instructions from a JSON file
@@ -84,12 +97,11 @@ if __name__ == '__main__':
 
         final_dict = []
         num_order_questions = 0
-
         for recipe_instructions, recipe_title in zip(instructions, title):
             if num_order_questions < final_num_order_questions:
                 print(f"\nProcessing recipe: {recipe_title}")
                 print("Number of order questions: ", num_order_questions)
-                step_1, step_2 = chatgpt._get_order_questions(recipe_title, recipe_instructions)
+                step_1, step_2 = chatgpt._get_order_questions_binary(recipe_title, recipe_instructions)
                 if step_1 and step_2:
                     num_order_questions += 1
                     recipe_dict = {
@@ -98,7 +110,30 @@ if __name__ == '__main__':
                         "step_2": step_2
                         }
                     final_dict.append(recipe_dict)
-        save_path = "question_components/questions_recipe_"+str(recipe_number)
+        save_path = "question_components_binary/questions_recipe_"+str(recipe_number)
+        save_dict_to_file(final_dict, save_path + ".json")
+
+        final_dict = []
+        num_order_questions = 0
+        for recipe_instructions, recipe_title in zip(instructions, title):
+            if num_order_questions < final_num_order_questions:
+                print(f"\nProcessing recipe: {recipe_title}")
+                print("Number of order questions: ", num_order_questions)
+                steps = chatgpt._get_order_questions_multi(recipe_title, recipe_instructions)
+                step_dict = {step.lower().replace(" ", "_"): instruction.strip() for step, instruction in steps}
+                step_1 = step_dict.get("first_step", "")
+                step_2 = step_dict.get("second_step", "")
+                step_3 = step_dict.get("third_step", "")
+                if step_1 and step_2 and step_3:
+                    num_order_questions += 1
+                    recipe_dict = {
+                        "goal": recipe_title,
+                        "step_1": step_1,
+                        "step_2": step_2,
+                        "step_3": step_3
+                    }
+                    final_dict.append(recipe_dict)
+        save_path = "question_components_multi/questions_recipe_"+str(recipe_number)
         save_dict_to_file(final_dict, save_path + ".json")
 
 

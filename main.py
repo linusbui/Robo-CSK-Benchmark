@@ -13,7 +13,7 @@ def main():
         description='RoboCSKBench - Please choose the model to evaluate and the tasks to evaluate on')
     parser.add_argument("--models", type=str, choices=["gpt", "llama", "gemma"], nargs="+",
                         help="Choose one or more models to run")
-    parser.add_argument("--tasks", type=str, choices=["ts", "mr_b", "mr_mc", "to_us", "ti_up_o", "ti_up_mc", "proc"],
+    parser.add_argument("--tasks", type=str, choices=["ts", "mr_b", "mr_mc", "to_us", "ti_up_o", "ti_up_mc", "proc_b", "proc_mc"],
                         nargs="+", help="Choose one or more tasks to run")
     parser.add_argument("--new_tok", type=int, default=1000, help="Maximum number of new tokens for the model output")
     args = parser.parse_args()
@@ -52,9 +52,12 @@ def main():
     if "ti_up_mc" in args.tasks:
         tidy_up_prompter_multi_choice.prompt_all_models(prompters)
         print('Finished the Tidy Up task (Multi Choice Questions)')
-    if "proc" in args.tasks:
-        cooking_procedures_prompter.prompt_all_models(prompters)
-        print("Finished the Cooking Procedures Knowledge task")
+    if "proc_b" in args.tasks:
+        cooking_procedures_prompter.prompt_all_models_binary(prompters)
+        print("Finished the Cooking Procedures Knowledge task (Binary Questions)")
+    if "proc_mc" in args.tasks:
+        cooking_procedures_prompter.prompt_all_models_multi(prompters)
+        print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions)")
 
 if __name__ == "__main__":
     main()

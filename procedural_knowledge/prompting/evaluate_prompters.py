@@ -51,7 +51,7 @@ def calculate_overall_metrics(results_list):
                       'acc': accuracy, 'prec': precision, 'rec': recall, 'spec': specificity, 'f1': f1}).to_frame().T
 
 
-def evaluate(prompters):
+def evaluate_binary(prompters):
     comb_result = pd.DataFrame(columns=['model', 'tn', 'tp', 'fn', 'fp', 'ratio', 'acc', 'prec', 'rec', 'spec', 'f1'])
 
     for prompter in prompters:
@@ -78,4 +78,53 @@ def evaluate(prompters):
             overall_metrics['model'] = prompter.model_name
             comb_result = pd.concat([comb_result, overall_metrics], ignore_index=True)
 
-    comb_result.to_csv('procedural_knowledge/results/model_overview.csv', index=False)
+    comb_result.to_csv('procedural_knowledge/results_binary/model_overview.csv', index=False)
+
+
+def evaluate_multiclass_classification(data):
+    correct = 0
+    total = 0
+
+    for entry in data:
+        response = (entry.get('response') or '').strip().lower()
+        correct_response = (entry.get('correct_response') or '').strip().lower()
+
+        total += 1
+        if response == correct_response:
+            correct += 1
+
+    accuracy = correct / total if total > 0 else 0.0
+
+    return {
+        'total': total,
+        'correct': correct,
+        'accuracy': accuracy,
+    }
+
+def evaluate_multi(prompters):
+    all_prompter_results = []
+
+    for prompter in prompters:
+        metrics_list = []
+        for question_type in ["after", "before"]:
+            for recipe_number in range(1,5):
+                evaluation_file = f'results/{question_type}/{prompter}/{recipe_number}.json'
+                results = extract_results_json(evaluation_file)
+
+                metrics = evaluate_multiclass_classification(results)
+                metrics_list.append(metrics)
+
+        # Aggregate overall metrics
+        total = sum(m['total'] for m in metrics_list)
+        correct = sum(m['correct'] for m in metrics_list)
+        accuracy = correct / total if total > 0 else 0.0
+
+        all_prompter_results.append({
+            'prompter': prompter,
+            'total': total,
+            'correct': correct,
+            'accuracy': accuracy
+        })
+
+    df = pd.DataFrame(all_prompter_results)
+    df.to_csv('procedural_knowledge/results_multi/model_overview.csv', index=False)

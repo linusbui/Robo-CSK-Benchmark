@@ -1,0 +1,1202 @@
+[
+    {
+        "title": "Ranch Mushrooms",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?\n\nOptions:\n- Use stovetop if preferred\n- Pour batter over raspberries\n- Mix seafood with vegetables\n- Add ingredients to crock pot\n- Bake until set",
+        "response": "Add ingredients to crock pot",
+        "correct_response": "Add ingredients to crock pot"
+    },
+    {
+        "title": "Raspberry Creme Brulee Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?\n\nOptions:\n- Pour batter over raspberries\n- Bake chops until juices clear\n- Preheat oven to 300\u00b0F\n- Offer to birds\n- Bake in water bath",
+        "response": null,
+        "correct_response": "Preheat oven to 300\u00b0F"
+    },
+    {
+        "title": "Barbecue Hamburger Patties Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Barbecue Hamburger Patties Recipe', which step occurs before 'Shape into 6 patties'?\n\nOptions:\n- Bake lettuce until crisp\n- Combine salad ingredients\n- Mix meat, onion, salt\n- Brown patties in skillet\n- Add juices and sauces",
+        "response": "Mix meat, onion, salt",
+        "correct_response": "Mix meat, onion, salt"
+    },
+    {
+        "title": "Chicken Prepared-Mustard",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chicken Prepared-Mustard', which step occurs before 'Add chicken and butter'?\n\nOptions:\n- Dice chicken breast\n- Add mustard, stir, cover\n- Spoon sauce over steaks\n- Fold and seal dough\n- Fry batter until golden",
+        "response": "Dice chicken breast",
+        "correct_response": "Dice chicken breast"
+    },
+    {
+        "title": "Bower's Hunter's Chili",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Bower's Hunter's Chili', which step occurs before 'Brown ground meat, drain grease'?\n\nOptions:\n- Refrigerate, turning occasionally\n- Pour batter over raspberries\n- Add meats to bean pot\n- Spread jam over crust\n- Panfry steak in olive oil",
+        "response": "Add meats to bean pot",
+        "correct_response": "Panfry steak in olive oil"
+    },
+    {
+        "title": "Christmas Sugar Biscuits",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Christmas Sugar Biscuits', which step occurs before 'Mix buttermilk, flour alternately'?\n\nOptions:\n- Scoop onto sheet, sprinkle\n- Cream sugar, shortening, egg\n- Stir in blueberries gently\n- Bake in slow cooker\n- Add shrimp and cook",
+        "response": "Cream sugar, shortening, egg",
+        "correct_response": "Cream sugar, shortening, egg"
+    },
+    {
+        "title": "Baked Sausage N Taters",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Baked Sausage N Taters', which step occurs before 'Add diced onion, tomatoes'?\n\nOptions:\n- Drizzle oil, add spices\n- Refrigerate barm overnight\n- Slice potatoes, add to pan\n- Bake chops until juices clear\n- Sprinkle with cheese",
+        "response": "Slice potatoes, add to pan",
+        "correct_response": "Slice potatoes, add to pan"
+    },
+    {
+        "title": "Chocolate-mint Cheesecake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chocolate-mint Cheesecake', which step occurs before 'Beat cream cheese and sugar'?\n\nOptions:\n- Bake pinwheels\n- Refrigerate until firm\n- Pour maple syrup over chicken\n- Press crumbs into pan\n- Coat balls in powdered sugar",
+        "response": "Press crumbs into pan",
+        "correct_response": "Press crumbs into pan"
+    },
+    {
+        "title": "Barbecued Spam Sandwiches",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Barbecued Spam Sandwiches', which step occurs before 'Combine meat and sauce'?\n\nOptions:\n- Slice lunch meat thin\n- Spoon onto toasted bread\n- Cook plums with syrup\n- Ladle jam into jars\n- Mix chicken with ingredients",
+        "response": "Slice lunch meat thin",
+        "correct_response": "Slice lunch meat thin"
+    },
+    {
+        "title": "Salmon Pasta",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Salmon Pasta', which step occurs before 'Fry bacon until crispy'?\n\nOptions:\n- Cube salmon, add to pan\n- Cook pasta until al dente\n- Cook batter until golden\n- Spread batter, bake cake\n- Top with cool whip, pecans",
+        "response": "Cook pasta until al dente",
+        "correct_response": "Cook pasta until al dente"
+    },
+    {
+        "title": "Vegetable Burgers(Welch)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Vegetable Burgers(Welch)', which step occurs before 'Mix vegetables with spices'?\n\nOptions:\n- Add mustard, stir, cover\n- Saute mushrooms, carrots, onions\n- Simmer with rice and spices\n- Shape patties, cook, serve\n- Mix in remaining ingredients",
+        "response": "Saute mushrooms, carrots, onions",
+        "correct_response": "Saute mushrooms, carrots, onions"
+    },
+    {
+        "title": "Avocado and Cilantro Salsa",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Avocado and Cilantro Salsa', which step occurs before 'Mix with onions, cilantro'?\n\nOptions:\n- Bake at 375 degrees\n- Dice avocadoes and tomatoes\n- Cover and refrigerate\n- Add juices and sauces\n- Bake until edges browned",
+        "response": "Dice avocadoes and tomatoes",
+        "correct_response": "Dice avocadoes and tomatoes"
+    },
+    {
+        "title": "Dreamsicle Cake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Dreamsicle Cake', which step occurs before 'Pour gelatin mixture over cake'?\n\nOptions:\n- Bake in greased muffin tins\n- Pour sauce over meatballs\n- Prepare cake mix\n- Bake in slow cooker\n- Spread cream mixture over cake",
+        "response": "Prepare cake mix",
+        "correct_response": "Prepare cake mix"
+    },
+    {
+        "title": "Oat Muffins",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Oat Muffins', which step occurs before 'Spoon into greased cups'?\n\nOptions:\n- Stir ingredients to moisten\n- Blend until thickened\n- Bake until golden brown\n- Cook batter until golden\n- Bake in preheated oven",
+        "response": "Stir ingredients to moisten",
+        "correct_response": "Stir ingredients to moisten"
+    },
+    {
+        "title": "Barry's Beef Marinade Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Barry's Beef Marinade Recipe', which step occurs before 'Refrigerate steak'?\n\nOptions:\n- Form and brown patties\n- Turn steak often\n- Flip pesto onto cheese slice\n- Place steak in marinade\n- Cover and refrigerate",
+        "response": "Place steak in marinade",
+        "correct_response": "Place steak in marinade"
+    },
+    {
+        "title": "Shrimp Stir Fry",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Shrimp Stir Fry', which step occurs before 'Saute garlic and ginger'?\n\nOptions:\n- Smoke until meat opaque\n- Sprinkle with cheese\n- Heat soy sauce mixture\n- Add spatzle to boiling water\n- Add shrimp and cook",
+        "response": "Add shrimp and cook",
+        "correct_response": "Heat soy sauce mixture"
+    },
+    {
+        "title": "Easter Basket Cake Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Easter Basket Cake Recipe', which step occurs before 'Press yellow coconut on sides'?\n\nOptions:\n- Sprinkle orange rind before serving\n- Frost cake with whipped topping\n- Pour Bisquick mixture over\n- Sprinkle green coconut over top\n- Knead well",
+        "response": "Knead well",
+        "correct_response": "Frost cake with whipped topping"
+    },
+    {
+        "title": "Chocolate Chestnut Cake With Hazelnuts and Chestnut Cream Glaze",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chocolate Chestnut Cake With Hazelnuts and Chestnut Cream Glaze', which step occurs before 'Add remaining ingredients, beat'?\n\nOptions:\n- Layer rice and stew\n- Beat first 6 ingredients\n- Bake with crumb topping\n- Bake until crust is golden\n- Spread batter, bake cake",
+        "response": "Beat first 6 ingredients",
+        "correct_response": "Beat first 6 ingredients"
+    },
+    {
+        "title": "Pecan Glazed Ham Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Pecan Glazed Ham Recipe', which step occurs before 'Pour syrup over ham'?\n\nOptions:\n- Add oil to yeast mix\n- Bake ham in oven\n- Fry turkey 3 1/2 minutes\n- Spread pecans, pour syrup\n- Sprinkle orange rind before serving",
+        "response": "Bake ham in oven",
+        "correct_response": "Bake ham in oven"
+    },
+    {
+        "title": "Turtle Pumpkin Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Turtle Pumpkin Pie', which step occurs before 'Beat milk, pudding, pumpkin'?\n\nOptions:\n- Chill; garnish with onions\n- Sear and roast fish\n- Mix seafood with vegetables\n- Top with cool whip, pecans\n- Pour caramel into crust",
+        "response": "Pour caramel into crust",
+        "correct_response": "Pour caramel into crust"
+    },
+    {
+        "title": "Winter Warm-Up Beef Simmer",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Winter Warm-Up Beef Simmer', which step occurs before 'Stir in vegetables'?\n\nOptions:\n- Bake cookies on sheet\n- Bake in water bath\n- Top with cider\n- Brown bacon and roast\n- Bake until roast tender",
+        "response": "Brown bacon and roast",
+        "correct_response": "Brown bacon and roast"
+    },
+    {
+        "title": "Halloween White Chocolate Peanut Butter Fudge",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Halloween White Chocolate Peanut Butter Fudge', which step occurs before 'Stir in orange food coloring'?\n\nOptions:\n- Simmer marinade for sauce\n- Fold foil into pouch\n- Melt ingredients over double boiler\n- Add mustard, stir, cover\n- Pour into lined baking pan",
+        "response": "Melt ingredients over double boiler",
+        "correct_response": "Melt ingredients over double boiler"
+    },
+    {
+        "title": "Jam & Buttercream Sandwich Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Jam & Buttercream Sandwich Cookies', which step occurs before 'Add dry ingredients, mix'?\n\nOptions:\n- Spread pecans, pour syrup\n- Serve over ice\n- Cook quesadilla until golden\n- Spread buttercream, add jam\n- Mix butter and sugar",
+        "response": "Mix butter and sugar",
+        "correct_response": "Mix butter and sugar"
+    },
+    {
+        "title": "Kickin' BBQ Chicken Quesadilla",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Kickin' BBQ Chicken Quesadilla', which step occurs before 'Heat skillet over medium-high'?\n\nOptions:\n- Spoon sauce over cod\n- Simmer until beans cooked\n- Place ingredients on tortilla\n- Cook quesadilla until golden\n- Pour batter into pan",
+        "response": "Place ingredients on tortilla",
+        "correct_response": "Place ingredients on tortilla"
+    },
+    {
+        "title": "Cheesy Burgers With Sauteed Mushrooms",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Cheesy Burgers With Sauteed Mushrooms', which step occurs before 'Mix meat and mushrooms'?\n\nOptions:\n- Bake until knife is clean\n- Cook mushrooms until tender\n- Pour Bisquick mixture over\n- Grill patties until cooked\n- Add avocado and nori",
+        "response": "Cook mushrooms until tender",
+        "correct_response": "Cook mushrooms until tender"
+    },
+    {
+        "title": "Sausage And Egg Brunch Casserole Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Sausage And Egg Brunch Casserole Recipe', which step occurs before 'Mix eggs, milk, salt, mustard'?\n\nOptions:\n- Top fish with relish\n- Brown sausage; drain fat\n- Pour liquid over bread\n- Combine with oatmeal mixture\n- Bake in slow cooker",
+        "response": "Brown sausage; drain fat",
+        "correct_response": "Brown sausage; drain fat"
+    },
+    {
+        "title": "Crustless Acorn Squash Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Crustless Acorn Squash Pie', which step occurs before 'Bake squash until very tender'?\n\nOptions:\n- Sear and roast fish\n- Ladle jam into jars\n- Pour into lined baking pan\n- Preheat oven to 375 degrees\n- Pour filling over apples",
+        "response": null,
+        "correct_response": "Preheat oven to 375 degrees"
+    },
+    {
+        "title": "Grilled Spam, Tomato, Cheddar Cheese and Sweet Onion Sandwiches",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Grilled Spam, Tomato, Cheddar Cheese and Sweet Onion Sandwiches', which step occurs before 'Butter bread, flip into pan'?\n\nOptions:\n- Cook covered, flip once\n- Layer onion, SPAM, cheese, tomato\n- Pour into lined baking pan\n- Cook plums with syrup\n- Add juices and sauces",
+        "response": null,
+        "correct_response": "Layer onion, SPAM, cheese, tomato"
+    },
+    {
+        "title": "Puritan's Pride Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Puritan's Pride Recipe', which step occurs before 'Add ice and stir'?\n\nOptions:\n- Top with cider\n- Pour mixture over popcorn\n- Fry cakes until golden\n- Combine juice and syrup\n- Bake until center almost set",
+        "response": "Combine juice and syrup",
+        "correct_response": "Combine juice and syrup"
+    },
+    {
+        "title": "Mushroom-Stuffed Pork Chops",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Mushroom-Stuffed Pork Chops', which step occurs before 'Stuff chops with mixture'?\n\nOptions:\n- Cook mushrooms and onion\n- Spread filling, assemble cookies\n- Bake chops until juices clear\n- Cook pancakes until browned\n- Bake until firm",
+        "response": "Cook mushrooms and onion",
+        "correct_response": "Cook mushrooms and onion"
+    },
+    {
+        "title": "Frozen Lemonade Squares",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Frozen Lemonade Squares', which step occurs before 'Beat yogurt and concentrate'?\n\nOptions:\n- Mix crumbs and margarine\n- Add shrimp and cook\n- Freeze until firm\n- Mix cheeses, add mayonnaise\n- Refrigerate before serving",
+        "response": "Mix crumbs and margarine",
+        "correct_response": "Mix crumbs and margarine"
+    },
+    {
+        "title": "Pulled Chicken Minis with Ranch Slaw",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Pulled Chicken Minis with Ranch Slaw', which step occurs before 'Combine coleslaw and dressing'?\n\nOptions:\n- Fill rolls with mixture\n- Cook chicken with sauce\n- Bake covered until tender\n- Pour liquid over bread\n- Fill indentations with preserves",
+        "response": "Bake covered until tender",
+        "correct_response": "Cook chicken with sauce"
+    },
+    {
+        "title": "Onion Bhaji",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Onion Bhaji', which step occurs before 'Stir onions into batter'?\n\nOptions:\n- Fry onions in hot oil\n- Bake until golden brown\n- Transfer to serving dish\n- Toss with pasta, garnish\n- Mix ingredients into batter",
+        "response": "Mix ingredients into batter",
+        "correct_response": "Mix ingredients into batter"
+    },
+    {
+        "title": "Peanut Butter Fudge Brownie Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Peanut Butter Fudge Brownie Bars', which step occurs before 'Pour mixture into pan'?\n\nOptions:\n- Drizzle bars with chocolate\n- Ladle jam into jars\n- Combine with oatmeal mixture\n- Bake until bubbly and brown\n- Combine butter, sugar, eggs, vanilla",
+        "response": null,
+        "correct_response": "Combine butter, sugar, eggs, vanilla"
+    },
+    {
+        "title": "Country Pate",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Country Pate', which step occurs before 'Combine meat, spirits, herbs'?\n\nOptions:\n- Simmer with sweet potatoes\n- Pulse meats into puree\n- Spread cream mixture over cake\n- Pour batter into skillet\n- Bake until thermometer reads 165F",
+        "response": "Pulse meats into puree",
+        "correct_response": "Pulse meats into puree"
+    },
+    {
+        "title": "Broccoli Cheddar Rolls Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Broccoli Cheddar Rolls Recipe', which step occurs before 'Spread mixture over dough'?\n\nOptions:\n- Mix broccoli, cheese, onions\n- Form and brown patties\n- Bake at 375 degrees\n- Add mustard, stir, cover\n- Spread batter, bake cake",
+        "response": "Mix broccoli, cheese, onions",
+        "correct_response": "Mix broccoli, cheese, onions"
+    },
+    {
+        "title": "Artichoke Heart Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Artichoke Heart Salad', which step occurs before 'Add dressing, toss to coat'?\n\nOptions:\n- Combine artichokes, olives, pepper\n- Refrigerate, turning occasionally\n- Add pasta to sauce\n- Bake until center set\n- Cover and refrigerate",
+        "response": null,
+        "correct_response": "Combine artichokes, olives, pepper"
+    },
+    {
+        "title": "Surprise Chocolate Bites",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Surprise Chocolate Bites', which step occurs before 'Roll peanut butter mixture'?\n\nOptions:\n- Bake until set\n- Knead well\n- Preheat oven\n- Bake pinwheels\n- Cook pork chops until golden",
+        "response": "Knead well",
+        "correct_response": "Preheat oven"
+    },
+    {
+        "title": "Chestnut and Armagnac-Poached Prune Tarts",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chestnut and Armagnac-Poached Prune Tarts', which step occurs before 'Arrange fruit on rounds'?\n\nOptions:\n- Poach prunes in Armagnac\n- Bake until pastry browned\n- Mix in remaining ingredients\n- Broil with bread crumbs\n- Drizzle oil, add spices",
+        "response": "Poach prunes in Armagnac",
+        "correct_response": "Poach prunes in Armagnac"
+    },
+    {
+        "title": "Strawberry Lemonade",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Strawberry Lemonade', which step occurs before 'Combine ingredients; stir'?\n\nOptions:\n- Simmer beans until softened\n- Serve over ice\n- Bake until knife is clean\n- Bake until pastry browned\n- Puree strawberries",
+        "response": "Puree strawberries",
+        "correct_response": "Puree strawberries"
+    },
+    {
+        "title": "Sweet & Creamy Sour Cream Flan",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Sweet & Creamy Sour Cream Flan', which step occurs before 'Blend ingredients, add eggs'?\n\nOptions:\n- Cook pancakes until browned\n- Fry batter until golden\n- Bake until knife is clean\n- Bake until crust is golden\n- Boil sugar and water",
+        "response": "Boil sugar and water",
+        "correct_response": "Boil sugar and water"
+    },
+    {
+        "title": "Quick Italian Spinach Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Quick Italian Spinach Pie', which step occurs before 'Pour into pie plate'?\n\nOptions:\n- Pour batter into pan\n- Spoon sauce over cod\n- Mix ingredients\n- Bake until set\n- Bake until center set",
+        "response": "Mix ingredients",
+        "correct_response": "Mix ingredients"
+    },
+    {
+        "title": "Herbed Cheese-and-Cracker Bits",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Herbed Cheese-and-Cracker Bits', which step occurs before 'Pour mixture over crackers'?\n\nOptions:\n- Mix oil and seasonings\n- Fry batter until golden\n- Add tomatoes, stir well\n- Refrigerate, turning occasionally\n- Pour batter into skillet",
+        "response": "Mix oil and seasonings",
+        "correct_response": "Mix oil and seasonings"
+    },
+    {
+        "title": "Easy JELL-O Tub Mousse",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Easy JELL-O Tub Mousse', which step occurs before 'Spoon into dishes'?\n\nOptions:\n- Refrigerate until serving\n- Bake until edges browned\n- Mix pudding and topping\n- Add stir fry to broth\n- Simmer beans until softened",
+        "response": "Mix pudding and topping",
+        "correct_response": "Mix pudding and topping"
+    },
+    {
+        "title": "Black Velvet Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Black Velvet Recipe', which step occurs before 'Do not stir'?\n\nOptions:\n- Pour ingredients into glass\n- Bake in greased muffin tins\n- Simmer marinade for sauce\n- Bake until center almost set\n- Serve immediately",
+        "response": "Pour ingredients into glass",
+        "correct_response": "Pour ingredients into glass"
+    },
+    {
+        "title": "French Onion Soup IV",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'French Onion Soup IV', which step occurs before 'Add consomme, broth, wine'?\n\nOptions:\n- Mix in remaining ingredients\n- Add oil to yeast mix\n- Saute onions in butter\n- Scoop onto sheet, sprinkle\n- Melt cheese in oven",
+        "response": "Saute onions in butter",
+        "correct_response": "Saute onions in butter"
+    },
+    {
+        "title": "Packet Potatoes",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Packet Potatoes', which step occurs before 'Layer potatoes on onions'?\n\nOptions:\n- Add pasta to sauce\n- Drizzle bars with chocolate\n- Preheat oven or grill\n- Bake until biscuits are golden\n- Fold foil to form packet",
+        "response": "Fold foil to form packet",
+        "correct_response": "Preheat oven or grill"
+    },
+    {
+        "title": "Frisee and Watercress Salad with Jicama and Oranges",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Frisee and Watercress Salad with Jicama and Oranges', which step occurs before 'Whisk vinaigrette ingredients'?\n\nOptions:\n- Serve immediately\n- Mix and sieve everything\n- Prepare orange sections\n- Cook quesadilla until golden\n- Combine salad ingredients",
+        "response": "Prepare orange sections",
+        "correct_response": "Prepare orange sections"
+    },
+    {
+        "title": "Creme De Menthe Balls (No-Bake Cookies)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Creme De Menthe Balls (No-Bake Cookies)', which step occurs before 'Roll into 1\" balls'?\n\nOptions:\n- Fry cakes until golden\n- Add meats, vegetables, seasoning\n- Coat balls in powdered sugar\n- Toss carrots with vinaigrette\n- Combine ingredients for dough",
+        "response": "Combine ingredients for dough",
+        "correct_response": "Combine ingredients for dough"
+    },
+    {
+        "title": "Tossed Toasted Tempeh",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Tossed Toasted Tempeh', which step occurs before 'Saute portobello slices'?\n\nOptions:\n- Spread cream mixture over cake\n- Turn steak often\n- Toast tempeh slices\n- Mix milk and lemon pudding\n- Toss with lemon juice",
+        "response": "Toast tempeh slices",
+        "correct_response": "Toast tempeh slices"
+    },
+    {
+        "title": "Fassoulei Bil Zeit (Green Beans With Onion)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Fassoulei Bil Zeit (Green Beans With Onion)', which step occurs before 'Add tomato and ingredients'?\n\nOptions:\n- Drizzle oil, add spices\n- Sprinkle with cheese\n- Simmer until beans cooked\n- Saute onion and garlic\n- Simmer with sweet potatoes",
+        "response": "Saute onion and garlic",
+        "correct_response": "Saute onion and garlic"
+    },
+    {
+        "title": "Blender Vegetable Dip",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Blender Vegetable Dip', which step occurs before 'Blend all ingredients smooth'?\n\nOptions:\n- Transfer to serving dish\n- Stir wet into dry\n- Fry onions in hot oil\n- Simmer with sweet potatoes\n- Saute onions in butter",
+        "response": "Saute onions in butter",
+        "correct_response": "Saute onions in butter"
+    },
+    {
+        "title": "Guava-Candied Ginger Gelato",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Guava-Candied Ginger Gelato', which step occurs before 'Cook until mixture thickens'?\n\nOptions:\n- Freeze mixture until firm\n- Bake until biscuits are golden\n- Bake covered until tender\n- Pour mixture over popcorn\n- Combine ingredients in saucepan",
+        "response": "Combine ingredients in saucepan",
+        "correct_response": "Combine ingredients in saucepan"
+    },
+    {
+        "title": "Raspberry Pie III",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Raspberry Pie III', which step occurs before 'Pour into pastry shell'?\n\nOptions:\n- Mix raspberries and ingredients\n- Bake until crust is golden\n- Sprinkle with cheese\n- Pour filling over apples\n- Freeze until firm",
+        "response": "Mix raspberries and ingredients",
+        "correct_response": "Mix raspberries and ingredients"
+    },
+    {
+        "title": "Mexican Tamarind Cooler (Agua de Tamarindo)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Mexican Tamarind Cooler (Agua de Tamarindo)', which step occurs before 'Process pulp in blender'?\n\nOptions:\n- Cook pancakes on griddle\n- Bake until pastry browned\n- Mix and sieve everything\n- Boil unpeeled tamarind\n- Grind spices and mix ingredients",
+        "response": "Boil unpeeled tamarind",
+        "correct_response": "Boil unpeeled tamarind"
+    },
+    {
+        "title": "Coconut Ice Candy",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Coconut Ice Candy', which step occurs before 'Add red dye'?\n\nOptions:\n- Pour Bisquick mixture over\n- Stir wet into dry\n- Knead well\n- Mix ingredients\n- Add meats to bean pot",
+        "response": "Mix ingredients",
+        "correct_response": "Mix ingredients"
+    },
+    {
+        "title": "Sweet Knots",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Sweet Knots', which step occurs before 'Tie into a knot'?\n\nOptions:\n- Add butter, lemon rind, juice\n- Chill; garnish with onions\n- Bake until cheese melts\n- Dip rolls in butter\n- Bake until golden brown",
+        "response": "Dip rolls in butter",
+        "correct_response": "Dip rolls in butter"
+    },
+    {
+        "title": "Pinto Bean Burgers Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Pinto Bean Burgers Recipe', which step occurs before 'Mix beans with ingredients'?\n\nOptions:\n- Bake custard in water bath\n- Puree beans in processor\n- Transfer to serving dish\n- Form and brown patties\n- Grind spices and mix ingredients",
+        "response": "Puree beans in processor",
+        "correct_response": "Puree beans in processor"
+    },
+    {
+        "title": "Peanut Butter and Honey Sandwich",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Peanut Butter and Honey Sandwich', which step occurs before 'Spread mixture on bread'?\n\nOptions:\n- Mix and sieve everything\n- Add potatoes, carrot, celery\n- Sandwich with other slice\n- Fry cakes until golden\n- Stir ingredients until smooth",
+        "response": "Mix and sieve everything",
+        "correct_response": "Stir ingredients until smooth"
+    },
+    {
+        "title": "Cod Fish and Potato Chowder",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Cod Fish and Potato Chowder', which step occurs before 'Add onion, leek, garlic'?\n\nOptions:\n- Drizzle syrup over baklava\n- Bake until bubbly and brown\n- Pour sauce over meatballs\n- Cook bacon until caramelized\n- Add cod, cook until done",
+        "response": "Cook bacon until caramelized",
+        "correct_response": "Cook bacon until caramelized"
+    },
+    {
+        "title": "Easy Chicken Pot Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Easy Chicken Pot Pie', which step occurs before 'Mix chicken, vegetables, soup'?\n\nOptions:\n- Spread jam over crust\n- Add stir fry to broth\n- Preheat oven to 400\n- Pour Bisquick mixture over\n- Cook batter until golden",
+        "response": "Preheat oven to 400",
+        "correct_response": "Preheat oven to 400"
+    },
+    {
+        "title": "Sauteed Plums in Maple Syrup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Sauteed Plums in Maple Syrup', which step occurs before 'Add vanilla and cardamom'?\n\nOptions:\n- Toss salad with dressing\n- Warm butter until browned\n- Add tomatoes, stir well\n- Fry turkey 3 1/2 minutes\n- Cook plums with syrup",
+        "response": "Cook plums with syrup",
+        "correct_response": "Warm butter until browned"
+    },
+    {
+        "title": "Beans And Beef Corn Bread Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Beans And Beef Corn Bread Recipe', which step occurs before 'Combine next 7 ingredients'?\n\nOptions:\n- Pour batter into skillet\n- Saute/fry meat; drain\n- Transfer to serving dish\n- Smoke until meat opaque\n- Fold in tuna",
+        "response": "Saute/fry meat; drain",
+        "correct_response": "Saute/fry meat; drain"
+    },
+    {
+        "title": "Southwest Casserole",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Southwest Casserole', which step occurs before 'Press crescent rolls in pan'?\n\nOptions:\n- Add meats to bean pot\n- Brown beef, onions, garlic\n- Add butter, lemon rind, juice\n- Pour mixture over crust\n- Spread jam over crust",
+        "response": "Brown beef, onions, garlic",
+        "correct_response": "Brown beef, onions, garlic"
+    },
+    {
+        "title": "Thai Sweetcorn Fritters",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Thai Sweetcorn Fritters', which step occurs before 'Mix with remaining ingredients'?\n\nOptions:\n- Fry batter until golden\n- Fill lettuce with chicken\n- Bake until topping is golden\n- Blend half sweetcorn smooth\n- Spread buttercream, add jam",
+        "response": "Blend half sweetcorn smooth",
+        "correct_response": "Blend half sweetcorn smooth"
+    },
+    {
+        "title": "No Cook Freezer Jam",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'No Cook Freezer Jam', which step occurs before 'Add crushed fruit'?\n\nOptions:\n- Stir sugar and package\n- Add rum and marshmallows\n- Serve immediately\n- Ladle jam into jars\n- Cook until relish thickens",
+        "response": "Stir sugar and package",
+        "correct_response": "Stir sugar and package"
+    },
+    {
+        "title": "Tutti-Frutti Teriyaki Chicken",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Tutti-Frutti Teriyaki Chicken', which step occurs before 'Puree fruit, soy sauce, ingredients'?\n\nOptions:\n- Preheat oven to 400F\n- Bake custard in water bath\n- Refrigerate, turning occasionally\n- Brush sauce, bake chicken\n- Spread batter, bake cake",
+        "response": null,
+        "correct_response": "Preheat oven to 400F"
+    },
+    {
+        "title": "Lemonade Stand Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Lemonade Stand Pie', which step occurs before 'Stir in Cool Whip'?\n\nOptions:\n- Toss with lemon juice\n- Bake until golden brown\n- Bake chops until juices clear\n- Freeze until firm\n- Mix drink mix with water",
+        "response": "Bake until golden brown",
+        "correct_response": "Mix drink mix with water"
+    },
+    {
+        "title": "Raspberry-Coconut Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Raspberry-Coconut Bars', which step occurs before 'Press dough into baking pan'?\n\nOptions:\n- Flip pesto onto cheese slice\n- Preheat oven to 425F\n- Sprinkle with powdered sugar\n- Spread jam over crust\n- Add potatoes, carrot, celery",
+        "response": null,
+        "correct_response": "Preheat oven to 425F"
+    },
+    {
+        "title": "Orange Harvard Beets",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Orange Harvard Beets', which step occurs before 'Add sliced beets, heat'?\n\nOptions:\n- Sprinkle orange rind before serving\n- Roast turkey, basting every 20 minutes\n- Pour into lined baking pan\n- Combine sugar, cornstarch, salt\n- Sear and roast fish",
+        "response": "Combine sugar, cornstarch, salt",
+        "correct_response": "Combine sugar, cornstarch, salt"
+    },
+    {
+        "title": "Chicken Biscuit Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chicken Biscuit Pie', which step occurs before 'Saute onion in butter'?\n\nOptions:\n- Preheat oven to 450\u00b0F\n- Bake until biscuits are golden\n- Add mustard, stir, cover\n- Bake in preheated oven\n- Serve with bread cubes",
+        "response": null,
+        "correct_response": "Preheat oven to 450\u00b0F"
+    },
+    {
+        "title": "California Roll Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'California Roll Salad', which step occurs before 'Mix rice with vinegar'?\n\nOptions:\n- Freeze until firm\n- Pour over baked crust\n- Cook pork chops until golden\n- Boil and steam rice\n- Add avocado and nori",
+        "response": "Boil and steam rice",
+        "correct_response": "Boil and steam rice"
+    },
+    {
+        "title": "Eggplant Lasagna",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Eggplant Lasagna', which step occurs before 'Layer eggplant, sauce, cheese'?\n\nOptions:\n- Bake until cheese melts\n- Bake with crumb topping\n- Stir wet into dry\n- Mix in remaining ingredients\n- Dip eggplant in mixtures",
+        "response": "Dip eggplant in mixtures",
+        "correct_response": "Dip eggplant in mixtures"
+    },
+    {
+        "title": "Sylvia's Version of Greek Tortellini Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Sylvia's Version of Greek Tortellini Salad', which step occurs before 'Add dressing and ingredients'?\n\nOptions:\n- Let rest before slicing\n- Cook and cool tortellini\n- Simmer with sweet potatoes\n- Add meats to bean pot\n- Crumble feta on top",
+        "response": "Cook and cool tortellini",
+        "correct_response": "Cook and cool tortellini"
+    },
+    {
+        "title": "Pesto Veggie Frittata",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Pesto Veggie Frittata', which step occurs before 'Mix eggs with milk'?\n\nOptions:\n- Transfer to oven\n- Mix milk and lemon pudding\n- Saute peppers, onion, spinach\n- Bake until edges browned\n- Chill; garnish with onions",
+        "response": "Saute peppers, onion, spinach",
+        "correct_response": "Saute peppers, onion, spinach"
+    },
+    {
+        "title": "Garlic Macaroni and Cheese",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Garlic Macaroni and Cheese', which step occurs before 'Make cheese sauce with roux'?\n\nOptions:\n- Simmer marinade for sauce\n- Let rest before slicing\n- Cook pasta until al dente\n- Bake with crumb topping\n- Mix cheeses, add mayonnaise",
+        "response": "Cook pasta until al dente",
+        "correct_response": "Cook pasta until al dente"
+    },
+    {
+        "title": "Raspberry Clafoutis",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Raspberry Clafoutis', which step occurs before 'Blend ingredients for batter'?\n\nOptions:\n- Bake in preheated oven\n- Simmer until beans cooked\n- Preheat oven, grease Dutch oven\n- Bake until firm\n- Pour batter over raspberries",
+        "response": "Preheat oven, grease Dutch oven",
+        "correct_response": "Preheat oven, grease Dutch oven"
+    },
+    {
+        "title": "Cheese Muffins",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Cheese Muffins', which step occurs before 'Stir Cheddar into dry ingredients'?\n\nOptions:\n- Toss with lemon juice\n- Bake in greased muffin tins\n- Preheat the oven\n- Cook vegetables, then drain\n- Grill patties until cooked",
+        "response": "Preheat the oven",
+        "correct_response": "Preheat the oven"
+    },
+    {
+        "title": "Kha'geena - a Super Easy yet Impressive Egg Recipe From",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Kha'geena - a Super Easy yet Impressive Egg Recipe From', which step occurs before 'Saute onions with spices'?\n\nOptions:\n- Chop onions, tomatoes, chilies\n- Bake until topping is golden\n- Add eggs, stir, saute\n- Grind spices and mix ingredients\n- Add butter, lemon rind, juice",
+        "response": "Grind spices and mix ingredients",
+        "correct_response": "Chop onions, tomatoes, chilies"
+    },
+    {
+        "title": "Fondue Suisse",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Fondue Suisse', which step occurs before 'Add cheese, stir until melted'?\n\nOptions:\n- Fry turkey 3 1/2 minutes\n- Rub pot with garlic\n- Bake until crust is golden\n- Serve with bread cubes\n- Stir in vanilla extract",
+        "response": "Rub pot with garlic",
+        "correct_response": "Rub pot with garlic"
+    },
+    {
+        "title": "Classic Snickerdoodles",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Classic Snickerdoodles', which step occurs before 'Mix flours and dry ingredients'?\n\nOptions:\n- Pour into lined baking pan\n- Preheat oven\n- Cream butter and sugar\n- Pour batter into skillet\n- Garnish with tomatoes, chicken",
+        "response": "Cream butter and sugar",
+        "correct_response": "Preheat oven"
+    },
+    {
+        "title": "Individual Gingerbreads",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Individual Gingerbreads', which step occurs before 'Whisk dry ingredients together'?\n\nOptions:\n- Bake until knife is clean\n- Bake until tester is clean\n- Bake in slow cooker\n- Grind spices and mix ingredients\n- Grease and flour tart pans",
+        "response": "Grind spices and mix ingredients",
+        "correct_response": "Grease and flour tart pans"
+    },
+    {
+        "title": "Ginger Carrot Pancakes",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Ginger Carrot Pancakes', which step occurs before 'Pour egg, stir to blend'?\n\nOptions:\n- Cook pancakes until browned\n- Bake in greased muffin tins\n- Combine carrot, onion, garlic, ginger\n- Cook until beans are tender\n- Fry cakes until golden",
+        "response": null,
+        "correct_response": "Combine carrot, onion, garlic, ginger"
+    },
+    {
+        "title": "Dilly Cheese Pinwheels",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Dilly Cheese Pinwheels', which step occurs before 'Roll dough into tube'?\n\nOptions:\n- Fry batter until golden\n- Sprinkle green coconut over top\n- Bake pinwheels\n- Sprinkle marshmallows over cake\n- Spread cream cheese on dough",
+        "response": "Spread cream cheese on dough",
+        "correct_response": "Spread cream cheese on dough"
+    },
+    {
+        "title": "Winter Carrots",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Winter Carrots', which step occurs before 'Blend parsley, horseradish, mayonnaise'?\n\nOptions:\n- Add cod, cook until done\n- Cook batter until golden\n- Top fish with relish\n- Boil carrots in salted water\n- Bake at 350F",
+        "response": "Boil carrots in salted water",
+        "correct_response": "Boil carrots in salted water"
+    },
+    {
+        "title": "Peppery Maple Chicken",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Peppery Maple Chicken', which step occurs before 'Simmer chicken until springy'?\n\nOptions:\n- Saute chicken until golden\n- Add stir fry to broth\n- Pour mixture over popcorn\n- Add butter, lemon rind, juice\n- Pour maple syrup over chicken",
+        "response": "Saute chicken until golden",
+        "correct_response": "Saute chicken until golden"
+    },
+    {
+        "title": "Moms Oven Chicken and Gravy",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Moms Oven Chicken and Gravy', which step occurs before 'Coat chicken in flour mixture'?\n\nOptions:\n- Add potatoes, carrot, celery\n- Serve immediately\n- Preheat oven to 350\u00b0F\n- Bake chicken skin side down\n- Bake until set",
+        "response": null,
+        "correct_response": "Preheat oven to 350\u00b0F"
+    },
+    {
+        "title": "Layered Dessert Mold",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Layered Dessert Mold', which step occurs before 'Mix milk and vanilla pudding'?\n\nOptions:\n- Arrange cake slices in pan\n- Pour maple syrup over chicken\n- Bake until golden brown\n- Bake until cheese melts\n- Mix milk and lemon pudding",
+        "response": "Arrange cake slices in pan",
+        "correct_response": "Arrange cake slices in pan"
+    },
+    {
+        "title": "File Gumbo",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'File Gumbo', which step occurs before 'Saute onion, bell pepper, celery'?\n\nOptions:\n- Mix milk and lemon pudding\n- Flip pesto onto cheese slice\n- Cook chicken and sausage\n- Add meats, vegetables, seasoning\n- Ladle jam into jars",
+        "response": "Cook chicken and sausage",
+        "correct_response": "Cook chicken and sausage"
+    },
+    {
+        "title": "Weight Watchers Chicken Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Weight Watchers Chicken Salad', which step occurs before 'Cut chicken into cubes'?\n\nOptions:\n- Mix chicken with ingredients\n- Boil chicken until cooked\n- Toss with pasta, garnish\n- Refrigerate, turning occasionally\n- Spread buttercream, add jam",
+        "response": "Boil chicken until cooked",
+        "correct_response": "Boil chicken until cooked"
+    },
+    {
+        "title": "Strawberry and Cream Butter Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Strawberry and Cream Butter Cookies', which step occurs before 'Mix in cake mix'?\n\nOptions:\n- Bake cookies on sheet\n- Cover and cook on low\n- Sear and roast fish\n- Beat cream cheese, butter\n- Bake in buttered dish",
+        "response": "Beat cream cheese, butter",
+        "correct_response": "Beat cream cheese, butter"
+    },
+    {
+        "title": "Spiced Ginger Pancakes with Date Philly Confit",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Spiced Ginger Pancakes with Date Philly Confit', which step occurs before 'Whisk liquid into dry'?\n\nOptions:\n- Sift dry ingredients\n- Cook batter until golden\n- Add pasta to sauce\n- Mix seafood with vegetables\n- Puree soup until smooth",
+        "response": "Sift dry ingredients",
+        "correct_response": "Sift dry ingredients"
+    },
+    {
+        "title": "Zesty Veggie Pizza",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Zesty Veggie Pizza', which step occurs before 'Grill dough until marked'?\n\nOptions:\n- Grill vegetables until tender\n- Layer rice and stew\n- Cook covered, flip once\n- Layer crust with toppings\n- Toss with pasta, garnish",
+        "response": "Layer crust with toppings",
+        "correct_response": "Grill vegetables until tender"
+    },
+    {
+        "title": "Greek-Style Couscous Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Greek-Style Couscous Salad', which step occurs before 'Add ingredients; mix lightly'?\n\nOptions:\n- Cook naan in frying pan\n- Refrigerate salad\n- Top fish with relish\n- Bake until crust is golden\n- Cook couscous without salt",
+        "response": "Cook couscous without salt",
+        "correct_response": "Cook couscous without salt"
+    },
+    {
+        "title": "Avocado Grilled Cheese Sandwiches",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Avocado Grilled Cheese Sandwiches', which step occurs before 'Divide feta on pesto'?\n\nOptions:\n- Toast bread on griddle\n- Pour mixture over popcorn\n- Bake until center almost set\n- Flip pesto onto cheese slice\n- Fold foil to form packet",
+        "response": "Toast bread on griddle",
+        "correct_response": "Toast bread on griddle"
+    },
+    {
+        "title": "Orange Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Orange Sauce', which step occurs before 'Add whipping cream, stir'?\n\nOptions:\n- Turn steak often\n- Add extract, stir\n- Mix seafood with vegetables\n- Blend until thickened\n- Combine sugar, juice, zest",
+        "response": "Combine sugar, juice, zest",
+        "correct_response": "Combine sugar, juice, zest"
+    },
+    {
+        "title": "Apple Maple Bread Pudding",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Apple Maple Bread Pudding', which step occurs before 'Mix bread, butter, syrup'?\n\nOptions:\n- Refrigerate, turning occasionally\n- Cook apple until soft\n- Broil swordfish until opaque\n- Combine salad ingredients\n- Bake until bubbly and brown",
+        "response": "Cook apple until soft",
+        "correct_response": "Cook apple until soft"
+    },
+    {
+        "title": "Gado Gado With Sambal Kacang (Spicy Peanut Sauce)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Gado Gado With Sambal Kacang (Spicy Peanut Sauce)', which step occurs before 'Pan-fry marinaded tofu'?\n\nOptions:\n- Melt cheese in oven\n- Cook vegetables, then drain\n- Marinade tofu in soy sauce\n- Spoon sauce over cod\n- Bake until pastry browned",
+        "response": "Marinade tofu in soy sauce",
+        "correct_response": "Marinade tofu in soy sauce"
+    },
+    {
+        "title": "Gone Bananas Shake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Gone Bananas Shake', which step occurs before 'Add ice'?\n\nOptions:\n- Cook pancakes until browned\n- Freeze until firm\n- Blend milk, cheese, banana\n- Blend until thickened\n- Drizzle syrup over baklava",
+        "response": "Blend milk, cheese, banana",
+        "correct_response": "Blend milk, cheese, banana"
+    },
+    {
+        "title": "Healthy Blueberry Coffee Cake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Healthy Blueberry Coffee Cake', which step occurs before 'Blend oats into powder'?\n\nOptions:\n- Cook pork chops until golden\n- Fold in tuna\n- Preheat oven and prepare pan\n- Cover and cook on low\n- Stir in blueberries gently",
+        "response": "Preheat oven and prepare pan",
+        "correct_response": "Preheat oven and prepare pan"
+    },
+    {
+        "title": "Round and Cute Hatcho Miso Quail Egg Meatballs For Bento",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Round and Cute Hatcho Miso Quail Egg Meatballs For Bento', which step occurs before 'Combine ingredients and knead'?\n\nOptions:\n- Drizzle oil, add spices\n- Wrap mixture around quail eggs\n- Bake until bubbly and brown\n- Grate and mince lotus root\n- Sprinkle green coconut over top",
+        "response": "Grate and mince lotus root",
+        "correct_response": "Grate and mince lotus root"
+    },
+    {
+        "title": "Chocolate Peanut Butter Oatmeal Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chocolate Peanut Butter Oatmeal Bars', which step occurs before 'Mix peanut butter and honey'?\n\nOptions:\n- Add tomatoes, stir well\n- Combine with oatmeal mixture\n- Simmer with sweet potatoes\n- Drizzle olive oil and vinegar\n- Preheat oven and prepare pan",
+        "response": "Preheat oven and prepare pan",
+        "correct_response": "Preheat oven and prepare pan"
+    },
+    {
+        "title": "Rhubarb Crumbles",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Rhubarb Crumbles', which step occurs before 'Mix sugar, flour, cinnamon'?\n\nOptions:\n- Combine rhubarb and sugar\n- Stir in blueberries gently\n- Bake custard in water bath\n- Serve immediately\n- Bake until topping is golden",
+        "response": "Combine rhubarb and sugar",
+        "correct_response": "Combine rhubarb and sugar"
+    },
+    {
+        "title": "Mom's Pickled Beets",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Mom's Pickled Beets', which step occurs before 'Add beets; let stand'?\n\nOptions:\n- Simmer beans until softened\n- Chill; garnish with onions\n- Sprinkle marshmallows over cake\n- Combine ingredients; bring to boil\n- Top with cheese, potatoes",
+        "response": "Combine ingredients; bring to boil",
+        "correct_response": "Combine ingredients; bring to boil"
+    },
+    {
+        "title": "PHILADELPHIA 3-STEP Chocolate Layer Cheesecake Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'PHILADELPHIA 3-STEP Chocolate Layer Cheesecake Bars', which step occurs before 'Pour chocolate batter over crust'?\n\nOptions:\n- Grind spices and mix ingredients\n- Pour filling over apples\n- Serve over ice\n- Bake until center almost set\n- Mix cream cheese, sugar",
+        "response": "Mix cream cheese, sugar",
+        "correct_response": "Mix cream cheese, sugar"
+    },
+    {
+        "title": "Lemon Pancakes With Fresh Berries",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Lemon Pancakes With Fresh Berries', which step occurs before 'Mix wet ingredients'?\n\nOptions:\n- Bake at 375 degrees\n- Pour over baked crust\n- Cook pancakes on griddle\n- Bake chops until juices clear\n- Combine dry ingredients",
+        "response": "Combine dry ingredients",
+        "correct_response": "Combine dry ingredients"
+    },
+    {
+        "title": "Shelly's More Expensive and Elaborate Carb Fix",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Shelly's More Expensive and Elaborate Carb Fix', which step occurs before 'Add cream, tomato paste, seasoning'?\n\nOptions:\n- Toss with pasta, garnish\n- Arrange apple slices in tin\n- Saute mushrooms, onion, garlic\n- Bake in preheated oven\n- Bake until knife is clean",
+        "response": "Saute mushrooms, onion, garlic",
+        "correct_response": "Saute mushrooms, onion, garlic"
+    },
+    {
+        "title": "Special Oatmeal Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Special Oatmeal Cookies', which step occurs before 'Mix oatmeal, margarine, egg whites'?\n\nOptions:\n- Stir in raisins and walnuts\n- Preheat oven and grease sheets\n- Cook batter until golden\n- Simmer marinade for sauce\n- Grind spices and mix ingredients",
+        "response": "Preheat oven and grease sheets",
+        "correct_response": "Preheat oven and grease sheets"
+    },
+    {
+        "title": "Seven-Minute Frosting",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Seven-Minute Frosting', which step occurs before 'Cook and beat until stiff'?\n\nOptions:\n- Fry batter until golden\n- Spread buttercream, add jam\n- Fold foil to form packet\n- Stir in vanilla extract\n- Combine ingredients in double boiler",
+        "response": "Combine ingredients in double boiler",
+        "correct_response": "Combine ingredients in double boiler"
+    },
+    {
+        "title": "Rosy Raisin Nut Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Rosy Raisin Nut Cookies', which step occurs before 'Drop batter onto greased sheets'?\n\nOptions:\n- Preheat oven to 375 degrees\n- Stir in tubetti and provolone\n- Bake until edges browned\n- Pour mixture over popcorn\n- Pour mixture over crust",
+        "response": null,
+        "correct_response": "Preheat oven to 375 degrees"
+    },
+    {
+        "title": "Sausage Stew Pasta",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Sausage Stew Pasta', which step occurs before 'Add broth and chard'?\n\nOptions:\n- Cook sausage until browned\n- Stir in tubetti and provolone\n- Layer cake, rhubarb, custard\n- Serve immediately\n- Bake at 375 degrees",
+        "response": "Cook sausage until browned",
+        "correct_response": "Cook sausage until browned"
+    },
+    {
+        "title": "Pizza Tot Casserole",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Pizza Tot Casserole', which step occurs before 'Transfer to baking dish'?\n\nOptions:\n- Bake chicken skin side down\n- Cook beef, pepper, onion\n- Turn steak often\n- Sandwich with other slice\n- Top with cheese, potatoes",
+        "response": "Cook beef, pepper, onion",
+        "correct_response": "Cook beef, pepper, onion"
+    },
+    {
+        "title": "Raspberry Meltaways",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Raspberry Meltaways', which step occurs before 'Roll out dough, cut cookies'?\n\nOptions:\n- Combine flour, butter, sugar\n- Spread filling, assemble cookies\n- Knead well\n- Cook covered, flip once\n- Fill indentations with preserves",
+        "response": "Combine flour, butter, sugar",
+        "correct_response": "Combine flour, butter, sugar"
+    },
+    {
+        "title": "Corn Flake Jam Filled Muffins",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Corn Flake Jam Filled Muffins', which step occurs before 'Add flour mixture, stir'?\n\nOptions:\n- Add oil to yeast mix\n- Fill indentations with preserves\n- Spread buttercream, add jam\n- Combine corn flakes and milk\n- Bake until roast tender",
+        "response": "Combine corn flakes and milk",
+        "correct_response": "Combine corn flakes and milk"
+    },
+    {
+        "title": "Classic Beef-Barley Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Classic Beef-Barley Soup', which step occurs before 'Transfer to crockpot, add ingredients'?\n\nOptions:\n- Garnish with tomatoes, chicken\n- Cover and cook on low\n- Drizzle syrup over baklava\n- Knead well\n- Brown meat, onion, garlic",
+        "response": "Brown meat, onion, garlic",
+        "correct_response": "Brown meat, onion, garlic"
+    },
+    {
+        "title": "Swordfish Steaks with Maitre d'Hotel Butter",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Swordfish Steaks with Maitre d'Hotel Butter', which step occurs before 'Spread butter on fish'?\n\nOptions:\n- Drizzle olive oil and vinegar\n- Simmer with sweet potatoes\n- Bake until golden brown\n- Preheat broiler\n- Broil swordfish until opaque",
+        "response": "Preheat broiler",
+        "correct_response": "Preheat broiler"
+    },
+    {
+        "title": "Spatzle",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Spatzle', which step occurs before 'Boil water in pot'?\n\nOptions:\n- Bake in slow cooker\n- Add spatzle to boiling water\n- Stir eggs, flour, water\n- Microwave in covered dish\n- Sprinkle green coconut over top",
+        "response": "Stir eggs, flour, water",
+        "correct_response": "Stir eggs, flour, water"
+    },
+    {
+        "title": "Warm Potato Salad with Celery, Tomatoes, and Chives",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Warm Potato Salad with Celery, Tomatoes, and Chives', which step occurs before 'Whisk mayonnaise, oil, vinegar'?\n\nOptions:\n- Bake cookies on sheet\n- Mix cheeses, add mayonnaise\n- Toss salad with dressing\n- Simmer potatoes until tender\n- Bake until center set",
+        "response": "Simmer potatoes until tender",
+        "correct_response": "Simmer potatoes until tender"
+    },
+    {
+        "title": "French Lemon Cake with Lemon Glaze",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'French Lemon Cake with Lemon Glaze', which step occurs before 'Add flour mixture'?\n\nOptions:\n- Transfer to serving dish\n- Beat butter and sugar\n- Pour orange mixture over chicken\n- Pour batter into pan\n- Pour batter over raspberries",
+        "response": "Beat butter and sugar",
+        "correct_response": "Beat butter and sugar"
+    },
+    {
+        "title": "Baby Bird Food Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Baby Bird Food Recipe', which step occurs before 'Form into pellets'?\n\nOptions:\n- Pour liquid over bread\n- Mix well\n- Offer to birds\n- Mix and pat crumb mixture\n- Bake until topping is golden",
+        "response": "Mix and pat crumb mixture",
+        "correct_response": "Mix well"
+    },
+    {
+        "title": "Healthy Whole Wheat Bread",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Healthy Whole Wheat Bread', which step occurs before 'Place dough in pan'?\n\nOptions:\n- Cream butter and sugar\n- Add pasta to sauce\n- Bake in slow cooker\n- Mix ingredients in bowl\n- Spread buttercream, add jam",
+        "response": "Mix ingredients in bowl",
+        "correct_response": "Mix ingredients in bowl"
+    },
+    {
+        "title": "Brandied Berry Compote Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Brandied Berry Compote Recipe', which step occurs before 'Pour over the fruit'?\n\nOptions:\n- Sprinkle with powdered sugar\n- Spread pecans, pour syrup\n- Mix juices and brandy\n- Fry cakes until golden\n- Bake pinwheels",
+        "response": "Mix juices and brandy",
+        "correct_response": "Mix juices and brandy"
+    },
+    {
+        "title": "Boston Baked Bean Salad Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Boston Baked Bean Salad Recipe', which step occurs before 'Combine beans with vegetables'?\n\nOptions:\n- Knead well\n- Drain the beans\n- Add broth and mix\n- Transfer to oven\n- Mix in remaining ingredients",
+        "response": "Drain the beans",
+        "correct_response": "Drain the beans"
+    },
+    {
+        "title": "Pan-Seared Barramundi with \"Caruru\"",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Pan-Seared Barramundi with \"Caruru\"', which step occurs before 'Simmer okra and stock'?\n\nOptions:\n- Layer cake, rhubarb, custard\n- Sear and roast fish\n- Refrigerate, turning occasionally\n- Toast shrimp shells\n- Top with cider",
+        "response": "Sear and roast fish",
+        "correct_response": "Toast shrimp shells"
+    },
+    {
+        "title": "Latin-Spiced Chicken in Lettuce Cups",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Latin-Spiced Chicken in Lettuce Cups', which step occurs before 'Roast chicken until browned'?\n\nOptions:\n- Fill lettuce with chicken\n- Bake until crust is golden\n- Layer crust with toppings\n- Coat chicken with spiced oil\n- Add oil to yeast mix",
+        "response": "Coat chicken with spiced oil",
+        "correct_response": "Coat chicken with spiced oil"
+    },
+    {
+        "title": "Linguini with Raisins, Pine Nuts and Bread Crumbs",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Linguini with Raisins, Pine Nuts and Bread Crumbs', which step occurs before 'Cook shallot and onion'?\n\nOptions:\n- Boil water and cook pasta\n- Add pasta to sauce\n- Combine salad ingredients\n- Top with cheese, potatoes\n- Spread cream mixture over cake",
+        "response": "Boil water and cook pasta",
+        "correct_response": "Boil water and cook pasta"
+    },
+    {
+        "title": "Stove Top Smoker Smoked Whole Trout",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Stove Top Smoker Smoked Whole Trout', which step occurs before 'Add lemon, thyme inside'?\n\nOptions:\n- Season trout with salt, pepper\n- Cook batter until golden\n- Bake until topping is golden\n- Smoke until meat opaque\n- Cook pancakes until browned",
+        "response": "Season trout with salt, pepper",
+        "correct_response": "Season trout with salt, pepper"
+    },
+    {
+        "title": "One Pot Spicy Turkey Rice Taco Bowl",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'One Pot Spicy Turkey Rice Taco Bowl', which step occurs before 'Cook turkey with vegetables'?\n\nOptions:\n- Cook quesadilla until golden\n- Brown onions in olive oil\n- Mix chicken with ingredients\n- Add oil to yeast mix\n- Simmer with rice and spices",
+        "response": "Brown onions in olive oil",
+        "correct_response": "Brown onions in olive oil"
+    },
+    {
+        "title": "Raspberry Lemon Muffins",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Raspberry Lemon Muffins', which step occurs before 'Combine wet and dry'?\n\nOptions:\n- Fold in raspberries\n- Preheat oven\n- Bake until cheese melts\n- Pour batter into skillet\n- Fold foil to form packet",
+        "response": "Preheat oven",
+        "correct_response": "Preheat oven"
+    },
+    {
+        "title": "Sparkling Fruit Cooler",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Sparkling Fruit Cooler', which step occurs before 'Add juices, water, gin'?\n\nOptions:\n- Fry onions in hot oil\n- Bake until thermometer reads 165F\n- Serve over ice, add lemon\n- Mix in remaining ingredients\n- Empty drink mix",
+        "response": "Mix in remaining ingredients",
+        "correct_response": "Empty drink mix"
+    },
+    {
+        "title": "Easy Parmesan-Garlic Chicken and Pasta",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Easy Parmesan-Garlic Chicken and Pasta', which step occurs before 'Bake chicken until cooked'?\n\nOptions:\n- Transfer to oven\n- Preheat oven to 400F\n- Bake until bubbly and brown\n- Cook pasta as directed\n- Mix cheeses, add mayonnaise",
+        "response": null,
+        "correct_response": "Preheat oven to 400F"
+    },
+    {
+        "title": "Picnic Macaroni Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Picnic Macaroni Salad', which step occurs before 'Mix well to blend'?\n\nOptions:\n- Add turkey, cover, sit\n- Sprinkle green coconut over top\n- Refrigerate before serving\n- Pour into lined baking pan\n- Combine ingredients in bowl",
+        "response": "Combine ingredients in bowl",
+        "correct_response": "Combine ingredients in bowl"
+    },
+    {
+        "title": "Beef Tenderloin in Mushroom Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Beef Tenderloin in Mushroom Sauce', which step occurs before 'Saute mushrooms and onions'?\n\nOptions:\n- Cook steaks until desired doneness\n- Scoop onto sheet, sprinkle\n- Mix seafood with vegetables\n- Refrigerate before serving\n- Spoon sauce over steaks",
+        "response": "Cook steaks until desired doneness",
+        "correct_response": "Cook steaks until desired doneness"
+    },
+    {
+        "title": "Simple Summer Tomato Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Simple Summer Tomato Salad', which step occurs before 'Add mozzarella and basil'?\n\nOptions:\n- Drizzle olive oil and vinegar\n- Slice tomatoes\n- Mix in remaining ingredients\n- Bake until roast tender\n- Freeze mixture until firm",
+        "response": "Slice tomatoes",
+        "correct_response": "Slice tomatoes"
+    },
+    {
+        "title": "Spiked Pumpkin Pie White Hot Chocolate",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Spiked Pumpkin Pie White Hot Chocolate', which step occurs before 'Cook until chocolate melts'?\n\nOptions:\n- Top with cheese, potatoes\n- Grill patties until cooked\n- Add rum and marshmallows\n- Combine ingredients in saucepan\n- Add juices and sauces",
+        "response": "Combine ingredients in saucepan",
+        "correct_response": "Combine ingredients in saucepan"
+    },
+    {
+        "title": "Easy Pork Belly Wraps with Umeboshi and Shiso Leaves in the Microwave",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Easy Pork Belly Wraps with Umeboshi and Shiso Leaves in the Microwave', which step occurs before 'Top pork with shiso, umeboshi'?\n\nOptions:\n- Fold and seal dough\n- Bake chops until juices clear\n- Microwave in covered dish\n- Mash umeboshi with spoon\n- Sprinkle with cheese",
+        "response": "Microwave in covered dish",
+        "correct_response": "Mash umeboshi with spoon"
+    },
+    {
+        "title": "Baked Ham with Mustard and Brown Sugar Crust",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Baked Ham with Mustard and Brown Sugar Crust', which step occurs before 'Coat ham with mustard'?\n\nOptions:\n- Bake chops until juices clear\n- Preheat oven to 300F\n- Ladle jam into jars\n- Mix and pat crumb mixture\n- Refrigerate barm overnight",
+        "response": null,
+        "correct_response": "Preheat oven to 300F"
+    },
+    {
+        "title": "Lunch Box Tuna Salad Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Lunch Box Tuna Salad Recipe', which step occurs before 'Combine with parsley'?\n\nOptions:\n- Grate cabbage and carrot\n- Fold in tuna\n- Drizzle olive oil and vinegar\n- Bake lettuce until crisp\n- Cover and refrigerate",
+        "response": "Fold in tuna",
+        "correct_response": "Grate cabbage and carrot"
+    },
+    {
+        "title": "Oven Caramel Corn",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Oven Caramel Corn', which step occurs before 'Heat sugar, butter, syrup'?\n\nOptions:\n- Pour mixture over popcorn\n- Cook pancakes until browned\n- Divide popcorn into pans\n- Spread batter, bake cake\n- Refrigerate barm overnight",
+        "response": "Divide popcorn into pans",
+        "correct_response": "Divide popcorn into pans"
+    },
+    {
+        "title": "Baked Basmati Rice",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Baked Basmati Rice', which step occurs before 'Add rice, stock, water, onion, corn'?\n\nOptions:\n- Toss with lemon juice\n- Bake chops until juices clear\n- Fill indentations with preserves\n- Grease pan with olive oil\n- Cover, bake, stir occasionally",
+        "response": "Grease pan with olive oil",
+        "correct_response": "Grease pan with olive oil"
+    },
+    {
+        "title": "Upside-Down Caramel Apple Cake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Upside-Down Caramel Apple Cake', which step occurs before 'Pour caramel sauce in tin'?\n\nOptions:\n- Grill patties until cooked\n- Arrange apple slices in tin\n- Grease cake tin with butter\n- Add shrimp and cook\n- Cook pasta as directed",
+        "response": "Grease cake tin with butter",
+        "correct_response": "Grease cake tin with butter"
+    },
+    {
+        "title": "Chicken and Sweet Potato Stew",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chicken and Sweet Potato Stew', which step occurs before 'Brown chicken in skillet'?\n\nOptions:\n- Sprinkle green coconut over top\n- Simmer with sweet potatoes\n- Bake until crust is golden\n- Bake until center almost set\n- Coat chicken with flour",
+        "response": "Coat chicken with flour",
+        "correct_response": "Coat chicken with flour"
+    },
+    {
+        "title": "Cranberry Creme Caramel",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Cranberry Creme Caramel', which step occurs before 'Pour caramel into mold'?\n\nOptions:\n- Bake custard in water bath\n- Spoon sauce over cod\n- Preheat oven to 315\u00b0F\n- Cook pancakes on griddle\n- Mix seafood with vegetables",
+        "response": null,
+        "correct_response": "Preheat oven to 315\u00b0F"
+    },
+    {
+        "title": "Cheese Naan Bread",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Cheese Naan Bread', which step occurs before 'Form dough into teardrops'?\n\nOptions:\n- Serve immediately\n- Sprinkle green coconut over top\n- Cook naan in frying pan\n- Refrigerate before serving\n- Knead dough with cheese",
+        "response": "Knead dough with cheese",
+        "correct_response": "Knead dough with cheese"
+    },
+    {
+        "title": "Chicken Pesto Pizza",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chicken Pesto Pizza', which step occurs before 'Arrange chicken and artichokes'?\n\nOptions:\n- Pour filling over apples\n- Spread pesto on crust\n- Bake until cheese melts\n- Bake until squash is tender\n- Cook batter until golden",
+        "response": "Spread pesto on crust",
+        "correct_response": "Spread pesto on crust"
+    },
+    {
+        "title": "Redibase Beef and Barley Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Redibase Beef and Barley Soup', which step occurs before 'Add water, Base, barley'?\n\nOptions:\n- Saut\u00e9 beef, onions, garlic\n- Add potatoes, carrot, celery\n- Add meats to bean pot\n- Cook batter until golden\n- Grind to powder",
+        "response": "Saut\u00e9 beef, onions, garlic",
+        "correct_response": "Saut\u00e9 beef, onions, garlic"
+    },
+    {
+        "title": "Tomato Braised Steak",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Tomato Braised Steak', which step occurs before 'Add wine, tomatoes, rosemary'?\n\nOptions:\n- Refrigerate before serving\n- Fill lettuce with chicken\n- Brown steak, transfer to dish\n- Bake covered until tender\n- Bake chicken until firm",
+        "response": "Brown steak, transfer to dish",
+        "correct_response": "Brown steak, transfer to dish"
+    },
+    {
+        "title": "Grilled Carrot Salad with Brown Butter Vinaigrette",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Grilled Carrot Salad with Brown Butter Vinaigrette', which step occurs before 'Cook butter until browned'?\n\nOptions:\n- Mix and pat crumb mixture\n- Toss carrots with vinaigrette\n- Grill carrots until crisp-tender\n- Pour batter into skillet\n- Knead well",
+        "response": "Grill carrots until crisp-tender",
+        "correct_response": "Grill carrots until crisp-tender"
+    },
+    {
+        "title": "Dreamy Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Dreamy Bars', which step occurs before 'Press into 9x9 pan'?\n\nOptions:\n- Bake until topping is golden\n- Pour over baked crust\n- Mix flour, sugar, oleo\n- Add mustard, stir, cover\n- Bake in slow cooker",
+        "response": "Mix flour, sugar, oleo",
+        "correct_response": "Mix flour, sugar, oleo"
+    },
+    {
+        "title": "Ginger Beef Steak With Dipping Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Ginger Beef Steak With Dipping Sauce', which step occurs before 'Cook steaks in pan'?\n\nOptions:\n- Bake cookies on sheet\n- Simmer marinade for sauce\n- Bake in water bath\n- Smoke until meat opaque\n- Marinate steaks overnight",
+        "response": "Marinates steaks overnight",
+        "correct_response": "Marinate steaks overnight"
+    },
+    {
+        "title": "Easy Turkey & Rice Stoup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Easy Turkey & Rice Stoup', which step occurs before 'Add broth, rice, vegetables'?\n\nOptions:\n- Bake until golden brown\n- Bake pinwheels\n- Bake in preheated oven\n- Saute garlic and onion\n- Add turkey, cover, sit",
+        "response": "Saute garlic and onion",
+        "correct_response": "Saute garlic and onion"
+    },
+    {
+        "title": "Strawberry Rhubarb Trifle",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Strawberry Rhubarb Trifle', which step occurs before 'Boil rhubarb, sugar, water'?\n\nOptions:\n- Combine with oatmeal mixture\n- Layer cake, rhubarb, custard\n- Cook sugar, cornstarch, milk\n- Scoop onto sheet, sprinkle\n- Add meats to bean pot",
+        "response": "Cook sugar, cornstarch, milk",
+        "correct_response": "Cook sugar, cornstarch, milk"
+    },
+    {
+        "title": "Sticky Toffee Pudding",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Sticky Toffee Pudding', which step occurs before 'Bake cake in ramekins'?\n\nOptions:\n- Bake in slow cooker\n- Cover cake with sauce\n- Bake until skewer comes out clean\n- Spread pecans, pour syrup\n- Cook sauce until amber",
+        "response": "Bake until skewer comes out clean",
+        "correct_response": "Cook sauce until amber"
+    },
+    {
+        "title": "Lobster Cakes with Tartar Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Lobster Cakes with Tartar Sauce', which step occurs before 'Form mixture into cakes'?\n\nOptions:\n- Refrigerate until serving\n- Fold foil to form packet\n- Fry cakes until golden\n- Bake until bubbly and brown\n- Cook vegetables until soft",
+        "response": "Cook vegetables until soft",
+        "correct_response": "Cook vegetables until soft"
+    },
+    {
+        "title": "Root Vegetable Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Root Vegetable Soup', which step occurs before 'Add root vegetables and water'?\n\nOptions:\n- Bake until golden brown\n- Cook onion and celery\n- Spread cream mixture over cake\n- Brush sauce, bake chicken\n- Puree soup until smooth",
+        "response": "Cook onion and celery",
+        "correct_response": "Cook onion and celery"
+    },
+    {
+        "title": "Sun-Dried Tomato Risotto",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Sun-Dried Tomato Risotto', which step occurs before 'Add rice and tomatoes'?\n\nOptions:\n- Garnish with tomatoes, chicken\n- Roast turkey, basting every 20 minutes\n- Drizzle syrup over baklava\n- Stir in Parmesan, season\n- Cook onion and garlic",
+        "response": "Cook onion and garlic",
+        "correct_response": "Cook onion and garlic"
+    },
+    {
+        "title": "Breakfast Pudding",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Breakfast Pudding', which step occurs before 'Preheat oven'?\n\nOptions:\n- Mix ingredients together\n- Drizzle oil, add spices\n- Bake until firm\n- Drizzle bars with chocolate\n- Bake covered until tender",
+        "response": "Mix ingredients together",
+        "correct_response": "Mix ingredients together"
+    },
+    {
+        "title": "Barbeque Meatballs Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Barbeque Meatballs Recipe', which step occurs before 'Brown meatballs in oil'?\n\nOptions:\n- Mix and shape balls\n- Garnish with tomatoes, chicken\n- Pour sauce over meatballs\n- Top with cheese, potatoes\n- Add eggs, stir, saute",
+        "response": "Mix and shape balls",
+        "correct_response": "Mix and shape balls"
+    },
+    {
+        "title": "Cheesy Chicken Tostadas",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Cheesy Chicken Tostadas', which step occurs before 'Fill with chicken'?\n\nOptions:\n- Spread cream cheese\n- Grill patties until cooked\n- Spread filling, assemble cookies\n- Top with remaining ingredients\n- Drizzle oil, add spices",
+        "response": "Grill patties until cooked",
+        "correct_response": "Spread cream cheese"
+    },
+    {
+        "title": "Pizza Dough Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Pizza Dough Recipe', which step occurs before 'Mix sugar, yeast, water'?\n\nOptions:\n- Sprinkle green coconut over top\n- Bake until center set\n- Mix flour and salt\n- Bake until bubbly and brown\n- Add oil to yeast mix",
+        "response": "Mix flour and salt",
+        "correct_response": "Mix flour and salt"
+    },
+    {
+        "title": "Cod BLT",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Cod BLT', which step occurs before 'Broil fish and tomatoes'?\n\nOptions:\n- Form and brown patties\n- Cook bacon until crispy\n- Freeze until firm\n- Sear and roast fish\n- Spoon sauce over cod",
+        "response": "Sear and roast fish",
+        "correct_response": "Cook bacon until crispy"
+    },
+    {
+        "title": "Strawberry Cream Pie",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Strawberry Cream Pie', which step occurs before 'Pour pudding over chocolate'?\n\nOptions:\n- Mix cheeses, add mayonnaise\n- Melt chocolate, stir in COOL WHIP\n- Bake chicken skin side down\n- Add spatzle to boiling water\n- Top with COOL WHIP, strawberries",
+        "response": null,
+        "correct_response": "Melt chocolate, stir in COOL WHIP"
+    },
+    {
+        "title": "Peanut Butter Chocolate Cookies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Peanut Butter Chocolate Cookies', which step occurs before 'Cream butter and peanut butter'?\n\nOptions:\n- Bake until golden brown\n- Top with cider\n- Preheat oven to 190 C\n- Bake chops until juices clear\n- Pour maple syrup over chicken",
+        "response": null,
+        "correct_response": "Preheat oven to 190 C"
+    },
+    {
+        "title": "Super thick homemade spaghetti sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Super thick homemade spaghetti sauce', which step occurs before 'Add meat, brown it'?\n\nOptions:\n- Add tomatoes, stir well\n- Sprinkle orange rind before serving\n- Pour mixture over crust\n- Heat oil, add garlic\n- Add stir fry to broth",
+        "response": "Heat oil, add garlic",
+        "correct_response": "Heat oil, add garlic"
+    },
+    {
+        "title": "Apple Cider Cranberry Relish Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Apple Cider Cranberry Relish Recipe', which step occurs before 'Add cranberries, boil again'?\n\nOptions:\n- Add rum and marshmallows\n- Cook until relish thickens\n- Cover and refrigerate\n- Cream butter and sugar\n- Boil apple cider mixture",
+        "response": "Boil apple cider mixture",
+        "correct_response": "Boil apple cider mixture"
+    },
+    {
+        "title": "Garam Masala for Cunswim",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Garam Masala for Cunswim', which step occurs before 'Cool spices slightly'?\n\nOptions:\n- Mix and pat crumb mixture\n- Grind to powder\n- Roast ingredients in pan\n- Spread batter, bake cake\n- Mix and sieve everything",
+        "response": "Roast ingredients in pan",
+        "correct_response": "Roast ingredients in pan"
+    },
+    {
+        "title": "Vegetarian 15-Bean Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Vegetarian 15-Bean Soup', which step occurs before 'Cook onion until golden'?\n\nOptions:\n- Add avocado and nori\n- Simmer beans until softened\n- Bake until center almost set\n- Soak beans in water\n- Add meats, vegetables, seasoning",
+        "response": "Soak beans in water",
+        "correct_response": "Soak beans in water"
+    },
+    {
+        "title": "Lovely, Tender Angel Food Cake",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Lovely, Tender Angel Food Cake', which step occurs before 'Beat egg whites until peaks'?\n\nOptions:\n- Preheat oven to 350F\n- Drizzle olive oil and vinegar\n- Bake until roast tender\n- Pour mixture over popcorn\n- Bake until skewer comes out clean",
+        "response": null,
+        "correct_response": "Preheat oven to 350F"
+    },
+    {
+        "title": "Chocolate Marshmallow Bars",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chocolate Marshmallow Bars', which step occurs before 'Spread in greased pan'?\n\nOptions:\n- Cream butter and sugar\n- Cook until beans are tender\n- Freeze until firm\n- Top with cider\n- Sprinkle marshmallows over cake",
+        "response": "Cream butter and sugar",
+        "correct_response": "Cream butter and sugar"
+    },
+    {
+        "title": "Breaded Pork Chops",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Breaded Pork Chops', which step occurs before 'Brown chops in skillet'?\n\nOptions:\n- Bake until center almost set\n- Bake chops until tender\n- Fold and seal dough\n- Cook batter until golden\n- Dip chops in egg mixture",
+        "response": "Dip chops in egg mixture",
+        "correct_response": "Dip chops in egg mixture"
+    },
+    {
+        "title": "Crispy Pork Chops with Roasted Pepper Relish",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Crispy Pork Chops with Roasted Pepper Relish', which step occurs before 'Mix mustard, sugar, soy sauce'?\n\nOptions:\n- Add stir fry to broth\n- Broil peppers until charred\n- Add shrimp and cook\n- Microwave in covered dish\n- Cook pork chops until golden",
+        "response": "Broil peppers until charred",
+        "correct_response": "Broil peppers until charred"
+    },
+    {
+        "title": "Shrimp and Scallop Ceviche (No Onions)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Shrimp and Scallop Ceviche (No Onions)', which step occurs before 'Cover with lime juice'?\n\nOptions:\n- Mix seafood with vegetables\n- Chop shrimp and scallops\n- Sprinkle with powdered sugar\n- Drizzle syrup over baklava\n- Bake custard in water bath",
+        "response": "Chop shrimp and scallops",
+        "correct_response": "Chop shrimp and scallops"
+    },
+    {
+        "title": "Pimenocheese and Homemade MayoIts a Southern Thang!",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Pimenocheese and Homemade MayoIts a Southern Thang!', which step occurs before 'Add oil, whisk until thick'?\n\nOptions:\n- Whisk vinegar, lemon, salt\n- Mix cheeses, add mayonnaise\n- Top with COOL WHIP, strawberries\n- Stir in vanilla extract\n- Sprinkle with powdered sugar",
+        "response": "Whisk vinegar, lemon, salt",
+        "correct_response": "Whisk vinegar, lemon, salt"
+    },
+    {
+        "title": "Barm",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Barm', which step occurs before 'Ferment barm until bubbly'?\n\nOptions:\n- Stir flour, water, seed culture\n- Bake until thermometer reads 165F\n- Microwave in covered dish\n- Sear and roast fish\n- Refrigerate barm overnight",
+        "response": "Stir flour, water, seed culture",
+        "correct_response": "Stir flour, water, seed culture"
+    },
+    {
+        "title": "Half-Baked Taco Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Half-Baked Taco Salad', which step occurs before 'Mix spices into beef'?\n\nOptions:\n- Pour over baked crust\n- Cook until relish thickens\n- Add extract, stir\n- Bake lettuce until crisp\n- Cook beef until browned",
+        "response": "Cook beef until browned",
+        "correct_response": "Cook beef until browned"
+    },
+    {
+        "title": "Hazelnut Dukka",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Hazelnut Dukka', which step occurs before 'Toast coriander and cumin seeds'?\n\nOptions:\n- Fold and seal dough\n- Transfer to oven\n- Grind spices and mix ingredients\n- Toss with lemon juice\n- Toast hazelnuts until fragrant",
+        "response": "Toast hazelnuts until fragrant",
+        "correct_response": "Toast hazelnuts until fragrant"
+    },
+    {
+        "title": "Bacon, Egg & Cheese Hand Pies",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Bacon, Egg & Cheese Hand Pies', which step occurs before 'Add eggs and bacon'?\n\nOptions:\n- Add broth and mix\n- Simmer until beans cooked\n- Fold and seal dough\n- Bake until golden brown\n- Place cheese on dough",
+        "response": "Place cheese on dough",
+        "correct_response": "Place cheese on dough"
+    },
+    {
+        "title": "Stir Fry Asian Chicken Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Stir Fry Asian Chicken Soup', which step occurs before 'Cook vegetables and chicken'?\n\nOptions:\n- Add stir fry to broth\n- Heat olive oil\n- Fold foil to form packet\n- Add meats, vegetables, seasoning\n- Pour batter into skillet",
+        "response": "Heat olive oil",
+        "correct_response": "Heat olive oil"
+    },
+    {
+        "title": "Orange Chicken Crock Pot",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Orange Chicken Crock Pot', which step occurs before 'Place vegetables in slow cooker'?\n\nOptions:\n- Pour over baked crust\n- Pour orange mixture over chicken\n- Season chicken with spices\n- Bake at 375 degrees\n- Use stovetop if preferred",
+        "response": "Season chicken with spices",
+        "correct_response": "Season chicken with spices"
+    },
+    {
+        "title": "1,2,3,4,5 Chinese Spareribs",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe '1,2,3,4,5 Chinese Spareribs', which step occurs before 'Add ingredients and mix'?\n\nOptions:\n- Cover and reduce heat\n- Flip pesto onto cheese slice\n- Brush sauce, bake chicken\n- Brown the spare ribs\n- Cover and cook on low",
+        "response": "Brown the spare ribs",
+        "correct_response": "Brown the spare ribs"
+    },
+    {
+        "title": "Potato Lasagna",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Potato Lasagna', which step occurs before 'Cover with potatoes'?\n\nOptions:\n- Bake cookies on sheet\n- Fold in raspberries\n- Brown beef with onion\n- Sprinkle with cheese\n- Toss salad with dressing",
+        "response": "Brown beef with onion",
+        "correct_response": "Brown beef with onion"
+    },
+    {
+        "title": "Chicken Curry",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chicken Curry', which step occurs before 'Cook peppers, peas, onions'?\n\nOptions:\n- Add broth and mix\n- Cook chicken and garlic\n- Toss carrots with vinaigrette\n- Add cod, cook until done\n- Fold foil into pouch",
+        "response": "Cook chicken and garlic",
+        "correct_response": "Cook chicken and garlic"
+    },
+    {
+        "title": "Gluten Free Dark Rye Bread",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Gluten Free Dark Rye Bread', which step occurs before 'Mix wet ingredients'?\n\nOptions:\n- Combine dry ingredients\n- Spread batter, bake cake\n- Melt cheese in oven\n- Stir wet into dry\n- Fill indentations with preserves",
+        "response": "Combine dry ingredients",
+        "correct_response": "Combine dry ingredients"
+    },
+    {
+        "title": "Savory Pasta Shells W/ Creamy Crab Filling",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Savory Pasta Shells W/ Creamy Crab Filling', which step occurs before 'Spoon mixture into shells'?\n\nOptions:\n- Bake until tester is clean\n- Add rum and marshmallows\n- Saute onion and garlic\n- Sandwich with other slice\n- Bake in buttered dish",
+        "response": "Saute onion and garlic",
+        "correct_response": "Saute onion and garlic"
+    },
+    {
+        "title": "Pistachio Baklava With Orange-Cardamom Syrup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Pistachio Baklava With Orange-Cardamom Syrup', which step occurs before 'Mix nuts, sugar, cinnamon'?\n\nOptions:\n- Drizzle syrup over baklava\n- Fold in raspberries\n- Turn steak often\n- Simmer sugar and orange juice\n- Mix chicken with ingredients",
+        "response": "Simmer sugar and orange juice",
+        "correct_response": "Simmer sugar and orange juice"
+    },
+    {
+        "title": "Calypso Beans, Tomato and Poblano Stew",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Calypso Beans, Tomato and Poblano Stew', which step occurs before 'Add beans, cumin, chipotles'?\n\nOptions:\n- Sprinkle with powdered sugar\n- Cook until beans are tender\n- Arrange apple slices in tin\n- Add onion, garlic, bay leaf\n- Cover, bake, stir occasionally",
+        "response": "Add onion, garlic, bay leaf",
+        "correct_response": "Add onion, garlic, bay leaf"
+    },
+    {
+        "title": "Broiled Eggplant Bologna Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Broiled Eggplant Bologna Recipe', which step occurs before 'Pan-fry in olive oil'?\n\nOptions:\n- Bake chicken until firm\n- Brush sauce, bake chicken\n- Broil with bread crumbs\n- Slice and salt eggplant\n- Pour filling over apples",
+        "response": "Slice and salt eggplant",
+        "correct_response": "Slice and salt eggplant"
+    },
+    {
+        "title": "Lemon Sauce",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Lemon Sauce', which step occurs before 'Cook until bubbly and thick'?\n\nOptions:\n- Add butter, lemon rind, juice\n- Combine sugar, cornstarch, salt\n- Freeze until firm\n- Simmer beans until softened\n- Top with COOL WHIP, strawberries",
+        "response": "Combine sugar, cornstarch, salt",
+        "correct_response": "Combine sugar, cornstarch, salt"
+    },
+    {
+        "title": "Grilled Veggie Medley",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Grilled Veggie Medley', which step occurs before 'Add spices and lemon juice'?\n\nOptions:\n- Mix veggies with oil\n- Add spatzle to boiling water\n- Fold foil to form packet\n- Fold foil into pouch\n- Add stir fry to broth",
+        "response": "Mix veggies with oil",
+        "correct_response": "Mix veggies with oil"
+    },
+    {
+        "title": "Zardalu Polo - Persian Lamb and Apricot Pilaf",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Zardalu Polo - Persian Lamb and Apricot Pilaf', which step occurs before 'Simmer meat with spices'?\n\nOptions:\n- Layer rice and stew\n- Brown meat with onion\n- Add tomatoes, stir well\n- Fill rolls with mixture\n- Scoop onto sheet, sprinkle",
+        "response": "Brown meat with onion",
+        "correct_response": "Brown meat with onion"
+    },
+    {
+        "title": "Asian Barbecue Chicken Salad",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Asian Barbecue Chicken Salad', which step occurs before 'Toss lettuce with dressing'?\n\nOptions:\n- Freeze mixture until firm\n- Grill chicken with sauce\n- Garnish with tomatoes, chicken\n- Bake until cheese melts\n- Fold and seal dough",
+        "response": "Grill chicken with sauce",
+        "correct_response": "Grill chicken with sauce"
+    },
+    {
+        "title": "Roasted Butter Herb Turkey",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Roasted Butter Herb Turkey', which step occurs before 'Place butter under turkey skin'?\n\nOptions:\n- Pour into lined baking pan\n- Roast turkey, basting every 20 minutes\n- Bake cookies on sheet\n- Broil swordfish until opaque\n- Preheat oven to 450\u00b0F",
+        "response": null,
+        "correct_response": "Preheat oven to 450\u00b0F"
+    },
+    {
+        "title": "Peking Style Flank Steak Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Peking Style Flank Steak Recipe', which step occurs before 'Pour marinade over steak'?\n\nOptions:\n- Layer crust with toppings\n- Pierce steak with fork\n- Broil with bread crumbs\n- Broil or grill steak\n- Bake until squash is tender",
+        "response": "Pierce steak with fork",
+        "correct_response": "Pierce steak with fork"
+    },
+    {
+        "title": "Chicken Tortilla Soup",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Chicken Tortilla Soup', which step occurs before 'Saute onion, oregano, jalapeno'?\n\nOptions:\n- Toss carrots with vinaigrette\n- Brown chicken in oil\n- Pour Bisquick mixture over\n- Stir in stock, tomatoes, chicken\n- Fry onions in hot oil",
+        "response": "Brown chicken in oil",
+        "correct_response": "Brown chicken in oil"
+    },
+    {
+        "title": "Cajun Injector Ultimate Fried Turkey",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Cajun Injector Ultimate Fried Turkey', which step occurs before 'Inject turkey with marinade'?\n\nOptions:\n- Fry turkey 3 1/2 minutes\n- Cream butter and sugar\n- Heat oil to 400F\n- Cook covered, flip once\n- Cover and cook on low",
+        "response": null,
+        "correct_response": "Heat oil to 400F"
+    },
+    {
+        "title": "Oven Poached Salmon a La Paige (Rachael Ray)",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Oven Poached Salmon a La Paige (Rachael Ray)', which step occurs before 'Arrange salmon in dish'?\n\nOptions:\n- Bake in preheated oven\n- Top fish with relish\n- Preheat oven to 400F\n- Flip pesto onto cheese slice\n- Bake at 375 degrees",
+        "response": null,
+        "correct_response": "Preheat oven to 400F"
+    },
+    {
+        "title": "Cajun Cornmeal Crusted Chicken",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Cajun Cornmeal Crusted Chicken', which step occurs before 'Coat chicken in flour'?\n\nOptions:\n- Toss with lemon juice\n- Bake chicken until firm\n- Preheat oven to 350\u00b0F\n- Serve over ice, add lemon\n- Cook pancakes until browned",
+        "response": null,
+        "correct_response": "Preheat oven to 350\u00b0F"
+    },
+    {
+        "title": "Butternut Squash Tsimmes Recipe",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Butternut Squash Tsimmes Recipe', which step occurs before 'Cook onions in butter'?\n\nOptions:\n- Preheat oven to 400 degrees\n- Sprinkle green coconut over top\n- Bake until squash is tender\n- Garnish with tomatoes, chicken\n- Stir in blueberries gently",
+        "response": null,
+        "correct_response": "Preheat oven to 400 degrees"
+    },
+    {
+        "title": "Garlic Rosemary Roasted Pork Loin",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Garlic Rosemary Roasted Pork Loin', which step occurs before 'Pierce meat, add garlic paste'?\n\nOptions:\n- Bake in preheated oven\n- Add broth and mix\n- Preheat oven\n- Rub meat with garlic mixture\n- Cook plums with syrup",
+        "response": "Preheat oven",
+        "correct_response": "Preheat oven"
+    },
+    {
+        "title": "Mustard-Glazed Rib Roast",
+        "question": "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. Based on the recipe title and the provided steps, identify which step occurred before another. Answer only with your chosen step.\nIn the recipe 'Mustard-Glazed Rib Roast', which step occurs before 'Spread rub over roast'?\n\nOptions:\n- Preheat oven to 400\n- Bake until tester is clean\n- Let rest before slicing\n- Cook vegetables, then drain\n- Bake until topping is golden",
+        "response": "Preheat oven to 400",
+        "correct_response": "Preheat oven to 400"
+    }
+]

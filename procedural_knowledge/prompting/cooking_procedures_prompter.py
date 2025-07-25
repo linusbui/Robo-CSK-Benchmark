@@ -2,17 +2,18 @@ import pandas as pd
 
 from procedural_knowledge.json_utils import extract_json, save_to_json
 from procedural_knowledge.prompting import evaluate_prompters
+from tidy_up.prompting.tidy_up_prompter_open import user_msg
 from utils.prompter import Prompter
 
-system_msg = "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. "
-system_msg_before = "Based on the recipe title and the two steps provided, identify whether one action occurred before another. "
-system_msg_after = "Based on the recipe title and the two steps provided, identify whether one action occurred after another. "
-user_msg = "Answer only with 'Yes' or 'No'."
+def prompt_all_models_binary(prompters: [Prompter]):
+    system_msg = "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. "
+    system_msg_before = "Based on the recipe title and the two steps provided, identify whether one action occurred before another. "
+    system_msg_after = "Based on the recipe title and the two steps provided, identify whether one action occurred after another. "
+    user_msg = "Answer only with 'Yes' or 'No'."
 
-def prompt_all_models(prompters: [Prompter]):
     for prompter in prompters:
-        for recipe_number in range(1, 1):
-            json_file = f'cooking_procedures/data_generation/question_components/Order/questions_recipe_' + str(recipe_number) + '.json'
+        for recipe_number in range(1, 5):
+            json_file = f'procedural_knowledge/data_generation/question_components_binary/questions_recipe_' + str(recipe_number) + '.json'
             recipe_components = extract_json(json_file)
 
             all_yes_before_answers, all_no_before_answers = [], []
@@ -35,8 +36,8 @@ def prompt_all_models(prompters: [Prompter]):
                         'correct_response': correct_response
                     })
                     # Save the result to json after every step if an error happens
-                    # save_to_json(f'results/Yes/{model}/before_{recipe_number}.json', all_yes_before_answers)
-                    # save_to_json(f'results/No/{model}/before_{recipe_number}.json', all_no_before_answers)
+                    save_to_json(f'results_binary/Yes/{model}/before_{recipe_number}.json', all_yes_before_answers)
+                    save_to_json(f'results_binary/No/{model}/before_{recipe_number}.json', all_no_before_answers)
 
                 for steps, correct_response, answers in [
                     ((step_1, step_2), "Yes", all_yes_after_answers),
@@ -50,6 +51,89 @@ def prompt_all_models(prompters: [Prompter]):
                         'response': response,
                         'correct_response': correct_response
                     })
-                # save_to_json(f'results/Yes/{model}/after_{recipe_number}.json', all_yes_after_answers)
-                # save_to_json(f'results/No/{model}/after_{recipe_number}.json', all_no_after_answers)
-    evaluate_prompters.evaluate(prompters)
+                save_to_json(f'results_binary/Yes/{model}/after_{recipe_number}.json', all_yes_after_answers)
+                save_to_json(f'results_binary/No/{model}/after_{recipe_number}.json', all_no_after_answers)
+    evaluate_prompters.evaluate_binary(prompters)
+
+
+def prompt_all_models_multi(prompters: [Prompter]):
+    def get_answer_before(prompter, recipe_title, step_question, other_steps):
+        system_msg = (
+            "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
+            "Based on the recipe title and the provided steps, identify which step occurred before another. "
+        )
+        user_msg = "Answer only with your chosen step."
+        question = (
+                f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
+                f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
+        return prompter.prompt_model(system_msg, user_msg, question)
+
+    def get_answer_after(prompter, recipe_title, step_question, other_steps):
+        system_msg = (
+            "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
+            "Based on the recipe title and the provided steps, identify  which step occurred after another. "
+        )
+        user_msg = "Answer only with your chosen step."
+        question = (
+                f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
+                f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
+        return prompter.prompt_model(system_msg, user_msg, question)
+
+    for prompter in prompters:
+        for recipe_number in range(1, 5):
+            json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
+                recipe_number) + '.json'
+            recipe_components = extract_json(json_file)
+            before_answers, after_answers = [], []
+
+            for recipe in recipe_components:
+                title = recipe['goal']
+                step_1 = recipe['step_1'].rstrip(". ").strip()
+                step_2 = recipe['step_2'].rstrip(". ").strip()
+                step_3 = recipe['step_3'].rstrip(". ").strip()
+
+                before_steps = [step_1, step_3]
+                available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
+                unique_step_3s = set(before_steps)  # track what's already added
+                random.shuffle(available_indices)  # randomize the order
+                for idx in available_indices:
+                    if len(unique_step_3s) >= 5:  # step_1 + step_3 + 3 unique additions
+                        break
+                    other_recipe = recipe_components[idx]
+                    candidate_step = other_recipe['step_3'].rstrip(". ").strip()
+                    if candidate_step not in unique_step_3s:
+                        before_steps.append(candidate_step)
+                        unique_step_3s.add(candidate_step)
+                random.shuffle(before_steps)
+                response, messages = get_answer_before(prompter, title, step_2, before_steps)
+                before_answers.append({
+                    'title': title,
+                    'question': next(item['content'] for item in messages if item['role'] == 'user'),
+                    'response': response,
+                    'correct_response': step_1
+                })
+                save_to_json(f'results_multi/before/{model}/{recipe_number}.json', before_answers)
+
+                after_steps = [step_1, step_3]
+                available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
+                unique_step_1s = set(after_steps)  # track what's already added
+                random.shuffle(available_indices)  # randomize the order
+                for idx in available_indices:
+                    if len(unique_step_1s) >= 5:  # step_1 + step_3 + 3 unique additions
+                        break
+                    other_recipe = recipe_components[idx]
+                    candidate_step = other_recipe['step_1'].rstrip(". ").strip()
+                    if candidate_step not in unique_step_1s:
+                        after_steps.append(candidate_step)
+                        unique_step_1s.add(candidate_step)
+
+                random.shuffle(after_steps)
+                response, messages = get_answer_after(prompter, title, step_2, after_steps)
+                after_answers.append({
+                    'title': title,
+                    'question': next(item['content'] for item in messages if item['role'] == 'user'),
+                    'response': response,
+                    'correct_response': step_3
+                })
+                save_to_json(f'results_multi/after/{prompter}/{recipe_number}.json', after_answers)
+    evaluate_prompters.evaluate_multi(prompters)
