@@ -5,7 +5,7 @@ from utils.prompter import Prompter
 
 
 class LlamaPrompter(Prompter):
-    def __init__(self, max_new_tokens=10):
+    def __init__(self, max_new_tokens=10, temp = None, sampling = False):
         super().__init__("Llama-3.3-70B-Instruct")
         self.tokenizer = transformers.AutoTokenizer.from_pretrained(f'meta-llama/{self.model_name}')
         self.tokenizer.pad_token_id = self.tokenizer.eos_token_id  # for open-ended generation
@@ -29,6 +29,10 @@ class LlamaPrompter(Prompter):
             trust_remote_code=True,
             device_map="auto",  # finds GPU
         )
+        
+        # For Self Consistency
+        self.temperature = temp
+        self.sampling = sampling
 
     def prompt_model(self, system_msg: str, user_msg: str, question: str) -> str:
         # Instruct version needs specific conversation structure
@@ -50,8 +54,8 @@ class LlamaPrompter(Prompter):
             prompt,
             max_new_tokens=self.max_new_tokens,
             eos_token_id=terminators,
-            do_sample=False,  # No randomness
-            temperature=None,
+            do_sample=self.sampling,  # No randomness
+            temperature=self.temperature,
             top_p=None
         )
         result = outputs[0]["generated_text"][len(prompt):]

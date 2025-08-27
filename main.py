@@ -15,49 +15,105 @@ def main():
                         help="Choose one or more models to run")
     parser.add_argument("--tasks", type=str, choices=["ts", "mr_b", "mr_mc", "to_us", "ti_up_o", "ti_up_mc", "proc_b", "proc_mc"],
                         nargs="+", help="Choose one or more tasks to run")
+    parser.add_argument('--techs' ,type=str, choices=['rar', 'meta', 'contr_cot', 'selfcon', 'selfref', 'sgicl', 'stepback'])
     parser.add_argument("--new_tok", type=int, default=1000, help="Maximum number of new tokens for the model output")
     args = parser.parse_args()
 
     prompters = []
+    # List of prompters with higher temperature for Self Constistency
+    prompters_selfcon = [] 
     # Evaluate models:
     if "gpt" in args.models:
         gpt4 = OpenAIPrompter()
         prompters.append(gpt4)
+        if 'selfcon' in args.techs:
+            prompters_selfcon.append(OpenAIPrompter(0.5))
         print(f'Evaluating on the following GPT-4o model: {gpt4.model_name}')
     if "llama" in args.models:
         llama = LlamaPrompter(args.new_tok)
         prompters.append(llama)
+        if 'selfcon' in args.techs:
+            prompters_selfcon.append(LlamaPrompter(args.new_tok, 0.5, True))
         print(f'Evaluating on the following Llama 3.3 model: {llama.model_name}')
     if "gemma" in args.models:
         gemma = GemmaPrompter(args.new_tok)
         prompters.append(gemma)
+        if 'selfcon' in args.techs:
+            prompters_selfcon.append(GemmaPrompter(args.new_tok, 0.5, True))
         print(f'Evaluating on the following Gemma 2 model: {gemma.model_name}')
 
-    # Decide which tasks to evaluate:
+    # Decide which tasks to evaluate with which prompting techniques:
     if "ts" in args.tasks:
-        table_setting_prompter.prompt_all_models(prompters)
-        print('Finished the Table Setting task')
-    if "mr_b" in args.tasks:
-        meta_reason_prompter_binary.prompt_all_models(prompters)
-        print('Finished the Meta-Reasoning task (Binary Questions)')
+        if 'rar' in args.techs:
+            table_setting_prompter.prompt_all_models_rar(prompters)
+            print('Finished the Table Setting task (Rephrase and Respond)')
+        if 'meta' in args.techs:
+            table_setting_prompter.prompt_all_models_meta(prompters)
+            print('Finished the Table Setting task (Metacognitive)')
+        if 'selfcon' in args.techs:
+            table_setting_prompter.prompt_all_models_selfcon(prompters_selfcon)
+            print('Finished the Table Setting task (Self Consistency)')
+        if 'selfref' in args.techs:
+            table_setting_prompter.prompt_all_models_selfref(prompters)
+            print('Finished the Table Setting task (Self Refine)')
+        if 'stepback' in args.techs:
+            table_setting_prompter.prompt_all_models_stepback(prompters)
+            print('Finished the Table Setting task (Stepback)')
     if "mr_mc" in args.tasks:
-        meta_reason_prompter_multi_choice.prompt_all_models(prompters)
-        print('Finished the Meta-Reasoning task (Multi Choice Questions)')
+        if 'rar' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_rar(prompters)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Rephrase and Respond)')
+        if 'meta' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_meta(prompters)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Metacognitive)')
+        if 'selfcon' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Self Consistency)')
+        if 'selfref' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_selfref(prompters)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Self Refine)')
+        if 'stepback' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_stepback(prompters)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Stepback)')
     if "to_us" in args.tasks:
-        tool_use_prompter.prompt_all_models(prompters)
-        print('Finished the Tool Usage task')
-    if "ti_up_o" in args.tasks:
-        tidy_up_prompter_open.prompt_all_models(prompters)
-        print('Finished the Tidy Up task (Open Questions)')
+        if 'rar' in args.techs:
+            tool_use_prompter.prompt_all_models_rar(prompters)
+            print('Finished the Tool Usage task (Rephrase and Respond)')
+        if 'meta' in args.techs:
+            tool_use_prompter.prompt_all_models_meta(prompters)
+            print('Finished the Tool Usage task (Metacognitive)')
+        if 'selfcon' in args.techs:
+            tool_use_prompter.prompt_all_models_selfcon(prompters_selfcon)
+            print('Finished the Tool Usage task (Metacognitive)')
+        if 'selfref' in args.techs:
+            tool_use_prompter.prompt_all_models_selfref(prompters)
+            print('Finished the Tool Usage task (Self Refine)')
     if "ti_up_mc" in args.tasks:
-        tidy_up_prompter_multi_choice.prompt_all_models(prompters)
-        print('Finished the Tidy Up task (Multi Choice Questions)')
-    if "proc_b" in args.tasks:
-        cooking_procedures_prompter.prompt_all_models_binary(prompters)
-        print("Finished the Cooking Procedures Knowledge task (Binary Questions)")
+        if 'rar' in args.techs:
+            tidy_up_prompter_multi_choice.prompt_all_models_rar(prompters)
+            print('Finished the Tidy Up task (Multi Choice Questions) (Rephrase and Respond)')
+        if 'meta' in args.techs:
+            tidy_up_prompter_multi_choice.prompt_all_models_meta(prompters)
+            print('Finished the Tidy Up task (Multi Choice Questions) (Metacognitive)')
+        if 'selfcon' in args.techs:
+            tidy_up_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon)
+            print('Finished the Tidy Up task (Multi Choice Questions) (Self Consistency)')
+        if 'selfref' in args.techs:
+            tidy_up_prompter_multi_choice.prompt_all_models_selfref(prompters)
+            print('Finished the Tidy Up task (Multi Choice Questions) (Self Refine)')
     if "proc_mc" in args.tasks:
-        cooking_procedures_prompter.prompt_all_models_multi(prompters)
-        print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions)")
+        if 'rar' in args.techs:
+            cooking_procedures_prompter.prompt_all_models_multi_rar(prompters)
+            print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Rephrase and Respond)")
+        if 'meta' in args.techs:
+            cooking_procedures_prompter.prompt_all_models_multi_meta(prompters)
+            print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Metacognitive)")
+        if 'selfcon' in args.techs:
+            cooking_procedures_prompter.prompt_all_models_multi_selfcon(prompters_selfcon)
+            print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Self Consistency)")
+        if 'selfref' in args.techs:
+            cooking_procedures_prompter.prompt_all_models_multi_selfref(prompters)
+            print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Self Refine)")
 
 if __name__ == "__main__":
     main()

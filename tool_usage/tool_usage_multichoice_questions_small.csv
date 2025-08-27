@@ -1,0 +1,11 @@
+Task,Affordance,Correct_Tool,Wrong_Tools
+cleaning up spills,absorb,sponge,"['kri', 'alligator wrench', 'shampoo', 'drill']"
+drying the dishes,absorb,sponge,"['strickle', 'toothpick', 'hunting knife', 'tack hammer']"
+removing moisture,absorb,sponge,"['steak knife', 'soapbottle', 'peppershaker', 'potato']"
+reheating coffee,be heated,pan,"['tap wrench', 'desk lamp', 'footstool', 'power saw']"
+cooking a fried egg,be heated,cup,"['hayfork', 'hand drill', 'toilet paper', 'counterbore']"
+cooking an omelette,be heated,pan,"['fork', 'kirpan', ""croupier's rake"", 'common ax']"
+reheating soup,be heated,kettle,"['cloth', 'punch', 'neolith', 'roach clip']"
+boiling water,be heated,plate,"['tamp', 'lightbulb', 'toiletpaper', 'laundryhamper']"
+decorating a room,beautify,steel wool pad,"['coffee', 'drawer', 'soda can', 'axe']"
+arranging flowers,beautify,abrader,"['basket ball', 'opener', 'arm chair', 'creditcard']"
