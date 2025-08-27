@@ -25,7 +25,7 @@ def prompt_all_models(prompters: [Prompter]):
             choices_string = ', '.join([c for c in choices])
             question = f'Object: {obj}\nLocations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            tup = TidyUpMultiChoiceResult(obj, res, corr_loc, choices)
+            tup = TidyUpMultiChoiceResult(obj, corr_loc, res, choices)
             results.append(tup)
         write_model_results_to_file(results, prompter.model_name, 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name), 'tidy_up/results_multi', False)
