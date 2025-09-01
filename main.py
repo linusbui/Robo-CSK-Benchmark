@@ -88,6 +88,9 @@ def main():
         if 'selfref' in args.techs:
             tool_use_prompter.prompt_all_models_selfref(prompters)
             print('Finished the Tool Usage task (Self Refine)')
+        if 'stepback' in args.techs:
+            tool_use_prompter.prompt_all_models_stepback(prompters)
+            print('Finished the Tool Usage task (Stepback)')
     if "ti_up_mc" in args.tasks:
         if 'rar' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_rar(prompters)
@@ -101,6 +104,9 @@ def main():
         if 'selfref' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_selfref(prompters)
             print('Finished the Tidy Up task (Multi Choice Questions) (Self Refine)')
+        if 'stepback' in args.techs:
+            tidy_up_prompter_multi_choice.prompt_all_models_stepback(prompters)
+            print('Finished the Tidy Up task (Multi Choice Questions) (Stepback)')
     if "proc_mc" in args.tasks:
         if 'rar' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi_rar(prompters)
@@ -114,6 +120,9 @@ def main():
         if 'selfref' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi_selfref(prompters)
             print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Self Refine)")
+        if 'stepback' in args.techs:
+            cooking_procedures_prompter.prompt_all_models_multi_stepback(prompters)
+            print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Stepback)")
 
 if __name__ == "__main__":
     main()

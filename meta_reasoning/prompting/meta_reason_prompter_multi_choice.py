@@ -164,46 +164,10 @@ def prompt_all_models_selfref(prompters: [Prompter]):
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'meta_reasoning/results_multi', False)
 
 
-system_msg_principle = 'Imagine you are helping to create a robot for a specific household task.'
-user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when selecting hardware configurations.'
-
-# keep this way?
-principles = '''
-1. **Task Specificity**: Understand the specific household task the robot is designed to perform. This will guide the selection of hardware components that are best suited for the task, such as sensors, actuators, and processing units.
-
-2. **Scalability and Flexibility**: Choose hardware that allows for future upgrades or modifications. This ensures the robot can adapt to new tasks or improvements in technology without requiring a complete redesign.
-
-3. **Energy Efficiency**: Select components that optimize power consumption to extend battery life and reduce energy costs. This is crucial for maintaining long-term operational efficiency.
-
-4. **Durability and Reliability**: Opt for robust and reliable hardware that can withstand the wear and tear of daily household activities. This includes selecting materials and components that are resistant to dust, moisture, and physical impact.
-
-5. **Safety**: Ensure that all hardware components meet safety standards to prevent accidents or injuries. This includes incorporating fail-safes, emergency stop mechanisms, and using non-toxic materials.
-
-6. **Cost-Effectiveness**: Balance performance with cost to ensure the robot is affordable for consumers while still meeting the necessary performance criteria.
-
-7. **Size and Weight Constraints**: Consider the physical dimensions and weight of the hardware to ensure the robot can navigate and operate effectively within a typical household environment.
-
-8. **Interoperability**: Ensure that the hardware components can seamlessly integrate with each other and with existing household systems, such as smart home devices.
-
-9. **User-Friendliness**: Design hardware that is easy to use and maintain by the average consumer. This includes considering ease of assembly, repair, and cleaning.
-
-10. **Environmental Impact**: Consider the environmental impact of the hardware components, including their production, usage, and disposal. Opt for sustainable materials and energy-efficient technologies.
-
-11. **Performance and Precision**: Ensure that the hardware can perform the task with the required level of precision and speed. This may involve selecting high-quality sensors and actuators.
-
-12. **Connectivity and Communication**: Incorporate hardware that supports reliable communication protocols for remote control, updates, and integration with other smart devices.
-'''
-
-user_msg_stepback= f'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only the complete configuration of your choosing.'
+user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when selecting hardware configurations from a given list.'
 
 def prompt_all_models_stepback(prompters: [Prompter]):
     for prompter in prompters:
-        # Get underlying principles
-        # result is prepared in principles
-        #principles = prompter.prompt_model(system_msg_principle, user_msg_principle, 'Principles Involved:')
-        #print(principles)
-        #return
-    
         results = []
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
@@ -214,8 +178,16 @@ def prompt_all_models_stepback(prompters: [Prompter]):
             choices = row['Wrong_Configurations'] + [corr_conf]
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
+
+            # Get higher level principles
+            question = f'Task: {task}\nConfigurations: {choices_string}\nPrinciples:'
+            principles = prompter.prompt_model(system_msg, user_msg_principle, question)
+            
+            # Get answer based on principles
+            user_msg_stepback= f'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only the complete configuration of your choosing.'
             question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_stepback, question)
+            
             pred_conf = transform_prediction_selfcon_single(res, choices)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)

@@ -165,6 +165,38 @@ def prompt_all_models_selfref(prompters: [Prompter]):
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'tool_usage')
 
 
+user_msg = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
+user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when choosing the most suitable tool from a given list for a given task.'
+
+def prompt_all_models_stepback(prompters: [Prompter]):
+    for prompter in prompters:
+        results = []
+        questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
+        questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
+            task = row['Task']
+            affordance = row['Affordance']
+            corr_tool = row['Correct_Tool']
+            choices = row['Wrong_Tools'] + [corr_tool]
+            random.shuffle(choices)
+            choices_string = ', '.join([c for c in choices])
+
+            # Get higher level principles
+            question = f'Task: {task}\nTools: {choices_string}\nPrinciples:'
+            principles = prompter.prompt_model(system_msg, user_msg_principle, question)
+
+            # Get answer based on principles
+            user_msg_stepback = f'What is the single tool from the given list that you think is most suitable to help you execute your task? Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only the tool you choose.'
+            question = f'Task: {task}\nTools: {choices_string}\nYour Choice:'
+
+            res = prompter.prompt_model(system_msg, user_msg_stepback, question)
+
+            pred_tool = transform_prediction_meta_single(res, choices)
+            tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
+            results.append(tup)
+        write_model_results_to_file(results, prompter.model_name + '_stepback', 'tool_usage')
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'tool_usage')
+
 
 def calculate_average(results: [ToolSubstitutionResult], model: str):
     average = {met: 0 for met in ['acc']}

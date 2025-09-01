@@ -160,6 +160,39 @@ def prompt_all_models_selfref(prompters: [Prompter]):
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'tidy_up/results_multi', False)
 
 
+user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when choosing the most suitable place to put the object from of a given list.'
+
+def prompt_all_models_stepback(prompters: [Prompter]):
+    for prompter in prompters:
+        results = []
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
+        questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
+        for index, row in tqdm(questions.iterrows(),
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):
+            obj = row['Object']
+            corr_loc = row['Correct_Location']
+            choices = row['Wrong_Locations'] + [corr_loc]
+            random.shuffle(choices)
+            choices_string = ', '.join([c for c in choices])
+
+            # Get higher level principles
+            question = f'Object: {obj}\nLocations: {choices_string}\nPrinciples:'
+            principles = prompter.prompt_model(system_msg, user_msg_principle, question)
+
+            # Get answer based on principles
+            user_msg_stepback = f'What is the single location from the given list that you think is the most suitable place to put the object? Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only the single location you choose.'
+            question = f'Object: {obj}\nLocations: {choices_string}\nYour Choice:'
+
+            res = prompter.prompt_model(system_msg, user_msg_stepback, question)
+
+            pred_loc = transform_prediction_meta_single(res, choices)
+            tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
+            results.append(tup)
+        write_model_results_to_file(results, prompter.model_name + '_stepback', 'tidy_up/results_multi', False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'tidy_up/results_multi', False)
+
+
+
 def calculate_average(results: [TidyUpMultiChoiceResult], model: str):
     average = {met: 0 for met in ['acc']}
     for res in results:
