@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Aromatic Bread Dumplings",
+        "question": "In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?\n\nOptions:\n- Cook dumplings until soft\n- Combine ingredients, mash well\n- Steam until lobster is opaque\n- Pour puree over vegetables\nThe step that occurs before 'Shape mixture into balls' is 'Combine ingredients, mash well'.\n\nYour Feedback:\nThe answer correctly identifies the step that occurs before 'Shape mixture into balls'. In the process of making dumplings, combining ingredients and mashing them well would logically precede shaping the mixture into balls. Therefore, the order is correct. STOP.Your Choice:",
+        "response": "Combine ingredients, mash well",
+        "correct_response": "Combine ingredients, mash well"
+    },
+    {
+        "title": "Middle Eastern Vegetable Casserole",
+        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?\n\nOptions:\n- Pour puree over vegetables\n- Roast diced potatoes\n- Steam until lobster is opaque\n- Cook dumplings until soft\nIn the recipe 'Middle Eastern Vegetable Casserole', the step 'Roast diced potatoes' occurs before 'Add broccoli, roast more'.\n\nYour Feedback:\nThe answer correctly identifies that 'Roast diced potatoes' occurs before 'Add broccoli, roast more' in the context of a vegetable casserole recipe. The other options, such as 'Pour puree over vegetables', 'Steam until lobster is opaque', and 'Cook dumplings until soft', are not relevant to the sequence of roasting vegetables in a casserole. Therefore, the order is correct. STOP.Your Choice:",
+        "response": "Roast diced potatoes",
+        "correct_response": "Roast diced potatoes"
+    },
+    {
+        "title": "Healthy Steamed Lobster Tails for One",
+        "question": "In the recipe 'Healthy Steamed Lobster Tails for One', which step occurs before 'Place tails in colander'?\n\nOptions:\n- Cook dumplings until soft\n- Remove membrane from lobster\n- Steam until lobster is opaque\n- Pour puree over vegetables\nThe step 'Remove membrane from lobster' occurs before 'Place tails in colander'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Remove membrane from lobster' occurs before 'Place tails in colander'. This is because preparing the lobster by removing the membrane is a necessary step before placing the tails in a colander for steaming. The other options do not logically precede placing the tails in a colander in the context of preparing steamed lobster tails. STOP.Your Choice:",
+        "response": "Remove membrane from lobster",
+        "correct_response": "Remove membrane from lobster"
+    }
+]

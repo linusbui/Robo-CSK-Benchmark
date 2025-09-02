@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Gingersnap Gravy",
+        "question": "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?\nOptions:\n- Combine milk, eggs, spices\n- Crumble gingersnaps, whisk\n- Cook pasta until al dente\n- Saute onions, celery, garlic\nIn the recipe 'Gingersnap Gravy', the step that occurs after 'Add stock, bring to boil' is 'Crumble gingersnaps, whisk'.\n\nYour Feedback:\nThe feedback is correct. In the recipe 'Gingersnap Gravy', the step 'Crumble gingersnaps, whisk' occurs after 'Add stock, bring to boil'. The other options do not logically follow the step of adding stock and bringing it to a boil in the context of making gravy. STOP.Your Choice:",
+        "response": "Crumble gingersnaps, whisk",
+        "correct_response": "Crumble gingersnaps, whisk"
+    },
+    {
+        "title": "Mom's Pumpkin Pie Squares Recipe",
+        "question": "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which steps occurs after 'Pour into pan, sprinkle mix'?\nOptions:\n- Saute onions, celery, garlic\n- Combine milk, eggs, spices\n- Cook pasta until al dente\n- Bake until done\nIn the recipe 'Mom's Pumpkin Pie Squares Recipe', the step 'Bake until done' occurs after 'Pour into pan, sprinkle mix'.\n\nYour Feedback:\nThe answer correctly identifies the step 'Bake until done' as occurring after 'Pour into pan, sprinkle mix' in the context of a baking recipe. This is because, typically, after pouring and sprinkling ingredients into a pan, the next logical step is to bake the mixture. The other options provided do not fit the context of a pumpkin pie squares recipe. \n\nSTOPYour Choice:",
+        "response": "Bake until done",
+        "correct_response": "Bake until done"
+    },
+    {
+        "title": "Shrimp and Pasta in a Basil Cream Sauce",
+        "question": "In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which steps occurs after 'Saute shallots and garlic'?\nOptions:\n- Saute onions, celery, garlic\n- Combine milk, eggs, spices\n- Add shrimp and tomatoes\n- Cook pasta until al dente\nIn the recipe 'Shrimp and Pasta in a Basil Cream Sauce', the step 'Add shrimp and tomatoes' occurs after 'Saute shallots and garlic'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Add shrimp and tomatoes' occurs after 'Saute shallots and garlic' in the recipe 'Shrimp and Pasta in a Basil Cream Sauce'. The other options do not logically follow the step of saut\u00e9ing shallots and garlic in the context of this recipe. Therefore, the answer contains the right order. STOP.Your Choice:",
+        "response": "Add shrimp and tomatoes",
+        "correct_response": "Add shrimp and tomatoes"
+    }
+]

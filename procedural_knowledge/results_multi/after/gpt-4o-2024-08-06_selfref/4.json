@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Aromatic Bread Dumplings",
+        "question": "In the recipe 'Aromatic Bread Dumplings', which steps occurs after 'Shape mixture into balls'?\nOptions:\n- Remove membrane from lobster\n- Combine ingredients, mash well\n- Roast diced potatoes\n- Cook dumplings until soft\nIn the recipe 'Aromatic Bread Dumplings', the step 'Cook dumplings until soft' occurs after 'Shape mixture into balls'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Cook dumplings until soft' occurs after 'Shape mixture into balls' in the recipe 'Aromatic Bread Dumplings'. The process of shaping the mixture into balls logically precedes cooking them. \n\nSTOPYour Choice:",
+        "response": "Cook dumplings until soft",
+        "correct_response": "Cook dumplings until soft"
+    },
+    {
+        "title": "Middle Eastern Vegetable Casserole",
+        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which steps occurs after 'Add broccoli, roast more'?\nOptions:\n- Roast diced potatoes\n- Combine ingredients, mash well\n- Remove membrane from lobster\n- Pour puree over vegetables\nIn the recipe 'Middle Eastern Vegetable Casserole', the step 'Pour puree over vegetables' occurs after 'Add broccoli, roast more'.\n\nYour Feedback:\nThe feedback is correct. In the sequence of steps for the recipe 'Middle Eastern Vegetable Casserole', the step 'Pour puree over vegetables' logically follows 'Add broccoli, roast more'. The other options do not fit the context of the recipe or the logical sequence of steps. STOP.Your Choice:",
+        "response": "Pour puree over vegetables",
+        "correct_response": "Pour puree over vegetables"
+    },
+    {
+        "title": "Healthy Steamed Lobster Tails for One",
+        "question": "In the recipe 'Healthy Steamed Lobster Tails for One', which steps occurs after 'Place tails in colander'?\nOptions:\n- Steam until lobster is opaque\n- Remove membrane from lobster\n- Combine ingredients, mash well\n- Roast diced potatoes\nIn the recipe 'Healthy Steamed Lobster Tails for One', the step that occurs after 'Place tails in colander' is 'Steam until lobster is opaque'.\n\nYour Feedback:\nThe answer correctly identifies the step that occurs after 'Place tails in colander'. The logical sequence in preparing steamed lobster tails would involve placing the tails in a colander and then steaming them until they are opaque. Therefore, the step 'Steam until lobster is opaque' follows 'Place tails in colander'. STOP.Your Choice:",
+        "response": "Steam until lobster is opaque",
+        "correct_response": "Steam until lobster is opaque"
+    }
+]

@@ -1,3 +1,2 @@
-model,total,correct,accuracy
-gemma-2-27b-it,1600,1294,0.80875
-Llama-3.3-70B-Instruct,1600,1357,0.848125
+prompter,total,correct,accuracy
+gpt-4o-2024-08-06_selfref,6,6,1.0

@@ -117,9 +117,8 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
 
 
 user_msg_initial = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
-user_msg_feedback = 'Provide Feedback on the answer:'
+user_msg_feedback = "Provide Feedback on the answer. If you think the answer contains the right tool, end your answer with 'STOP'."
 user_msg_refine = 'Improve upon the answer based on the feedback:'
-user_msg_final = 'Please provide your final answer. The answer should only contain the single tool of your choosing.'
 
 MAXIT_selfref = 2
 def prompt_all_models_selfref(prompters: [Prompter]):
@@ -148,15 +147,17 @@ def prompt_all_models_selfref(prompters: [Prompter]):
                 feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
                 question = question + f'\n{feedback}'
 
+                if 'STOP' in feedback: break
+
                 # refine
                 question = question + '\nImprovement:'
                 refine = prompter.prompt_model(system_msg, user_msg_refine, question)
                 question = question + f'\n{refine}\n'
 
             # final answer
+            user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. The answer should only contain one of the following tools: {choices}'
             question = question + 'Your Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
-
             pred_tool = transform_prediction_meta_single(final_pred, choices)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
 

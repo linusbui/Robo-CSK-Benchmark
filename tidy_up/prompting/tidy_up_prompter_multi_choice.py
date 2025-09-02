@@ -116,9 +116,8 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
 
 
 user_msg_initial = 'What is the single location from the given list that you think is the most suitable place to put the object?'
-user_msg_feedback = 'Provide Feedback on the answer:'
+user_msg_feedback = "Provide Feedback on the answer. If you think the answer contains the right location, end your answer with 'STOP'."
 user_msg_refine = 'Improve upon the answer based on the feedback:'
-user_msg_final = 'Please provide your final answer. The answer should only contain the single location of your choosing.'
 
 MAXIT_selfref = 2
 def prompt_all_models_selfref(prompters: [Prompter]):
@@ -144,6 +143,8 @@ def prompt_all_models_selfref(prompters: [Prompter]):
                 feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
                 question = question + f'\n{feedback}'
 
+                if 'STOP' in feedback: break
+
                 # refine
                 question = question + '\nImprovement:'
                 refine = prompter.prompt_model(system_msg, user_msg_refine, question)
@@ -151,9 +152,10 @@ def prompt_all_models_selfref(prompters: [Prompter]):
 
             # final answer
             question = question + 'Your Choice:'
+            user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. The answer should only contain one of the following locations: {choices}'
             final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
-
             pred_loc = transform_prediction_meta_single(final_pred, choices)
+
             tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)
         write_model_results_to_file(results, prompter.model_name + '_selfref', 'tidy_up/results_multi', False)

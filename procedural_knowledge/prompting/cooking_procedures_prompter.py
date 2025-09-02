@@ -426,10 +426,10 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
             "Based on the recipe title and the provided steps, identify which step occurred before another. "
         )
-        user_msg_initial = ''       # Provide an initial assesment ???
-        user_msg_feedback = 'Provide Feedback on the answer:'
+        user_msg_initial = ''
+        user_msg_feedback = "Provide Feedback on the answer. If you think the answer contains the right order, end your answer with 'STOP'."
         user_msg_refine = 'Improve upon the answer based on the feedback:'
-        user_msg_final = 'Please provide your final answer. The answer should only contain your chosen step.'
+        user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice:\n' + "\n".join(f"- {step}" for step in other_steps)
 
         # initial prompt
         question = (
@@ -444,6 +444,8 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
             question = question + '\nYour Feedback:'
             feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
             question = question + f'\n{feedback}'
+
+            if 'STOP' in feedback: break
 
             # refine
             question = question + '\nImprovement:'
@@ -461,10 +463,10 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
             "Based on the recipe title and the provided steps, identify which step occurred after another. "
         )
-        user_msg_initial = ''           # Keep this way?
-        user_msg_feedback = 'Provide Feedback on the answer:'
+        user_msg_initial = ''
+        user_msg_feedback = "Provide Feedback on the answer. If you think the answer contains the right order, end your answer with 'STOP'."
         user_msg_refine = 'Improve upon the answer based on the feedback:'
-        user_msg_final = 'Please provide your final answer. The answer should only contain your chosen step.'
+        user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice:\n' + "\n".join(f"- {step}" for step in other_steps)
         
         # initial prompt
         question = (
@@ -480,6 +482,8 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
             question = question + '\nYour Feedback:'
             feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
             question = question + f'\n{feedback}'
+
+            if 'STOP' in feedback: break
 
             # refine
             question = question + '\nImprovement:'

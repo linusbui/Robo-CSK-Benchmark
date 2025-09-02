@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Worlds Best Mac and Cheese",
+        "question": "In the recipe 'Worlds Best Mac and Cheese', which step occurs before 'Mix pasta with sauce'?\n\nOptions:\n- Drizzle oil, garnish, serve\n- Cook pasta less than directions\n- Bake with cheese topping\nIn the recipe 'Worlds Best Mac and Cheese', the step 'Cook pasta less than directions' occurs before 'Mix pasta with sauce'.\n\nYour Feedback:\nThe answer correctly identifies that 'Cook pasta less than directions' occurs before 'Mix pasta with sauce'. Cooking the pasta is a preparatory step that must be completed before mixing it with the sauce. Therefore, the temporal order is correct. STOP.Your Choice:",
+        "response": "Cook pasta less than directions",
+        "correct_response": "Cook pasta less than directions"
+    },
+    {
+        "title": "Dilly Macaroni Salad Recipe",
+        "question": "In the recipe 'Dilly Macaroni Salad Recipe', which step occurs before 'Combine macaroni and vegetables'?\n\nOptions:\n- Cook and drain macaroni\n- Bake with cheese topping\n- Drizzle oil, garnish, serve\n- Blend dressing and add\nIn the recipe 'Dilly Macaroni Salad Recipe', the step 'Cook and drain macaroni' occurs before 'Combine macaroni and vegetables'.\n\nYour Feedback:\nThe answer correctly identifies that 'Cook and drain macaroni' occurs before 'Combine macaroni and vegetables'. Cooking and draining the macaroni is a necessary step before it can be combined with vegetables in a salad. The other options, such as 'Bake with cheese topping', 'Drizzle oil, garnish, serve', and 'Blend dressing and add', are not directly related to the preparation of the macaroni before combining it with vegetables. Therefore, the order is correct. STOP.Your Choice:",
+        "response": "Cook and drain macaroni",
+        "correct_response": "Cook and drain macaroni"
+    },
+    {
+        "title": "Gazpacho",
+        "question": "In the recipe 'Gazpacho', which step occurs before 'Combine vegetables with puree'?\n\nOptions:\n- Puree tomatoes with salt\n- Bake with cheese topping\n- Drizzle oil, garnish, serve\nIn the recipe 'Gazpacho', the step 'Puree tomatoes with salt' occurs before 'Combine vegetables with puree'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Puree tomatoes with salt' occurs before 'Combine vegetables with puree' in the recipe 'Gazpacho'. This is because pureeing the tomatoes is a necessary step to create the puree that will be combined with the vegetables. The other options, 'Bake with cheese topping' and 'Drizzle oil, garnish, serve', are not relevant to the order of combining vegetables with the puree in a gazpacho recipe. STOP.Your Choice:",
+        "response": "Puree tomatoes with salt",
+        "correct_response": "Puree tomatoes with salt"
+    }
+]
