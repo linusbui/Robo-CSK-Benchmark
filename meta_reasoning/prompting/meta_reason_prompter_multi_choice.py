@@ -90,8 +90,8 @@ def prompt_all_models_meta(prompters: [Prompter]):
 user_msg_selfcon = 'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Think step by step before answering with the complete configuration you chose.'
 
 MAXIT_selfcon = 2
-def prompt_all_models_selfcon(prompters: [Prompter]):
-    for prompter in prompters:
+def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [Prompter]):
+    for prompter, prompter_res in zip(prompters_selfcon, prompter_extract):
         results = []
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
@@ -108,7 +108,9 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
             answers = []
             for i in range(MAXIT_selfcon):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
-                pred_conf = extract_conf_selfcon(res)
+                # extract final answer:
+                user_msg_extract = f'Your task is to determine the final answer of a given LLM response. The final answer should only contain one of the following configurations: {choices}'
+                pred_conf = prompter_res.prompt_model(system_msg, user_msg_extract, res)
                 answers.append(pred_conf)
             final_pred = majority_vote(answers)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, final_pred, choices)
@@ -203,23 +205,3 @@ def calculate_average(results: [TidyUpMultiChoiceResult], model: str):
     new_row = pd.Series(
         {'model': model, 'acc': (average['acc'] / len(results))})
     return new_row.to_frame().T
-
-
-# Do better?
-def extract_conf_selfcon(pred: str):
-    # Extract last two sentence from LLM response
-    split = pred.splitlines()
-    answ = (split[-2] + split[-1]).lower()
-
-    if ('7 dofs' in answ) and ('2 fingers' in answ):
-        return 'The robot has 1 arm(s) with 7 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk.'
-    if ('6 dofs' in answ) and ('2 fingers' in answ):
-        return 'The robot has 1 arm(s) with 6 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk.'
-    if ('1 dofs' in answ):
-        return 'The robot has 1 arm(s) with 1 DoFs and rigid No specified Gripper and it can not walk.'
-    if ('5 dofs' in answ):
-        return 'The robot has 1 arm(s) with 5 DoFs and rigid No specified Gripper and it can not walk.'
-    if ('6 dofs' in answ):
-        return 'The robot has 1 arm(s) with 6 DoFs and rigid No specified Gripper and it can not walk.'
-    
-    return f'ERROR: {answ} does not contain valid configuration!'

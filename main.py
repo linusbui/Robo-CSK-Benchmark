@@ -67,7 +67,7 @@ def main():
             meta_reason_prompter_multi_choice.prompt_all_models_meta(prompters)
             print('Finished the Meta-Reasoning task (Multi Choice Questions) (Metacognitive)')
         if 'selfcon' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon)
+            meta_reason_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon, prompters)
             print('Finished the Meta-Reasoning task (Multi Choice Questions) (Self Consistency)')
         if 'selfref' in args.techs:
             meta_reason_prompter_multi_choice.prompt_all_models_selfref(prompters)
