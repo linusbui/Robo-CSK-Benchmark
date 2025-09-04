@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Worlds Best Mac and Cheese",
+        "question": "Here are a few examples:\nRecipe Title: Cheesy Baked Pasta Delight\nStep: Mix pasta with sauce\nStep after: Bake with cheese topping\nRecipe Title: Creamy Veggie Macaroni Salad Recipe\nStep: Combine macaroni and vegetables\nStep after: Blend dressing and add\nRecipe Title: Roasted Vegetable Puree with Herb Oil Drizzle\nStep: Combine vegetables with puree\nStep after: Drizzle oil, garnish, serve\nRecipe Title: Cheesy Scalloped Potatoes Bake\nStep: Heat milk, water, butter\nStep after: Bake until cheese melts\nRecipe Title: Fluffy No-Bake Cheesecake Pie\nStep: Whisk in Cool Whip\nStep after: Spoon into crust\nRecipe Title: Fruity Glazed Chicken Stir-Fry\nStep: Add cornstarch mixture\nStep after: Stir in fruits\nRecipe Title: Kombu Tea Infused Crispy Chicken Skillet\nStep: Sprinkle kombu tea\nStep after: Brown chicken skin side\nRecipe Title: Cheesy Vegetable Casserole\nStep: Layer ingredients evenly\nStep after: Bake in 350 oven\n\nRecipe title: Worlds Best Mac and Cheese\nStep: Mix pasta with sauce\n\nOptions:\n- Cook pasta less than directions\n- Bake with cheese topping\n- Puree tomatoes with salt\nStep after:",
+        "response": "Bake with cheese topping",
+        "correct_response": "Bake with cheese topping"
+    },
+    {
+        "title": "Dilly Macaroni Salad Recipe",
+        "question": "Here are a few examples:\nRecipe Title: Cheesy Baked Pasta Delight\nStep: Mix pasta with sauce\nStep after: Bake with cheese topping\nRecipe Title: Creamy Veggie Macaroni Salad Recipe\nStep: Combine macaroni and vegetables\nStep after: Blend dressing and add\nRecipe Title: Roasted Vegetable Puree with Herb Oil Drizzle\nStep: Combine vegetables with puree\nStep after: Drizzle oil, garnish, serve\nRecipe Title: Cheesy Scalloped Potatoes Bake\nStep: Heat milk, water, butter\nStep after: Bake until cheese melts\nRecipe Title: Fluffy No-Bake Cheesecake Pie\nStep: Whisk in Cool Whip\nStep after: Spoon into crust\nRecipe Title: Fruity Glazed Chicken Stir-Fry\nStep: Add cornstarch mixture\nStep after: Stir in fruits\nRecipe Title: Kombu Tea Infused Crispy Chicken Skillet\nStep: Sprinkle kombu tea\nStep after: Brown chicken skin side\nRecipe Title: Cheesy Vegetable Casserole\nStep: Layer ingredients evenly\nStep after: Bake in 350 oven\n\nRecipe title: Dilly Macaroni Salad Recipe\nStep: Combine macaroni and vegetables\n\nOptions:\n- Blend dressing and add\n- Cook and drain macaroni\n- Puree tomatoes with salt\n- Cook pasta less than directions\nStep after:",
+        "response": "Blend dressing and add",
+        "correct_response": "Blend dressing and add"
+    },
+    {
+        "title": "Gazpacho",
+        "question": "Here are a few examples:\nRecipe Title: Cheesy Baked Pasta Delight\nStep: Mix pasta with sauce\nStep after: Bake with cheese topping\nRecipe Title: Creamy Veggie Macaroni Salad Recipe\nStep: Combine macaroni and vegetables\nStep after: Blend dressing and add\nRecipe Title: Roasted Vegetable Puree with Herb Oil Drizzle\nStep: Combine vegetables with puree\nStep after: Drizzle oil, garnish, serve\nRecipe Title: Cheesy Scalloped Potatoes Bake\nStep: Heat milk, water, butter\nStep after: Bake until cheese melts\nRecipe Title: Fluffy No-Bake Cheesecake Pie\nStep: Whisk in Cool Whip\nStep after: Spoon into crust\nRecipe Title: Fruity Glazed Chicken Stir-Fry\nStep: Add cornstarch mixture\nStep after: Stir in fruits\nRecipe Title: Kombu Tea Infused Crispy Chicken Skillet\nStep: Sprinkle kombu tea\nStep after: Brown chicken skin side\nRecipe Title: Cheesy Vegetable Casserole\nStep: Layer ingredients evenly\nStep after: Bake in 350 oven\n\nRecipe title: Gazpacho\nStep: Combine vegetables with puree\n\nOptions:\n- Drizzle oil, garnish, serve\n- Cook pasta less than directions\n- Puree tomatoes with salt\nStep after:",
+        "response": "Puree tomatoes with salt",
+        "correct_response": "Drizzle oil, garnish, serve"
+    }
+]

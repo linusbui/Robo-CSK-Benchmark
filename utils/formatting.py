@@ -9,7 +9,7 @@ def transform_prediction_meta_single(pred: str, choices: [str]) -> str:
     for choice in choices:
         if choice.lower() in answ.lower():
             return choice
-    print(f'{answ} does not contain viable configuration')
+    print(f'{answ} does not contain viable answer')
     return pred
 
 
@@ -26,7 +26,7 @@ def transform_prediction_meta_mult(pred: str, choices: [str]) -> str:
         if choice.lower() in answ.lower():
             res.append(choice)
     if len(res) == 0:
-        print(f'{answ} does not contain viable configuration')
+        print(f'{answ} does not contain viable answer')
     return res
 
 
@@ -39,7 +39,7 @@ def transform_prediction_selfcon_single(pred: str, choices: [str]) -> str:
     for choice in choices:
         if choice.lower() in answ.lower():
             return choice
-    print(f'{answ} does not contain viable configuration')
+    print(f'{answ} does not contain viable answer')
     return pred
 
 

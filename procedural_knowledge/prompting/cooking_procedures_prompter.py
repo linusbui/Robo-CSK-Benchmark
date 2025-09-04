@@ -1,7 +1,8 @@
 import pandas as pd
 import random
+import os.path
 
-from procedural_knowledge.json_utils import extract_json, extract_json_multi, save_to_json
+from procedural_knowledge.json_utils import extract_json, extract_json_multi, extract_json_multi_limited, save_to_json
 from procedural_knowledge.prompting import evaluate_prompters
 from tidy_up.prompting.tidy_up_prompter_open import user_msg
 from utils.prompter import Prompter
@@ -657,3 +658,150 @@ def prompt_all_models_multi_stepback(prompters: [Prompter]):
                 })
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_stepback/{recipe_number}.json', after_answers)
     evaluate_prompters.evaluate_multi(prompters, '_stepback')
+
+
+NUM_EXAMPLES = 8
+def prompt_all_models_multi_sgicl(prompters: [Prompter]):
+    def get_example_before(prompter, recipe_title, step, step_before):
+        system_msg_example = 'You are helping to create questions regarding household environments.'
+        user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer in one short sentence only.'
+        question = f'Step: {step}\nStep before: {step_before}\nGenerate a recipe title: {recipe_title}\nGenerate a recipe title:'
+        return prompter.prompt_model(system_msg_example, user_msg_example, question)
+    
+    def get_example_after(prompter, recipe_title, step, step_before):
+        system_msg_example = 'You are helping to create questions regarding household environments.'
+        user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer in one short sentence only.'
+        question = f'Step: {step}\nStep after: {step_before}\nGenerate a recipe title: {recipe_title}\nGenerate a recipe title:'
+        return prompter.prompt_model(system_msg_example, user_msg_example, question)
+
+    def get_answer_before(prompter, recipe_title, step_question, other_steps, examples_str):
+        system_msg = (
+            "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
+            "Based on the recipe title and the provided steps, identify which step occurred before another. "
+        )
+        user_msg = "Answer only with your chosen step."
+        opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)
+        question = (
+                f"Here are a few examples:\n{ex_after_str}"
+                f"Recipe title: {recipe_title}\n"
+                f"Step: {step_question}\n"
+                f"{opt_str}\n"
+                f"Step before:")
+        return prompter.prompt_model(system_msg, user_msg, question), question
+
+    def get_answer_after(prompter, recipe_title, step_question, other_steps, examples_str):
+        system_msg = (
+            "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
+            "Based on the recipe title and the provided steps, identify  which step occurred after another. "
+        )
+        user_msg = "Answer only with your chosen step."
+        opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)
+        question = (
+                f'Here are a few examples:\n{ex_after_str}\n'
+                f"Recipe title: {recipe_title}\n"
+                f'Step: {step_question}\n'
+                f"{opt_str}\n"
+                f"Step after:")
+        return prompter.prompt_model(system_msg, user_msg, question), question
+
+    for prompter in prompters:
+        # Generate examples if needed
+        ex_file = f'procedural_knowledge/examples/cooking_procedures_multi_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_file):
+            results = []
+            json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
+            1) + '.json'
+            recipe_components = extract_json_multi_limited(json_file, 15)
+                
+            for recipe in recipe_components:
+                title = recipe['goal']
+                step_1 = recipe['step_1'].rstrip(". ").strip()  # correct response before
+                step_2 = recipe['step_2'].rstrip(". ").strip()  # question step
+                step_3 = recipe['step_3'].rstrip(". ").strip()  # correct response after
+
+                ex_before_title = get_example_before(prompter, title, step_2, step_1)
+                ex_after_title = get_example_after(prompter, title, step_2, step_3)
+
+                results.append({
+                    'step_q': step_2,
+                    'before_title': ex_before_title,
+                    'before_step': step_1,
+                    'after_title': ex_after_title,
+                    'after_step': step_3,
+                })
+            df = pd.DataFrame(results)
+            df.to_csv(ex_file, index=False)
+            print('Finished generating examples')
+
+        # Load examples
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        ex_before_str = ''
+        ex_after_str = ''
+        for index, row in examples.iterrows():
+            step_q = row['step_q']
+            before_title = row['before_title']
+            before_step = row['before_step']
+            after_title = row['after_title']
+            after_step = row['after_step']
+
+            ex_before_str = ex_before_str + f'Recipe Title: {before_title}\nStep: {step_q}\nStep before: {before_step}\n'
+            ex_after_str = ex_after_str + f'Recipe Title: {after_title}\nStep: {step_q}\nStep after: {after_step}\n'
+
+        # Few shot prompting
+        for recipe_number in range(1, 5):
+            json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
+                recipe_number) + '_small.json'
+            recipe_components = extract_json_multi(json_file)
+            before_answers, after_answers = [], []
+
+            for recipe in recipe_components:
+                title = recipe['goal']
+                step_1 = recipe['step_1'].rstrip(". ").strip()
+                step_2 = recipe['step_2'].rstrip(". ").strip()
+                step_3 = recipe['step_3'].rstrip(". ").strip()
+
+                before_steps = [step_1, step_3]
+                available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
+                unique_step_3s = set(before_steps)  # track what's already added
+                random.shuffle(available_indices)  # randomize the order
+                for idx in available_indices:
+                    if len(unique_step_3s) >= 5:  # step_1 + step_3 + 3 unique additions
+                        break
+                    other_recipe = recipe_components[idx]
+                    candidate_step = other_recipe['step_3'].rstrip(". ").strip()
+                    if candidate_step not in unique_step_3s:
+                        before_steps.append(candidate_step)
+                        unique_step_3s.add(candidate_step)
+                random.shuffle(before_steps)
+                response, question = get_answer_before(prompter, title, step_2, before_steps, ex_before_str)
+                before_answers.append({
+                    'title': title,
+                    'question': question,
+                    'response': response,
+                    'correct_response': step_1
+                })
+                save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_sgicl/{recipe_number}.json', before_answers)
+
+                after_steps = [step_1, step_3]
+                available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
+                unique_step_1s = set(after_steps)  # track what's already added
+                random.shuffle(available_indices)  # randomize the order
+                for idx in available_indices:
+                    if len(unique_step_1s) >= 5:  # step_1 + step_3 + 3 unique additions
+                        break
+                    other_recipe = recipe_components[idx]
+                    candidate_step = other_recipe['step_1'].rstrip(". ").strip()
+                    if candidate_step not in unique_step_1s:
+                        after_steps.append(candidate_step)
+                        unique_step_1s.add(candidate_step)
+
+                random.shuffle(after_steps)
+                response, question = get_answer_after(prompter, title, step_2, after_steps, ex_after_str)
+                after_answers.append({
+                    'title': title,
+                    'question': question,
+                    'response': response,
+                    'correct_response': step_3
+                })
+                save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_sgicl/{recipe_number}.json', after_answers)
+    evaluate_prompters.evaluate_multi(prompters, '_sgicl')

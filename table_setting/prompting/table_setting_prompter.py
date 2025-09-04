@@ -1,5 +1,6 @@
 import pandas as pd
 from tqdm import tqdm
+import os.path
 
 from table_setting.data_extraction.utensils_plates import Utensil, Plate
 from table_setting.prompting.table_setting_model_result import TableSettingModelResult
@@ -12,7 +13,6 @@ plates_string = ', '.join([str(plate) for plate in Plate])
 system_msg = 'Imagine you are a robot setting a table for a meal.'
 user_msg_cut = f'What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}'
 user_msg_plat = f'What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}'
-
 
 def prompt_all_models(prompters: [Prompter]):
     for prompter in prompters:
@@ -28,16 +28,16 @@ def prompt_all_models(prompters: [Prompter]):
             # prompt for cutlery
             question = f'Meal: {meal}\nCutlery: '
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
-            tup.add_predicted_utensils(transform_utensil_prediction_meta(res))
+            tup.add_predicted_utensils(transform_utensil_prediction(res))
 
             # prompt for plate
             question = f'Meal: {meal}\nPlate: '
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
-            tup.add_predicted_plate(transform_plate_prediction_meta(res))
+            tup.add_predicted_plate(transform_plate_prediction(res))
 
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name + '_' + technique, 'table_setting')
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_' + technique), 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'table_setting')
+        add_to_model_overview(calculate_average(results, prompter.model_name), 'table_setting')
 
 
 user_msg_cut_rar = f'What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}. Reword and elaborate on the inquiry, then provide your final answer.'
@@ -266,6 +266,76 @@ def prompt_all_models_stepback(prompters: [Prompter]):
         write_model_results_to_file(results, prompter.model_name + '_stepback', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'table_setting')
 
+
+system_msg_example = 'You are helping to create questions regarding household environments.'
+user_msg_cut_example = 'For the given choice of cutlery, generate a a meal that can be eaten with that cutlery. Answer only with the meal.'
+user_msg_plat_example = 'For the given plate, generate a a meal that can be eaten with that cutlery. Answer in one short sentence only.'
+
+NUM_EXAMPLES = 8
+def prompt_all_models_sgicl(prompters: [Prompter]):
+    for prompter in prompters:
+        # Generate examples if needed
+        ex_file = f'table_setting/examples/table_setting_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_file):
+            results = []
+            questions = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=15)
+            for index, row in tqdm(questions.iterrows(),
+                                f'Prompting {prompter.model_name} to generate Table Setting task examples'):
+                meal = row['name']
+                plate = get_fitting_plate(row)
+                utensils = ', '.join([str(utensil) for utensil in get_utensils(row)])
+
+                question_cut = f'Cutlery: {utensils}\nGenerate a meal: {meal}\nGenerate a meal:'
+                question_plat = f'Plate: {plate}\nGenerate a meal: {meal}\nGenerate a meal:'
+
+                pred_meal_cut = prompter.prompt_model(system_msg_example, user_msg_cut_example, question_cut)
+                pred_meal_plat = prompter.prompt_model(system_msg_example, user_msg_plat_example, question_plat)
+                entry = {
+                    'Meal_Cutlery': pred_meal_cut,
+                    'Cutlery': utensils,
+                    'Meal_Plate': pred_meal_plat,
+                    'Plate': plate
+                }
+                results.append(entry)
+            df = pd.DataFrame(results)
+            df.to_csv(ex_file, index=False)
+            print('Finished generating examples')
+
+        # Load examples
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        ex_cut_str = ''
+        ex_plat_str = ''
+        for index, row in examples.iterrows():
+            meal_cut = row['Meal_Cutlery']
+            utensils = row['Cutlery']
+            meal_plat = row['Meal_Plate']
+            plate = row['Plate']
+            ex_cut_str = ex_cut_str + f'Meal: {meal_cut}\nCutlery: {utensils}\n'
+            ex_plat_str = ex_plat_str + f'Meal: {meal_plat}\nPlate: {plate}\n'
+
+        # few shot prompting
+        data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
+        results = []
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
+            # setup meal name & get gold standard data
+            meal = row['name']
+            plate = get_fitting_plate(row)
+            utensils = get_utensils(row)
+            tup = TableSettingModelResult(meal, plate, utensils)
+
+            # prompt for cutlery
+            question = f'Here are a few examples:\n{ex_cut_str}Meal: {meal}\nCutlery: '
+            res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
+            tup.add_predicted_utensils(transform_utensil_prediction(res))
+
+            # prompt for plate
+            question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate: '
+            res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
+            tup.add_predicted_plate(transform_plate_prediction(res))
+
+            results.append(tup)
+        write_model_results_to_file(results, prompter.model_name + '_sgicl', 'table_setting')
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'table_setting')
 
 
 def get_fitting_plate(row) -> Plate:

@@ -3,6 +3,7 @@ import random
 
 import pandas as pd
 from tqdm import tqdm
+import os.path
 
 from tool_usage.prompting.tool_use_result import ToolSubstitutionResult
 from utils.prompter import Prompter
@@ -27,8 +28,7 @@ def prompt_all_models(prompters: [Prompter]):
             choices_string = ', '.join([c for c in choices])
             question = f'Task: {task}\nTools: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            pred_tool = transform_prediction_meta_single(res, choices)
-            tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
+            tup = ToolSubstitutionResult(task, affordance, corr_tool, res, choices)
             results.append(tup)
         write_model_results_to_file(results, prompter.model_name, 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name), 'tool_usage')
@@ -198,6 +198,58 @@ def prompt_all_models_stepback(prompters: [Prompter]):
         write_model_results_to_file(results, prompter.model_name + '_stepback', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'tool_usage')
 
+
+system_msg_example = 'You are helping to create questions regarding household environments.'
+user_msg_example = 'For the given tool, generate a task that is executed using that tool. Answer in one short sentence only.'
+
+NUM_EXAMPLES = 8
+def prompt_all_models_sgicl(prompters: [Prompter]):
+    for prompter in prompters:
+        # Generate examples if needed
+        ex_file = f'tool_usage/examples/tool_usage_multichoice_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_file):
+            results = []
+            questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions.csv', delimiter=',', on_bad_lines='skip', nrows=15)
+            for index, row in tqdm(questions.iterrows(),
+                                f'Prompting {prompter.model_name} to generate Tool Usage task examples'):
+                task = row['Task']
+                corr_tool = row['Correct_Tool']
+                question = f'Tool: {corr_tool}\nGenerate a task: {task}\nGenerate a task:'
+                pred_task = prompter.prompt_model(system_msg_example, user_msg_example, question)
+                entry = {
+                    'Task': pred_task,
+                    'Tool': corr_tool
+                }
+                results.append(entry)
+            df = pd.DataFrame(results)
+            df.to_csv(ex_file, index=False)
+            print('Finished generating examples')
+
+        # Load examples
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        ex_str = ''
+        for index, row in examples.iterrows():
+            task = row['Task']
+            tool = row['Tool']
+            ex_str = ex_str + f'Task: {task}\nTool: {tool}\n'
+
+        # few shot prompting
+        results = []
+        questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
+        questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
+            task = row['Task']
+            affordance = row['Affordance']
+            corr_tool = row['Correct_Tool']
+            choices = row['Wrong_Tools'] + [corr_tool]
+            random.shuffle(choices)
+            choices_string = ', '.join([c for c in choices])
+            question = f'Here are a few examples:\n{ex_str}Task: {task}\nTools: {choices_string}\nYour Choice:'
+            res = prompter.prompt_model(system_msg, user_msg, question)
+            tup = ToolSubstitutionResult(task, affordance, corr_tool, res, choices)
+            results.append(tup)
+        write_model_results_to_file(results, prompter.model_name + '_sgicl', 'tool_usage')
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'tool_usage')
 
 def calculate_average(results: [ToolSubstitutionResult], model: str):
     average = {met: 0 for met in ['acc']}

@@ -3,6 +3,7 @@ import random
 
 import pandas as pd
 from tqdm import tqdm
+import os.path
 
 from meta_reasoning.prompting.meta_reason_model_result import MetaReasoningMultiChoiceResult
 from tidy_up.prompting.tidy_up_result import TidyUpMultiChoiceResult
@@ -27,8 +28,7 @@ def prompt_all_models(prompters: [Prompter]):
             choices_string = ', '.join([c for c in choices])
             question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            pred_conf = transform_prediction_meta_single(res, choices)
-            tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
+            tup = MetaReasoningMultiChoiceResult(task, corr_conf, res, choices)
             results.append(tup)
         write_model_results_to_file(results, prompter.model_name, 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name), 'meta_reasoning/results_multi', False)
@@ -198,6 +198,60 @@ def prompt_all_models_stepback(prompters: [Prompter]):
             results.append(tup)
         write_model_results_to_file(results, prompter.model_name + '_stepback', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'meta_reasoning/results_multi', False)
+
+
+system_msg_example = 'You are helping to create questions regarding household environments.'
+user_msg_example = 'For the given hardware configuration, generate a task that can be executed by a robot with that configuration. Answer in one short sentence only.'
+
+NUM_EXAMPLES = 8
+def prompt_all_models_sgicl(prompters: [Prompter]):
+    for prompter in prompters:
+        # Generate examples if needed
+        ex_file = f'meta_reasoning/examples/meta_reasoning_multi_questions_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_file):
+            results = []
+            questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions.csv', delimiter=',', on_bad_lines='skip', nrows=15)
+            for index, row in tqdm(questions.iterrows(),
+                                f'Prompting {prompter.model_name} to generate Meta-Rasoning task examples'):
+                task = row['Task']
+                corr_conf = row['Correct_Configuration']
+                question = f'Tool: {corr_conf}\nGenerate a task: {task}\nGenerate a task:'
+                pred_task = prompter.prompt_model(system_msg_example, user_msg_example, question)
+                entry = {
+                    'Task': pred_task,
+                    'Configuration': corr_conf
+                }
+                results.append(entry)
+            df = pd.DataFrame(results)
+            df.to_csv(ex_file, index=False)
+            print('Finished generating examples')
+
+        # Load examples
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        ex_str = ''
+        for index, row in examples.iterrows():
+            task = row['Task']
+            conf = row['Configuration']
+            ex_str = ex_str + f'Task: {task}\nConfiguration: {conf}\n'
+
+        # few shot prompting
+        results = []
+        questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
+        questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
+        for index, row in tqdm(questions.iterrows(),
+                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task'):
+            task = row['Task']
+            corr_conf = row['Correct_Configuration']
+            choices = row['Wrong_Configurations'] + [corr_conf]
+            random.shuffle(choices)
+            choices_string = ', '.join([c for c in choices])
+            question = f'Here are a few examples:\n{ex_str}Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
+            res = prompter.prompt_model(system_msg, user_msg, question)
+            pred_conf = transform_prediction_meta_single(res, choices)
+            tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
+            results.append(tup)
+        write_model_results_to_file(results, prompter.model_name + '_sgicl', 'meta_reasoning/results_multi', False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'meta_reasoning/results_multi', False)
 
 
 def calculate_average(results: [TidyUpMultiChoiceResult], model: str):

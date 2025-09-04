@@ -59,6 +59,9 @@ def main():
         if 'stepback' in args.techs:
             table_setting_prompter.prompt_all_models_stepback(prompters)
             print('Finished the Table Setting task (Stepback)')
+        if 'sgicl' in args.techs:
+            table_setting_prompter.prompt_all_models_sgicl(prompters)
+            print('Finished the Table Setting task (SG-ICL)')
     if "mr_mc" in args.tasks:
         if 'rar' in args.techs:
             meta_reason_prompter_multi_choice.prompt_all_models_rar(prompters)
@@ -75,6 +78,9 @@ def main():
         if 'stepback' in args.techs:
             meta_reason_prompter_multi_choice.prompt_all_models_stepback(prompters)
             print('Finished the Meta-Reasoning task (Multi Choice Questions) (Stepback)')
+        if 'sgicl' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_sgicl(prompters)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (SG-ICL)')
     if "to_us" in args.tasks:
         if 'rar' in args.techs:
             tool_use_prompter.prompt_all_models_rar(prompters)
@@ -91,6 +97,9 @@ def main():
         if 'stepback' in args.techs:
             tool_use_prompter.prompt_all_models_stepback(prompters)
             print('Finished the Tool Usage task (Stepback)')
+        if 'sgicl' in args.techs:
+            tool_use_prompter.prompt_all_models_sgicl(prompters)
+            print('Finished the Tool Usage task (SG-ICL)')
     if "ti_up_mc" in args.tasks:
         if 'rar' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_rar(prompters)
@@ -107,6 +116,9 @@ def main():
         if 'stepback' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_stepback(prompters)
             print('Finished the Tidy Up task (Multi Choice Questions) (Stepback)')
+        if 'sgicl' in args.techs:
+            tidy_up_prompter_multi_choice.prompt_all_models_sgicl(prompters)
+            print('Finished the Tidy Up task (Multi Choice Questions) (SG-ICL)')
     if "proc_mc" in args.tasks:
         if 'rar' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi_rar(prompters)
@@ -123,6 +135,9 @@ def main():
         if 'stepback' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi_stepback(prompters)
             print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Stepback)")
+        if 'sgicl' in args.techs:
+            cooking_procedures_prompter.prompt_all_models_multi_sgicl(prompters)
+            print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (SG-ICL)")
 
 if __name__ == "__main__":
     main()
