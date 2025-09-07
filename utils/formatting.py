@@ -31,9 +31,12 @@ def transform_prediction_meta_mult(pred: str, choices: [str]) -> str:
 
 
 def transform_prediction_selfcon_single(pred: str, choices: [str]) -> str:
-    # Extract last two sentence from LLM response
+    # Extract last three sentence from LLM response
     split = pred.splitlines()
-    answ = split[-2] + split[-1]
+    if len(split) > 2:
+        answ = ''.join([l for l in split[-3:]])
+    else:
+        answ = split[-1]
 
     # Check if last sentence contains viable answer
     for choice in choices:

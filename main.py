@@ -15,7 +15,8 @@ def main():
                         help="Choose one or more models to run")
     parser.add_argument("--tasks", type=str, choices=["ts", "mr_b", "mr_mc", "to_us", "ti_up_o", "ti_up_mc", "proc_b", "proc_mc"],
                         nargs="+", help="Choose one or more tasks to run")
-    parser.add_argument('--techs' ,type=str, choices=['rar', 'meta', 'contr_cot', 'selfcon', 'selfref', 'sgicl', 'stepback'])
+    parser.add_argument('--techs' ,type=str, choices=['rar', 'meta', 'contr_cot', 'selfcon', 'selfref', 'sgicl', 'stepback'],
+                        nargs="+")
     parser.add_argument("--new_tok", type=int, default=1000, help="Maximum number of new tokens for the model output")
     args = parser.parse_args()
 
