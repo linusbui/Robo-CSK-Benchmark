@@ -1,4 +1,4 @@
-question,final_answer,correct_answer
+question,full_answer,final_answer,correct_answer
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -29,10 +29,10 @@ Recipe title: Worlds Best Mac and Cheese
 Step: Mix pasta with sauce
 
 Options:
-- Bake with cheese topping
 - Cook pasta less than directions
 - Puree tomatoes with salt
-Step after:",- Bake with cheese topping,- Bake with cheese topping
+- Bake with cheese topping
+Step after:",Bake with cheese topping,Bake with cheese topping,Bake with cheese topping
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -63,11 +63,11 @@ Recipe title: Dilly Macaroni Salad Recipe
 Step: Combine macaroni and vegetables
 
 Options:
+- Blend dressing and add
+- Puree tomatoes with salt
 - Cook pasta less than directions
 - Cook and drain macaroni
-- Puree tomatoes with salt
-- Blend dressing and add
-Step after:",Blend dressing and add,Blend dressing and add
+Step after:",Blend dressing and add,Blend dressing and add,Blend dressing and add
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -98,10 +98,10 @@ Recipe title: Gazpacho
 Step: Combine vegetables with puree
 
 Options:
-- Puree tomatoes with salt
 - Drizzle oil, garnish, serve
 - Cook pasta less than directions
-Step after:",Puree tomatoes with salt,Puree tomatoes with salt
+- Puree tomatoes with salt
+Step after:","- Drizzle oil, garnish, serve","Drizzle oil, garnish, serve","Drizzle oil, garnish, serve"
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -132,10 +132,10 @@ Recipe title: Ranch Mushrooms
 Step: Cook on low heat
 
 Options:
-- Use stovetop if preferred
-- Preheat oven to 300°F
 - Add ingredients to crock pot
-Step after:",Add ingredients to crock pot,Add ingredients to crock pot
+- Preheat oven to 300°F
+- Use stovetop if preferred
+Step after:",Add ingredients to crock pot,Add ingredients to crock pot,Use stovetop if preferred
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -167,9 +167,9 @@ Step: Heat cream, add vanilla
 
 Options:
 - Preheat oven to 300°F
-- Add ingredients to crock pot
 - Bake in water bath
-Step after:",Bake in water bath,Bake in water bath
+- Add ingredients to crock pot
+Step after:",Preheat oven to 300°F,Preheat oven to 300°F,Bake in water bath
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -200,11 +200,11 @@ Recipe title: Barbecue Hamburger Patties Recipe
 Step: Shape into 6 patties
 
 Options:
-- Brown patties in skillet
-- Preheat oven to 300°F
 - Add ingredients to crock pot
 - Mix meat, onion, salt
-Step after:",Brown patties in skillet,Brown patties in skillet
+- Brown patties in skillet
+- Preheat oven to 300°F
+Step after:",Brown patties in skillet,Brown patties in skillet,Brown patties in skillet
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -235,11 +235,11 @@ Recipe title: Gingersnap Gravy
 Step: Add stock, bring to boil
 
 Options:
-- Saute onions, celery, garlic
-- Combine milk, eggs, spices
-- Cook pasta until al dente
 - Crumble gingersnaps, whisk
-Step after:","Crumble gingersnaps, whisk","Crumble gingersnaps, whisk"
+- Cook pasta until al dente
+- Combine milk, eggs, spices
+- Saute onions, celery, garlic
+Step after:","Crumble gingersnaps, whisk","Crumble gingersnaps, whisk","Crumble gingersnaps, whisk"
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -270,11 +270,11 @@ Recipe title: Mom's Pumpkin Pie Squares Recipe
 Step: Pour into pan, sprinkle mix
 
 Options:
-- Saute onions, celery, garlic
 - Bake until done
+- Saute onions, celery, garlic
 - Combine milk, eggs, spices
 - Cook pasta until al dente
-Step after:",Bake until done,Bake until done
+Step after:",Bake until done,Bake until done,Bake until done
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -305,11 +305,11 @@ Recipe title: Shrimp and Pasta in a Basil Cream Sauce
 Step: Saute shallots and garlic
 
 Options:
-- Cook pasta until al dente
-- Add shrimp and tomatoes
 - Combine milk, eggs, spices
+- Add shrimp and tomatoes
 - Saute onions, celery, garlic
-Step after:",Add shrimp and tomatoes,Add shrimp and tomatoes
+- Cook pasta until al dente
+Step after:",Add shrimp and tomatoes,Add shrimp and tomatoes,Add shrimp and tomatoes
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -340,11 +340,11 @@ Recipe title: Aromatic Bread Dumplings
 Step: Shape mixture into balls
 
 Options:
-- Roast diced potatoes
+- Combine ingredients, mash well
 - Remove membrane from lobster
 - Cook dumplings until soft
-- Combine ingredients, mash well
-Step after:",Cook dumplings until soft,Cook dumplings until soft
+- Roast diced potatoes
+Step after:",Cook dumplings until soft,Cook dumplings until soft,Cook dumplings until soft
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -375,11 +375,11 @@ Recipe title: Middle Eastern Vegetable Casserole
 Step: Add broccoli, roast more
 
 Options:
-- Combine ingredients, mash well
-- Remove membrane from lobster
 - Roast diced potatoes
+- Remove membrane from lobster
 - Pour puree over vegetables
-Step after:","Combine ingredients, mash well","Combine ingredients, mash well"
+- Combine ingredients, mash well
+Step after:",Roast diced potatoes,Roast diced potatoes,Pour puree over vegetables
 "Here are a few examples:
 Recipe Title: Cheesy Baked Pasta Delight
 Step: Mix pasta with sauce
@@ -410,8 +410,8 @@ Recipe title: Healthy Steamed Lobster Tails for One
 Step: Place tails in colander
 
 Options:
-- Combine ingredients, mash well
 - Steam until lobster is opaque
 - Remove membrane from lobster
+- Combine ingredients, mash well
 - Roast diced potatoes
-Step after:",Steam until lobster is opaque,Steam until lobster is opaque
+Step after:",- Steam until lobster is opaque,Steam until lobster is opaque,Steam until lobster is opaque

@@ -748,7 +748,8 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter]):
                 f"Step: {step_question}\n"
                 f"{opt_str}\n"
                 f"Step before:")
-        return prompter.prompt_model(system_msg, user_msg, question), question
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps, examples_str):
         system_msg = (
@@ -763,7 +764,8 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter]):
                 f'Step: {step_question}\n'
                 f"{opt_str}\n"
                 f"Step after:")
-        return prompter.prompt_model(system_msg, user_msg, question), question
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
 
     for prompter in prompters:
         # Generate examples if needed
@@ -836,7 +838,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter]):
                         before_steps.append(candidate_step)
                         unique_step_3s.add(candidate_step)
                 random.shuffle(before_steps)
-                response, question = get_answer_before(prompter, title, step_2, before_steps, ex_before_str)
+                response, question, full_response = get_answer_before(prompter, title, step_2, before_steps, ex_before_str)
                 before_answers.append({
                     'title': title,
                     'question': question,
@@ -861,7 +863,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter]):
                         unique_step_1s.add(candidate_step)
 
                 random.shuffle(after_steps)
-                response, question = get_answer_after(prompter, title, step_2, after_steps, ex_after_str)
+                response, question, full_response = get_answer_after(prompter, title, step_2, after_steps, ex_after_str)
                 after_answers.append({
                     'title': title,
                     'question': question,
@@ -869,7 +871,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter]):
                     'correct_response': step_3
                 })
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_sgicl/{recipe_number}.json', after_answers)
-                log_after = SgiclLogEntry(question, response, step_3)
+                log_after = BasicLogEntry(question, full_response, response, step_3)
                 logs_after.append(log_after)
     evaluate_prompters.evaluate_multi(prompters, '_sgicl')
     write_log_to_file(logs_before, prompter.model_name + '_before_sgicl', 'procedural_knowledge')
