@@ -7,6 +7,7 @@ from procedural_knowledge.prompting import evaluate_prompters
 from tidy_up.prompting.tidy_up_prompter_open import user_msg
 from utils.prompter import Prompter
 from utils.formatting import transform_prediction_meta_single, majority_vote
+from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
 '''
 def prompt_all_models_binary(prompters: [Prompter]):
@@ -155,7 +156,8 @@ def prompt_all_models_multi_rar(prompters: [Prompter]):
         question = (
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
-        return transform_prediction_meta_single(prompter.prompt_model(system_msg, user_msg, question), [step for step in other_steps]), question
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
@@ -166,9 +168,12 @@ def prompt_all_models_multi_rar(prompters: [Prompter]):
         question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
-        return transform_prediction_meta_single(prompter.prompt_model(system_msg, user_msg, question), [step for step in other_steps]), question
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
 
     for prompter in prompters:
+        logs_before = []
+        logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
@@ -194,7 +199,7 @@ def prompt_all_models_multi_rar(prompters: [Prompter]):
                         before_steps.append(candidate_step)
                         unique_step_3s.add(candidate_step)
                 random.shuffle(before_steps)
-                response, question = get_answer_before(prompter, title, step_2, before_steps)
+                response, question, full_response = get_answer_before(prompter, title, step_2, before_steps)
                 before_answers.append({
                     'title': title,
                     'question': question,
@@ -202,6 +207,8 @@ def prompt_all_models_multi_rar(prompters: [Prompter]):
                     'correct_response': step_1
                 })
                 save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_rar/{recipe_number}.json', before_answers)
+                log_before = BasicLogEntry(question, full_response, response, step_1)
+                logs_before.append(log_before)
 
                 after_steps = [step_1, step_3]
                 available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
@@ -217,7 +224,7 @@ def prompt_all_models_multi_rar(prompters: [Prompter]):
                         unique_step_1s.add(candidate_step)
 
                 random.shuffle(after_steps)
-                response, question = get_answer_after(prompter, title, step_2, after_steps)
+                response, question, full_response = get_answer_after(prompter, title, step_2, after_steps)
                 after_answers.append({
                     'title': title,
                     'question': question,
@@ -225,7 +232,11 @@ def prompt_all_models_multi_rar(prompters: [Prompter]):
                     'correct_response': step_3
                 })
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_rar/{recipe_number}.json', after_answers)
+                log_after = BasicLogEntry(question, full_response, response, step_3)
+                logs_after.append(log_after)
     evaluate_prompters.evaluate_multi(prompters, '_rar')
+    write_log_to_file(logs_before, prompter.model_name + '_before_rar', 'procedural_knowledge')
+    write_log_to_file(logs_after, prompter.model_name + '_after_rar', 'procedural_knowledge')
 
 
 def prompt_all_models_multi_meta(prompters: [Prompter]):
@@ -246,7 +257,8 @@ def prompt_all_models_multi_meta(prompters: [Prompter]):
         question = (
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
-        return  transform_prediction_meta_single(prompter.prompt_model(system_msg, user_msg, question), [step for step in other_steps]), question
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return  transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
@@ -264,9 +276,12 @@ def prompt_all_models_multi_meta(prompters: [Prompter]):
         question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
-        return  transform_prediction_meta_single(prompter.prompt_model(system_msg, user_msg, question), [step for step in other_steps]), question
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return  transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
 
     for prompter in prompters:
+        logs_before = []
+        logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
@@ -292,7 +307,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter]):
                         before_steps.append(candidate_step)
                         unique_step_3s.add(candidate_step)
                 random.shuffle(before_steps)
-                response, question = get_answer_before(prompter, title, step_2, before_steps)
+                response, question, full_response = get_answer_before(prompter, title, step_2, before_steps)
                 before_answers.append({
                     'title': title,
                     'question': question,
@@ -300,6 +315,8 @@ def prompt_all_models_multi_meta(prompters: [Prompter]):
                     'correct_response': step_1
                 })
                 save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_meta/{recipe_number}.json', before_answers)
+                log_before = BasicLogEntry(question, full_response, response, step_1)
+                logs_before.append(log_before)
 
                 after_steps = [step_1, step_3]
                 available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
@@ -315,7 +332,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter]):
                         unique_step_1s.add(candidate_step)
 
                 random.shuffle(after_steps)
-                response, question = get_answer_after(prompter, title, step_2, after_steps)
+                response, question, full_response = get_answer_after(prompter, title, step_2, after_steps)
                 after_answers.append({
                     'title': title,
                     'question': question,
@@ -323,7 +340,11 @@ def prompt_all_models_multi_meta(prompters: [Prompter]):
                     'correct_response': step_3
                 })
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_meta/{recipe_number}.json', after_answers)
+                log_after = BasicLogEntry(question, full_response, response, step_3)
+                logs_after.append(log_after)
     evaluate_prompters.evaluate_multi(prompters, '_meta')
+    write_log_to_file(logs_before, prompter.model_name + '_before_meta', 'procedural_knowledge')
+    write_log_to_file(logs_after, prompter.model_name + '_after_meta', 'procedural_knowledge')
 
 
 MAXIT_selfcon = 2
@@ -338,7 +359,8 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter]):
         question = (
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
-        return transform_prediction_meta_single(prompter.prompt_model(system_msg, user_msg, question), [step for step in other_steps]), question
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
@@ -349,9 +371,12 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter]):
         question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
-        return transform_prediction_meta_single(prompter.prompt_model(system_msg, user_msg, question), [step for step in other_steps]), question
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
 
     for prompter in prompters:
+        logs_before = []
+        logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
@@ -379,17 +404,24 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter]):
                 random.shuffle(before_steps)
 
                 answers = []
+                log_before = {}
                 for i in range(MAXIT_selfcon):
-                    response, question = get_answer_before(prompter, title, step_2, before_steps)
+                    response, question, full_response = get_answer_before(prompter, title, step_2, before_steps)
                     answers.append(response)
-                
+                    log_before.update({'question': question,
+                                       f'cot_{i}': full_response,
+                                       f'final_answer_{i}': response})
+                final_answer = majority_vote(answers)
                 before_answers.append({
                     'title': title,
                     'question': question,
-                    'response': majority_vote(answers),
+                    'response': final_answer,
                     'correct_response': step_1
                 })
                 save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_selfcon/{recipe_number}.json', before_answers)
+                log_before.update({'final_answer': final_answer,
+                                   'correct_answer': step_1})
+                logs_before.append(log_before)
 
                 after_steps = [step_1, step_3]
                 available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
@@ -407,9 +439,13 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter]):
                 random.shuffle(after_steps)
                 
                 answers = []
+                log_after = {}
                 for i in range(MAXIT_selfcon):
-                    response, question = get_answer_after(prompter, title, step_2, before_steps)
+                    response, question, full_response = get_answer_after(prompter, title, step_2, before_steps)
                     answers.append(response)
+                    log_after.update({'question': question,
+                                       f'cot_{i}': full_response,
+                                       f'final_answer_{i}': response})
                 after_answers.append({
                     'title': title,
                     'question': question,
@@ -417,8 +453,13 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter]):
                     'correct_response': step_3
                 })
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_selfcon/{recipe_number}.json', after_answers)
-    evaluate_prompters.evaluate_multi(prompters, '_selfcon')
+                log_after.update({'final_answer': final_answer,
+                                   'correct_answer': step_3})
+                logs_after.append(log_after)
 
+    evaluate_prompters.evaluate_multi(prompters, '_selfcon')
+    write_general_log_to_file(logs_before, prompter.model_name + '_before_selfcon', 'procedural_knowledge')
+    write_general_log_to_file(logs_after, prompter.model_name + '_after_selfcon', 'procedural_knowledge')
 
 MAXIT_selfref = 2
 def prompt_all_models_multi_selfref(prompters: [Prompter]):
@@ -457,7 +498,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
         question = question + 'Your Choice:'
         final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
 
-        return transform_prediction_meta_single(final_pred, [step for step in other_steps]), question
+        return transform_prediction_meta_single(final_pred, [step for step in other_steps]), question, final_pred
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
@@ -495,9 +536,11 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
         question = question + 'Your Choice:'
         final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
 
-        return transform_prediction_meta_single(final_pred, [step for step in other_steps]), question
+        return transform_prediction_meta_single(final_pred, [step for step in other_steps]), question, final_pred
 
     for prompter in prompters:
+        logs_before = []
+        logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
@@ -523,7 +566,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
                         before_steps.append(candidate_step)
                         unique_step_3s.add(candidate_step)
                 random.shuffle(before_steps)
-                response, question = get_answer_before(prompter, title, step_2, before_steps)
+                response, question, full_response = get_answer_before(prompter, title, step_2, before_steps)
                 before_answers.append({
                     'title': title,
                     'question': question,
@@ -531,6 +574,9 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
                     'correct_response': step_1
                 })
                 save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_selfref/{recipe_number}.json', before_answers)
+                log_before = BasicLogEntry(question, full_response, response, step_1)
+                logs_before.append(log_before)
+
 
                 after_steps = [step_1, step_3]
                 available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
@@ -546,7 +592,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
                         unique_step_1s.add(candidate_step)
 
                 random.shuffle(after_steps)
-                response, question = get_answer_after(prompter, title, step_2, after_steps)
+                response, question, full_response = get_answer_after(prompter, title, step_2, after_steps)
                 after_answers.append({
                     'title': title,
                     'question': question,
@@ -554,7 +600,12 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
                     'correct_response': step_3
                 })
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_selfref/{recipe_number}.json', after_answers)
+                log_after = BasicLogEntry(question, full_response, response, step_3)
+                logs_after.append(log_after)
+
     evaluate_prompters.evaluate_multi(prompters, '_selfref')
+    write_log_to_file(logs_before, prompter.model_name + '_before_selfref', 'procedural_knowledge')
+    write_log_to_file(logs_after, prompter.model_name + '_after_selfref', 'procedural_knowledge')
 
 
 def prompt_all_models_multi_stepback(prompters: [Prompter]):
@@ -566,18 +617,19 @@ def prompt_all_models_multi_stepback(prompters: [Prompter]):
         user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when identifying the correct order of given steps in a given recipe.'
 
         # Get higher level principles
-        question = (
+        p_question = (
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps) + '\nPrinciples:')
-        principles = prompter.prompt_model(system_msg, user_msg_principle, question)
+        principles = prompter.prompt_model(system_msg, user_msg_principle, p_question)
 
         # Get answer based on principles
         user_msg_stepback = f'Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only your chosen step.'
         question = (
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
+        answer = prompter.prompt_model(system_msg, user_msg_stepback, question)
 
-        return transform_prediction_meta_single(prompter.prompt_model(system_msg, user_msg_stepback, question), [step for step in other_steps]), question
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer, p_question, principles
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
@@ -587,20 +639,23 @@ def prompt_all_models_multi_stepback(prompters: [Prompter]):
         user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when identifying the correct order of given steps in a given recipe.'
 
         # Get higher level principles
-        question = (
+        p_question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps) + '\nPrinciples:')
-        principles = prompter.prompt_model(system_msg, user_msg_principle, question)
+        principles = prompter.prompt_model(system_msg, user_msg_principle, p_question)
 
         # Get answer based on principles
         user_msg_stepback = f'Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only your chosen step.'
         question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
+        answer = prompter.prompt_model(system_msg, user_msg_stepback, question)
 
-        return transform_prediction_meta_single(prompter.prompt_model(system_msg, user_msg_stepback, question), [step for step in other_steps]), question
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer, p_question, principles
 
     for prompter in prompters:
+        logs_before = []
+        logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
@@ -626,7 +681,7 @@ def prompt_all_models_multi_stepback(prompters: [Prompter]):
                         before_steps.append(candidate_step)
                         unique_step_3s.add(candidate_step)
                 random.shuffle(before_steps)
-                response, question = get_answer_before(prompter, title, step_2, before_steps)
+                response, question, full_response, p_question, principles = get_answer_before(prompter, title, step_2, before_steps)
                 before_answers.append({
                     'title': title,
                     'question': question,
@@ -634,6 +689,8 @@ def prompt_all_models_multi_stepback(prompters: [Prompter]):
                     'correct_response': step_1
                 })
                 save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_stepback/{recipe_number}.json', before_answers)
+                log_before = StepbackLogEntry(p_question, principles, question, full_response, response, step_1)
+                logs_before.append(log_before)
 
                 after_steps = [step_1, step_3]
                 available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
@@ -649,7 +706,7 @@ def prompt_all_models_multi_stepback(prompters: [Prompter]):
                         unique_step_1s.add(candidate_step)
 
                 random.shuffle(after_steps)
-                response, question = get_answer_after(prompter, title, step_2, after_steps)
+                response, question, full_response, p_question, principles = get_answer_after(prompter, title, step_2, after_steps)
                 after_answers.append({
                     'title': title,
                     'question': question,
@@ -657,7 +714,11 @@ def prompt_all_models_multi_stepback(prompters: [Prompter]):
                     'correct_response': step_3
                 })
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_stepback/{recipe_number}.json', after_answers)
+                log_after = StepbackLogEntry(p_question, principles, question, full_response, response, step_3)
+                logs_after.append(log_after)
     evaluate_prompters.evaluate_multi(prompters, '_stepback')
+    write_log_to_file(logs_before, prompter.model_name + '_before_stepback', 'procedural_knowledge')
+    write_log_to_file(logs_after, prompter.model_name + '_after_stepback', 'procedural_knowledge')
 
 
 NUM_EXAMPLES = 8
@@ -747,6 +808,8 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter]):
             ex_before_str = ex_before_str + f'Recipe Title: {before_title}\nStep: {step_q}\nStep before: {before_step}\n'
             ex_after_str = ex_after_str + f'Recipe Title: {after_title}\nStep: {step_q}\nStep after: {after_step}\n'
 
+        logs_before = []
+        logs_after = []
         # Few shot prompting
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
@@ -781,6 +844,8 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter]):
                     'correct_response': step_1
                 })
                 save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_sgicl/{recipe_number}.json', before_answers)
+                log_before = SgiclLogEntry(question, response, step_1)
+                logs_before.append(log_before)
 
                 after_steps = [step_1, step_3]
                 available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
@@ -804,4 +869,8 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter]):
                     'correct_response': step_3
                 })
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_sgicl/{recipe_number}.json', after_answers)
+                log_after = SgiclLogEntry(question, response, step_3)
+                logs_after.append(log_after)
     evaluate_prompters.evaluate_multi(prompters, '_sgicl')
+    write_log_to_file(logs_before, prompter.model_name + '_before_sgicl', 'procedural_knowledge')
+    write_log_to_file(logs_after, prompter.model_name + '_after_sgicl', 'procedural_knowledge')

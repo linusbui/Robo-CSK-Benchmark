@@ -1,0 +1,405 @@
+question,final_answer,correct_answer
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Worlds Best Mac and Cheese
+Step: Mix pasta with sauce
+
+Options:
+- Drizzle oil, garnish, serve
+- Cook pasta less than directions
+- Bake with cheese topping
+Step before:",Cook pasta less than directions,Cook pasta less than directions
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Dilly Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+
+Options:
+- Bake with cheese topping
+- Drizzle oil, garnish, serve
+- Cook and drain macaroni
+- Blend dressing and add
+Step before:",Cook and drain macaroni,Cook and drain macaroni
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Gazpacho
+Step: Combine vegetables with puree
+
+Options:
+- Drizzle oil, garnish, serve
+- Puree tomatoes with salt
+- Bake with cheese topping
+Step before:",Puree tomatoes with salt,Puree tomatoes with salt
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Ranch Mushrooms
+Step: Cook on low heat
+
+Options:
+- Add ingredients to crock pot
+- Use stovetop if preferred
+- Bake in water bath
+Step before:",Add ingredients to crock pot,Add ingredients to crock pot
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Raspberry Creme Brulee Recipe
+Step: Heat cream, add vanilla
+
+Options:
+- Use stovetop if preferred
+- Bake in water bath
+- Preheat oven to 300°F
+Step before:",Preheat oven to 300°F,Preheat oven to 300°F
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Barbecue Hamburger Patties Recipe
+Step: Shape into 6 patties
+
+Options:
+- Use stovetop if preferred
+- Bake in water bath
+- Mix meat, onion, salt
+- Brown patties in skillet
+Step before:","Mix meat, onion, salt","Mix meat, onion, salt"
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Gingersnap Gravy
+Step: Add stock, bring to boil
+
+Options:
+- Bake until done
+- Crumble gingersnaps, whisk
+- Add shrimp and tomatoes
+- Saute onions, celery, garlic
+Step before:","- Crumble gingersnaps, whisk","- Crumble gingersnaps, whisk"
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Mom's Pumpkin Pie Squares Recipe
+Step: Pour into pan, sprinkle mix
+
+Options:
+- Crumble gingersnaps, whisk
+- Add shrimp and tomatoes
+- Combine milk, eggs, spices
+- Bake until done
+Step before:","Combine milk, eggs, spices","Combine milk, eggs, spices"
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Shrimp and Pasta in a Basil Cream Sauce
+Step: Saute shallots and garlic
+
+Options:
+- Crumble gingersnaps, whisk
+- Add shrimp and tomatoes
+- Cook pasta until al dente
+- Bake until done
+Step before:",Cook pasta until al dente,Cook pasta until al dente
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Aromatic Bread Dumplings
+Step: Shape mixture into balls
+
+Options:
+- Pour puree over vegetables
+- Combine ingredients, mash well
+- Steam until lobster is opaque
+- Cook dumplings until soft
+Step before:","Combine ingredients, mash well","Combine ingredients, mash well"
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Middle Eastern Vegetable Casserole
+Step: Add broccoli, roast more
+
+Options:
+- Roast diced potatoes
+- Steam until lobster is opaque
+- Pour puree over vegetables
+- Cook dumplings until soft
+Step before:",Roast diced potatoes,Roast diced potatoes
+"Here are a few examples:
+Recipe Title: Cheesy Baked Pasta Delight
+Step: Mix pasta with sauce
+Step after: Bake with cheese topping
+Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step: Combine macaroni and vegetables
+Step after: Blend dressing and add
+Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step: Combine vegetables with puree
+Step after: Drizzle oil, garnish, serve
+Recipe Title: Cheesy Scalloped Potatoes Bake
+Step: Heat milk, water, butter
+Step after: Bake until cheese melts
+Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step: Whisk in Cool Whip
+Step after: Spoon into crust
+Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step: Add cornstarch mixture
+Step after: Stir in fruits
+Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step: Sprinkle kombu tea
+Step after: Brown chicken skin side
+Recipe Title: Cheesy Vegetable Casserole
+Step: Layer ingredients evenly
+Step after: Bake in 350 oven
+Recipe title: Healthy Steamed Lobster Tails for One
+Step: Place tails in colander
+
+Options:
+- Cook dumplings until soft
+- Steam until lobster is opaque
+- Remove membrane from lobster
+- Pour puree over vegetables
+Step before:",Remove membrane from lobster,Remove membrane from lobster

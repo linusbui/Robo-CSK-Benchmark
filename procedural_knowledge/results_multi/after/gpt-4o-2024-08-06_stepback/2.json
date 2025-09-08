@@ -1,19 +1,19 @@
 [
     {
         "title": "Ranch Mushrooms",
-        "question": "In the recipe 'Ranch Mushrooms', which steps occurs after 'Cook on low heat'?\nOptions:\n- Preheat oven to 300\u00b0F\n- Use stovetop if preferred\n- Add ingredients to crock pot",
-        "response": "None of the provided options occur after \"Cook on low heat\" based on the logical sequence of steps in a recipe.",
+        "question": "In the recipe 'Ranch Mushrooms', which steps occurs after 'Cook on low heat'?\nOptions:\n- Use stovetop if preferred\n- Add ingredients to crock pot\n- Preheat oven to 300\u00b0F",
+        "response": "Use stovetop if preferred",
         "correct_response": "Use stovetop if preferred"
     },
     {
         "title": "Raspberry Creme Brulee Recipe",
-        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which steps occurs after 'Heat cream, add vanilla'?\nOptions:\n- Preheat oven to 300\u00b0F\n- Bake in water bath\n- Add ingredients to crock pot",
-        "response": "Bake in water bath",
+        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which steps occurs after 'Heat cream, add vanilla'?\nOptions:\n- Add ingredients to crock pot\n- Bake in water bath\n- Preheat oven to 300\u00b0F",
+        "response": "Add ingredients to crock pot",
         "correct_response": "Bake in water bath"
     },
     {
         "title": "Barbecue Hamburger Patties Recipe",
-        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which steps occurs after 'Shape into 6 patties'?\nOptions:\n- Mix meat, onion, salt\n- Brown patties in skillet\n- Preheat oven to 300\u00b0F\n- Add ingredients to crock pot",
+        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which steps occurs after 'Shape into 6 patties'?\nOptions:\n- Mix meat, onion, salt\n- Add ingredients to crock pot\n- Brown patties in skillet\n- Preheat oven to 300\u00b0F",
         "response": "Brown patties in skillet",
         "correct_response": "Brown patties in skillet"
     }

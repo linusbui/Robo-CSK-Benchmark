@@ -1,0 +1,342 @@
+principle_question,principles,question,full_answer,final_answer,correct_answer
+"In the recipe 'Worlds Best Mac and Cheese', which step occurs before 'Mix pasta with sauce'?
+
+Options:
+- Cook pasta less than directions
+- Drizzle oil, garnish, serve
+- Bake with cheese topping
+Principles:","In the recipe 'Worlds Best Mac and Cheese', the step 'Cook pasta less than directions' occurs before 'Mix pasta with sauce'.
+
+Principles:
+1. **Preparation Before Combination**: Ingredients often need to be prepared or cooked before they are combined. In this case, pasta must be cooked before it can be mixed with the sauce.
+2. **Sequential Cooking**: Steps that involve cooking or altering the state of an ingredient typically occur before steps that involve combining or assembling the dish.
+3. **Logical Progression**: Consider the logical flow of the recipe. Cooking pasta is a foundational step that must be completed before it can be mixed with any sauce.
+4. **Ingredient Readiness**: Ensure that all components are ready before they are combined. Pasta must be cooked to a certain degree before it can be mixed with the sauce.
+5. **Temporal Order**: Identify steps that are preparatory in nature and must logically precede others that build upon them.","In the recipe 'Worlds Best Mac and Cheese', which step occurs before 'Mix pasta with sauce'?
+
+Options:
+- Cook pasta less than directions
+- Drizzle oil, garnish, serve
+- Bake with cheese topping",Cook pasta less than directions,Cook pasta less than directions,Cook pasta less than directions
+"In the recipe 'Dilly Macaroni Salad Recipe', which step occurs before 'Combine macaroni and vegetables'?
+
+Options:
+- Drizzle oil, garnish, serve
+- Bake with cheese topping
+- Blend dressing and add
+- Cook and drain macaroni
+Principles:","To determine the correct order of steps in a recipe, consider the following principles:
+
+1. **Preparation of Ingredients**: Steps involving the preparation of ingredients, such as cooking or chopping, typically occur before combining or assembling them.
+
+2. **Cooking Sequence**: Any cooking or heating steps usually precede mixing or serving steps.
+
+3. **Assembly and Mixing**: Combining ingredients generally follows the preparation and cooking of those ingredients.
+
+4. **Final Touches**: Steps like garnishing or serving are usually the last in the sequence.
+
+Applying these principles to the given options:
+
+- ""Cook and drain macaroni"" involves preparing the macaroni, which is a necessary step before combining it with other ingredients.
+- ""Blend dressing and add"" would typically occur after the macaroni and vegetables are combined, as it involves adding dressing to the mixture.
+- ""Drizzle oil, garnish, serve"" is a final touch step, occurring after all ingredients are combined.
+- ""Bake with cheese topping"" is not relevant to a macaroni salad and would not logically fit before combining macaroni and vegetables.
+
+Therefore, the step ""Cook and drain macaroni"" occurs before ""Combine macaroni and vegetables"".","In the recipe 'Dilly Macaroni Salad Recipe', which step occurs before 'Combine macaroni and vegetables'?
+
+Options:
+- Drizzle oil, garnish, serve
+- Bake with cheese topping
+- Blend dressing and add
+- Cook and drain macaroni",Cook and drain macaroni,Cook and drain macaroni,Cook and drain macaroni
+"In the recipe 'Gazpacho', which step occurs before 'Combine vegetables with puree'?
+
+Options:
+- Drizzle oil, garnish, serve
+- Bake with cheese topping
+- Puree tomatoes with salt
+Principles:","To determine the correct order of steps in a recipe, consider the following principles:
+
+1. **Ingredient Preparation**: Steps involving the preparation of ingredients typically occur before combining or cooking steps. For example, chopping, peeling, or pureeing ingredients usually precede mixing them together.
+
+2. **Cooking Techniques**: Steps that involve cooking or altering the state of ingredients (e.g., baking, boiling, pureeing) generally occur before final assembly or serving steps.
+
+3. **Assembly and Serving**: Steps that involve assembling the dish or adding final touches (e.g., garnishing, drizzling oil) usually occur after the main cooking or preparation steps.
+
+4. **Logical Sequence**: Consider the logical flow of the recipe. For instance, you cannot combine ingredients before they are prepared or cooked as required.
+
+Applying these principles to the given options:
+
+- ""Puree tomatoes with salt"" is a preparation step that logically occurs before ""Combine vegetables with puree"" because you need the puree ready before you can combine it with other ingredients.
+- ""Drizzle oil, garnish, serve"" is a final assembly and serving step, which would occur after combining the ingredients.
+- ""Bake with cheese topping"" is not relevant to a gazpacho recipe, which is typically a cold soup and does not involve baking.
+
+Therefore, the step ""Puree tomatoes with salt"" occurs before ""Combine vegetables with puree"".","In the recipe 'Gazpacho', which step occurs before 'Combine vegetables with puree'?
+
+Options:
+- Drizzle oil, garnish, serve
+- Bake with cheese topping
+- Puree tomatoes with salt",Puree tomatoes with salt,Puree tomatoes with salt,Puree tomatoes with salt
+"In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?
+
+Options:
+- Use stovetop if preferred
+- Bake in water bath
+- Add ingredients to crock pot
+Principles:","To determine the correct order of steps in a recipe, consider the following principles:
+
+1. **Preparation vs. Cooking**: Steps involving preparation, such as gathering and adding ingredients, typically occur before cooking steps.
+
+2. **Cooking Method Selection**: If there is an option to choose a cooking method (e.g., stovetop vs. crock pot), this decision usually precedes the actual cooking process.
+
+3. **Sequential Cooking Steps**: Within the cooking process, steps are often ordered by the progression of cooking techniques, such as starting with lower heat or initial cooking methods before moving to more intense or final cooking steps.
+
+Applying these principles to the 'Ranch Mushrooms' recipe:
+
+- ""Add ingredients to crock pot"" is a preparation step that logically occurs before any cooking step, including ""Cook on low heat.""
+- ""Use stovetop if preferred"" is a decision about the cooking method, which would also occur before the actual cooking step.
+- ""Bake in water bath"" is another cooking method, which would be an alternative to ""Cook on low heat"" rather than a preceding step.
+
+Therefore, the step ""Add ingredients to crock pot"" occurs before ""Cook on low heat.""","In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?
+
+Options:
+- Use stovetop if preferred
+- Bake in water bath
+- Add ingredients to crock pot",Add ingredients to crock pot,Add ingredients to crock pot,Add ingredients to crock pot
+"In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?
+
+Options:
+- Preheat oven to 300°F
+- Use stovetop if preferred
+- Bake in water bath
+Principles:","To determine the correct order of steps in a recipe, consider the following principles:
+
+1. **Preparation Steps**: These are typically the initial steps in a recipe, such as preheating the oven or preparing ingredients. They set the stage for the cooking process.
+
+2. **Sequential Cooking Steps**: These steps follow a logical sequence based on the cooking process. For example, heating ingredients usually occurs before combining them with others or before baking.
+
+3. **Dependency**: Some steps depend on the completion of others. For instance, you cannot bake something before the oven is preheated.
+
+4. **Method of Cooking**: Steps that specify a method of cooking (e.g., using a stovetop or oven) often follow preparation steps and precede final cooking or baking steps.
+
+5. **Finalization Steps**: These are the concluding steps, such as cooling, garnishing, or serving, and occur after the main cooking process.
+
+Applying these principles to the given options:
+
+- ""Preheat oven to 300°F"" is a preparation step and typically occurs before any cooking or heating steps.
+- ""Use stovetop if preferred"" is an alternative method of cooking and would occur around the same time as ""Heat cream, add vanilla"" if chosen.
+- ""Bake in water bath"" is a final cooking step that would occur after the cream is heated and combined with other ingredients.
+
+Therefore, the step ""Preheat oven to 300°F"" occurs before ""Heat cream, add vanilla"".","In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?
+
+Options:
+- Preheat oven to 300°F
+- Use stovetop if preferred
+- Bake in water bath",Preheat oven to 300°F,Preheat oven to 300°F,Preheat oven to 300°F
+"In the recipe 'Barbecue Hamburger Patties Recipe', which step occurs before 'Shape into 6 patties'?
+
+Options:
+- Bake in water bath
+- Brown patties in skillet
+- Mix meat, onion, salt
+- Use stovetop if preferred
+Principles:","To determine which step occurs before 'Shape into 6 patties' in the 'Barbecue Hamburger Patties Recipe', we need to consider the logical sequence of preparing hamburger patties. Here are the principles to consider:
+
+1. **Ingredient Preparation**: Before shaping patties, the ingredients must be prepared and combined. This typically involves mixing the meat with other ingredients.
+
+2. **Mixing**: The step where ingredients are mixed together usually precedes shaping, as you need a homogenous mixture to form consistent patties.
+
+3. **Shaping**: Once the mixture is ready, the next logical step is to shape it into patties.
+
+4. **Cooking**: After shaping, the patties are typically cooked, which can involve browning in a skillet or baking.
+
+Applying these principles, the step 'Mix meat, onion, salt' logically occurs before 'Shape into 6 patties', as you need to mix the ingredients before you can shape them into patties. 
+
+Therefore, the correct answer is:
+- Mix meat, onion, salt","In the recipe 'Barbecue Hamburger Patties Recipe', which step occurs before 'Shape into 6 patties'?
+
+Options:
+- Bake in water bath
+- Brown patties in skillet
+- Mix meat, onion, salt
+- Use stovetop if preferred","Mix meat, onion, salt","Mix meat, onion, salt","Mix meat, onion, salt"
+"In the recipe 'Gingersnap Gravy', which step occurs before 'Add stock, bring to boil'?
+
+Options:
+- Add shrimp and tomatoes
+- Saute onions, celery, garlic
+- Bake until done
+- Crumble gingersnaps, whisk
+Principles:","To determine the correct order of steps in a recipe, consider the following principles:
+
+1. **Ingredient Preparation**: Steps involving the preparation of ingredients, such as chopping or crumbling, typically occur before cooking steps.
+
+2. **Cooking Sequence**: Sauteing or frying ingredients often precedes adding liquids, as it helps to develop flavors.
+
+3. **Simmering and Boiling**: Bringing a liquid to a boil usually follows the addition of solid ingredients that need to be cooked in the liquid.
+
+4. **Baking and Final Cooking**: Baking or final cooking steps generally occur after all ingredients have been combined and cooked to some extent.
+
+Applying these principles to the given options:
+
+- **Saute onions, celery, garlic**: This step is likely to occur early in the process to develop flavors before adding liquids.
+- **Crumble gingersnaps, whisk**: This step involves preparation of an ingredient, which typically happens before cooking.
+- **Add shrimp and tomatoes**: This step likely occurs after initial sauteing but before adding stock, as these ingredients need to be cooked in the liquid.
+- **Bake until done**: This is a final cooking step, likely occurring after the gravy is prepared.
+
+Based on these principles, the step ""Saute onions, celery, garlic"" occurs before ""Add stock, bring to boil"".","In the recipe 'Gingersnap Gravy', which step occurs before 'Add stock, bring to boil'?
+
+Options:
+- Add shrimp and tomatoes
+- Saute onions, celery, garlic
+- Bake until done
+- Crumble gingersnaps, whisk","Saute onions, celery, garlic","Saute onions, celery, garlic","Saute onions, celery, garlic"
+"In the recipe 'Mom's Pumpkin Pie Squares Recipe', which step occurs before 'Pour into pan, sprinkle mix'?
+
+Options:
+- Add shrimp and tomatoes
+- Bake until done
+- Crumble gingersnaps, whisk
+- Combine milk, eggs, spices
+Principles:","To determine the correct order of steps in a recipe, consider the following principles:
+
+1. **Ingredient Preparation**: Steps involving the preparation of ingredients typically occur before combining or cooking them. For example, crumbling gingersnaps or whisking ingredients usually precedes mixing them with other components.
+
+2. **Mixing and Combining**: Steps that involve combining ingredients often follow preparation steps. For instance, combining milk, eggs, and spices would occur after any necessary preparation of those ingredients.
+
+3. **Assembly**: Steps that involve assembling or layering ingredients in a dish usually occur after the ingredients have been prepared and mixed.
+
+4. **Cooking/Baking**: Steps that involve cooking or baking are generally among the last steps, as they require the ingredients to be fully prepared and assembled.
+
+5. **Sequential Logic**: Consider the logical flow of the recipe. For example, you cannot bake a dish before it is assembled, and you cannot assemble it before the ingredients are prepared and mixed.
+
+Applying these principles to the given options:
+
+- ""Crumble gingersnaps, whisk"" is likely a preparation step that occurs before mixing or assembling.
+- ""Combine milk, eggs, spices"" is a mixing step that would logically occur before pouring the mixture into the pan.
+- ""Add shrimp and tomatoes"" seems unrelated to a pumpkin pie recipe and is likely not part of the sequence.
+- ""Bake until done"" is a cooking step that would occur after the mixture is poured into the pan.
+
+Therefore, the step ""Combine milk, eggs, spices"" occurs before ""Pour into pan, sprinkle mix"" based on the principles of ingredient preparation and mixing.","In the recipe 'Mom's Pumpkin Pie Squares Recipe', which step occurs before 'Pour into pan, sprinkle mix'?
+
+Options:
+- Add shrimp and tomatoes
+- Bake until done
+- Crumble gingersnaps, whisk
+- Combine milk, eggs, spices","Combine milk, eggs, spices","Combine milk, eggs, spices","Combine milk, eggs, spices"
+"In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which step occurs before 'Saute shallots and garlic'?
+
+Options:
+- Crumble gingersnaps, whisk
+- Cook pasta until al dente
+- Bake until done
+- Add shrimp and tomatoes
+Principles:","To determine the correct order of steps in a recipe, consider the following principles:
+
+1. **Ingredient Preparation**: Steps involving the preparation of ingredients typically occur before cooking steps. For example, chopping or measuring ingredients usually precedes cooking.
+
+2. **Cooking Sequence**: Steps that involve cooking or heating ingredients often follow preparation steps. Within cooking steps, those that involve foundational flavors (like sautéing aromatics) usually occur early in the process.
+
+3. **Simultaneous vs. Sequential**: Some steps can occur simultaneously, but if a step depends on the completion of another (e.g., adding ingredients to a sauté), it must follow sequentially.
+
+4. **Dependency on Previous Steps**: Consider if a step requires the completion of another step. For example, adding ingredients to a pan typically follows the initial heating or sautéing of aromatics.
+
+5. **Common Cooking Practices**: Familiarity with common cooking practices can guide the order. For instance, pasta is often cooked early to be ready for combining with sauces or other components.
+
+Applying these principles to the given options:
+
+- **Crumble gingersnaps, whisk**: This step seems unrelated to the main dish and is likely part of a dessert or separate component.
+- **Cook pasta until al dente**: This step is a preparation step that typically occurs early, as pasta needs to be ready to combine with the sauce.
+- **Bake until done**: This step is likely unrelated to the main dish or is a final step for a different component.
+- **Add shrimp and tomatoes**: This step would logically follow the sautéing of shallots and garlic, as it involves adding ingredients to the base flavors.
+
+Based on these principles, the step ""Cook pasta until al dente"" occurs before ""Saute shallots and garlic.""","In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which step occurs before 'Saute shallots and garlic'?
+
+Options:
+- Crumble gingersnaps, whisk
+- Cook pasta until al dente
+- Bake until done
+- Add shrimp and tomatoes",Cook pasta until al dente,Cook pasta until al dente,Cook pasta until al dente
+"In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?
+
+Options:
+- Cook dumplings until soft
+- Combine ingredients, mash well
+- Pour puree over vegetables
+- Steam until lobster is opaque
+Principles:","To determine which step occurs before 'Shape mixture into balls' in the recipe 'Aromatic Bread Dumplings', we need to consider the logical sequence of preparing a mixture before shaping it. Here are the principles to consider:
+
+1. **Preparation of Ingredients**: Before shaping any mixture into balls, the ingredients must be combined and prepared. This typically involves mixing, mashing, or otherwise processing the ingredients to create a cohesive mixture.
+
+2. **Logical Sequence**: The step of shaping a mixture into balls usually follows the preparation of the mixture. Therefore, any step that involves combining or mashing ingredients is likely to occur before shaping.
+
+3. **Relevance to Recipe**: Steps that are not directly related to the preparation of the dumplings, such as cooking or steaming unrelated items (e.g., lobster), are not relevant to the immediate task of shaping the dumplings.
+
+Applying these principles, the step 'Combine ingredients, mash well' logically occurs before 'Shape mixture into balls', as it involves preparing the mixture that will be shaped.","In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?
+
+Options:
+- Cook dumplings until soft
+- Combine ingredients, mash well
+- Pour puree over vegetables
+- Steam until lobster is opaque","Combine ingredients, mash well","Combine ingredients, mash well","Combine ingredients, mash well"
+"In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?
+
+Options:
+- Steam until lobster is opaque
+- Pour puree over vegetables
+- Cook dumplings until soft
+- Roast diced potatoes
+Principles:","To determine which step occurs before 'Add broccoli, roast more' in the recipe 'Middle Eastern Vegetable Casserole', we need to consider the logical sequence of cooking steps and the context of the dish. Here are the principles to consider:
+
+1. **Ingredient Preparation**: Steps involving the preparation of ingredients typically occur before combining them. For example, roasting or steaming individual components usually precedes adding them to a larger dish.
+
+2. **Cooking Techniques**: Different cooking techniques have a natural order. For instance, roasting vegetables often happens before adding them to a casserole to ensure they are cooked through and have developed flavor.
+
+3. **Recipe Context**: Understanding the type of dish can help determine the order. A casserole often involves layering or combining pre-cooked ingredients before a final bake.
+
+4. **Ingredient Compatibility**: Consider the ingredients mentioned in the steps. Steps involving ingredients not typically found in a Middle Eastern vegetable casserole (like lobster or dumplings) are likely unrelated.
+
+Applying these principles:
+
+- **Steam until lobster is opaque**: This step is unrelated to a vegetable casserole and likely does not fit the sequence.
+- **Pour puree over vegetables**: This step could logically follow roasting vegetables, as it involves combining elements.
+- **Cook dumplings until soft**: This step is unrelated to a vegetable casserole.
+- **Roast diced potatoes**: This step is a logical precursor to adding broccoli and roasting more, as it involves preparing a vegetable component.
+
+Based on these principles, the step 'Roast diced potatoes' occurs before 'Add broccoli, roast more'.","In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?
+
+Options:
+- Steam until lobster is opaque
+- Pour puree over vegetables
+- Cook dumplings until soft
+- Roast diced potatoes",Roast diced potatoes,Roast diced potatoes,Roast diced potatoes
+"In the recipe 'Healthy Steamed Lobster Tails for One', which step occurs before 'Place tails in colander'?
+
+Options:
+- Steam until lobster is opaque
+- Pour puree over vegetables
+- Cook dumplings until soft
+- Remove membrane from lobster
+Principles:","To determine the correct order of steps in a recipe, consider the following principles:
+
+1. **Preparation Before Cooking**: Steps involving preparation, such as cleaning, cutting, or removing parts of ingredients, typically occur before cooking steps. 
+
+2. **Sequential Cooking Processes**: If a step involves cooking, it usually follows preparation steps and precedes serving or final assembly steps.
+
+3. **Dependency of Actions**: Some steps depend on the completion of previous steps. For example, you cannot cook an ingredient before it is prepared.
+
+4. **Logical Flow**: The order should follow a logical progression from preparation to cooking to serving.
+
+Applying these principles to the given options:
+
+- ""Remove membrane from lobster"" is a preparation step that logically occurs before placing the lobster tails in a colander for steaming.
+- ""Steam until lobster is opaque"" is a cooking step that would occur after placing the tails in the colander.
+- ""Pour puree over vegetables"" and ""Cook dumplings until soft"" are unrelated to the specific task of preparing lobster tails.
+
+Therefore, the step ""Remove membrane from lobster"" occurs before ""Place tails in colander"".","In the recipe 'Healthy Steamed Lobster Tails for One', which step occurs before 'Place tails in colander'?
+
+Options:
+- Steam until lobster is opaque
+- Pour puree over vegetables
+- Cook dumplings until soft
+- Remove membrane from lobster",Remove membrane from lobster,Remove membrane from lobster,Remove membrane from lobster

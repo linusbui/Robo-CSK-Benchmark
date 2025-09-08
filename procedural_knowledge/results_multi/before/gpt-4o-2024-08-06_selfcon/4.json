@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Aromatic Bread Dumplings",
+        "question": "In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?\n\nOptions:\n- Combine ingredients, mash well\n- Pour puree over vegetables\n- Steam until lobster is opaque\n- Cook dumplings until soft",
+        "response": "Combine ingredients, mash well",
+        "correct_response": "Combine ingredients, mash well"
+    },
+    {
+        "title": "Middle Eastern Vegetable Casserole",
+        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?\n\nOptions:\n- Pour puree over vegetables\n- Steam until lobster is opaque\n- Cook dumplings until soft\n- Roast diced potatoes",
+        "response": "Roast diced potatoes",
+        "correct_response": "Roast diced potatoes"
+    },
+    {
+        "title": "Healthy Steamed Lobster Tails for One",
+        "question": "In the recipe 'Healthy Steamed Lobster Tails for One', which step occurs before 'Place tails in colander'?\n\nOptions:\n- Cook dumplings until soft\n- Pour puree over vegetables\n- Remove membrane from lobster\n- Steam until lobster is opaque",
+        "response": "Remove membrane from lobster",
+        "correct_response": "Remove membrane from lobster"
+    }
+]

@@ -1,0 +1,113 @@
+question,full_answer,final_answer,correct_answer
+"In the recipe 'Worlds Best Mac and Cheese', which step occurs before 'Mix pasta with sauce'?
+
+Options:
+- Drizzle oil, garnish, serve
+- Bake with cheese topping
+- Cook pasta less than directions","In the context of the recipe titled 'Worlds Best Mac and Cheese', which procedural action is executed prior to the step 'Mix pasta with sauce'?
+
+Chosen step: Cook pasta less than directions",Cook pasta less than directions,Cook pasta less than directions
+"In the recipe 'Dilly Macaroni Salad Recipe', which step occurs before 'Combine macaroni and vegetables'?
+
+Options:
+- Blend dressing and add
+- Drizzle oil, garnish, serve
+- Bake with cheese topping
+- Cook and drain macaroni","In the context of the 'Dilly Macaroni Salad Recipe', which procedural step is executed prior to the action 'Combine macaroni and vegetables'?
+
+Chosen step: Cook and drain macaroni",Cook and drain macaroni,Cook and drain macaroni
+"In the recipe 'Gazpacho', which step occurs before 'Combine vegetables with puree'?
+
+Options:
+- Bake with cheese topping
+- Drizzle oil, garnish, serve
+- Puree tomatoes with salt","In the recipe 'Gazpacho', which step is executed prior to the step 'Combine vegetables with puree'?
+
+Options:
+- Bake with cheese topping
+- Drizzle oil, garnish, serve
+- Puree tomatoes with salt
+
+Chosen step: Puree tomatoes with salt",Puree tomatoes with salt,Puree tomatoes with salt
+"In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?
+
+Options:
+- Use stovetop if preferred
+- Add ingredients to crock pot
+- Bake in water bath","In the recipe 'Ranch Mushrooms', which step is executed prior to the step 'Cook on low heat'?
+
+Chosen step: Add ingredients to crock pot",Add ingredients to crock pot,Add ingredients to crock pot
+"In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?
+
+Options:
+- Preheat oven to 300°F
+- Bake in water bath
+- Use stovetop if preferred","In the context of the 'Raspberry Creme Brulee Recipe', which procedural action is executed prior to the step 'Heat cream, add vanilla'?
+
+Chosen step: Preheat oven to 300°F",Preheat oven to 300°F,Preheat oven to 300°F
+"In the recipe 'Barbecue Hamburger Patties Recipe', which step occurs before 'Shape into 6 patties'?
+
+Options:
+- Bake in water bath
+- Mix meat, onion, salt
+- Use stovetop if preferred
+- Brown patties in skillet","In the context of the 'Barbecue Hamburger Patties Recipe', which step is executed prior to the action of 'Shape into 6 patties'?
+
+Chosen step: Mix meat, onion, salt","Mix meat, onion, salt","Mix meat, onion, salt"
+"In the recipe 'Gingersnap Gravy', which step occurs before 'Add stock, bring to boil'?
+
+Options:
+- Add shrimp and tomatoes
+- Saute onions, celery, garlic
+- Crumble gingersnaps, whisk
+- Bake until done","In the preparation of the dish titled 'Gingersnap Gravy', which procedural action is executed prior to the instruction 'Add stock, bring to boil'?
+
+Chosen step: Saute onions, celery, garlic","Saute onions, celery, garlic","Saute onions, celery, garlic"
+"In the recipe 'Mom's Pumpkin Pie Squares Recipe', which step occurs before 'Pour into pan, sprinkle mix'?
+
+Options:
+- Add shrimp and tomatoes
+- Crumble gingersnaps, whisk
+- Bake until done
+- Combine milk, eggs, spices","In the context of the recipe titled 'Mom's Pumpkin Pie Squares Recipe', identify the step that precedes the action 'Pour into pan, sprinkle mix'. 
+
+Chosen step: Combine milk, eggs, spices","Combine milk, eggs, spices","Combine milk, eggs, spices"
+"In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which step occurs before 'Saute shallots and garlic'?
+
+Options:
+- Add shrimp and tomatoes
+- Cook pasta until al dente
+- Bake until done
+- Crumble gingersnaps, whisk","In the context of the recipe titled 'Shrimp and Pasta in a Basil Cream Sauce', which procedural action is executed prior to the step 'Saute shallots and garlic'?
+
+Chosen step:
+- Cook pasta until al dente",Cook pasta until al dente,Cook pasta until al dente
+"In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?
+
+Options:
+- Combine ingredients, mash well
+- Cook dumplings until soft
+- Pour puree over vegetables
+- Steam until lobster is opaque","In the context of the recipe 'Aromatic Bread Dumplings', the inquiry is: ""Which step is performed prior to the action of shaping the mixture into balls?""
+
+Chosen step: Combine ingredients, mash well","Combine ingredients, mash well","Combine ingredients, mash well"
+"In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?
+
+Options:
+- Roast diced potatoes
+- Cook dumplings until soft
+- Steam until lobster is opaque
+- Pour puree over vegetables","In the context of the recipe 'Middle Eastern Vegetable Casserole', determine which step is executed prior to the instruction 'Add broccoli, roast more'. 
+
+The step that occurs before 'Add broccoli, roast more' is:
+
+- Roast diced potatoes",Roast diced potatoes,Roast diced potatoes
+"In the recipe 'Healthy Steamed Lobster Tails for One', which step occurs before 'Place tails in colander'?
+
+Options:
+- Cook dumplings until soft
+- Steam until lobster is opaque
+- Remove membrane from lobster
+- Pour puree over vegetables","In the context of the recipe 'Healthy Steamed Lobster Tails for One', which step is executed prior to the action 'Place tails in colander'?
+
+Chosen step: Remove membrane from lobster",Remove membrane from lobster,Remove membrane from lobster

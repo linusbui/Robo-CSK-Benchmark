@@ -83,7 +83,7 @@ class SgiclLogEntry(ModelEvaluationResult):
         return self._final_answer
     
     def get_correct_answer(self) -> str:
-        return self._final_answer
+        return self._correct_answer
 
     def to_dict(self):
         return {

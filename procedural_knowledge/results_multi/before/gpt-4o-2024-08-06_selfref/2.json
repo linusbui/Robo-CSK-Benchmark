@@ -1,19 +1,19 @@
 [
     {
         "title": "Ranch Mushrooms",
-        "question": "In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?\n\nOptions:\n- Use stovetop if preferred\n- Add ingredients to crock pot\n- Bake in water bath\nIn the recipe 'Ranch Mushrooms', the step 'Add ingredients to crock pot' occurs before 'Cook on low heat'.\n\nYour Feedback:\nThe answer is correct. In the recipe 'Ranch Mushrooms', the step 'Add ingredients to crock pot' logically occurs before 'Cook on low heat', as you need to have the ingredients in the crock pot before you can begin cooking them. STOP.Your Choice:",
+        "question": "In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?\n\nOptions:\n- Bake in water bath\n- Add ingredients to crock pot\n- Use stovetop if preferred\nIn the recipe 'Ranch Mushrooms', the step 'Add ingredients to crock pot' occurs before 'Cook on low heat'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Add ingredients to crock pot' occurs before 'Cook on low heat'. This is because you need to add the ingredients to the crock pot before you can begin cooking them on low heat. Therefore, the temporal order is correct. STOP.Your Choice:",
         "response": "Add ingredients to crock pot",
         "correct_response": "Add ingredients to crock pot"
     },
     {
         "title": "Raspberry Creme Brulee Recipe",
-        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?\n\nOptions:\n- Use stovetop if preferred\n- Bake in water bath\n- Preheat oven to 300\u00b0F\nIn the recipe 'Raspberry Creme Brulee Recipe', the step 'Preheat oven to 300\u00b0F' occurs before 'Heat cream, add vanilla'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Preheat oven to 300\u00b0F' occurs before 'Heat cream, add vanilla'. Preheating the oven is typically one of the initial steps in a baking recipe to ensure the oven is at the correct temperature when the dish is ready to be baked. Therefore, the temporal order is correct. STOP.Your Choice:",
+        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?\n\nOptions:\n- Preheat oven to 300\u00b0F\n- Bake in water bath\n- Use stovetop if preferred\nIn the recipe 'Raspberry Creme Brulee Recipe', the step 'Preheat oven to 300\u00b0F' occurs before 'Heat cream, add vanilla'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Preheat oven to 300\u00b0F' occurs before 'Heat cream, add vanilla'. Preheating the oven is typically one of the initial steps in a baking recipe to ensure the oven is at the correct temperature when the dish is ready to be baked. Therefore, the order is correct. STOP.Your Choice:",
         "response": "Preheat oven to 300\u00b0F",
         "correct_response": "Preheat oven to 300\u00b0F"
     },
     {
         "title": "Barbecue Hamburger Patties Recipe",
-        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which step occurs before 'Shape into 6 patties'?\n\nOptions:\n- Brown patties in skillet\n- Mix meat, onion, salt\n- Bake in water bath\n- Use stovetop if preferred\nIn the recipe 'Barbecue Hamburger Patties Recipe', the step 'Mix meat, onion, salt' occurs before 'Shape into 6 patties'.\n\nYour Feedback:\nThe feedback is correct. In the process of making hamburger patties, mixing the ingredients such as meat, onion, and salt typically occurs before shaping the mixture into patties. Therefore, the step 'Mix meat, onion, salt' logically precedes 'Shape into 6 patties'. STOP.Your Choice:",
+        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which step occurs before 'Shape into 6 patties'?\n\nOptions:\n- Use stovetop if preferred\n- Bake in water bath\n- Brown patties in skillet\n- Mix meat, onion, salt\nIn the recipe 'Barbecue Hamburger Patties Recipe', the step 'Mix meat, onion, salt' occurs before 'Shape into 6 patties'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Mix meat, onion, salt' occurs before 'Shape into 6 patties'. Mixing the ingredients is a preparatory step that logically precedes shaping the mixture into patties. Therefore, the order is correct. STOP.Your Choice:",
         "response": "Mix meat, onion, salt",
         "correct_response": "Mix meat, onion, salt"
     }
