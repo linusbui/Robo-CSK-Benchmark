@@ -410,7 +410,7 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter]):
                     answers.append(response)
                     log_before.update({'question': question,
                                        f'cot_{i}': full_response,
-                                       f'final_answer_{i}': response})
+                                       f'answer_{i}': response})
                 final_answer = majority_vote(answers)
                 before_answers.append({
                     'title': title,

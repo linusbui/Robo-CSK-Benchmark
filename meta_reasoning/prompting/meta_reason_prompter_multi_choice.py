@@ -124,11 +124,12 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [
                 pred_conf = prompter_res.prompt_model(system_msg, user_msg_extract, res)
                 answers.append(pred_conf)
                 log.update({f'cot_{i}': res,
-                            f'final_answer_{i}': pred_conf})
+                            f'answer_{i}': pred_conf})
             final_pred = majority_vote(answers)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, final_pred, choices)
             results.append(tup)
-            log.update({'final_answer': final_pred})
+            log.update({'final_answer': final_pred,
+                         'correct_answer': corr_conf})
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_selfcon', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'meta_reasoning/results_multi', False)

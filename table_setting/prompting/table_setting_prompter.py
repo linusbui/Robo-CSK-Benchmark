@@ -165,17 +165,23 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
                 pred_cut = transform_utensil_prediction_selfcon(res)
                 answers_cut.append(pred_cut)
                 log_cut.update({f'cot_{i}': res,
-                                f'final_answer_{i}': pred_cut})
+                                f'answer_{i}': pred_cut})
 
                 # prompt for plate
                 res = prompter.prompt_model(system_msg, user_msg_plat_selfcon, question_plat)
                 pred_plat = transform_plate_prediction_selfcon(res)
                 answers_plate.append(pred_plat)
                 log_plat.update({f'cot_{i}': res,
-                                 f'final_answer_{i}': pred_plat})
+                                 f'answer_{i}': pred_plat})
 
-            tup.add_predicted_utensils(majority_vote(answers_cut))
-            tup.add_predicted_plate(majority_vote(answers_plate))
+            final_cut = majority_vote(answers_cut)
+            final_plat = majority_vote(answers_plate)
+            tup.add_predicted_utensils(final_cut)
+            tup.add_predicted_plate(final_plat)
+            log_cut.update({'final_answer': final_cut,
+                            'correct_answer': utensils})
+            log_plat.update({'final_answer': final_plat,
+                            'correct_answer': plate})
 
             results.append(tup)
             logs_cut.append(log_cut)

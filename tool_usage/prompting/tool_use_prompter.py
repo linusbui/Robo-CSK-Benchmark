@@ -126,7 +126,8 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
             final_pred = majority_vote(answers)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, final_pred, choices)
             results.append(tup)
-            log.update({'final_answer': final_pred})
+            log.update({'final_answer': final_pred,
+                        'correct_answer': corr_tool})
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_selfcon', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'tool_usage')
