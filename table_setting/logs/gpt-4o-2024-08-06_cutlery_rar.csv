@@ -1,0 +1,13 @@
+question,full_answer,final_answer,correct_answer
+"Meal: Lamb and Bean Nachos With Salsa Fresca
+Cutlery: ","To determine the appropriate cutlery for enjoying a meal of Lamb and Bean Nachos with Salsa Fresca, consider the nature of the dish and the typical utensils used for similar meals. Nachos are often eaten with hands due to their finger-food nature, but additional cutlery might be useful for certain components or personal preferences. 
+
+Final Answer: Hands, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Meatloaf With BBQ Sauce
+Cutlery: ","To determine the appropriate cutlery for enjoying a meal of meatloaf with BBQ sauce, consider the nature of the dish and the utensils best suited for cutting and consuming it. Meatloaf is typically a hearty dish that may require cutting into smaller, manageable pieces, and the BBQ sauce adds a layer of flavor that might be best enjoyed with a utensil that can scoop or hold sauce.
+
+Final Answer: Knife, Fork","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Tiramisu
+Cutlery: ","To determine the appropriate cutlery for enjoying a serving of tiramisu, we must consider the texture and composition of this classic Italian dessert. Tiramisu typically consists of layers of coffee-soaked ladyfingers, mascarpone cheese, cocoa, and sometimes a dusting of chocolate or cocoa powder. Given these characteristics, the ideal cutlery should allow for easy scooping and minimal disruption to the layered structure.
+
+Final Answer: Spoon",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]

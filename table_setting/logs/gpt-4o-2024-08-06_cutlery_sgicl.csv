@@ -1,0 +1,58 @@
+question,final_answer,correct_answer
+"Here are a few examples:
+Meal: Grilled Steak with Roasted Vegetables and Chimichurri Sauce
+Cutlery: Hands, Knife, Fork
+Meal: Grilled Chicken with Roasted Vegetables
+Cutlery: Knife, Fork
+Meal: Spaghetti Carbonara
+Cutlery: Fork, Spoon
+Meal: Chicken and Rice Casserole
+Cutlery: Spoon
+Meal: Bao Buns with Tofu and Pickled Vegetables
+Cutlery: Hands, Chopsticks
+Meal: Grilled Chicken with Mashed Potatoes and Steamed Vegetables
+Cutlery: Knife, Fork, Spoon
+Meal: Grilled Chicken with Roasted Vegetables and Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Grilled Chicken with Roasted Vegetables
+Cutlery: Knife, Fork
+Meal: Lamb and Bean Nachos With Salsa Fresca
+Cutlery: ","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Steak with Roasted Vegetables and Chimichurri Sauce
+Cutlery: Hands, Knife, Fork
+Meal: Grilled Chicken with Roasted Vegetables
+Cutlery: Knife, Fork
+Meal: Spaghetti Carbonara
+Cutlery: Fork, Spoon
+Meal: Chicken and Rice Casserole
+Cutlery: Spoon
+Meal: Bao Buns with Tofu and Pickled Vegetables
+Cutlery: Hands, Chopsticks
+Meal: Grilled Chicken with Mashed Potatoes and Steamed Vegetables
+Cutlery: Knife, Fork, Spoon
+Meal: Grilled Chicken with Roasted Vegetables and Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Grilled Chicken with Roasted Vegetables
+Cutlery: Knife, Fork
+Meal: Meatloaf With BBQ Sauce
+Cutlery: ","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Steak with Roasted Vegetables and Chimichurri Sauce
+Cutlery: Hands, Knife, Fork
+Meal: Grilled Chicken with Roasted Vegetables
+Cutlery: Knife, Fork
+Meal: Spaghetti Carbonara
+Cutlery: Fork, Spoon
+Meal: Chicken and Rice Casserole
+Cutlery: Spoon
+Meal: Bao Buns with Tofu and Pickled Vegetables
+Cutlery: Hands, Chopsticks
+Meal: Grilled Chicken with Mashed Potatoes and Steamed Vegetables
+Cutlery: Knife, Fork, Spoon
+Meal: Grilled Chicken with Roasted Vegetables and Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Grilled Chicken with Roasted Vegetables
+Cutlery: Knife, Fork
+Meal: Tiramisu
+Cutlery: ",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]

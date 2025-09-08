@@ -7,6 +7,7 @@ from table_setting.prompting.table_setting_model_result import TableSettingModel
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
 from utils.formatting import majority_vote
+from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
 utensils_string = ', '.join([str(utensil) for utensil in Utensil])
 plates_string = ', '.join([str(plate) for plate in Plate])
@@ -47,6 +48,8 @@ def prompt_all_models_rar(prompters: [Prompter]):
     for prompter in prompters:
         data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
         results = []
+        logs_cut = []
+        logs_plat = []
         for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
             # setup meal name & get gold standard data
             meal = row['name']
@@ -57,16 +60,24 @@ def prompt_all_models_rar(prompters: [Prompter]):
             # prompt for cutlery
             question = f'Meal: {meal}\nCutlery: '
             res = prompter.prompt_model(system_msg, user_msg_cut_rar, question)
-            tup.add_predicted_utensils(transform_utensil_prediction_meta(res))
+            pred_cut = transform_utensil_prediction_meta(res)
+            tup.add_predicted_utensils(pred_cut)
+            log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
             question = f'Meal: {meal}\nPlate: '
             res = prompter.prompt_model(system_msg, user_msg_plat_rar, question)
-            tup.add_predicted_plate(transform_plate_prediction_meta(res))
+            pred_plat = transform_plate_prediction_meta(res)
+            tup.add_predicted_plate(pred_plat)
+            log_plat = BasicLogEntry(question, res, pred_plat, plate)
 
             results.append(tup)
+            logs_cut.append(log_cut)
+            logs_plat.append(log_plat)
         write_model_results_to_file(results, prompter.model_name + '_rar', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_rar', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name + '_plate_rar', 'table_setting')
 
 
 user_msg_cut_meta = f'''What are the types of cutlery you would use to eat that meal? Please choose from the following {utensils_string}. As you perform this task, follow these steps:
@@ -91,6 +102,8 @@ def prompt_all_models_meta(prompters: [Prompter]):
     for prompter in prompters:
         data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
         results = []
+        logs_cut = []
+        logs_plat = []
         for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
             # setup meal name & get gold standard data
             meal = row['name']
@@ -101,16 +114,24 @@ def prompt_all_models_meta(prompters: [Prompter]):
             # prompt for cutlery
             question = f'Meal: {meal}\nCutlery: '
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
-            tup.add_predicted_utensils(transform_utensil_prediction_meta(res))
+            pred_cut = transform_utensil_prediction_meta(res)
+            tup.add_predicted_utensils(pred_cut)
+            log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
             question = f'Meal: {meal}\nPlate: '
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
-            tup.add_predicted_plate(transform_plate_prediction_meta(res))
+            pred_plat = transform_plate_prediction_meta(res)
+            tup.add_predicted_plate(pred_plat)
+            log_plat = BasicLogEntry(question, res, pred_plat, plate)
 
             results.append(tup)
+            logs_cut.append(log_cut)
+            logs_plat.append(log_plat)
         write_model_results_to_file(results, prompter.model_name + '_meta', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_meta', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name + '_plate_meta', 'table_setting')
 
 
 user_msg_cut_selfcon = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}. Think step by step before answering with the cutlery of your choosing.'
@@ -121,6 +142,8 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
     for prompter in prompters:
         data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
         results = []
+        logs_cut = []
+        logs_plat = []
         for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
             # setup meal name & get gold standard data
             meal = row['name']
@@ -128,25 +151,39 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
             utensils = get_utensils(row)
             tup = TableSettingModelResult(meal, plate, utensils)
 
+            question_cut = f'Meal: {meal}\nCutlery: '
+            question_plat = f'Meal: {meal}\nPlate: '
+
+            log_cut = {'question': question_cut}
+            log_plat = {'question': question_plat}
+
             answers_cut = []
             answers_plate = []
             for i in range(MAXIT_selfcon):
                 # prompt for cutlery
-                question = f'Meal: {meal}\nCutlery: '
-                res = prompter.prompt_model(system_msg, user_msg_cut_selfcon, question)
-                answers_cut.append(transform_utensil_prediction_selfcon(res))
+                res = prompter.prompt_model(system_msg, user_msg_cut_selfcon, question_cut)
+                pred_cut = transform_utensil_prediction_selfcon(res)
+                answers_cut.append(pred_cut)
+                log_cut.update({f'cot_{i}': res,
+                                f'final_answer_{i}': pred_cut})
 
                 # prompt for plate
-                question = f'Meal: {meal}\nPlate: '
-                res = prompter.prompt_model(system_msg, user_msg_plat_selfcon, question)
-                answers_plate.append(transform_plate_prediction_selfcon(res))
+                res = prompter.prompt_model(system_msg, user_msg_plat_selfcon, question_plat)
+                pred_plat = transform_plate_prediction_selfcon(res)
+                answers_plate.append(pred_plat)
+                log_plat.update({f'cot_{i}': res,
+                                 f'final_answer_{i}': pred_plat})
 
             tup.add_predicted_utensils(majority_vote(answers_cut))
             tup.add_predicted_plate(majority_vote(answers_plate))
 
             results.append(tup)
+            logs_cut.append(log_cut)
+            logs_plat.append(log_plat)
         write_model_results_to_file(results, prompter.model_name + '_selfcon', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'table_setting')
+        write_general_log_to_file(logs_cut, prompter.model_name + '_cutlery_selfcon', 'table_setting')
+        write_general_log_to_file(logs_plat, prompter.model_name + '_plate_selfcon', 'table_setting')
 
 
 user_msg_cut_initial = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}'
@@ -161,6 +198,8 @@ def prompt_all_models_selfref(prompters: [Prompter]):
     for prompter in prompters:
         data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
         results = []
+        logs_cut = []
+        logs_plat = []
         for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
             # setup meal name & get gold standard data
             meal = row['name']
@@ -191,7 +230,9 @@ def prompt_all_models_selfref(prompters: [Prompter]):
             user_msg_cut_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choices: {utensils_string}'
             question = question + 'Your Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_cut_final, question)
-            tup.add_predicted_utensils(transform_utensil_prediction_meta(final_pred))
+            pred_cut = transform_utensil_prediction_meta(final_pred)
+            tup.add_predicted_utensils(pred_cut)
+            log_cut = BasicLogEntry(question, final_pred, pred_cut, utensils)
 
             # initial prompt for plate
             question = f'Meal: {meal}\nPlate: '
@@ -216,11 +257,17 @@ def prompt_all_models_selfref(prompters: [Prompter]):
             user_msg_plat_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice: {plates_string}'
             question = question + 'Your Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_plat_final, question)
-            tup.add_predicted_plate(transform_plate_prediction_meta(final_pred))
+            pred_plat = transform_plate_prediction_meta(final_pred)
+            tup.add_predicted_plate(pred_plat)
+            log_plat = BasicLogEntry(question, final_pred, pred_plat, utensils)
 
             results.append(tup)
+            logs_cut.append(log_cut)
+            logs_plat.append(log_plat)
         write_model_results_to_file(results, prompter.model_name + '_selfref', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_selfref', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name + '_plate_selfref', 'table_setting')
 
 
 system_msg = 'Imagine you are a robot setting a table for a meal.'
@@ -231,6 +278,8 @@ def prompt_all_models_stepback(prompters: [Prompter]):
     for prompter in prompters:
         data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
         results = []
+        logs_cut = []
+        logs_plat = []
         for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
             # setup meal name & get gold standard data
             meal = row['name']
@@ -240,15 +289,17 @@ def prompt_all_models_stepback(prompters: [Prompter]):
 
             # prompt for cutlery
             # Get higher level principles
-            question = f'Meal: {meal}\nPrinciples: '
-            principles = prompter.prompt_model(system_msg, user_msg_cut_principle, question)
+            p_question = f'Meal: {meal}\nPrinciples: '
+            principles = prompter.prompt_model(system_msg, user_msg_cut_principle, p_question)
 
             # Get answer based on principles
             question = f'Meal: {meal}\nCutlery: '
             user_msg_cut_stepback = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string} and answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only the cutlery of your choosing.'
             
             res = prompter.prompt_model(system_msg, user_msg_cut_stepback, question)
-            tup.add_predicted_utensils(transform_utensil_prediction_selfcon(res))
+            pred_cut = transform_utensil_prediction_selfcon(res)
+            tup.add_predicted_utensils(pred_cut)
+            log_cut = StepbackLogEntry(p_question, principles, question, res, pred_cut, utensils)
 
             # prompt for plate
             # Get higher level principles
@@ -260,11 +311,17 @@ def prompt_all_models_stepback(prompters: [Prompter]):
             user_msg_plat_stepback = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string} and answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only your chosen plate.'
 
             res = prompter.prompt_model(system_msg, user_msg_plat_stepback, question)
-            tup.add_predicted_plate(transform_plate_prediction_selfcon(res))
+            pred_plat = transform_plate_prediction_selfcon(res)
+            tup.add_predicted_plate(pred_plat)
+            log_plat = StepbackLogEntry(p_question, principles, question, res, pred_plat, plate)
 
             results.append(tup)
+            logs_cut.append(log_cut)
+            logs_plat.append(log_plat)
         write_model_results_to_file(results, prompter.model_name + '_stepback', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_stepback', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name + '_plate_stepback', 'table_setting')
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
@@ -316,6 +373,8 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
         # few shot prompting
         data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
         results = []
+        logs_cut = []
+        logs_plat = []
         for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
             # setup meal name & get gold standard data
             meal = row['name']
@@ -326,16 +385,24 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
             # prompt for cutlery
             question = f'Here are a few examples:\n{ex_cut_str}Meal: {meal}\nCutlery: '
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
-            tup.add_predicted_utensils(transform_utensil_prediction(res))
+            pred_cut = transform_utensil_prediction(res)
+            tup.add_predicted_utensils(pred_cut)
+            log_cut = SgiclLogEntry(question, pred_cut, utensils)
 
             # prompt for plate
             question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate: '
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
-            tup.add_predicted_plate(transform_plate_prediction(res))
+            pred_plat = transform_plate_prediction(res)
+            tup.add_predicted_plate(pred_plat)
+            log_plat = SgiclLogEntry(question, pred_plat, plate)
 
             results.append(tup)
+            logs_cut.append(log_cut)
+            logs_plat.append(log_plat)
         write_model_results_to_file(results, prompter.model_name + '_sgicl', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_sgicl', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name + '_plate_sgicl', 'table_setting')
 
 
 def get_fitting_plate(row) -> Plate:

@@ -1,4 +1,4 @@
 meal,predicted_plate,correct_plate,predicted_utensils,correct_utensils,plate_is_correct,jaccard_utensil
-Lamb and Bean Nachos With Salsa Fresca,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+Lamb and Bean Nachos With Salsa Fresca,Coupe Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,0.5
 Meatloaf With BBQ Sauce,Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
 Tiramisu,Dessert Plate,Dessert Plate,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.5
