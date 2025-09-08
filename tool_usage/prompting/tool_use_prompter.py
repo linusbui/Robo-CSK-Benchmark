@@ -9,6 +9,7 @@ from tool_usage.prompting.tool_use_result import ToolSubstitutionResult
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
 from utils.formatting import transform_prediction_meta_single, majority_vote
+from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
 
 system_msg = 'Imagine you are a robot in a household environment being confronted with a task and a list of tools.'
@@ -39,6 +40,7 @@ user_msg_rar = 'What is the single tool from the given list that you think is mo
 def prompt_all_models_rar(prompters: [Prompter]):
     for prompter in prompters:
         results = []
+        logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
@@ -53,8 +55,11 @@ def prompt_all_models_rar(prompters: [Prompter]):
             pred_tool = transform_prediction_meta_single(res, choices)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
             results.append(tup)
+            log = BasicLogEntry(question, res, pred_tool, corr_tool)
+            logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_rar', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'tool_usage')
+        write_log_to_file(logs, prompter.model_name + '_rar', 'tool_usage')
 
 
 user_msg_meta = '''
@@ -70,6 +75,7 @@ Provide the answer in your final response as only the tool you choose.
 def prompt_all_models_meta(prompters: [Prompter]):
     for prompter in prompters:
         results = []
+        logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
@@ -84,8 +90,11 @@ def prompt_all_models_meta(prompters: [Prompter]):
             pred_tool = transform_prediction_meta_single(res, choices)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
             results.append(tup)
+            log = BasicLogEntry(question, res, pred_tool, corr_tool)
+            logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_meta', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'tool_usage')
+        write_log_to_file(logs, prompter.model_name + '_meta', 'tool_usage')
 
 
 user_msg_selfcon = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Think step by step before answering with the single tool of your choosing.'
@@ -94,6 +103,7 @@ MAXIT_selfcon = 2
 def prompt_all_models_selfcon(prompters: [Prompter]):
     for prompter in prompters:
         results = []
+        logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
@@ -105,15 +115,22 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
             choices_string = ', '.join([c for c in choices])
             question = f'Task: {task}\nTools: {choices_string}\nYour Choice:'
 
+            log = {'question': question}
             answers = []
             for i in range(MAXIT_selfcon):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
                 pred_tool = transform_prediction_meta_single(res, choices)
                 answers.append(pred_tool)
-            tup = ToolSubstitutionResult(task, affordance, corr_tool, majority_vote(answers), choices)
+                log.update({f'cot_{i}': res,
+                            f'final_answer_{i}': pred_tool})
+            final_pred = majority_vote(answers)
+            tup = ToolSubstitutionResult(task, affordance, corr_tool, final_pred, choices)
             results.append(tup)
+            log.update({'final_answer': final_pred})
+            logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_selfcon', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'tool_usage')
+        write_general_log_to_file(logs, prompter.model_name + '_selfcon', 'tool_usage')
 
 
 user_msg_initial = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
@@ -124,6 +141,7 @@ MAXIT_selfref = 2
 def prompt_all_models_selfref(prompters: [Prompter]):
     for prompter in prompters:
         results = []
+        logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
@@ -159,11 +177,14 @@ def prompt_all_models_selfref(prompters: [Prompter]):
             question = question + 'Your Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
             pred_tool = transform_prediction_meta_single(final_pred, choices)
-            tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
 
+            tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
             results.append(tup)
+            log = BasicLogEntry(question, final_pred, pred_tool, corr_tool)
+            logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_selfref', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'tool_usage')
+        write_log_to_file(logs, prompter.model_name + '_selfref', 'tool_usage')
 
 
 user_msg = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
@@ -172,6 +193,7 @@ user_msg_principle = 'Your task is to extract the underlying concepts and princi
 def prompt_all_models_stepback(prompters: [Prompter]):
     for prompter in prompters:
         results = []
+        logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
@@ -183,8 +205,8 @@ def prompt_all_models_stepback(prompters: [Prompter]):
             choices_string = ', '.join([c for c in choices])
 
             # Get higher level principles
-            question = f'Task: {task}\nTools: {choices_string}\nPrinciples:'
-            principles = prompter.prompt_model(system_msg, user_msg_principle, question)
+            p_question = f'Task: {task}\nTools: {choices_string}\nPrinciples:'
+            principles = prompter.prompt_model(system_msg, user_msg_principle, p_question)
 
             # Get answer based on principles
             user_msg_stepback = f'What is the single tool from the given list that you think is most suitable to help you execute your task? Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only the tool you choose.'
@@ -195,8 +217,11 @@ def prompt_all_models_stepback(prompters: [Prompter]):
             pred_tool = transform_prediction_meta_single(res, choices)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
             results.append(tup)
+            log = StepbackLogEntry(p_question, principles, question, res, pred_tool, corr_tool)
+            logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_stepback', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'tool_usage')
+        write_log_to_file(logs, prompter.model_name + '_stepback', 'tool_usage')
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
@@ -235,6 +260,7 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
 
         # few shot prompting
         results = []
+        logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
@@ -248,8 +274,12 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, res, choices)
             results.append(tup)
+            log = SgiclLogEntry(question, res, corr_tool)
+            logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_sgicl', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'tool_usage')
+        write_log_to_file(logs, prompter.model_name + '_sgicl', 'tool_usage')
+
 
 def calculate_average(results: [ToolSubstitutionResult], model: str):
     average = {met: 0 for met in ['acc']}
