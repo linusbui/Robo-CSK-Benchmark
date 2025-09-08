@@ -122,7 +122,7 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
                 pred_tool = transform_prediction_meta_single(res, choices)
                 answers.append(pred_tool)
                 log.update({f'cot_{i}': res,
-                            f'final_answer_{i}': pred_tool})
+                            f'answer_{i}': pred_tool})
             final_pred = majority_vote(answers)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, final_pred, choices)
             results.append(tup)

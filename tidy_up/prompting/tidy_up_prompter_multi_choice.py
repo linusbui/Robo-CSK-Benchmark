@@ -121,7 +121,7 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
                 pred_loc = transform_prediction_meta_single(res, choices)
                 answers.append(pred_loc)
                 log.update({f'cot_{i}': res,
-                            f'final_answer_{i}': pred_loc})
+                            f'answer_{i}': pred_loc})
             final_pred = majority_vote(answers)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, final_pred, choices)
             results.append(tup)
