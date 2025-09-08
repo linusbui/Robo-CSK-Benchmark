@@ -50,7 +50,7 @@ def prompt_all_models_rar(prompters: [Prompter]):
         results = []
         logs_cut = []
         logs_plat = []
-        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task with RaR Prompting'):
             # setup meal name & get gold standard data
             meal = row['name']
             plate = get_fitting_plate(row)
@@ -104,7 +104,7 @@ def prompt_all_models_meta(prompters: [Prompter]):
         results = []
         logs_cut = []
         logs_plat = []
-        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task with Metacognitive Prompting'):
             # setup meal name & get gold standard data
             meal = row['name']
             plate = get_fitting_plate(row)
@@ -144,7 +144,7 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
         results = []
         logs_cut = []
         logs_plat = []
-        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task with Self-Consistency Prompting'):
             # setup meal name & get gold standard data
             meal = row['name']
             plate = get_fitting_plate(row)
@@ -206,7 +206,7 @@ def prompt_all_models_selfref(prompters: [Prompter]):
         results = []
         logs_cut = []
         logs_plat = []
-        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task with Self-Refine Prompting' ):
             # setup meal name & get gold standard data
             meal = row['name']
             plate = get_fitting_plate(row)
@@ -286,7 +286,7 @@ def prompt_all_models_stepback(prompters: [Prompter]):
         results = []
         logs_cut = []
         logs_plat = []
-        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task with Stepback Prompting'):
             # setup meal name & get gold standard data
             meal = row['name']
             plate = get_fitting_plate(row)
@@ -381,7 +381,7 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
         results = []
         logs_cut = []
         logs_plat = []
-        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task with SG-ICL Prompting'):
             # setup meal name & get gold standard data
             meal = row['name']
             plate = get_fitting_plate(row)

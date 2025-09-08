@@ -43,7 +43,7 @@ def prompt_all_models_rar(prompters: [Prompter]):
         logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
-        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task with RaR Prompting'):
             task = row['Task']
             affordance = row['Affordance']
             corr_tool = row['Correct_Tool']
@@ -78,7 +78,7 @@ def prompt_all_models_meta(prompters: [Prompter]):
         logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
-        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task with Metacognitive Prompting'):
             task = row['Task']
             affordance = row['Affordance']
             corr_tool = row['Correct_Tool']
@@ -106,7 +106,7 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
         logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
-        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task with Self-Consistency Prompting'):
             task = row['Task']
             affordance = row['Affordance']
             corr_tool = row['Correct_Tool']
@@ -145,7 +145,7 @@ def prompt_all_models_selfref(prompters: [Prompter]):
         logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
-        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task with Self-Refine Prompting'):
             task = row['Task']
             affordance = row['Affordance']
             corr_tool = row['Correct_Tool']
@@ -197,7 +197,7 @@ def prompt_all_models_stepback(prompters: [Prompter]):
         logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
-        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task with Stepback Prompting'):
             task = row['Task']
             affordance = row['Affordance']
             corr_tool = row['Correct_Tool']
@@ -264,7 +264,7 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
         logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
-        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task with SG-ICL Prompting'):
             task = row['Task']
             affordance = row['Affordance']
             corr_tool = row['Correct_Tool']

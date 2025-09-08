@@ -44,7 +44,7 @@ def prompt_all_models_rar(prompters: [Prompter]):
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task with RaR Prompting'):
             task = row['Task']
             corr_conf = row['Correct_Configuration']
             choices = row['Wrong_Configurations'] + [corr_conf]
@@ -78,7 +78,7 @@ def prompt_all_models_meta(prompters: [Prompter]):
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task with Metacognitive Prompting'):
             task = row['Task']
             corr_conf = row['Correct_Configuration']
             choices = row['Wrong_Configurations'] + [corr_conf]
@@ -106,7 +106,7 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task with Self-Consistency Prompting'):
             task = row['Task']
             corr_conf = row['Correct_Configuration']
             choices = row['Wrong_Configurations'] + [corr_conf]
@@ -148,7 +148,7 @@ def prompt_all_models_selfref(prompters: [Prompter]):
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task with Self-Refine Prompting'):
             task = row['Task']
             corr_conf = row['Correct_Configuration']
             choices = row['Wrong_Configurations'] + [corr_conf]
@@ -199,7 +199,7 @@ def prompt_all_models_stepback(prompters: [Prompter]):
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task with Stepback Prompting'):
             task = row['Task']
             corr_conf = row['Correct_Configuration']
             choices = row['Wrong_Configurations'] + [corr_conf]
@@ -265,7 +265,7 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task with SG-ICL Prompting'):
             task = row['Task']
             corr_conf = row['Correct_Configuration']
             choices = row['Wrong_Configurations'] + [corr_conf]

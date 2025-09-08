@@ -43,7 +43,7 @@ def prompt_all_models_rar(prompters: [Prompter]):
         questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with RaR Prompting'):
             obj = row['Object']
             corr_loc = row['Correct_Location']
             choices = row['Wrong_Locations'] + [corr_loc]
@@ -78,7 +78,7 @@ def prompt_all_models_meta(prompters: [Prompter]):
         questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Metacognitive Prompting'):
             obj = row['Object']
             corr_loc = row['Correct_Location']
             choices = row['Wrong_Locations'] + [corr_loc]
@@ -106,7 +106,7 @@ def prompt_all_models_selfcon(prompters: [Prompter]):
         questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Self-Consistency Prompting'):
             obj = row['Object']
             corr_loc = row['Correct_Location']
             choices = row['Wrong_Locations'] + [corr_loc]
@@ -145,7 +145,7 @@ def prompt_all_models_selfref(prompters: [Prompter]):
         questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Self-Refine Prompting'):
             obj = row['Object']
             corr_loc = row['Correct_Location']
             choices = row['Wrong_Locations'] + [corr_loc]
@@ -193,7 +193,7 @@ def prompt_all_models_stepback(prompters: [Prompter]):
         questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Stepback Prompting'):
             obj = row['Object']
             corr_loc = row['Correct_Location']
             choices = row['Wrong_Locations'] + [corr_loc]
@@ -260,7 +260,7 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
         questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with SG-ICL Prompting'):
             obj = row['Object']
             corr_loc = row['Correct_Location']
             choices = row['Wrong_Locations'] + [corr_loc]
