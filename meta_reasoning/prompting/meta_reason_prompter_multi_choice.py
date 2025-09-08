@@ -10,7 +10,7 @@ from tidy_up.prompting.tidy_up_result import TidyUpMultiChoiceResult
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
 from utils.formatting import transform_prediction_meta_single, transform_prediction_selfcon_single, majority_vote
-from utils.logging import BasicLogEntry, StepbackLogEntry, write_log_to_file, write_general_log_to_file
+from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
 system_msg = 'Imagine you are to create a robot for a specific household task.'
 user_msg = 'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Please only answer with the complete configuration you chose.'
@@ -272,10 +272,9 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
             choices_string = ', '.join([c for c in choices])
             question = f'Here are a few examples:\n{ex_str}Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            pred_conf = transform_prediction_meta_single(res, choices)
-            tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
+            tup = MetaReasoningMultiChoiceResult(task, corr_conf, res, choices)
             results.append(tup)
-            log = BasicLogEntry(question, res, pred_conf, corr_conf)
+            log = SgiclLogEntry(question, res, corr_conf)
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_sgicl', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'meta_reasoning/results_multi', False)

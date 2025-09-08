@@ -1,11 +1,11 @@
 object,correct_location,predicted_location,location_choices,correct_prediction
-action figure,pantry room,suitcase,"['laundry room', 'suitcase', 'car', 'pantry room', 'palace']",False
-adjustable wrench,bedroom,loft,"['press', 'bedroom', 'loft', 'cat', 'glass']",False
-alarmclock,bedroom,bedroom,"['bedroom', 'larder', 'attic', 'different room', ""child's room""]",True
-aluminumfoil,kitchen,kitchen,"[""prostitute's bedroom"", 'lamp', 'exercise room', 'bathroom cabinet', 'kitchen']",True
-android figure,corridor,chest,"['chest', 'corridor', 'separate room', 'castle', 'teapot']",False
-anti slip tape,exercise room,exercise room,"[""children's room"", 'icebox', 'side of  room', 'home', 'exercise room']",True
-antidepressant,pantry room,none of the provided locations are suitable for storing medications.,"['bundle', 'laundry room', 'motel room', 'larder', 'pantry room']",False
-antique,attic,attic,"['attic', 'butt', 'pot', 'court', 'hall']",True
-apple,kitchen,kitchen,"['cup', 'furniture', 'loft', 'bus', 'kitchen']",True
-applesauce,jar,jar,"['jar', 'sack', 'engine', 'teapot', 'dishwasher']",True
+action figure,pantry room,suitcase,"['pantry room', 'car', 'laundry room', 'suitcase', 'palace']",False
+adjustable wrench,bedroom,loft,"['cat', 'glass', 'bedroom', 'loft', 'press']",False
+alarmclock,bedroom,bedroom,"['different room', ""child's room"", 'larder', 'bedroom', 'attic']",True
+aluminumfoil,kitchen,kitchen,"['bathroom cabinet', 'exercise room', 'lamp', ""prostitute's bedroom"", 'kitchen']",True
+android figure,corridor,chest,"['castle', 'corridor', 'teapot', 'chest', 'separate room']",False
+anti slip tape,exercise room,exercise room,"['side of  room', 'exercise room', 'home', ""children's room"", 'icebox']",True
+antidepressant,pantry room,pantry room,"['larder', 'pantry room', 'bundle', 'motel room', 'laundry room']",True
+antique,attic,attic,"['pot', 'hall', 'butt', 'attic', 'court']",True
+apple,kitchen,kitchen,"['cup', 'kitchen', 'bus', 'furniture', 'loft']",True
+applesauce,jar,jar,"['teapot', 'sack', 'engine', 'jar', 'dishwasher']",True

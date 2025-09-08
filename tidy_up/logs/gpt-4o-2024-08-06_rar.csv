@@ -1,0 +1,53 @@
+question,full_answer,final_answer,correct_answer
+"Object: action figure
+Locations: palace, car, laundry room, pantry room, suitcase
+Your Choice:","Given the object, an action figure, and the list of potential locations to place it, which location would be the most appropriate and logical choice for storing or displaying the action figure? Consider the typical use and context of each location to determine the best fit for the action figure. 
+
+The most suitable location for the action figure is the ""suitcase.""",suitcase,suitcase
+"Object: adjustable wrench
+Locations: loft, glass, press, cat, bedroom
+Your Choice:","Given the object, an adjustable wrench, and the list of potential locations—loft, glass, press, cat, bedroom—where would be the most appropriate place to store the wrench? Consider the function and typical storage practices for such a tool. The most suitable location for the adjustable wrench is:
+
+Press",press,press
+"Object: alarmclock
+Locations: different room, attic, bedroom, child's room, larder
+Your Choice:","Given the object, which is an alarm clock, and the list of potential locations to place it, which single location would be the most appropriate and practical for its intended use? The goal is to ensure the alarm clock is easily accessible and functional for its primary purpose of waking someone up. 
+
+Bedroom",bedroom,bedroom
+"Object: aluminumfoil
+Locations: exercise room, lamp, bathroom cabinet, kitchen, prostitute's bedroom
+Your Choice:","Given the object ""aluminum foil"" and the list of potential locations, the task is to determine the most appropriate place to store the aluminum foil. Aluminum foil is typically used in cooking and food storage, making the kitchen the most logical and suitable location for it. Therefore, the best choice from the provided list is:
+
+Kitchen",kitchen,kitchen
+"Object: android figure
+Locations: teapot, corridor, castle, separate room, chest
+Your Choice:","Given the object, which is an android figure, and the list of potential locations to place it, which includes a teapot, corridor, castle, separate room, and chest, determine the most appropriate and logical location for storing or displaying the android figure. Consider factors such as the nature of the object, its size, and the typical use or purpose of each location. 
+
+Chest",chest,chest
+"Object: anti slip tape
+Locations: exercise room, icebox, children's room, home, side of  room
+Your Choice:","Given the object, which is anti-slip tape, and the list of potential locations, where would be the most appropriate place to store or use this item? Consider the function and typical use of anti-slip tape when determining the best location. 
+
+Exercise Room",exercise room,exercise room
+"Object: antidepressant
+Locations: pantry room, laundry room, larder, bundle, motel room
+Your Choice:","Given the object, which is an antidepressant, and the list of potential locations to store it, consider the most appropriate and safe place for storing medication. Antidepressants should be kept in a secure, dry, and cool environment, away from food and household chemicals, to ensure they remain effective and safe for use. From the provided list of locations, identify the one that best meets these criteria for storing medication. 
+
+The most suitable location for storing the antidepressant is: 
+
+Larder",larder,larder
+"Object: antique
+Locations: attic, hall, pot, court, butt
+Your Choice:","Given the object is an antique, the most suitable location from the provided list would be a place that offers protection and is typically used for storing valuable or delicate items. Considering the options, the attic is often used for storing items that are not frequently used but are kept safe, such as antiques. Therefore, the attic would be the most appropriate choice for placing the antique. 
+
+Attic",attic,attic
+"Object: apple
+Locations: bus, cup, loft, kitchen, furniture
+Your Choice:","Given the object, which is an apple, and the list of potential locations—bus, cup, loft, kitchen, and furniture—where would be the most appropriate and logical place to store or place the apple? Consider the context and typical usage of each location to determine the best fit for the apple. 
+
+Kitchen",kitchen,kitchen
+"Object: applesauce
+Locations: dishwasher, teapot, sack, jar, engine
+Your Choice:","Given the object ""applesauce"" and the list of potential locations—dishwasher, teapot, sack, jar, and engine—where would be the most appropriate place to store the applesauce? Consider the function and typical use of each location to determine the best fit for storing or containing applesauce. 
+
+Jar",jar,jar

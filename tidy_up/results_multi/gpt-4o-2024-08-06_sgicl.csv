@@ -1,11 +1,11 @@
 object,correct_location,predicted_location,location_choices,correct_prediction
-action figure,pantry room,suitcase,"['suitcase', 'pantry room', 'palace', 'laundry room', 'car']",False
-adjustable wrench,bedroom,loft,"['loft', 'cat', 'bedroom', 'press', 'glass']",False
-alarmclock,bedroom,bedroom,"['different room', 'bedroom', 'attic', 'larder', ""child's room""]",True
-aluminumfoil,kitchen,kitchen,"['bathroom cabinet', 'lamp', 'exercise room', ""prostitute's bedroom"", 'kitchen']",True
-android figure,corridor,separate room,"['corridor', 'teapot', 'separate room', 'chest', 'castle']",False
-anti slip tape,exercise room,exercise room,"['icebox', 'home', ""children's room"", 'exercise room', 'side of  room']",True
-antidepressant,pantry room,pantry room,"['motel room', 'laundry room', 'larder', 'pantry room', 'bundle']",True
-antique,attic,attic,"['butt', 'pot', 'hall', 'court', 'attic']",True
-apple,kitchen,kitchen,"['bus', 'loft', 'cup', 'kitchen', 'furniture']",True
-applesauce,jar,jar,"['teapot', 'sack', 'engine', 'jar', 'dishwasher']",True
+action figure,pantry room,pantry room,"['car', 'suitcase', 'pantry room', 'palace', 'laundry room']",True
+adjustable wrench,bedroom,loft,"['glass', 'bedroom', 'press', 'cat', 'loft']",False
+alarmclock,bedroom,bedroom,"['bedroom', ""child's room"", 'attic', 'larder', 'different room']",True
+aluminumfoil,kitchen,kitchen,"['lamp', 'exercise room', ""prostitute's bedroom"", 'bathroom cabinet', 'kitchen']",True
+android figure,corridor,chest,"['separate room', 'castle', 'teapot', 'corridor', 'chest']",False
+anti slip tape,exercise room,home,"['home', 'icebox', ""children's room"", 'exercise room', 'side of  room']",False
+antidepressant,pantry room,larder,"['bundle', 'pantry room', 'larder', 'motel room', 'laundry room']",False
+antique,attic,attic,"['pot', 'attic', 'court', 'butt', 'hall']",True
+apple,kitchen,kitchen,"['furniture', 'kitchen', 'bus', 'loft', 'cup']",True
+applesauce,jar,jar,"['engine', 'jar', 'sack', 'teapot', 'dishwasher']",True

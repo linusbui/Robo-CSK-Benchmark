@@ -69,6 +69,30 @@ class StepbackLogEntry(ModelEvaluationResult):
             'correct_answer': self.get_correct_answer()
         }
 
+
+class SgiclLogEntry(ModelEvaluationResult):
+    def __init__(self, question: str, final_answer: str, correct_answer: str):
+        self._question = question
+        self._final_answer = final_answer
+        self._correct_answer = correct_answer
+
+    def get_question(self) -> str:
+        return self._question
+
+    def get_final_answer(self) -> str:
+        return self._final_answer
+    
+    def get_correct_answer(self) -> str:
+        return self._final_answer
+
+    def to_dict(self):
+        return {
+            'question': self.get_question(),
+            'final_answer': self.get_final_answer(),
+            'correct_answer': self.get_correct_answer()
+        }
+
+
 def write_log_to_file(logs: [ModelEvaluationResult], model: str, folder: str):
     file = f'{folder}/logs/{model.lower()}.csv'
     dict_list = [log.to_dict() for log in logs]
