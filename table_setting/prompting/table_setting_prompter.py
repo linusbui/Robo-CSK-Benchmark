@@ -411,6 +411,122 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
         write_log_to_file(logs_plat, prompter.model_name + '_plate_sgicl', 'table_setting')
 
 
+system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
+user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
+
+NUM_COT = 4
+def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
+    for prompter in prompters:
+        # Generate cutlery examples if needed
+        ex_cut_file = f'table_setting/examples/table_setting_multichoice_cot_cut_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_cut_file):
+            results = []
+            log_cut = pd.read_csv(f'table_setting/logs/{prompter.model_name}_cutlery_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            for index, row in tqdm(log_cut.iterrows(),
+                                f'Prompting {prompter.model_name} to generate Table Setting task cutlery examples'):
+                corr_cut = row['correct_answer']
+                # get correct cot
+                cot_right = ''
+                for i in range(MAXIT_selfcon):
+                    answ = row[f'answer_{i}']
+                    if answ == corr_cut:
+                        cot_right = row[f'cot_{i}']
+                        break
+                if cot_right == '': continue
+
+                question = f'Right answer:\n{cot_right}\nWrong answer:'
+                cot_wrong = prompter.prompt_model(system_msg_rewrite, user_msg_rewrite, question)
+                entry = {
+                    'question': row['question'],
+                    'cot_right': cot_right,
+                    'cot_wrong': cot_wrong
+                }
+                results.append(entry)
+            df = pd.DataFrame(results)
+            df.to_csv(ex_cut_file, index=False)
+            print('Finished generating cutlery examples')
+        
+        # Generate plate examples if needed
+        ex_plat_file = f'table_setting/examples/table_setting_multichoice_cot_plat_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_plat_file):
+            results = []
+            log_cut = pd.read_csv(f'table_setting/logs/{prompter.model_name}_plate_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            for index, row in tqdm(log_cut.iterrows(),
+                                f'Prompting {prompter.model_name} to generate Table Setting task plate examples'):
+                corr_plat = row['correct_answer']
+                # get correct cot
+                cot_right = ''
+                for i in range(MAXIT_selfcon):
+                    answ = row[f'answer_{i}']
+                    if answ == corr_plat:
+                        cot_right = row[f'cot_{i}']
+                        break
+                if cot_right == '': continue
+
+                question = f'Right answer:\n{cot_right}\nWrong answer:'
+                cot_wrong = prompter.prompt_model(system_msg_rewrite, user_msg_rewrite, question)
+                entry = {
+                    'question': row['question'],
+                    'cot_right': cot_right,
+                    'cot_wrong': cot_wrong
+                }
+                results.append(entry)
+            df = pd.DataFrame(results)
+            df.to_csv(ex_plat_file, index=False)
+            print('Finished generating plate examples')
+        
+        # Load examples
+        examples = pd.read_csv(ex_cut_file, delimiter=',', on_bad_lines='skip', nrows=NUM_COT)
+        ex_cut_str = ''
+        for index, row in examples.iterrows():
+            question = row['question']
+            cot_right = row['cot_right']
+            cot_wrong = row['cot_wrong']
+            ex_cut_str = ex_cut_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+
+        examples = pd.read_csv(ex_plat_file, delimiter=',', on_bad_lines='skip', nrows=NUM_COT)
+        ex_plat_str = ''
+        for index, row in examples.iterrows():
+            question = row['question']
+            cot_right = row['cot_right']
+            cot_wrong = row['cot_wrong']
+            ex_plat_str = ex_plat_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+        
+        # few shot prompting
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        results = []
+        logs_cut = []
+        logs_plat = []
+        for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task with Contrastive CoT Prompting'):
+            # setup meal name & get gold standard data
+            meal = row['name']
+            plate = get_fitting_plate(row)
+            utensils = get_utensils(row)
+            tup = TableSettingModelResult(meal, plate, utensils)
+
+            # prompt for cutlery
+            question = f'Here are a few examples:\n{ex_cut_str}Meal: {meal}\nCutlery: '
+            res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
+            pred_cut = transform_utensil_prediction(res)
+            tup.add_predicted_utensils(pred_cut)
+            log_cut = SgiclLogEntry(question, pred_cut, utensils)
+
+            # prompt for plate
+            question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate: '
+            res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
+            pred_plat = transform_plate_prediction(res)
+            tup.add_predicted_plate(pred_plat)
+            log_plat = SgiclLogEntry(question, pred_plat, plate)
+
+            results.append(tup)
+            logs_cut.append(log_cut)
+            logs_plat.append(log_plat)
+        write_model_results_to_file(results, prompter.model_name + '_contr', 'table_setting')
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_contr', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name + '_plate_contr', 'table_setting')
+
+
 def get_fitting_plate(row) -> Plate:
     max_plate = Plate.NONE
     max_val = -1
@@ -494,15 +610,17 @@ def transform_utensil_prediction_selfcon(pred: str) -> [Utensil]:
 
 def transform_plate_prediction_selfcon(pred: str) -> Plate:
     split = pred.splitlines()
-    if len(split) > 1:
-        answ = split[-2] + split[-1]
-    else:
-        answ = split[-1]
-
-    for plate in Plate:
-        plate_type = plate.split(' ')[0]
-        if plate_type.lower() in answ.lower():
-            return Plate(plate)
+    split.reverse()
+    
+    # Scan back to front for viable answer, abort after three lines
+    l = 0
+    for line in split:
+        if l > 2: break
+        for plate in Plate:
+            plate_type = plate.split(' ')[0]
+            if plate_type.lower() in line.lower():
+                return Plate(plate)
+        l+=1
     print(f'Error: "{pred}" is not a valid type of Plate')
     return Plate.NONE
 

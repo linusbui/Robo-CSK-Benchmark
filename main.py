@@ -64,6 +64,9 @@ def main():
         if 'sgicl' in args.techs:
             table_setting_prompter.prompt_all_models_sgicl(prompters, num_runs)
             print('Finished the Table Setting task (SG-ICL)')
+        if 'contr' in args.techs:
+            table_setting_prompter.prompt_all_models_contr(prompters, num_runs)
+            print('Finished the Table Setting task (Contrastive CoT)')
     if "mr_mc" in args.tasks:
         if 'rar' in args.techs:
             meta_reason_prompter_multi_choice.prompt_all_models_rar(prompters, num_runs)
