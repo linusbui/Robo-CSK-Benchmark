@@ -88,7 +88,7 @@ def prompt_all_models_multi(prompters: [Prompter]):
     for prompter in prompters:
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
-                recipe_number) + '_small.json'
+                recipe_number) + '.json'
             recipe_components = extract_json_multi(json_file)
             before_answers, after_answers = [], []
 
@@ -176,7 +176,7 @@ def prompt_all_models_multi_rar(prompters: [Prompter], num_runs: int):
         logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
-                recipe_number) + '_small.json'
+                recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
@@ -284,7 +284,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
         logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
-                recipe_number) + '_small.json'
+                recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
@@ -379,7 +379,7 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
         logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
-                recipe_number) + '_small.json'
+                recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
@@ -543,7 +543,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
         logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
-                recipe_number) + '_small.json'
+                recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
@@ -658,7 +658,7 @@ def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
         logs_after = []
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
-                recipe_number) + '_small.json'
+                recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
@@ -815,7 +815,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
         # Few shot prompting
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
-                recipe_number) + '_small.json'
+                recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
