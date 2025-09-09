@@ -350,11 +350,8 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
 MAXIT_selfcon = 2
 def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
-        system_msg = (
-            "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
-            "Based on the recipe title and the provided steps, identify which step occurred before another. "
-        )
-        user_msg = 'Think step by step before answering with your chosen step.'
+        system_msg = "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
+        user_msg = 'First think step by step to make sure you have the right answer. Then provide the final answer as only your chosen step.'
 
         question = (
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
@@ -363,11 +360,9 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
         return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
-        system_msg = (
-            "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
-            "Based on the recipe title and the provided steps, identify which step occurred after another. "
-        )
-        user_msg = 'Think step by step before answering with your chosen step.'
+        system_msg = "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
+        user_msg = 'First think step by step to make sure you have the right answer. Then provide the final answer as only your chosen step.'
+
         question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
@@ -445,11 +440,12 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
                     answers.append(response)
                     log_after.update({'question': question,
                                        f'cot_{i}': full_response,
-                                       f'final_answer_{i}': response})
+                                       f'answer_{i}': response})
+                final_answer = majority_vote(answers)
                 after_answers.append({
                     'title': title,
                     'question': question,
-                    'response': majority_vote(answers),
+                    'response': final_answer,
                     'correct_response': step_3
                 })
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_selfcon/{recipe_number}.json', after_answers)

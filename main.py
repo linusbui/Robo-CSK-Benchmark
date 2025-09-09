@@ -7,7 +7,7 @@ from tidy_up.prompting import tidy_up_prompter_open, tidy_up_prompter_multi_choi
 from tool_usage.prompting import tool_use_prompter
 from utils import GemmaPrompter, OpenAIPrompter, LlamaPrompter
 
-num_runs = 1
+num_runs = 5
 
 def main():
     parser = argparse.ArgumentParser(

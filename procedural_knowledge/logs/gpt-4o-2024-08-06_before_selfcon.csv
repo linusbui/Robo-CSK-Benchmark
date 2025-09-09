@@ -1,81 +1,662 @@
-question,cot_0,final_answer_0,cot_1,final_answer_1,final_answer,correct_answer
+question,cot_0,answer_0,cot_1,answer_1,final_answer,correct_answer
 "In the recipe 'Worlds Best Mac and Cheese', which step occurs before 'Mix pasta with sauce'?
 
 Options:
 - Bake with cheese topping
 - Drizzle oil, garnish, serve
-- Cook pasta less than directions",The step 'Cook pasta less than directions' occurs before 'Mix pasta with sauce'.,Cook pasta less than directions,"In the recipe 'Worlds Best Mac and Cheese', the step 'Cook pasta less than directions' occurs before 'Mix pasta with sauce'.",Cook pasta less than directions,Cook pasta less than directions,Cook pasta less than directions
+- Spoon into crust
+- Bake until cheese melts
+- Cook pasta less than directions","To determine which step occurs before 'Mix pasta with sauce', let's consider the logical sequence of making mac and cheese:
+
+1. **Cook pasta less than directions**: This step involves preparing the pasta, which is typically done before mixing it with any sauce. Pasta needs to be cooked before it can be combined with sauce.
+
+2. **Mix pasta with sauce**: This step involves combining the cooked pasta with the cheese sauce.
+
+3. **Spoon into crust**: This step might be specific to a variation where the mac and cheese is baked in a crust, which would occur after mixing the pasta with sauce.
+
+4. **Bake until cheese melts**: This would generally occur after mixing the pasta with sauce and possibly spooning it into a crust, as baking is often a final cooking step.
+
+5. **Bake with cheese topping**: Similar to the previous baking step, this would occur after mixing and potentially after spooning into a crust.
+
+6. **Drizzle oil, garnish, serve**: This is a serving step, which would occur at the very end.
+
+Therefore, the step that occurs before 'Mix pasta with sauce' is 'Cook pasta less than directions'. 
+
+Final answer: Cook pasta less than directions",Cook pasta less than directions,"To determine which step occurs before 'Mix pasta with sauce', let's analyze the options:
+
+1. **Bake with cheese topping**: This step likely occurs after mixing the pasta with sauce because baking typically follows the assembly of the dish.
+
+2. **Drizzle oil, garnish, serve**: This step is usually one of the final steps in a recipe, happening after baking or cooking.
+
+3. **Spoon into crust**: This step suggests placing the mixture into a crust, which seems to come after mixing the pasta with sauce.
+
+4. **Bake until cheese melts**: Similar to the first option, this step would occur after assembling the dish, which includes mixing the pasta with sauce.
+
+5. **Cook pasta less than directions**: Cooking the pasta is a preparatory step that must occur before mixing it with the sauce.
+
+The logical sequence would be to cook the pasta first, then mix it with the sauce. Therefore, the step that occurs before 'Mix pasta with sauce' is:
+
+**Cook pasta less than directions**",Cook pasta less than directions,Cook pasta less than directions,Cook pasta less than directions
 "In the recipe 'Dilly Macaroni Salad Recipe', which step occurs before 'Combine macaroni and vegetables'?
 
 Options:
+- Spoon into crust
 - Cook and drain macaroni
-- Blend dressing and add
 - Bake with cheese topping
-- Drizzle oil, garnish, serve",The step 'Cook and drain macaroni' occurs before 'Combine macaroni and vegetables'.,Cook and drain macaroni,Cook and drain macaroni,Cook and drain macaroni,Cook and drain macaroni,Cook and drain macaroni
+- Bake until cheese melts
+- Blend dressing and add","To determine the step that occurs before 'Combine macaroni and vegetables', we need to logically think through the process of making a macaroni salad.
+
+1. 'Cook and drain macaroni' is typically an early step, as you need cooked macaroni to combine with other ingredients.
+2. 'Blend dressing and add' would usually happen after preparing the macaroni and possibly after preparing other ingredients like vegetables.
+3. 'Spoon into crust', 'Bake with cheese topping', and 'Bake until cheese melts' are not steps typically associated with making a macaroni salad, as these seem more relevant to a baked dish.
+
+The logical step that occurs before 'Combine macaroni and vegetables' is 'Cook and drain macaroni', as you need to have cooked macaroni ready before you can combine it with vegetables.
+
+Final answer: Cook and drain macaroni",Cook and drain macaroni,"To determine which step occurs before 'Combine macaroni and vegetables', let's analyze each option in the context of making a macaroni salad:
+
+1. **Spoon into crust**: This step seems unrelated to a macaroni salad and more related to a pie or quiche, so it is unlikely to be a correct step before combining macaroni and vegetables.
+   
+2. **Cook and drain macaroni**: This step is essential before combining macaroni with any other ingredients, as you need cooked macaroni for the salad.
+
+3. **Bake with cheese topping**: Baking with a cheese topping is not typical for a cold macaroni salad, so this step does not logically precede combining the macaroni and vegetables.
+
+4. **Bake until cheese melts**: Similar to the previous option, this is not a typical step in making a cold macaroni salad.
+
+5. **Blend dressing and add**: While blending the dressing is a step in the salad-making process, it typically occurs after combining the macaroni and vegetables, as the dressing is added to the combined ingredients.
+
+After analyzing these options, the step that logically occurs before 'Combine macaroni and vegetables' in making a macaroni salad is:
+
+Cook and drain macaroni",Cook and drain macaroni,Cook and drain macaroni,Cook and drain macaroni
 "In the recipe 'Gazpacho', which step occurs before 'Combine vegetables with puree'?
 
 Options:
+- Bake with cheese topping
 - Puree tomatoes with salt
+- Bake until cheese melts
 - Drizzle oil, garnish, serve
-- Bake with cheese topping",The step that occurs before 'Combine vegetables with puree' is 'Puree tomatoes with salt'.,Puree tomatoes with salt,The step that occurs before 'Combine vegetables with puree' is 'Puree tomatoes with salt'.,Puree tomatoes with salt,Puree tomatoes with salt,Puree tomatoes with salt
+- Spoon into crust","First, let's consider the context of the recipe for Gazpacho, which is a cold Spanish soup made primarily with raw vegetables. The steps generally involve preparing the vegetables, pureeing them, and then combining them to make the soup.
+
+1. ""Bake with cheese topping"" and ""Bake until cheese melts"" are not typical steps in a gazpacho recipe, as gazpacho is not baked and does not include cheese as a topping.
+2. ""Drizzle oil, garnish, serve"" is likely a final step, as garnishing and serving typically occur after the main dish is prepared.
+3. ""Spoon into crust"" is unrelated to gazpacho, as it does not involve a crust.
+4. ""Puree tomatoes with salt"" is a logical step that would occur before combining the pureed tomatoes with other vegetables, as it involves preparing the base of the soup.
+
+Therefore, the step that occurs before ""Combine vegetables with puree"" is ""Puree tomatoes with salt.""
+
+Puree tomatoes with salt",Puree tomatoes with salt,"To determine the correct step that occurs before ""Combine vegetables with puree"" in the recipe for 'Gazpacho', let's consider the options provided:
+
+1. **Bake with cheese topping** - This step is not typical for gazpacho, which is a cold soup and does not involve baking.
+   
+2. **Puree tomatoes with salt** - This step is likely to occur before combining vegetables with the puree, as it involves creating the puree needed for the next step.
+   
+3. **Bake until cheese melts** - Again, gazpacho is a cold dish and does not involve baking.
+   
+4. **Drizzle oil, garnish, serve** - This step is typically one of the final steps in serving the dish, not before combining ingredients.
+   
+5. **Spoon into crust** - This step is not relevant to gazpacho, as it does not involve a crust.
+
+After analyzing the options, the step ""Puree tomatoes with salt"" logically occurs before ""Combine vegetables with puree"" because it involves preparing the puree itself, which is necessary before combining it with other ingredients.
+
+Final answer: Puree tomatoes with salt",Puree tomatoes with salt,Puree tomatoes with salt,Puree tomatoes with salt
+"In the recipe 'Crunchy Onion Potato Bake', which step occurs before 'Heat milk, water, butter'?
+
+Options:
+- Bake with cheese topping
+- Drizzle oil, garnish, serve
+- Bake until cheese melts
+- Spoon into crust
+- Preheat oven","To determine which step occurs before 'Heat milk, water, butter', let's consider the typical sequence of steps in a recipe:
+
+1. Preheat oven: This is usually one of the first steps in a baking recipe to ensure the oven is at the right temperature when the dish is ready to be baked.
+2. Heat milk, water, butter: This step likely involves preparing a liquid mixture that will be combined with other ingredients.
+
+Given this sequence, the step that occurs before 'Heat milk, water, butter' is most likely related to preparing the oven or initial preparation tasks.
+
+The correct step that occurs before 'Heat milk, water, butter' is:
+
+Preheat oven",Preheat oven,"To determine the correct temporal order of steps in the recipe 'Crunchy Onion Potato Bake', let's analyze the options:
+
+1. ""Preheat oven"" is typically one of the first steps in a recipe that involves baking, as it ensures the oven is at the correct temperature when the dish is ready to be baked.
+
+2. ""Heat milk, water, butter"" involves preparing part of the mixture or sauce that will likely be combined with other ingredients before baking.
+
+3. ""Spoon into crust"" suggests placing the prepared mixture into a crust, which would occur after all components are ready.
+
+4. ""Bake until cheese melts"" and ""Bake with cheese topping"" both indicate baking steps, which would occur after the dish is assembled and placed in the oven.
+
+5. ""Drizzle oil, garnish, serve"" is a final step, occurring after baking is complete.
+
+Considering these steps, ""Preheat oven"" logically occurs before ""Heat milk, water, butter"" as the oven needs to be ready for baking once the mixture is prepared.
+
+Final answer: Preheat oven",Preheat oven,Preheat oven,Preheat oven
+"In the recipe 'Cool 'n Easy Creamy Watermelon Pie', which step occurs before 'Whisk in Cool Whip'?
+
+Options:
+- Spoon into crust
+- Drizzle oil, garnish, serve
+- Bake until cheese melts
+- Bake with cheese topping
+- Dissolve Jello in water","To determine which step occurs before 'Whisk in Cool Whip' in the recipe 'Cool 'n Easy Creamy Watermelon Pie', we need to consider the logical sequence of steps involved in making a creamy pie that includes Cool Whip and Jello.
+
+1. Dissolving Jello in water is typically one of the initial steps when using Jello in a recipe, as it needs to be prepared before being mixed with other ingredients.
+2. Whisking in Cool Whip usually follows after the Jello is prepared, as it involves combining the Jello mixture with the Cool Whip to create the creamy texture of the pie.
+3. The other options such as 'Spoon into crust', 'Drizzle oil, garnish, serve', 'Bake until cheese melts', and 'Bake with cheese topping' do not logically fit before 'Whisk in Cool Whip' in the context of a creamy watermelon pie using Jello and Cool Whip.
+
+Therefore, the step that occurs before 'Whisk in Cool Whip' is:
+
+Dissolve Jello in water",Dissolve Jello in water,"To determine the correct step that occurs before ""Whisk in Cool Whip"" in the recipe 'Cool 'n Easy Creamy Watermelon Pie', let's analyze the options:
+
+1. ""Spoon into crust"" - This could be a step after mixing ingredients, not before whisking Cool Whip.
+2. ""Drizzle oil, garnish, serve"" - This step seems unrelated to a pie recipe and more likely a final step for a different type of dish.
+3. ""Bake until cheese melts"" - This is unrelated to a creamy watermelon pie, which likely doesn't involve baking cheese.
+4. ""Bake with cheese topping"" - Again, this is unrelated to a creamy watermelon pie.
+5. ""Dissolve Jello in water"" - This step is common in recipes involving gelatin, which could be part of the base mixture before adding Cool Whip.
+
+The step ""Dissolve Jello in water"" is a preliminary step that would logically occur before incorporating Cool Whip into the mixture.
+
+Final answer: Dissolve Jello in water",Dissolve Jello in water,Dissolve Jello in water,Dissolve Jello in water
 "In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?
 
 Options:
-- Bake in water bath
 - Add ingredients to crock pot
-- Use stovetop if preferred",The step 'Add ingredients to crock pot' occurs before 'Cook on low heat'.,Add ingredients to crock pot,The step 'Add ingredients to crock pot' occurs before 'Cook on low heat'.,Add ingredients to crock pot,Add ingredients to crock pot,Add ingredients to crock pot
+- Add mustard, stir, cover
+- Add meats to bean pot
+- Bake in water bath
+- Use stovetop if preferred","To determine the correct step that occurs before 'Cook on low heat' in the 'Ranch Mushrooms' recipe, let's analyze each option:
+
+1. **Add ingredients to crock pot**: This step usually involves preparing the base for cooking and would logically occur before cooking on low heat.
+
+2. **Add mustard, stir, cover**: This step seems to involve adding specific ingredients and preparing them for cooking, which could occur before or during the cooking process.
+
+3. **Add meats to bean pot**: This step seems unrelated to the 'Ranch Mushrooms' recipe, as it mentions meats and a bean pot, which are not typically associated with this dish.
+
+4. **Bake in water bath**: This is a cooking method that involves baking, not applicable to 'Ranch Mushrooms', which are cooked on low heat.
+
+5. **Use stovetop if preferred**: This is an alternative method of cooking, not a step that occurs before cooking on low heat.
+
+The most logical step that occurs before 'Cook on low heat' in the context of the 'Ranch Mushrooms' recipe is:
+
+Add ingredients to crock pot",Add ingredients to crock pot,"To determine which step occurs before 'Cook on low heat' in the 'Ranch Mushrooms' recipe, let's analyze the options:
+
+1. **Add ingredients to crock pot**: This step typically happens early in a recipe, especially if it involves using a crock pot, as you need to add ingredients before cooking them.
+
+2. **Add mustard, stir, cover**: This step seems to be about seasoning or preparing the dish before cooking, which could logically occur before cooking on low heat.
+
+3. **Add meats to bean pot**: This step seems unrelated to the 'Ranch Mushrooms' recipe, as it mentions meats and a bean pot, which are not typical components of a mushroom dish.
+
+4. **Bake in water bath**: Baking in a water bath is a method typically used for custards or cheesecakes, not for a dish like 'Ranch Mushrooms', which involves cooking on low heat.
+
+5. **Use stovetop if preferred**: This step suggests an alternative cooking method, implying it could happen concurrently with or after the decision to cook on low heat, rather than before.
+
+Considering the logical sequence of preparing a dish in a crock pot, the step 'Add ingredients to crock pot' would naturally occur before 'Cook on low heat', as you need to have the ingredients in the pot before you can start cooking them.
+
+Final answer: Add ingredients to crock pot",Add ingredients to crock pot,Add ingredients to crock pot,Add ingredients to crock pot
 "In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?
 
 Options:
-- Bake in water bath
+- Add meats to bean pot
+- Add mustard, stir, cover
 - Preheat oven to 300°F
-- Use stovetop if preferred","The step that occurs before 'Heat cream, add vanilla' is 'Preheat oven to 300°F'.",Preheat oven to 300°F,"The step 'Preheat oven to 300°F' occurs before 'Heat cream, add vanilla'.",Preheat oven to 300°F,Preheat oven to 300°F,Preheat oven to 300°F
+- Bake in water bath
+- Use stovetop if preferred","First, let's analyze the given options in relation to the step 'Heat cream, add vanilla' in the context of making Raspberry Creme Brulee:
+
+1. **Add meats to bean pot**: This step seems unrelated to making Raspberry Creme Brulee, as meats are not typically part of this dessert.
+
+2. **Add mustard, stir, cover**: This step also seems unrelated to the recipe, as mustard is not an ingredient in Raspberry Creme Brulee.
+
+3. **Preheat oven to 300°F**: Preheating the oven is a common initial step in baking recipes to ensure the oven is at the right temperature before baking begins.
+
+4. **Bake in water bath**: This step typically occurs after the custard mixture has been prepared and poured into ramekins, which would be after the cream has been heated and vanilla added.
+
+5. **Use stovetop if preferred**: This step is ambiguous without context, but it could relate to the method of heating the cream. However, it does not clearly indicate a sequence before heating the cream and adding vanilla.
+
+Based on this analysis, the step that logically occurs before 'Heat cream, add vanilla' is 'Preheat oven to 300°F', as preheating the oven is usually done at the beginning of the recipe to prepare for the baking process.
+
+Final Answer: Preheat oven to 300°F",Preheat oven to 300°F,"To determine the temporal order of the steps in the recipe 'Raspberry Creme Brulee Recipe', we need to consider the logical sequence of preparing a creme brulee. 
+
+1. Preheating the oven is typically one of the first steps in recipes that require baking, as it ensures the oven reaches the necessary temperature by the time the dish is ready to be baked.
+2. Heating the cream and adding vanilla is a step that involves preparing the custard mixture, which is done after the oven is preheated but before baking.
+3. Baking in a water bath is a method used for cooking the creme brulee once the custard mixture is prepared and poured into ramekins.
+
+The other options, such as ""Add meats to bean pot,"" ""Add mustard, stir, cover,"" and ""Use stovetop if preferred,"" do not logically fit within the steps of a creme brulee recipe.
+
+Therefore, the step that occurs before 'Heat cream, add vanilla' is most likely related to preparing the oven for baking.
+
+Final answer: Preheat oven to 300°F",Preheat oven to 300°F,Preheat oven to 300°F,Preheat oven to 300°F
 "In the recipe 'Barbecue Hamburger Patties Recipe', which step occurs before 'Shape into 6 patties'?
 
 Options:
-- Brown patties in skillet
-- Mix meat, onion, salt
+- Bake in water bath
 - Use stovetop if preferred
-- Bake in water bath","The step 'Mix meat, onion, salt' occurs before 'Shape into 6 patties'.","Mix meat, onion, salt","The step 'Mix meat, onion, salt' occurs before 'Shape into 6 patties'.","Mix meat, onion, salt","Mix meat, onion, salt","Mix meat, onion, salt"
+- Add meats to bean pot
+- Mix meat, onion, salt
+- Brown patties in skillet","To determine the correct step that occurs before ""Shape into 6 patties,"" let's consider the logical sequence of preparing hamburger patties:
+
+1. **Mix meat, onion, salt**: This step is typically done first to ensure that all the ingredients are combined thoroughly before forming the patties. 
+
+2. **Shape into 6 patties**: This step logically follows the mixing of ingredients, as you need the mixture ready before you can shape it.
+
+The other options provided (baking in a water bath, using a stovetop, adding meats to a bean pot, and browning patties in a skillet) are not directly related to the preparation of the raw patties themselves, but rather to cooking or alternative preparation methods.
+
+Therefore, the step that occurs before ""Shape into 6 patties"" is:
+
+Mix meat, onion, salt","Mix meat, onion, salt","To determine the step that occurs before 'Shape into 6 patties', let's analyze the options:
+
+1. ""Bake in water bath"" - This is typically a cooking step that would occur after the patties are formed.
+2. ""Use stovetop if preferred"" - This is not a specific step in the sequence of making patties, but rather an alternative method for cooking.
+3. ""Add meats to bean pot"" - This step does not directly relate to forming patties and seems more related to a different dish or step.
+4. ""Mix meat, onion, salt"" - This step involves combining ingredients, which logically precedes shaping the mixture into patties.
+5. ""Brown patties in skillet"" - This step occurs after the patties are shaped.
+
+The logical step that occurs before 'Shape into 6 patties' is ""Mix meat, onion, salt"", as you need to mix the ingredients before forming them into patties.
+
+Final answer: Mix meat, onion, salt","Mix meat, onion, salt","Mix meat, onion, salt","Mix meat, onion, salt"
+"In the recipe 'Chicken Prepared-Mustard', which step occurs before 'Add chicken and butter'?
+
+Options:
+- Add meats to bean pot
+- Bake in water bath
+- Dice chicken breast
+- Use stovetop if preferred
+- Add mustard, stir, cover","To determine which step occurs before 'Add chicken and butter', let's analyze each option:
+
+1. **Add meats to bean pot**: This step seems unrelated to directly preparing the chicken with mustard, as it suggests a different dish involving beans.
+
+2. **Bake in water bath**: Baking typically occurs after preparing and assembling ingredients, so this step likely comes later in the process.
+
+3. **Dice chicken breast**: Dicing the chicken would logically occur before adding it to the dish, as it prepares the chicken for cooking.
+
+4. **Use stovetop if preferred**: This is more of an optional instruction rather than a sequential cooking step.
+
+5. **Add mustard, stir, cover**: This step likely occurs after adding the chicken to incorporate the mustard flavor.
+
+Considering these options, the step that logically occurs before 'Add chicken and butter' is:
+
+Dice chicken breast",Dice chicken breast,"To determine the correct temporal order of steps in the recipe 'Chicken Prepared-Mustard', let's analyze each option in relation to the step 'Add chicken and butter':
+
+1. **Add meats to bean pot**: This step seems unrelated to the specific action of adding chicken and butter, as it mentions a bean pot, which suggests a different part of the recipe or a different recipe altogether.
+
+2. **Bake in water bath**: Baking is typically a later step in recipes, often after all ingredients are combined and prepared. Thus, this step is likely to occur after 'Add chicken and butter'.
+
+3. **Dice chicken breast**: Dicing chicken is a preparatory step that logically should occur before adding chicken to any dish. Therefore, it makes sense that this step would precede 'Add chicken and butter'.
+
+4. **Use stovetop if preferred**: This option sounds like an alternative method rather than a sequential step. It doesn't indicate a specific action that would necessarily occur before adding chicken and butter.
+
+5. **Add mustard, stir, cover**: This step involves adding mustard and stirring, which could occur before or after adding chicken, depending on the recipe. However, without more context, it's not definitively before 'Add chicken and butter'.
+
+After evaluating all the options, the step that most logically occurs before 'Add chicken and butter' is:
+
+Dice chicken breast",Dice chicken breast,Dice chicken breast,Dice chicken breast
+"In the recipe 'Bower's Hunter's Chili', which step occurs before 'Brown ground meat, drain grease'?
+
+Options:
+- Add mustard, stir, cover
+- Add meats to bean pot
+- Use stovetop if preferred
+- Bake in water bath
+- Panfry steak in olive oil","To determine the temporal order of steps in the recipe 'Bower's Hunter's Chili', we need to identify which step logically precedes 'Brown ground meat, drain grease'.
+
+Let's analyze the options:
+
+1. **Add mustard, stir, cover** - This step likely happens after the meat is browned and other ingredients are combined.
+2. **Add meats to bean pot** - This step would occur after the meat is browned and prepared.
+3. **Use stovetop if preferred** - This is more of an instruction or preference rather than a preceding step.
+4. **Bake in water bath** - Baking typically occurs after all ingredients are combined and prepared.
+5. **Panfry steak in olive oil** - This step involves cooking meat, which would logically occur before adding it to other ingredients or before browning ground meat.
+
+Considering these analyses, the step that occurs before 'Brown ground meat, drain grease' is likely:
+
+**Panfry steak in olive oil**",Panfry steak in olive oil,"To determine the temporal order of steps in the recipe 'Bower's Hunter's Chili', we need to identify which step logically precedes 'Brown ground meat, drain grease'. 
+
+1. ""Brown ground meat, drain grease"" suggests that this step involves cooking ground meat until it is browned and then draining the grease.
+2. ""Add mustard, stir, cover"" seems to be a step that would occur after the meat is prepared, as it involves adding ingredients and covering, likely for simmering.
+3. ""Add meats to bean pot"" implies that the meat has already been cooked, so this step would follow the browning and draining of the meat.
+4. ""Use stovetop if preferred"" is not a cooking step but an option for where to cook, so it does not directly relate to the sequence.
+5. ""Bake in water bath"" is a method typically used for gentle cooking, possibly after all ingredients are combined, so it would come later.
+6. ""Panfry steak in olive oil"" involves cooking steak, which is a separate meat preparation step. This would logically occur before browning ground meat if both types of meat are used in the recipe.
+
+Therefore, the step that occurs before 'Brown ground meat, drain grease' is likely ""Panfry steak in olive oil"" because it involves preparing another type of meat before the ground meat is cooked.
+
+Final answer: Panfry steak in olive oil",Panfry steak in olive oil,Panfry steak in olive oil,Panfry steak in olive oil
 "In the recipe 'Gingersnap Gravy', which step occurs before 'Add stock, bring to boil'?
 
 Options:
 - Saute onions, celery, garlic
-- Add shrimp and tomatoes
+- Cook on low or high
 - Bake until done
-- Crumble gingersnaps, whisk","The step 'Saute onions, celery, garlic' occurs before 'Add stock, bring to boil'.","Saute onions, celery, garlic","The step 'Saute onions, celery, garlic' occurs before 'Add stock, bring to boil'.","Saute onions, celery, garlic","Saute onions, celery, garlic","Saute onions, celery, garlic"
+- Crumble gingersnaps, whisk
+- Add shrimp and tomatoes","To determine which step occurs before 'Add stock, bring to boil', let's analyze the options:
+
+1. **Saute onions, celery, garlic**: This step typically involves cooking vegetables in oil or butter to soften them and develop flavor. It is a common initial step in many recipes to build a flavor base before adding liquids like stock.
+
+2. **Cook on low or high**: This is a cooking method that usually follows the addition of liquids or other ingredients, not before adding stock.
+
+3. **Bake until done**: Baking is generally a finishing step, not one that would occur before adding stock.
+
+4. **Crumble gingersnaps, whisk**: This suggests preparing a component of the dish, likely to be added later. It could occur before or after adding stock, depending on the recipe.
+
+5. **Add shrimp and tomatoes**: Adding main ingredients like shrimp and tomatoes usually happens after the base flavors and liquids are established.
+
+Given these considerations, the step 'Saute onions, celery, garlic' is the most likely to occur before 'Add stock, bring to boil' as it sets up the flavor base for the gravy.
+
+Final answer: Saute onions, celery, garlic","Saute onions, celery, garlic","To determine the correct step that occurs before 'Add stock, bring to boil', we need to consider the logical sequence of preparing a gravy.
+
+1. Typically, when making a gravy, the initial steps often involve preparing the base by sautéing aromatic ingredients. In this case, 'Saute onions, celery, garlic' would be a foundational step to build flavor.
+
+2. 'Crumble gingersnaps, whisk' would likely be a step where the gingersnaps are prepared to be incorporated into the gravy, but this would typically occur after the base is prepared and possibly after the liquid is added.
+
+3. 'Add shrimp and tomatoes' sounds like an addition of main ingredients which usually happens after the base is prepared and the stock is already boiling or simmering.
+
+4. 'Cook on low or high' is a step that suggests a cooking method rather than a preparation step, and it's usually mentioned after all ingredients are combined.
+
+5. 'Bake until done' does not seem relevant to a gravy recipe unless the gravy is part of a dish that requires baking, which is unlikely before adding stock.
+
+Given this analysis, the step 'Saute onions, celery, garlic' logically occurs before 'Add stock, bring to boil' as it pertains to preparing the base of the gravy.
+
+Final answer: Saute onions, celery, garlic","Saute onions, celery, garlic","Saute onions, celery, garlic","Saute onions, celery, garlic"
 "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which step occurs before 'Pour into pan, sprinkle mix'?
 
 Options:
-- Crumble gingersnaps, whisk
+- Combine milk, eggs, spices
 - Bake until done
+- Crumble gingersnaps, whisk
 - Add shrimp and tomatoes
-- Combine milk, eggs, spices","The step 'Combine milk, eggs, spices' occurs before 'Pour into pan, sprinkle mix'.","Combine milk, eggs, spices","The step 'Combine milk, eggs, spices' occurs before 'Pour into pan, sprinkle mix'.","Combine milk, eggs, spices","Combine milk, eggs, spices","Combine milk, eggs, spices"
+- Cook on low or high","To determine the correct step that occurs before 'Pour into pan, sprinkle mix', let's analyze each option:
+
+1. **Combine milk, eggs, spices**: This step is likely to occur before pouring the mixture into the pan, as combining ingredients is typically done before pouring them into a baking pan.
+
+2. **Bake until done**: This step comes after pouring the mixture into the pan, as baking is the final step after everything is prepared and placed in the pan.
+
+3. **Crumble gingersnaps, whisk**: This could be a step that occurs before pouring the mixture into the pan, as crumbling gingersnaps and whisking could be part of preparing the mixture.
+
+4. **Add shrimp and tomatoes**: This step seems unrelated to a pumpkin pie recipe, as shrimp and tomatoes are not typical ingredients in a pumpkin pie.
+
+5. **Cook on low or high**: This step seems more appropriate for a cooking process rather than a baking process, and is unlikely to occur before pouring the mixture into the pan.
+
+Considering the options, the most logical step that occurs before 'Pour into pan, sprinkle mix' is:
+
+Combine milk, eggs, spices","Combine milk, eggs, spices","To determine the correct step that occurs before ""Pour into pan, sprinkle mix,"" let's analyze the options:
+
+1. ""Combine milk, eggs, spices"" - This step is likely part of preparing the filling for the pumpkin pie squares, which would logically occur before pouring the mixture into the pan.
+
+2. ""Bake until done"" - This step would occur after pouring the mixture into the pan and sprinkling the mix, as baking is typically one of the final steps in a recipe.
+
+3. ""Crumble gingersnaps, whisk"" - This step seems to involve preparing a component of the dish, possibly a crust or topping, which could occur before pouring the filling into the pan.
+
+4. ""Add shrimp and tomatoes"" - This step is unrelated to a pumpkin pie recipe, so it is likely not part of this recipe.
+
+5. ""Cook on low or high"" - This step is vague but suggests a cooking process that would likely occur after ingredients have been combined and prepared.
+
+Considering the steps logically, ""Combine milk, eggs, spices"" is the step that most directly precedes the action of pouring the mixture into the pan.
+
+Final Answer: Combine milk, eggs, spices","Combine milk, eggs, spices","Combine milk, eggs, spices","Combine milk, eggs, spices"
 "In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which step occurs before 'Saute shallots and garlic'?
 
 Options:
-- Add shrimp and tomatoes
 - Bake until done
-- Cook pasta until al dente
-- Crumble gingersnaps, whisk",Cook pasta until al dente,Cook pasta until al dente,The step 'Cook pasta until al dente' occurs before 'Saute shallots and garlic'.,Cook pasta until al dente,Cook pasta until al dente,Cook pasta until al dente
+- Crumble gingersnaps, whisk
+- Cook on low or high
+- Add shrimp and tomatoes
+- Cook pasta until al dente","To determine which step occurs before 'Saute shallots and garlic' in the recipe 'Shrimp and Pasta in a Basil Cream Sauce', let's consider the logical sequence of preparing such a dish:
+
+1. Typically, when making a pasta dish, you would start by cooking the pasta. This is because pasta takes time to cook and can be set aside once done.
+2. Sauteing shallots and garlic is usually done at the beginning of the sauce preparation to build flavor.
+3. Adding shrimp and tomatoes would likely occur after the shallots and garlic are sauteed to incorporate those ingredients into the sauce.
+4. The other options, such as baking or crumbling gingersnaps, do not fit the context of this dish.
+
+Therefore, the step that occurs before 'Saute shallots and garlic' is 'Cook pasta until al dente'.
+
+Final answer: Cook pasta until al dente",Cook pasta until al dente,"To determine which step occurs before 'Saute shallots and garlic', we need to consider the typical order of operations in preparing a dish like 'Shrimp and Pasta in a Basil Cream Sauce'. 
+
+1. **Cook pasta until al dente**: This step is usually done early in the process because pasta needs to be cooked separately and then combined with other ingredients later. It is common to cook the pasta at the beginning so that it is ready to be added to the sauce.
+
+2. **Saute shallots and garlic**: This step involves cooking the aromatics, which is typically one of the first steps in making a sauce, as it builds the base flavor for the dish.
+
+The other options do not logically fit as steps that would occur before 'Saute shallots and garlic':
+- **Bake until done**: Baking is not relevant to this dish, as it involves cooking on the stovetop.
+- **Crumble gingersnaps, whisk**: This step does not relate to a savory pasta dish.
+- **Cook on low or high**: This is not specific enough and does not precede the sautéing of aromatics.
+- **Add shrimp and tomatoes**: This step would occur after the aromatics are sautéed to ensure the shrimp and tomatoes are cooked in the flavored oil.
+
+Therefore, the step that occurs before 'Saute shallots and garlic' is 'Cook pasta until al dente'.
+
+Final answer: Cook pasta until al dente",Cook pasta until al dente,Cook pasta until al dente,Cook pasta until al dente
+"In the recipe 'Smoked Fish & Broccoli Flan', which step occurs before 'Arrange broccoli, onion, fish'?
+
+Options:
+- Crumble gingersnaps, whisk
+- Add shrimp and tomatoes
+- Roll out dough, line dish
+- Cook on low or high
+- Pour mixture, sprinkle cheese","To determine which step occurs before 'Arrange broccoli, onion, fish', we need to consider the logical sequence of preparing a flan. 
+
+1. 'Roll out dough, line dish' is typically an early step in preparing a flan, as the crust needs to be prepared before adding any fillings.
+2. 'Arrange broccoli, onion, fish' suggests placing ingredients into the dish, likely after the crust is prepared.
+3. 'Pour mixture, sprinkle cheese' would logically follow arranging the main ingredients, as it involves adding a liquid or topping.
+4. 'Crumble gingersnaps, whisk' and 'Add shrimp and tomatoes' do not directly relate to the immediate step of arranging broccoli, onion, and fish.
+5. 'Cook on low or high' is a cooking step that would follow the preparation steps.
+
+Therefore, the step that logically occurs before 'Arrange broccoli, onion, fish' is 'Roll out dough, line dish'.
+
+Final answer: Roll out dough, line dish","Roll out dough, line dish","To determine the correct temporal order of steps in the recipe, we need to consider the logical progression of preparing a flan:
+
+1. ""Roll out dough, line dish"" is typically one of the first steps in preparing a flan, as it involves preparing the base or crust for the dish.
+2. ""Arrange broccoli, onion, fish"" would logically follow after the dish is prepared, as these ingredients are placed into the lined dish.
+3. ""Pour mixture, sprinkle cheese"" would likely occur after arranging the main ingredients, as this would involve adding the liquid mixture and topping it with cheese before baking.
+4. ""Cook on low or high"" would be the cooking step, which comes after all ingredients are assembled in the dish.
+5. ""Add shrimp and tomatoes"" and ""Crumble gingersnaps, whisk"" do not logically fit in the sequence for a flan, as they involve different ingredients not mentioned in the main step.
+
+Therefore, the step that occurs before ""Arrange broccoli, onion, fish"" is ""Roll out dough, line dish.""
+
+Final answer: Roll out dough, line dish","Roll out dough, line dish","Roll out dough, line dish","Roll out dough, line dish"
+"In the recipe 'Turkey Roast Supreme (Crock Pot)', which step occurs before 'Rub spice mixture on turkey'?
+
+Options:
+- Cook on low or high
+- Layer vegetables in crock pot
+- Crumble gingersnaps, whisk
+- Add shrimp and tomatoes
+- Bake until done","To determine which step occurs before 'Rub spice mixture on turkey' in the recipe 'Turkey Roast Supreme (Crock Pot)', let's think through the options:
+
+1. ""Cook on low or high"" - This step typically occurs after all preparation steps are completed and the ingredients are placed in the crock pot.
+
+2. ""Layer vegetables in crock pot"" - This step is likely to occur before placing the turkey in the crock pot, which would be before rubbing the spice mixture on the turkey.
+
+3. ""Crumble gingersnaps, whisk"" - This step seems unrelated to preparing the turkey directly, and might be part of a sauce or separate preparation.
+
+4. ""Add shrimp and tomatoes"" - This step seems unrelated to the turkey roast and is unlikely to be a direct precursor to rubbing spices on the turkey.
+
+5. ""Bake until done"" - This step is a cooking step that would come after all preparation steps, including rubbing the spice mixture on the turkey.
+
+Based on the options, ""Layer vegetables in crock pot"" is the step that logically occurs before ""Rub spice mixture on turkey,"" as it involves preparing the crock pot before adding the turkey.
+
+Final Answer: Layer vegetables in crock pot",Layer vegetables in crock pot,"To determine which step occurs before 'Rub spice mixture on turkey', let's analyze the logical sequence of actions in a typical recipe involving a crock pot turkey roast:
+
+1. **Layer vegetables in crock pot**: This step likely occurs early in the recipe as it involves preparing the base layer in the crock pot before adding the turkey.
+
+2. **Crumble gingersnaps, whisk**: This step seems related to preparing a mixture or seasoning, which might be used later in the recipe.
+
+3. **Rub spice mixture on turkey**: This is the step in question, where the turkey is seasoned.
+
+4. **Add shrimp and tomatoes**: This step seems unrelated to a turkey roast and might be part of a different recipe or a later stage if it is included.
+
+5. **Cook on low or high**: This step involves cooking the prepared dish, which would logically occur after seasoning the turkey and placing it in the crock pot.
+
+6. **Bake until done**: This step indicates cooking, which would occur after all preparation steps.
+
+Based on the logical sequence, 'Layer vegetables in crock pot' is the step that occurs before 'Rub spice mixture on turkey', as you would typically prepare the base in the crock pot before seasoning and adding the turkey.
+
+Final Answer: Layer vegetables in crock pot",Layer vegetables in crock pot,Layer vegetables in crock pot,Layer vegetables in crock pot
 "In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?
 
 Options:
+- Steam until lobster is opaque
 - Combine ingredients, mash well
 - Pour puree over vegetables
-- Steam until lobster is opaque
-- Cook dumplings until soft","The step 'Combine ingredients, mash well' occurs before 'Shape mixture into balls'.","Combine ingredients, mash well","The step 'Combine ingredients, mash well' occurs before 'Shape mixture into balls'.","Combine ingredients, mash well","Combine ingredients, mash well","Combine ingredients, mash well"
+- Bake on center rack
+- Cook dumplings until soft","To determine which step occurs before 'Shape mixture into balls' in the recipe 'Aromatic Bread Dumplings', we need to logically evaluate the options provided:
+
+1. ""Steam until lobster is opaque"" - This step is unrelated to making bread dumplings, as it pertains to cooking lobster.
+
+2. ""Combine ingredients, mash well"" - This step is likely to occur before shaping the mixture into balls. Combining and mashing ingredients is a preparatory step that would logically precede shaping.
+
+3. ""Pour puree over vegetables"" - This step appears unrelated to making bread dumplings, as it involves vegetables and puree, not the dumpling mixture.
+
+4. ""Bake on center rack"" - Baking is typically a final cooking step, occurring after shaping.
+
+5. ""Cook dumplings until soft"" - This step occurs after shaping, as cooking happens once the dumplings are formed.
+
+Considering the logical sequence of preparing bread dumplings, the step ""Combine ingredients, mash well"" would occur before ""Shape mixture into balls.""
+
+Final answer: Combine ingredients, mash well","Combine ingredients, mash well","First, let's analyze the options in the context of making 'Aromatic Bread Dumplings':
+
+1. ""Steam until lobster is opaque"" - This step is unrelated to making bread dumplings and involves cooking lobster, so it is not relevant.
+
+2. ""Combine ingredients, mash well"" - This step involves preparing the mixture, which is logically done before shaping the mixture into balls.
+
+3. ""Pour puree over vegetables"" - This step involves vegetables and puree, which is not directly related to shaping bread dumplings.
+
+4. ""Bake on center rack"" - Baking is usually a step that occurs after shaping the dumplings, not before.
+
+5. ""Cook dumplings until soft"" - Cooking the dumplings would typically occur after they have been shaped into balls, not before.
+
+Based on this analysis, the step that occurs before 'Shape mixture into balls' is:
+
+Combine ingredients, mash well","Combine ingredients, mash well","Combine ingredients, mash well","Combine ingredients, mash well"
 "In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?
 
 Options:
-- Pour puree over vegetables
-- Steam until lobster is opaque
 - Cook dumplings until soft
-- Roast diced potatoes","The step 'Roast diced potatoes' occurs before 'Add broccoli, roast more'.",Roast diced potatoes,Roast diced potatoes,Roast diced potatoes,Roast diced potatoes,Roast diced potatoes
+- Bake on center rack
+- Roast diced potatoes
+- Steam until lobster is opaque
+- Pour puree over vegetables","To determine the correct step that occurs before 'Add broccoli, roast more', let's analyze each option:
+
+1. **Cook dumplings until soft**: This step is unrelated to the sequence of roasting vegetables in a casserole, as dumplings are typically not part of a vegetable casserole dish.
+
+2. **Bake on center rack**: This step usually comes after all ingredients are assembled and prepared, not before adding more vegetables like broccoli for roasting.
+
+3. **Roast diced potatoes**: This step logically fits before adding more vegetables like broccoli for additional roasting, as it involves preparing the base of the casserole.
+
+4. **Steam until lobster is opaque**: This step is unrelated to a vegetable casserole, as lobster is not a typical ingredient in such a dish.
+
+5. **Pour puree over vegetables**: This step would likely occur after all the vegetables, including broccoli, are properly roasted, as it involves adding a finishing touch or sauce.
+
+Considering the sequence of preparing a vegetable casserole, the step 'Roast diced potatoes' is the most logical one to occur before adding broccoli for further roasting.
+
+Final Answer: Roast diced potatoes",Roast diced potatoes,"To determine which step occurs before 'Add broccoli, roast more', let's analyze the options provided:
+
+1. **Cook dumplings until soft**: This step seems unrelated to the casserole as it mentions dumplings, which are not typically part of a vegetable casserole.
+
+2. **Bake on center rack**: This step would likely occur after all ingredients have been assembled in the casserole dish, so it is not likely to occur before adding broccoli.
+
+3. **Roast diced potatoes**: This step is likely part of the preparation of the vegetables for the casserole. Roasting potatoes is a common step that could occur before adding other vegetables like broccoli.
+
+4. **Steam until lobster is opaque**: This step involves lobster, which is not a typical ingredient in a vegetable casserole, so it is unlikely to be part of this recipe.
+
+5. **Pour puree over vegetables**: This step would likely occur after the vegetables, including broccoli, have been added to the dish, so it is not likely to occur before adding broccoli.
+
+The most logical step that would occur before 'Add broccoli, roast more' is 'Roast diced potatoes', as it involves preparing the vegetables that are part of the casserole.
+
+Final answer: Roast diced potatoes",Roast diced potatoes,Roast diced potatoes,Roast diced potatoes
 "In the recipe 'Healthy Steamed Lobster Tails for One', which step occurs before 'Place tails in colander'?
 
 Options:
 - Cook dumplings until soft
 - Pour puree over vegetables
 - Remove membrane from lobster
-- Steam until lobster is opaque",The step 'Remove membrane from lobster' occurs before 'Place tails in colander'.,Remove membrane from lobster,The step 'Remove membrane from lobster' occurs before 'Place tails in colander'.,Remove membrane from lobster,Remove membrane from lobster,Remove membrane from lobster
+- Steam until lobster is opaque
+- Bake on center rack","First, let's analyze the steps given in the options in relation to the step 'Place tails in colander':
+
+1. **Cook dumplings until soft**: This step seems unrelated to the process of preparing lobster tails, as it involves cooking dumplings.
+
+2. **Pour puree over vegetables**: This step also seems unrelated to the lobster preparation, as it involves vegetables and puree.
+
+3. **Remove membrane from lobster**: This step is likely to be part of the preparation process for the lobster tails, as removing the membrane is a common step before cooking lobster.
+
+4. **Steam until lobster is opaque**: This step would occur after placing the tails in the colander, as steaming is the cooking process that follows.
+
+5. **Bake on center rack**: This step seems unrelated to steaming lobster tails, as baking is a different cooking method.
+
+Therefore, the step that occurs before 'Place tails in colander' is likely to be a preparatory step directly related to the lobster. 
+
+Final Answer: Remove membrane from lobster",Remove membrane from lobster,"First, let's think through the steps involved in preparing steamed lobster tails:
+
+1. **Remove membrane from lobster**: This is a preparatory step that involves cleaning the lobster tails, which typically happens before any cooking or steaming process.
+
+2. **Place tails in colander**: This step involves positioning the lobster tails for steaming, which comes after preparation steps like removing the membrane.
+
+Based on this logical sequence, the step that occurs before 'Place tails in colander' is the removal of the membrane from the lobster.
+
+Final answer: Remove membrane from lobster",Remove membrane from lobster,Remove membrane from lobster,Remove membrane from lobster
+"In the recipe 'Simple Rack of Lamb', which step occurs before 'Sprinkle with spices, oil'?
+
+Options:
+- Cook dumplings until soft
+- Bake on center rack
+- Pan sear lamb fat side
+- Steam until lobster is opaque
+- Pour puree over vegetables","To determine the correct step that occurs before 'Sprinkle with spices, oil' in the 'Simple Rack of Lamb' recipe, let's analyze each option:
+
+1. **Cook dumplings until soft**: This step is unrelated to preparing a rack of lamb and is likely part of a different recipe.
+
+2. **Bake on center rack**: This step typically occurs after seasoning or preparing the lamb with spices and oil, as baking is a cooking method that follows preparation.
+
+3. **Pan sear lamb fat side**: This step involves cooking the lamb, usually after it has been seasoned or prepared with spices and oil to enhance flavor during the cooking process.
+
+4. **Steam until lobster is opaque**: This step pertains to cooking lobster, not lamb, and is irrelevant to the lamb recipe.
+
+5. **Pour puree over vegetables**: This step is likely part of a side dish or garnish and does not directly relate to the preparation of the lamb itself.
+
+Given the context of preparing a rack of lamb, the step that logically precedes 'Sprinkle with spices, oil' is 'Pan sear lamb fat side,' as seasoning typically occurs before cooking methods like pan searing or baking.
+
+Final answer: Pan sear lamb fat side",Pan sear lamb fat side,"To determine which step occurs before ""Sprinkle with spices, oil"" in the recipe for 'Simple Rack of Lamb', we need to logically think through the preparation process for a rack of lamb.
+
+1. ""Sprinkle with spices, oil"" suggests that the lamb is being seasoned, which is typically done before cooking.
+2. ""Pan sear lamb fat side"" involves cooking the lamb, and searing usually happens after seasoning the meat.
+3. The other options involve cooking methods or actions that are unrelated to preparing a rack of lamb (e.g., cooking dumplings, steaming lobster, baking, pouring puree over vegetables).
+
+Given these considerations, the logical step that occurs before seasoning the lamb would be ""Pan sear lamb fat side,"" as seasoning is generally done before cooking, not after.
+
+Therefore, the step that occurs before ""Sprinkle with spices, oil"" is:
+
+Pan sear lamb fat side",Pan sear lamb fat side,Pan sear lamb fat side,Pan sear lamb fat side
+"In the recipe 'Moussaka Recipe', which step occurs before 'Alternate eggplant, meat mix'?
+
+Options:
+- Saute onion, brown meat
+- Pour puree over vegetables
+- Steam until lobster is opaque
+- Pour sauce, add cheese
+- Cook dumplings until soft","To determine which step occurs before 'Alternate eggplant, meat mix' in a Moussaka recipe, let's consider the logical sequence of cooking Moussaka:
+
+1. Moussaka typically starts with preparing the eggplant by slicing and possibly pre-cooking it (e.g., frying or baking).
+2. Next, the meat mixture is prepared. This usually involves sautéing onions and browning the meat with spices and possibly other ingredients like tomatoes or tomato paste.
+3. Once the meat mixture is ready, the assembly of the Moussaka begins by alternating layers of eggplant and the meat mixture.
+4. After layering, a sauce (often béchamel) is poured over the assembled layers, and cheese might be added before baking.
+
+Given this sequence, the step 'Saute onion, brown meat' logically occurs before 'Alternate eggplant, meat mix', as the meat mixture needs to be prepared before it can be layered with the eggplant.
+
+The other options do not logically fit into the Moussaka recipe:
+- 'Pour puree over vegetables' might relate to another dish but not typically Moussaka.
+- 'Steam until lobster is opaque' is unrelated to Moussaka.
+- 'Pour sauce, add cheese' happens after layering.
+- 'Cook dumplings until soft' is unrelated to Moussaka.
+
+Therefore, the correct step that occurs before 'Alternate eggplant, meat mix' is:
+
+Saute onion, brown meat","Saute onion, brown meat","First, let's identify the steps that are relevant to the 'Moussaka Recipe'. Moussaka is a traditional dish that typically involves eggplant and a meat mixture. 
+
+- ""Saute onion, brown meat"" is a typical step in preparing the meat mixture for Moussaka.
+- ""Pour puree over vegetables"" could be a step in adding tomato puree to the dish.
+- ""Steam until lobster is opaque"" is unrelated to Moussaka, as it involves seafood.
+- ""Pour sauce, add cheese"" could refer to adding bechamel sauce and cheese, which is a common step in Moussaka preparation.
+- ""Cook dumplings until soft"" is unrelated to Moussaka, as it involves dumplings.
+
+The step ""Alternate eggplant, meat mix"" suggests layering eggplant slices with the meat mixture, which is a key part of assembling Moussaka. Before this step, the meat mixture needs to be prepared.
+
+The step ""Saute onion, brown meat"" is the preparation of the meat mixture, which would logically occur before layering it with eggplant.
+
+Therefore, the step that occurs before ""Alternate eggplant, meat mix"" is:
+
+Saute onion, brown meat","Saute onion, brown meat","Saute onion, brown meat","Saute onion, brown meat"
