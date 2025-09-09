@@ -7,7 +7,7 @@ from tidy_up.prompting import tidy_up_prompter_open, tidy_up_prompter_multi_choi
 from tool_usage.prompting import tool_use_prompter
 from utils import GemmaPrompter, OpenAIPrompter, LlamaPrompter
 
-num_runs = 5
+num_runs = 10
 
 def main():
     parser = argparse.ArgumentParser(
@@ -124,6 +124,9 @@ def main():
         if 'sgicl' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_sgicl(prompters, num_runs)
             print('Finished the Tidy Up task (Multi Choice Questions) (SG-ICL)')
+        if 'contr' in args.techs:
+            tidy_up_prompter_multi_choice.prompt_all_models_contr(prompters, num_runs)
+            print('Finished the Tidy Up task (Multi Choice Questions) (Contrastive CoT)')
     if "proc_mc" in args.tasks:
         if 'rar' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi_rar(prompters, num_runs)

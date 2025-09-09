@@ -33,16 +33,17 @@ def transform_prediction_meta_mult(pred: str, choices: [str]) -> str:
 def transform_prediction_selfcon_single(pred: str, choices: [str]) -> str:
     # Extract last three sentence from LLM response
     split = pred.splitlines()
-    if len(split) > 2:
-        answ = ''.join([l for l in split[-3:]])
-    else:
-        answ = split[-1]
+    split.reverse()
 
-    # Check if last sentence contains viable answer
-    for choice in choices:
-        if choice.lower() in answ.lower():
-            return choice
-    print(f'{answ} does not contain viable answer')
+    # Scan back to front for viable answer, abort after three lines
+    l = 0
+    for line in split:
+        if l > 2: break
+        for choice in choices:
+            if choice.lower() in line.lower():
+                return choice
+        l+=1
+    print(f'{pred} does not contain viable answer')
     return pred
 
 

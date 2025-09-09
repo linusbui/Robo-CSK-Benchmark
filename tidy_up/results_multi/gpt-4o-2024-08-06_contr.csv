@@ -1,0 +1,11 @@
+object,correct_location,predicted_location,location_choices,correct_prediction
+action figure,pantry room,suitcase,"['pantry room', 'suitcase', 'palace', 'laundry room', 'car']",False
+adjustable wrench,bedroom,loft,"['glass', 'cat', 'press', 'loft', 'bedroom']",False
+alarmclock,bedroom,bedroom,"['bedroom', 'larder', 'attic', 'different room', ""child's room""]",True
+aluminumfoil,kitchen,kitchen,"[""prostitute's bedroom"", 'exercise room', 'kitchen', 'lamp', 'bathroom cabinet']",True
+android figure,corridor,chest,"['castle', 'separate room', 'teapot', 'chest', 'corridor']",False
+anti slip tape,exercise room,exercise room,"[""children's room"", 'exercise room', 'side of  room', 'icebox', 'home']",True
+antidepressant,pantry room,pantry room,"['bundle', 'laundry room', 'motel room', 'larder', 'pantry room']",True
+antique,attic,attic,"['attic', 'hall', 'court', 'butt', 'pot']",True
+apple,kitchen,kitchen,"['cup', 'furniture', 'bus', 'loft', 'kitchen']",True
+applesauce,jar,jar,"['teapot', 'dishwasher', 'sack', 'jar', 'engine']",True

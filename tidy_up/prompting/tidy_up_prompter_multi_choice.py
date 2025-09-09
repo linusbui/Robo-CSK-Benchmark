@@ -8,7 +8,7 @@ import os.path
 from tidy_up.prompting.tidy_up_result import TidyUpMultiChoiceResult
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
-from utils.formatting import transform_prediction_meta_single, majority_vote
+from utils.formatting import transform_prediction_meta_single, transform_prediction_selfcon_single, majority_vote
 from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
 system_msg = 'Imagine you are a robot tidying up a household environment, being confronted with an object and a possible list of locations to put it.'
@@ -118,7 +118,7 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
             answers = []
             for i in range(MAXIT_selfcon):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
-                pred_loc = transform_prediction_meta_single(res, choices)
+                pred_loc = transform_prediction_selfcon_single(res, choices)
                 answers.append(pred_loc)
                 log.update({f'cot_{i}': res,
                             f'answer_{i}': pred_loc})
@@ -126,7 +126,7 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
             tup = TidyUpMultiChoiceResult(obj, corr_loc, final_pred, choices)
             results.append(tup)
             log.update({'final_answer': final_pred,
-                        'correct_answer:': corr_loc})
+                        'correct_answer': corr_loc})
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name + '_selfcon', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'tidy_up/results_multi', False)
@@ -276,6 +276,74 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
         write_model_results_to_file(results, prompter.model_name + '_sgicl', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'tidy_up/results_multi', False)
         write_log_to_file(logs, prompter.model_name + '_sgicl', 'tidy_up')
+
+
+system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
+user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
+
+NUM_COT = 4
+def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
+    for prompter in prompters:
+        # Generate examples if needed
+        ex_file = f'tidy_up/examples/tidy_up_multichoice_cot_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_file):
+            results = []
+            log = pd.read_csv(f'tidy_up/logs/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            for index, row in tqdm(log.iterrows(),
+                                f'Prompting {prompter.model_name} to generate Tidy Up task examples'):
+                corr_loc = row['correct_answer']
+                # get correct cot
+                cot_right = ''
+                for i in range(MAXIT_selfcon):
+                    answ = row[f'answer_{i}']
+                    if answ == corr_loc:
+                        cot_right = row[f'cot_{i}']
+                        break
+                if cot_right == '': continue
+
+                question = f'Right answer:\n{cot_right}\nWrong answer:'
+                cot_wrong = prompter.prompt_model(system_msg_rewrite, user_msg_rewrite, question)
+                entry = {
+                    'question': row['question'],
+                    'cot_right': cot_right,
+                    'cot_wrong': cot_wrong
+                }
+                results.append(entry)
+            df = pd.DataFrame(results)
+            df.to_csv(ex_file, index=False)
+            print('Finished generating examples')
+
+        # Load examples
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_COT)
+        ex_str = ''
+        for index, row in examples.iterrows():
+            question = row['question']
+            cot_right = row['cot_right']
+            cot_wrong = row['cot_wrong']
+            ex_str = ex_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+
+        # few shot prompting
+        results = []
+        logs = []
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
+        for index, row in tqdm(questions.iterrows(),
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with SG-ICL Prompting'):
+            obj = row['Object']
+            corr_loc = row['Correct_Location']
+            choices = row['Wrong_Locations'] + [corr_loc]
+            random.shuffle(choices)
+            choices_string = ', '.join([c for c in choices])
+
+            question = f'Here are a few examples:\n{ex_str}Object: {obj}\nLocations: {choices_string}\nYour Choice:'
+            res = prompter.prompt_model(system_msg, user_msg, question)
+            tup = TidyUpMultiChoiceResult(obj, corr_loc, res, choices)
+            results.append(tup)
+            log = SgiclLogEntry(question, res, corr_loc)
+            logs.append(log)
+        write_model_results_to_file(results, prompter.model_name + '_contr', 'tidy_up/results_multi', False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tidy_up/results_multi', False)
+        write_log_to_file(logs, prompter.model_name + '_contr', 'tidy_up')
 
 
 def calculate_average(results: [TidyUpMultiChoiceResult], model: str):
