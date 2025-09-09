@@ -1,11 +1,11 @@
 task,affordance,correct_tool,predicted_tool,tool_choices,correct_prediction
-cleaning up spills,absorb,sponge,sponge,"['sponge', 'drill', 'kri', 'alligator wrench', 'shampoo']",True
-drying the dishes,absorb,sponge,strickle,"['strickle', 'sponge', 'tack hammer', 'toothpick', 'hunting knife']",False
-removing moisture,absorb,sponge,sponge,"['soapbottle', 'potato', 'peppershaker', 'sponge', 'steak knife']",True
-reheating coffee,be heated,pan,pan,"['desk lamp', 'footstool', 'pan', 'power saw', 'tap wrench']",True
-cooking a fried egg,be heated,cup,cup,"['hayfork', 'cup', 'hand drill', 'toilet paper', 'counterbore']",True
-cooking an omelette,be heated,pan,pan,"['pan', 'common ax', 'kirpan', ""croupier's rake"", 'fork']",True
-reheating soup,be heated,kettle,kettle,"['punch', 'cloth', 'roach clip', 'neolith', 'kettle']",True
-boiling water,be heated,plate,plate,"['tamp', 'laundryhamper', 'plate', 'toiletpaper', 'lightbulb']",True
-decorating a room,beautify,steel wool pad,axe,"['soda can', 'drawer', 'axe', 'steel wool pad', 'coffee']",False
-arranging flowers,beautify,abrader,basket ball,"['arm chair', 'creditcard', 'abrader', 'opener', 'basket ball']",False
+cleaning up spills,absorb,sponge,sponge,"['shampoo', 'kri', 'sponge', 'drill', 'alligator wrench']",True
+drying the dishes,absorb,sponge,strickle,"['sponge', 'strickle', 'tack hammer', 'hunting knife', 'toothpick']",False
+removing moisture,absorb,sponge,sponge,"['sponge', 'soapbottle', 'potato', 'peppershaker', 'steak knife']",True
+reheating coffee,be heated,pan,pan,"['footstool', 'tap wrench', 'desk lamp', 'power saw', 'pan']",True
+cooking a fried egg,be heated,cup,toilet paper,"['cup', 'hayfork', 'hand drill', 'counterbore', 'toilet paper']",False
+cooking an omelette,be heated,pan,pan,"[""croupier's rake"", 'common ax', 'kirpan', 'fork', 'pan']",True
+reheating soup,be heated,kettle,kettle,"['neolith', 'punch', 'kettle', 'cloth', 'roach clip']",True
+boiling water,be heated,plate,plate,"['tamp', 'plate', 'laundryhamper', 'lightbulb', 'toiletpaper']",True
+decorating a room,beautify,steel wool pad,drawer,"['axe', 'coffee', 'steel wool pad', 'soda can', 'drawer']",False
+arranging flowers,beautify,abrader,basket ball,"['abrader', 'basket ball', 'opener', 'creditcard', 'arm chair']",False

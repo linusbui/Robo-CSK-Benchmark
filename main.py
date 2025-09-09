@@ -105,6 +105,9 @@ def main():
         if 'sgicl' in args.techs:
             tool_use_prompter.prompt_all_models_sgicl(prompters, num_runs)
             print('Finished the Tool Usage task (SG-ICL)')
+        if 'contr' in args.techs:
+            tool_use_prompter.prompt_all_models_contr(prompters, num_runs)
+            print('Finished the Tool Usage task (Contrastive CoT)')
     if "ti_up_mc" in args.tasks:
         if 'rar' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_rar(prompters, num_runs)

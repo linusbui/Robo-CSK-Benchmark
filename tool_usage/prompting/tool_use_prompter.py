@@ -281,6 +281,72 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
         write_log_to_file(logs, prompter.model_name + '_sgicl', 'tool_usage')
 
 
+system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
+user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
+
+NUM_COT = 4
+def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
+    for prompter in prompters:
+        # Generate examples if needed
+        ex_file = f'tool_usage/examples/tool_usage_multichoice_cot_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_file):
+            results = []
+            log = pd.read_csv(f'tool_usage/logs/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            for index, row in tqdm(log.iterrows(),
+                                f'Prompting {prompter.model_name} to generate Tool Usage task examples'):
+                corr_tool = row['correct_answer']
+                # get correct cot
+                cot_right = ''
+                for i in range(MAXIT_selfcon):
+                    answ = row[f'answer_{i}']
+                    if answ == corr_tool:
+                        cot_right = row[f'cot_{i}']
+                        break
+                if cot_right == '': continue
+
+                question = f'Right answer:\n{cot_right}\nWrong answer:'
+                cot_wrong = prompter.prompt_model(system_msg_rewrite, user_msg_rewrite, question)
+                entry = {
+                    'question': row['question'],
+                    'cot_right': cot_right,
+                    'cot_wrong': cot_wrong
+                }
+                results.append(entry)
+            df = pd.DataFrame(results)
+            df.to_csv(ex_file, index=False)
+            print('Finished generating examples')
+
+    # Load examples
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_COT)
+        ex_str = ''
+        for index, row in examples.iterrows():
+            question = row['question']
+            cot_right = row['cot_right']
+            cot_wrong = row['cot_wrong']
+            ex_str = ex_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+
+    # few shot prompting
+        results = []
+        logs = []
+        questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task with SG-ICL Prompting'):
+            task = row['Task']
+            affordance = row['Affordance']
+            corr_tool = row['Correct_Tool']
+            choices = row['Wrong_Tools'] + [corr_tool]
+            random.shuffle(choices)
+            choices_string = ', '.join([c for c in choices])
+            question = f'Here are a few examples:\n{ex_str}Task: {task}\nTools: {choices_string}\nYour Choice:'
+            res = prompter.prompt_model(system_msg, user_msg, question)
+            tup = ToolSubstitutionResult(task, affordance, corr_tool, res, choices)
+            results.append(tup)
+            log = SgiclLogEntry(question, res, corr_tool)
+            logs.append(log)
+        write_model_results_to_file(results, prompter.model_name + '_contr', 'tool_usage')
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tool_usage')
+        write_log_to_file(logs, prompter.model_name + '_contr', 'tool_usage')
+
 def calculate_average(results: [ToolSubstitutionResult], model: str):
     average = {met: 0 for met in ['acc']}
     for res in results:

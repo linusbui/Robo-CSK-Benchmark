@@ -1,0 +1,11 @@
+task,affordance,correct_tool,predicted_tool,tool_choices,correct_prediction
+cleaning up spills,absorb,sponge,sponge,"['sponge', 'kri', 'shampoo', 'drill', 'alligator wrench']",True
+drying the dishes,absorb,sponge,sponge,"['strickle', 'toothpick', 'sponge', 'hunting knife', 'tack hammer']",True
+removing moisture,absorb,sponge,sponge,"['soapbottle', 'potato', 'sponge', 'steak knife', 'peppershaker']",True
+reheating coffee,be heated,pan,pan,"['footstool', 'pan', 'tap wrench', 'power saw', 'desk lamp']",True
+cooking a fried egg,be heated,cup,cup,"['toilet paper', 'hayfork', 'counterbore', 'cup', 'hand drill']",True
+cooking an omelette,be heated,pan,pan,"['kirpan', ""croupier's rake"", 'common ax', 'fork', 'pan']",True
+reheating soup,be heated,kettle,kettle,"['neolith', 'kettle', 'roach clip', 'cloth', 'punch']",True
+boiling water,be heated,plate,tamp,"['plate', 'laundryhamper', 'lightbulb', 'toiletpaper', 'tamp']",False
+decorating a room,beautify,steel wool pad,drawer,"['soda can', 'steel wool pad', 'coffee', 'drawer', 'axe']",False
+arranging flowers,beautify,abrader,opener,"['arm chair', 'opener', 'abrader', 'creditcard', 'basket ball']",False
