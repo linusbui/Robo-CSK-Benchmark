@@ -1,0 +1,21 @@
+question,final_answer,correct_answer
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: cleaning up spills
+Tools: alligator wrench, kri, shampoo, sponge, drill
+Your Choice:",sponge,sponge

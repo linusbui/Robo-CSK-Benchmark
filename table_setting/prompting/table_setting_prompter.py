@@ -44,9 +44,9 @@ def prompt_all_models(prompters: [Prompter]):
 user_msg_cut_rar = f'What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}. Reword and elaborate on the inquiry, then provide your final answer.'
 user_msg_plat_rar = f'What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}. Reword and elaborate on the inquiry, then provide your final answer.'
 
-def prompt_all_models_rar(prompters: [Prompter]):
+def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         results = []
         logs_cut = []
         logs_plat = []
@@ -98,9 +98,9 @@ user_msg_plat_meta = f'''What are the types of cutlery you would use to eat that
 Provide the answer in your final response as only your choice.
 '''
 
-def prompt_all_models_meta(prompters: [Prompter]):
+def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         results = []
         logs_cut = []
         logs_plat = []
@@ -138,9 +138,9 @@ user_msg_cut_selfcon = f'What are the types of cutlery you would use to eat that
 user_msg_plat_selfcon = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string}. Think step by step before answering with your chosen plate.'
 
 MAXIT_selfcon = 2
-def prompt_all_models_selfcon(prompters: [Prompter]):
+def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         results = []
         logs_cut = []
         logs_plat = []
@@ -200,9 +200,9 @@ user_msg_plat_feedback = "Provide Feedback on the answer. If you think the answe
 user_msg_refine = 'Improve upon the answer based on the feedback:'
 
 MAXIT_selfref = 2
-def prompt_all_models_selfref(prompters: [Prompter]):
+def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         results = []
         logs_cut = []
         logs_plat = []
@@ -280,9 +280,9 @@ system_msg = 'Imagine you are a robot setting a table for a meal.'
 user_msg_cut_principle = 'Your task is to extract the underlying concepts and principles that should be considered when selecting the types of cutlery to eat a given meal with.'
 user_msg_plat_principle = 'Your task is to extract the underlying concepts and principles that should be considered when selecting the types of plate to eat a given meal on.'
 
-def prompt_all_models_stepback(prompters: [Prompter]):
+def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         results = []
         logs_cut = []
         logs_plat = []
@@ -335,7 +335,7 @@ user_msg_cut_example = 'For the given choice of cutlery, generate a a meal that 
 user_msg_plat_example = 'For the given plate, generate a a meal that can be eaten with that cutlery. Answer in one short sentence only.'
 
 NUM_EXAMPLES = 8
-def prompt_all_models_sgicl(prompters: [Prompter]):
+def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         # Generate examples if needed
         ex_file = f'table_setting/examples/table_setting_examples_{prompter.model_name}.csv'
@@ -377,7 +377,7 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
             ex_plat_str = ex_plat_str + f'Meal: {meal_plat}\nPlate: {plate}\n'
 
         # few shot prompting
-        data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         results = []
         logs_cut = []
         logs_plat = []

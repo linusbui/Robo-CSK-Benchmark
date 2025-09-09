@@ -36,11 +36,11 @@ def prompt_all_models(prompters: [Prompter]):
 
 user_msg_rar = 'What is the single location from the given list that you think is the most suitable place to put the object? Reword and elaborate on the inquiry, then answer only with the location you chose.'
 
-def prompt_all_models_rar(prompters: [Prompter]):
+def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with RaR Prompting'):
@@ -71,11 +71,11 @@ What is the single location from the given list that you think is the most suita
 Provide the answer in your final response as only the location you choose.
 '''
 
-def prompt_all_models_meta(prompters: [Prompter]):
+def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Metacognitive Prompting'):
@@ -99,11 +99,11 @@ def prompt_all_models_meta(prompters: [Prompter]):
 user_msg_selfcon = 'What is the single location from the given list that you think is the most suitable place to put the object? Think step by step before answering with the single location of your choosing.'
 
 MAXIT_selfcon = 2
-def prompt_all_models_selfcon(prompters: [Prompter]):
+def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Self-Consistency Prompting'):
@@ -138,11 +138,11 @@ user_msg_feedback = "Provide Feedback on the answer. If you think the answer con
 user_msg_refine = 'Improve upon the answer based on the feedback:'
 
 MAXIT_selfref = 2
-def prompt_all_models_selfref(prompters: [Prompter]):
+def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Self-Refine Prompting'):
@@ -186,11 +186,11 @@ def prompt_all_models_selfref(prompters: [Prompter]):
 
 user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when choosing the most suitable place to put the object from of a given list.'
 
-def prompt_all_models_stepback(prompters: [Prompter]):
+def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Stepback Prompting'):
@@ -224,7 +224,7 @@ system_msg_example = 'You are helping to create questions regarding household en
 user_msg_example = 'For the given location, generate an object typically found in that location.'
 
 NUM_EXAMPLES = 8
-def prompt_all_models_sgicl(prompters: [Prompter]):
+def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         # Generate examples if needed
         ex_file = f'tidy_up/examples/tidy_up_multichoice_examples_{prompter.model_name}.csv'
@@ -257,7 +257,7 @@ def prompt_all_models_sgicl(prompters: [Prompter]):
         # few shot prompting
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with SG-ICL Prompting'):

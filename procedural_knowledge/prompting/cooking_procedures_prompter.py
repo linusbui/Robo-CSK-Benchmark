@@ -145,7 +145,7 @@ def prompt_all_models_multi(prompters: [Prompter]):
     evaluate_prompters.evaluate_multi(prompters, '')
 
 
-def prompt_all_models_multi_rar(prompters: [Prompter]):
+def prompt_all_models_multi_rar(prompters: [Prompter], num_runs: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
@@ -177,7 +177,7 @@ def prompt_all_models_multi_rar(prompters: [Prompter]):
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
-            recipe_components = extract_json_multi(json_file)
+            recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
             for recipe in recipe_components:
@@ -239,7 +239,7 @@ def prompt_all_models_multi_rar(prompters: [Prompter]):
     write_log_to_file(logs_after, prompter.model_name + '_after_rar', 'procedural_knowledge')
 
 
-def prompt_all_models_multi_meta(prompters: [Prompter]):
+def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
@@ -285,7 +285,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter]):
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
-            recipe_components = extract_json_multi(json_file)
+            recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
             for recipe in recipe_components:
@@ -348,7 +348,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter]):
 
 
 MAXIT_selfcon = 2
-def prompt_all_models_multi_selfcon(prompters: [Prompter]):
+def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
@@ -380,7 +380,7 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter]):
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
-            recipe_components = extract_json_multi(json_file)
+            recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
             for recipe in recipe_components:
@@ -462,7 +462,7 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter]):
     write_general_log_to_file(logs_after, prompter.model_name + '_after_selfcon', 'procedural_knowledge')
 
 MAXIT_selfref = 2
-def prompt_all_models_multi_selfref(prompters: [Prompter]):
+def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
@@ -544,7 +544,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
-            recipe_components = extract_json_multi(json_file)
+            recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
             for recipe in recipe_components:
@@ -608,7 +608,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter]):
     write_log_to_file(logs_after, prompter.model_name + '_after_selfref', 'procedural_knowledge')
 
 
-def prompt_all_models_multi_stepback(prompters: [Prompter]):
+def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
@@ -659,7 +659,7 @@ def prompt_all_models_multi_stepback(prompters: [Prompter]):
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
-            recipe_components = extract_json_multi(json_file)
+            recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
             for recipe in recipe_components:
@@ -722,7 +722,7 @@ def prompt_all_models_multi_stepback(prompters: [Prompter]):
 
 
 NUM_EXAMPLES = 8
-def prompt_all_models_multi_sgicl(prompters: [Prompter]):
+def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
     def get_example_before(prompter, recipe_title, step, step_before):
         system_msg_example = 'You are helping to create questions regarding household environments.'
         user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer in one short sentence only.'
@@ -816,7 +816,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter]):
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '_small.json'
-            recipe_components = extract_json_multi(json_file)
+            recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
             for recipe in recipe_components:
