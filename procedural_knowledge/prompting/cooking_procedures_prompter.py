@@ -739,7 +739,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
         user_msg = "Answer only with your chosen step."
         opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)
         question = (
-                f"Here are a few examples:\n{ex_after_str}"
+                f"Here are a few examples:\n{examples_str}"
                 f"Recipe title: {recipe_title}\n"
                 f"Step: {step_question}\n"
                 f"{opt_str}\n"
@@ -755,7 +755,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
         user_msg = "Answer only with your chosen step."
         opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)
         question = (
-                f'Here are a few examples:\n{ex_after_str}\n'
+                f'Here are a few examples:\n{examples_str}\n'
                 f"Recipe title: {recipe_title}\n"
                 f'Step: {step_question}\n'
                 f"{opt_str}\n"
