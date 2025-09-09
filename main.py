@@ -16,7 +16,7 @@ def main():
                         help="Choose one or more models to run")
     parser.add_argument("--tasks", type=str, choices=["ts", "mr_b", "mr_mc", "to_us", "ti_up_o", "ti_up_mc", "proc_b", "proc_mc"],
                         nargs="+", help="Choose one or more tasks to run")
-    parser.add_argument('--techs' ,type=str, choices=['rar', 'meta', 'contr_cot', 'selfcon', 'selfref', 'sgicl', 'stepback'],
+    parser.add_argument('--techs' ,type=str, choices=['rar', 'meta', 'contr', 'selfcon', 'selfref', 'sgicl', 'stepback'],
                         nargs="+")
     parser.add_argument("--new_tok", type=int, default=1000, help="Maximum number of new tokens for the model output")
     args = parser.parse_args()
@@ -83,6 +83,9 @@ def main():
         if 'sgicl' in args.techs:
             meta_reason_prompter_multi_choice.prompt_all_models_sgicl(prompters, num_runs)
             print('Finished the Meta-Reasoning task (Multi Choice Questions) (SG-ICL)')
+        if 'contr' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_contr(prompters, num_runs)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Contrastive CoT)')
     if "to_us" in args.tasks:
         if 'rar' in args.techs:
             tool_use_prompter.prompt_all_models_rar(prompters, num_runs)
