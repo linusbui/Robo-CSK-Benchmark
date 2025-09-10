@@ -1,32 +1,20 @@
 [
     {
         "title": "Ranch Mushrooms",
-        "question": "In the recipe 'Ranch Mushrooms', which steps occurs after 'Cook on low heat'?\nOptions:\n- Add ingredients to crock pot\n- Add mustard, stir, cover\n- Add meats to bean pot\n- Bake in water bath\n- Use stovetop if preferred",
-        "response": "Add mustard, stir, cover",
+        "question": "In the recipe 'Ranch Mushrooms', which steps occurs after 'Cook on low heat'?\nOptions:\n- Use stovetop if preferred\n- Add ingredients to crock pot\n- Bake in water bath",
+        "response": "Bake in water bath",
         "correct_response": "Use stovetop if preferred"
     },
     {
         "title": "Raspberry Creme Brulee Recipe",
-        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which steps occurs after 'Heat cream, add vanilla'?\nOptions:\n- Add meats to bean pot\n- Add mustard, stir, cover\n- Preheat oven to 300\u00b0F\n- Bake in water bath\n- Use stovetop if preferred",
+        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which steps occurs after 'Heat cream, add vanilla'?\nOptions:\n- Use stovetop if preferred\n- Bake in water bath\n- Preheat oven to 300\u00b0F",
         "response": "Bake in water bath",
         "correct_response": "Bake in water bath"
     },
     {
         "title": "Barbecue Hamburger Patties Recipe",
-        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which steps occurs after 'Shape into 6 patties'?\nOptions:\n- Bake in water bath\n- Use stovetop if preferred\n- Add meats to bean pot\n- Mix meat, onion, salt\n- Brown patties in skillet",
+        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which steps occurs after 'Shape into 6 patties'?\nOptions:\n- Brown patties in skillet\n- Bake in water bath\n- Use stovetop if preferred\n- Mix meat, onion, salt",
         "response": "Brown patties in skillet",
         "correct_response": "Brown patties in skillet"
-    },
-    {
-        "title": "Chicken Prepared-Mustard",
-        "question": "In the recipe 'Chicken Prepared-Mustard', which steps occurs after 'Add chicken and butter'?\nOptions:\n- Add meats to bean pot\n- Bake in water bath\n- Dice chicken breast\n- Use stovetop if preferred\n- Add mustard, stir, cover",
-        "response": "Add mustard, stir, cover",
-        "correct_response": "Add mustard, stir, cover"
-    },
-    {
-        "title": "Bower's Hunter's Chili",
-        "question": "In the recipe 'Bower's Hunter's Chili', which steps occurs after 'Brown ground meat, drain grease'?\nOptions:\n- Add mustard, stir, cover\n- Add meats to bean pot\n- Use stovetop if preferred\n- Bake in water bath\n- Panfry steak in olive oil",
-        "response": "Add meats to bean pot",
-        "correct_response": "Add meats to bean pot"
     }
 ]

@@ -1,32 +1,20 @@
 [
     {
         "title": "Aromatic Bread Dumplings",
-        "question": "In the recipe 'Aromatic Bread Dumplings', which steps occurs after 'Shape mixture into balls'?\nOptions:\n- Steam until lobster is opaque\n- Combine ingredients, mash well\n- Pour puree over vegetables\n- Bake on center rack\n- Cook dumplings until soft",
+        "question": "In the recipe 'Aromatic Bread Dumplings', which steps occurs after 'Shape mixture into balls'?\nOptions:\n- Steam until lobster is opaque\n- Combine ingredients, mash well\n- Pour puree over vegetables\n- Cook dumplings until soft",
         "response": "Cook dumplings until soft",
         "correct_response": "Cook dumplings until soft"
     },
     {
         "title": "Middle Eastern Vegetable Casserole",
-        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which steps occurs after 'Add broccoli, roast more'?\nOptions:\n- Cook dumplings until soft\n- Bake on center rack\n- Roast diced potatoes\n- Steam until lobster is opaque\n- Pour puree over vegetables",
+        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which steps occurs after 'Add broccoli, roast more'?\nOptions:\n- Pour puree over vegetables\n- Steam until lobster is opaque\n- Roast diced potatoes\n- Cook dumplings until soft",
         "response": "Pour puree over vegetables",
         "correct_response": "Pour puree over vegetables"
     },
     {
         "title": "Healthy Steamed Lobster Tails for One",
-        "question": "In the recipe 'Healthy Steamed Lobster Tails for One', which steps occurs after 'Place tails in colander'?\nOptions:\n- Cook dumplings until soft\n- Pour puree over vegetables\n- Remove membrane from lobster\n- Steam until lobster is opaque\n- Bake on center rack",
+        "question": "In the recipe 'Healthy Steamed Lobster Tails for One', which steps occurs after 'Place tails in colander'?\nOptions:\n- Cook dumplings until soft\n- Remove membrane from lobster\n- Steam until lobster is opaque\n- Pour puree over vegetables",
         "response": "Steam until lobster is opaque",
         "correct_response": "Steam until lobster is opaque"
-    },
-    {
-        "title": "Simple Rack of Lamb",
-        "question": "In the recipe 'Simple Rack of Lamb', which steps occurs after 'Sprinkle with spices, oil'?\nOptions:\n- Cook dumplings until soft\n- Bake on center rack\n- Pan sear lamb fat side\n- Steam until lobster is opaque\n- Pour puree over vegetables",
-        "response": "Pan sear lamb fat side",
-        "correct_response": "Bake on center rack"
-    },
-    {
-        "title": "Moussaka Recipe",
-        "question": "In the recipe 'Moussaka Recipe', which steps occurs after 'Alternate eggplant, meat mix'?\nOptions:\n- Saute onion, brown meat\n- Pour puree over vegetables\n- Steam until lobster is opaque\n- Pour sauce, add cheese\n- Cook dumplings until soft",
-        "response": "Pour sauce, add cheese",
-        "correct_response": "Pour sauce, add cheese"
     }
 ]

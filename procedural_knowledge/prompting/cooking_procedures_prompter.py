@@ -1,6 +1,7 @@
 import pandas as pd
 import random
 import os.path
+from tqdm import tqdm
 
 from procedural_knowledge.json_utils import extract_json, extract_json_multi, extract_json_multi_limited, save_to_json
 from procedural_knowledge.prompting import evaluate_prompters
@@ -872,3 +873,193 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
     evaluate_prompters.evaluate_multi(prompters, '_sgicl')
     write_log_to_file(logs_before, prompter.model_name + '_before_sgicl', 'procedural_knowledge')
     write_log_to_file(logs_after, prompter.model_name + '_after_sgicl', 'procedural_knowledge')
+
+
+NUM_COT = 4
+def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
+    def get_cot_before(prompter, cot_right):
+        system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
+        user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
+        question = f'Right answer:\n{cot_right}\nWrong answer:'
+        return prompter.prompt_model(system_msg_rewrite, user_msg_rewrite, question)
+    
+    def get_cot_after(prompter, cot_right):
+        system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
+        user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
+        question = f'Right answer:\n{cot_right}\nWrong answer:'
+        return prompter.prompt_model(system_msg_rewrite, user_msg_rewrite, question)
+
+    def get_answer_before(prompter, recipe_title, step_question, other_steps, examples_str):
+        system_msg = (
+            "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
+            "Based on the recipe title and the provided steps, identify which step occurred before another. "
+        )
+        user_msg = "Answer only with your chosen step."
+        opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)
+        question = (
+                f"Here are a few examples:\n{examples_str}"
+                f"Recipe title: {recipe_title}\n"
+                f"Step: {step_question}\n"
+                f"{opt_str}\n"
+                f"Step before:")
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+
+    def get_answer_after(prompter, recipe_title, step_question, other_steps, examples_str):
+        system_msg = (
+            "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
+            "Based on the recipe title and the provided steps, identify  which step occurred after another. "
+        )
+        user_msg = "Answer only with your chosen step."
+        opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)
+        question = (
+                f'Here are a few examples:\n{examples_str}\n'
+                f"Recipe title: {recipe_title}\n"
+                f'Step: {step_question}\n'
+                f"{opt_str}\n"
+                f"Step after:")
+        answer = prompter.prompt_model(system_msg, user_msg, question)
+        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+
+
+    for prompter in prompters:
+        # Generate before examples if needed
+        ex_before_file = f'procedural_knowledge/examples/cooking_procedures_multi_cot_before_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_before_file):
+            results = []
+            log_before = pd.read_csv(f'procedural_knowledge/logs/{prompter.model_name}_before_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            for index, row in tqdm(log_before.iterrows(),
+                                f'Prompting {prompter.model_name} to generate Meta-Rasoning task examples (before)'):
+                corr_conf = row['correct_answer']
+                # get correct cot
+                cot_right = ''
+                for i in range(MAXIT_selfcon):
+                    answ = row[f'answer_{i}']
+                    if answ == corr_conf:
+                        cot_right = row[f'cot_{i}']
+                        break
+                if cot_right == '': continue
+
+                cot_wrong = get_cot_before(prompter, cot_right)
+                entry = {
+                    'question': row['question'],
+                    'cot_right': cot_right,
+                    'cot_wrong': cot_wrong
+                }
+                results.append(entry)
+            df = pd.DataFrame(results)
+            df.to_csv(ex_before_file, index=False)
+            print('Finished generating before examples')
+
+        # Generate after examples if needed
+        ex_after_file = f'procedural_knowledge/examples/cooking_procedures_multi_cot_after_examples_{prompter.model_name}.csv'
+        if not os.path.isfile(ex_after_file):
+            results = []
+            log_after = pd.read_csv(f'procedural_knowledge/logs/{prompter.model_name}_after_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            for index, row in tqdm(log_after.iterrows(),
+                                f'Prompting {prompter.model_name} to generate Meta-Rasoning task examples (after)'):
+                corr_conf = row['correct_answer']
+                # get correct cot
+                cot_right = ''
+                for i in range(MAXIT_selfcon):
+                    answ = row[f'answer_{i}']
+                    if answ == corr_conf:
+                        cot_right = row[f'cot_{i}']
+                        break
+                if cot_right == '': continue
+
+                cot_wrong = get_cot_after(prompter, cot_right)
+                entry = {
+                    'question': row['question'],
+                    'cot_right': cot_right,
+                    'cot_wrong': cot_wrong
+                }
+                results.append(entry)
+            df = pd.DataFrame(results)
+            df.to_csv(ex_after_file, index=False)
+            print('Finished generating after examples')
+
+        # Load examples (before)
+        examples = pd.read_csv(ex_before_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        ex_before_str = ''
+        for index, row in examples.iterrows():
+            question = row['question']
+            cot_right = row['cot_right']
+            cot_wrong = row['cot_wrong']
+            ex_before_str = ex_before_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+        
+        # Load examples (after)
+        examples = pd.read_csv(ex_after_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        ex_after_str = ''
+        for index, row in examples.iterrows():
+            question = row['question']
+            cot_right = row['cot_right']
+            cot_wrong = row['cot_wrong']
+            ex_after_str = ex_after_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+
+        logs_before = []
+        logs_after = []
+        # Few shot prompting
+        for recipe_number in range(1, 5):
+            json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
+                recipe_number) + '.json'
+            recipe_components = extract_json_multi_limited(json_file, num_runs)
+            before_answers, after_answers = [], []
+
+            for recipe in recipe_components:
+                title = recipe['goal']
+                step_1 = recipe['step_1'].rstrip(". ").strip()
+                step_2 = recipe['step_2'].rstrip(". ").strip()
+                step_3 = recipe['step_3'].rstrip(". ").strip()
+
+                before_steps = [step_1, step_3]
+                available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
+                unique_step_3s = set(before_steps)  # track what's already added
+                random.shuffle(available_indices)  # randomize the order
+                for idx in available_indices:
+                    if len(unique_step_3s) >= 5:  # step_1 + step_3 + 3 unique additions
+                        break
+                    other_recipe = recipe_components[idx]
+                    candidate_step = other_recipe['step_3'].rstrip(". ").strip()
+                    if candidate_step not in unique_step_3s:
+                        before_steps.append(candidate_step)
+                        unique_step_3s.add(candidate_step)
+                random.shuffle(before_steps)
+                response, question, full_response = get_answer_before(prompter, title, step_2, before_steps, ex_before_str)
+                before_answers.append({
+                    'title': title,
+                    'question': question,
+                    'response': response,
+                    'correct_response': step_1
+                })
+                save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_contr/{recipe_number}.json', before_answers)
+                log_before = SgiclLogEntry(question, response, step_1)
+                logs_before.append(log_before)
+
+                after_steps = [step_1, step_3]
+                available_indices = [i for i in range(len(recipe_components)) if i != recipe_number]
+                unique_step_1s = set(after_steps)  # track what's already added
+                random.shuffle(available_indices)  # randomize the order
+                for idx in available_indices:
+                    if len(unique_step_1s) >= 5:  # step_1 + step_3 + 3 unique additions
+                        break
+                    other_recipe = recipe_components[idx]
+                    candidate_step = other_recipe['step_1'].rstrip(". ").strip()
+                    if candidate_step not in unique_step_1s:
+                        after_steps.append(candidate_step)
+                        unique_step_1s.add(candidate_step)
+
+                random.shuffle(after_steps)
+                response, question, full_response = get_answer_after(prompter, title, step_2, after_steps, ex_after_str)
+                after_answers.append({
+                    'title': title,
+                    'question': question,
+                    'response': response,
+                    'correct_response': step_3
+                })
+                save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_contr/{recipe_number}.json', after_answers)
+                log_after = BasicLogEntry(question, full_response, response, step_3)
+                logs_after.append(log_after)
+    evaluate_prompters.evaluate_multi(prompters, '_contr')
+    write_log_to_file(logs_before, prompter.model_name + '_before_contr', 'procedural_knowledge')
+    write_log_to_file(logs_after, prompter.model_name + '_after_contr', 'procedural_knowledge')
