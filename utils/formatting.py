@@ -10,7 +10,7 @@ def transform_prediction_meta_single(pred: str, choices: [str]) -> str:
         if choice.lower() in answ.lower():
             return choice
     print(f'{answ} does not contain viable answer')
-    return pred
+    return 'None'
 
 
 # Takes LLM response from Meta Reasoning prompting technique and list of possible answers
@@ -27,7 +27,7 @@ def transform_prediction_meta_mult(pred: str, choices: [str]) -> str:
             res.append(choice)
     if len(res) == 0:
         print(f'{answ} does not contain viable answer')
-    return res
+    return 'None'
 
 
 def transform_prediction_selfcon_single(pred: str, choices: [str]) -> str:
@@ -44,7 +44,7 @@ def transform_prediction_selfcon_single(pred: str, choices: [str]) -> str:
                 return choice
         l+=1
     print(f'{pred} does not contain viable answer')
-    return pred
+    return 'None'
 
 
 # Majority vote over LLM answers
