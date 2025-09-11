@@ -119,9 +119,12 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [
             answers = []
             for i in range(MAXIT_selfcon):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
-                # extract final answer:
-                user_msg_extract = f'Your task is to determine the final answer of a given LLM response. The final answer should only contain one of the following configurations: {choices}'
-                pred_conf = prompter_res.prompt_model(system_msg, user_msg_extract, res)
+                # try to extract result classicaly
+                pred_conf = transform_prediction_selfcon_single(res, choices)
+                if pred_conf == 'None':
+                    # extract final answer with LLM
+                    user_msg_extract = f'Your task is to determine the final answer of a given LLM response. The final answer should only contain one of the following configurations: {choices}'
+                    pred_conf = prompter_res.prompt_model(system_msg, user_msg_extract, res)
                 answers.append(pred_conf)
                 log.update({f'cot_{i}': res,
                             f'answer_{i}': pred_conf})
