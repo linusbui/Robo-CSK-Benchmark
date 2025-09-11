@@ -1,20 +1,14 @@
 [
     {
         "title": "Gingersnap Gravy",
-        "question": "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?\nOptions:\n- Cook pasta until al dente\n- Crumble gingersnaps, whisk\n- Saute onions, celery, garlic\n- Combine milk, eggs, spices\nIn the recipe 'Gingersnap Gravy', the step 'Crumble gingersnaps, whisk' occurs after 'Add stock, bring to boil'.\n\nYour Feedback:\nThe feedback is correct. In the recipe 'Gingersnap Gravy', the step 'Crumble gingersnaps, whisk' logically follows 'Add stock, bring to boil' as it involves incorporating the gingersnaps into the boiling stock to create the gravy. The other options do not directly relate to the sequence of making gravy. STOP.Your Choice:",
+        "question": "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?\nOptions:\n- Crumble gingersnaps, whisk\n- Combine milk, eggs, spices\n- Saute onions, celery, garlic\nIn the recipe 'Gingersnap Gravy', the step 'Crumble gingersnaps, whisk' occurs after 'Add stock, bring to boil'.\n\nYour Feedback:\nThe feedback is correct. In the recipe 'Gingersnap Gravy', the step 'Crumble gingersnaps, whisk' occurs after 'Add stock, bring to boil'. The other options, 'Combine milk, eggs, spices' and 'Saute onions, celery, garlic', likely occur before or are unrelated to the step in question. STOP.Your Choice:",
         "response": "Crumble gingersnaps, whisk",
         "correct_response": "Crumble gingersnaps, whisk"
     },
     {
         "title": "Mom's Pumpkin Pie Squares Recipe",
-        "question": "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which steps occurs after 'Pour into pan, sprinkle mix'?\nOptions:\n- Cook pasta until al dente\n- Bake until done\n- Combine milk, eggs, spices\n- Saute onions, celery, garlic\nIn the recipe 'Mom's Pumpkin Pie Squares Recipe', the step that occurs after 'Pour into pan, sprinkle mix' is 'Bake until done'.\n\nYour Feedback:\nYour feedback is correct. In the context of the recipe 'Mom's Pumpkin Pie Squares Recipe', the step 'Bake until done' logically follows 'Pour into pan, sprinkle mix', as baking is typically the next step after preparing and assembling the ingredients in a baking dish. The other options do not fit the context of a pumpkin pie squares recipe. STOP.Your Choice:",
+        "question": "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which steps occurs after 'Pour into pan, sprinkle mix'?\nOptions:\n- Saute onions, celery, garlic\n- Combine milk, eggs, spices\n- Bake until done\nIn the recipe 'Mom's Pumpkin Pie Squares Recipe', the step 'Bake until done' occurs after 'Pour into pan, sprinkle mix'.\n\nYour Feedback:\nThe feedback is correct. In the context of a recipe, the step 'Bake until done' logically follows after 'Pour into pan, sprinkle mix', as baking is typically the final step after preparing and assembling the ingredients. The other options, 'Saute onions, celery, garlic' and 'Combine milk, eggs, spices', are likely to occur before pouring and sprinkling. Therefore, the order is correct. STOP.Your Choice:",
         "response": "Bake until done",
         "correct_response": "Bake until done"
-    },
-    {
-        "title": "Shrimp and Pasta in a Basil Cream Sauce",
-        "question": "In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which steps occurs after 'Saute shallots and garlic'?\nOptions:\n- Combine milk, eggs, spices\n- Add shrimp and tomatoes\n- Saute onions, celery, garlic\n- Cook pasta until al dente\nIn the recipe 'Shrimp and Pasta in a Basil Cream Sauce', the step 'Add shrimp and tomatoes' occurs after 'Saute shallots and garlic'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Add shrimp and tomatoes' occurs after 'Saute shallots and garlic'. This is a logical progression in cooking, as typically, aromatics like shallots and garlic are saut\u00e9ed first to build flavor before adding main ingredients like shrimp and tomatoes. \n\nSTOPYour Choice:",
-        "response": "Add shrimp and tomatoes",
-        "correct_response": "Add shrimp and tomatoes"
     }
 ]

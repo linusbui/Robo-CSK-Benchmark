@@ -195,8 +195,7 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
 user_msg_cut_initial = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}'
 user_msg_plat_inital = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string}'
 
-user_msg_cut_feedback = "Provide Feedback on the answer. If you think the answer contains the right selection of cutlery, end your answer with 'STOP'."
-user_msg_plat_feedback = "Provide Feedback on the answer. If you think the answer contains the right plate, end your answer with 'STOP'."
+user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
 user_msg_refine = 'Improve upon the answer based on the feedback:'
 
 MAXIT_selfref = 2
@@ -222,10 +221,15 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             for i in range(MAXIT_selfref):
                 # feedback 
                 question = question + '\nYour Feedback:'
-                feedback = prompter.prompt_model(system_msg, user_msg_cut_feedback, question)
+                feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
                 question = question + f'\n{feedback}'
 
-                if 'STOP' in feedback: break
+                # Stopping condition
+                ind = feedback.lower().find('score')
+                if not ind == -1:
+                    end = feedback[ind:]
+                    if '4' in end or '5' in end:
+                        break
 
                 # refine
                 question = question + '\nImprovement:'
@@ -234,7 +238,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
 
             # final answer for cutlery
             user_msg_cut_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choices: {utensils_string}'
-            question = question + 'Your Choice:'
+            question = question + '\nYour Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_cut_final, question)
             pred_cut = transform_utensil_prediction_meta(final_pred)
             tup.add_predicted_utensils(pred_cut)
@@ -249,10 +253,15 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             for i in range(MAXIT_selfref):
                 # feedback 
                 question = question + '\nYour Feedback:'
-                feedback = prompter.prompt_model(system_msg, user_msg_plat_feedback, question)
+                feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
                 question = question + f'\n{feedback}'
 
-                if 'STOP' in feedback: break
+                # Stopping condition
+                ind = feedback.lower().find('score')
+                if not ind == -1:
+                    end = feedback[ind:]
+                    if '4' in end or '5' in end:
+                        break
 
                 # refine
                 question = question + '\nImprovement:'
@@ -261,7 +270,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
 
             # final answer for plate
             user_msg_plat_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice: {plates_string}'
-            question = question + 'Your Choice:'
+            question = question + '\nYour Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_plat_final, question)
             pred_plat = transform_plate_prediction_meta(final_pred)
             tup.add_predicted_plate(pred_plat)

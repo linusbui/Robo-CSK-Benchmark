@@ -466,7 +466,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
             "Based on the recipe title and the provided steps, identify which step occurred before another. "
         )
         user_msg_initial = ''
-        user_msg_feedback = "Provide Feedback on the answer. If you think the answer contains the right order, end your answer with 'STOP'."
+        user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
         user_msg_refine = 'Improve upon the answer based on the feedback:'
         user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice:\n' + "\n".join(f"- {step}" for step in other_steps)
 
@@ -484,7 +484,12 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
             feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
             question = question + f'\n{feedback}'
 
-            if 'STOP' in feedback: break
+            # Stopping condition
+            ind = feedback.lower().find('score')
+            if not ind == -1:
+                end = feedback[ind:]
+                if '4' in end or '5' in end:
+                    break
 
             # refine
             question = question + '\nImprovement:'
@@ -492,7 +497,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
             question = question + f'\n{refine}\n'
 
         # final answer
-        question = question + 'Your Choice:'
+        question = question + '\nYour Choice:'
         final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
 
         return transform_prediction_meta_single(final_pred, [step for step in other_steps]), question, final_pred
@@ -503,7 +508,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
             "Based on the recipe title and the provided steps, identify which step occurred after another. "
         )
         user_msg_initial = ''
-        user_msg_feedback = "Provide Feedback on the answer. If you think the answer contains the right order, end your answer with 'STOP'."
+        user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
         user_msg_refine = 'Improve upon the answer based on the feedback:'
         user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice:\n' + "\n".join(f"- {step}" for step in other_steps)
         
@@ -522,7 +527,12 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
             feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
             question = question + f'\n{feedback}'
 
-            if 'STOP' in feedback: break
+            # Stopping condition
+            ind = feedback.lower().find('score')
+            if not ind == -1:
+                end = feedback[ind:]
+                if '4' in end or '5' in end:
+                    break
 
             # refine
             question = question + '\nImprovement:'
@@ -530,7 +540,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
             question = question + f'\n{refine}\n'
 
         # final answer
-        question = question + 'Your Choice:'
+        question = question + '\nYour Choice:'
         final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
 
         return transform_prediction_meta_single(final_pred, [step for step in other_steps]), question, final_pred

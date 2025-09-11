@@ -137,7 +137,7 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [
 
 
 user_msg_initial = 'What is the single hardware configuration from the given list that you think is the most suitable to execute the task?'
-user_msg_feedback = "Provide Feedback on the answer. If you think the answer contains the right configuration, end your answer with 'STOP'."
+user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
 user_msg_refine = 'Improve upon the answer based on the feedback:'
 
 MAXIT_selfref = 2
@@ -161,14 +161,18 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             question = question + f'\n{initial}\n'
 
             # Feedback - Refine iterations
-            stopped = False
             for i in range(MAXIT_selfref):
                 # feedback
                 question = question + '\nYour Feedback:'
                 feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
                 question = question + f'\n{feedback}'
 
-                if 'STOP' in feedback: break
+                # Stopping condition
+                ind = feedback.lower().find('score')
+                if not ind == -1:
+                    end = feedback[ind:]
+                    if '4' in end or '5' in end:
+                        break
 
                 # refine
                 question = question + '\nImprovement:'
@@ -177,7 +181,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
 
             # final answer
             user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. The answer should only contain one of the following configurations: {choices}'
-            question = question + 'Your Choice:'
+            question = question + '\nYour Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
             pred_conf = transform_prediction_meta_single(final_pred, choices)
 

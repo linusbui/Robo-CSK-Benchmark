@@ -1,20 +1,14 @@
 [
     {
         "title": "Aromatic Bread Dumplings",
-        "question": "In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?\n\nOptions:\n- Steam until lobster is opaque\n- Cook dumplings until soft\n- Pour puree over vegetables\n- Combine ingredients, mash well\nIn the recipe 'Aromatic Bread Dumplings', the step 'Combine ingredients, mash well' occurs before 'Shape mixture into balls'.\n\nYour Feedback:\nThe answer correctly identifies that 'Combine ingredients, mash well' occurs before 'Shape mixture into balls' in the recipe 'Aromatic Bread Dumplings'. This is because combining and mashing the ingredients is a preparatory step that logically precedes shaping the mixture into balls. \n\nSTOPYour Choice:",
+        "question": "In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?\n\nOptions:\n- Pour puree over vegetables\n- Cook dumplings until soft\n- Combine ingredients, mash well\nIn the recipe 'Aromatic Bread Dumplings', the step 'Combine ingredients, mash well' occurs before 'Shape mixture into balls'.\n\nYour Feedback:\nYour feedback is accurate. In the process of making 'Aromatic Bread Dumplings', combining the ingredients and mashing them well is a preparatory step that logically occurs before shaping the mixture into balls. This ensures that the ingredients are well-integrated and have the right consistency for shaping. Therefore, the step 'Combine ingredients, mash well' should indeed occur before 'Shape mixture into balls'.\n\nScore: 5\nYour Choice:",
         "response": "Combine ingredients, mash well",
         "correct_response": "Combine ingredients, mash well"
     },
     {
         "title": "Middle Eastern Vegetable Casserole",
-        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?\n\nOptions:\n- Roast diced potatoes\n- Steam until lobster is opaque\n- Cook dumplings until soft\n- Pour puree over vegetables\nIn the recipe 'Middle Eastern Vegetable Casserole', the step 'Roast diced potatoes' occurs before 'Add broccoli, roast more'.\n\nYour Feedback:\nThe answer correctly identifies that 'Roast diced potatoes' occurs before 'Add broccoli, roast more' in the recipe 'Middle Eastern Vegetable Casserole'. This is a logical sequence as roasting potatoes would typically occur before adding and roasting additional vegetables like broccoli. STOPYour Choice:",
+        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?\n\nOptions:\n- Cook dumplings until soft\n- Pour puree over vegetables\n- Roast diced potatoes\nIn the recipe 'Middle Eastern Vegetable Casserole', the step 'Roast diced potatoes' occurs before 'Add broccoli, roast more'.\n\nYour Feedback:\nThe answer correctly identifies that the step 'Roast diced potatoes' occurs before 'Add broccoli, roast more'. In a typical recipe sequence, roasting potatoes would logically occur before adding additional ingredients like broccoli for further roasting. This ensures that the potatoes have enough time to cook properly before the broccoli is added. The answer is consistent with a logical cooking process.\n\nScore: 5\nYour Choice:",
         "response": "Roast diced potatoes",
         "correct_response": "Roast diced potatoes"
-    },
-    {
-        "title": "Healthy Steamed Lobster Tails for One",
-        "question": "In the recipe 'Healthy Steamed Lobster Tails for One', which step occurs before 'Place tails in colander'?\n\nOptions:\n- Steam until lobster is opaque\n- Remove membrane from lobster\n- Pour puree over vegetables\n- Cook dumplings until soft\nThe step 'Remove membrane from lobster' occurs before 'Place tails in colander'.\n\nYour Feedback:\nThe answer is correct. The step 'Remove membrane from lobster' logically occurs before 'Place tails in colander' as you would need to prepare the lobster tails by removing the membrane before placing them in the colander for steaming. STOP.Your Choice:",
-        "response": "Remove membrane from lobster",
-        "correct_response": "Remove membrane from lobster"
     }
 ]
