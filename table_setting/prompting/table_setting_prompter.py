@@ -341,7 +341,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
 user_msg_cut_example = 'For the given choice of cutlery, generate a a meal that can be eaten with that cutlery. Answer only with the meal.'
-user_msg_plat_example = 'For the given plate, generate a a meal that can be eaten with that cutlery. Answer in one short sentence only.'
+user_msg_plat_example = 'For the given plate, generate a a meal that can be eaten with that cutlery. Answer only with the meal.'
 
 NUM_EXAMPLES = 8
 def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):

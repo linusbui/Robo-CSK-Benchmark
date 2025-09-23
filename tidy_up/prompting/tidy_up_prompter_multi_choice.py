@@ -226,7 +226,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
-user_msg_example = 'For the given location, generate an object typically found in that location.'
+user_msg_example = 'For the given location, generate an object typically found in that location. Answer only with the object.'
 
 NUM_EXAMPLES = 8
 def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
