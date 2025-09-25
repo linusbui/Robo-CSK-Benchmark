@@ -1,23 +1,21 @@
 task,affordance,correct_tool,predicted_tool,tool_choices,correct_prediction
-cleaning up spills,absorb,sponge,sponge,"['sponge', 'alligator wrench', 'shampoo', 'kri', 'drill']",True
-drying the dishes,absorb,sponge,sponge,"['strickle', 'toothpick', 'sponge', 'tack hammer', 'hunting knife']",True
-removing moisture,absorb,sponge,sponge,"['peppershaker', 'soapbottle', 'sponge', 'potato', 'steak knife']",True
-reheating coffee,be heated,pan,pan,"['power saw', 'footstool', 'tap wrench', 'pan', 'desk lamp']",True
-cooking a fried egg,be heated,cup,cup,"['toilet paper', 'cup', 'hand drill', 'counterbore', 'hayfork']",True
-cooking an omelette,be heated,pan,pan,"['kirpan', 'fork', 'common ax', ""croupier's rake"", 'pan']",True
-reheating soup,be heated,kettle,kettle,"['cloth', 'kettle', 'punch', 'neolith', 'roach clip']",True
-boiling water,be heated,plate,"to determine the most suitable tool for boiling water from the given list, let's evaluate each option step by step:
-
-1. **lightbulb**: a lightbulb is primarily used for illumination. it does not have the capability to heat water to its boiling point. therefore, it is not suitable for boiling water.
-
-2. **tamp**: a tamp is typically used in the context of compressing or packing materials, such as coffee grounds in an espresso machine. it does not have any heating capabilities, so it is not suitable for boiling water.
-
-3. **plate**: a plate is generally used for serving or holding food. it does not provide any heating function, so it cannot be used to boil water.
-
-4. **laundry hamper**: a laundry hamper is used for storing dirty clothes. it has no heating function and cannot be used to boil water.
-
-5. **toilet paper**: toilet paper is used for hygiene purposes. it does not have any heating capabilities and cannot be used to boil water.
-
-after evaluating each tool, none of the options provided are suitable for the task of boiling water. boiling water typically requires a heat source such as a stove, kettle, or microwave, none of which are present in the list. therefore, based on the given list, there is no appropriate tool to execute the task of boiling water.","['lightbulb', 'tamp', 'plate', 'laundryhamper', 'toiletpaper']",False
-decorating a room,beautify,steel wool pad,steel wool pad,"['soda can', 'coffee', 'drawer', 'steel wool pad', 'axe']",True
-arranging flowers,beautify,abrader,opener,"['arm chair', 'opener', 'abrader', 'basket ball', 'creditcard']",False
+cleaning up spills,absorb,sponge,sponge,"['kri', 'drill', 'shampoo', 'sponge', 'alligator wrench']",True
+drying the dishes,absorb,sponge,sponge,"['sponge', 'hunting knife', 'tack hammer', 'toothpick', 'strickle']",True
+removing moisture,absorb,sponge,sponge,"['soapbottle', 'steak knife', 'peppershaker', 'potato', 'sponge']",True
+reheating coffee,be heated,pan,pan,"['power saw', 'footstool', 'pan', 'desk lamp', 'tap wrench']",True
+cooking a fried egg,be heated,cup,cup,"['hayfork', 'cup', 'counterbore', 'toilet paper', 'hand drill']",True
+cooking an omelette,be heated,pan,pan,"['pan', 'fork', 'common ax', ""croupier's rake"", 'kirpan']",True
+reheating soup,be heated,kettle,kettle,"['cloth', 'kettle', 'roach clip', 'neolith', 'punch']",True
+boiling water,be heated,plate,none,"['plate', 'tamp', 'laundryhamper', 'lightbulb', 'toiletpaper']",False
+decorating a room,beautify,steel wool pad,steel wool pad,"['axe', 'drawer', 'soda can', 'coffee', 'steel wool pad']",True
+arranging flowers,beautify,abrader,opener,"['creditcard', 'basket ball', 'arm chair', 'abrader', 'opener']",False
+painting walls,beautify,rat tail file,none,"['vacuumcleaner', 'rat tail file', 'tomato', 'allen wrench', 'vase']",False
+applying make-up,beautify,nailfile,handstamp,"['nailfile', 'ravehook', 'dogbed', 'handstamp', 'corkscrew']",False
+shaping wire,bend,bender,bender,"['spreader', 'pipe wrench', 'ax', 'bender', 'drawknife']",True
+adjusting blinds,bend,bender,bender,"['food jar', 'breadknife', 'hacksaw', 'bender', 'garden trowel']",True
+fitting flexible piping,bend,saw set,pruning saw,"['pruning saw', 'bit', 'circular plane', 'saw set', 'scraper']",False
+installing shelves,bore,bucksaw,bucksaw,"['bucksaw', 'ax', 'shampoo', 'coffee machine', 'drawer']",True
+hanging pictures,bore,straight flute,set square,"['jack plane', 'set square', 'stamp', 'desk lamp', 'straight flute']",False
+assembling furniture,bore,router,hammer,"['chamfer plane', 'router', 'hammer', 'stapler', 'crown saw']",False
+preparing food,break,jigsaw,steak knife,"['soap bar', 'jigsaw', 'lightbulb', 'steak knife', 'steel wool pad']",False
+opening packaging,break,folding saw,bulldog wrench,"['folding saw', 'bender', 'abrading stone', 'shovel', 'bulldog wrench']",False

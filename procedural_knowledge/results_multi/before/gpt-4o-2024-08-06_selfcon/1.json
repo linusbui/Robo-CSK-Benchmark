@@ -1,20 +1,32 @@
 [
     {
         "title": "Worlds Best Mac and Cheese",
-        "question": "In the recipe 'Worlds Best Mac and Cheese', which step occurs before 'Mix pasta with sauce'?\n\nOptions:\n- Bake with cheese topping\n- Cook pasta less than directions\n- Drizzle oil, garnish, serve",
+        "question": "In the recipe 'Worlds Best Mac and Cheese', which step occurs before 'Mix pasta with sauce'?\n\nOptions:\n- Spoon into crust\n- Drizzle oil, garnish, serve\n- Cook pasta less than directions\n- Bake until cheese melts\n- Bake with cheese topping",
         "response": "Cook pasta less than directions",
         "correct_response": "Cook pasta less than directions"
     },
     {
         "title": "Dilly Macaroni Salad Recipe",
-        "question": "In the recipe 'Dilly Macaroni Salad Recipe', which step occurs before 'Combine macaroni and vegetables'?\n\nOptions:\n- Bake with cheese topping\n- Cook and drain macaroni\n- Drizzle oil, garnish, serve\n- Blend dressing and add",
+        "question": "In the recipe 'Dilly Macaroni Salad Recipe', which step occurs before 'Combine macaroni and vegetables'?\n\nOptions:\n- Bake with cheese topping\n- Drizzle oil, garnish, serve\n- Cook and drain macaroni\n- Blend dressing and add\n- Spoon into crust",
         "response": "Cook and drain macaroni",
         "correct_response": "Cook and drain macaroni"
     },
     {
         "title": "Gazpacho",
-        "question": "In the recipe 'Gazpacho', which step occurs before 'Combine vegetables with puree'?\n\nOptions:\n- Drizzle oil, garnish, serve\n- Bake with cheese topping\n- Puree tomatoes with salt",
+        "question": "In the recipe 'Gazpacho', which step occurs before 'Combine vegetables with puree'?\n\nOptions:\n- Bake with cheese topping\n- Puree tomatoes with salt\n- Bake until cheese melts\n- Drizzle oil, garnish, serve\n- Spoon into crust",
         "response": "Puree tomatoes with salt",
         "correct_response": "Puree tomatoes with salt"
+    },
+    {
+        "title": "Crunchy Onion Potato Bake",
+        "question": "In the recipe 'Crunchy Onion Potato Bake', which step occurs before 'Heat milk, water, butter'?\n\nOptions:\n- Preheat oven\n- Spoon into crust\n- Drizzle oil, garnish, serve\n- Bake until cheese melts\n- Bake with cheese topping",
+        "response": "Preheat oven",
+        "correct_response": "Preheat oven"
+    },
+    {
+        "title": "Cool 'n Easy Creamy Watermelon Pie",
+        "question": "In the recipe 'Cool 'n Easy Creamy Watermelon Pie', which step occurs before 'Whisk in Cool Whip'?\n\nOptions:\n- Drizzle oil, garnish, serve\n- Bake with cheese topping\n- Bake until cheese melts\n- Spoon into crust\n- Dissolve Jello in water",
+        "response": "Dissolve Jello in water",
+        "correct_response": "Dissolve Jello in water"
     }
 ]

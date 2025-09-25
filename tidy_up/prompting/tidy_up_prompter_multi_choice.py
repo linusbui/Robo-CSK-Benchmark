@@ -189,7 +189,8 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
         write_log_to_file(logs, prompter.model_name + '_selfref', 'tidy_up')
 
 
-user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when choosing the most suitable place to put the object from of a given list.'
+system_msg_principle = 'You are given a multiple-choice question. Your task is to extract the underlying concepts and principles involved in choosing the right answer.'
+user_msg_principle = 'Only answer with the 5 most important concepts and principles.'
 
 def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
@@ -207,10 +208,10 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
             # Get higher level principles
             p_question = f'Object: {obj}\nLocations: {choices_string}\nPrinciples:'
-            principles = prompter.prompt_model(system_msg, user_msg_principle, p_question)
+            principles = prompter.prompt_model(system_msg_principle, user_msg_principle, p_question)
 
             # Get answer based on principles
-            user_msg_stepback = f'What is the single location from the given list that you think is the most suitable place to put the object? Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only the single location you choose.'
+            user_msg_stepback = f'What is the single location from the given list that you think is the most suitable place to put the object? Answer the question step by step using the following principles:\n{principles}\nEnd your answer with the single location you chose.'
             question = f'Object: {obj}\nLocations: {choices_string}\nYour Choice:'
 
             res = prompter.prompt_model(system_msg, user_msg_stepback, question)

@@ -2,68 +2,140 @@ question,full_answer,final_answer,correct_answer
 "In the recipe 'Worlds Best Mac and Cheese', which steps occurs after 'Mix pasta with sauce'?
 Options:
 - Bake with cheese topping
-- Cook pasta less than directions
-- Puree tomatoes with salt",Bake with cheese topping,Bake with cheese topping,Bake with cheese topping
+- Dissolve Jello in water
+- Preheat oven
+- Puree tomatoes with salt
+- Cook pasta less than directions",Bake with cheese topping,Bake with cheese topping,Bake with cheese topping
 "In the recipe 'Dilly Macaroni Salad Recipe', which steps occurs after 'Combine macaroni and vegetables'?
 Options:
-- Cook pasta less than directions
 - Puree tomatoes with salt
+- Cook and drain macaroni
 - Blend dressing and add
-- Cook and drain macaroni",Blend dressing and add,Blend dressing and add,Blend dressing and add
+- Cook pasta less than directions
+- Dissolve Jello in water",Blend dressing and add,Blend dressing and add,Blend dressing and add
 "In the recipe 'Gazpacho', which steps occurs after 'Combine vegetables with puree'?
 Options:
 - Cook pasta less than directions
+- Drizzle oil, garnish, serve
+- Preheat oven
+- Dissolve Jello in water
+- Puree tomatoes with salt","Drizzle oil, garnish, serve","Drizzle oil, garnish, serve","Drizzle oil, garnish, serve"
+"In the recipe 'Crunchy Onion Potato Bake', which steps occurs after 'Heat milk, water, butter'?
+Options:
+- Cook pasta less than directions
 - Puree tomatoes with salt
-- Drizzle oil, garnish, serve","Drizzle oil, garnish, serve","Drizzle oil, garnish, serve","Drizzle oil, garnish, serve"
+- Preheat oven
+- Bake until cheese melts
+- Dissolve Jello in water",Bake until cheese melts,Bake until cheese melts,Bake until cheese melts
+"In the recipe 'Cool 'n Easy Creamy Watermelon Pie', which steps occurs after 'Whisk in Cool Whip'?
+Options:
+- Puree tomatoes with salt
+- Spoon into crust
+- Preheat oven
+- Dissolve Jello in water
+- Cook pasta less than directions",Spoon into crust,Spoon into crust,Spoon into crust
 "In the recipe 'Ranch Mushrooms', which steps occurs after 'Cook on low heat'?
 Options:
-- Add ingredients to crock pot
+- Preheat oven to 300°F
 - Use stovetop if preferred
-- Preheat oven to 300°F",Use stovetop if preferred,Use stovetop if preferred,Use stovetop if preferred
+- Panfry steak in olive oil
+- Add ingredients to crock pot
+- Dice chicken breast",Add ingredients to crock pot,Add ingredients to crock pot,Use stovetop if preferred
 "In the recipe 'Raspberry Creme Brulee Recipe', which steps occurs after 'Heat cream, add vanilla'?
 Options:
-- Bake in water bath
 - Preheat oven to 300°F
-- Add ingredients to crock pot",Bake in water bath,Bake in water bath,Bake in water bath
+- Panfry steak in olive oil
+- Add ingredients to crock pot
+- Bake in water bath
+- Dice chicken breast",Bake in water bath,Bake in water bath,Bake in water bath
 "In the recipe 'Barbecue Hamburger Patties Recipe', which steps occurs after 'Shape into 6 patties'?
 Options:
-- Mix meat, onion, salt
+- Panfry steak in olive oil
 - Preheat oven to 300°F
+- Mix meat, onion, salt
 - Add ingredients to crock pot
 - Brown patties in skillet",Brown patties in skillet,Brown patties in skillet,Brown patties in skillet
+"In the recipe 'Chicken Prepared-Mustard', which steps occurs after 'Add chicken and butter'?
+Options:
+- Dice chicken breast
+- Add ingredients to crock pot
+- Preheat oven to 300°F
+- Panfry steak in olive oil
+- Add mustard, stir, cover","Add mustard, stir, cover","Add mustard, stir, cover","Add mustard, stir, cover"
+"In the recipe 'Bower's Hunter's Chili', which steps occurs after 'Brown ground meat, drain grease'?
+Options:
+- Add ingredients to crock pot
+- Add meats to bean pot
+- Preheat oven to 300°F
+- Dice chicken breast
+- Panfry steak in olive oil",Add ingredients to crock pot,Add ingredients to crock pot,Add meats to bean pot
 "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?
 Options:
-- Combine milk, eggs, spices
 - Saute onions, celery, garlic
-- Cook pasta until al dente
-- Crumble gingersnaps, whisk","Crumble gingersnaps, whisk","Crumble gingersnaps, whisk","Crumble gingersnaps, whisk"
+- Combine milk, eggs, spices
+- Crumble gingersnaps, whisk
+- Layer vegetables in crock pot
+- Cook pasta until al dente","Crumble gingersnaps, whisk","Crumble gingersnaps, whisk","Crumble gingersnaps, whisk"
 "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which steps occurs after 'Pour into pan, sprinkle mix'?
 Options:
-- Cook pasta until al dente
+- Layer vegetables in crock pot
+- Combine milk, eggs, spices
 - Bake until done
 - Saute onions, celery, garlic
-- Combine milk, eggs, spices",Bake until done,Bake until done,Bake until done
+- Cook pasta until al dente",Bake until done,Bake until done,Bake until done
 "In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which steps occurs after 'Saute shallots and garlic'?
 Options:
+- Add shrimp and tomatoes
+- Combine milk, eggs, spices
+- Saute onions, celery, garlic
+- Cook pasta until al dente
+- Layer vegetables in crock pot",Add shrimp and tomatoes,Add shrimp and tomatoes,Add shrimp and tomatoes
+"In the recipe 'Smoked Fish & Broccoli Flan', which steps occurs after 'Arrange broccoli, onion, fish'?
+Options:
+- Saute onions, celery, garlic
+- Pour mixture, sprinkle cheese
+- Combine milk, eggs, spices
+- Layer vegetables in crock pot
+- Roll out dough, line dish","Pour mixture, sprinkle cheese","Pour mixture, sprinkle cheese","Pour mixture, sprinkle cheese"
+"In the recipe 'Turkey Roast Supreme (Crock Pot)', which steps occurs after 'Rub spice mixture on turkey'?
+Options:
+- Cook on low or high
 - Cook pasta until al dente
 - Saute onions, celery, garlic
 - Combine milk, eggs, spices
-- Add shrimp and tomatoes",Add shrimp and tomatoes,Add shrimp and tomatoes,Add shrimp and tomatoes
+- Layer vegetables in crock pot",Cook on low or high,Cook on low or high,Cook on low or high
 "In the recipe 'Aromatic Bread Dumplings', which steps occurs after 'Shape mixture into balls'?
 Options:
+- Pan sear lamb fat side
 - Roast diced potatoes
-- Cook dumplings until soft
 - Remove membrane from lobster
+- Cook dumplings until soft
 - Combine ingredients, mash well",Cook dumplings until soft,Cook dumplings until soft,Cook dumplings until soft
 "In the recipe 'Middle Eastern Vegetable Casserole', which steps occurs after 'Add broccoli, roast more'?
 Options:
+- Roast diced potatoes
 - Combine ingredients, mash well
 - Pour puree over vegetables
-- Roast diced potatoes
-- Remove membrane from lobster",Pour puree over vegetables,Pour puree over vegetables,Pour puree over vegetables
+- Remove membrane from lobster
+- Pan sear lamb fat side","Combine ingredients, mash well","Combine ingredients, mash well",Pour puree over vegetables
 "In the recipe 'Healthy Steamed Lobster Tails for One', which steps occurs after 'Place tails in colander'?
 Options:
+- Remove membrane from lobster
+- Roast diced potatoes
+- Pan sear lamb fat side
+- Steam until lobster is opaque
+- Combine ingredients, mash well",Steam until lobster is opaque,Steam until lobster is opaque,Steam until lobster is opaque
+"In the recipe 'Simple Rack of Lamb', which steps occurs after 'Sprinkle with spices, oil'?
+Options:
+- Bake on center rack
+- Roast diced potatoes
 - Combine ingredients, mash well
 - Remove membrane from lobster
-- Steam until lobster is opaque
-- Roast diced potatoes",Steam until lobster is opaque,Steam until lobster is opaque,Steam until lobster is opaque
+- Pan sear lamb fat side",Pan sear lamb fat side,Pan sear lamb fat side,Bake on center rack
+"In the recipe 'Moussaka Recipe', which steps occurs after 'Alternate eggplant, meat mix'?
+Options:
+- Pour sauce, add cheese
+- Combine ingredients, mash well
+- Pan sear lamb fat side
+- Saute onion, brown meat
+- Remove membrane from lobster","Pour sauce, add cheese","Pour sauce, add cheese","Pour sauce, add cheese"

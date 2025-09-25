@@ -621,16 +621,17 @@ def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
             "Based on the recipe title and the provided steps, identify which step occurred before another. "
         )
-        user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when identifying the correct order of given steps in a given recipe.'
+        system_msg_principle = 'You are given a multiple-choice question. Your task is to extract the underlying concepts and principles involved in choosing the right answer.'
+        user_msg_principle = 'Only answer with the 5 most important concepts and principles.'
 
         # Get higher level principles
         p_question = (
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps) + '\nPrinciples:')
-        principles = prompter.prompt_model(system_msg, user_msg_principle, p_question)
+        principles = prompter.prompt_model(system_msg_principle, user_msg_principle, p_question)
 
         # Get answer based on principles
-        user_msg_stepback = f'Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only your chosen step.'
+        user_msg_stepback = f'Answer the question step by step using the following principles:\n{principles}\nEnd the answer with the step of your choosing.'
         question = (
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
@@ -643,16 +644,17 @@ def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
             "Based on the recipe title and the provided steps, identify which step occurred after another. "
         )
-        user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when identifying the correct order of given steps in a given recipe.'
+        system_msg_principle = 'You are given a multiple-choice question. Your task is to extract the underlying concepts and principles involved in choosing the right answer.'
+        user_msg_principle = 'Only answer with the 5 most important concepts and principles.'
 
         # Get higher level principles
         p_question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps) + '\nPrinciples:')
-        principles = prompter.prompt_model(system_msg, user_msg_principle, p_question)
+        principles = prompter.prompt_model(system_msg_principle, user_msg_principle, p_question)
 
         # Get answer based on principles
-        user_msg_stepback = f'Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only your chosen step.'
+        user_msg_stepback = f'Answer the question step by step using the following principles:\n{principles}\nEnd the answer with the step of your choosing.'
         question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))

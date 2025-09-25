@@ -1,11 +1,21 @@
 object,correct_location,predicted_location,location_choices,correct_prediction
-action figure,pantry room,suitcase,"['palace', 'pantry room', 'suitcase', 'car', 'laundry room']",False
-adjustable wrench,bedroom,loft,"['bedroom', 'cat', 'glass', 'loft', 'press']",False
-alarmclock,bedroom,bedroom,"['larder', 'attic', 'bedroom', 'different room', ""child's room""]",True
-aluminumfoil,kitchen,kitchen,"['exercise room', 'kitchen', 'lamp', ""prostitute's bedroom"", 'bathroom cabinet']",True
-android figure,corridor,chest,"['corridor', 'chest', 'castle', 'separate room', 'teapot']",False
-anti slip tape,exercise room,exercise room,"['home', 'exercise room', 'side of  room', ""children's room"", 'icebox']",True
-antidepressant,pantry room,motel room,"['pantry room', 'larder', 'laundry room', 'motel room', 'bundle']",False
-antique,attic,attic,"['butt', 'attic', 'court', 'pot', 'hall']",True
-apple,kitchen,kitchen,"['cup', 'kitchen', 'furniture', 'loft', 'bus']",True
-applesauce,jar,jar,"['teapot', 'jar', 'engine', 'dishwasher', 'sack']",True
+action figure,pantry room,suitcase,"['palace', 'laundry room', 'car', 'suitcase', 'pantry room']",False
+adjustable wrench,bedroom,press,"['glass', 'bedroom', 'press', 'loft', 'cat']",False
+alarmclock,bedroom,bedroom,"[""child's room"", 'attic', 'bedroom', 'larder', 'different room']",True
+aluminumfoil,kitchen,kitchen,"['bathroom cabinet', 'exercise room', 'lamp', 'kitchen', ""prostitute's bedroom""]",True
+android figure,corridor,chest,"['corridor', 'teapot', 'separate room', 'chest', 'castle']",False
+anti slip tape,exercise room,exercise room,"['icebox', 'home', ""children's room"", 'exercise room', 'side of  room']",True
+antidepressant,pantry room,pantry room,"['motel room', 'larder', 'bundle', 'pantry room', 'laundry room']",True
+antique,attic,attic,"['court', 'hall', 'butt', 'attic', 'pot']",True
+apple,kitchen,kitchen,"['furniture', 'kitchen', 'bus', 'cup', 'loft']",True
+applesauce,jar,jar,"['teapot', 'sack', 'dishwasher', 'engine', 'jar']",True
+appliance,home,home,"['home', 'chest', 'hamper', 'dining room', 'backyard']",True
+apricot,table,table,"['bike', 'table', 'bar', 'bathroom', 'tea room']",True
+armchair,bedroom,bedroom,"['ir rooms', 'classroom', 'basket', 'suitcase', 'bedroom']",True
+armoire,living room,living room,"['vault', 'living room', 'hospital drug storeroom', 'cabin', 'music room']",True
+armrest,car,car,"['childs room', 'wallet', 'room of house', 'car', 'purse']",True
+arrow,quiver,quiver,"['container', 'can', 'quiver', 'oven', 'restroom']",True
+artichoke,refrigerator,refrigerator,"['range', 'bookshelf', 'refrigerator', 'freezer', ""teenager's bedroom""]",True
+article,press,drawer,"['press', 'drawer', 'way', 'ambulance', 'middle of  room']",False
+ashtray,house,storage room,"['guest room', 'basket', 'orchestra', 'house', 'storage room']",False
+asparagus,oven,pantry room,"['pantry room', 'glass', 'oven', 'stand', ""cash's room""]",False

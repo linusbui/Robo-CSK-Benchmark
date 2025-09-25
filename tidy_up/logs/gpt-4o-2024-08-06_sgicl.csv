@@ -17,8 +17,8 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: action figure
-Locations: car, suitcase, pantry room, palace, laundry room
-Your Choice:",pantry room,pantry room
+Locations: suitcase, laundry room, car, pantry room, palace
+Your Choice:",suitcase,pantry room
 "Here are a few examples:
 Object: canned goods
 Location: pantry room
@@ -37,8 +37,8 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: adjustable wrench
-Locations: glass, bedroom, press, cat, loft
-Your Choice:",loft,loft
+Locations: loft, glass, bedroom, press, cat
+Your Choice:",loft,bedroom
 "Here are a few examples:
 Object: canned goods
 Location: pantry room
@@ -57,7 +57,7 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: alarmclock
-Locations: bedroom, child's room, attic, larder, different room
+Locations: attic, different room, bedroom, larder, child's room
 Your Choice:",bedroom,bedroom
 "Here are a few examples:
 Object: canned goods
@@ -77,7 +77,7 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: aluminumfoil
-Locations: lamp, exercise room, prostitute's bedroom, bathroom cabinet, kitchen
+Locations: exercise room, bathroom cabinet, kitchen, prostitute's bedroom, lamp
 Your Choice:",kitchen,kitchen
 "Here are a few examples:
 Object: canned goods
@@ -97,8 +97,8 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: android figure
-Locations: separate room, castle, teapot, corridor, chest
-Your Choice:",chest,chest
+Locations: castle, separate room, teapot, corridor, chest
+Your Choice:",chest,corridor
 "Here are a few examples:
 Object: canned goods
 Location: pantry room
@@ -117,8 +117,8 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: anti slip tape
-Locations: home, icebox, children's room, exercise room, side of  room
-Your Choice:",home,home
+Locations: icebox, side of  room, children's room, exercise room, home
+Your Choice:",side of room,exercise room
 "Here are a few examples:
 Object: canned goods
 Location: pantry room
@@ -137,8 +137,8 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: antidepressant
-Locations: bundle, pantry room, larder, motel room, laundry room
-Your Choice:",larder,larder
+Locations: motel room, pantry room, bundle, laundry room, larder
+Your Choice:",pantry room,pantry room
 "Here are a few examples:
 Object: canned goods
 Location: pantry room
@@ -157,7 +157,7 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: antique
-Locations: pot, attic, court, butt, hall
+Locations: attic, pot, court, hall, butt
 Your Choice:",attic,attic
 "Here are a few examples:
 Object: canned goods
@@ -177,7 +177,7 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: apple
-Locations: furniture, kitchen, bus, loft, cup
+Locations: furniture, bus, loft, kitchen, cup
 Your Choice:",kitchen,kitchen
 "Here are a few examples:
 Object: canned goods
@@ -197,5 +197,205 @@ Location: pantry room
 Object: trunk
 Location: attic
 Object: applesauce
-Locations: engine, jar, sack, teapot, dishwasher
+Locations: jar, dishwasher, engine, teapot, sack
 Your Choice:",jar,jar
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: appliance
+Locations: backyard, chest, home, hamper, dining room
+Your Choice:",home,home
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: apricot
+Locations: bathroom, bike, tea room, table, bar
+Your Choice:",table,table
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: armchair
+Locations: ir rooms, bedroom, basket, suitcase, classroom
+Your Choice:",ir rooms,bedroom
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: armoire
+Locations: living room, cabin, vault, hospital drug storeroom, music room
+Your Choice:",Living room,living room
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: armrest
+Locations: room of house, purse, wallet, car, childs room
+Your Choice:",room of house,car
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: arrow
+Locations: can, container, restroom, quiver, oven
+Your Choice:",quiver,quiver
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: artichoke
+Locations: range, refrigerator, teenager's bedroom, bookshelf, freezer
+Your Choice:",refrigerator,refrigerator
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: article
+Locations: drawer, ambulance, middle of  room, way, press
+Your Choice:",drawer,press
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: ashtray
+Locations: house, storage room, basket, guest room, orchestra
+Your Choice:",storage room,house
+"Here are a few examples:
+Object: canned goods
+Location: pantry room
+Object: nightstand
+Location: bedroom
+Object: nightstand
+Location: bedroom
+Object: spatula
+Location: kitchen
+Object: coat rack
+Location: corridor
+Object: yoga mat
+Location: exercise room
+Object: canned beans
+Location: pantry room
+Object: trunk
+Location: attic
+Object: asparagus
+Locations: cash's room, oven, glass, pantry room, stand
+Your Choice:",pantry room,oven

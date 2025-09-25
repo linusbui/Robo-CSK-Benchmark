@@ -197,7 +197,8 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
         write_log_to_file(logs, prompter.model_name + '_selfref', 'meta_reasoning')
 
 
-user_msg_principle = 'Your task is to extract the underlying concepts and principles that should be considered when selecting hardware configurations from a given list.'
+system_msg_principle = 'You are given a multiple-choice question. Your task is to extract the underlying concepts and principles involved in choosing the right answer.'
+user_msg_principle = 'Only answer with the 5 most important concepts and principles.'
 
 def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
@@ -215,10 +216,10 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
             # Get higher level principles
             p_question = f'Task: {task}\nConfigurations: {choices_string}\nPrinciples:'
-            principles = prompter.prompt_model(system_msg, user_msg_principle, p_question)
+            principles = prompter.prompt_model(system_msg_principle, user_msg_principle, p_question)
             
             # Get answer based on principles
-            user_msg_stepback= f'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only the complete configuration of your choosing.'
+            user_msg_stepback= f'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Answer the question using the following principles:\n{principles}\nOnly answer with the complete configuration of your choosing.'
             question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_stepback, question)
             

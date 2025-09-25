@@ -1,35 +1,227 @@
 question,full_answer,final_answer,correct_answer
 "Meal: Lamb and Bean Nachos With Salsa Fresca
-Cutlery: ","1. Clarify understanding: The meal consists of lamb and bean nachos with salsa fresca, which is typically a finger food but may require cutlery for certain components.
+Cutlery: ","1. Clarify understanding: The meal consists of lamb and bean nachos with salsa fresca, which is a dish typically eaten with hands, but can also involve other cutlery depending on personal preference or cultural norms.
 
-2. Preliminary identification: Hands, Fork, Spoon
+2. Preliminary identification: The primary cutlery for nachos is usually hands, but a fork might be used to help with the toppings or to eat the salsa fresca separately.
 
-3. Critical assessment: Nachos are often eaten with hands, but a fork might be used to handle toppings or scoop up ingredients. A spoon could be used for the salsa fresca if it is served separately.
+3. Critical assessment: While nachos are traditionally eaten with hands, using a fork can help manage the toppings and salsa, especially if the dish is particularly loaded or messy.
 
-4. Final decision: Hands, Fork, Spoon. Hands are used for eating the nachos directly, a fork can help with toppings, and a spoon can be used for the salsa fresca.
+4. Final decision: Hands, Fork
 
-5. Confidence evaluation: 90%. The choice of hands is typical for nachos, but the inclusion of a fork and spoon accounts for variations in serving style and personal preference.","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+5. Confidence evaluation: 90% confidence. The choice of hands is standard for nachos, but the inclusion of a fork is based on the potential need to handle toppings or salsa more neatly.","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
 "Meal: Meatloaf With BBQ Sauce
-Cutlery: ","1. Clarify understanding: The task is to identify the appropriate types of cutlery for eating a meal consisting of meatloaf with BBQ sauce.
+Cutlery: ","1. Clarify understanding: The meal is meatloaf with BBQ sauce, which typically requires cutting and eating with utensils.
 
-2. Preliminary identification: For meatloaf, a knife and fork are typically used. The knife is used to cut the meatloaf into manageable pieces, and the fork is used to eat the pieces.
+2. Preliminary identification: The likely cutlery for this meal would be a Knife and Fork.
 
-3. Critical assessment: The initial assessment seems appropriate as meatloaf is generally eaten with a knife and fork. The BBQ sauce does not require additional cutlery like a spoon, as it is usually served on top of or alongside the meatloaf and can be managed with the fork.
+3. Critical assessment: Meatloaf is generally served in slices, which would require a knife to cut through, and a fork to hold and eat the pieces. BBQ sauce is typically not a factor that changes the cutlery needed, as it is a sauce that complements the meatloaf.
 
-4. Final decision: The types of cutlery used to eat the meal are a knife and fork. The knife is necessary for cutting the meatloaf, and the fork is used for eating.
+4. Final decision: Knife, Fork. The knife is necessary for cutting the meatloaf into manageable pieces, and the fork is used to eat the pieces.
 
-5. Confidence evaluation: I am 95% confident in this analysis. The use of a knife and fork is standard for eating meatloaf, and there are no unusual elements in the meal that would require different cutlery.
+5. Confidence evaluation: 95%. The choice of a knife and fork is standard for eating meatloaf, and the presence of BBQ sauce does not alter the need for these utensils. The only slight uncertainty could be if the meatloaf were served in a very casual setting where hands might be used, but this is uncommon.
 
-Final response: Knife, Fork","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+Final response: Knife, Fork.","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
 "Meal: Tiramisu
-Cutlery: ","1. Clarify understanding: The question asks for the types of cutlery used to eat tiramisu, a popular Italian dessert typically served in a dish or on a plate.
+Cutlery: ","1. Clarify understanding: The question asks for the types of cutlery typically used to eat tiramisu, a popular Italian dessert.
 
-2. Preliminary identification: The most common cutlery for eating tiramisu would be a spoon, as it allows for easy scooping of the layered dessert.
+2. Preliminary identification: The most common cutlery for eating tiramisu would likely be a spoon.
 
-3. Critical assessment: Tiramisu is a soft, layered dessert that is best eaten with a utensil that can scoop and hold its creamy texture. A fork could also be used, but a spoon is generally more effective for this type of dessert.
+3. Critical assessment: Tiramisu is a layered dessert that is creamy and soft, making a spoon the most suitable choice for scooping and eating it. A fork could also be used, but it might not be as effective in capturing the creamy layers.
 
-4. Final decision: Spoon. The spoon is the most suitable cutlery for eating tiramisu due to its ability to scoop and hold the dessert's creamy layers.
+4. Final decision: Spoon
 
-5. Confidence evaluation: 95%. The confidence level is high because tiramisu is typically served in a way that a spoon is the most practical and common choice for eating it. A fork could be used, but it is less effective for scooping the creamy layers.
+5. Confidence evaluation: 95% confidence. The choice of a spoon is based on the texture and consistency of tiramisu, which is best suited for a utensil that can scoop rather than pierce or cut.",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Loaded Potato Soup
+Cutlery: ","1. Clarify understanding: The question asks for the types of cutlery that would be used to eat a meal of loaded potato soup.
 
-Final choice: Spoon.",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+2. Preliminary identification: For a soup, a spoon is typically used.
+
+3. Critical assessment: Loaded potato soup is a thick, hearty soup that may contain chunks of potato, bacon, cheese, and other toppings. A spoon is still the most appropriate choice for consuming both the liquid and solid components of the soup.
+
+4. Final decision: Spoon. The spoon is the most suitable cutlery for eating soup, as it allows for both the broth and solid ingredients to be consumed effectively.
+
+5. Confidence evaluation: 95%. The choice of a spoon is standard for eating soup, and the presence of solid ingredients in loaded potato soup does not change this standard practice. The only slight uncertainty could arise if the soup were extremely thick, but even then, a spoon would still be the most practical choice.
+
+Final answer: Spoon.",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Meal: Vegan Sushi Roll with Avocado, Carrot and Cucumber
+Cutlery: ","1. Clarify understanding: The meal is a vegan sushi roll, which typically consists of rice and vegetables wrapped in seaweed. The question asks for the types of cutlery used to eat this meal.
+
+2. Preliminary identification: Common cutlery for eating sushi includes chopsticks and sometimes hands, depending on cultural practices and personal preference.
+
+3. Critical assessment: Chopsticks are traditionally used for eating sushi, especially in Japanese cuisine. However, some people might use their hands, particularly for certain types of sushi like nigiri. Since this is a roll, chopsticks are more likely to be used.
+
+4. Final decision: Chopsticks
+
+5. Confidence evaluation: 90% confidence. The choice of chopsticks is based on traditional and common practices for eating sushi. The use of hands is less common for sushi rolls, which are typically eaten with chopsticks.
+
+Final response: Chopsticks",[<Utensil.CHOPS: 'Chopsticks'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Meal: Spaghettini Bolognese
+Cutlery: ","1. Clarify understanding: The meal is Spaghettini Bolognese, which is a pasta dish typically served with a meat-based sauce.
+
+2. Preliminary identification: The common cutlery used for eating pasta dishes like Spaghettini Bolognese are a fork and sometimes a spoon to assist in twirling the pasta.
+
+3. Critical assessment: A fork is essential for twirling and eating the pasta. A spoon can be used to help twirl the pasta against it, but it is not strictly necessary. A knife is not typically used for this dish as the pasta and sauce do not require cutting.
+
+4. Final decision: Fork, Spoon
+
+5. Confidence evaluation: 95% confidence. The use of a fork is standard for pasta dishes, and a spoon is often used to assist with twirling, though not always necessary.
+
+Final choices: Fork, Spoon","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Meatballs With Orzo and Italian Vegetables
+Cutlery: ","1. Clarify understanding: The meal consists of meatballs, orzo (a type of pasta), and Italian vegetables. I need to determine the appropriate cutlery for eating this combination of foods.
+
+2. Preliminary identification: For this meal, a fork and a knife seem appropriate. The fork can be used to eat the orzo and vegetables, while the knife can help cut the meatballs if they are too large to eat in one bite.
+
+3. Critical assessment: The fork is suitable for picking up orzo and vegetables, and it can also be used to spear the meatballs. The knife is necessary if the meatballs are large or need to be cut into smaller pieces. A spoon is not typically used for this type of meal, as orzo is not a soup or stew. Chopsticks, tongs, hands, and skewers are not appropriate for this meal.
+
+4. Final decision: Fork, Knife
+
+5. Confidence evaluation: I am 95% confident in this analysis. The combination of a fork and knife is a standard choice for meals involving pasta and meat, and there is no indication that other cutlery would be more suitable for this specific meal.","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Orange Spinach Salmon Salad
+Cutlery: ","1. Clarify understanding: The meal is an ""Orange Spinach Salmon Salad,"" which typically consists of spinach leaves, orange segments, and salmon, possibly with a dressing.
+
+2. Preliminary identification: For a salad, the common cutlery used would be a fork. A knife might also be used to cut the salmon or larger pieces of orange.
+
+3. Critical assessment: A fork is generally used to eat salads as it allows for easy picking up of leaves and other ingredients. A knife could be necessary if the salmon or orange pieces are too large to be eaten comfortably with just a fork.
+
+4. Final decision: Fork, Knife. The fork is essential for eating the salad, and the knife is useful for cutting larger pieces of salmon or orange.
+
+5. Confidence evaluation: 95%. The choice of a fork and knife is standard for salads, and the presence of salmon and orange segments suggests that a knife might be needed for cutting.
+
+Final choices: Fork, Knife.","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Moussaka with Rice
+Cutlery: ","1. Clarify understanding: The meal consists of moussaka, a layered dish typically made with eggplant, potatoes, and ground meat, topped with béchamel sauce, and rice as a side dish.
+
+2. Preliminary identification: For moussaka, a fork and knife are typically used to cut and eat the layers. For rice, a fork or spoon can be used.
+
+3. Critical assessment: Moussaka is often served in a way that requires cutting through layers, making a knife necessary. A fork is suitable for both moussaka and rice, but a spoon could also be used for the rice if preferred.
+
+4. Final decision: Knife, Fork, Spoon. The knife is for cutting the moussaka, the fork is for eating both the moussaka and rice, and the spoon is an alternative for the rice.
+
+5. Confidence evaluation: 95%. The choice of cutlery is based on common dining practices for similar meals, and the combination of knife, fork, and spoon covers all aspects of the meal effectively.","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Miso Broth Ramen
+Cutlery: ","1. Clarify understanding: The meal is Miso Broth Ramen, a Japanese noodle soup dish typically consisting of noodles, broth, and various toppings such as vegetables, meat, or tofu.
+
+2. Preliminary identification: The common cutlery used for eating ramen includes chopsticks for the noodles and toppings, and a spoon for the broth.
+
+3. Critical assessment: Chopsticks are traditionally used in Japanese cuisine for handling noodles and solid ingredients, while a spoon is used to sip the broth. This combination is standard for ramen dishes.
+
+4. Final decision: Chopsticks and Spoon. Chopsticks are used for the noodles and toppings, and a spoon is used for the broth.
+
+5. Confidence evaluation: 95%. This confidence level is based on the traditional and widely accepted method of eating ramen, which involves using chopsticks and a spoon. The remaining 5% accounts for personal or cultural variations in cutlery preference.","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Leg of Lamb With Garlic Sauce and Fresh Herbs
+Cutlery: ","1. Clarify understanding: The meal is a leg of lamb with garlic sauce and fresh herbs, which typically involves cutting and eating meat with sauce.
+
+2. Preliminary identification: The likely cutlery for this meal would be a Knife and Fork, as they are commonly used for cutting and eating meat dishes.
+
+3. Critical assessment: A Knife is necessary for cutting the leg of lamb into manageable pieces. A Fork is used to hold the meat steady while cutting and to bring the pieces to the mouth. A Spoon might be considered for the garlic sauce, but typically, the sauce would be poured over the meat and eaten with the fork.
+
+4. Final decision: Knife, Fork
+
+5. Confidence evaluation: 95% confidence. The choice of Knife and Fork is standard for eating a meat dish like leg of lamb, and the presence of sauce does not typically require a Spoon unless it is a soup or stew.
+
+Final choices: Knife, Fork","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Beer Battered Shrimp
+Cutlery: ","1. Clarify understanding: The question asks for the types of cutlery that would be used to eat beer battered shrimp.
+
+2. Preliminary identification: Typically, beer battered shrimp is a dish that can be eaten with a fork. Depending on the context, a knife might also be used to cut the shrimp if they are large or if the batter is particularly crispy. A skewer could be used if the shrimp are served on skewers, but this is less common. Chopsticks might be used if the meal is served in a setting where they are the preferred utensil. A spoon is unlikely to be used for this dish.
+
+3. Critical assessment: The most common way to eat beer battered shrimp is with a fork. A knife might be used if necessary, but it is not essential. Chopsticks could be an option in certain cultural contexts, but they are not the standard choice for this dish. Skewers are typically used for grilling or serving, not eating.
+
+4. Final decision: Fork, Knife (optional)
+
+5. Confidence evaluation: 90% confidence. The choice of a fork is standard for eating shrimp, and a knife is optional depending on the size and crispiness of the shrimp. The context of the meal (e.g., cultural setting) could influence the use of chopsticks, but this is less common.
+
+Final response: Fork, Knife (optional)","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Beef Barbecue Casserole
+Cutlery: ","1. Clarify understanding: The meal is a Beef Barbecue Casserole, which typically consists of beef, barbecue sauce, and possibly other ingredients like vegetables or pasta, baked together in a dish.
+
+2. Preliminary identification: For a casserole, a fork and a knife are commonly used to cut and eat the dish. A spoon might also be used if the casserole is particularly saucy or has a liquid component.
+
+3. Critical assessment: A fork is essential for picking up pieces of beef and other solid components. A knife is useful for cutting through any larger pieces of beef or vegetables. A spoon could be helpful if the casserole has a lot of sauce or a liquid base.
+
+4. Final decision: Fork, Knife, Spoon. The fork is for picking up solid pieces, the knife is for cutting, and the spoon is for any liquid or saucy components.
+
+5. Confidence evaluation: 90%. The choice of cutlery is based on typical eating practices for casseroles, which often involve a combination of solid and liquid components. The only uncertainty might be the exact consistency of the casserole, but the selected cutlery should cover all possibilities.
+
+Final choices: Fork, Knife, Spoon.","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Salmon with Sweet Olive Salsa
+Cutlery: ","1. Clarify understanding: The meal consists of baked salmon, which is typically a main course protein, and sweet olive salsa, which is a condiment or side. The task is to identify the appropriate cutlery for eating this meal.
+
+2. Preliminary identification: For baked salmon, a fork and knife are commonly used to cut and eat the fish. The sweet olive salsa can be eaten with a fork or spoon, depending on its consistency.
+
+3. Critical assessment: A fork and knife are suitable for the salmon, as they allow for cutting and handling the fish. If the salsa is chunky, a fork would suffice; if it's more liquid, a spoon might be more appropriate. However, since salsa is often served alongside the main dish, a fork is generally used to combine bites of both.
+
+4. Final decision: Fork, Knife
+
+5. Confidence evaluation: 95% confidence. The choice of fork and knife is standard for eating a dish like baked salmon, and the fork is versatile enough to handle the salsa as well.
+
+Final response: Fork, Knife","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Ginger Hazelnut Cookies
+Cutlery: ","1. Clarify understanding: The meal consists of ginger hazelnut cookies, which are typically eaten as a snack or dessert.
+
+2. Preliminary identification: Cookies are generally eaten with hands.
+
+3. Critical assessment: Cookies are usually finger foods, and using cutlery like a fork, knife, or spoon is uncommon. Tongs, skewers, and chopsticks are also not typically used for cookies.
+
+4. Final decision: Hands
+
+5. Confidence evaluation: 95% confidence. Cookies are widely recognized as a finger food, and there is little ambiguity in the typical method of consumption.
+
+Final response: Hands",[<Utensil.HANDS: 'Hands'>],[<Utensil.HANDS: 'Hands'>]
+"Meal: Cajun Chicken Sandwiches
+Cutlery: ","1. Clarify understanding: The question asks for the types of cutlery that would typically be used to eat Cajun Chicken Sandwiches.
+
+2. Preliminary identification: For a sandwich, hands are commonly used to eat it. However, a knife might be used to cut the sandwich, and a fork could be used if someone prefers not to use their hands.
+
+3. Critical assessment: Sandwiches are generally considered finger foods, so hands are the primary ""cutlery."" A knife could be used to cut the sandwich into smaller pieces, and a fork might be used if someone wants to avoid using their hands entirely.
+
+4. Final decision: Hands, Knife, Fork. Hands are the primary method for eating sandwiches, but a knife and fork could be used for cutting and eating in a more formal setting.
+
+5. Confidence evaluation: 90%. The confidence level is high because sandwiches are typically eaten with hands, but the inclusion of a knife and fork accounts for variations in personal preference or dining etiquette.
+
+Final response: Hands, Knife, Fork.","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",[<Utensil.HANDS: 'Hands'>]
+"Meal: Three Cheese Ravioli
+Cutlery: ","1. Clarify understanding: The meal in question is Three Cheese Ravioli, which is a type of pasta dish typically served with sauce.
+
+2. Preliminary identification: The common cutlery used for eating ravioli would likely include a Fork and possibly a Knife.
+
+3. Critical assessment: Ravioli is usually soft and can be easily cut with the side of a fork, so a knife may not be necessary unless the ravioli is particularly large or the diner prefers to use one. A fork is typically used to spear and eat the ravioli.
+
+4. Final decision: Fork
+
+5. Confidence evaluation: I am 95% confident in this analysis. The use of a fork is standard for pasta dishes like ravioli, and while a knife could be used, it is not essential for most ravioli dishes.
+
+Final answer: Fork",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Stringy Macaroni & Cheese
+Cutlery: ","1. Clarify understanding: The meal is stringy macaroni and cheese, which is a pasta dish with a cheesy sauce that may have a stringy texture due to the cheese.
+
+2. Preliminary identification: The typical cutlery for eating macaroni and cheese would be a fork or a spoon.
+
+3. Critical assessment: A fork is commonly used for pasta dishes as it allows for easy spearing and twirling of the pasta. A spoon could also be used, especially if the dish is particularly saucy or if the cheese is very stringy, to scoop up the pasta and sauce together.
+
+4. Final decision: Fork, Spoon. A fork is suitable for handling the pasta, while a spoon can be useful for scooping up the cheese sauce.
+
+5. Confidence evaluation: 90%. The choice of a fork and spoon is based on common practices for eating pasta dishes, and the stringy nature of the cheese suggests that a spoon might be helpful in addition to a fork.","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Mushroom Omelet
+Cutlery: ","1. Clarify understanding: The task is to identify the appropriate cutlery for eating a mushroom omelet.
+
+2. Preliminary identification: Typically, a fork is used to eat an omelet. A knife might also be used to cut the omelet into smaller pieces if necessary.
+
+3. Critical assessment: A fork is generally sufficient for eating an omelet, as it can be used to both cut and lift pieces. However, a knife can be helpful for cutting through any larger or tougher sections of the omelet.
+
+4. Final decision: Fork, Knife. The fork is primarily used for eating the omelet, while the knife can assist in cutting it into manageable pieces.
+
+5. Confidence evaluation: 95%. The choice of a fork and knife is standard for eating an omelet, and there is little ambiguity in this context. The high confidence level reflects the common use of these utensils for similar meals. 
+
+Final response: Fork, Knife","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Apples with Candied Walnuts
+Cutlery: ","1. Clarify understanding: The meal consists of baked apples with candied walnuts, which suggests a dessert or sweet dish that may require cutting and scooping.
+
+2. Preliminary identification: The likely cutlery for this meal would be a Fork and a Spoon. A fork can be used to hold the baked apple in place or to pick up pieces, while a spoon can be used to scoop up the apple and walnuts.
+
+3. Critical assessment: Considering the texture and consistency of baked apples, they are typically soft enough to be eaten with a spoon. The candied walnuts might be small enough to be scooped with a spoon as well. A knife is not necessary unless the apples are particularly large or firm, which is uncommon for baked apples.
+
+4. Final decision: Fork, Spoon. The fork can assist in handling the baked apple, while the spoon is ideal for scooping both the apple and the candied walnuts.
+
+5. Confidence evaluation: 95%. The choice of a fork and spoon is based on the typical texture and serving style of baked apples with candied walnuts, which are generally soft and manageable without the need for a knife.","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"

@@ -17,7 +17,7 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: cleaning up spills
-Tools: shampoo, kri, sponge, drill, alligator wrench
+Tools: alligator wrench, sponge, kri, drill, shampoo
 Your Choice:",sponge,sponge
 "Here are a few examples:
 Task: Wiping down kitchen countertops.
@@ -37,7 +37,7 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: drying the dishes
-Tools: sponge, strickle, tack hammer, hunting knife, toothpick
+Tools: toothpick, sponge, strickle, hunting knife, tack hammer
 Your Choice:",strickle,sponge
 "Here are a few examples:
 Task: Wiping down kitchen countertops.
@@ -57,7 +57,7 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: removing moisture
-Tools: sponge, soapbottle, potato, peppershaker, steak knife
+Tools: soapbottle, potato, peppershaker, sponge, steak knife
 Your Choice:",sponge,sponge
 "Here are a few examples:
 Task: Wiping down kitchen countertops.
@@ -77,7 +77,7 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: reheating coffee
-Tools: footstool, tap wrench, desk lamp, power saw, pan
+Tools: pan, desk lamp, tap wrench, footstool, power saw
 Your Choice:",pan,pan
 "Here are a few examples:
 Task: Wiping down kitchen countertops.
@@ -97,8 +97,8 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: cooking a fried egg
-Tools: cup, hayfork, hand drill, counterbore, toilet paper
-Your Choice:",toilet paper,cup
+Tools: cup, hand drill, hayfork, toilet paper, counterbore
+Your Choice:",cup,cup
 "Here are a few examples:
 Task: Wiping down kitchen countertops.
 Tool: sponge
@@ -117,7 +117,7 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: cooking an omelette
-Tools: croupier's rake, common ax, kirpan, fork, pan
+Tools: pan, kirpan, common ax, croupier's rake, fork
 Your Choice:",pan,pan
 "Here are a few examples:
 Task: Wiping down kitchen countertops.
@@ -137,7 +137,7 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: reheating soup
-Tools: neolith, punch, kettle, cloth, roach clip
+Tools: punch, kettle, neolith, cloth, roach clip
 Your Choice:",kettle,kettle
 "Here are a few examples:
 Task: Wiping down kitchen countertops.
@@ -157,7 +157,7 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: boiling water
-Tools: tamp, plate, laundryhamper, lightbulb, toiletpaper
+Tools: toiletpaper, lightbulb, laundryhamper, plate, tamp
 Your Choice:",plate,plate
 "Here are a few examples:
 Task: Wiping down kitchen countertops.
@@ -177,8 +177,8 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: decorating a room
-Tools: axe, coffee, steel wool pad, soda can, drawer
-Your Choice:",drawer,steel wool pad
+Tools: coffee, steel wool pad, drawer, soda can, axe
+Your Choice:",axe,steel wool pad
 "Here are a few examples:
 Task: Wiping down kitchen countertops.
 Tool: sponge
@@ -197,5 +197,205 @@ Tool: kettle
 Task: Serving a meal.
 Tool: plate
 Task: arranging flowers
-Tools: abrader, basket ball, opener, creditcard, arm chair
+Tools: opener, abrader, basket ball, arm chair, creditcard
 Your Choice:",basket ball,abrader
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: painting walls
+Tools: tomato, rat tail file, vase, allen wrench, vacuumcleaner
+Your Choice:",vacuumcleaner,rat tail file
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: applying make-up
+Tools: corkscrew, handstamp, nailfile, ravehook, dogbed
+Your Choice:",nailfile,nailfile
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: shaping wire
+Tools: drawknife, bender, pipe wrench, spreader, ax
+Your Choice:",bender,bender
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: adjusting blinds
+Tools: hacksaw, food jar, garden trowel, breadknife, bender
+Your Choice:",bender,bender
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: fitting flexible piping
+Tools: bit, scraper, saw set, circular plane, pruning saw
+Your Choice:",bit,saw set
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: installing shelves
+Tools: drawer, bucksaw, ax, coffee machine, shampoo
+Your Choice:",bucksaw,bucksaw
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: hanging pictures
+Tools: jack plane, set square, stamp, straight flute, desk lamp
+Your Choice:",set square,straight flute
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: assembling furniture
+Tools: stapler, chamfer plane, crown saw, router, hammer
+Your Choice:",hammer,router
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: preparing food
+Tools: lightbulb, soap bar, steak knife, steel wool pad, jigsaw
+Your Choice:",steak knife,jigsaw
+"Here are a few examples:
+Task: Wiping down kitchen countertops.
+Tool: sponge
+Task: Cleaning kitchen countertops.
+Tool: sponge
+Task: Cleaning up spills.
+Tool: sponge
+Task: Frying an egg.
+Tool: pan
+Task: Pouring a beverage.
+Tool: cup
+Task: Sautéing vegetables.
+Tool: pan
+Task: Boiling water for tea.
+Tool: kettle
+Task: Serving a meal.
+Tool: plate
+Task: opening packaging
+Tools: shovel, folding saw, bender, bulldog wrench, abrading stone
+Your Choice:",bulldog wrench,folding saw

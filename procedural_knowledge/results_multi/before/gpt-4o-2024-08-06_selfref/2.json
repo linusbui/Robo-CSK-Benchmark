@@ -1,14 +1,32 @@
 [
     {
         "title": "Ranch Mushrooms",
-        "question": "In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?\n\nOptions:\n- Add ingredients to crock pot\n- Use stovetop if preferred\n- Bake in water bath\nIn the recipe 'Ranch Mushrooms', the step 'Add ingredients to crock pot' occurs before 'Cook on low heat'.\n\nYour Feedback:\nYour answer is correct. In the context of a recipe, adding ingredients to a crock pot is a preparatory step that logically occurs before cooking on low heat. This sequence ensures that all ingredients are combined and ready to be cooked together. The other options, 'Use stovetop if preferred' and 'Bake in water bath', do not directly relate to the sequence of using a crock pot and cooking on low heat. Therefore, 'Add ingredients to crock pot' is the appropriate step that occurs before 'Cook on low heat'.\n\nScore: 5\nYour Choice:",
+        "question": "In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?\n\nOptions:\n- Add ingredients to crock pot\n- Use stovetop if preferred\n- Bake in water bath\n- Add meats to bean pot\n- Add mustard, stir, cover\nIn the recipe 'Ranch Mushrooms', the step 'Add ingredients to crock pot' occurs before 'Cook on low heat'.\n\nYour Feedback:\nThe answer correctly identifies the step that occurs before 'Cook on low heat' in the recipe 'Ranch Mushrooms'. In a typical recipe involving a crock pot, the ingredients are usually added to the pot before the cooking process begins. Therefore, 'Add ingredients to crock pot' logically precedes 'Cook on low heat'. The other options do not fit the context of using a crock pot for cooking mushrooms, making the selected step the most appropriate choice.\n\nScore: 5\nYour Choice:",
         "response": "Add ingredients to crock pot",
         "correct_response": "Add ingredients to crock pot"
     },
     {
         "title": "Raspberry Creme Brulee Recipe",
-        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?\n\nOptions:\n- Use stovetop if preferred\n- Preheat oven to 300\u00b0F\n- Bake in water bath\nIn the recipe 'Raspberry Creme Brulee Recipe', the step 'Preheat oven to 300\u00b0F' occurs before 'Heat cream, add vanilla'.\n\nYour Feedback:\nYour answer is correct. In most recipes, preheating the oven is one of the initial steps to ensure it reaches the desired temperature by the time you need to bake. Therefore, \"Preheat oven to 300\u00b0F\" logically occurs before \"Heat cream, add vanilla,\" which is a step involved in preparing the custard mixture. \n\nScore: 5\nYour Choice:",
+        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?\n\nOptions:\n- Bake in water bath\n- Preheat oven to 300\u00b0F\n- Add mustard, stir, cover\n- Use stovetop if preferred\n- Add meats to bean pot\nIn the recipe 'Raspberry Creme Brulee Recipe', the step 'Preheat oven to 300\u00b0F' occurs before 'Heat cream, add vanilla'.\n\nYour Feedback:\nThe feedback provided is accurate. In most recipes, especially those involving baking, preheating the oven is one of the initial steps. This ensures that the oven reaches the desired temperature by the time the dish is ready to be baked. Therefore, it is logical that 'Preheat oven to 300\u00b0F' would occur before 'Heat cream, add vanilla' in the 'Raspberry Creme Brulee Recipe'. The other options do not fit the context of a creme brulee recipe, as they involve unrelated actions or ingredients.\n\nScore: 5\nYour Choice:",
         "response": "Preheat oven to 300\u00b0F",
         "correct_response": "Preheat oven to 300\u00b0F"
+    },
+    {
+        "title": "Barbecue Hamburger Patties Recipe",
+        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which step occurs before 'Shape into 6 patties'?\n\nOptions:\n- Bake in water bath\n- Brown patties in skillet\n- Add mustard, stir, cover\n- Add meats to bean pot\n- Mix meat, onion, salt\nIn the recipe 'Barbecue Hamburger Patties Recipe', the step 'Mix meat, onion, salt' occurs before 'Shape into 6 patties'.\n\nYour Feedback:\nYour feedback is accurate. In the process of making hamburger patties, mixing the ingredients such as meat, onion, and salt is a preparatory step that logically occurs before shaping the mixture into patties. This ensures that all the ingredients are evenly distributed throughout the patties. Therefore, the step 'Mix meat, onion, salt' should indeed occur before 'Shape into 6 patties'. \n\nScore: 5\nYour Choice:",
+        "response": "Mix meat, onion, salt",
+        "correct_response": "Mix meat, onion, salt"
+    },
+    {
+        "title": "Chicken Prepared-Mustard",
+        "question": "In the recipe 'Chicken Prepared-Mustard', which step occurs before 'Add chicken and butter'?\n\nOptions:\n- Dice chicken breast\n- Add meats to bean pot\n- Bake in water bath\n- Add mustard, stir, cover\n- Use stovetop if preferred\nIn the recipe 'Chicken Prepared-Mustard', the step 'Dice chicken breast' occurs before 'Add chicken and butter'.\n\nYour Feedback:\nYour feedback is correct. In the sequence of preparing a dish, dicing the chicken breast would logically occur before adding the chicken and butter. This is because the chicken needs to be prepared (diced) before it can be added to the cooking process. \n\nScore: 5\nYour Choice:",
+        "response": "Dice chicken breast",
+        "correct_response": "Dice chicken breast"
+    },
+    {
+        "title": "Bower's Hunter's Chili",
+        "question": "In the recipe 'Bower's Hunter's Chili', which step occurs before 'Brown ground meat, drain grease'?\n\nOptions:\n- Add meats to bean pot\n- Add mustard, stir, cover\n- Bake in water bath\n- Use stovetop if preferred\n- Panfry steak in olive oil\nIn the recipe 'Bower's Hunter's Chili', the step 'Panfry steak in olive oil' occurs before 'Brown ground meat, drain grease'.\n\nYour Feedback:\nThe feedback provided is accurate. In the context of cooking, \"panfrying steak in olive oil\" typically occurs before \"browning ground meat and draining grease\" because it involves preparing the steak, which is often done before handling ground meat. This sequence ensures that the steak is cooked and ready to be combined with other ingredients later in the recipe. Therefore, the step \"Panfry steak in olive oil\" logically precedes \"Brown ground meat, drain grease\" in the recipe process.\n\nScore: 5\nYour Choice:",
+        "response": "Panfry steak in olive oil",
+        "correct_response": "Panfry steak in olive oil"
     }
 ]

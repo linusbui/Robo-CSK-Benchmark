@@ -1,405 +1,701 @@
 question,final_answer,correct_answer
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
 Recipe title: Worlds Best Mac and Cheese
 Step: Mix pasta with sauce
 
 Options:
 - Drizzle oil, garnish, serve
-- Bake with cheese topping
+- Bake until cheese melts
 - Cook pasta less than directions
+- Spoon into crust
+- Bake with cheese topping
 Step before:",Cook pasta less than directions,Cook pasta less than directions
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
 Recipe title: Dilly Macaroni Salad Recipe
 Step: Combine macaroni and vegetables
 
 Options:
-- Cook and drain macaroni
 - Bake with cheese topping
+- Cook and drain macaroni
+- Spoon into crust
 - Blend dressing and add
 - Drizzle oil, garnish, serve
 Step before:",Cook and drain macaroni,Cook and drain macaroni
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
 Recipe title: Gazpacho
 Step: Combine vegetables with puree
 
 Options:
-- Puree tomatoes with salt
 - Drizzle oil, garnish, serve
 - Bake with cheese topping
+- Spoon into crust
+- Bake until cheese melts
+- Puree tomatoes with salt
 Step before:",Puree tomatoes with salt,Puree tomatoes with salt
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
+Recipe title: Crunchy Onion Potato Bake
+Step: Heat milk, water, butter
+
+Options:
+- Drizzle oil, garnish, serve
+- Spoon into crust
+- Bake until cheese melts
+- Preheat oven
+- Bake with cheese topping
+Step before:",Preheat oven,Preheat oven
+"Here are a few examples:
+Recipe Title: Quick and Creamy Alfredo Pasta
+Step: Mix pasta with sauce
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
+Step: Combine macaroni and vegetables
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
+Step: Combine vegetables with puree
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
+Step: Heat milk, water, butter
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
+Step: Whisk in Cool Whip
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
+Step: Add cornstarch mixture
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
+Step: Sprinkle kombu tea
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
+Step: Layer ingredients evenly
+Step before: Butter 9x12x2-inch pan
+Recipe title: Cool 'n Easy Creamy Watermelon Pie
+Step: Whisk in Cool Whip
+
+Options:
+- Bake until cheese melts
+- Drizzle oil, garnish, serve
+- Dissolve Jello in water
+- Bake with cheese topping
+- Spoon into crust
+Step before:",Dissolve Jello in water,Dissolve Jello in water
+"Here are a few examples:
+Recipe Title: Quick and Creamy Alfredo Pasta
+Step: Mix pasta with sauce
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
+Step: Combine macaroni and vegetables
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
+Step: Combine vegetables with puree
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
+Step: Heat milk, water, butter
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
+Step: Whisk in Cool Whip
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
+Step: Add cornstarch mixture
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
+Step: Sprinkle kombu tea
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
+Step: Layer ingredients evenly
+Step before: Butter 9x12x2-inch pan
 Recipe title: Ranch Mushrooms
 Step: Cook on low heat
 
 Options:
-- Use stovetop if preferred
 - Add ingredients to crock pot
+- Add meats to bean pot
+- Use stovetop if preferred
+- Add mustard, stir, cover
 - Bake in water bath
 Step before:",Add ingredients to crock pot,Add ingredients to crock pot
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
 Recipe title: Raspberry Creme Brulee Recipe
 Step: Heat cream, add vanilla
 
 Options:
-- Preheat oven to 300°F
+- Add meats to bean pot
+- Add mustard, stir, cover
 - Bake in water bath
 - Use stovetop if preferred
+- Preheat oven to 300°F
 Step before:",Preheat oven to 300°F,Preheat oven to 300°F
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
 Recipe title: Barbecue Hamburger Patties Recipe
 Step: Shape into 6 patties
 
 Options:
+- Add meats to bean pot
 - Bake in water bath
-- Use stovetop if preferred
-- Brown patties in skillet
 - Mix meat, onion, salt
+- Brown patties in skillet
+- Add mustard, stir, cover
 Step before:","Mix meat, onion, salt","Mix meat, onion, salt"
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
+Recipe title: Chicken Prepared-Mustard
+Step: Add chicken and butter
+
+Options:
+- Add mustard, stir, cover
+- Dice chicken breast
+- Use stovetop if preferred
+- Bake in water bath
+- Add meats to bean pot
+Step before:",Dice chicken breast,Dice chicken breast
+"Here are a few examples:
+Recipe Title: Quick and Creamy Alfredo Pasta
+Step: Mix pasta with sauce
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
+Step: Combine macaroni and vegetables
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
+Step: Combine vegetables with puree
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
+Step: Heat milk, water, butter
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
+Step: Whisk in Cool Whip
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
+Step: Add cornstarch mixture
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
+Step: Sprinkle kombu tea
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
+Step: Layer ingredients evenly
+Step before: Butter 9x12x2-inch pan
+Recipe title: Bower's Hunter's Chili
+Step: Brown ground meat, drain grease
+
+Options:
+- Bake in water bath
+- Panfry steak in olive oil
+- Add mustard, stir, cover
+- Add meats to bean pot
+- Use stovetop if preferred
+Step before:",Add meats to bean pot,Panfry steak in olive oil
+"Here are a few examples:
+Recipe Title: Quick and Creamy Alfredo Pasta
+Step: Mix pasta with sauce
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
+Step: Combine macaroni and vegetables
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
+Step: Combine vegetables with puree
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
+Step: Heat milk, water, butter
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
+Step: Whisk in Cool Whip
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
+Step: Add cornstarch mixture
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
+Step: Sprinkle kombu tea
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
+Step: Layer ingredients evenly
+Step before: Butter 9x12x2-inch pan
 Recipe title: Gingersnap Gravy
 Step: Add stock, bring to boil
 
 Options:
 - Add shrimp and tomatoes
+- Cook on low or high
+- Bake until done
 - Saute onions, celery, garlic
 - Crumble gingersnaps, whisk
-- Bake until done
-Step before:","Saute onions, celery, garlic","Saute onions, celery, garlic"
+Step before:","Crumble gingersnaps, whisk","Saute onions, celery, garlic"
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
 Recipe title: Mom's Pumpkin Pie Squares Recipe
 Step: Pour into pan, sprinkle mix
 
 Options:
-- Crumble gingersnaps, whisk
-- Combine milk, eggs, spices
 - Add shrimp and tomatoes
+- Crumble gingersnaps, whisk
 - Bake until done
+- Combine milk, eggs, spices
+- Cook on low or high
 Step before:","Combine milk, eggs, spices","Combine milk, eggs, spices"
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
 Recipe title: Shrimp and Pasta in a Basil Cream Sauce
 Step: Saute shallots and garlic
 
 Options:
 - Bake until done
-- Cook pasta until al dente
-- Crumble gingersnaps, whisk
 - Add shrimp and tomatoes
+- Cook pasta until al dente
+- Cook on low or high
+- Crumble gingersnaps, whisk
 Step before:",Cook pasta until al dente,Cook pasta until al dente
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
+Recipe title: Smoked Fish & Broccoli Flan
+Step: Arrange broccoli, onion, fish
+
+Options:
+- Crumble gingersnaps, whisk
+- Roll out dough, line dish
+- Bake until done
+- Cook on low or high
+- Pour mixture, sprinkle cheese
+Step before:","Pour mixture, sprinkle cheese","Roll out dough, line dish"
+"Here are a few examples:
+Recipe Title: Quick and Creamy Alfredo Pasta
+Step: Mix pasta with sauce
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
+Step: Combine macaroni and vegetables
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
+Step: Combine vegetables with puree
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
+Step: Heat milk, water, butter
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
+Step: Whisk in Cool Whip
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
+Step: Add cornstarch mixture
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
+Step: Sprinkle kombu tea
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
+Step: Layer ingredients evenly
+Step before: Butter 9x12x2-inch pan
+Recipe title: Turkey Roast Supreme (Crock Pot)
+Step: Rub spice mixture on turkey
+
+Options:
+- Add shrimp and tomatoes
+- Layer vegetables in crock pot
+- Bake until done
+- Cook on low or high
+- Crumble gingersnaps, whisk
+Step before:",Layer vegetables in crock pot,Layer vegetables in crock pot
+"Here are a few examples:
+Recipe Title: Quick and Creamy Alfredo Pasta
+Step: Mix pasta with sauce
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
+Step: Combine macaroni and vegetables
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
+Step: Combine vegetables with puree
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
+Step: Heat milk, water, butter
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
+Step: Whisk in Cool Whip
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
+Step: Add cornstarch mixture
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
+Step: Sprinkle kombu tea
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
+Step: Layer ingredients evenly
+Step before: Butter 9x12x2-inch pan
 Recipe title: Aromatic Bread Dumplings
 Step: Shape mixture into balls
 
 Options:
 - Pour puree over vegetables
-- Steam until lobster is opaque
 - Cook dumplings until soft
+- Steam until lobster is opaque
 - Combine ingredients, mash well
+- Bake on center rack
 Step before:","Combine ingredients, mash well","Combine ingredients, mash well"
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
 Recipe title: Middle Eastern Vegetable Casserole
 Step: Add broccoli, roast more
 
 Options:
-- Steam until lobster is opaque
 - Cook dumplings until soft
-- Pour puree over vegetables
 - Roast diced potatoes
+- Bake on center rack
+- Steam until lobster is opaque
+- Pour puree over vegetables
 Step before:",Roast diced potatoes,Roast diced potatoes
 "Here are a few examples:
-Recipe Title: Cheesy Baked Pasta Delight
+Recipe Title: Quick and Creamy Alfredo Pasta
 Step: Mix pasta with sauce
-Step after: Bake with cheese topping
-Recipe Title: Creamy Veggie Macaroni Salad Recipe
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
 Step: Combine macaroni and vegetables
-Step after: Blend dressing and add
-Recipe Title: Roasted Vegetable Puree with Herb Oil Drizzle
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
 Step: Combine vegetables with puree
-Step after: Drizzle oil, garnish, serve
-Recipe Title: Cheesy Scalloped Potatoes Bake
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
 Step: Heat milk, water, butter
-Step after: Bake until cheese melts
-Recipe Title: Fluffy No-Bake Cheesecake Pie
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
 Step: Whisk in Cool Whip
-Step after: Spoon into crust
-Recipe Title: Fruity Glazed Chicken Stir-Fry
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
 Step: Add cornstarch mixture
-Step after: Stir in fruits
-Recipe Title: Kombu Tea Infused Crispy Chicken Skillet
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
 Step: Sprinkle kombu tea
-Step after: Brown chicken skin side
-Recipe Title: Cheesy Vegetable Casserole
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
 Step: Layer ingredients evenly
-Step after: Bake in 350 oven
+Step before: Butter 9x12x2-inch pan
 Recipe title: Healthy Steamed Lobster Tails for One
 Step: Place tails in colander
 
 Options:
 - Cook dumplings until soft
+- Bake on center rack
+- Pour puree over vegetables
+- Steam until lobster is opaque
 - Remove membrane from lobster
+Step before:",Remove membrane from lobster,Remove membrane from lobster
+"Here are a few examples:
+Recipe Title: Quick and Creamy Alfredo Pasta
+Step: Mix pasta with sauce
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
+Step: Combine macaroni and vegetables
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
+Step: Combine vegetables with puree
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
+Step: Heat milk, water, butter
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
+Step: Whisk in Cool Whip
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
+Step: Add cornstarch mixture
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
+Step: Sprinkle kombu tea
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
+Step: Layer ingredients evenly
+Step before: Butter 9x12x2-inch pan
+Recipe title: Simple Rack of Lamb
+Step: Sprinkle with spices, oil
+
+Options:
+- Pour puree over vegetables
+- Steam until lobster is opaque
+- Cook dumplings until soft
+- Bake on center rack
+- Pan sear lamb fat side
+Step before:",Pan sear lamb fat side,Pan sear lamb fat side
+"Here are a few examples:
+Recipe Title: Quick and Creamy Alfredo Pasta
+Step: Mix pasta with sauce
+Step before: Cook pasta less than directions
+Recipe Title: Vegetable Macaroni Medley Recipe
+Step: Combine macaroni and vegetables
+Step before: Cook and drain macaroni
+Recipe Title: Tomato Vegetable Puree Soup
+Step: Combine vegetables with puree
+Step before: Puree tomatoes with salt
+Recipe Title: Creamy Scalloped Potatoes with a Crispy Topping
+Step: Heat milk, water, butter
+Step before: Preheat oven
+Recipe Title: Fluffy Strawberry Jello Delight
+Step: Whisk in Cool Whip
+Step before: Dissolve Jello in water
+Recipe Title: Savory Garlic Beef Stir-Fry
+Step: Add cornstarch mixture
+Step before: Brown beef and garlic
+Recipe Title: Kombu Tea Infused Roasted Chicken
+Step: Sprinkle kombu tea
+Step before: Pierce chicken skin
+Recipe Title: Classic Lasagna Bake
+Step: Layer ingredients evenly
+Step before: Butter 9x12x2-inch pan
+Recipe title: Moussaka Recipe
+Step: Alternate eggplant, meat mix
+
+Options:
+- Saute onion, brown meat
+- Bake on center rack
 - Steam until lobster is opaque
 - Pour puree over vegetables
-Step before:",Remove membrane from lobster,Remove membrane from lobster
+- Pour sauce, add cheese
+Step before:","Saute onion, brown meat","Saute onion, brown meat"

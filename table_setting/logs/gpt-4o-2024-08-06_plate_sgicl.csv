@@ -17,7 +17,7 @@ Plate: Dinner Plate
 Meal: Grilled chicken with roasted vegetables and quinoa.
 Plate: Dinner Plate
 Meal: Lamb and Bean Nachos With Salsa Fresca
-Plate: ","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+Plate: ",Dinner Plate,Dinner Plate
 "Here are a few examples:
 Meal: Grilled chicken with roasted vegetables and quinoa.
 Plate: Dinner Plate
@@ -36,7 +36,7 @@ Plate: Dinner Plate
 Meal: Grilled chicken with roasted vegetables and quinoa.
 Plate: Dinner Plate
 Meal: Meatloaf With BBQ Sauce
-Plate: ","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+Plate: ",Dinner Plate,Dinner Plate
 "Here are a few examples:
 Meal: Grilled chicken with roasted vegetables and quinoa.
 Plate: Dinner Plate
@@ -55,4 +55,327 @@ Plate: Dinner Plate
 Meal: Grilled chicken with roasted vegetables and quinoa.
 Plate: Dinner Plate
 Meal: Tiramisu
-Plate: ",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+Plate: ",Dessert Plate,Dessert Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Loaded Potato Soup
+Plate: ",Bowl,Bowl
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Vegan Sushi Roll with Avocado, Carrot and Cucumber
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Spaghettini Bolognese
+Plate: ",Dinner Plate,Bowl
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Meatballs With Orzo and Italian Vegetables
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Orange Spinach Salmon Salad
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Moussaka with Rice
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Miso Broth Ramen
+Plate: ",Bowl,Bowl
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Leg of Lamb With Garlic Sauce and Fresh Herbs
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Beer Battered Shrimp
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Beef Barbecue Casserole
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Baked Salmon with Sweet Olive Salsa
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Ginger Hazelnut Cookies
+Plate: ",Dessert Plate,Dessert Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Cajun Chicken Sandwiches
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Three Cheese Ravioli
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Stringy Macaroni & Cheese
+Plate: ",Bowl,Bowl
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Mushroom Omelet
+Plate: ",Dinner Plate,Dinner Plate
+"Here are a few examples:
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables.
+Plate: Dinner Plate
+Meal: Cheesecake with a berry compote.
+Plate: Dessert Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled Portobello Mushroom Steak with Quinoa and Roasted Vegetables.
+Plate: Dinner Plate
+Meal: Chicken noodle soup.
+Plate: Bowl
+Meal: Grilled chicken with roasted potatoes and steamed broccoli.
+Plate: Dinner Plate
+Meal: Grilled chicken with roasted vegetables and quinoa.
+Plate: Dinner Plate
+Meal: Baked Apples with Candied Walnuts
+Plate: ",Dessert Plate,Dessert Plate

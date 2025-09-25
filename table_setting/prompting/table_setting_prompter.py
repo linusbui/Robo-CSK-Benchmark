@@ -285,9 +285,9 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
         write_log_to_file(logs_plat, prompter.model_name + '_plate_selfref', 'table_setting')
 
 
-system_msg = 'Imagine you are a robot setting a table for a meal.'
-user_msg_cut_principle = 'Your task is to extract the underlying concepts and principles that should be considered when selecting the types of cutlery to eat a given meal with.'
-user_msg_plat_principle = 'Your task is to extract the underlying concepts and principles that should be considered when selecting the types of plate to eat a given meal on.'
+system_msg_cut_principle = 'You are given the title of a meal. Your task is to extract the underlying concepts and principles involved in choosing the right cutlery to eat that meal with.'
+system_msg_plat_principle = 'You are given the title of a meal. Your task is to extract the underlying concepts and principles involved in choosing the right plate to eat that meal on.'
+user_msg__principle = 'Only answer with the 5 most important concepts and principles.'
 
 def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
@@ -305,11 +305,11 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             # prompt for cutlery
             # Get higher level principles
             p_question = f'Meal: {meal}\nPrinciples: '
-            principles = prompter.prompt_model(system_msg, user_msg_cut_principle, p_question)
+            principles = prompter.prompt_model(system_msg_cut_principle, user_msg__principle, p_question)
 
             # Get answer based on principles
             question = f'Meal: {meal}\nCutlery: '
-            user_msg_cut_stepback = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string} and answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only the cutlery of your choosing.'
+            user_msg_cut_stepback = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string} and answer the question step by step using the following principles:\n{principles}\nEnd the answer with your chosen cutlery.'
             
             res = prompter.prompt_model(system_msg, user_msg_cut_stepback, question)
             pred_cut = transform_utensil_prediction_selfcon(res)
@@ -319,11 +319,11 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             # prompt for plate
             # Get higher level principles
             question = f'Meal: {meal}\nPrinciples: '
-            principles = prompter.prompt_model(system_msg, user_msg_plat_principle, question)
+            principles = prompter.prompt_model(system_msg_plat_principle, user_msg__principle, question)
 
             # Get answer based on principles
             question = f'Meal: {meal}\nPlate: '
-            user_msg_plat_stepback = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string} and answer the question step by step using the following principles:\n{principles}\n Provide your final answer as only your chosen plate.'
+            user_msg_plat_stepback = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string} and answer the question step by step using the following principles:\n{principles}\nEnd the answer with your chosen plate.'
 
             res = prompter.prompt_model(system_msg, user_msg_plat_stepback, question)
             pred_plat = transform_plate_prediction_selfcon(res)

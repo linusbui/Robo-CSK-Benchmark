@@ -1,20 +1,32 @@
 [
     {
         "title": "Gingersnap Gravy",
-        "question": "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?\nOptions:\n- Add shrimp and tomatoes\n- Bake until done\n- Crumble gingersnaps, whisk\n- Saute onions, celery, garlic",
-        "response": "Crumble gingersnaps, whisk",
+        "question": "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?\nOptions:\n- Saute onions, celery, garlic\n- Cook on low or high\n- Bake until done\n- Add shrimp and tomatoes\n- Crumble gingersnaps, whisk",
+        "response": "Cook on low or high",
         "correct_response": "Crumble gingersnaps, whisk"
     },
     {
         "title": "Mom's Pumpkin Pie Squares Recipe",
-        "question": "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which steps occurs after 'Pour into pan, sprinkle mix'?\nOptions:\n- Crumble gingersnaps, whisk\n- Add shrimp and tomatoes\n- Combine milk, eggs, spices\n- Bake until done",
+        "question": "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which steps occurs after 'Pour into pan, sprinkle mix'?\nOptions:\n- Add shrimp and tomatoes\n- Cook on low or high\n- Crumble gingersnaps, whisk\n- Combine milk, eggs, spices\n- Bake until done",
         "response": "Bake until done",
         "correct_response": "Bake until done"
     },
     {
         "title": "Shrimp and Pasta in a Basil Cream Sauce",
-        "question": "In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which steps occurs after 'Saute shallots and garlic'?\nOptions:\n- Cook pasta until al dente\n- Crumble gingersnaps, whisk\n- Bake until done\n- Add shrimp and tomatoes",
+        "question": "In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which steps occurs after 'Saute shallots and garlic'?\nOptions:\n- Cook on low or high\n- Cook pasta until al dente\n- Add shrimp and tomatoes\n- Bake until done\n- Crumble gingersnaps, whisk",
         "response": "Add shrimp and tomatoes",
         "correct_response": "Add shrimp and tomatoes"
+    },
+    {
+        "title": "Smoked Fish & Broccoli Flan",
+        "question": "In the recipe 'Smoked Fish & Broccoli Flan', which steps occurs after 'Arrange broccoli, onion, fish'?\nOptions:\n- Pour mixture, sprinkle cheese\n- Bake until done\n- Add shrimp and tomatoes\n- Roll out dough, line dish\n- Crumble gingersnaps, whisk",
+        "response": "Pour mixture, sprinkle cheese",
+        "correct_response": "Pour mixture, sprinkle cheese"
+    },
+    {
+        "title": "Turkey Roast Supreme (Crock Pot)",
+        "question": "In the recipe 'Turkey Roast Supreme (Crock Pot)', which steps occurs after 'Rub spice mixture on turkey'?\nOptions:\n- Add shrimp and tomatoes\n- Bake until done\n- Crumble gingersnaps, whisk\n- Cook on low or high\n- Layer vegetables in crock pot",
+        "response": "Layer vegetables in crock pot",
+        "correct_response": "Cook on low or high"
     }
 ]
