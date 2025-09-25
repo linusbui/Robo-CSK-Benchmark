@@ -1,0 +1,21 @@
+question,final_answer,correct_answer
+"Here are a few examples:
+Task: The robot can arrange and place a fourth tile onto a designated area of a game board.
+Configuration: The robot has 1 arm(s) with 7 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk.
+Task: Adjust the angle of the desk lamp.
+Configuration: The robot has 1 arm(s) with 6 DoFs and rigid No specified Gripper and it can not walk.
+Task: The robot can pick up the blue towel and place it neatly next to the plate.
+Configuration: The robot has 1 arm(s) with 7 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk.
+Task: Position and secure the rope along the edge of the black object using the robot's grippers.
+Configuration: The robot has 1 arm(s) with 7 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk.
+Task: Organize shoes by size and color on a designated shelf.
+Configuration: The robot has 1 arm(s) with 6 DoFs and rigid No specified Gripper and it can not walk.
+Task: Reorganize the cushions on the sofa.
+Configuration: The robot has 1 arm(s) with 6 DoFs and rigid No specified Gripper and it can not walk.
+Task: Sort and organize the bottles on the counter by size and color.
+Configuration: The robot has 0 arm(s) with 6 DoFs and rigid No specified Gripper and it can not walk.
+Task: Sort and stack the black objects on the table by size.
+Configuration: The robot has 1 arm(s) with 7 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk.
+Task: add a fourth tile to the word
+Configurations: The robot has 1 arm(s) with 1 DoFs and rigid No specified Gripper and it can not walk., The robot has 1 arm(s) with 7 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk., The robot has 1 arm(s) with 6 DoFs and rigid No specified Gripper and it can not walk., The robot has 1 arm(s) with 6 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk., The robot has 1 arm(s) with 5 DoFs and rigid No specified Gripper and it can not walk.
+Your Choice:",The robot has 1 arm(s) with 7 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk.,The robot has 1 arm(s) with 7 DoFs and rigid Robot Grippers with 2 Fingers and it can not walk.

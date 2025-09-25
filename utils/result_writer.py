@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 import pandas as pd
 
@@ -21,11 +22,19 @@ def add_to_model_overview(new_entry: pd.DataFrame, folder: str, default_res_fold
     result.to_csv(file, index=False)
 
 
-def write_model_results_to_file(results: [ModelEvaluationResult], model: str, folder: str, default_res_folder=True):
+def write_model_results_to_file(results: [ModelEvaluationResult], model: str, tech: str, folder: str, default_res_folder=True):
     if default_res_folder:
-        file = f'{folder}/results/{model.lower()}.csv'
+        # create folder if needed
+        resdir = f'{folder}/results/{model.lower()}'
+        if not os.path.isdir(resdir):
+            os.mkdir(resdir)
+        file = f'{resdir}/{model.lower()}_{tech}.csv'
     else:
-        file = f'{folder}/{model.lower()}.csv'
+        # create folder if needed
+        resdir = f'{folder}/{model.lower()}'
+        if not os.path.isdir(resdir):
+            os.mkdir(resdir)
+        file = f'{resdir}/{model.lower()}_{tech}.csv'
     dict_list = [re.to_dict() for re in results]
     df = pd.DataFrame(dict_list)
     df.to_csv(file, index=False)

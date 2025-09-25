@@ -8,7 +8,7 @@ from utils.prompter import Prompter
 
 class OpenAIPrompter(Prompter):
     def __init__(self, temp = 0.0):
-        super().__init__("gpt-4o-2024-08-06", temp)
+        super().__init__("gpt-4o-mini-2024-07-18", temp)
         script_dir = os.path.dirname(os.path.abspath(__file__))
         json_text = json.load(open(os.path.join(script_dir, '..', 'credentials.json')))
         self.client = OpenAI(

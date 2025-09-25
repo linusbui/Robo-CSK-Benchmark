@@ -1,0 +1,3 @@
+object,correct_location,predicted_location,location_choices,correct_prediction
+action figure,pantry room,suitcase,"['pantry room', 'palace', 'laundry room', 'car', 'suitcase']",False
+adjustable wrench,bedroom,press,"['loft', 'glass', 'bedroom', 'press', 'cat']",False

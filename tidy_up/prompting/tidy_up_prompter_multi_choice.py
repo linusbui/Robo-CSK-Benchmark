@@ -30,7 +30,7 @@ def prompt_all_models(prompters: [Prompter]):
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, res, choices)
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name, 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, '', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name), 'tidy_up/results_multi', False)
 
 
@@ -56,9 +56,9 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, res, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_rar', 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'rar', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_rar', 'tidy_up')
+        write_log_to_file(logs, prompter.model_name, 'rar', 'tidy_up')
 
 
 user_msg_meta = '''
@@ -91,9 +91,9 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, res, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_meta', 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'meta', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_meta', 'tidy_up')
+        write_log_to_file(logs, prompter.model_name, 'meta', 'tidy_up')
 
 
 user_msg_selfcon = 'What is the single location from the given list that you think is the most suitable place to put the object? Think step by step before answering with the single location of your choosing.'
@@ -128,9 +128,9 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
             log.update({'final_answer': final_pred,
                         'correct_answer': corr_loc})
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_selfcon', 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'selfcon', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'tidy_up/results_multi', False)
-        write_general_log_to_file(logs, prompter.model_name + '_selfcon', 'tidy_up')
+        write_general_log_to_file(logs, prompter.model_name, 'selfcon', 'tidy_up')
 
 
 user_msg_initial = 'What is the single location from the given list that you think is the most suitable place to put the object?'
@@ -184,9 +184,9 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, final_pred, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_selfref', 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'selfref', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_selfref', 'tidy_up')
+        write_log_to_file(logs, prompter.model_name, 'selfref', 'tidy_up')
 
 
 system_msg_principle = 'You are given a multiple-choice question. Your task is to extract the underlying concepts and principles involved in choosing the right answer.'
@@ -221,9 +221,9 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = StepbackLogEntry(p_question, principles, question, res, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_stepback', 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'stepback', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_stepback', 'tidy_up')
+        write_log_to_file(logs, prompter.model_name, 'stepback', 'tidy_up')
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
@@ -279,9 +279,9 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = SgiclLogEntry(question, res, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_sgicl', 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'sgicl', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_sgicl', 'tidy_up')
+        write_log_to_file(logs, prompter.model_name, 'sgicl', 'tidy_up')
 
 
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
@@ -294,7 +294,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
         ex_file = f'tidy_up/examples/tidy_up_multichoice_cot_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_file):
             results = []
-            log = pd.read_csv(f'tidy_up/logs/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            log = pd.read_csv(f'tidy_up/logs/{prompter.model_name}/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
             for index, row in tqdm(log.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Tidy Up task examples'):
                 corr_loc = row['correct_answer']
@@ -347,9 +347,9 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = SgiclLogEntry(question, res, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_contr', 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name + 'contr', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_contr', 'tidy_up')
+        write_log_to_file(logs, prompter.model_name, 'contr', 'tidy_up')
 
 
 def calculate_average(results: [TidyUpMultiChoiceResult], model: str):

@@ -30,7 +30,7 @@ def prompt_all_models(prompters: [Prompter]):
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, res, choices)
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name, 'tool_usage')
+        write_model_results_to_file(results, prompter.model_name, '', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name), 'tool_usage')
 
 
@@ -56,9 +56,9 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, res, pred_tool, corr_tool)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_rar', 'tool_usage')
+        write_model_results_to_file(results, prompter.model_name, 'rar', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'tool_usage')
-        write_log_to_file(logs, prompter.model_name + '_rar', 'tool_usage')
+        write_log_to_file(logs, prompter.model_name, 'rar', 'tool_usage')
 
 
 user_msg_meta = '''
@@ -91,9 +91,9 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, res, pred_tool, corr_tool)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_meta', 'tool_usage')
+        write_model_results_to_file(results, prompter.model_name, 'meta', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'tool_usage')
-        write_log_to_file(logs, prompter.model_name + '_meta', 'tool_usage')
+        write_log_to_file(logs, prompter.model_name, 'meta', 'tool_usage')
 
 
 user_msg_selfcon = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Think step by step before answering with the single tool of your choosing.'
@@ -128,9 +128,9 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
             log.update({'final_answer': final_pred,
                         'correct_answer': corr_tool})
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_selfcon', 'tool_usage')
+        write_model_results_to_file(results, prompter.model_name, 'selfcon', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'tool_usage')
-        write_general_log_to_file(logs, prompter.model_name + '_selfcon', 'tool_usage')
+        write_general_log_to_file(logs, prompter.model_name, 'selfcon', 'tool_usage')
 
 
 user_msg_initial = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
@@ -187,9 +187,9 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, final_pred, pred_tool, corr_tool)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_selfref', 'tool_usage')
+        write_model_results_to_file(results, prompter.model_name, 'selfref', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'tool_usage')
-        write_log_to_file(logs, prompter.model_name + '_selfref', 'tool_usage')
+        write_log_to_file(logs, prompter.model_name, 'selfref', 'tool_usage')
 
 
 system_msg_principle = 'You are given a multiple-choice question. Your task is to extract the underlying concepts and principles involved in choosing the right answer.'
@@ -224,9 +224,9 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = StepbackLogEntry(p_question, principles, question, res, pred_tool, corr_tool)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_stepback', 'tool_usage')
+        write_model_results_to_file(results, prompter.model_name, 'stepback', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'tool_usage')
-        write_log_to_file(logs, prompter.model_name + '_stepback', 'tool_usage')
+        write_log_to_file(logs, prompter.model_name, 'stepback', 'tool_usage')
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
@@ -281,9 +281,9 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = SgiclLogEntry(question, res, corr_tool)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_sgicl', 'tool_usage')
+        write_model_results_to_file(results, prompter.model_name, 'sgicl', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'tool_usage')
-        write_log_to_file(logs, prompter.model_name + '_sgicl', 'tool_usage')
+        write_log_to_file(logs, prompter.model_name, 'sgicl', 'tool_usage')
 
 
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
@@ -296,7 +296,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
         ex_file = f'tool_usage/examples/tool_usage_multichoice_cot_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_file):
             results = []
-            log = pd.read_csv(f'tool_usage/logs/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            log = pd.read_csv(f'tool_usage/logs/{prompter.model_name}/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
             for index, row in tqdm(log.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Tool Usage task examples'):
                 corr_tool = row['correct_answer']
@@ -348,9 +348,9 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = SgiclLogEntry(question, res, corr_tool)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_contr', 'tool_usage')
+        write_model_results_to_file(results, prompter.model_name, 'contr', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tool_usage')
-        write_log_to_file(logs, prompter.model_name + '_contr', 'tool_usage')
+        write_log_to_file(logs, prompter.model_name, 'contr', 'tool_usage')
 
 def calculate_average(results: [ToolSubstitutionResult], model: str):
     average = {met: 0 for met in ['acc']}

@@ -1,0 +1,41 @@
+question,final_answer,correct_answer
+"Here are a few examples:
+Task: Wiping up a spilled drink on the kitchen counter.
+Tool: sponge
+Task: Wiping down kitchen counters.
+Tool: sponge
+Task: Wiping up spilled water from the kitchen counter.
+Tool: sponge
+Task: Reheat coffee on the stove using the pan.
+Tool: pan
+Task: Use the cup to measure and pour the right amount of oil into the frying pan for cooking a fried egg.
+Tool: cup
+Task: Frying vegetables for a stir-fry.
+Tool: pan
+Task: Boil water to reheat soup in a bowl.
+Tool: kettle
+Task: Using the plate to hold a pot while boiling water on the stove.
+Tool: plate
+Task: cleaning up spills
+Tools: alligator wrench, kri, drill, sponge, shampoo
+Your Choice:",sponge,sponge
+"Here are a few examples:
+Task: Wiping up a spilled drink on the kitchen counter.
+Tool: sponge
+Task: Wiping down kitchen counters.
+Tool: sponge
+Task: Wiping up spilled water from the kitchen counter.
+Tool: sponge
+Task: Reheat coffee on the stove using the pan.
+Tool: pan
+Task: Use the cup to measure and pour the right amount of oil into the frying pan for cooking a fried egg.
+Tool: cup
+Task: Frying vegetables for a stir-fry.
+Tool: pan
+Task: Boil water to reheat soup in a bowl.
+Tool: kettle
+Task: Using the plate to hold a pot while boiling water on the stove.
+Tool: plate
+Task: drying the dishes
+Tools: toothpick, strickle, sponge, tack hammer, hunting knife
+Your Choice:",sponge,sponge

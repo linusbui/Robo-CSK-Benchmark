@@ -1,0 +1,3 @@
+task,affordance,correct_tool,predicted_tool,tool_choices,correct_prediction
+cleaning up spills,absorb,sponge,sponge,"['shampoo', 'alligator wrench', 'drill', 'sponge', 'kri']",True
+drying the dishes,absorb,sponge,sponge,"['strickle', 'hunting knife', 'toothpick', 'sponge', 'tack hammer']",True

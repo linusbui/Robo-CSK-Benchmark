@@ -31,7 +31,7 @@ def prompt_all_models(prompters: [Prompter]):
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, res, choices)
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name, 'meta_reasoning/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, '', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name), 'meta_reasoning/results_multi', False)
 
 
@@ -57,9 +57,9 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, res, pred_conf, corr_conf)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_rar', 'meta_reasoning/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'rar', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'meta_reasoning/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_rar', 'meta_reasoning')
+        write_log_to_file(logs, prompter.model_name, 'rar', 'meta_reasoning')
 
 
 user_msg_meta = '''What is the single hardware configuration from the given list that you think is the most suitable to execute the task? As you perform this task, follow these steps:
@@ -91,9 +91,9 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, res, pred_conf, corr_conf)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_meta', 'meta_reasoning/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'meta', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'meta_reasoning/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_meta', 'meta_reasoning')
+        write_log_to_file(logs, prompter.model_name, 'meta', 'meta_reasoning')
 
 
 user_msg_selfcon = 'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Think step by step before answering with the complete configuration you chose.'
@@ -134,9 +134,9 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [
             log.update({'final_answer': final_pred,
                          'correct_answer': corr_conf})
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_selfcon', 'meta_reasoning/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'selfcon', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'meta_reasoning/results_multi', False)
-        write_general_log_to_file(logs, prompter.model_name + '_selfcon', 'meta_reasoning')
+        write_general_log_to_file(logs, prompter.model_name, 'selfcon', 'meta_reasoning')
 
 
 user_msg_initial = 'What is the single hardware configuration from the given list that you think is the most suitable to execute the task?'
@@ -192,9 +192,9 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, final_pred, pred_conf, corr_conf)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_selfref', 'meta_reasoning/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'selfref', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'meta_reasoning/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_selfref', 'meta_reasoning')
+        write_log_to_file(logs, prompter.model_name, 'selfref', 'meta_reasoning')
 
 
 system_msg_principle = 'You are given a multiple-choice question. Your task is to extract the underlying concepts and principles involved in choosing the right answer.'
@@ -228,9 +228,9 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = StepbackLogEntry(p_question, principles, question, res, pred_conf, corr_conf)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_stepback', 'meta_reasoning/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'stepback', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'meta_reasoning/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_stepback', 'meta_reasoning')
+        write_log_to_file(logs, prompter.model_name, 'stepback', 'meta_reasoning')
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
@@ -285,9 +285,9 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = SgiclLogEntry(question, res, corr_conf)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_sgicl', 'meta_reasoning/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'sgicl', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'meta_reasoning/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_sgicl', 'meta_reasoning')
+        write_log_to_file(logs, prompter.model_name, 'sgicl', 'meta_reasoning')
 
 
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
@@ -300,7 +300,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
         ex_file = f'meta_reasoning/examples/meta_reasoning_multi_cot_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_file):
             results = []
-            log = pd.read_csv(f'meta_reasoning/logs/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            log = pd.read_csv(f'meta_reasoning/logs/{prompter.model_name}/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
             for index, row in tqdm(log.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Meta-Rasoning task examples'):
                 corr_conf = row['correct_answer']
@@ -352,9 +352,9 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = SgiclLogEntry(question, res, corr_conf)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + '_contr', 'meta_reasoning/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'contr', 'meta_reasoning/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'meta_reasoning/results_multi', False)
-        write_log_to_file(logs, prompter.model_name + '_contr', 'meta_reasoning')
+        write_log_to_file(logs, prompter.model_name, 'contr', 'meta_reasoning')
 
 
 def calculate_average(results: [TidyUpMultiChoiceResult], model: str):

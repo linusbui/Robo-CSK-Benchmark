@@ -37,7 +37,7 @@ def prompt_all_models(prompters: [Prompter]):
             tup.add_predicted_plate(transform_plate_prediction(res))
 
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name, 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, '', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name), 'table_setting')
 
 
@@ -74,10 +74,10 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name + '_rar', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'rar', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_rar', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name + '_plate_rar', 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_rar', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_rar', 'table_setting')
 
 
 user_msg_cut_meta = f'''What are the types of cutlery you would use to eat that meal? Please choose from the following {utensils_string}. As you perform this task, follow these steps:
@@ -128,10 +128,10 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name + '_meta', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'meta', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_meta', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name + '_plate_meta', 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_meta', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_meta', 'table_setting')
 
 
 user_msg_cut_selfcon = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}. Think step by step before answering with the cutlery of your choosing.'
@@ -186,10 +186,10 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name + '_selfcon', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'selfcon', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'table_setting')
-        write_general_log_to_file(logs_cut, prompter.model_name + '_cutlery_selfcon', 'table_setting')
-        write_general_log_to_file(logs_plat, prompter.model_name + '_plate_selfcon', 'table_setting')
+        write_general_log_to_file(logs_cut, prompter.model_name, 'cutlery_selfcon', 'table_setting')
+        write_general_log_to_file(logs_plat, prompter.model_name, 'plate_selfcon', 'table_setting')
 
 
 user_msg_cut_initial = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}'
@@ -279,10 +279,10 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name + '_selfref', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'selfref', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_selfref', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name + '_plate_selfref', 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_selfref', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_selfref', 'table_setting')
 
 
 system_msg_cut_principle = 'You are given the title of a meal. Your task is to extract the underlying concepts and principles involved in choosing the right cutlery to eat that meal with.'
@@ -333,10 +333,10 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name + '_stepback', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'stepback', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_stepback', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name + '_plate_stepback', 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_stepback', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_stepback', 'table_setting')
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
@@ -414,10 +414,10 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name + '_sgicl', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'sgicl', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_sgicl', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name + '_plate_sgicl', 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_sgicl', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_sgicl', 'table_setting')
 
 
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
@@ -430,7 +430,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
         ex_cut_file = f'table_setting/examples/table_setting_multichoice_cot_cut_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_cut_file):
             results = []
-            log_cut = pd.read_csv(f'table_setting/logs/{prompter.model_name}_cutlery_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            log_cut = pd.read_csv(f'table_setting/logs/{prompter.model_name}/{prompter.model_name}_cutlery_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
             for index, row in tqdm(log_cut.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Table Setting task cutlery examples'):
                 corr_cut = row['correct_answer']
@@ -459,7 +459,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
         ex_plat_file = f'table_setting/examples/table_setting_multichoice_cot_plat_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_plat_file):
             results = []
-            log_cut = pd.read_csv(f'table_setting/logs/{prompter.model_name}_plate_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            log_cut = pd.read_csv(f'table_setting/logs/{prompter.model_name}/{prompter.model_name}_plate_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
             for index, row in tqdm(log_cut.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Table Setting task plate examples'):
                 corr_plat = row['correct_answer']
@@ -530,10 +530,10 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name + '_contr', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'contr', 'table_setting')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name + '_cutlery_contr', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name + '_plate_contr', 'table_setting')
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_contr', 'table_setting')
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_contr', 'table_setting')
 
 
 def get_fitting_plate(row) -> Plate:
