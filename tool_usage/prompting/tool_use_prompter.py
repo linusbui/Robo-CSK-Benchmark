@@ -335,7 +335,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
         logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
-        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task with SG-ICL Prompting'):
+        for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task with Contrastive CoT Prompting'):
             task = row['Task']
             affordance = row['Affordance']
             corr_tool = row['Correct_Tool']
