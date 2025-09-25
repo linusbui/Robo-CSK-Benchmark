@@ -16,7 +16,7 @@ def main():
                         help="Choose one or more models to run")
     parser.add_argument("--tasks", type=str, choices=["ts", "mr_b", "mr_mc", "to_us", "ti_up_o", "ti_up_mc", "proc_b", "proc_mc"],
                         nargs="+", help="Choose one or more tasks to run")
-    parser.add_argument('--techs' ,type=str, choices=['rar', 'meta', 'contr', 'selfcon', 'selfref', 'sgicl', 'stepback'],
+    parser.add_argument('--techs' ,type=str, choices=['base', 'rar', 'meta', 'contr', 'selfcon', 'selfref', 'sgicl', 'stepback'],
                         nargs="+")
     parser.add_argument("--new_tok", type=int, default=1000, help="Maximum number of new tokens for the model output")
     args = parser.parse_args()
@@ -46,6 +46,9 @@ def main():
 
     # Decide which tasks to evaluate with which prompting techniques:
     if "ts" in args.tasks:
+        if 'base' in args.techs:
+            table_setting_prompter.prompt_all_models(prompters, num_runs)
+            print('Finished the Table Setting task (Baseline)')
         if 'rar' in args.techs:
             table_setting_prompter.prompt_all_models_rar(prompters, num_runs)
             print('Finished the Table Setting task (Rephrase and Respond)')
@@ -68,6 +71,9 @@ def main():
             table_setting_prompter.prompt_all_models_contr(prompters, num_runs)
             print('Finished the Table Setting task (Contrastive CoT)')
     if "mr_mc" in args.tasks:
+        if 'base' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models(prompters, num_runs)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Baseline)')
         if 'rar' in args.techs:
             meta_reason_prompter_multi_choice.prompt_all_models_rar(prompters, num_runs)
             print('Finished the Meta-Reasoning task (Multi Choice Questions) (Rephrase and Respond)')
@@ -90,6 +96,9 @@ def main():
             meta_reason_prompter_multi_choice.prompt_all_models_contr(prompters, num_runs)
             print('Finished the Meta-Reasoning task (Multi Choice Questions) (Contrastive CoT)')
     if "to_us" in args.tasks:
+        if 'base' in args.techs:
+            tool_use_prompter.prompt_all_models(prompters, num_runs)
+            print('Finished the Tool Usage task (Baseline)')
         if 'rar' in args.techs:
             tool_use_prompter.prompt_all_models_rar(prompters, num_runs)
             print('Finished the Tool Usage task (Rephrase and Respond)')
@@ -112,6 +121,9 @@ def main():
             tool_use_prompter.prompt_all_models_contr(prompters, num_runs)
             print('Finished the Tool Usage task (Contrastive CoT)')
     if "ti_up_mc" in args.tasks:
+        if 'base' in args.techs:
+            tidy_up_prompter_multi_choice.prompt_all_models(prompters, num_runs)
+            print('Finished the Tidy Up task (Multi Choice Questions) (Baseline)')
         if 'rar' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_rar(prompters, num_runs)
             print('Finished the Tidy Up task (Multi Choice Questions) (Rephrase and Respond)')
@@ -134,6 +146,9 @@ def main():
             tidy_up_prompter_multi_choice.prompt_all_models_contr(prompters, num_runs)
             print('Finished the Tidy Up task (Multi Choice Questions) (Contrastive CoT)')
     if "proc_mc" in args.tasks:
+        if 'base' in args.techs:
+            cooking_procedures_prompter.prompt_all_models_multi(prompters, num_runs)
+            print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Baseline)")
         if 'rar' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi_rar(prompters, num_runs)
             print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Rephrase and Respond)")

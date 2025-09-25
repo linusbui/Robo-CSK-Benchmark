@@ -10,7 +10,6 @@ from utils.prompter import Prompter
 from utils.formatting import transform_prediction_meta_single, majority_vote
 from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
-'''
 def prompt_all_models_binary(prompters: [Prompter]):
     system_msg = "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. "
     system_msg_before = "Based on the recipe title and the two steps provided, identify whether one action occurred before another. "
@@ -60,9 +59,9 @@ def prompt_all_models_binary(prompters: [Prompter]):
                 save_to_json(f'procedural_knowledge/results_binary/Yes/{model.model_name}/after_{recipe_number}.json', all_yes_after_answers)
                 save_to_json(f'procedural_knowledge/results_binary/No/{model.model_name}/after_{recipe_number}.json', all_no_after_answers)
     evaluate_prompters.evaluate_binary(prompters)
-'''
 
-def prompt_all_models_multi(prompters: [Prompter]):
+
+def prompt_all_models_multi(prompters: [Prompter], num_runs: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
@@ -90,7 +89,7 @@ def prompt_all_models_multi(prompters: [Prompter]):
         for recipe_number in range(1, 5):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '.json'
-            recipe_components = extract_json_multi(json_file)
+            recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
             for recipe in recipe_components:

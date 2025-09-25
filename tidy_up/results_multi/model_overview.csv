@@ -2,9 +2,10 @@ model,acc
 Llama-3.3-70B-Instruct,0.618223760092272
 gemma-2-27b-it,0.575547866205306
 gpt-4o-2024-08-06,0.608996539792388
-gpt-4o-mini-2024-07-18_rar,0
-gpt-4o-mini-2024-07-18_meta,0
-gpt-4o-mini-2024-07-18_selfcon,0
-gpt-4o-mini-2024-07-18_selfref,0
-gpt-4o-mini-2024-07-18_stepback,0
-gpt-4o-mini-2024-07-18_sgicl,0
+gpt-4o-mini-2024-07-18_rar,0.0
+gpt-4o-mini-2024-07-18_meta,0.0
+gpt-4o-mini-2024-07-18_selfcon,0.0
+gpt-4o-mini-2024-07-18_selfref,0.0
+gpt-4o-mini-2024-07-18_stepback,0.0
+gpt-4o-mini-2024-07-18_sgicl,0.0
+gpt-4o-mini-2024-07-18,0.0

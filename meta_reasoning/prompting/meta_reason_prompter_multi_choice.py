@@ -15,10 +15,10 @@ from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_
 system_msg = 'Imagine you are to create a robot for a specific household task.'
 user_msg = 'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Please only answer with the complete configuration you chose.'
 
-def prompt_all_models(prompters: [Prompter]):
+def prompt_all_models(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         results = []
-        questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions_small.csv', delimiter=',', on_bad_lines='skip')
+        questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Configurations'] = questions['Wrong_Configurations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Meta-Reasoning task'):

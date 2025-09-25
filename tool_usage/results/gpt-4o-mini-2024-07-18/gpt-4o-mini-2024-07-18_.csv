@@ -1,0 +1,2 @@
+task,affordance,correct_tool,predicted_tool,tool_choices,correct_prediction
+cleaning up spills,absorb,sponge,sponge,"['sponge', 'kri', 'alligator wrench', 'shampoo', 'drill']",True

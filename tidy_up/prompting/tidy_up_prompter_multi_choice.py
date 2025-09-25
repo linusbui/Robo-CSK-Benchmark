@@ -14,10 +14,10 @@ from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_
 system_msg = 'Imagine you are a robot tidying up a household environment, being confronted with an object and a possible list of locations to put it.'
 user_msg = 'What is the single location from the given list that you think is the most suitable place to put the object? Please only answer with the location you chose.'
 
-def prompt_all_models(prompters: [Prompter]):
+def prompt_all_models(prompters: [Prompter], num_runs:int):
     for prompter in prompters:
         results = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice_small.csv', delimiter=',', on_bad_lines='skip')
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):

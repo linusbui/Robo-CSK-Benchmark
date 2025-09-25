@@ -15,9 +15,9 @@ system_msg = 'Imagine you are a robot setting a table for a meal.'
 user_msg_cut = f'What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}'
 user_msg_plat = f'What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}'
 
-def prompt_all_models(prompters: [Prompter]):
+def prompt_all_models(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data_small.csv', delimiter=',', on_bad_lines='skip')
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         results = []
         for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
             # setup meal name & get gold standard data

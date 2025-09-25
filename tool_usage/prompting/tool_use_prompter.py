@@ -14,10 +14,10 @@ from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_
 system_msg = 'Imagine you are a robot in a household environment being confronted with a task and a list of tools.'
 user_msg = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
 
-def prompt_all_models(prompters: [Prompter]):
+def prompt_all_models(prompters: [Prompter], num_runs:int):
     for prompter in prompters:
         results = []
-        questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions_small.csv', delimiter=',', on_bad_lines='skip')
+        questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(), f'Prompting {prompter.model_name} for the Tool Usage task'):
             task = row['Task']
