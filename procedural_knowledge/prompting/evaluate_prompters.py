@@ -101,8 +101,10 @@ def evaluate_multiclass_classification(data):
         'accuracy': accuracy,
     }
 
+
 def evaluate_multi(prompters, technique):
-    all_prompter_results = []
+    new_prompter_results = []
+    model_overview = pd.read_csv('procedural_knowledge/results_multi/model_overview.csv')
 
     for prompter in prompters:
         metrics_list = []
@@ -119,12 +121,16 @@ def evaluate_multi(prompters, technique):
         correct = sum(m['correct'] for m in metrics_list)
         accuracy = correct / total if total > 0 else 0.0
 
-        all_prompter_results.append({
+        model = prompter.model_name + technique
+        model_overview = model_overview[~(model_overview['prompter'] == model)]
+
+        new_prompter_results.append({
             'prompter': prompter.model_name + technique,
             'total': total,
             'correct': correct,
             'accuracy': accuracy
         })
 
-    df = pd.DataFrame(all_prompter_results)
+    result = pd.concat([model_overview, pd.DataFrame(new_prompter_results)], ignore_index=True)
+    df = pd.DataFrame(result)
     df.to_csv('procedural_knowledge/results_multi/model_overview.csv', index=False)

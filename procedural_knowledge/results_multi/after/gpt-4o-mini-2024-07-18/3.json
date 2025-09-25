@@ -1,8 +1,26 @@
 [
     {
         "title": "Gingersnap Gravy",
-        "question": "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?\nOptions:\n- Saute onions, celery, garlic\n- Crumble gingersnaps, whisk",
+        "question": "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?\nOptions:\n- Combine milk, eggs, spices\n- Cook pasta until al dente\n- Crumble gingersnaps, whisk\n- Saute onions, celery, garlic",
         "response": "Crumble gingersnaps, whisk",
         "correct_response": "Crumble gingersnaps, whisk"
+    },
+    {
+        "title": "Mom's Pumpkin Pie Squares Recipe",
+        "question": "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which steps occurs after 'Pour into pan, sprinkle mix'?\nOptions:\n- Combine milk, eggs, spices\n- Saute onions, celery, garlic\n- Cook pasta until al dente\n- Bake until done",
+        "response": "Bake until done",
+        "correct_response": "Bake until done"
+    },
+    {
+        "title": "Shrimp and Pasta in a Basil Cream Sauce",
+        "question": "In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which steps occurs after 'Saute shallots and garlic'?\nOptions:\n- Combine milk, eggs, spices\n- Cook pasta until al dente\n- Saute onions, celery, garlic\n- Add shrimp and tomatoes",
+        "response": "Add shrimp and tomatoes",
+        "correct_response": "Add shrimp and tomatoes"
+    },
+    {
+        "title": "Smoked Fish & Broccoli Flan",
+        "question": "In the recipe 'Smoked Fish & Broccoli Flan', which steps occurs after 'Arrange broccoli, onion, fish'?\nOptions:\n- Combine milk, eggs, spices\n- Saute onions, celery, garlic\n- Roll out dough, line dish\n- Pour mixture, sprinkle cheese\n- Cook pasta until al dente",
+        "response": "Combine milk, eggs, spices",
+        "correct_response": "Pour mixture, sprinkle cheese"
     }
 ]

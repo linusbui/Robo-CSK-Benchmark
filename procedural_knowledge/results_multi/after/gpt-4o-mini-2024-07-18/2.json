@@ -1,8 +1,26 @@
 [
     {
         "title": "Ranch Mushrooms",
-        "question": "In the recipe 'Ranch Mushrooms', which steps occurs after 'Cook on low heat'?\nOptions:\n- Add ingredients to crock pot\n- Use stovetop if preferred",
-        "response": "Use stovetop if preferred",
+        "question": "In the recipe 'Ranch Mushrooms', which steps occurs after 'Cook on low heat'?\nOptions:\n- Use stovetop if preferred\n- Add ingredients to crock pot\n- Preheat oven to 300\u00b0F\n- Dice chicken breast",
+        "response": "Add ingredients to crock pot",
         "correct_response": "Use stovetop if preferred"
+    },
+    {
+        "title": "Raspberry Creme Brulee Recipe",
+        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which steps occurs after 'Heat cream, add vanilla'?\nOptions:\n- Preheat oven to 300\u00b0F\n- Bake in water bath\n- Dice chicken breast\n- Add ingredients to crock pot",
+        "response": "Preheat oven to 300\u00b0F",
+        "correct_response": "Bake in water bath"
+    },
+    {
+        "title": "Barbecue Hamburger Patties Recipe",
+        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which steps occurs after 'Shape into 6 patties'?\nOptions:\n- Add ingredients to crock pot\n- Brown patties in skillet\n- Mix meat, onion, salt\n- Dice chicken breast\n- Preheat oven to 300\u00b0F",
+        "response": "Brown patties in skillet",
+        "correct_response": "Brown patties in skillet"
+    },
+    {
+        "title": "Chicken Prepared-Mustard",
+        "question": "In the recipe 'Chicken Prepared-Mustard', which steps occurs after 'Add chicken and butter'?\nOptions:\n- Dice chicken breast\n- Add ingredients to crock pot\n- Add mustard, stir, cover\n- Preheat oven to 300\u00b0F",
+        "response": "Add ingredients to crock pot",
+        "correct_response": "Add mustard, stir, cover"
     }
 ]

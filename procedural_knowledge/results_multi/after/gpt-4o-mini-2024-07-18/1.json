@@ -1,8 +1,26 @@
 [
     {
         "title": "Worlds Best Mac and Cheese",
-        "question": "In the recipe 'Worlds Best Mac and Cheese', which steps occurs after 'Mix pasta with sauce'?\nOptions:\n- Cook pasta less than directions\n- Bake with cheese topping",
+        "question": "In the recipe 'Worlds Best Mac and Cheese', which steps occurs after 'Mix pasta with sauce'?\nOptions:\n- Puree tomatoes with salt\n- Preheat oven\n- Cook pasta less than directions\n- Bake with cheese topping",
         "response": "Bake with cheese topping",
         "correct_response": "Bake with cheese topping"
+    },
+    {
+        "title": "Dilly Macaroni Salad Recipe",
+        "question": "In the recipe 'Dilly Macaroni Salad Recipe', which steps occurs after 'Combine macaroni and vegetables'?\nOptions:\n- Cook pasta less than directions\n- Cook and drain macaroni\n- Blend dressing and add\n- Puree tomatoes with salt\n- Preheat oven",
+        "response": "Blend dressing and add",
+        "correct_response": "Blend dressing and add"
+    },
+    {
+        "title": "Gazpacho",
+        "question": "In the recipe 'Gazpacho', which steps occurs after 'Combine vegetables with puree'?\nOptions:\n- Puree tomatoes with salt\n- Cook pasta less than directions\n- Drizzle oil, garnish, serve\n- Preheat oven",
+        "response": "Drizzle oil, garnish, serve",
+        "correct_response": "Drizzle oil, garnish, serve"
+    },
+    {
+        "title": "Crunchy Onion Potato Bake",
+        "question": "In the recipe 'Crunchy Onion Potato Bake', which steps occurs after 'Heat milk, water, butter'?\nOptions:\n- Puree tomatoes with salt\n- Bake until cheese melts\n- Preheat oven\n- Cook pasta less than directions",
+        "response": "Bake until cheese melts",
+        "correct_response": "Bake until cheese melts"
     }
 ]
