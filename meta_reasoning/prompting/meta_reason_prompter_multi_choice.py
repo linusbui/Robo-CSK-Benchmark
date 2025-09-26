@@ -52,7 +52,7 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             choices_string = ', '.join([c for c in choices])
             question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_rar, question)
-            pred_conf = transform_prediction(res, choices)
+            pred_conf = transform_prediction_mr(prompter, res, choices)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)
             log = BasicLogEntry(question, res, pred_conf, corr_conf)
@@ -86,7 +86,7 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             choices_string = ', '.join([c for c in choices])
             question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_meta, question)
-            pred_conf = transform_prediction(res, choices)
+            pred_conf = transform_prediction_mr(prompter, res, choices)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)
             log = BasicLogEntry(question, res, pred_conf, corr_conf)
@@ -120,11 +120,7 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [
             for i in range(MAXIT_selfcon):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
                 # try to extract result classicaly
-                pred_conf = transform_prediction(res, choices)
-                if pred_conf == 'None':
-                    # extract final answer with LLM
-                    user_msg_extract = f'Your task is to determine the final answer of a given LLM response. The final answer should only contain one of the following configurations: {choices}'
-                    pred_conf = prompter_res.prompt_model(system_msg, user_msg_extract, res)
+                pred_conf = transform_prediction_mr(prompter, res, choices)
                 answers.append(pred_conf)
                 log.update({f'cot_{i}': res,
                             f'answer_{i}': pred_conf})
@@ -186,7 +182,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. The answer should only contain one of the following configurations: {choices}'
             question = question + '\nYour Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
-            pred_conf = transform_prediction(final_pred, choices)
+            pred_conf = transform_prediction_mr(prompter, final_pred, choices)
 
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)
@@ -223,7 +219,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_stepback, question)
             
-            pred_conf = transform_prediction(res, choices)
+            pred_conf = transform_prediction_mr(prompter, res, choices)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)
             log = StepbackLogEntry(p_question, principles, question, res, pred_conf, corr_conf)
@@ -365,3 +361,14 @@ def calculate_average(results: [TidyUpMultiChoiceResult], model: str):
     new_row = pd.Series(
         {'model': model, 'acc': (average['acc'] / len(results))})
     return new_row.to_frame().T
+
+
+# LLM not always responds with exact configuration
+# Prompt LLM again to get final conf if necessary
+def transform_prediction_mr(prompter: Prompter, pred: str, choices: [str]):
+    res = transform_prediction(pred, choices)
+    if res == 'None':
+        system_msg_extract = 'You are given the answer to a multiple choice question. The choices are different robot configurations.'
+        user_msg_extract = f'Your task is to determine the final configuration of the given answer. The possible configurations are:\n{choices}.\nOnly answer with the complete configuration.'
+        res = prompter.prompt_model(system_msg_extract, user_msg_extract, pred)
+    return res
