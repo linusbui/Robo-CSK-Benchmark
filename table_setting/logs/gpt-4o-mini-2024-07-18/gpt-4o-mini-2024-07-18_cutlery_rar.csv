@@ -1,9 +1,0 @@
-question,full_answer,final_answer,correct_answer
-"Meal: Lamb and Bean Nachos With Salsa Fresca
-Cutlery: ","For the meal of Lamb and Bean Nachos with Salsa Fresca, I would like to know which types of cutlery would be appropriate for enjoying this dish. Considering the nature of nachos, which typically involve layers of ingredients and toppings, certain utensils may be more suitable than others for both practicality and ease of consumption. 
-
-Final answer: Hands, Fork, Spoon.","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
-"Meal: Meatloaf With BBQ Sauce
-Cutlery: ","For the meal of meatloaf with BBQ sauce, what types of cutlery would be appropriate for enjoying this dish? Please select from the following options: Hands, Tongs, Knife, Fork, Skewer, Chopsticks, Spoon. 
-
-Final answer: Knife, Fork, Spoon.","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
