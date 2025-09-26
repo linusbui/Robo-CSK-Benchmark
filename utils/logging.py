@@ -98,7 +98,7 @@ def write_log_to_file(logs: [ModelEvaluationResult], model: str, tech: str, fold
     # create folder if needed
     logdir = f'{folder}/logs/{model.lower()}'
     if not os.path.isdir(logdir):
-        os.mkdir(logdir)
+        os.makedirs(logdir)
     file = f'{logdir}/{model.lower()}_{tech}.csv'
     dict_list = [log.to_dict() for log in logs]
     df = pd.DataFrame(dict_list)
@@ -109,7 +109,7 @@ def write_general_log_to_file(logs: [dict], model: str, tech: str, folder: str):
     # create folder if needed
     logdir = f'{folder}/logs/{model.lower()}'
     if not os.path.isdir(logdir):
-        os.mkdir(logdir)
+        os.makedirs(logdir)
     file = f'{logdir}/{model.lower()}_{tech}.csv'
     df = pd.DataFrame(logs)
     df.to_csv(file, index=False)

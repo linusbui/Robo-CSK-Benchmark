@@ -8,7 +8,7 @@ import os.path
 from tidy_up.prompting.tidy_up_result import TidyUpMultiChoiceResult
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
-from utils.formatting import transform_prediction_meta_single, transform_prediction_selfcon_single, majority_vote
+from utils.formatting import transform_prediction, majority_vote
 from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
 system_msg = 'Imagine you are a robot tidying up a household environment, being confronted with an object and a possible list of locations to put it.'
@@ -51,7 +51,7 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             choices_string = ', '.join([c for c in choices])
             question = f'Object: {obj}\nLocations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_rar, question)
-            pred_loc = transform_prediction_meta_single(res, choices)
+            pred_loc = transform_prediction(res, choices)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)
             log = BasicLogEntry(question, res, pred_loc, corr_loc)
@@ -86,7 +86,7 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             choices_string = ', '.join([c for c in choices])
             question = f'Object: {obj}\nLocations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_meta, question)
-            pred_loc = transform_prediction_meta_single(res, choices)
+            pred_loc = transform_prediction(res, choices)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)
             log = BasicLogEntry(question, res, pred_loc, corr_loc)
@@ -118,7 +118,7 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
             answers = []
             for i in range(MAXIT_selfcon):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
-                pred_loc = transform_prediction_selfcon_single(res, choices)
+                pred_loc = transform_prediction(res, choices)
                 answers.append(pred_loc)
                 log.update({f'cot_{i}': res,
                             f'answer_{i}': pred_loc})
@@ -178,7 +178,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             question = question + '\nYour Choice:'
             user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. The answer should only contain one of the following locations: {choices}'
             final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
-            pred_loc = transform_prediction_meta_single(final_pred, choices)
+            pred_loc = transform_prediction(final_pred, choices)
 
             tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)
@@ -216,7 +216,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
             res = prompter.prompt_model(system_msg, user_msg_stepback, question)
 
-            pred_loc = transform_prediction_meta_single(res, choices)
+            pred_loc = transform_prediction(res, choices)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)
             log = StepbackLogEntry(p_question, principles, question, res, pred_loc, corr_loc)

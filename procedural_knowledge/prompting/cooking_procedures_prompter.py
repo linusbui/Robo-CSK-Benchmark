@@ -7,7 +7,7 @@ from procedural_knowledge.json_utils import extract_json, extract_json_multi, ex
 from procedural_knowledge.prompting import evaluate_prompters
 from tidy_up.prompting.tidy_up_prompter_open import user_msg
 from utils.prompter import Prompter
-from utils.formatting import transform_prediction_meta_single, majority_vote
+from utils.formatting import transform_prediction, majority_vote
 from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
 def prompt_all_models_binary(prompters: [Prompter]):
@@ -157,7 +157,7 @@ def prompt_all_models_multi_rar(prompters: [Prompter], num_runs: int):
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return transform_prediction(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
@@ -169,7 +169,7 @@ def prompt_all_models_multi_rar(prompters: [Prompter], num_runs: int):
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return transform_prediction(answer, [step for step in other_steps]), question, answer
 
     for prompter in prompters:
         logs_before = []
@@ -258,7 +258,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return  transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return  transform_prediction(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
@@ -277,7 +277,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return  transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return  transform_prediction(answer, [step for step in other_steps]), question, answer
 
     for prompter in prompters:
         logs_before = []
@@ -357,7 +357,7 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return transform_prediction(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
@@ -367,7 +367,7 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return transform_prediction(answer, [step for step in other_steps]), question, answer
 
     for prompter in prompters:
         logs_before = []
@@ -499,7 +499,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
         question = question + '\nYour Choice:'
         final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
 
-        return transform_prediction_meta_single(final_pred, [step for step in other_steps]), question, final_pred
+        return transform_prediction(final_pred, [step for step in other_steps]), question, final_pred
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
@@ -542,7 +542,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
         question = question + '\nYour Choice:'
         final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
 
-        return transform_prediction_meta_single(final_pred, [step for step in other_steps]), question, final_pred
+        return transform_prediction(final_pred, [step for step in other_steps]), question, final_pred
 
     for prompter in prompters:
         logs_before = []
@@ -636,7 +636,7 @@ def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
         answer = prompter.prompt_model(system_msg, user_msg_stepback, question)
 
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer, p_question, principles
+        return transform_prediction(answer, [step for step in other_steps]), question, answer, p_question, principles
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
@@ -659,7 +659,7 @@ def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
         answer = prompter.prompt_model(system_msg, user_msg_stepback, question)
 
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer, p_question, principles
+        return transform_prediction(answer, [step for step in other_steps]), question, answer, p_question, principles
 
     for prompter in prompters:
         logs_before = []
@@ -757,7 +757,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
                 f"{opt_str}\n"
                 f"Step before:")
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return transform_prediction(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps, examples_str):
         system_msg = (
@@ -773,7 +773,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
                 f"{opt_str}\n"
                 f"Step after:")
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return transform_prediction(answer, [step for step in other_steps]), question, answer
 
     for prompter in prompters:
         # Generate examples if needed
@@ -914,7 +914,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
                 f"{opt_str}\n"
                 f"Step before:")
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return transform_prediction(answer, [step for step in other_steps]), question, answer
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps, examples_str):
         system_msg = (
@@ -930,7 +930,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
                 f"{opt_str}\n"
                 f"Step after:")
         answer = prompter.prompt_model(system_msg, user_msg, question)
-        return transform_prediction_meta_single(answer, [step for step in other_steps]), question, answer
+        return transform_prediction(answer, [step for step in other_steps]), question, answer
 
 
     for prompter in prompters:

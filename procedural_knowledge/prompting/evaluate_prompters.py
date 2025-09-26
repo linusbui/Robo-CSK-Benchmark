@@ -109,7 +109,7 @@ def evaluate_multi(prompters, technique):
     for prompter in prompters:
         metrics_list = []
         for question_type in ["after", "before"]:
-            for recipe_number in range(1,2):
+            for recipe_number in range(1, 5):
                 evaluation_file = f'procedural_knowledge/results_multi/{question_type}/{prompter.model_name}{technique}/{recipe_number}.json'
                 results = extract_results_json(evaluation_file)
 

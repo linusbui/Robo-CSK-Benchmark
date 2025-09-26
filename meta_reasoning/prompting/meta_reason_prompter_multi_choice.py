@@ -9,7 +9,7 @@ from meta_reasoning.prompting.meta_reason_model_result import MetaReasoningMulti
 from tidy_up.prompting.tidy_up_result import TidyUpMultiChoiceResult
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
-from utils.formatting import transform_prediction_meta_single, transform_prediction_selfcon_single, majority_vote
+from utils.formatting import transform_prediction, majority_vote
 from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
 system_msg = 'Imagine you are to create a robot for a specific household task.'
@@ -52,7 +52,7 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             choices_string = ', '.join([c for c in choices])
             question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_rar, question)
-            pred_conf = transform_prediction_meta_single(res, choices)
+            pred_conf = transform_prediction(res, choices)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)
             log = BasicLogEntry(question, res, pred_conf, corr_conf)
@@ -68,7 +68,7 @@ user_msg_meta = '''What is the single hardware configuration from the given list
 3. Critically asses your preliminary analysis. If you are unsure about the initial configuration for the robot, try to reasses it.
 4. Confirm your final decision on the right robot configuration for the task and explain the reasoning behind your choices.
 5. Evaluate your confidence (0-100%) in your analysis and provide an explanation for this confidence level.
-Provide the answer in your final response as the complete configuration you chose.
+Provide the answer in your final response as the complete configuration you chose. The configuration should be exactly as given in the question.
 '''
 
 def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
@@ -86,7 +86,7 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             choices_string = ', '.join([c for c in choices])
             question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_meta, question)
-            pred_conf = transform_prediction_meta_single(res, choices)
+            pred_conf = transform_prediction(res, choices)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)
             log = BasicLogEntry(question, res, pred_conf, corr_conf)
@@ -120,7 +120,7 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [
             for i in range(MAXIT_selfcon):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
                 # try to extract result classicaly
-                pred_conf = transform_prediction_selfcon_single(res, choices)
+                pred_conf = transform_prediction(res, choices)
                 if pred_conf == 'None':
                     # extract final answer with LLM
                     user_msg_extract = f'Your task is to determine the final answer of a given LLM response. The final answer should only contain one of the following configurations: {choices}'
@@ -143,7 +143,7 @@ user_msg_initial = 'What is the single hardware configuration from the given lis
 user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
 user_msg_refine = 'Improve upon the answer based on the feedback:'
 
-MAXIT_selfref = 2
+MAXIT_selfref = 5
 def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         results = []
@@ -186,7 +186,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. The answer should only contain one of the following configurations: {choices}'
             question = question + '\nYour Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
-            pred_conf = transform_prediction_meta_single(final_pred, choices)
+            pred_conf = transform_prediction(final_pred, choices)
 
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)
@@ -223,7 +223,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg_stepback, question)
             
-            pred_conf = transform_prediction_selfcon_single(res, choices)
+            pred_conf = transform_prediction(res, choices)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)
             log = StepbackLogEntry(p_question, principles, question, res, pred_conf, corr_conf)

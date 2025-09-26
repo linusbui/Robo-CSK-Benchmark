@@ -6,7 +6,7 @@ from table_setting.data_extraction.utensils_plates import Utensil, Plate
 from table_setting.prompting.table_setting_model_result import TableSettingModelResult
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
-from utils.formatting import majority_vote
+from utils.formatting import transform_prediction, majority_vote
 from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
 
 utensils_string = ', '.join([str(utensil) for utensil in Utensil])
@@ -60,14 +60,14 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             # prompt for cutlery
             question = f'Meal: {meal}\nCutlery: '
             res = prompter.prompt_model(system_msg, user_msg_cut_rar, question)
-            pred_cut = transform_utensil_prediction_meta(res)
+            pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
             question = f'Meal: {meal}\nPlate: '
             res = prompter.prompt_model(system_msg, user_msg_plat_rar, question)
-            pred_plat = transform_plate_prediction_meta(res)
+            pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
             log_plat = BasicLogEntry(question, res, pred_plat, plate)
 
@@ -114,14 +114,14 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             # prompt for cutlery
             question = f'Meal: {meal}\nCutlery: '
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
-            pred_cut = transform_utensil_prediction_meta(res)
+            pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
             question = f'Meal: {meal}\nPlate: '
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
-            pred_plat = transform_plate_prediction_meta(res)
+            pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
             log_plat = BasicLogEntry(question, res, pred_plat, plate)
 
@@ -162,14 +162,14 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
             for i in range(MAXIT_selfcon):
                 # prompt for cutlery
                 res = prompter.prompt_model(system_msg, user_msg_cut_selfcon, question_cut)
-                pred_cut = transform_utensil_prediction_selfcon(res)
+                pred_cut = transform_utensil_prediction_new(res)
                 answers_cut.append(pred_cut)
                 log_cut.update({f'cot_{i}': res,
                                 f'answer_{i}': pred_cut})
 
                 # prompt for plate
                 res = prompter.prompt_model(system_msg, user_msg_plat_selfcon, question_plat)
-                pred_plat = transform_plate_prediction_selfcon(res)
+                pred_plat = transform_plate_prediction_new(res)
                 answers_plate.append(pred_plat)
                 log_plat.update({f'cot_{i}': res,
                                  f'answer_{i}': pred_plat})
@@ -240,7 +240,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             user_msg_cut_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choices: {utensils_string}'
             question = question + '\nYour Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_cut_final, question)
-            pred_cut = transform_utensil_prediction_meta(final_pred)
+            pred_cut = transform_utensil_prediction_new(final_pred)
             tup.add_predicted_utensils(pred_cut)
             log_cut = BasicLogEntry(question, final_pred, pred_cut, utensils)
 
@@ -272,9 +272,9 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             user_msg_plat_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice: {plates_string}'
             question = question + '\nYour Choice:'
             final_pred = prompter.prompt_model(system_msg, user_msg_plat_final, question)
-            pred_plat = transform_plate_prediction_meta(final_pred)
+            pred_plat = transform_plate_prediction_new(final_pred)
             tup.add_predicted_plate(pred_plat)
-            log_plat = BasicLogEntry(question, final_pred, pred_plat, utensils)
+            log_plat = BasicLogEntry(question, final_pred, pred_plat, plate)
 
             results.append(tup)
             logs_cut.append(log_cut)
@@ -312,7 +312,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             user_msg_cut_stepback = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string} and answer the question step by step using the following principles:\n{principles}\nEnd the answer with your chosen cutlery.'
             
             res = prompter.prompt_model(system_msg, user_msg_cut_stepback, question)
-            pred_cut = transform_utensil_prediction_selfcon(res)
+            pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = StepbackLogEntry(p_question, principles, question, res, pred_cut, utensils)
 
@@ -326,7 +326,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             user_msg_plat_stepback = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string} and answer the question step by step using the following principles:\n{principles}\nEnd the answer with your chosen plate.'
 
             res = prompter.prompt_model(system_msg, user_msg_plat_stepback, question)
-            pred_plat = transform_plate_prediction_selfcon(res)
+            pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
             log_plat = StepbackLogEntry(p_question, principles, question, res, pred_plat, plate)
 
@@ -400,14 +400,14 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
             # prompt for cutlery
             question = f'Here are a few examples:\n{ex_cut_str}Meal: {meal}\nCutlery: '
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
-            pred_cut = transform_utensil_prediction(res)
+            pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = SgiclLogEntry(question, pred_cut, utensils)
 
             # prompt for plate
             question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate: '
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
-            pred_plat = transform_plate_prediction(res)
+            pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
             log_plat = SgiclLogEntry(question, pred_plat, plate)
 
@@ -516,14 +516,14 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
             # prompt for cutlery
             question = f'Here are a few examples:\n{ex_cut_str}Meal: {meal}\nCutlery: '
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
-            pred_cut = transform_utensil_prediction(res)
+            pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = SgiclLogEntry(question, pred_cut, utensils)
 
             # prompt for plate
             question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate: '
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
-            pred_plat = transform_plate_prediction(res)
+            pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
             log_plat = SgiclLogEntry(question, pred_plat, plate)
 
@@ -576,6 +576,41 @@ def transform_plate_prediction(pred: str) -> Plate:
             return Plate(plate)
     print(f'Error: "{pred}" is not a valid type of Plate')
     return Plate.NONE
+
+
+# Answer tends to be not in a single line, but in a block seperated by newlines
+# Search lines until first time no answer is found -> block finished
+def transform_utensil_prediction_new(pred: str) -> [Utensil]:
+    # LLM response line by line
+    split = pred.splitlines()
+    split.reverse()
+
+    res = []
+    found = False
+    # Scan for possible answer
+    for i in range(len(split)):
+        line_found = False
+        for utensil in Utensil:
+            if utensil.lower() in split[i].lower():
+                found = True
+                line_found = True
+                res.append(utensil)
+        # Stop if line after last hit does not contain answer
+        if found and not line_found:
+            break
+        
+    if len(res) == 0:
+        print('No viable utensils found!')
+    return res
+
+
+def transform_plate_prediction_new(pred: str) -> Plate:
+    choices = [plate for plate in Plate]
+    plate = transform_prediction(pred, choices)
+    if plate == 'None':
+        return Plate.NONE
+    else:
+        return Plate(plate)
 
 
 def transform_utensil_prediction_meta(pred: str) -> [Utensil]:

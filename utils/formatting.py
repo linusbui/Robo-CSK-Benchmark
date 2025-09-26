@@ -1,49 +1,30 @@
-# Takes LLM response from Meta Reasoning prompting technique and list of possible answers
-# Returns first match of possible answers in the LLM response
-# Also works for rephrase and respond
-def transform_prediction_meta_single(pred: str, choices: [str]) -> str:
-    # Extract last sentence from LLM response
-    answ = pred.splitlines()[-1]
+import re
 
-    # Check if last sentence contains viable answer
-    for choice in choices:
-        if choice.lower() in answ.lower():
-            return choice
-    print(f'{answ} does not contain viable answer')
-    return 'None'
-
-
-# Takes LLM response from Meta Reasoning prompting technique and list of possible answers
-# Returns all matches of possible answers in the LLM response
-# Also works for rephrase and respond
-def transform_prediction_meta_mult(pred: str, choices: [str]) -> str:
-    # Extract last sentence from LLM response
-    answ = pred.splitlines()[-1]
-
-    # Check if last sentecne contains viable answer
-    res = []
-    for choice in choices:
-        if choice.lower() in answ.lower():
-            res.append(choice)
-    if len(res) == 0:
-        print(f'{answ} does not contain viable answer')
-    return 'None'
-
-
-def transform_prediction_selfcon_single(pred: str, choices: [str]) -> str:
-    # Extract last three sentence from LLM response
+# Primary method of extracting LLM response from answer
+# Assumptions:
+# Exact answer is contained in the last 5 lines of the response
+# First occurence of possible answer is the intended answer
+def transform_prediction(pred: str, choices: [str]) -> str:
+    # LLM response line by line
     split = pred.splitlines()
     split.reverse()
 
-    # Scan back to front for viable answer, abort after three lines
-    l = 0
-    for line in split:
-        if l > 2: break
+    # For replacement of non-alphabetical chars
+    regex = re.compile('[^a-zA-Z]')
+
+    # Scan for possible answer
+    for i in range(min(len(split), 5)):
         for choice in choices:
-            if choice.lower() in line.lower():
+            # for single word answers
+            if not ' ' in choice:
+                line = regex.sub(' ', split[i])
+                for word in line.split():
+                    if word.lower() == choice.lower():
+                        return choice
+            # for multiple word answers
+            elif choice.lower() in split[i].lower():
                 return choice
-        l+=1
-    print(f'{pred} does not contain viable answer')
+    print('\nNo viable answer found!')
     return 'None'
 
 
