@@ -171,3 +171,10 @@ cython_debug/
 
 # OpenAI credentials
 credentials.json
+
+# Logging
+/meta_reasoning/logs
+/procedural_knowledge/logs
+/table_setting/logs
+/tidy_up/logs
+/tool_usage/logs
