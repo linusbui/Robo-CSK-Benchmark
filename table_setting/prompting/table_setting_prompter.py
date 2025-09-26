@@ -613,62 +613,6 @@ def transform_plate_prediction_new(pred: str) -> Plate:
         return Plate(plate)
 
 
-def transform_utensil_prediction_meta(pred: str) -> [Utensil]:
-    answ = pred.splitlines()[-1]
-
-    res = []
-    for utensil in Utensil:
-        if utensil.lower() in answ.lower():
-            res.append(utensil)
-    if len(res) == 0:
-        print(f'Error: "{pred}" contains no valid utensil predictions')
-    return res
-
-
-def transform_plate_prediction_meta(pred: str) -> Plate:
-    answ = pred.splitlines()[-1]
-
-    for plate in Plate:
-        plate_type = plate.split(' ')[0]
-        if plate_type.lower() in answ.lower():
-            return Plate(plate)
-    print(f'Error: "{pred}" is not a valid type of Plate')
-    return Plate.NONE
-
-
-def transform_utensil_prediction_selfcon(pred: str) -> [Utensil]:
-    split = pred.splitlines()
-    if len(split) > 1:
-        answ = split[-2] + split[-1]
-    else:
-        answ = split[-1]
-
-    res = []
-    for utensil in Utensil:
-        if utensil.lower() in answ.lower():
-            res.append(utensil)
-    if len(res) == 0:
-        print(f'Error: "{pred}" contains no valid utensil predictions')
-    return res
-
-
-def transform_plate_prediction_selfcon(pred: str) -> Plate:
-    split = pred.splitlines()
-    split.reverse()
-    
-    # Scan back to front for viable answer, abort after three lines
-    l = 0
-    for line in split:
-        if l > 2: break
-        for plate in Plate:
-            plate_type = plate.split(' ')[0]
-            if plate_type.lower() in line.lower():
-                return Plate(plate)
-        l+=1
-    print(f'Error: "{pred}" is not a valid type of Plate')
-    return Plate.NONE
-
-
 def calculate_average(results: [TableSettingModelResult], model: str):
     average = {met: 0 for met in ['acc', 'jacc']}
     for res in results:
