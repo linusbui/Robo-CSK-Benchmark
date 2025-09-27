@@ -4,5 +4,11 @@
         "question": "In the recipe 'Worlds Best Mac and Cheese', which steps occurs after 'Mix pasta with sauce'?\nOptions:\n- Bake with cheese topping\n- Cook pasta less than directions",
         "response": "Bake with cheese topping",
         "correct_response": "Bake with cheese topping"
+    },
+    {
+        "title": "Dilly Macaroni Salad Recipe",
+        "question": "In the recipe 'Dilly Macaroni Salad Recipe', which steps occurs after 'Combine macaroni and vegetables'?\nOptions:\n- Blend dressing and add\n- Cook pasta less than directions\n- Cook and drain macaroni",
+        "response": "Blend dressing and add",
+        "correct_response": "Blend dressing and add"
     }
 ]

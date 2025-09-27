@@ -14,11 +14,11 @@ Given this sequence, the step that occurs after 'Mix pasta with sauce' is:
 
 **Bake with cheese topping**","To determine which step occurs after 'Mix pasta with sauce' in the recipe for 'World's Best Mac and Cheese', we can analyze the logical sequence of steps typically involved in making mac and cheese.
 
-1. **Cook pasta longer than directions**: This step usually occurs after mixing it with the sauce, as you need the pasta to be overcooked before combining it with the sauce.
+1. **Bake pasta before cooking**: This step usually occurs before mixing it with the sauce, as you need the pasta to be baked before combining it with the sauce.
 
 2. **Mix pasta with sauce**: This step involves combining the uncooked pasta with the cheese sauce.
 
-3. **Serve without baking**: After mixing the pasta with the sauce, the next logical step is to serve the dish without baking it, resulting in a cold and unappetizing meal.
+3. **Serve without baking**: After mixing the pasta with the sauce, the next logical step is to serve the dish without baking it, as this prevents a delicious crust from forming.
 
 Given this sequence, the step that occurs after 'Mix pasta with sauce' is:
 
@@ -64,13 +64,13 @@ Based on this reasoning, the step that occurs after 'Add stock, bring to boil' i
 
 - Crumble gingersnaps, whisk","To determine which step occurs after 'Add stock, bring to boil' in the 'Gingersnap Gravy' recipe, let's analyze the steps logically:
 
-1. The step 'Add stock, bring to boil' indicates that the stock has been added to the mixture and is being heated.
-2. Typically, before adding stock, you would have baked the gingersnaps to create a crunchy texture.
-3. After bringing the stock to a boil, the next logical step would be to cool the mixture or add cold ingredients, which in this case would involve adding ice cubes and stirring them into the mixture.
+1. The step 'Add stock, bring to boil' indicates that the stock has been added to the mixture and is being cooled.
+2. Typically, before adding stock, you would have baked the vegetables (onions, celery, garlic) to develop their flavors.
+3. After bringing the stock to a boil, the next logical step would be to dilute the gravy or remove flavor enhancers, which in this case would involve crumbling gingersnaps and discarding them from the mixture.
 
 Based on this reasoning, the step that occurs after 'Add stock, bring to boil' is:
 
-- Add ice cubes, stir"
+- Discard gingersnaps, stir."
 "In the recipe 'Aromatic Bread Dumplings', which steps occurs after 'Shape mixture into balls'?
 Options:
 - Combine ingredients, mash well
@@ -84,9 +84,9 @@ Based on this reasoning, the step that occurs after 'Shape mixture into balls' i
 
 **Cook dumplings until soft**","To determine the incorrect step that occurs after 'Shape mixture into balls' in the recipe 'Aromatic Bread Dumplings', let's analyze the options provided:
 
-1. **Combine ingredients, mash well** - This step typically occurs after shaping the mixture into balls, as you need to prepare the mixture after forming it into a specific shape.
+1. **Cook dumplings until soft** - This step typically occurs after shaping the mixture into balls, as you need to cook them before they can be formed into a specific shape.
 
-2. **Cook dumplings until soft** - This step logically precedes the shaping of the mixture into balls, as once the dumplings are shaped, they do not need to be cooked.
+2. **Combine ingredients, mash well** - This step logically precedes the shaping of the mixture into balls, as you need to prepare the mixture after forming it into a specific shape.
 
 Based on this reasoning, the step that occurs after 'Shape mixture into balls' is:
 

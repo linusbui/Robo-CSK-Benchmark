@@ -1,8 +1,14 @@
 [
     {
         "title": "Ranch Mushrooms",
-        "question": "In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?\n\nOptions:\n- Use stovetop if preferred\n- Add ingredients to crock pot",
+        "question": "In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?\n\nOptions:\n- Use stovetop if preferred\n- Add ingredients to crock pot\n- Bake in water bath",
         "response": "Add ingredients to crock pot",
         "correct_response": "Add ingredients to crock pot"
+    },
+    {
+        "title": "Raspberry Creme Brulee Recipe",
+        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?\n\nOptions:\n- Bake in water bath\n- Preheat oven to 300\u00b0F\n- Use stovetop if preferred",
+        "response": "Preheat oven to 300\u00b0F",
+        "correct_response": "Preheat oven to 300\u00b0F"
     }
 ]

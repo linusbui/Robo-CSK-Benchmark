@@ -1,8 +1,14 @@
 [
     {
         "title": "Aromatic Bread Dumplings",
-        "question": "In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?\n\nOptions:\n- Cook dumplings until soft\n- Combine ingredients, mash well",
+        "question": "In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?\n\nOptions:\n- Cook dumplings until soft\n- Combine ingredients, mash well\n- Pour puree over vegetables",
         "response": "Combine ingredients, mash well",
         "correct_response": "Combine ingredients, mash well"
+    },
+    {
+        "title": "Middle Eastern Vegetable Casserole",
+        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?\n\nOptions:\n- Cook dumplings until soft\n- Pour puree over vegetables\n- Roast diced potatoes",
+        "response": "Roast diced potatoes",
+        "correct_response": "Roast diced potatoes"
     }
 ]

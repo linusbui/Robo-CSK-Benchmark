@@ -174,13 +174,13 @@ def prompt_all_models_multi_rar(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         logs_before = []
         logs_after = []
-        for recipe_number in range(1, 5):
+        for recipe_number in tqdm(range(1, 5), f'Prompting {prompter.model_name} for the multiple choice Procedural Knowledge task with RaR Prompting'):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
-            for recipe in recipe_components:
+            for recipe in tqdm(recipe_components, f'Prompting recipes {recipe_number}'):
                 title = recipe['goal']
                 step_1 = recipe['step_1'].rstrip(". ").strip()
                 step_2 = recipe['step_2'].rstrip(". ").strip()
@@ -282,13 +282,13 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         logs_before = []
         logs_after = []
-        for recipe_number in range(1, 5):
+        for recipe_number in tqdm(range(1, 5), f'Prompting {prompter.model_name} for the multiple choice Procedural Knowledge task with Metacognitive Prompting'):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
-            for recipe in recipe_components:
+            for recipe in tqdm(recipe_components, f'Prompting recipes {recipe_number}'):
                 title = recipe['goal']
                 step_1 = recipe['step_1'].rstrip(". ").strip()
                 step_2 = recipe['step_2'].rstrip(". ").strip()
@@ -372,13 +372,13 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         logs_before = []
         logs_after = []
-        for recipe_number in range(1, 5):
+        for recipe_number in tqdm(range(1, 5), f'Prompting {prompter.model_name} for the multiple choice Procedural Knowledge task with Self-Consistency Prompting'):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
-            for recipe in recipe_components:
+            for recipe in tqdm(recipe_components, f'Prompting recipes {recipe_number}'):
                 title = recipe['goal']
                 step_1 = recipe['step_1'].rstrip(". ").strip()
                 step_2 = recipe['step_2'].rstrip(". ").strip()
@@ -547,13 +547,13 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         logs_before = []
         logs_after = []
-        for recipe_number in range(1, 5):
+        for recipe_number in tqdm(range(1, 5), f'Prompting {prompter.model_name} for the multiple choice Procedural Knowledge task with Self-Refine Prompting'):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
-            for recipe in recipe_components:
+            for recipe in tqdm(recipe_components, f'Prompting recipes {recipe_number}'):
                 title = recipe['goal']
                 step_1 = recipe['step_1'].rstrip(". ").strip()
                 step_2 = recipe['step_2'].rstrip(". ").strip()
@@ -664,13 +664,13 @@ def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
     for prompter in prompters:
         logs_before = []
         logs_after = []
-        for recipe_number in range(1, 5):
+        for recipe_number in tqdm(range(1, 5), f'Prompting {prompter.model_name} for the multiple choice Procedural Knowledge task with Stepback Prompting'):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
-            for recipe in recipe_components:
+            for recipe in tqdm(recipe_components, f'Prompting recipes {recipe_number}'):
                 title = recipe['goal']
                 step_1 = recipe['step_1'].rstrip(". ").strip()
                 step_2 = recipe['step_2'].rstrip(". ").strip()
@@ -784,7 +784,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
             1) + '.json'
             recipe_components = extract_json_multi_limited(json_file, 15)
                 
-            for recipe in recipe_components:
+            for recipe in tqdm(recipe_components, f'Prompting {prompter.model_name} to generate Procedural Knowledge task examples'):
                 title = recipe['goal']
                 step_1 = recipe['step_1'].rstrip(". ").strip()  # correct response before
                 step_2 = recipe['step_2'].rstrip(". ").strip()  # question step
@@ -821,13 +821,13 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
         logs_before = []
         logs_after = []
         # Few shot prompting
-        for recipe_number in range(1, 5):
+        for recipe_number in tqdm(range(1, 5), f'Prompting {prompter.model_name} for the multiple choice Procedural Knowledge task with SG-ICL Prompting'):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
-            for recipe in recipe_components:
+            for recipe in tqdm(recipe_components, f'Prompting recipes {recipe_number}'):
                 title = recipe['goal']
                 step_1 = recipe['step_1'].rstrip(". ").strip()
                 step_2 = recipe['step_2'].rstrip(". ").strip()
@@ -940,7 +940,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
             results = []
             log_before = pd.read_csv(f'procedural_knowledge/logs/{prompter.model_name}/{prompter.model_name}_before_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
             for index, row in tqdm(log_before.iterrows(),
-                                f'Prompting {prompter.model_name} to generate Meta-Rasoning task examples (before)'):
+                                f'Prompting {prompter.model_name} to generate Procedural Knowledge task examples (before)'):
                 corr_conf = row['correct_answer']
                 # get correct cot
                 cot_right = ''
@@ -968,7 +968,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
             results = []
             log_after = pd.read_csv(f'procedural_knowledge/logs/{prompter.model_name}/{prompter.model_name}_after_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
             for index, row in tqdm(log_after.iterrows(),
-                                f'Prompting {prompter.model_name} to generate Meta-Rasoning task examples (after)'):
+                                f'Prompting {prompter.model_name} to generate Procedural Knowledge task examples (after)'):
                 corr_conf = row['correct_answer']
                 # get correct cot
                 cot_right = ''
@@ -1011,13 +1011,13 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
         logs_before = []
         logs_after = []
         # Few shot prompting
-        for recipe_number in range(1, 5):
+        for recipe_number in tqdm(range(1, 5), f'Prompting {prompter.model_name} for the multiple choice Procedural Knowledge task with Contrastive CoT Prompting'):
             json_file = f'procedural_knowledge/data_generation/question_components_multi/questions_recipe_' + str(
                 recipe_number) + '.json'
             recipe_components = extract_json_multi_limited(json_file, num_runs)
             before_answers, after_answers = [], []
 
-            for recipe in recipe_components:
+            for recipe in tqdm(recipe_components, f'Prompting recipes {recipe_number}'):
                 title = recipe['goal']
                 step_1 = recipe['step_1'].rstrip(". ").strip()
                 step_2 = recipe['step_2'].rstrip(". ").strip()

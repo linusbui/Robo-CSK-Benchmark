@@ -1,8 +1,14 @@
 [
     {
         "title": "Gingersnap Gravy",
-        "question": "In the recipe 'Gingersnap Gravy', which step occurs before 'Add stock, bring to boil'?\n\nOptions:\n- Saute onions, celery, garlic\n- Crumble gingersnaps, whisk",
+        "question": "In the recipe 'Gingersnap Gravy', which step occurs before 'Add stock, bring to boil'?\n\nOptions:\n- Crumble gingersnaps, whisk\n- Saute onions, celery, garlic\n- Bake until done",
         "response": "Saute onions, celery, garlic",
         "correct_response": "Saute onions, celery, garlic"
+    },
+    {
+        "title": "Mom's Pumpkin Pie Squares Recipe",
+        "question": "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which step occurs before 'Pour into pan, sprinkle mix'?\n\nOptions:\n- Bake until done\n- Combine milk, eggs, spices\n- Crumble gingersnaps, whisk",
+        "response": "Combine milk, eggs, spices",
+        "correct_response": "Combine milk, eggs, spices"
     }
 ]

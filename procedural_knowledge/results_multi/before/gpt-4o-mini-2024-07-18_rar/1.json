@@ -1,8 +1,14 @@
 [
     {
         "title": "Worlds Best Mac and Cheese",
-        "question": "In the recipe 'Worlds Best Mac and Cheese', which step occurs before 'Mix pasta with sauce'?\n\nOptions:\n- Cook pasta less than directions\n- Bake with cheese topping",
+        "question": "In the recipe 'Worlds Best Mac and Cheese', which step occurs before 'Mix pasta with sauce'?\n\nOptions:\n- Bake with cheese topping\n- Cook pasta less than directions",
         "response": "Cook pasta less than directions",
         "correct_response": "Cook pasta less than directions"
+    },
+    {
+        "title": "Dilly Macaroni Salad Recipe",
+        "question": "In the recipe 'Dilly Macaroni Salad Recipe', which step occurs before 'Combine macaroni and vegetables'?\n\nOptions:\n- Bake with cheese topping\n- Cook and drain macaroni\n- Blend dressing and add",
+        "response": "Cook and drain macaroni",
+        "correct_response": "Cook and drain macaroni"
     }
 ]
