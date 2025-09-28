@@ -8,7 +8,7 @@ from utils.prompter import Prompter
 
 class GemmaPrompter(Prompter):
     def __init__(self, max_new_tokens=10, temp = None, sampling = False):
-        super().__init__("gemma-2-27b-it")
+        super().__init__("gemma-7b-it")
         self.tokenizer = transformers.AutoTokenizer.from_pretrained(f'google/{self.model_name}')
         self.model = transformers.AutoModelForCausalLM.from_pretrained(
             f'google/{self.model_name}',
@@ -31,6 +31,6 @@ class GemmaPrompter(Prompter):
                                       temperature=self.temperature,
                                       top_p=None)
         outputs = self.tokenizer.decode(outputs[0, len(inputs):])
-        match = re.search(r"<start_of_turn>model(.*?)<end_of_turn>", outputs, re.DOTALL)
+        match = re.search(r"<start_of_turn>model(.*?)<eos>", outputs, re.DOTALL)
         result = match.group(1).strip() if match else None
         return result
