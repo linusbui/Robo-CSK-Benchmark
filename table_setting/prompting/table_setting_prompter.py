@@ -137,8 +137,7 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
 user_msg_cut_selfcon = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}. Think step by step before answering with the cutlery of your choosing.'
 user_msg_plat_selfcon = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string}. Think step by step before answering with your chosen plate.'
 
-MAXIT_selfcon = 2
-def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
+def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
     for prompter in prompters:
         data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         results = []
@@ -159,7 +158,7 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
 
             answers_cut = []
             answers_plate = []
-            for i in range(MAXIT_selfcon):
+            for i in range(n_it):
                 # prompt for cutlery
                 res = prompter.prompt_model(system_msg, user_msg_cut_selfcon, question_cut)
                 pred_cut = transform_utensil_prediction_new(res)
@@ -198,8 +197,7 @@ user_msg_plat_inital = f'What is the type of plate you would use to eat that mea
 user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
 user_msg_refine = 'Improve upon the answer based on the feedback:'
 
-MAXIT_selfref = 2
-def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
+def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
     for prompter in prompters:
         data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         results = []
@@ -218,7 +216,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             question = question + f'\n{initial}\n'
 
             # Feedback - Refine iterations
-            for i in range(MAXIT_selfref):
+            for i in range(n_it):
                 # feedback 
                 question = question + '\nYour Feedback:'
                 feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
@@ -250,7 +248,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             question = question + f'\n{initial}\n'
 
             # Feedback - Refine iterations
-            for i in range(MAXIT_selfref):
+            for i in range(n_it):
                 # feedback 
                 question = question + '\nYour Feedback:'
                 feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
@@ -343,8 +341,7 @@ system_msg_example = 'You are helping to create questions regarding household en
 user_msg_cut_example = 'For the given choice of cutlery, generate a a meal that can be eaten with that cutlery. Answer only with the meal.'
 user_msg_plat_example = 'For the given plate, generate a a meal that can be eaten with that cutlery. Answer only with the meal.'
 
-NUM_EXAMPLES = 8
-def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
+def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
     for prompter in prompters:
         # Generate examples if needed
         ex_file = f'table_setting/examples/table_setting_examples_{prompter.model_name}.csv'
@@ -374,7 +371,7 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
             print('Finished generating examples')
 
         # Load examples
-        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_cut_str = ''
         ex_plat_str = ''
         for index, row in examples.iterrows():
@@ -423,8 +420,7 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
 user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
 
-NUM_COT = 4
-def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
+def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_cot: int):
     for prompter in prompters:
         # Generate cutlery examples if needed
         ex_cut_file = f'table_setting/examples/table_setting_multichoice_cot_cut_examples_{prompter.model_name}.csv'
@@ -436,7 +432,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
                 corr_cut = row['correct_answer']
                 # get correct cot
                 cot_right = ''
-                for i in range(MAXIT_selfcon):
+                for i in range(n_cot):
                     answ = row[f'answer_{i}']
                     if answ == corr_cut:
                         cot_right = row[f'cot_{i}']
@@ -465,7 +461,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
                 corr_plat = row['correct_answer']
                 # get correct cot
                 cot_right = ''
-                for i in range(MAXIT_selfcon):
+                for i in range(n_cot):
                     answ = row[f'answer_{i}']
                     if answ == corr_plat:
                         cot_right = row[f'cot_{i}']
@@ -485,7 +481,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
             print('Finished generating plate examples')
         
         # Load examples
-        examples = pd.read_csv(ex_cut_file, delimiter=',', on_bad_lines='skip', nrows=NUM_COT)
+        examples = pd.read_csv(ex_cut_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_cut_str = ''
         for index, row in examples.iterrows():
             question = row['question']
@@ -493,7 +489,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
             cot_wrong = row['cot_wrong']
             ex_cut_str = ex_cut_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
 
-        examples = pd.read_csv(ex_plat_file, delimiter=',', on_bad_lines='skip', nrows=NUM_COT)
+        examples = pd.read_csv(ex_plat_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_plat_str = ''
         for index, row in examples.iterrows():
             question = row['question']

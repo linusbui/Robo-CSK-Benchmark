@@ -347,8 +347,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
     write_log_to_file(logs_after, prompter.model_name, 'after_meta', 'procedural_knowledge')
 
 
-MAXIT_selfcon = 2
-def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
+def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
         system_msg = "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
         user_msg = 'First think step by step to make sure you have the right answer. Then provide the final answer as only your chosen step.'
@@ -400,7 +399,7 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
 
                 answers = []
                 log_before = {}
-                for i in range(MAXIT_selfcon):
+                for i in range(n_it):
                     response, question, full_response = get_answer_before(prompter, title, step_2, before_steps)
                     answers.append(response)
                     log_before.update({'question': question,
@@ -435,7 +434,7 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
                 
                 answers = []
                 log_after = {}
-                for i in range(MAXIT_selfcon):
+                for i in range(n_it):
                     response, question, full_response = get_answer_after(prompter, title, step_2, before_steps)
                     answers.append(response)
                     log_after.update({'question': question,
@@ -457,8 +456,7 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int):
     write_general_log_to_file(logs_before, prompter.model_name, 'before_selfcon', 'procedural_knowledge')
     write_general_log_to_file(logs_after, prompter.model_name, 'after_selfcon', 'procedural_knowledge')
 
-MAXIT_selfref = 2
-def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
+def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int, n_it: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
@@ -477,7 +475,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
         question = question + f'\n{initial}\n'
 
         # Refine - Feedback loop
-        for i in range(MAXIT_selfref):
+        for i in range(n_it):
             # feedback 
             question = question + '\nYour Feedback:'
             feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
@@ -520,7 +518,7 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int):
         question = question + f'\n{initial}\n'
 
         # Refine - Feedback loop
-        for i in range(MAXIT_selfref):
+        for i in range(n_it):
             # feedback 
             question = question + '\nYour Feedback:'
             feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
@@ -729,8 +727,7 @@ def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
     write_log_to_file(logs_after, prompter.model_name, 'after_stepback', 'procedural_knowledge')
 
 
-NUM_EXAMPLES = 8
-def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
+def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
     def get_example_before(prompter, recipe_title, step, step_before):
         system_msg_example = 'You are helping to create questions regarding household environments.'
         user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer in one short sentence only.'
@@ -805,7 +802,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
             print('Finished generating examples')
 
         # Load examples
-        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_before_str = ''
         ex_after_str = ''
         for index, row in examples.iterrows():
@@ -886,8 +883,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int):
     write_log_to_file(logs_after, prompter.model_name, 'after_sgicl', 'procedural_knowledge')
 
 
-NUM_COT = 4
-def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
+def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_cot: int):
     def get_cot_before(prompter, cot_right):
         system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
         user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
@@ -944,7 +940,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
                 corr_conf = row['correct_answer']
                 # get correct cot
                 cot_right = ''
-                for i in range(MAXIT_selfcon):
+                for i in range(n_cot):
                     answ = row[f'answer_{i}']
                     if answ == corr_conf:
                         cot_right = row[f'cot_{i}']
@@ -972,7 +968,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
                 corr_conf = row['correct_answer']
                 # get correct cot
                 cot_right = ''
-                for i in range(MAXIT_selfcon):
+                for i in range(n_cot):
                     answ = row[f'answer_{i}']
                     if answ == corr_conf:
                         cot_right = row[f'cot_{i}']
@@ -991,7 +987,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
             print('Finished generating after examples')
 
         # Load examples (before)
-        examples = pd.read_csv(ex_before_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        examples = pd.read_csv(ex_before_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_before_str = ''
         for index, row in examples.iterrows():
             question = row['question']
@@ -1000,7 +996,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int):
             ex_before_str = ex_before_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
         
         # Load examples (after)
-        examples = pd.read_csv(ex_after_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        examples = pd.read_csv(ex_after_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_after_str = ''
         for index, row in examples.iterrows():
             question = row['question']

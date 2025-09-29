@@ -98,8 +98,7 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
 
 user_msg_selfcon = 'What is the single location from the given list that you think is the most suitable place to put the object? Think step by step before answering with the single location of your choosing.'
 
-MAXIT_selfcon = 2
-def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
+def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
     for prompter in prompters:
         results = []
         logs = []
@@ -116,7 +115,7 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int):
 
             log = {'question': question}
             answers = []
-            for i in range(MAXIT_selfcon):
+            for i in range(n_it):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
                 pred_loc = transform_prediction(res, choices)
                 answers.append(pred_loc)
@@ -137,8 +136,7 @@ user_msg_initial = 'What is the single location from the given list that you thi
 user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
 user_msg_refine = 'Improve upon the answer based on the feedback:'
 
-MAXIT_selfref = 2
-def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
+def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
     for prompter in prompters:
         results = []
         logs = []
@@ -156,7 +154,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int):
             initial = prompter.prompt_model(system_msg, user_msg_initial, question)
             question = question + f'\n{initial}\n'
 
-            for i in range(MAXIT_selfref):
+            for i in range(n_it):
                 # feedback 
                 question = question + '\nYour Feedback:'
                 feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
@@ -229,8 +227,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 system_msg_example = 'You are helping to create questions regarding household environments.'
 user_msg_example = 'For the given location, generate an object typically found in that location. Answer only with the object.'
 
-NUM_EXAMPLES = 8
-def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
+def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
     for prompter in prompters:
         # Generate examples if needed
         ex_file = f'tidy_up/examples/tidy_up_multichoice_examples_{prompter.model_name}.csv'
@@ -253,7 +250,7 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
             print('Finished generating examples')
 
         # Load examples
-        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_EXAMPLES)
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_str = ''
         for index, row in examples.iterrows():
             obj = row['Object']
@@ -287,8 +284,7 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int):
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
 user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
 
-NUM_COT = 4
-def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
+def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_cot: int):
     for prompter in prompters:
         # Generate examples if needed
         ex_file = f'tidy_up/examples/tidy_up_multichoice_cot_examples_{prompter.model_name}.csv'
@@ -300,7 +296,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
                 corr_loc = row['correct_answer']
                 # get correct cot
                 cot_right = ''
-                for i in range(MAXIT_selfcon):
+                for i in range(n_cot):
                     answ = row[f'answer_{i}']
                     if answ == corr_loc:
                         cot_right = row[f'cot_{i}']
@@ -320,7 +316,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int):
             print('Finished generating examples')
 
         # Load examples
-        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=NUM_COT)
+        examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_str = ''
         for index, row in examples.iterrows():
             question = row['question']
