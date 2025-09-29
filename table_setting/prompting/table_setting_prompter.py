@@ -89,7 +89,7 @@ user_msg_cut_meta = f'''What are the types of cutlery you would use to eat that 
 Provide the answer in your final response as only your choices.
 '''
 
-user_msg_plat_meta = f'''What are the types of cutlery you would use to eat that meal? Please choose from the following {plates_string}. As you perform this task, follow these steps:
+user_msg_plat_meta = f'''What are the type of plate you would use to eat that meal? Please choose from the following {plates_string}. As you perform this task, follow these steps:
 1. Clarify your understanding of the question
 2. Make a preliminary identification of the plates used to eat the meal with.
 3. Critically asses your preliminary analysis. If you are unsure about the initial assesment of the plates used to eat the meal, try to reasses it.
