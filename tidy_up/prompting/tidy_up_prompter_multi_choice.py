@@ -84,7 +84,7 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             choices = row['Wrong_Locations'] + [corr_loc]
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
-            question = f'Object: {obj}\nLocations: {choices_string}\nYour Choice:'
+            question = f'Object: {obj}\nLocations: {choices_string}'
             res = prompter.prompt_model(system_msg, user_msg_meta, question)
             pred_loc = transform_prediction(res, choices)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
@@ -111,7 +111,7 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
             choices = row['Wrong_Locations'] + [corr_loc]
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
-            question = f'Object: {obj}\nLocations: {choices_string}\nYour Choice:'
+            question = f'Object: {obj}\nLocations: {choices_string}'
 
             log = {'question': question}
             answers = []
@@ -210,7 +210,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
             # Get answer based on principles
             user_msg_stepback = f'What is the single location from the given list that you think is the most suitable place to put the object? Answer the question step by step using the following principles:\n{principles}\nEnd your answer with the single location you chose.'
-            question = f'Object: {obj}\nLocations: {choices_string}\nYour Choice:'
+            question = f'Object: {obj}\nLocations: {choices_string}'
 
             res = prompter.prompt_model(system_msg, user_msg_stepback, question)
 
@@ -322,7 +322,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             question = row['question']
             cot_right = row['cot_right']
             cot_wrong = row['cot_wrong']
-            ex_str = ex_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+            ex_str = ex_str + f'Question: {question}\n\nRight Explanation: {cot_right}\n\nWrong Explanation: {cot_wrong}\n\n'
 
         # few shot prompting
         results = []

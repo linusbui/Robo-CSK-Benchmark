@@ -84,7 +84,7 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             choices = row['Wrong_Tools'] + [corr_tool]
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
-            question = f'Task: {task}\nTools: {choices_string}\nYour Choice:'
+            question = f'Task: {task}\nTools: {choices_string}'
             res = prompter.prompt_model(system_msg, user_msg_meta, question)
             pred_tool = transform_prediction(res, choices)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
@@ -111,7 +111,7 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
             choices = row['Wrong_Tools'] + [corr_tool]
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
-            question = f'Task: {task}\nTools: {choices_string}\nYour Choice:'
+            question = f'Task: {task}\nTools: {choices_string}'
 
             log = {'question': question}
             answers = []
@@ -213,7 +213,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
             # Get answer based on principles
             user_msg_stepback = f'What is the single tool from the given list that you think is most suitable to help you execute your task? Answer the question step by step using the following principles:\n{principles}\nEnd your answer with the tool you chose.'
-            question = f'Task: {task}\nTools: {choices_string}\nYour Choice:'
+            question = f'Task: {task}\nTools: {choices_string}'
 
             res = prompter.prompt_model(system_msg, user_msg_stepback, question)
 
@@ -317,16 +317,16 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             df.to_csv(ex_file, index=False)
             print('Finished generating examples')
 
-    # Load examples
+        # Load examples
         examples = pd.read_csv(ex_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_str = ''
         for index, row in examples.iterrows():
             question = row['question']
             cot_right = row['cot_right']
             cot_wrong = row['cot_wrong']
-            ex_str = ex_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+            ex_str = ex_str + f'Question: {question}\n\nRight Explanation: {cot_right}\n\nWrong Explanation: {cot_wrong}\n\n'
 
-    # few shot prompting
+        # few shot prompting
         results = []
         logs = []
         questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)

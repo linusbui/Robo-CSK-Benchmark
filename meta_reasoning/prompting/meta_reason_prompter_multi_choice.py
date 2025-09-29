@@ -84,7 +84,7 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             choices = row['Wrong_Configurations'] + [corr_conf]
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
-            question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
+            question = f'Task: {task}\nConfigurations: {choices_string}'
             res = prompter.prompt_model(system_msg, user_msg_meta, question)
             pred_conf = transform_prediction_mr(prompter, res, choices)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
@@ -98,8 +98,8 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
 
 user_msg_selfcon = 'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Think step by step before answering with the complete configuration you chose.'
 
-def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [Prompter], num_runs: int, n_it: int):
-    for prompter, prompter_res in zip(prompters_selfcon, prompter_extract):
+def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompters_extract: [Prompter], num_runs: int, n_it: int):
+    for prompter, prompter_res in zip(prompters_selfcon, prompters_extract):
         results = []
         logs = []
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
@@ -111,7 +111,7 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [
             choices = row['Wrong_Configurations'] + [corr_conf]
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
-            question = f'Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
+            question = f'Task: {task}\nConfigurations: {choices_string}'
 
             log = {'question': question}
             # Sample answers over multiple paths
@@ -119,7 +119,7 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompter_extract: [
             for i in range(n_it):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
                 # try to extract result classicaly
-                pred_conf = transform_prediction_mr(prompter, res, choices)
+                pred_conf = transform_prediction_mr(prompter_res, res, choices)
                 answers.append(pred_conf)
                 log.update({f'cot_{i}': res,
                             f'answer_{i}': pred_conf})
@@ -324,7 +324,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             question = row['question']
             cot_right = row['cot_right']
             cot_wrong = row['cot_wrong']
-            ex_str = ex_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+            ex_str = ex_str + f'Question: {question}\n\nRight Explanation: {cot_right}\n\nWrong Explanation: {cot_wrong}\n\n'
         
         # few shot prompting
         results = []

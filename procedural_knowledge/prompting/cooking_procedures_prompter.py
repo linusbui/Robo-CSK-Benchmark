@@ -993,7 +993,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: in
             question = row['question']
             cot_right = row['cot_right']
             cot_wrong = row['cot_wrong']
-            ex_before_str = ex_before_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+            ex_before_str = ex_before_str + f'Question: {question}\n\nRight Explanation: {cot_right}\n\nWrong Explanation: {cot_wrong}\n\n'
         
         # Load examples (after)
         examples = pd.read_csv(ex_after_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
@@ -1002,7 +1002,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: in
             question = row['question']
             cot_right = row['cot_right']
             cot_wrong = row['cot_wrong']
-            ex_after_str = ex_after_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+            ex_after_str = ex_after_str + f'Question: {question}\n\nRight Explanation: {cot_right}\n\nWrong Explanation: {cot_wrong}\n\n'
 
         logs_before = []
         logs_after = []

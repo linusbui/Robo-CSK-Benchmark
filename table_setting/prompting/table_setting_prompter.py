@@ -58,14 +58,14 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             tup = TableSettingModelResult(meal, plate, utensils)
 
             # prompt for cutlery
-            question = f'Meal: {meal}\nCutlery: '
+            question = f'Meal: {meal}\nCutlery:'
             res = prompter.prompt_model(system_msg, user_msg_cut_rar, question)
             pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
-            question = f'Meal: {meal}\nPlate: '
+            question = f'Meal: {meal}\nPlate:'
             res = prompter.prompt_model(system_msg, user_msg_plat_rar, question)
             pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
@@ -112,14 +112,14 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             tup = TableSettingModelResult(meal, plate, utensils)
 
             # prompt for cutlery
-            question = f'Meal: {meal}\nCutlery: '
+            question = f'Meal: {meal}'
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
             pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
-            question = f'Meal: {meal}\nPlate: '
+            question = f'Meal: {meal}'
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
             pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
@@ -150,8 +150,8 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
             utensils = get_utensils(row)
             tup = TableSettingModelResult(meal, plate, utensils)
 
-            question_cut = f'Meal: {meal}\nCutlery: '
-            question_plat = f'Meal: {meal}\nPlate: '
+            question_cut = f'Meal: {meal}'
+            question_plat = f'Meal: {meal}'
 
             log_cut = {'question': question_cut}
             log_plat = {'question': question_plat}
@@ -211,7 +211,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
             tup = TableSettingModelResult(meal, plate, utensils)
 
             # initial prompt for cutlery
-            question = f'Meal: {meal}\nCutlery: '
+            question = f'Meal: {meal}\nCutlery:'
             initial = prompter.prompt_model(system_msg, user_msg_cut_initial, question)
             question = question + f'\n{initial}\n'
 
@@ -243,7 +243,7 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
             log_cut = BasicLogEntry(question, final_pred, pred_cut, utensils)
 
             # initial prompt for plate
-            question = f'Meal: {meal}\nPlate: '
+            question = f'Meal: {meal}\nPlate:'
             initial = prompter.prompt_model(system_msg, user_msg_plat_inital, question)
             question = question + f'\n{initial}\n'
 
@@ -302,11 +302,11 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
             # prompt for cutlery
             # Get higher level principles
-            p_question = f'Meal: {meal}\nPrinciples: '
+            p_question = f'Meal: {meal}\nPrinciples:'
             principles = prompter.prompt_model(system_msg_cut_principle, user_msg__principle, p_question)
 
             # Get answer based on principles
-            question = f'Meal: {meal}\nCutlery: '
+            question = f'Meal: {meal}'
             user_msg_cut_stepback = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string} and answer the question step by step using the following principles:\n{principles}\nEnd the answer with your chosen cutlery.'
             
             res = prompter.prompt_model(system_msg, user_msg_cut_stepback, question)
@@ -316,11 +316,11 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
             # prompt for plate
             # Get higher level principles
-            question = f'Meal: {meal}\nPrinciples: '
+            question = f'Meal: {meal}\nPrinciples:'
             principles = prompter.prompt_model(system_msg_plat_principle, user_msg__principle, question)
 
             # Get answer based on principles
-            question = f'Meal: {meal}\nPlate: '
+            question = f'Meal: {meal}'
             user_msg_plat_stepback = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string} and answer the question step by step using the following principles:\n{principles}\nEnd the answer with your chosen plate.'
 
             res = prompter.prompt_model(system_msg, user_msg_plat_stepback, question)
@@ -487,7 +487,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             question = row['question']
             cot_right = row['cot_right']
             cot_wrong = row['cot_wrong']
-            ex_cut_str = ex_cut_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+            ex_cut_str = ex_cut_str + f'Question: {question}\n\nRight Explanation: {cot_right}\n\nWrong Explanation: {cot_wrong}\n\n'
 
         examples = pd.read_csv(ex_plat_file, delimiter=',', on_bad_lines='skip', nrows=n_ex)
         ex_plat_str = ''
@@ -495,7 +495,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             question = row['question']
             cot_right = row['cot_right']
             cot_wrong = row['cot_wrong']
-            ex_plat_str = ex_plat_str + f'Question: {question}\nRight Explanation: {cot_right}\nWrong Explanation: {cot_wrong}\n'
+            ex_plat_str = ex_plat_str + f'Question: {question}\n\nRight Explanation: {cot_right}\n\nWrong Explanation: {cot_wrong}\n\n'
         
         # few shot prompting
         data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
@@ -510,14 +510,14 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             tup = TableSettingModelResult(meal, plate, utensils)
 
             # prompt for cutlery
-            question = f'Here are a few examples:\n{ex_cut_str}Meal: {meal}\nCutlery: '
+            question = f'Here are a few examples:\n{ex_cut_str}Meal: {meal}\nCutlery:'
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
             pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = SgiclLogEntry(question, pred_cut, utensils)
 
             # prompt for plate
-            question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate: '
+            question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate:'
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
             pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
