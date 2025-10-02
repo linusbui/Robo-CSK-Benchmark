@@ -8,7 +8,7 @@ from procedural_knowledge.prompting import evaluate_prompters
 from tidy_up.prompting.tidy_up_prompter_open import user_msg
 from utils.prompter import Prompter
 from utils.formatting import transform_prediction, majority_vote
-from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
+from utils.logging import BasicLogEntry, StepbackLogEntry, write_log_to_file, write_general_log_to_file
 
 def prompt_all_models_binary(prompters: [Prompter]):
     system_msg = "Imagine you are a robot tasked with determining the temporal order of two steps from one recipe. "
@@ -733,7 +733,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int, n_ex: in
         user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer in one short sentence only.'
         question = f'Step: {step}\nStep before: {step_before}\nGenerate a recipe title: {recipe_title}\nGenerate a recipe title:'
         return prompter.prompt_model(system_msg_example, user_msg_example, question)
-    
+
     def get_example_after(prompter, recipe_title, step, step_before):
         system_msg_example = 'You are helping to create questions regarding household environments.'
         user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer in one short sentence only.'
@@ -851,7 +851,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int, n_ex: in
                     'correct_response': step_1
                 })
                 save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_sgicl/{recipe_number}.json', before_answers)
-                log_before = SgiclLogEntry(question, response, step_1)
+                log_before = BasicLogEntry(question, full_response, response, step_1)
                 logs_before.append(log_before)
 
                 after_steps = [step_1, step_3]
@@ -1040,7 +1040,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: in
                     'correct_response': step_1
                 })
                 save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_contr/{recipe_number}.json', before_answers)
-                log_before = SgiclLogEntry(question, response, step_1)
+                log_before = BasicLogEntry(question, response, step_1)
                 logs_before.append(log_before)
 
                 after_steps = [step_1, step_3]

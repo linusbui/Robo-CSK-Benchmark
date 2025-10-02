@@ -7,7 +7,7 @@ from table_setting.prompting.table_setting_model_result import TableSettingModel
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
 from utils.formatting import transform_prediction, majority_vote
-from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
+from utils.logging import BasicLogEntry, StepbackLogEntry, write_log_to_file, write_general_log_to_file
 
 utensils_string = ', '.join([str(utensil) for utensil in Utensil])
 plates_string = ', '.join([str(plate) for plate in Plate])
@@ -399,14 +399,14 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
             pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
-            log_cut = SgiclLogEntry(question, pred_cut, utensils)
+            log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
             question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate: '
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
             pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
-            log_plat = SgiclLogEntry(question, pred_plat, plate)
+            log_plat = BasicLogEntry(question, res, pred_plat, utensils)
 
             results.append(tup)
             logs_cut.append(log_cut)
@@ -514,14 +514,14 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
             pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
-            log_cut = SgiclLogEntry(question, pred_cut, utensils)
+            log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
             question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate:'
             res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
             pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
-            log_plat = SgiclLogEntry(question, pred_plat, plate)
+            log_plat = BasicLogEntry(question, res, pred_plat, utensils)
 
             results.append(tup)
             logs_cut.append(log_cut)

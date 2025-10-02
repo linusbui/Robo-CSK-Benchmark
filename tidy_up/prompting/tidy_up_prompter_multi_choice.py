@@ -9,7 +9,7 @@ from tidy_up.prompting.tidy_up_result import TidyUpMultiChoiceResult
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
 from utils.formatting import transform_prediction, majority_vote
-from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
+from utils.logging import BasicLogEntry, StepbackLogEntry, write_log_to_file, write_general_log_to_file
 
 system_msg = 'Imagine you are a robot tidying up a household environment, being confronted with an object and a possible list of locations to put it.'
 user_msg = 'What is the single location from the given list that you think is the most suitable place to put the object? Please only answer with the location you chose.'
@@ -272,9 +272,10 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
 
             question = f'Here are a few examples:\n{ex_str}Object: {obj}\nLocations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            tup = TidyUpMultiChoiceResult(obj, corr_loc, res, choices)
+            pred_loc = transform_prediction(res, choices)
+            tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)
-            log = SgiclLogEntry(question, res, corr_loc)
+            log = BasicLogEntry(question, res, pred_loc, corr_loc)
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name, 'sgicl', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'tidy_up/results_multi', False)
@@ -339,9 +340,10 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
 
             question = f'Here are a few examples:\n{ex_str}Object: {obj}\nLocations: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            tup = TidyUpMultiChoiceResult(obj, corr_loc, res, choices)
+            pred_loc = transform_prediction(res, choices)
+            tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)
-            log = SgiclLogEntry(question, res, corr_loc)
+            log = BasicLogEntry(question, res, pred_loc, corr_loc)
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name + 'contr', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tidy_up/results_multi', False)

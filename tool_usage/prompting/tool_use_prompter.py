@@ -9,7 +9,7 @@ from tool_usage.prompting.tool_use_result import ToolSubstitutionResult
 from utils.prompter import Prompter
 from utils.result_writer import add_to_model_overview, write_model_results_to_file
 from utils.formatting import transform_prediction, majority_vote
-from utils.logging import BasicLogEntry, StepbackLogEntry, SgiclLogEntry, write_log_to_file, write_general_log_to_file
+from utils.logging import BasicLogEntry, StepbackLogEntry, write_log_to_file, write_general_log_to_file
 
 system_msg = 'Imagine you are a robot in a household environment being confronted with a task and a list of tools.'
 user_msg = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
@@ -274,9 +274,10 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
             choices_string = ', '.join([c for c in choices])
             question = f'Here are a few examples:\n{ex_str}Task: {task}\nTools: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            tup = ToolSubstitutionResult(task, affordance, corr_tool, res, choices)
+            pred_tool = transform_prediction(res, choices)
+            tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
             results.append(tup)
-            log = SgiclLogEntry(question, res, corr_tool)
+            log = BasicLogEntry(question, res, pred_tool, corr_tool)
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name, 'sgicl', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'tool_usage')
@@ -340,9 +341,10 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             choices_string = ', '.join([c for c in choices])
             question = f'Here are a few examples:\n{ex_str}Task: {task}\nTools: {choices_string}\nYour Choice:'
             res = prompter.prompt_model(system_msg, user_msg, question)
-            tup = ToolSubstitutionResult(task, affordance, corr_tool, res, choices)
+            pred_tool = transform_prediction(res, choices)
+            tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
             results.append(tup)
-            log = SgiclLogEntry(question, res, corr_tool)
+            log = BasicLogEntry(question, res, pred_tool, corr_tool)
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name, 'contr', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tool_usage')
