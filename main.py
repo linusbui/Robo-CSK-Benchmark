@@ -30,22 +30,25 @@ def main():
     prompters_selfcon = [] 
     # Evaluate models:
     if "gpt" in args.models:
-        gpt4 = OpenAIPrompter()
-        prompters.append(gpt4)
         if 'selfcon' in args.techs:
             prompters_selfcon.append(OpenAIPrompter(0.5))
+        else:
+            gpt4 = OpenAIPrompter()
+            prompters.append(gpt4)
         print(f'Evaluating on the following GPT-4o model: {gpt4.model_name}')
     if "llama" in args.models:
-        llama = LlamaPrompter(args.new_tok)
-        prompters.append(llama)
         if 'selfcon' in args.techs:
             prompters_selfcon.append(LlamaPrompter(args.new_tok, 0.5, True))
+        else:
+            llama = LlamaPrompter(args.new_tok)
+            prompters.append(llama)
         print(f'Evaluating on the following Llama 3.3 model: {llama.model_name}')
     if "gemma" in args.models:
-        gemma = GemmaPrompter(args.new_tok)
-        prompters.append(gemma)
         if 'selfcon' in args.techs:
             prompters_selfcon.append(GemmaPrompter(args.new_tok, 0.5, True))
+        else:
+            gemma = GemmaPrompter(args.new_tok)
+            prompters.append(gemma)
         print(f'Evaluating on the following Gemma 2 model: {gemma.model_name}')
 
     # Decide which tasks to evaluate with which prompting techniques:
@@ -85,7 +88,7 @@ def main():
             meta_reason_prompter_multi_choice.prompt_all_models_meta(prompters, num_runs)
             print('Finished the Meta-Reasoning task (Multi Choice Questions) (Metacognitive)')
         if 'selfcon' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon, prompters, num_runs, it_selfcon)
+            meta_reason_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon, num_runs, it_selfcon)
             print('Finished the Meta-Reasoning task (Multi Choice Questions) (Self Consistency)')
         if 'selfref' in args.techs:
             meta_reason_prompter_multi_choice.prompt_all_models_selfref(prompters, num_runs, it_selfref)

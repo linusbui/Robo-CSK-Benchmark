@@ -98,8 +98,8 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
 
 user_msg_selfcon = 'What is the single hardware configuration from the given list that you think is the most suitable to execute the task? Think step by step before answering with the complete configuration you chose.'
 
-def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompters_extract: [Prompter], num_runs: int, n_it: int):
-    for prompter, prompter_res in zip(prompters_selfcon, prompters_extract):
+def prompt_all_models_selfcon(prompters_selfcon: [Prompter], num_runs: int, n_it: int):
+    for prompter in prompters_selfcon:
         results = []
         logs = []
         questions = pd.read_csv('meta_reasoning/meta_reasoning_multi_questions.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
@@ -119,7 +119,7 @@ def prompt_all_models_selfcon(prompters_selfcon: [Prompter], prompters_extract: 
             for i in range(n_it):
                 res = prompter.prompt_model(system_msg, user_msg_selfcon, question)
                 # try to extract result classicaly
-                pred_conf = transform_prediction_mr(prompter_res, res, choices)
+                pred_conf = transform_prediction_mr(prompter, res, choices)
                 answers.append(pred_conf)
                 log.update({f'cot_{i}': res,
                             f'answer_{i}': pred_conf})
