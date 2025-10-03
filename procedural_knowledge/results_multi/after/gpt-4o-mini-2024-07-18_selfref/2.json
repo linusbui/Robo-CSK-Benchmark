@@ -1,8 +1,32 @@
 [
     {
         "title": "Ranch Mushrooms",
-        "question": "In the recipe 'Ranch Mushrooms', which steps occurs after 'Cook on low heat'?\nOptions:\n- Use stovetop if preferred\n- Add ingredients to crock pot\nIn the recipe 'Ranch Mushrooms', the step that occurs after 'Cook on low heat' is 'Use stovetop if preferred'.\n\nYour Feedback:\nThe answer provided is incorrect. The step 'Use stovetop if preferred' does not logically follow 'Cook on low heat' in the context of the recipe. Instead, 'Add ingredients to crock pot' is the step that would typically occur after 'Cook on low heat', as it suggests that the cooking process is already underway and ingredients are being added to the cooking vessel. Therefore, the correct answer should be 'Add ingredients to crock pot'.\n\nScore: 1\nImprovement:\nIn the recipe 'Ranch Mushrooms', the step that occurs after 'Cook on low heat' is 'Add ingredients to crock pot'. This is because once the cooking process has started on low heat, it is logical to add the necessary ingredients to the crock pot to continue the cooking process. The option 'Use stovetop if preferred' does not follow the sequence of steps in this context, as it suggests an alternative method rather than a continuation of the current cooking method. Therefore, the correct answer is 'Add ingredients to crock pot'.\n\nYour Feedback:\nThe answer provided is incorrect. The step 'Use stovetop if preferred' does not logically follow 'Cook on low heat' in the context of the recipe. Instead, 'Add ingredients to crock pot' is the step that would typically occur after 'Cook on low heat', as it suggests that the cooking process is already underway and ingredients are being added to the cooking vessel. Therefore, the correct answer should be 'Add ingredients to crock pot'.\n\nScore: 1\n\nImprovement:\nIn the recipe 'Ranch Mushrooms', the step that occurs after 'Cook on low heat' is 'Add ingredients to crock pot'. This is because once the cooking process has started on low heat, it is logical to add the necessary ingredients to the crock pot to continue the cooking process. The option 'Use stovetop if preferred' does not follow the sequence of steps in this context, as it suggests an alternative method rather than a continuation of the current cooking method. Therefore, the correct answer is 'Add ingredients to crock pot'.\nImprovement:\nIn the recipe 'Ranch Mushrooms', the step that occurs after 'Cook on low heat' is 'Add ingredients to crock pot'. This step logically follows because once the cooking process has begun on low heat, it is appropriate to add the necessary ingredients to the crock pot to ensure they cook properly. The option 'Use stovetop if preferred' suggests an alternative cooking method rather than a continuation of the current process, making it an incorrect choice in this context. Therefore, the correct answer is 'Add ingredients to crock pot'.\n\nYour Choice:",
-        "response": "Add ingredients to crock pot",
+        "question": "In the recipe 'Ranch Mushrooms', which steps occurs after 'Cook on low heat'?\nOptions:\n- Panfry steak in olive oil\n- Use stovetop if preferred\n- Dice chicken breast\n- Preheat oven to 300\u00b0F\n- Add ingredients to crock pot",
+        "response": "Use stovetop if preferred",
         "correct_response": "Use stovetop if preferred"
+    },
+    {
+        "title": "Raspberry Creme Brulee Recipe",
+        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which steps occurs after 'Heat cream, add vanilla'?\nOptions:\n- Dice chicken breast\n- Add ingredients to crock pot\n- Panfry steak in olive oil\n- Bake in water bath\n- Preheat oven to 300\u00b0F",
+        "response": "Bake in water bath",
+        "correct_response": "Bake in water bath"
+    },
+    {
+        "title": "Barbecue Hamburger Patties Recipe",
+        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which steps occurs after 'Shape into 6 patties'?\nOptions:\n- Add ingredients to crock pot\n- Preheat oven to 300\u00b0F\n- Mix meat, onion, salt\n- Panfry steak in olive oil\n- Brown patties in skillet",
+        "response": "Brown patties in skillet",
+        "correct_response": "Brown patties in skillet"
+    },
+    {
+        "title": "Chicken Prepared-Mustard",
+        "question": "In the recipe 'Chicken Prepared-Mustard', which steps occurs after 'Add chicken and butter'?\nOptions:\n- Add ingredients to crock pot\n- Panfry steak in olive oil\n- Preheat oven to 300\u00b0F\n- Add mustard, stir, cover\n- Dice chicken breast",
+        "response": "Add mustard, stir, cover",
+        "correct_response": "Add mustard, stir, cover"
+    },
+    {
+        "title": "Bower's Hunter's Chili",
+        "question": "In the recipe 'Bower's Hunter's Chili', which steps occurs after 'Brown ground meat, drain grease'?\nOptions:\n- Dice chicken breast\n- Preheat oven to 300\u00b0F\n- Add ingredients to crock pot\n- Panfry steak in olive oil\n- Add meats to bean pot",
+        "response": "Add meats to bean pot",
+        "correct_response": "Add meats to bean pot"
     }
 ]

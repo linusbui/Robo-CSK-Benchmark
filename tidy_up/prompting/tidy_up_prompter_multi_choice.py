@@ -132,9 +132,10 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
         write_general_log_to_file(logs, prompter.model_name, 'selfcon', 'tidy_up')
 
 
-user_msg_initial = 'What is the single location from the given list that you think is the most suitable place to put the object?'
-user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
-user_msg_refine = 'Improve upon the answer based on the feedback:'
+user_msg_initial = 'What is the single location from the given list that you think is the most suitable place to put the object? Generate your answer in the following format:\nExplanation: <explanation>\nLocation: <location>'
+user_msg_feedback = "Provide Feedback on the answer. The feedback should only evaluate the correctness of the answer. Remember that the answer has to be chosen from the given list. At the end, score the answer from 1 to 5. A score of 5 means that the answer is the right choice."
+system_msg_refine = 'You are given an answer to a multiple choice question regarding tidying up a household and corresponding feedback.'
+user_msg_refine = 'Improve upon the answer based on the feedback. Remember that the answer has to be chosen from the given list. Generate your answer in the following format:\nExplanation: <explanation>\nLocation: <location>'
 
 def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
     for prompter in prompters:
@@ -150,15 +151,20 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
 
-            question = f'Object: {obj}\nLocations: {choices_string}\nYour Choice:'
-            initial = prompter.prompt_model(system_msg, user_msg_initial, question)
-            question = question + f'\n{initial}\n'
+            # initial prompt
+            question = f'Object: {obj}\nLocations: {choices_string}'
+            answer = prompter.prompt_model(system_msg, user_msg_initial, question)
 
+            # full conversation for logging, LLM only sees last answer
+            full_conv = question + f'\n{answer}'
+
+            # Refine - Feedback loop
             for i in range(n_it):
                 # feedback 
-                question = question + '\nYour Feedback:'
-                feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
-                question = question + f'\n{feedback}'
+                f_question = question + f'\n{answer}' + '\nFeedback:'
+                system_msg_feedback = f'You are given the answer to a multiple choice question regarding tidying up a household. The possible answers are: {choices_string}'
+                feedback = prompter.prompt_model(system_msg_feedback, user_msg_feedback, f_question)
+                full_conv = full_conv + '\nFeedback:' + f'\n{feedback}'
 
                 # Stopping condition
                 ind = feedback.lower().find('score')
@@ -168,19 +174,15 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
                         break
 
                 # refine
-                question = question + '\nImprovement:'
-                refine = prompter.prompt_model(system_msg, user_msg_refine, question)
-                question = question + f'\n{refine}\n'
+                r_question = f_question + f'\n{feedback}'
+                answer = prompter.prompt_model(system_msg_refine, user_msg_refine, r_question)
+                full_conv = full_conv + '\nImprovement:' + f'\n{answer}'
 
             # final answer
-            question = question + '\nYour Choice:'
-            user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. The answer should only contain one of the following locations: {choices}'
-            final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
-            pred_loc = transform_prediction(final_pred, choices)
-
+            pred_loc = transform_prediction(answer, choices)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)
-            log = BasicLogEntry(question, final_pred, pred_loc, corr_loc)
+            log = BasicLogEntry(question, full_conv, pred_loc, corr_loc)
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name, 'selfref', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'tidy_up/results_multi', False)

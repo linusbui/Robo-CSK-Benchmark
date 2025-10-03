@@ -1,8 +1,32 @@
 [
     {
         "title": "Aromatic Bread Dumplings",
-        "question": "In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?\n\nOptions:\n- Combine ingredients, mash well\n- Cook dumplings until soft\nIn the recipe 'Aromatic Bread Dumplings', the step that occurs before 'Shape mixture into balls' is 'Combine ingredients, mash well'.\n\nYour Feedback:\nThe answer is correct. In the process of making bread dumplings, you typically start by combining the ingredients and mashing them well to create a cohesive mixture before shaping them into balls. The other option, 'Cook dumplings until soft', occurs after the shaping step. Therefore, the correct order is accurately identified.\n\nScore: 5\nYour Choice:",
+        "question": "In the recipe 'Aromatic Bread Dumplings', which step occurs before 'Shape mixture into balls'?\n\nOptions:\n- Cook dumplings until soft\n- Steam until lobster is opaque\n- Combine ingredients, mash well\n- Bake on center rack\n- Pour puree over vegetables",
         "response": "Combine ingredients, mash well",
         "correct_response": "Combine ingredients, mash well"
+    },
+    {
+        "title": "Middle Eastern Vegetable Casserole",
+        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which step occurs before 'Add broccoli, roast more'?\n\nOptions:\n- Cook dumplings until soft\n- Steam until lobster is opaque\n- Roast diced potatoes\n- Bake on center rack\n- Pour puree over vegetables",
+        "response": "Pour puree over vegetables",
+        "correct_response": "Roast diced potatoes"
+    },
+    {
+        "title": "Healthy Steamed Lobster Tails for One",
+        "question": "In the recipe 'Healthy Steamed Lobster Tails for One', which step occurs before 'Place tails in colander'?\n\nOptions:\n- Bake on center rack\n- Pour puree over vegetables\n- Remove membrane from lobster\n- Cook dumplings until soft\n- Steam until lobster is opaque",
+        "response": "Remove membrane from lobster",
+        "correct_response": "Remove membrane from lobster"
+    },
+    {
+        "title": "Simple Rack of Lamb",
+        "question": "In the recipe 'Simple Rack of Lamb', which step occurs before 'Sprinkle with spices, oil'?\n\nOptions:\n- Pan sear lamb fat side\n- Steam until lobster is opaque\n- Bake on center rack\n- Pour puree over vegetables\n- Cook dumplings until soft",
+        "response": "Pan sear lamb fat side",
+        "correct_response": "Pan sear lamb fat side"
+    },
+    {
+        "title": "Moussaka Recipe",
+        "question": "In the recipe 'Moussaka Recipe', which step occurs before 'Alternate eggplant, meat mix'?\n\nOptions:\n- Saute onion, brown meat\n- Bake on center rack\n- Pour sauce, add cheese\n- Pour puree over vegetables\n- Cook dumplings until soft",
+        "response": "Saute onion, brown meat",
+        "correct_response": "Saute onion, brown meat"
     }
 ]

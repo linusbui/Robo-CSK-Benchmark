@@ -1,8 +1,32 @@
 [
     {
         "title": "Gingersnap Gravy",
-        "question": "In the recipe 'Gingersnap Gravy', which step occurs before 'Add stock, bring to boil'?\n\nOptions:\n- Crumble gingersnaps, whisk\n- Saute onions, celery, garlic\nIn the recipe 'Gingersnap Gravy', the step that occurs before 'Add stock, bring to boil' is 'Saute onions, celery, garlic'.\n\nYour Feedback:\nThe answer provided is incorrect. The step 'Crumble gingersnaps, whisk' is likely to occur after 'Saute onions, celery, garlic' and before 'Add stock, bring to boil'. Typically, you would first saut\u00e9 the vegetables, then add the gingersnaps to create the gravy before adding the stock. Therefore, the correct answer should be 'Crumble gingersnaps, whisk'. \n\nScore: 2\nImprovement:\nIn the recipe 'Gingersnap Gravy', the step that occurs before 'Add stock, bring to boil' is 'Crumble gingersnaps, whisk'. Typically, the process involves first saut\u00e9ing the onions, celery, and garlic to build the flavor base, then crumbling the gingersnaps and whisking them into the mixture to create the gravy before adding the stock. Thank you for the feedback, and I appreciate the opportunity to clarify the correct order of steps.\n\nYour Feedback:\nThe answer provided initially was incorrect, as it misidentified the order of the steps in the recipe. The correct sequence should indeed have 'Crumble gingersnaps, whisk' occurring before 'Add stock, bring to boil', following the saut\u00e9ing of the vegetables. The explanation given in the feedback was clear and accurately described the typical process of making gravy, which involves building a flavor base before adding the thickening agent (gingersnaps) and then the liquid (stock). \n\nScore: 4  \nImprovement: The explanation could be enhanced by providing a brief rationale for why the steps are ordered that way, perhaps mentioning the role of each ingredient in the gravy-making process. Overall, the feedback was constructive and helped clarify the correct order.\nYour Choice:",
-        "response": "Crumble gingersnaps, whisk",
+        "question": "In the recipe 'Gingersnap Gravy', which step occurs before 'Add stock, bring to boil'?\n\nOptions:\n- Bake until done\n- Saute onions, celery, garlic\n- Cook on low or high\n- Add shrimp and tomatoes\n- Crumble gingersnaps, whisk",
+        "response": "Saute onions, celery, garlic",
         "correct_response": "Saute onions, celery, garlic"
+    },
+    {
+        "title": "Mom's Pumpkin Pie Squares Recipe",
+        "question": "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which step occurs before 'Pour into pan, sprinkle mix'?\n\nOptions:\n- Add shrimp and tomatoes\n- Combine milk, eggs, spices\n- Crumble gingersnaps, whisk\n- Bake until done\n- Cook on low or high",
+        "response": "Combine milk, eggs, spices",
+        "correct_response": "Combine milk, eggs, spices"
+    },
+    {
+        "title": "Shrimp and Pasta in a Basil Cream Sauce",
+        "question": "In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which step occurs before 'Saute shallots and garlic'?\n\nOptions:\n- Cook pasta until al dente\n- Cook on low or high\n- Bake until done\n- Crumble gingersnaps, whisk\n- Add shrimp and tomatoes",
+        "response": "Cook pasta until al dente",
+        "correct_response": "Cook pasta until al dente"
+    },
+    {
+        "title": "Smoked Fish & Broccoli Flan",
+        "question": "In the recipe 'Smoked Fish & Broccoli Flan', which step occurs before 'Arrange broccoli, onion, fish'?\n\nOptions:\n- Roll out dough, line dish\n- Add shrimp and tomatoes\n- Bake until done\n- Pour mixture, sprinkle cheese\n- Cook on low or high",
+        "response": "Roll out dough, line dish",
+        "correct_response": "Roll out dough, line dish"
+    },
+    {
+        "title": "Turkey Roast Supreme (Crock Pot)",
+        "question": "In the recipe 'Turkey Roast Supreme (Crock Pot)', which step occurs before 'Rub spice mixture on turkey'?\n\nOptions:\n- Bake until done\n- Layer vegetables in crock pot\n- Crumble gingersnaps, whisk\n- Add shrimp and tomatoes\n- Cook on low or high",
+        "response": "Layer vegetables in crock pot",
+        "correct_response": "Layer vegetables in crock pot"
     }
 ]

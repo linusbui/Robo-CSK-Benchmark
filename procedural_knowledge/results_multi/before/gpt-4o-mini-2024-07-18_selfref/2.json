@@ -1,8 +1,32 @@
 [
     {
         "title": "Ranch Mushrooms",
-        "question": "In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?\n\nOptions:\n- Use stovetop if preferred\n- Add ingredients to crock pot\nIn the recipe 'Ranch Mushrooms', the step that occurs before 'Cook on low heat' is 'Add ingredients to crock pot'.\n\nYour Feedback:\nThe answer is correct. In the context of the recipe 'Ranch Mushrooms', the step 'Add ingredients to crock pot' logically occurs before 'Cook on low heat', as you need to add the ingredients before you can cook them. The option 'Use stovetop if preferred' does not directly relate to the sequence of steps leading to cooking on low heat in a crock pot. Therefore, the reasoning is sound and the answer is accurate.\n\nScore: 5\nYour Choice:",
+        "question": "In the recipe 'Ranch Mushrooms', which step occurs before 'Cook on low heat'?\n\nOptions:\n- Add ingredients to crock pot\n- Add mustard, stir, cover\n- Add meats to bean pot\n- Use stovetop if preferred\n- Bake in water bath",
         "response": "Add ingredients to crock pot",
         "correct_response": "Add ingredients to crock pot"
+    },
+    {
+        "title": "Raspberry Creme Brulee Recipe",
+        "question": "In the recipe 'Raspberry Creme Brulee Recipe', which step occurs before 'Heat cream, add vanilla'?\n\nOptions:\n- Preheat oven to 300\u00b0F\n- Add meats to bean pot\n- Bake in water bath\n- Add mustard, stir, cover\n- Use stovetop if preferred",
+        "response": "Preheat oven to 300\u00b0F",
+        "correct_response": "Preheat oven to 300\u00b0F"
+    },
+    {
+        "title": "Barbecue Hamburger Patties Recipe",
+        "question": "In the recipe 'Barbecue Hamburger Patties Recipe', which step occurs before 'Shape into 6 patties'?\n\nOptions:\n- Add mustard, stir, cover\n- Bake in water bath\n- Brown patties in skillet\n- Mix meat, onion, salt\n- Use stovetop if preferred",
+        "response": "Mix meat, onion, salt",
+        "correct_response": "Mix meat, onion, salt"
+    },
+    {
+        "title": "Chicken Prepared-Mustard",
+        "question": "In the recipe 'Chicken Prepared-Mustard', which step occurs before 'Add chicken and butter'?\n\nOptions:\n- Use stovetop if preferred\n- Add mustard, stir, cover\n- Add meats to bean pot\n- Bake in water bath\n- Dice chicken breast",
+        "response": "Dice chicken breast",
+        "correct_response": "Dice chicken breast"
+    },
+    {
+        "title": "Bower's Hunter's Chili",
+        "question": "In the recipe 'Bower's Hunter's Chili', which step occurs before 'Brown ground meat, drain grease'?\n\nOptions:\n- Panfry steak in olive oil\n- Add mustard, stir, cover\n- Use stovetop if preferred\n- Bake in water bath\n- Add meats to bean pot",
+        "response": "Panfry steak in olive oil",
+        "correct_response": "Panfry steak in olive oil"
     }
 ]

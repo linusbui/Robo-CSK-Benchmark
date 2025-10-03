@@ -1,8 +1,32 @@
 [
     {
         "title": "Aromatic Bread Dumplings",
-        "question": "In the recipe 'Aromatic Bread Dumplings', which steps occurs after 'Shape mixture into balls'?\nOptions:\n- Cook dumplings until soft\n- Combine ingredients, mash well\nIn the recipe 'Aromatic Bread Dumplings', the step that occurs after 'Shape mixture into balls' is 'Cook dumplings until soft'.\n\nYour Feedback:\nThe answer provided is correct. In the recipe 'Aromatic Bread Dumplings', after shaping the mixture into balls, the next logical step is to cook the dumplings until they are soft. The other option, 'Combine ingredients, mash well', would have occurred before shaping the mixture into balls. Therefore, the answer accurately reflects the correct order of steps in the recipe.\n\nScore: 5\nYour Choice:",
+        "question": "In the recipe 'Aromatic Bread Dumplings', which steps occurs after 'Shape mixture into balls'?\nOptions:\n- Combine ingredients, mash well\n- Remove membrane from lobster\n- Pan sear lamb fat side\n- Cook dumplings until soft\n- Roast diced potatoes",
         "response": "Cook dumplings until soft",
         "correct_response": "Cook dumplings until soft"
+    },
+    {
+        "title": "Middle Eastern Vegetable Casserole",
+        "question": "In the recipe 'Middle Eastern Vegetable Casserole', which steps occurs after 'Add broccoli, roast more'?\nOptions:\n- Combine ingredients, mash well\n- Roast diced potatoes\n- Remove membrane from lobster\n- Pour puree over vegetables\n- Pan sear lamb fat side",
+        "response": "Pour puree over vegetables",
+        "correct_response": "Pour puree over vegetables"
+    },
+    {
+        "title": "Healthy Steamed Lobster Tails for One",
+        "question": "In the recipe 'Healthy Steamed Lobster Tails for One', which steps occurs after 'Place tails in colander'?\nOptions:\n- Roast diced potatoes\n- Combine ingredients, mash well\n- Steam until lobster is opaque\n- Pan sear lamb fat side\n- Remove membrane from lobster",
+        "response": "Steam until lobster is opaque",
+        "correct_response": "Steam until lobster is opaque"
+    },
+    {
+        "title": "Simple Rack of Lamb",
+        "question": "In the recipe 'Simple Rack of Lamb', which steps occurs after 'Sprinkle with spices, oil'?\nOptions:\n- Bake on center rack\n- Remove membrane from lobster\n- Pan sear lamb fat side\n- Combine ingredients, mash well\n- Roast diced potatoes",
+        "response": "Pan sear lamb fat side",
+        "correct_response": "Bake on center rack"
+    },
+    {
+        "title": "Moussaka Recipe",
+        "question": "In the recipe 'Moussaka Recipe', which steps occurs after 'Alternate eggplant, meat mix'?\nOptions:\n- Remove membrane from lobster\n- Pan sear lamb fat side\n- Saute onion, brown meat\n- Roast diced potatoes\n- Pour sauce, add cheese",
+        "response": "Pour sauce, add cheese",
+        "correct_response": "Pour sauce, add cheese"
     }
 ]

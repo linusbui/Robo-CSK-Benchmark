@@ -1,3 +1,11 @@
 task,affordance,correct_tool,predicted_tool,tool_choices,correct_prediction
-cleaning up spills,absorb,sponge,sponge,"['shampoo', 'sponge', 'drill', 'kri', 'alligator wrench']",True
-drying the dishes,absorb,sponge,sponge,"['sponge', 'hunting knife', 'tack hammer', 'toothpick', 'strickle']",True
+cleaning up spills,absorb,sponge,sponge,"['alligator wrench', 'drill', 'shampoo', 'kri', 'sponge']",True
+drying the dishes,absorb,sponge,sponge,"['strickle', 'sponge', 'tack hammer', 'toothpick', 'hunting knife']",True
+removing moisture,absorb,sponge,sponge,"['steak knife', 'sponge', 'peppershaker', 'soapbottle', 'potato']",True
+reheating coffee,be heated,pan,pan,"['pan', 'footstool', 'desk lamp', 'power saw', 'tap wrench']",True
+cooking a fried egg,be heated,cup,cup,"['toilet paper', 'counterbore', 'cup', 'hayfork', 'hand drill']",True
+cooking an omelette,be heated,pan,pan,"['pan', 'common ax', ""croupier's rake"", 'fork', 'kirpan']",True
+reheating soup,be heated,kettle,kettle,"['roach clip', 'neolith', 'punch', 'cloth', 'kettle']",True
+boiling water,be heated,plate,none,"['tamp', 'lightbulb', 'laundryhamper', 'toiletpaper', 'plate']",False
+decorating a room,beautify,steel wool pad,drawer,"['coffee', 'drawer', 'soda can', 'steel wool pad', 'axe']",False
+arranging flowers,beautify,abrader,basket ball,"['abrader', 'basket ball', 'arm chair', 'creditcard', 'opener']",False

@@ -191,11 +191,16 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
         write_general_log_to_file(logs_plat, prompter.model_name, 'plate_selfcon', 'table_setting')
 
 
-user_msg_cut_initial = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}'
-user_msg_plat_inital = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string}'
+user_msg_cut_initial = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}. Generate your answer in the following format:\nExplanation: <explanation>\nCutlery: <cutlery>'
+user_msg_plat_inital = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string}. Generate your answer in the following format:\nExplanation: <explanation>\nPlate: <plate>'
 
-user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
-user_msg_refine = 'Improve upon the answer based on the feedback:'
+system_msg_cut_feedback = f'You are given an answer to a multiple choice question regarding setting a table. The possible answers are: {utensils_string}'
+system_msg_plat_feedback = f'You are given an answer to a multiple choice question regarding setting a table. The possible answers are: {plates_string}'
+user_msg_feedback = "Provide Feedback on the answer. The feedback should only evaluate the correctness of the answer. At the end, score the answer from 1 to 5. A score of 5 means that the answer is the right choice."
+
+system_msg_refine = 'You are given an answer to a multiple choice question regarding setting a table and corresponding feedback.'
+user_msg_cut_refine = 'Improve upon the answer based on the feedback. Remember that the answer has to be chosen from the given list. Generate your answer in the following format:\nExplanation: <explanation>\nCutlery: <cutlery>'
+user_msg_plat_refine = 'Improve upon the answer based on the feedback. Remember that the answer has to be chosen from the given list. Generate your answer in the following format:\nExplanation: <explanation>\nPlate: <plate>'
 
 def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
     for prompter in prompters:
@@ -212,15 +217,17 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
 
             # initial prompt for cutlery
             question = f'Meal: {meal}\nCutlery:'
-            initial = prompter.prompt_model(system_msg, user_msg_cut_initial, question)
-            question = question + f'\n{initial}\n'
+            answer = prompter.prompt_model(system_msg, user_msg_cut_initial, question)
+
+            # full conversation for logging, LLM only sees last answer
+            full_conv = question + f'\n{answer}'
 
             # Feedback - Refine iterations
             for i in range(n_it):
                 # feedback 
-                question = question + '\nYour Feedback:'
-                feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
-                question = question + f'\n{feedback}'
+                f_question = question + f'\n{answer}' + '\nFeedback:'
+                feedback = prompter.prompt_model(system_msg_cut_feedback, user_msg_feedback, f_question)
+                full_conv = full_conv + '\nFeedback:' + f'\n{feedback}'
 
                 # Stopping condition
                 ind = feedback.lower().find('score')
@@ -230,29 +237,28 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
                         break
 
                 # refine
-                question = question + '\nImprovement:'
-                refine = prompter.prompt_model(system_msg, user_msg_refine, question)
-                question = question + f'\n{refine}\n'
+                r_question = f_question + f'\n{feedback}'
+                answer = prompter.prompt_model(system_msg_refine, user_msg_cut_refine, r_question)
+                full_conv = full_conv + '\nImprovement:' + f'\n{answer}'
 
             # final answer for cutlery
-            user_msg_cut_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choices: {utensils_string}'
-            question = question + '\nYour Choice:'
-            final_pred = prompter.prompt_model(system_msg, user_msg_cut_final, question)
-            pred_cut = transform_utensil_prediction_new(final_pred)
+            pred_cut = transform_utensil_prediction_new(answer)
             tup.add_predicted_utensils(pred_cut)
-            log_cut = BasicLogEntry(question, final_pred, pred_cut, utensils)
+            log_cut = BasicLogEntry(question, full_conv, pred_cut, utensils)
 
             # initial prompt for plate
             question = f'Meal: {meal}\nPlate:'
-            initial = prompter.prompt_model(system_msg, user_msg_plat_inital, question)
-            question = question + f'\n{initial}\n'
+            answer = prompter.prompt_model(system_msg, user_msg_plat_inital, question)
+
+            # full conversation for logging, LLM only sees last answer
+            full_conv = question + f'\n{answer}'
 
             # Feedback - Refine iterations
             for i in range(n_it):
                 # feedback 
-                question = question + '\nYour Feedback:'
-                feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
-                question = question + f'\n{feedback}'
+                f_question = question + f'\n{answer}' + '\nFeedback:'
+                feedback = prompter.prompt_model(system_msg_plat_feedback, user_msg_feedback, f_question)
+                full_conv = full_conv + '\nFeedback:' + f'\n{feedback}'
 
                 # Stopping condition
                 ind = feedback.lower().find('score')
@@ -262,17 +268,14 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
                         break
 
                 # refine
-                question = question + '\nImprovement:'
-                refine = prompter.prompt_model(system_msg, user_msg_refine, question)
-                question = question + f'\n{refine}\n'
+                r_question = f_question + f'\n{feedback}'
+                answer = prompter.prompt_model(system_msg_refine, user_msg_plat_refine, r_question)
+                full_conv = full_conv + '\nImprovement:' + f'\n{answer}'
 
             # final answer for plate
-            user_msg_plat_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice: {plates_string}'
-            question = question + '\nYour Choice:'
-            final_pred = prompter.prompt_model(system_msg, user_msg_plat_final, question)
-            pred_plat = transform_plate_prediction_new(final_pred)
+            pred_plat = transform_plate_prediction_new(answer)
             tup.add_predicted_plate(pred_plat)
-            log_plat = BasicLogEntry(question, final_pred, pred_plat, plate)
+            log_plat = BasicLogEntry(question, full_conv, pred_plat, plate)
 
             results.append(tup)
             logs_cut.append(log_cut)
@@ -581,7 +584,7 @@ def transform_utensil_prediction_new(pred: str) -> [Utensil]:
     split = pred.splitlines()
     split.reverse()
 
-    res = []
+    res = set()
     found = False
     # Scan for possible answer
     for i in range(len(split)):
@@ -590,14 +593,14 @@ def transform_utensil_prediction_new(pred: str) -> [Utensil]:
             if utensil.lower() in split[i].lower():
                 found = True
                 line_found = True
-                res.append(utensil)
+                res.add(utensil)
         # Stop if line after last hit does not contain answer
         if found and not line_found:
             break
         
     if len(res) == 0:
         print('No viable utensils found!')
-    return res
+    return list(res)
 
 
 def transform_plate_prediction_new(pred: str) -> Plate:

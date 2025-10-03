@@ -132,9 +132,10 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
         write_general_log_to_file(logs, prompter.model_name, 'selfcon', 'tool_usage')
 
 
-user_msg_initial = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
-user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
-user_msg_refine = 'Improve upon the answer based on the feedback:'
+user_msg_initial = 'What is the single tool from the given list that you think is most suitable to help you execute your task? Generate your answer in the following format:\nExplanation: <explanation>\nTool: <tool>'
+user_msg_feedback = "Provide Feedback on the answer. The feedback should only evaluate the correctness of the answer. At the end, score the answer from 1 to 5. A score of 5 means that the answer is the right choice."
+system_msg_refine = 'You are given an answer to a multiple choice question regarding the use of tools in a household environment and corresponding feedback.'
+user_msg_refine = 'Improve upon the answer based on the feedback. Remember that the answer has to be chosen from the given list. Generate your answer in the following format:\nExplanation: <explanation>\nTool: <tool>'
 
 def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
     for prompter in prompters:
@@ -152,16 +153,18 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
 
             # initial prompt
             question = f'Task: {task}\nTools: {choices_string}\nYour Choice:'
-            initial = prompter.prompt_model(system_msg, user_msg_initial, question)
+            answer = prompter.prompt_model(system_msg, user_msg_initial, question)
 
-            question = question + f'\n{initial}\n'
+            # full conversation for logging, LLM only sees last answer
+            full_conv = question + f'\n{answer}'
 
             # Refine - Feedback loop
             for i in range(n_it):
                 # feedback 
-                question = question + '\nYour Feedback:'
-                feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
-                question = question + f'\n{feedback}'
+                f_question = question + f'\n{answer}' + '\nFeedback:'
+                system_msg_feedback = f'You are given an answer to a multiple choice question regarding the use of tools in a household environment. The possible answers are: {choices_string}'
+                feedback = prompter.prompt_model(system_msg_feedback, user_msg_feedback, f_question)
+                full_conv = full_conv + '\nFeedback:' + f'\n{feedback}'
 
                 # Stopping condition
                 ind = feedback.lower().find('score')
@@ -171,19 +174,15 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
                         break
 
                 # refine
-                question = question + '\nImprovement:'
-                refine = prompter.prompt_model(system_msg, user_msg_refine, question)
-                question = question + f'\n{refine}\n'
+                r_question = f_question + f'\n{feedback}'
+                answer = prompter.prompt_model(system_msg_refine, user_msg_refine, r_question)
+                full_conv = full_conv + '\nImprovement:' + f'\n{answer}'
 
             # final answer
-            user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. The answer should only contain one of the following tools: {choices}'
-            question = question + '\nYour Choice:'
-            final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
-            pred_tool = transform_prediction(final_pred, choices)
-
+            pred_tool = transform_prediction(answer, choices)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
             results.append(tup)
-            log = BasicLogEntry(question, final_pred, pred_tool, corr_tool)
+            log = BasicLogEntry(question, full_conv, pred_tool, corr_tool)
             logs.append(log)
         write_model_results_to_file(results, prompter.model_name, 'selfref', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'tool_usage')

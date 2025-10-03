@@ -462,24 +462,29 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int, n_it: 
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
             "Based on the recipe title and the provided steps, identify which step occurred before another. "
         )
-        user_msg_initial = ''
-        user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
-        user_msg_refine = 'Improve upon the answer based on the feedback:'
-        user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice:\n' + "\n".join(f"- {step}" for step in other_steps)
+        user_msg_initial = 'Generate your answer in the following format:\nExplanation: <explanation>\nStep before: <step>'
+
+        system_msg_feedback = f'You are given an answer to a multiple choice question regarding the order of steps in a cooking recipe. The possible answers are:\n' + "\n".join(f"- {step}" for step in other_steps)
+        user_msg_feedback = "Provide Feedback on the answer. The feedback should only evaluate the correctness of the answer. At the end, score the answer from 1 to 5. A score of 5 means that the answer is the right choice."
+        
+        system_msg_refine = 'You are given an answer to a multiple choice question regarding the order of steps in a cooking recipe and corresponding feedback.'
+        user_msg_refine = 'Improve upon the answer based on the feedback. Remember that the answer has to be chosen from the given options. Generate your answer in the following format:\nExplanation: <explanation>\nStep before: <step>'
 
         # initial prompt
         question = (
                 f"In the recipe '{recipe_title}', which step occurs before '{step_question}'?\n"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
-        initial = prompter.prompt_model(system_msg, user_msg_initial, question)
-        question = question + f'\n{initial}\n'
+        answer = prompter.prompt_model(system_msg, user_msg_initial, question)
+
+        # full conversation for logging, LLM only sees last answer
+        full_conv = question + f'\n{answer}'
 
         # Refine - Feedback loop
         for i in range(n_it):
             # feedback 
-            question = question + '\nYour Feedback:'
-            feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
-            question = question + f'\n{feedback}'
+            f_question = question + f'\n{answer}' + '\nFeedback:'
+            feedback = prompter.prompt_model(system_msg_feedback, user_msg_feedback, f_question)
+            full_conv = full_conv + '\nFeedback:' + f'\n{feedback}'
 
             # Stopping condition
             ind = feedback.lower().find('score')
@@ -489,40 +494,41 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int, n_it: 
                     break
 
             # refine
-            question = question + '\nImprovement:'
-            refine = prompter.prompt_model(system_msg, user_msg_refine, question)
-            question = question + f'\n{refine}\n'
+            r_question = f_question + f'\n{feedback}'
+            answer = prompter.prompt_model(system_msg_refine, user_msg_refine, r_question)
+            full_conv = full_conv + '\nImprovement:' + f'\n{answer}'
 
         # final answer
-        question = question + '\nYour Choice:'
-        final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
-
-        return transform_prediction(final_pred, [step for step in other_steps]), question, final_pred
+        return transform_prediction(answer, [step for step in other_steps]), question, full_conv
 
     def get_answer_after(prompter, recipe_title, step_question, other_steps):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
             "Based on the recipe title and the provided steps, identify which step occurred after another. "
         )
-        user_msg_initial = ''
-        user_msg_feedback = "Provide Feedback on the answer. At the end, score the answer from 1 to 5. 1 means that the answer is completely wrong, 4 or above means that the answer is right."
-        user_msg_refine = 'Improve upon the answer based on the feedback:'
-        user_msg_final = f'Please provide your final answer based on the given feedback-answer iterations. Please choose from the following and only answer with your choice:\n' + "\n".join(f"- {step}" for step in other_steps)
+        user_msg_initial = 'Generate your answer in the following format:\nExplanation: <explanation>\nStep after: <step>'
+
+        system_msg_feedback = f'You are given an answer to a multiple choice question regarding the order of steps in a cooking recipe. The possible answers are:\n' + "\n".join(f"- {step}" for step in other_steps)
+        user_msg_feedback = "Provide Feedback on the answer. The feedback should only evaluate the correctness of the answer. At the end, score the answer from 1 to 5. A score of 5 means that the answer is the right choice."
+        
+        system_msg_refine = 'You are given an answer to a multiple choice question regarding the order of steps in a cooking recipe and corresponding feedback.'
+        user_msg_refine = 'Improve upon the answer based on the feedback. Remember that the answer has to be chosen from the given options. Generate your answer in the following format:\nExplanation: <explanation>\nStep after: <step>'
         
         # initial prompt
         question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"
                 f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps))
-        
-        initial = prompter.prompt_model(system_msg, user_msg_initial, question)
-        question = question + f'\n{initial}\n'
+        answer = prompter.prompt_model(system_msg, user_msg_initial, question)
+
+        # full conversation for logging, LLM only sees last answer
+        full_conv = question + f'\n{answer}'
 
         # Refine - Feedback loop
         for i in range(n_it):
             # feedback 
-            question = question + '\nYour Feedback:'
-            feedback = prompter.prompt_model(system_msg, user_msg_feedback, question)
-            question = question + f'\n{feedback}'
+            f_question = question + f'\n{answer}' + '\nFeedback:'
+            feedback = prompter.prompt_model(system_msg_feedback, user_msg_feedback, f_question)
+            full_conv = full_conv + '\nFeedback:' + f'\n{feedback}'
 
             # Stopping condition
             ind = feedback.lower().find('score')
@@ -532,15 +538,12 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int, n_it: 
                     break
 
             # refine
-            question = question + '\nImprovement:'
-            refine = prompter.prompt_model(system_msg, user_msg_refine, question)
-            question = question + f'\n{refine}\n'
+            r_question = f_question + f'\n{feedback}'
+            answer = prompter.prompt_model(system_msg_refine, user_msg_refine, r_question)
+            full_conv = full_conv + '\nImprovement:' + f'\n{answer}'
 
         # final answer
-        question = question + '\nYour Choice:'
-        final_pred = prompter.prompt_model(system_msg, user_msg_final, question)
-
-        return transform_prediction(final_pred, [step for step in other_steps]), question, final_pred
+        return transform_prediction(answer, [step for step in other_steps]), question, full_conv
 
     for prompter in prompters:
         logs_before = []

@@ -1,8 +1,32 @@
 [
     {
         "title": "Gingersnap Gravy",
-        "question": "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?\nOptions:\n- Crumble gingersnaps, whisk\n- Saute onions, celery, garlic\nIn the recipe 'Gingersnap Gravy', the step that occurs after 'Add stock, bring to boil' is 'Crumble gingersnaps, whisk'.\n\nYour Feedback:\nThe answer provided is incorrect. In the context of the recipe 'Gingersnap Gravy', the step 'Crumble gingersnaps, whisk' typically occurs after the stock has been added and brought to a boil, as the gingersnaps are usually incorporated into the gravy to thicken it after the base has been established. However, the step 'Saute onions, celery, garlic' would logically occur before adding the stock, as these ingredients are usually prepared first to build flavor. Therefore, the correct answer should be 'Crumble gingersnaps, whisk' as it follows the step of adding stock and bringing it to a boil.\n\nScore: 2\nImprovement:\nIn the recipe 'Gingersnap Gravy', the step that occurs after 'Add stock, bring to boil' is 'Crumble gingersnaps, whisk'. This is because the gingersnaps are typically added to the gravy after the stock has been brought to a boil, allowing them to dissolve and thicken the gravy. On the other hand, 'Saute onions, celery, garlic' is a preliminary step that usually takes place before adding the stock, as these ingredients are essential for building the flavor base of the gravy. Therefore, the correct sequence is that 'Crumble gingersnaps, whisk' follows 'Add stock, bring to boil'.\n\nYour Feedback:\nThe answer provided is incorrect. The step 'Crumble gingersnaps, whisk' does indeed occur after 'Add stock, bring to boil', as gingersnaps are typically added to the gravy after the stock has been brought to a boil to help thicken it. However, the explanation regarding 'Saute onions, celery, garlic' is somewhat misleading. While it is true that this step usually occurs before adding the stock, the focus of the question is on the order of the steps following 'Add stock, bring to boil'. Therefore, the correct answer is 'Crumble gingersnaps, whisk', and the reasoning should emphasize that this step is part of the process that follows the boiling of the stock.\n\nScore: 4\nImprovement: The explanation could be clearer by directly stating that 'Crumble gingersnaps, whisk' is the correct answer and providing a concise rationale for why it follows the boiling of the stock, while also briefly mentioning that 'Saute onions, celery, garlic' is a preliminary step.\nYour Choice:",
+        "question": "In the recipe 'Gingersnap Gravy', which steps occurs after 'Add stock, bring to boil'?\nOptions:\n- Saute onions, celery, garlic\n- Crumble gingersnaps, whisk\n- Layer vegetables in crock pot\n- Combine milk, eggs, spices\n- Cook pasta until al dente",
         "response": "Crumble gingersnaps, whisk",
         "correct_response": "Crumble gingersnaps, whisk"
+    },
+    {
+        "title": "Mom's Pumpkin Pie Squares Recipe",
+        "question": "In the recipe 'Mom's Pumpkin Pie Squares Recipe', which steps occurs after 'Pour into pan, sprinkle mix'?\nOptions:\n- Layer vegetables in crock pot\n- Combine milk, eggs, spices\n- Cook pasta until al dente\n- Saute onions, celery, garlic\n- Bake until done",
+        "response": "Bake until done",
+        "correct_response": "Bake until done"
+    },
+    {
+        "title": "Shrimp and Pasta in a Basil Cream Sauce",
+        "question": "In the recipe 'Shrimp and Pasta in a Basil Cream Sauce', which steps occurs after 'Saute shallots and garlic'?\nOptions:\n- Cook pasta until al dente\n- Layer vegetables in crock pot\n- Combine milk, eggs, spices\n- Saute onions, celery, garlic\n- Add shrimp and tomatoes",
+        "response": "Add shrimp and tomatoes",
+        "correct_response": "Add shrimp and tomatoes"
+    },
+    {
+        "title": "Smoked Fish & Broccoli Flan",
+        "question": "In the recipe 'Smoked Fish & Broccoli Flan', which steps occurs after 'Arrange broccoli, onion, fish'?\nOptions:\n- Pour mixture, sprinkle cheese\n- Cook pasta until al dente\n- Roll out dough, line dish\n- Combine milk, eggs, spices\n- Saute onions, celery, garlic",
+        "response": "Combine milk, eggs, spices",
+        "correct_response": "Pour mixture, sprinkle cheese"
+    },
+    {
+        "title": "Turkey Roast Supreme (Crock Pot)",
+        "question": "In the recipe 'Turkey Roast Supreme (Crock Pot)', which steps occurs after 'Rub spice mixture on turkey'?\nOptions:\n- Cook pasta until al dente\n- Cook on low or high\n- Saute onions, celery, garlic\n- Combine milk, eggs, spices\n- Layer vegetables in crock pot",
+        "response": "Layer vegetables in crock pot",
+        "correct_response": "Cook on low or high"
     }
 ]
