@@ -1,4 +1,4 @@
-import pandas as pd
+importimport pandas as pd
 import random
 import os.path
 from tqdm import tqdm
@@ -733,13 +733,13 @@ def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
 def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
     def get_example_before(prompter, recipe_title, step, step_before):
         system_msg_example = 'You are helping to create questions regarding household environments.'
-        user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer in one short sentence only.'
+        user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer only with the recipe title.'
         question = f'Step: {step}\nStep before: {step_before}\nGenerate a recipe title: {recipe_title}\nGenerate a recipe title:'
         return prompter.prompt_model(system_msg_example, user_msg_example, question)
 
     def get_example_after(prompter, recipe_title, step, step_before):
         system_msg_example = 'You are helping to create questions regarding household environments.'
-        user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer in one short sentence only.'
+        user_msg_example = 'For the given two steps, generate the title of a recipe that would involve the two steps. Answer only with the recipe title.'
         question = f'Step: {step}\nStep after: {step_before}\nGenerate a recipe title: {recipe_title}\nGenerate a recipe title:'
         return prompter.prompt_model(system_msg_example, user_msg_example, question)
 
