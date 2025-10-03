@@ -31,20 +31,23 @@ def main():
     # Evaluate models:
     if "gpt" in args.models:
         if 'selfcon' in args.techs:
-            prompters_selfcon.append(OpenAIPrompter(0.5))
+            gpt4 = OpenAIPrompter(0.5)
+            prompters_selfcon.append(gpt4)
         else:
             gpt4 = OpenAIPrompter()
             prompters.append(gpt4)
         print(f'Evaluating on the following GPT-4o model: {gpt4.model_name}')
     if "llama" in args.models:
         if 'selfcon' in args.techs:
-            prompters_selfcon.append(LlamaPrompter(args.new_tok, 0.5, True))
+            llama = LlamaPrompter(args.new_tok, 0.5, True)
+            prompters_selfcon.append(llama)
         else:
             llama = LlamaPrompter(args.new_tok)
             prompters.append(llama)
         print(f'Evaluating on the following Llama 3.3 model: {llama.model_name}')
     if "gemma" in args.models:
         if 'selfcon' in args.techs:
+            gemma = GemmaPrompter(args.new_tok, 0.5, True)
             prompters_selfcon.append(GemmaPrompter(args.new_tok, 0.5, True))
         else:
             gemma = GemmaPrompter(args.new_tok)
