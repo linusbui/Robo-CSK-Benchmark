@@ -1,3 +1,21 @@
 task,affordance,correct_tool,predicted_tool,tool_choices,correct_prediction
-cleaning up spills,absorb,sponge,sponge,"['shampoo', 'alligator wrench', 'drill', 'sponge', 'kri']",True
-drying the dishes,absorb,sponge,sponge,"['strickle', 'hunting knife', 'toothpick', 'sponge', 'tack hammer']",True
+cleaning up spills,absorb,sponge,sponge,"['shampoo', 'kri', 'drill', 'alligator wrench', 'sponge']",True
+drying the dishes,absorb,sponge,sponge,"['sponge', 'tack hammer', 'strickle', 'hunting knife', 'toothpick']",True
+removing moisture,absorb,sponge,sponge,"['sponge', 'potato', 'peppershaker', 'steak knife', 'soapbottle']",True
+reheating coffee,be heated,pan,pan,"['desk lamp', 'tap wrench', 'footstool', 'power saw', 'pan']",True
+cooking a fried egg,be heated,cup,cup,"['hayfork', 'toilet paper', 'counterbore', 'hand drill', 'cup']",True
+cooking an omelette,be heated,pan,pan,"['fork', 'common ax', ""croupier's rake"", 'pan', 'kirpan']",True
+reheating soup,be heated,kettle,kettle,"['punch', 'kettle', 'cloth', 'neolith', 'roach clip']",True
+boiling water,be heated,plate,lightbulb,"['tamp', 'plate', 'lightbulb', 'toiletpaper', 'laundryhamper']",False
+decorating a room,beautify,steel wool pad,drawer,"['coffee', 'axe', 'steel wool pad', 'soda can', 'drawer']",False
+arranging flowers,beautify,abrader,arm chair,"['opener', 'basket ball', 'abrader', 'arm chair', 'creditcard']",False
+painting walls,beautify,rat tail file,none,"['tomato', 'vase', 'allen wrench', 'rat tail file', 'vacuumcleaner']",False
+applying make-up,beautify,nailfile,handstamp,"['ravehook', 'nailfile', 'dogbed', 'handstamp', 'corkscrew']",False
+shaping wire,bend,bender,bender,"['spreader', 'bender', 'pipe wrench', 'drawknife', 'ax']",True
+adjusting blinds,bend,bender,hacksaw,"['bender', 'breadknife', 'hacksaw', 'food jar', 'garden trowel']",False
+fitting flexible piping,bend,saw set,pruning saw,"['pruning saw', 'bit', 'scraper', 'circular plane', 'saw set']",False
+installing shelves,bore,bucksaw,bucksaw,"['ax', 'drawer', 'bucksaw', 'shampoo', 'coffee machine']",True
+hanging pictures,bore,straight flute,set square,"['jack plane', 'desk lamp', 'stamp', 'set square', 'straight flute']",False
+assembling furniture,bore,router,stapler,"['crown saw', 'chamfer plane', 'router', 'stapler', 'hammer']",False
+preparing food,break,jigsaw,steak knife,"['soap bar', 'steak knife', 'steel wool pad', 'lightbulb', 'jigsaw']",False
+opening packaging,break,folding saw,folding saw,"['bender', 'abrading stone', 'shovel', 'bulldog wrench', 'folding saw']",True

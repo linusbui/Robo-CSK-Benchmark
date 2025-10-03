@@ -251,7 +251,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
         3. Critically asses your preliminary analysis. If you are unsure about the initial assesment of the sequence of the steps, try to reasses it.
         4. Confirm your final decision on the step that occured before.
         5. Evaluate your confidence (0-100%) in your analysis and provide an explanation for this confidence level. 
-        Provide the answer in your final response as only your chosen step.
+        6. Repeat your final choice. Only include your chosen step.
         '''
 
         question = (
@@ -271,7 +271,7 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
         3. Critically asses your preliminary analysis. If you are unsure about the initial assesment of the sequence of the steps, try to reasses it.
         4. Confirm your final decision on the step that occured before.
         5. Evaluate your confidence (0-100%) in your analysis and provide an explanation for this confidence level. 
-        Provide the answer in your final response as only your chosen step.
+        6. Repeat your final choice. Only include your chosen step.
         '''
         question = (
                 f"In the recipe '{recipe_title}', which steps occurs after '{step_question}'?"

@@ -68,7 +68,7 @@ What is the single location from the given list that you think is the most suita
 3. Critically asses your preliminary analysis. If you are unsure about the initial assesment of the most suitable location of the object, try to reasses it.
 4. Confirm your final decision on the most suitable place to put the object.
 5. Evaluate your confidence (0-100%) in your analysis and provide an explanation for this confidence level.
-Provide the answer in your final response as only the location you choose.
+6. Repeat your final choice.
 '''
 
 def prompt_all_models_meta(prompters: [Prompter], num_runs: int):

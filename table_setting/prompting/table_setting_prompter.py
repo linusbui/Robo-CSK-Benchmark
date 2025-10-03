@@ -84,9 +84,9 @@ user_msg_cut_meta = f'''What are the types of cutlery you would use to eat that 
 1. Clarify your understanding of the question
 2. Make a preliminary identification of the types of cutlery used to eat the meal with.
 3. Critically asses your preliminary analysis. If you are unsure about the initial assesment of the types of cutlery used to eat the meal, try to reasses it.
-4. Confirm your final decision on the types of cutlery used to eat the meal and explain the reasoning behind your choices.
+4. Confirm your final decision on the types of cutlery used to eat the meal and explain the reasoning behind your choices. Focus on the cutlery that is most likely needed and be decisive in your choices.
 5. Evaluate your confidence (0-100%) in your analysis and provide an explanation for this confidence level.
-Provide the answer in your final response as only your choices.
+6. Repeat your final choices.
 '''
 
 user_msg_plat_meta = f'''What are the type of plate you would use to eat that meal? Please choose from the following {plates_string}. As you perform this task, follow these steps:
@@ -95,7 +95,7 @@ user_msg_plat_meta = f'''What are the type of plate you would use to eat that me
 3. Critically asses your preliminary analysis. If you are unsure about the initial assesment of the plates used to eat the meal, try to reasses it.
 4. Confirm your final decision on the most fitting plate used to eat the meal and explain the reasoning behind your choice.
 5. Evaluate your confidence (0-100%) in your analysis and provide an explanation for this confidence level.
-Provide the answer in your final response as only your choice.
+6. Repeat your final choice.
 '''
 
 def prompt_all_models_meta(prompters: [Prompter], num_runs: int):

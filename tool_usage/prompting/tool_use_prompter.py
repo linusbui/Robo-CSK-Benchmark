@@ -68,7 +68,7 @@ What is the single tool from the given list that you think is most suitable to h
 3. Critically asses your preliminary analysis. If you are unsure about the initial assesment of right tool used for the task, try to reasses it.
 4. Confirm your final decision on the most suitable tool to help you execute your task.
 5. Evaluate your confidence (0-100%) in your analysis and provide an explanation for this confidence level.
-Provide the answer in your final response as only the tool you choose.
+6. Repeat your final choice.
 '''
 
 def prompt_all_models_meta(prompters: [Prompter], num_runs: int):

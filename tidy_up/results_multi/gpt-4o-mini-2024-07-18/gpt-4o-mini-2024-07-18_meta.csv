@@ -1,3 +1,21 @@
 object,correct_location,predicted_location,location_choices,correct_prediction
-action figure,pantry room,suitcase,"['pantry room', 'palace', 'laundry room', 'car', 'suitcase']",False
-adjustable wrench,bedroom,press,"['loft', 'glass', 'bedroom', 'press', 'cat']",False
+action figure,pantry room,suitcase,"['car', 'laundry room', 'suitcase', 'pantry room', 'palace']",False
+adjustable wrench,bedroom,press,"['glass', 'cat', 'press', 'loft', 'bedroom']",False
+alarmclock,bedroom,bedroom,"['bedroom', 'different room', 'attic', ""child's room"", 'larder']",True
+aluminumfoil,kitchen,kitchen,"['exercise room', ""prostitute's bedroom"", 'kitchen', 'lamp', 'bathroom cabinet']",True
+android figure,corridor,separate room,"['teapot', 'corridor', 'chest', 'separate room', 'castle']",False
+anti slip tape,exercise room,exercise room,"['side of  room', 'home', 'exercise room', 'icebox', ""children's room""]",True
+antidepressant,pantry room,motel room,"['bundle', 'pantry room', 'laundry room', 'motel room', 'larder']",False
+antique,attic,attic,"['hall', 'butt', 'pot', 'attic', 'court']",True
+apple,kitchen,kitchen,"['cup', 'loft', 'kitchen', 'bus', 'furniture']",True
+applesauce,jar,jar,"['jar', 'teapot', 'sack', 'engine', 'dishwasher']",True
+appliance,home,home,"['hamper', 'backyard', 'chest', 'dining room', 'home']",True
+apricot,table,table,"['bathroom', 'table', 'bar', 'bike', 'tea room']",True
+armchair,bedroom,bedroom,"['suitcase', 'ir rooms', 'classroom', 'bedroom', 'basket']",True
+armoire,living room,living room,"['cabin', 'music room', 'living room', 'vault', 'hospital drug storeroom']",True
+armrest,car,room of house,"['childs room', 'wallet', 'car', 'room of house', 'purse']",False
+arrow,quiver,quiver,"['quiver', 'oven', 'container', 'restroom', 'can']",True
+artichoke,refrigerator,refrigerator,"['refrigerator', 'bookshelf', 'freezer', 'range', ""teenager's bedroom""]",True
+article,press,drawer,"['drawer', 'ambulance', 'way', 'middle of  room', 'press']",False
+ashtray,house,house,"['storage room', 'house', 'basket', 'guest room', 'orchestra']",True
+asparagus,oven,pantry room,"['pantry room', 'glass', 'oven', 'stand', ""cash's room""]",False
