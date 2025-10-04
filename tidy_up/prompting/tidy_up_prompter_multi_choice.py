@@ -333,7 +333,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
         questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
-                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with SG-ICL Prompting'):
+                               f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Contrastive CoT Prompting'):
             obj = row['Object']
             corr_loc = row['Correct_Location']
             choices = row['Wrong_Locations'] + [corr_loc]
@@ -347,7 +347,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             results.append(tup)
             log = BasicLogEntry(question, res, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name + 'contr', 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, 'contr', 'tidy_up/results_multi', False)
         add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tidy_up/results_multi', False)
         write_log_to_file(logs, prompter.model_name, 'contr', 'tidy_up')
 

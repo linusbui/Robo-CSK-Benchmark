@@ -267,9 +267,9 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
         )
         user_msg = '''As you perform this task, follow these steps:
         1. Clarify your understanding of the question.
-        2. Make a preliminary identification of the step that occured before.
+        2. Make a preliminary identification of the step that occured after.
         3. Critically asses your preliminary analysis. If you are unsure about the initial assesment of the sequence of the steps, try to reasses it.
-        4. Confirm your final decision on the step that occured before.
+        4. Confirm your final decision on the step that occured after.
         5. Evaluate your confidence (0-100%) in your analysis and provide an explanation for this confidence level. 
         6. Repeat your final choice. Only include your chosen step.
         '''

@@ -228,7 +228,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
-user_msg_example = 'For the given hardware configuration, generate a task that can be executed by a robot with that configuration. Answer only with the configuration.'
+user_msg_example = 'For the given hardware configuration, generate a task that can be executed by a robot with that configuration. Answer only with the task.'
 
 def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
     for prompter in prompters:
@@ -241,7 +241,7 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
                                 f'Prompting {prompter.model_name} to generate Meta-Rasoning task examples'):
                 task = row['Task']
                 corr_conf = row['Correct_Configuration']
-                question = f'Tool: {corr_conf}\nGenerate a task: {task}\nGenerate a task:'
+                question = f'Configuration: {corr_conf}\nGenerate a task: {task}\nGenerate a task:'
                 pred_task = prompter.prompt_model(system_msg_example, user_msg_example, question)
                 entry = {
                     'Task': pred_task,
