@@ -1043,7 +1043,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: in
                     'correct_response': step_1
                 })
                 save_to_json(f'procedural_knowledge/results_multi/before/{prompter.model_name}_contr/{recipe_number}.json', before_answers)
-                log_before = BasicLogEntry(question, response, step_1)
+                log_before = BasicLogEntry(question, full_response, response, step_1)
                 logs_before.append(log_before)
 
                 after_steps = [step_1, step_3]
