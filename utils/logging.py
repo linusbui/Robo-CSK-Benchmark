@@ -73,10 +73,10 @@ class StepbackLogEntry(ModelEvaluationResult):
 
 def write_log_to_file(logs: [ModelEvaluationResult], model: str, tech: str, folder: str):
     # create folder if needed
-    logdir = f'{folder}/logs/{model.lower()}'
+    logdir = f'{folder}/logs/{model}'
     if not os.path.isdir(logdir):
         os.makedirs(logdir)
-    file = f'{logdir}/{model.lower()}_{tech}.csv'
+    file = f'{logdir}/{model}_{tech}.csv'
     dict_list = [log.to_dict() for log in logs]
     df = pd.DataFrame(dict_list)
     df.to_csv(file, index=False)
@@ -84,9 +84,9 @@ def write_log_to_file(logs: [ModelEvaluationResult], model: str, tech: str, fold
 
 def write_general_log_to_file(logs: [dict], model: str, tech: str, folder: str):
     # create folder if needed
-    logdir = f'{folder}/logs/{model.lower()}'
+    logdir = f'{folder}/logs/{model}'
     if not os.path.isdir(logdir):
         os.makedirs(logdir)
-    file = f'{logdir}/{model.lower()}_{tech}.csv'
+    file = f'{logdir}/{model}_{tech}.csv'
     df = pd.DataFrame(logs)
     df.to_csv(file, index=False)
