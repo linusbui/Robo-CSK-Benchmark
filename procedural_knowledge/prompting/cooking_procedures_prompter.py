@@ -234,9 +234,9 @@ def prompt_all_models_multi_rar(prompters: [Prompter], num_runs: int):
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_rar/{recipe_number}.json', after_answers)
                 log_after = BasicLogEntry(question, full_response, response, step_3)
                 logs_after.append(log_after)
+        write_log_to_file(logs_before, prompter.model_name, 'before_rar', 'procedural_knowledge')
+        write_log_to_file(logs_after, prompter.model_name, 'after_rar', 'procedural_knowledge')
     evaluate_prompters.evaluate_multi(prompters, '_rar')
-    write_log_to_file(logs_before, prompter.model_name, 'before_rar', 'procedural_knowledge')
-    write_log_to_file(logs_after, prompter.model_name, 'after_rar', 'procedural_knowledge')
 
 
 def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
@@ -342,9 +342,9 @@ def prompt_all_models_multi_meta(prompters: [Prompter], num_runs: int):
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_meta/{recipe_number}.json', after_answers)
                 log_after = BasicLogEntry(question, full_response, response, step_3)
                 logs_after.append(log_after)
+        write_log_to_file(logs_before, prompter.model_name, 'before_meta', 'procedural_knowledge')
+        write_log_to_file(logs_after, prompter.model_name, 'after_meta', 'procedural_knowledge')
     evaluate_prompters.evaluate_multi(prompters, '_meta')
-    write_log_to_file(logs_before, prompter.model_name, 'before_meta', 'procedural_knowledge')
-    write_log_to_file(logs_after, prompter.model_name, 'after_meta', 'procedural_knowledge')
 
 
 def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
@@ -451,10 +451,10 @@ def prompt_all_models_multi_selfcon(prompters: [Prompter], num_runs: int, n_it: 
                 log_after.update({'final_answer': final_answer,
                                    'correct_answer': step_3})
                 logs_after.append(log_after)
-
+        write_general_log_to_file(logs_before, prompter.model_name, 'before_selfcon', 'procedural_knowledge')
+        write_general_log_to_file(logs_after, prompter.model_name, 'after_selfcon', 'procedural_knowledge')
     evaluate_prompters.evaluate_multi(prompters, '_selfcon')
-    write_general_log_to_file(logs_before, prompter.model_name, 'before_selfcon', 'procedural_knowledge')
-    write_general_log_to_file(logs_after, prompter.model_name, 'after_selfcon', 'procedural_knowledge')
+
 
 def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int, n_it: int):
     def get_answer_before(prompter, recipe_title, step_question, other_steps):
@@ -609,10 +609,9 @@ def prompt_all_models_multi_selfref(prompters: [Prompter], num_runs: int, n_it: 
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_selfref/{recipe_number}.json', after_answers)
                 log_after = BasicLogEntry(question, full_response, response, step_3)
                 logs_after.append(log_after)
-
+        write_log_to_file(logs_before, prompter.model_name, 'before_selfref', 'procedural_knowledge')
+        write_log_to_file(logs_after, prompter.model_name, 'after_selfref', 'procedural_knowledge')
     evaluate_prompters.evaluate_multi(prompters, '_selfref')
-    write_log_to_file(logs_before, prompter.model_name, 'before_selfref', 'procedural_knowledge')
-    write_log_to_file(logs_after, prompter.model_name, 'after_selfref', 'procedural_knowledge')
 
 
 def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
@@ -725,9 +724,9 @@ def prompt_all_models_multi_stepback(prompters: [Prompter], num_runs: int):
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_stepback/{recipe_number}.json', after_answers)
                 log_after = StepbackLogEntry(p_question, principles, question, full_response, response, step_3)
                 logs_after.append(log_after)
+        write_log_to_file(logs_before, prompter.model_name, 'before_stepback', 'procedural_knowledge')
+        write_log_to_file(logs_after, prompter.model_name, 'after_stepback', 'procedural_knowledge')
     evaluate_prompters.evaluate_multi(prompters, '_stepback')
-    write_log_to_file(logs_before, prompter.model_name, 'before_stepback', 'procedural_knowledge')
-    write_log_to_file(logs_after, prompter.model_name, 'after_stepback', 'procedural_knowledge')
 
 
 def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
@@ -881,9 +880,9 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int, n_ex: in
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_sgicl/{recipe_number}.json', after_answers)
                 log_after = BasicLogEntry(question, full_response, response, step_3)
                 logs_after.append(log_after)
+        write_log_to_file(logs_before, prompter.model_name, 'before_sgicl', 'procedural_knowledge')
+        write_log_to_file(logs_after, prompter.model_name, 'after_sgicl', 'procedural_knowledge')
     evaluate_prompters.evaluate_multi(prompters, '_sgicl')
-    write_log_to_file(logs_before, prompter.model_name, 'before_sgicl', 'procedural_knowledge')
-    write_log_to_file(logs_after, prompter.model_name, 'after_sgicl', 'procedural_knowledge')
 
 
 def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_cot: int):
@@ -1070,6 +1069,6 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: in
                 save_to_json(f'procedural_knowledge/results_multi/after/{prompter.model_name}_contr/{recipe_number}.json', after_answers)
                 log_after = BasicLogEntry(question, full_response, response, step_3)
                 logs_after.append(log_after)
+        write_log_to_file(logs_before, prompter.model_name, 'before_contr', 'procedural_knowledge')
+        write_log_to_file(logs_after, prompter.model_name, 'after_contr', 'procedural_knowledge')
     evaluate_prompters.evaluate_multi(prompters, '_contr')
-    write_log_to_file(logs_before, prompter.model_name, 'before_contr', 'procedural_knowledge')
-    write_log_to_file(logs_after, prompter.model_name, 'after_contr', 'procedural_knowledge')
