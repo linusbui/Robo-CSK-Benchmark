@@ -368,5 +368,6 @@ def transform_prediction_mr(prompter: Prompter, pred: str, choices: [str]):
     if res == 'None':
         system_msg_extract = 'You are given the answer to a multiple choice question. The choices are different robot configurations.'
         user_msg_extract = f'Your task is to determine the final configuration of the given answer. The possible configurations are:\n{choices}.\nOnly answer with the complete configuration.'
-        res = prompter.prompt_model(system_msg_extract, user_msg_extract, pred)
+        conf = prompter.prompt_model(system_msg_extract, user_msg_extract, pred)
+        res = transform_prediction(conf, choices)
     return res
