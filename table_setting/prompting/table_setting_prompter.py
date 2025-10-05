@@ -343,6 +343,8 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 system_msg_example = 'You are helping to create questions regarding household environments.'
 user_msg_cut_example = 'For the given choice of cutlery, generate a a meal that can be eaten with that cutlery. Answer only with the meal.'
 user_msg_plat_example = 'For the given plate, generate a a meal that can be eaten with that cutlery. Answer only with the meal.'
+user_msg_cut_sgicl = f'You are given a meal and some examples. What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}'
+user_msg_plat_sgicl = f'You are given a meal and some examples. What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}'
 
 def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
     for prompter in prompters:
@@ -398,15 +400,15 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
             tup = TableSettingModelResult(meal, plate, utensils)
 
             # prompt for cutlery
-            question = f'Here are a few examples:\n{ex_cut_str}Meal: {meal}\nCutlery: '
-            res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
+            question = f'Here are a few examples:\n{ex_cut_str}\nMeal: {meal}\nCutlery: '
+            res = prompter.prompt_model(system_msg, user_msg_cut_sgicl, question)
             pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
-            question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate: '
-            res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
+            question = f'Here are a few examples:\n{ex_plat_str}\nMeal: {meal}\nPlate: '
+            res = prompter.prompt_model(system_msg, user_msg_plat_sgicl, question)
             pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
             log_plat = BasicLogEntry(question, res, pred_plat, utensils)

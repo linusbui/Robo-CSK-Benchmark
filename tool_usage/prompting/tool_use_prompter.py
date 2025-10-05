@@ -228,6 +228,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
 user_msg_example = 'For the given tool, generate a task that is executed using that tool. Answer only with the task.'
+user_msg_sgicl = 'You are given a task, a list of tools and some examples. What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
 
 def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
     for prompter in prompters:

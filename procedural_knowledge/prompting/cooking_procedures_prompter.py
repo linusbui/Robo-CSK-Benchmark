@@ -746,7 +746,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int, n_ex: in
     def get_answer_before(prompter, recipe_title, step_question, other_steps, examples_str):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
-            "Based on the recipe title and the provided steps, identify which step occurred before another. "
+            "You are given a recipe title, some steps and some examples. Based on the recipe title, identify which of the given steps occured before another."
         )
         user_msg = "Answer only with your chosen step."
         opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)
@@ -762,7 +762,7 @@ def prompt_all_models_multi_sgicl(prompters: [Prompter], num_runs: int, n_ex: in
     def get_answer_after(prompter, recipe_title, step_question, other_steps, examples_str):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
-            "Based on the recipe title and the provided steps, identify  which step occurred after another. "
+            "You are given a recipe title, some steps and some examples. Based on the recipe title, identify which of the given steps occured after another."
         )
         user_msg = "Answer only with your chosen step."
         opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)

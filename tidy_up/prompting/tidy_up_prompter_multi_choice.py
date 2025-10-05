@@ -228,6 +228,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
 user_msg_example = 'For the given location, generate an object typically found in that location. Answer only with the object.'
+user_msg_sgicl = 'You are given an object, a list of locations and some examples. What is the single location from the given list that you think is the most suitable place to put the object? Please only answer with the location you chose.'
 
 def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
     for prompter in prompters:
@@ -272,8 +273,8 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
 
-            question = f'Here are a few examples:\n{ex_str}Object: {obj}\nLocations: {choices_string}\nYour Choice:'
-            res = prompter.prompt_model(system_msg, user_msg, question)
+            question = f'Here are a few examples:\n{ex_str}\nObject: {obj}\nLocations: {choices_string}\nYour Choice:'
+            res = prompter.prompt_model(system_msg, user_msg_sgicl, question)
             pred_loc = transform_prediction(res, choices)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)

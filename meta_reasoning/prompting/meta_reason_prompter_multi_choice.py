@@ -229,6 +229,7 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
 user_msg_example = 'For the given hardware configuration, generate a task that can be executed by a robot with that configuration. Answer only with the task.'
+user_msg_sgicl = 'You are given a task, a list of configurations and some examples. What is the single hardware configuration from the list that you think is the most suitable to execute the task? Please only answer with the complete configuration you chose.'
 
 def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
     for prompter in prompters:
@@ -272,8 +273,8 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
             choices = row['Wrong_Configurations'] + [corr_conf]
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
-            question = f'Here are a few examples:\n{ex_str}Task: {task}\nConfigurations: {choices_string}\nYour Choice:'
-            res = prompter.prompt_model(system_msg, user_msg, question)
+            question = f'Here are a few examples:\n{ex_str}\nTask: {task}\nConfigurations: {choices_string}\nYour Choice:'
+            res = prompter.prompt_model(system_msg, user_msg_sgicl, question)
             pred_conf = transform_prediction_mr(prompter, res, choices)
             tup = MetaReasoningMultiChoiceResult(task, corr_conf, pred_conf, choices)
             results.append(tup)
