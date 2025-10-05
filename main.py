@@ -7,7 +7,6 @@ from tidy_up.prompting import tidy_up_prompter_open, tidy_up_prompter_multi_choi
 from tool_usage.prompting import tool_use_prompter
 from utils import GemmaPrompter, OpenAIPrompter, LlamaPrompter
 
-num_runs = 1
 it_selfcon = 3
 it_selfref = 5
 n_ex_sgicl = 8
@@ -23,7 +22,10 @@ def main():
     parser.add_argument('--techs' ,type=str, choices=['base', 'rar', 'meta', 'contr', 'selfcon', 'selfref', 'sgicl', 'stepback'],
                         nargs="+")
     parser.add_argument("--new_tok", type=int, default=1000, help="Maximum number of new tokens for the model output")
+    parser.add_argument("--num_q", type=int, default=None, help="Number of questions to be asked in each task. Mostly for testing.")
     args = parser.parse_args()
+
+    num_runs = args.num_q
 
     prompters = []
     # List of prompters with higher temperature for Self Constistency
