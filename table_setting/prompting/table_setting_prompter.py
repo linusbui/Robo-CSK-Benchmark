@@ -424,6 +424,8 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
 
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
 user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
+user_msg_cut_contr = f'You are given the title of a meal and some right and wrong answers to similar questions. What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}, and generate your answer in the following format:\nExplanation: <explanation>\nCutlery: <cutlery>'
+user_msg_plat_contr = f'You are given the title of a meal and some right and wrong answers to similar questions. What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string}, and generate your answer in the following format:\nExplanation: <explanation>\nPlate: <plate>'
 
 def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_cot: int):
     for prompter in prompters:
@@ -431,7 +433,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
         ex_cut_file = f'table_setting/examples/table_setting_multichoice_cot_cut_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_cut_file):
             results = []
-            log_cut = pd.read_csv(f'table_setting/logs/{prompter.model_name}/{prompter.model_name}_cutlery_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            log_cut = pd.read_csv(f'table_setting/logs/{prompter.model_name}/{prompter.model_name}_cutlery_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=5)
             for index, row in tqdm(log_cut.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Table Setting task cutlery examples'):
                 corr_cut = row['correct_answer']
@@ -516,14 +518,14 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
 
             # prompt for cutlery
             question = f'Here are a few examples:\n{ex_cut_str}Meal: {meal}\nCutlery:'
-            res = prompter.prompt_model(system_msg, user_msg_cut_meta, question)
+            res = prompter.prompt_model(system_msg, user_msg_cut_contr, question)
             pred_cut = transform_utensil_prediction_new(res)
             tup.add_predicted_utensils(pred_cut)
             log_cut = BasicLogEntry(question, res, pred_cut, utensils)
 
             # prompt for plate
             question = f'Here are a few examples:\n{ex_plat_str}Meal: {meal}\nPlate:'
-            res = prompter.prompt_model(system_msg, user_msg_plat_meta, question)
+            res = prompter.prompt_model(system_msg, user_msg_plat_contr, question)
             pred_plat = transform_plate_prediction_new(res)
             tup.add_predicted_plate(pred_plat)
             log_plat = BasicLogEntry(question, res, pred_plat, utensils)

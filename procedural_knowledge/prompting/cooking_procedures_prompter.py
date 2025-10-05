@@ -902,9 +902,9 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: in
     def get_answer_before(prompter, recipe_title, step_question, other_steps, examples_str):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
-            "Based on the recipe title and the provided steps, identify which step occurred before another. "
+            "You are given a recipe title and a list of steps. Additionaly you are given some right and wrong answers to similar questions. Based on the recipe title and the provided steps, identify which step occurred before another. "
         )
-        user_msg = "Answer only with your chosen step."
+        user_msg = "Generate your answer in the following format:\nExplanation: <explanation>\nStep before: <step>"
         opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)
         question = (
                 f"Here are a few examples:\n{examples_str}"
@@ -918,9 +918,9 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: in
     def get_answer_after(prompter, recipe_title, step_question, other_steps, examples_str):
         system_msg = (
             "Imagine you are a robot tasked with determining the temporal order of steps in a recipe. "
-            "Based on the recipe title and the provided steps, identify  which step occurred after another. "
+            "You are given a recipe title and a list of steps. Additionaly you are given some right and wrong answers to similar questions. Based on the recipe title and the provided steps, identify which step occurred after another. "
         )
-        user_msg = "Answer only with your chosen step."
+        user_msg = "Generate your answer in the following format:\nExplanation: <explanation>\nStep after: <step>."
         opt_str = f"\nOptions:\n" + "\n".join(f"- {step}" for step in other_steps)
         question = (
                 f'Here are a few examples:\n{examples_str}\n'
@@ -937,7 +937,7 @@ def prompt_all_models_multi_contr(prompters: [Prompter], num_runs: int, n_ex: in
         ex_before_file = f'procedural_knowledge/examples/cooking_procedures_multi_cot_before_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_before_file):
             results = []
-            log_before = pd.read_csv(f'procedural_knowledge/logs/{prompter.model_name}/{prompter.model_name}_before_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            log_before = pd.read_csv(f'procedural_knowledge/logs/{prompter.model_name}/{prompter.model_name}_before_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=5)
             for index, row in tqdm(log_before.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Procedural Knowledge task examples (before)'):
                 corr_conf = row['correct_answer']

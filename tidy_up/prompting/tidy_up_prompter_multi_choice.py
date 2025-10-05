@@ -287,6 +287,7 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
 
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
 user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
+user_msg_contr = 'You are given an object and a list of locations. Additionaly you are given some right and wrong answers to similar questions. What is the single location from the given list that you think is the most suitable place to put the object? Generate your answer in the following format:\nExplanation: <explanation>\nLocation: <location>.'
 
 def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_cot: int):
     for prompter in prompters:
@@ -294,7 +295,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
         ex_file = f'tidy_up/examples/tidy_up_multichoice_cot_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_file):
             results = []
-            log = pd.read_csv(f'tidy_up/logs/{prompter.model_name}/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            log = pd.read_csv(f'tidy_up/logs/{prompter.model_name}/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=5)
             for index, row in tqdm(log.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Tidy Up task examples'):
                 corr_loc = row['correct_answer']
@@ -342,7 +343,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             choices_string = ', '.join([c for c in choices])
 
             question = f'Here are a few examples:\n{ex_str}Object: {obj}\nLocations: {choices_string}\nYour Choice:'
-            res = prompter.prompt_model(system_msg, user_msg, question)
+            res = prompter.prompt_model(system_msg, user_msg_contr, question)
             pred_loc = transform_prediction(res, choices)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, pred_loc, choices)
             results.append(tup)

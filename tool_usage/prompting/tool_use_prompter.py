@@ -272,8 +272,8 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
             choices = row['Wrong_Tools'] + [corr_tool]
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
-            question = f'Here are a few examples:\n{ex_str}Task: {task}\nTools: {choices_string}\nYour Choice:'
-            res = prompter.prompt_model(system_msg, user_msg, question)
+            question = f'Here are a few examples:\n{ex_str}\nTask: {task}\nTools: {choices_string}\nYour Choice:'
+            res = prompter.prompt_model(system_msg, user_msg_sgicl, question)
             pred_tool = transform_prediction(res, choices)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
             results.append(tup)
@@ -286,6 +286,7 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
 
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
 user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
+user_msg_contr = 'You are given a task and a list of tools. Additionaly you are given some right and wrong answers to similar questions. What is the single tool from the given list that you think is most suitable to help you execute your task? Generate your answer in the following format:\nExplanation: <explanation>\nTool: <tool>.'
 
 def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_cot: int):
     for prompter in prompters:
@@ -293,7 +294,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
         ex_file = f'tool_usage/examples/tool_usage_multichoice_cot_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_file):
             results = []
-            log = pd.read_csv(f'tool_usage/logs/{prompter.model_name}/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=10)
+            log = pd.read_csv(f'tool_usage/logs/{prompter.model_name}/{prompter.model_name}_selfcon.csv', delimiter=',', on_bad_lines='skip', nrows=5)
             for index, row in tqdm(log.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Tool Usage task examples'):
                 corr_tool = row['correct_answer']
@@ -340,7 +341,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             random.shuffle(choices)
             choices_string = ', '.join([c for c in choices])
             question = f'Here are a few examples:\n{ex_str}Task: {task}\nTools: {choices_string}\nYour Choice:'
-            res = prompter.prompt_model(system_msg, user_msg, question)
+            res = prompter.prompt_model(system_msg, user_msg_contr, question)
             pred_tool = transform_prediction(res, choices)
             tup = ToolSubstitutionResult(task, affordance, corr_tool, pred_tool, choices)
             results.append(tup)
