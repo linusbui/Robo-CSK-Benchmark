@@ -67,9 +67,6 @@ def main():
         if 'meta' in args.techs:
             table_setting_prompter.prompt_all_models_meta(prompters, num_runs)
             print('Finished the Table Setting task (Metacognitive)')
-        if 'selfcon' in args.techs:
-            table_setting_prompter.prompt_all_models_selfcon(prompters_selfcon, num_runs, it_selfcon)
-            print('Finished the Table Setting task (Self Consistency)')
         if 'selfref' in args.techs:
             table_setting_prompter.prompt_all_models_selfref(prompters, num_runs, it_selfref)
             print('Finished the Table Setting task (Self Refine)')
@@ -82,31 +79,9 @@ def main():
         if 'contr' in args.techs:
             table_setting_prompter.prompt_all_models_contr(prompters, num_runs, n_ex_contr, it_selfcon)
             print('Finished the Table Setting task (Contrastive CoT)')
-    if "mr_mc" in args.tasks:
-        if 'base' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models(prompters, num_runs)
-            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Baseline)')
-        if 'rar' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models_rar(prompters, num_runs)
-            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Rephrase and Respond)')
-        if 'meta' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models_meta(prompters, num_runs)
-            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Metacognitive)')
         if 'selfcon' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon, num_runs, it_selfcon)
-            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Self Consistency)')
-        if 'selfref' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models_selfref(prompters, num_runs, it_selfref)
-            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Self Refine)')
-        if 'stepback' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models_stepback(prompters, num_runs)
-            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Stepback)')
-        if 'sgicl' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models_sgicl(prompters, num_runs, n_ex_sgicl)
-            print('Finished the Meta-Reasoning task (Multi Choice Questions) (SG-ICL)')
-        if 'contr' in args.techs:
-            meta_reason_prompter_multi_choice.prompt_all_models_contr(prompters, num_runs, n_ex_contr, it_selfcon)
-            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Contrastive CoT)')
+            table_setting_prompter.prompt_all_models_selfcon(prompters_selfcon, num_runs, it_selfcon)
+            print('Finished the Table Setting task (Self Consistency)')
     if "to_us" in args.tasks:
         if 'base' in args.techs:
             tool_use_prompter.prompt_all_models(prompters, num_runs)
@@ -116,9 +91,6 @@ def main():
             print('Finished the Tool Usage task (Rephrase and Respond)')
         if 'meta' in args.techs:
             tool_use_prompter.prompt_all_models_meta(prompters, num_runs)
-            print('Finished the Tool Usage task (Metacognitive)')
-        if 'selfcon' in args.techs:
-            tool_use_prompter.prompt_all_models_selfcon(prompters_selfcon, num_runs, it_selfcon)
             print('Finished the Tool Usage task (Metacognitive)')
         if 'selfref' in args.techs:
             tool_use_prompter.prompt_all_models_selfref(prompters, num_runs, it_selfref)
@@ -132,6 +104,9 @@ def main():
         if 'contr' in args.techs:
             tool_use_prompter.prompt_all_models_contr(prompters, num_runs, n_ex_contr, it_selfcon)
             print('Finished the Tool Usage task (Contrastive CoT)')
+        if 'selfcon' in args.techs:
+            tool_use_prompter.prompt_all_models_selfcon(prompters_selfcon, num_runs, it_selfcon)
+            print('Finished the Tool Usage task (Metacognitive)')
     if "ti_up_mc" in args.tasks:
         if 'base' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models(prompters, num_runs)
@@ -142,9 +117,6 @@ def main():
         if 'meta' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_meta(prompters, num_runs)
             print('Finished the Tidy Up task (Multi Choice Questions) (Metacognitive)')
-        if 'selfcon' in args.techs:
-            tidy_up_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon, num_runs, it_selfcon)
-            print('Finished the Tidy Up task (Multi Choice Questions) (Self Consistency)')
         if 'selfref' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_selfref(prompters, num_runs, it_selfref)
             print('Finished the Tidy Up task (Multi Choice Questions) (Self Refine)')
@@ -157,6 +129,9 @@ def main():
         if 'contr' in args.techs:
             tidy_up_prompter_multi_choice.prompt_all_models_contr(prompters, num_runs, n_ex_contr, it_selfcon)
             print('Finished the Tidy Up task (Multi Choice Questions) (Contrastive CoT)')
+        if 'selfcon' in args.techs:
+            tidy_up_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon, num_runs, it_selfcon)
+            print('Finished the Tidy Up task (Multi Choice Questions) (Self Consistency)')
     if "proc_mc" in args.tasks:
         if 'base' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi(prompters, num_runs)
@@ -167,9 +142,6 @@ def main():
         if 'meta' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi_meta(prompters, num_runs)
             print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Metacognitive)")
-        if 'selfcon' in args.techs:
-            cooking_procedures_prompter.prompt_all_models_multi_selfcon(prompters_selfcon, num_runs, it_selfcon)
-            print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Self Consistency)")
         if 'selfref' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi_selfref(prompters, num_runs, it_selfref)
             print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Self Refine)")
@@ -182,6 +154,34 @@ def main():
         if 'contr' in args.techs:
             cooking_procedures_prompter.prompt_all_models_multi_contr(prompters, num_runs, n_ex_contr, it_selfcon)
             print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Contrastive CoT)")
+        if 'selfcon' in args.techs:
+            cooking_procedures_prompter.prompt_all_models_multi_selfcon(prompters_selfcon, num_runs, it_selfcon)
+            print("Finished the Cooking Procedures Knowledge task (Multi Choice Questions) (Self Consistency)")
+    if "mr_mc" in args.tasks:
+        if 'base' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models(prompters, num_runs)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Baseline)')
+        if 'rar' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_rar(prompters, num_runs)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Rephrase and Respond)')
+        if 'meta' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_meta(prompters, num_runs)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Metacognitive)')
+        if 'selfref' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_selfref(prompters, num_runs, it_selfref)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Self Refine)')
+        if 'stepback' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_stepback(prompters, num_runs)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Stepback)')
+        if 'sgicl' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_sgicl(prompters, num_runs, n_ex_sgicl)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (SG-ICL)')
+        if 'contr' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_contr(prompters, num_runs, n_ex_contr, it_selfcon)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Contrastive CoT)')
+        if 'selfcon' in args.techs:
+            meta_reason_prompter_multi_choice.prompt_all_models_selfcon(prompters_selfcon, num_runs, it_selfcon)
+            print('Finished the Meta-Reasoning task (Multi Choice Questions) (Self Consistency)')
 
 if __name__ == "__main__":
     main()
