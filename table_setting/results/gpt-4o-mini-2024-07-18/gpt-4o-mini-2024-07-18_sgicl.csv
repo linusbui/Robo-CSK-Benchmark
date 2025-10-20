@@ -1,3 +1,101 @@
 meal,predicted_plate,correct_plate,predicted_utensils,correct_utensils,plate_is_correct,jaccard_utensil
-Lamb and Bean Nachos With Salsa Fresca,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
-Meatloaf With BBQ Sauce,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SKEWER: 'Skewer'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.2857142857142857
+Lamb and Bean Nachos With Salsa Fresca,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.5
+Meatloaf With BBQ Sauce,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Tiramisu,Dessert Plate,Dessert Plate,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.5
+Loaded Potato Soup,Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>],True,1.0
+"Vegan Sushi Roll with Avocado, Carrot and Cucumber",None,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]",False,1.0
+Spaghettini Bolognese,Dinner Plate,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",False,0.6666666666666666
+Meatballs With Orzo and Italian Vegetables,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+Orange Spinach Salmon Salad,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Moussaka with Rice,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Miso Broth Ramen,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.CHOPS: 'Chopsticks'>]","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Leg of Lamb With Garlic Sauce and Fresh Herbs,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Beer Battered Shrimp,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.5
+Beef Barbecue Casserole,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+Baked Salmon with Sweet Olive Salsa,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Ginger Hazelnut Cookies,Dessert Plate,Dessert Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]",[<Utensil.HANDS: 'Hands'>],True,0.5
+Cajun Chicken Sandwiches,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]",[<Utensil.HANDS: 'Hands'>],True,0.3333333333333333
+Three Cheese Ravioli,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.6666666666666666
+Stringy Macaroni & Cheese,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Mushroom Omelet,None,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,1.0
+Baked Apples with Candied Walnuts,Dessert Plate,Dessert Plate,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.25
+Spring Green Salad,Dinner Plate,Bowl,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,0.3333333333333333
+Hamburgers,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.25
+Hot Apple Oatmeal,Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>],True,1.0
+Quinoa Salad,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.6666666666666666
+Pan Fried Steak With Vegetables,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Strawberry Custard Cake,Dessert Plate,Dessert Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Baked Breakfast Burritos,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Teriyaki Pork Chops,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+White-Bean Soup with Bacon and Herbs,Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>],True,1.0
+Velveeta Chicken Spaghetti,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+Greek Chickpea Stew,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Steamed Coconut Rice,Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.5
+Caramelized Shallot and Mushroom Quiche,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.6666666666666666
+Roasted Sweet Potato Slices,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+Sausage and Corn Quesadillas,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Chicken Parmesan Panini,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Eggplant Curry (Indian),Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.25
+"Eggs with Chickpeas, Spinach, and Tomato",Bowl,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",False,1.0
+Brazilian Seafood Stew,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Asparagus and Artichoke Pasta Salad,Dinner Plate,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,0.3333333333333333
+Chocolate Chip Cranberry Muffins,Dessert Plate,Dessert Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]",True,0.3333333333333333
+Baklava,Dessert Plate,Dessert Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.5
+Linguine Pasta with Shrimp and Tomatoes,Dinner Plate,Coupe Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",False,0.6666666666666666
+Sloppy Joes with Cornbread,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Chillaquillas,Bowl,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,0.5
+Deep-Fried Plantain Rounds,None,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,0.25
+Ranch and Avocado Pasta Salad,Dinner Plate,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,0.3333333333333333
+Roasted Tomato Soup,Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>],True,1.0
+Mushrooms & Scrambled Eggs on Toast,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.5
+Baked Acorn Squash with Fruit,Bowl,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",False,0.6666666666666666
+Sea Bass with Gingered Vegetable Stir-Fry,Dinner Plate,Dinner Plate,"[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+Rhubarb Bread Pudding,Dessert Plate,Dessert Plate,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.5
+Green Tomato Pie,Dessert Plate,Dessert Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.5
+Classic Chili,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Pad Thai with Kale,Dinner Plate,Bowl,"[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]",False,1.0
+Korean-Style Cucumber Kimchi,None,Bowl,"[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]",False,0.25
+BBQ Oysters,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+Spicy Sausage Ragu With Red Peppers,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.6666666666666666
+Garlic and Red Pepper Broccoli,Bowl,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]",False,0.0
+Tropical Coleslaw,None,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",False,1.0
+Middle Eastern Fava Bean Stew,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Linguine With Sausage and Mushrooms,Dinner Plate,Coupe Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,1.0
+Grilled Octopus with Ancho Chile Sauce,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Chicken Wings with Salsa Verde,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.25
+Banh Mi (Vietnamese Pulled Pork Sandwich),Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Veggie Pizza,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Blueberry French Toast,Dessert Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,0.25
+Baked Noodles and Eggplant,Dinner Plate,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]",False,0.25
+Roasted Rosemary Turkey Breast,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Baked Carrots,None,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,0.3333333333333333
+Dal With Chicken,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.25
+Apple Walnut Cake,Dessert Plate,Dessert Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.6666666666666666
+Grilled Peaches with Cinnamon Ice Cream,Dessert Plate,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",False,0.3333333333333333
+Chili Prawn and Tomato Spaghetti,Dinner Plate,Coupe Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",False,0.6666666666666666
+Corn on the Cob with Cheese and Lime,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.SKEWER: 'Skewer'>]",True,0.3333333333333333
+Brownies,Dessert Plate,Dessert Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.6666666666666666
+"Soft-Shell Crabs, With Lime Sauce",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.25
+Beef Stew with Dried Mushrooms,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Indian Spiced Shrimp,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.75
+Stuffed Green Bell Peppers,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+Herbal Tuna Salad,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.3333333333333333
+Sweet and Sour Pork,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]",True,0.5
+Caramel Oatmeal Bars,Dessert Plate,Dessert Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]",[<Utensil.HANDS: 'Hands'>],True,0.5
+Snapper in Black Sauce,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.6666666666666666
+American Potato Salad,Dinner Plate,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",False,0.6666666666666666
+Chicken Piccata,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Creamy Baked Mac and Cheese,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.6666666666666666
+Chicken & Broccoli Cannelloni,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+"Rice With Lemon, Capers & Parsley",Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.6666666666666666
+Ham and Asparagus Pie,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Cauliflower in Chilli Butter Sauce,Dinner Plate,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.25
+Fruit and Veggie Couscous,Bowl,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Chicken Fingers with Tomato-Jalapeno Sauce,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,0.6666666666666666
+Chocolate Caramel Cake,Dessert Plate,Dessert Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,1.0
+Mash Potatoes,Bowl,Dinner Plate,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",False,1.0
+Tom Kha Gai (Thai Spicy Coconut Soup),Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>],True,1.0
+Black Bean Chili,Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",True,0.5
+Lemon Garlic Salmon,Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0
+Heirloom Tomato Salad with Basil Vinaigrette,Dinner Plate,Bowl,"[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",False,0.3333333333333333
+Quinoa Veggie Burgers,Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]",True,1.0

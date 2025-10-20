@@ -1,6 +1,9 @@
 prompter,total,correct,accuracy
-gpt-4o-mini-2024-07-18,32,25,0.78125
-gpt-4o-mini-2024-07-18_rar,16,16,1.0
-gpt-4o-mini-2024-07-18_sgicl,24,18,0.75
-gpt-4o-mini-2024-07-18_contr,24,23,0.9583333333333334
-gpt-4o-mini-2024-07-18_selfref,40,34,0.85
+gpt-4o-mini-2024-07-18_rar,1600,1354,0.84625
+gpt-4o-mini-2024-07-18_meta,1600,1304,0.815
+gpt-4o-mini-2024-07-18_selfref,1600,1288,0.805
+gpt-4o-mini-2024-07-18_selfcon,1600,1289,0.805625
+gpt-4o-mini-2024-07-18_contr,1600,1366,0.85375
+gpt-4o-mini-2024-07-18_stepback,1600,1267,0.791875
+gpt-4o-mini-2024-07-18_sgicl,1600,1135,0.709375
+gpt-4o-mini-2024-07-18,1600,1368,0.855
