@@ -1,0 +1,44 @@
+{
+  "classifier": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Meal: Loaded Potato Soup\nPlate: Dinner Plate, Dessert Plate, Bowl, Coupe Plate, None",
+        "answer": "Bowl"
+      },
+      {
+        "augmented": true,
+        "question": "Meal: Meatballs With Orzo and Italian Vegetables\nPlate: Dinner Plate, Dessert Plate, Bowl, Coupe Plate, None",
+        "answer": "Dinner Plate"
+      },
+      {
+        "augmented": true,
+        "question": "Meal: Tiramisu\nPlate: Dinner Plate, Dessert Plate, Bowl, Coupe Plate, None",
+        "answer": "Dessert Plate"
+      }
+    ],
+    "signature": {
+      "instructions": "You are a helpful table-setting robot. Given a meal, determine the appropriate type of plate or bowl to use for serving it. What type of cutlery is needed to enjoy that meal?",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

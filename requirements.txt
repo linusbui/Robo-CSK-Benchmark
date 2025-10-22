@@ -2,9 +2,9 @@ wordninja~=2.0.0
 nltk~=3.9
 pandas~=1.5.2
 ai2thor~=5.0.0
-numpy~=1.24.3
+numpy~=1.26.4
 spacy~=3.7.2
-openai~=1.59.6
+openai
 tensorflow-datasets~=4.9.2
 sentence-transformers~=3.1.1
 torch~=2.4.1
@@ -12,3 +12,4 @@ transformers~=4.46.3
 accelerate>=0.26.0
 bitsandbytes~=0.45.0
 tqdm~=4.67.1
+dspy~=3.0.3

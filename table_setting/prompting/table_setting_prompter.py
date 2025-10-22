@@ -2,6 +2,10 @@ import pandas as pd
 from tqdm import tqdm
 import os.path
 
+import dspy
+from dspy.teleprompt import MIPROv2
+from typing import Literal
+
 from table_setting.data_extraction.utensils_plates import Utensil, Plate
 from table_setting.prompting.table_setting_model_result import TableSettingModelResult
 from utils.prompter import Prompter
@@ -537,6 +541,68 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
         add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'table_setting')
         write_log_to_file(logs_cut, prompter.model_name, 'cutlery_contr', 'table_setting')
         write_log_to_file(logs_plat, prompter.model_name, 'plate_contr', 'table_setting')
+
+
+def prompt_dspy(lm: dspy.LM, mode: str):
+    dspy.configure(lm=lm)
+
+    save_path = 'table_setting/results/optimized.json'
+
+    # Dataset creation
+    trainset = []
+    testset = []
+    data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip')
+    for index, row in data.iterrows():
+        meal = row['name']
+        plate = get_fitting_plate(row)
+        question = f'Meal: {meal}\nPlate: {plates_string}'
+        testset.append(dspy.Example(question=question, answer=plate).with_inputs('question'))
+        if index < 50:
+            trainset.append(dspy.Example(question=question, answer=plate).with_inputs('question'))
+    
+    class ClassifyPlate(dspy.Signature):
+        """Choose fitting plate for the meal"""
+        question: str = dspy.InputField()
+        answer: Literal[tuple([str(plate) for plate in Plate])] = dspy.OutputField()
+
+    class TableSetting(dspy.Module):
+        def __init__(self):
+            self.classifier = dspy.Predict(ClassifyPlate.with_instructions('Imagine you are a robot setting a table for a meal. What are the types of cutlery you would use to eat that meal?'))
+        
+        def forward(self, question):
+            return self.classifier(question=question)
+    
+    if mode == 'optim':
+        # Optimizing
+        teleprompter = MIPROv2(
+            metric = dspy.evaluate.metrics.answer_exact_match,
+            auto = 'light'
+        )
+
+        print('Optimizing with miprov2')
+
+        optimized_program = teleprompter.compile(
+            TableSetting(),
+            trainset = trainset,
+            max_bootstrapped_demos = 0,
+            max_labeled_demos = 0
+        )
+
+        optimized_program.save(save_path, save_program = False)
+
+        # Evaluate optimized program
+        print("Evaluate optimized program...")
+        eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True)
+        eval(optimized_program)
+
+    if mode == 'eval':
+        loaded_program = TableSetting()
+        if os.path.isfile(save_path):
+            loaded_program.load(save_path)
+            eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True)
+            eval(loaded_program)
+        else:
+            print('No saved model was found!')
 
 
 def get_fitting_plate(row) -> Plate:

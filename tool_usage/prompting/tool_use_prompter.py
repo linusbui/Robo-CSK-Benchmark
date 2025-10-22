@@ -1,9 +1,15 @@
 import ast
 import random
 
+from dspy.datasets.gsm8k import GSM8K
+
 import pandas as pd
 from tqdm import tqdm
 import os.path
+
+import dspy
+from dspy.teleprompt import MIPROv2
+from typing import Literal
 
 from tool_usage.prompting.tool_use_result import ToolSubstitutionResult
 from utils.prompter import Prompter
@@ -350,6 +356,89 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
         write_model_results_to_file(results, prompter.model_name, 'contr', 'tool_usage')
         add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tool_usage')
         write_log_to_file(logs, prompter.model_name, 'contr', 'tool_usage')
+
+
+def prompt_dspy(lm: dspy.LM, mode: str):
+    dspy.configure(lm=lm)
+
+    save_path = 'tool_usage/results/optimized.json'
+
+    # Dataset creation
+    trainset = []
+    testset = []
+    questions = pd.read_csv('tool_usage/tool_usage_multichoice_questions.csv', delimiter=',', on_bad_lines='skip')
+    questions['Wrong_Tools'] = questions['Wrong_Tools'].apply(ast.literal_eval)
+    for index, row in questions.iterrows():
+        task = row['Task']
+        corr_tool = row['Correct_Tool']
+        choices = row['Wrong_Tools'] + [corr_tool]
+        random.shuffle(choices)
+        choices_string = ', '.join([c for c in choices])
+        question = f'Task: {task}\nTools: {choices_string}'
+        testset.append(dspy.Example(question=question, answer=corr_tool).with_inputs('question'))
+        if index < 50:
+            trainset.append(dspy.Example(question=question, answer=corr_tool).with_inputs('question'))
+
+
+    def one_word_answer(args, pred):
+        return 1.0 if len(pred.answer.split()) == 1 else 0.0
+
+    class ClassifyTool(dspy.Signature):
+        """Classify tools for task"""
+        question: str = dspy.InputField()
+        answer: str = dspy.OutputField()
+
+    class ToolUsage(dspy.Module):
+        def __init__(self):
+            classifier = dspy.Predict(
+                dspy.Signature(
+                    'question -> answer: str',
+                    instructions = 'Imagine you are a robot in a household environment being confronted with a task and a list of tools. What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.' 
+                )
+            )
+            self.classifier = dspy.Refine(
+                module = classifier,
+                N = 3,
+                reward_fn = one_word_answer,
+                threshold = 1.0
+            )
+
+        def forward(self, question):
+            pred = self.classifier(question=question)
+            return pred
+        
+    if mode == 'optim':
+        # Optimizing
+        teleprompter = MIPROv2(
+            metric = dspy.evaluate.metrics.answer_exact_match,
+            auto = 'light'
+        )
+
+        print('Optimizing with miprov2')
+
+        optimized_program = teleprompter.compile(
+            ToolUsage(),
+            trainset = trainset,
+            max_bootstrapped_demos = 0,
+            max_labeled_demos = 0
+        )
+
+        optimized_program.save(save_path)
+
+        # Evaluate optimized program
+        print(f"Evaluate optimized program...")
+        eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True)
+        eval(optimized_program)
+
+    if mode == 'eval':
+        loaded_program = ToolUsage()
+        if os.path.isfile(save_path):
+            loaded_program.load(save_path)
+            eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True)
+            eval(loaded_program)
+        else:
+            print('No saved model was found!')
+
 
 def calculate_average(results: [ToolSubstitutionResult], model: str):
     average = {met: 0 for met in ['acc']}

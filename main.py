@@ -1,4 +1,7 @@
 import argparse
+import os
+import json
+import dspy
 
 from meta_reasoning.prompting import meta_reason_prompter_binary, meta_reason_prompter_multi_choice
 from procedural_knowledge.prompting import cooking_procedures_prompter
@@ -15,17 +18,19 @@ n_ex_contr = 4
 def main():
     parser = argparse.ArgumentParser(
         description='RoboCSKBench - Please choose the model to evaluate and the tasks to evaluate on')
-    parser.add_argument("--models", type=str, choices=["gpt", "llama", "gemma"], nargs="+",
+    parser.add_argument("--models", type=str, choices=["gpt", "llama", "gemma", "dspy"], nargs="+",
                         help="Choose one or more models to run")
     parser.add_argument("--tasks", type=str, choices=["ts", "mr_b", "mr_mc", "to_us", "ti_up_o", "ti_up_mc", "proc_b", "proc_mc"],
                         nargs="+", help="Choose one or more tasks to run")
     parser.add_argument('--techs' ,type=str, choices=['base', 'rar', 'meta', 'contr', 'selfcon', 'selfref', 'sgicl', 'stepback'],
                         nargs="+")
+    parser.add_argument('--mode', type=str, choices=['optim', 'eval'], help='Choose between dspy optimizing + evaluation and dspy evaluation only')
     parser.add_argument("--new_tok", type=int, default=1000, help="Maximum number of new tokens for the model output")
     parser.add_argument("--num_q", type=int, default=None, help="Number of questions to be asked in each task. Mostly for testing.")
     args = parser.parse_args()
 
     num_runs = args.num_q
+    mode = args.mode
 
     prompters = []
     # List of prompters with higher temperature for Self Constistency
@@ -55,6 +60,16 @@ def main():
             gemma = GemmaPrompter(args.new_tok)
             prompters.append(gemma)
         print(f'Evaluating on the following Gemma 2 model: {gemma.model_name}')
+    # Dspy optimization
+    if "dspy" in args.models:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        key = json.load(open(os.path.join(script_dir, 'credentials.json')))['api_key']
+        lm = dspy.LM('openai/gpt-4o-mini', api_key=key)
+        if 'ts' in args.tasks:
+            table_setting_prompter.prompt_dspy(lm, mode)
+        if 'to_us' in args.tasks:
+            tool_use_prompter.prompt_dspy(lm, mode)
+        exit()
 
     # Decide which tasks to evaluate with which prompting techniques:
     if "ts" in args.tasks:
