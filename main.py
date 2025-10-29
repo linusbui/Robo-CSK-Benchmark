@@ -24,13 +24,20 @@ def main():
                         nargs="+", help="Choose one or more tasks to run")
     parser.add_argument('--techs' ,type=str, choices=['base', 'rar', 'meta', 'contr', 'selfcon', 'selfref', 'sgicl', 'stepback'],
                         nargs="+")
-    parser.add_argument('--mode', type=str, choices=['optim', 'eval'], help='Choose between dspy optimizing + evaluation and dspy evaluation only')
+    parser.add_argument('--mode', type=str, choices=['scratch', 'role', 'eval', 'show', 'base'],
+                        help='Select between optimizing from scratch or role based prompt, evaluating current saved program and showing current saved prompts')
     parser.add_argument("--new_tok", type=int, default=1000, help="Maximum number of new tokens for the model output")
     parser.add_argument("--num_q", type=int, default=None, help="Number of questions to be asked in each task. Mostly for testing.")
     args = parser.parse_args()
 
     num_runs = args.num_q
     mode = args.mode
+
+    # Disable dspy caching
+    dspy.configure_cache(
+    enable_disk_cache=False,
+    enable_memory_cache=False,
+    )
 
     prompters = []
     # List of prompters with higher temperature for Self Constistency

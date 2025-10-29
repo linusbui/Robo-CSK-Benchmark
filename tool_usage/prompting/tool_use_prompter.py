@@ -360,8 +360,14 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
 
 def prompt_dspy(lm: dspy.LM, mode: str):
     dspy.configure(lm=lm)
+    save_path = 'tool_usage/results/dspy_optimized'
+    res_path = 'tool_usage/results/dspy_eval.csv'
+    n_train = 50
 
-    save_path = 'tool_usage/results/optimized.json'
+    if mode == 'scratch':
+        instruct = ''
+    if mode == 'role' or mode == 'base':
+        instruct = 'Imagine you are a robot in a household environment being confronted with a task and a list of tools. What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.'
 
     # Dataset creation
     trainset = []
@@ -376,24 +382,18 @@ def prompt_dspy(lm: dspy.LM, mode: str):
         choices_string = ', '.join([c for c in choices])
         question = f'Task: {task}\nTools: {choices_string}'
         testset.append(dspy.Example(question=question, answer=corr_tool).with_inputs('question'))
-        if index < 50:
+        if index < n_train:
             trainset.append(dspy.Example(question=question, answer=corr_tool).with_inputs('question'))
-
 
     def one_word_answer(args, pred):
         return 1.0 if len(pred.answer.split()) == 1 else 0.0
-
-    class ClassifyTool(dspy.Signature):
-        """Classify tools for task"""
-        question: str = dspy.InputField()
-        answer: str = dspy.OutputField()
 
     class ToolUsage(dspy.Module):
         def __init__(self):
             classifier = dspy.Predict(
                 dspy.Signature(
                     'question -> answer: str',
-                    instructions = 'Imagine you are a robot in a household environment being confronted with a task and a list of tools. What is the single tool from the given list that you think is most suitable to help you execute your task? Please only answer with the tool you chose.' 
+                    instructions = instruct
                 )
             )
             self.classifier = dspy.Refine(
@@ -406,12 +406,49 @@ def prompt_dspy(lm: dspy.LM, mode: str):
         def forward(self, question):
             pred = self.classifier(question=question)
             return pred
-        
-    if mode == 'optim':
+    
+    # show current saved program
+    if mode == 'show':
+        if os.path.isdir(save_path):
+            loaded_program = dspy.load(save_path)
+            print('\nSummary of dspy-optimized prompts:')
+            for name, pred in loaded_program.named_predictors():
+                print(f"Predictor: {name}")
+                print("Prompt:", pred.signature.instructions)
+        else:
+            print('No saved model was found!')
+        return
+    
+    # evaluate current saved program
+    if mode == 'eval':
+        if os.path.isdir(save_path):
+            loaded_program = dspy.load(save_path)
+            eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True, display_table=True)
+
+            print('\nSummary of dspy-optimized prompts:')
+            for name, pred in loaded_program.named_predictors():
+                print(f"Predictor: {name}")
+                print("Prompt:", pred.signature.instructions)
+            print('\nEvaluating cutlery prompts')
+            eval(loaded_program)
+        else:
+            print('No saved model was found!')
+        return
+    
+    # evaluate DSPy program with RoboCSKBench prompt in signature
+    if mode == 'base':
+        module = ToolUsage()
+        eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True, save_as_csv=res_path)
+        # Evaluate optimized program
+        print('\nEvaluating basic program')
+        eval(module)
+
+    # Optimize and evaluate program, either from basic signature or from signature with instructions  
+    if mode == 'scratch' or mode == 'role':
         # Optimizing
         teleprompter = MIPROv2(
             metric = dspy.evaluate.metrics.answer_exact_match,
-            auto = 'light'
+            auto = 'medium'
         )
 
         print('Optimizing with miprov2')
@@ -423,21 +460,18 @@ def prompt_dspy(lm: dspy.LM, mode: str):
             max_labeled_demos = 0
         )
 
-        optimized_program.save(save_path)
+        optimized_program.save(save_path, save_program = True)
+
+        # Give model summary
+        print('\nSummary of dspy-optimized prompts for cutlery:')
+        for name, pred in optimized_program.named_predictors():
+            print(f"Predictor: {name}")
+            print("Prompt:", pred.signature.instructions)
 
         # Evaluate optimized program
-        print(f"Evaluate optimized program...")
-        eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True)
+        print("\nEvaluating optimized program")
+        eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True, save_as_csv=res_path, display_table=True)
         eval(optimized_program)
-
-    if mode == 'eval':
-        loaded_program = ToolUsage()
-        if os.path.isfile(save_path):
-            loaded_program.load(save_path)
-            eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True)
-            eval(loaded_program)
-        else:
-            print('No saved model was found!')
 
 
 def calculate_average(results: [ToolSubstitutionResult], model: str):

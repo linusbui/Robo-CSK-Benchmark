@@ -545,64 +545,193 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
 
 def prompt_dspy(lm: dspy.LM, mode: str):
     dspy.configure(lm=lm)
+    save_path_cut = 'table_setting/results/dspy_optimized_cutlery'
+    save_path_plat = 'table_setting/results/dspy_optimized_plate'
+    res_path_cut = 'table_setting/results/dspy_eval_cutlery.csv'
+    res_path_plate = 'table_setting/results/dspy_eval_plate.csv'
+    n_train = 50
 
-    save_path = 'table_setting/results/optimized.json'
-
-    # Dataset creation
-    trainset = []
-    testset = []
-    data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip')
-    for index, row in data.iterrows():
-        meal = row['name']
-        plate = get_fitting_plate(row)
-        question = f'Meal: {meal}\nPlate: {plates_string}'
-        testset.append(dspy.Example(question=question, answer=plate).with_inputs('question'))
-        if index < 50:
-            trainset.append(dspy.Example(question=question, answer=plate).with_inputs('question'))
+    if mode == 'scratch':
+        instruct_plat = ''
+        instruct_cut = ''
+    if mode == 'role' or mode == 'base':
+        instruct_plat = f'Imagine you are a robot setting a table for a meal. What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}'
+        instruct_cut = f'Imagine you are a robot setting a table for a meal. What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}'
     
+    # DSPy class definitions
+    # Prediction signatures
     class ClassifyPlate(dspy.Signature):
         """Choose fitting plate for the meal"""
         question: str = dspy.InputField()
         answer: Literal[tuple([str(plate) for plate in Plate])] = dspy.OutputField()
+    
+    class ClassifyCutlery(dspy.Signature):
+        """Choose fitting cutlery for the meal"""
+        question: str = dspy.InputField()
+        answer: list[Literal[tuple([str(cut) for cut in Utensil])]] = dspy.OutputField()
 
-    class TableSetting(dspy.Module):
+    class PlatePrediction(dspy.Module):
         def __init__(self):
-            self.classifier = dspy.Predict(ClassifyPlate.with_instructions('Imagine you are a robot setting a table for a meal. What are the types of cutlery you would use to eat that meal?'))
+            self.classifier = dspy.Predict(ClassifyPlate.with_instructions(instruct_plat))
         
         def forward(self, question):
             return self.classifier(question=question)
+        
+    # Cutlery prediction from role based prompt
+    class CutleryPrediction(dspy.Module):
+        def __init__(self):
+            self.classifier = dspy.Predict(ClassifyCutlery.with_instructions(instruct_cut))
+        
+        def forward(self, question):
+            return self.classifier(question=question)
+        
+    # Jaccard accuracy in dspy
+    def dspy_jacc(example, pred, trace=None):
+        intersect = set([c.lower for c in example.answer]) & set([c.lower for c in pred.answer])
+        union = set(example + pred)
+        score = len(intersect) / len(union)
+        return score 
     
-    if mode == 'optim':
+    # Jaccard accuracy in dspy
+    def dspy_jacc(example, pred, trace=None):
+        intersect = set([c.lower for c in example.answer]) & set([c.lower for c in pred.answer])
+        union = set([c.lower for c in example.answer] + [c.lower for c in pred.answer])
+        score = len(intersect) / len(union)
+        return score
+    
+    
+    # Dataset creation
+    trainset_plat = []
+    testset_plat = []
+    trainset_cut = []
+    testset_cut = []
+    data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip')
+    for index, row in data.iterrows():
+        meal = row['name']
+        plate = get_fitting_plate(row)
+        cut = [str(u) for u in get_utensils(row)]
+        question_plat = f'Meal: {meal}\nPlate: {plates_string}'
+        question_cut = f'Meal: {meal}\nCutlery: {utensils_string}'
+        testset_plat.append(dspy.Example(question=question_plat, answer=plate).with_inputs('question'))
+        testset_cut.append(dspy.Example(question=question_cut, answer=cut).with_inputs('question'))
+        if index < n_train:
+            trainset_plat.append(dspy.Example(question=question_plat, answer=plate).with_inputs('question'))
+            trainset_cut.append(dspy.Example(question=question_cut, answer=cut).with_inputs('question'))
+    
+    # show current saved program
+    if mode == 'show':
+        if os.path.isdir(save_path_cut):
+            loaded_program = dspy.load(save_path_cut)
+            print('\nSummary of dspy-optimized prompts for cutlery:')
+            #print(f'Signature:\n{loaded_program.signature}')
+            #print(f'Demos:\n{loaded_program.demos}')
+            for name, pred in loaded_program.named_predictors():
+                print(f"Predictor: {name}")
+                print("Prompt:", pred.signature.instructions)
+        else:
+            print('No saved cutlery model was found!')
+        if os.path.isdir(save_path_plat):
+            loaded_program = dspy.load(save_path_plat)
+            print('\nSummary of dspy-optimized prompts for plate:')
+            for name, pred in loaded_program.named_predictors():
+                print(f"Predictor: {name}")
+                print(f"Prompt: {pred.signature.instructions}")
+        else:
+            print('No saved plate model was found!')
+        return
+    
+    # evaluate current saved program
+    if mode == 'eval':
+        if os.path.isdir(save_path_cut):
+            loaded_program = dspy.load(save_path_cut)
+            eval = dspy.Evaluate(devset=testset_cut, metric=dspy_jacc, num_threads = 16, display_progress=True, save_as_csv=res_path_cut)
+
+            print('\nSummary of dspy-optimized prompts for cutlery:')
+            for name, pred in loaded_program.named_predictors():
+                print(f"Predictor: {name}")
+                print("Prompt:", pred.signature.instructions)
+            
+            print('\nEvaluating cutlery prompts')
+            eval(loaded_program)
+        else:
+            print('No saved cutlery model was found!')
+        if os.path.isdir(save_path_plat):
+            loaded_program = dspy.load(save_path_plat)
+            eval = dspy.Evaluate(devset=testset_plat, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True, save_as_csv=res_path_plate)
+
+            print('\nSummary of dspy-optimized prompts for plate:')
+            for name, pred in loaded_program.named_predictors():
+                print(f"Predictor: {name}")
+                print("Prompt:", pred.signature.instructions)
+
+            print('\nEvaluating plate prompts')
+            eval(loaded_program)
+        else:
+            print('No saved plate model was found!')
+        return
+
+    # evaluate DSPy program with RoboCSKBench prompt in signature
+    if mode == 'base':
+        module_cut = CutleryPrediction()
+        module_plat = PlatePrediction()
+
+        eval_cut = dspy.Evaluate(devset=testset_cut, metric=dspy_jacc, num_threads = 16, display_progress=True, save_as_csv=res_path_cut)
+        eval_plat = dspy.Evaluate(devset=testset_plat, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True, save_as_csv=res_path_plate)
+
+        # Evaluate optimized program
+        print('\nEvaluating cutlery prompts')
+        eval_cut(module_cut)
+        print('Evaluating plate prompts')
+        eval_plat(module_plat)
+    
+    # Optimize and evaluate program, either from basic signature or from signature with instructions  
+    if mode == 'scratch' or mode == 'role':
         # Optimizing
-        teleprompter = MIPROv2(
+        teleprompter_cut = MIPROv2(
+            metric = dspy_jacc,
+            auto = 'medium'
+        )
+        teleprompter_plat = MIPROv2(
             metric = dspy.evaluate.metrics.answer_exact_match,
-            auto = 'light'
+            auto = 'medium'
         )
 
-        print('Optimizing with miprov2')
-
-        optimized_program = teleprompter.compile(
-            TableSetting(),
-            trainset = trainset,
+        optimized_cut_program = teleprompter_cut.compile(
+            CutleryPrediction(),
+            trainset = trainset_cut,
+            max_bootstrapped_demos = 0,
+            max_labeled_demos = 0
+        )
+        optimized_plat_program = teleprompter_plat.compile(
+            PlatePrediction(),
+            trainset = trainset_plat,
             max_bootstrapped_demos = 0,
             max_labeled_demos = 0
         )
 
-        optimized_program.save(save_path, save_program = False)
+        optimized_cut_program.save(save_path_cut, save_program = True)
+        optimized_plat_program.save(save_path_plat, save_program = True)
+
+        # Give model summary
+        print('\nSummary of dspy-optimized prompts for cutlery:')
+        for name, pred in optimized_cut_program.named_predictors():
+            print(f"Predictor: {name}")
+            print("Prompt:", pred.signature.instructions)
+
+        print('\nSummary of dspy-optimized prompts for plate:')
+        for name, pred in optimized_plat_program.named_predictors():
+            print(f"Predictor: {name}")
+            print("Prompt:", pred.signature.instructions)
+
+        # Evaluating
+        eval_cut = dspy.Evaluate(devset=testset_cut, metric=dspy_jacc, num_threads = 16, display_progress=True, save_as_csv=res_path_cut)
+        eval_plat = dspy.Evaluate(devset=testset_plat, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True, save_as_csv=res_path_plate)
 
         # Evaluate optimized program
-        print("Evaluate optimized program...")
-        eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True)
-        eval(optimized_program)
-
-    if mode == 'eval':
-        loaded_program = TableSetting()
-        if os.path.isfile(save_path):
-            loaded_program.load(save_path)
-            eval = dspy.Evaluate(devset=testset, metric=dspy.evaluate.metrics.answer_exact_match, num_threads = 16, display_progress=True)
-            eval(loaded_program)
-        else:
-            print('No saved model was found!')
+        print('\nEvaluating cutlery prompts')
+        eval_cut(optimized_cut_program)
+        print('Evaluating plate prompts')
+        eval_plat(optimized_plat_program)
 
 
 def get_fitting_plate(row) -> Plate:
