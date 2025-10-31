@@ -14,10 +14,10 @@ from utils.logging import BasicLogEntry, StepbackLogEntry, write_log_to_file, wr
 system_msg = 'Imagine you are a robot tidying up a household environment, being confronted with an object and a possible list of locations to put it.'
 user_msg = 'What is the single location from the given list that you think is the most suitable place to put the object? Please only answer with the location you chose.'
 
-def prompt_all_models(prompters: [Prompter], num_runs:int):
+def prompt_all_models(prompters: [Prompter], lower: int, bound):
     for prompter in prompters:
         results = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task'):
@@ -30,17 +30,17 @@ def prompt_all_models(prompters: [Prompter], num_runs:int):
             res = prompter.prompt_model(system_msg, user_msg, question)
             tup = TidyUpMultiChoiceResult(obj, corr_loc, res, choices)
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name, '', 'tidy_up/results_multi', False)
-        add_to_model_overview(calculate_average(results, prompter.model_name), 'tidy_up/results_multi', False)
+        write_model_results_to_file(results, prompter.model_name, '', 'tidy_up/results_multi', lower, bound, False)
+        add_to_model_overview(calculate_average(results, prompter.model_name), 'tidy_up/results_multi', lower, bound, False)
 
 
 user_msg_rar = 'What is the single location from the given list that you think is the most suitable place to put the object? Reword and elaborate on the inquiry, then answer only with the location you chose.'
 
-def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
+def prompt_all_models_rar(prompters: [Prompter], lower: int, bound):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with RaR Prompting'):
@@ -56,9 +56,9 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, res, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name, 'rar', 'tidy_up/results_multi', False)
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name, 'rar', 'tidy_up')
+        write_model_results_to_file(results, prompter.model_name, 'rar', 'tidy_up/results_multi', lower, bound, False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'tidy_up/results_multi', lower, bound, False)
+        write_log_to_file(logs, prompter.model_name, 'rar', 'tidy_up', lower, bound)
 
 
 user_msg_meta = '''
@@ -71,11 +71,11 @@ What is the single location from the given list that you think is the most suita
 6. Repeat your final choice.
 '''
 
-def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
+def prompt_all_models_meta(prompters: [Prompter], lower: int, bound):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Metacognitive Prompting'):
@@ -91,18 +91,18 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = BasicLogEntry(question, res, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name, 'meta', 'tidy_up/results_multi', False)
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name, 'meta', 'tidy_up')
+        write_model_results_to_file(results, prompter.model_name, 'meta', 'tidy_up/results_multi', lower, bound, False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'tidy_up/results_multi', lower, bound, False)
+        write_log_to_file(logs, prompter.model_name, 'meta', 'tidy_up', lower, bound)
 
 
 user_msg_selfcon = 'What is the single location from the given list that you think is the most suitable place to put the object? Think step by step before answering with the single location of your choosing.'
 
-def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
+def prompt_all_models_selfcon(prompters: [Prompter], n_it: int, lower: int, bound):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Self-Consistency Prompting'):
@@ -127,9 +127,9 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
             log.update({'final_answer': final_pred,
                         'correct_answer': corr_loc})
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name, 'selfcon', 'tidy_up/results_multi', False)
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'tidy_up/results_multi', False)
-        write_general_log_to_file(logs, prompter.model_name, 'selfcon', 'tidy_up')
+        write_model_results_to_file(results, prompter.model_name, 'selfcon', 'tidy_up/results_multi', lower, bound, False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'tidy_up/results_multi', lower, bound, False)
+        write_general_log_to_file(logs, prompter.model_name, 'selfcon', 'tidy_up', lower, bound)
 
 
 user_msg_initial = 'What is the single location from the given list that you think is the most suitable place to put the object? Generate your answer in the following format:\nExplanation: <explanation>\nLocation: <location>'
@@ -137,11 +137,11 @@ user_msg_feedback = "Provide Feedback on the answer. The feedback should only ev
 system_msg_refine = 'You are given an answer to a multiple choice question regarding tidying up a household and corresponding feedback.'
 user_msg_refine = 'Improve upon the answer based on the feedback. Remember that the answer has to be chosen from the given list. Generate your answer in the following format:\nExplanation: <explanation>\nLocation: <location>'
 
-def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
+def prompt_all_models_selfref(prompters: [Prompter], n_it: int, lower: int, bound):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Self-Refine Prompting'):
@@ -184,19 +184,19 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
             results.append(tup)
             log = BasicLogEntry(question, full_conv, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name, 'selfref', 'tidy_up/results_multi', False)
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name, 'selfref', 'tidy_up')
+        write_model_results_to_file(results, prompter.model_name, 'selfref', 'tidy_up/results_multi', lower, bound, False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'tidy_up/results_multi', lower, bound, False)
+        write_log_to_file(logs, prompter.model_name, 'selfref', 'tidy_up', lower, bound)
 
 
 system_msg_principle = 'You are given a multiple-choice question. Your task is to extract the underlying concepts and principles involved in choosing the right answer.'
 user_msg_principle = 'Only answer with the 5 most important concepts and principles.'
 
-def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
+def prompt_all_models_stepback(prompters: [Prompter], lower: int, bound):
     for prompter in prompters:
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Stepback Prompting'):
@@ -221,16 +221,16 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             results.append(tup)
             log = StepbackLogEntry(p_question, principles, question, res, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name, 'stepback', 'tidy_up/results_multi', False)
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name, 'stepback', 'tidy_up')
+        write_model_results_to_file(results, prompter.model_name, 'stepback', 'tidy_up/results_multi', lower, bound, False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'tidy_up/results_multi', lower, bound, False)
+        write_log_to_file(logs, prompter.model_name, 'stepback', 'tidy_up', lower, bound)
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
 user_msg_example = 'For the given location, generate an object typically found in that location. Answer only with the object.'
 user_msg_sgicl = 'You are given an object, a list of locations and some examples. What is the single location from the given list that you think is the most suitable place to put the object? Please only answer with the location you chose.'
 
-def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
+def prompt_all_models_sgicl(prompters: [Prompter], n_ex: int, lower: int, bound):
     for prompter in prompters:
         # Generate examples if needed
         ex_file = f'tidy_up/examples/tidy_up_multichoice_examples_{prompter.model_name}.csv'
@@ -263,7 +263,7 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
         # few shot prompting
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with SG-ICL Prompting'):
@@ -280,16 +280,16 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
             results.append(tup)
             log = BasicLogEntry(question, res, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name, 'sgicl', 'tidy_up/results_multi', False)
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name, 'sgicl', 'tidy_up')
+        write_model_results_to_file(results, prompter.model_name, 'sgicl', 'tidy_up/results_multi', lower, bound, False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'tidy_up/results_multi', lower, bound, False)
+        write_log_to_file(logs, prompter.model_name, 'sgicl', 'tidy_up', lower, bound)
 
 
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
 user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong facts leading to a wrong final answer. Keep the overall structure the same.'
 user_msg_contr = 'You are given an object and a list of locations. Additionaly you are given some right and wrong answers to similar questions. What is the single location from the given list that you think is the most suitable place to put the object? Generate your answer in the following format:\nExplanation: <explanation>\nLocation: <location>.'
 
-def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_cot: int):
+def prompt_all_models_contr(prompters: [Prompter], n_ex: int, n_cot: int, lower: int, bound):
     for prompter in prompters:
         # Generate examples if needed
         ex_file = f'tidy_up/examples/tidy_up_multichoice_cot_examples_{prompter.model_name}.csv'
@@ -332,7 +332,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
         # few shot prompting
         results = []
         logs = []
-        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        questions = pd.read_csv('tidy_up/tidy_up_multichoice.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         questions['Wrong_Locations'] = questions['Wrong_Locations'].apply(ast.literal_eval)
         for index, row in tqdm(questions.iterrows(),
                                f'Prompting {prompter.model_name} for the multiple choice Tidy Up task with Contrastive CoT Prompting'):
@@ -349,9 +349,9 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             results.append(tup)
             log = BasicLogEntry(question, res, pred_loc, corr_loc)
             logs.append(log)
-        write_model_results_to_file(results, prompter.model_name, 'contr', 'tidy_up/results_multi', False)
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tidy_up/results_multi', False)
-        write_log_to_file(logs, prompter.model_name, 'contr', 'tidy_up')
+        write_model_results_to_file(results, prompter.model_name, 'contr', 'tidy_up/results_multi', lower, bound, False)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'tidy_up/results_multi', lower, bound, False)
+        write_log_to_file(logs, prompter.model_name, 'contr', 'tidy_up', lower, bound)
 
 
 def calculate_average(results: [TidyUpMultiChoiceResult], model: str):

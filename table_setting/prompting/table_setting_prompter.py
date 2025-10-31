@@ -19,9 +19,9 @@ system_msg = 'Imagine you are a robot setting a table for a meal.'
 user_msg_cut = f'What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}'
 user_msg_plat = f'What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}'
 
-def prompt_all_models(prompters: [Prompter], num_runs: int):
+def prompt_all_models(prompters: [Prompter], lower: int, bound):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         results = []
         for index, row in tqdm(data.iterrows(), f'Prompting {prompter.model_name} for the Table Setting task'):
             # setup meal name & get gold standard data
@@ -41,16 +41,16 @@ def prompt_all_models(prompters: [Prompter], num_runs: int):
             tup.add_predicted_plate(transform_plate_prediction(res))
 
             results.append(tup)
-        write_model_results_to_file(results, prompter.model_name, '', 'table_setting')
-        add_to_model_overview(calculate_average(results, prompter.model_name), 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, '', 'table_setting', lower, bound)
+        add_to_model_overview(calculate_average(results, prompter.model_name), 'table_setting', lower, bound)
 
 
 user_msg_cut_rar = f'What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}. Reword and elaborate on the inquiry, then provide your final answer.'
 user_msg_plat_rar = f'What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}. Reword and elaborate on the inquiry, then provide your final answer.'
 
-def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
+def prompt_all_models_rar(prompters: [Prompter], lower: int, bound):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         results = []
         logs_cut = []
         logs_plat = []
@@ -78,10 +78,10 @@ def prompt_all_models_rar(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name, 'rar', 'table_setting')
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_rar', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name, 'plate_rar', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'rar', 'table_setting', lower, bound)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_rar'), 'table_setting', lower, bound)
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_rar', 'table_setting', lower, bound)
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_rar', 'table_setting', lower, bound)
 
 
 user_msg_cut_meta = f'''What are the types of cutlery you would use to eat that meal? Please choose from the following {utensils_string}. As you perform this task, follow these steps:
@@ -102,9 +102,9 @@ user_msg_plat_meta = f'''What are the type of plate you would use to eat that me
 6. Repeat your final choice.
 '''
 
-def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
+def prompt_all_models_meta(prompters: [Prompter], lower: int, bound):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         results = []
         logs_cut = []
         logs_plat = []
@@ -132,18 +132,18 @@ def prompt_all_models_meta(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name, 'meta', 'table_setting')
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_meta', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name, 'plate_meta', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'meta', 'table_setting', lower, bound)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_meta'), 'table_setting', lower, bound)
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_meta', 'table_setting', lower, bound)
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_meta', 'table_setting', lower, bound)
 
 
 user_msg_cut_selfcon = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}. Think step by step before answering with the cutlery of your choosing.'
 user_msg_plat_selfcon = f'What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string}. Think step by step before answering with your chosen plate.'
 
-def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
+def prompt_all_models_selfcon(prompters: [Prompter], n_it: int, lower: int, bound):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         results = []
         logs_cut = []
         logs_plat = []
@@ -189,10 +189,10 @@ def prompt_all_models_selfcon(prompters: [Prompter], num_runs: int, n_it: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name, 'selfcon', 'table_setting')
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'table_setting')
-        write_general_log_to_file(logs_cut, prompter.model_name, 'cutlery_selfcon', 'table_setting')
-        write_general_log_to_file(logs_plat, prompter.model_name, 'plate_selfcon', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'selfcon', 'table_setting', lower, bound)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_selfcon'), 'table_setting', lower, bound)
+        write_general_log_to_file(logs_cut, prompter.model_name, 'cutlery_selfcon', 'table_setting', lower, bound)
+        write_general_log_to_file(logs_plat, prompter.model_name, 'plate_selfcon', 'table_setting', lower, bound)
 
 
 user_msg_cut_initial = f'What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}. Generate your answer in the following format:\nExplanation: <explanation>\nCutlery: <cutlery>'
@@ -206,9 +206,9 @@ system_msg_refine = 'You are given an answer to a multiple choice question regar
 user_msg_cut_refine = 'Improve upon the answer based on the feedback. Remember that the answer has to be chosen from the given list. Generate your answer in the following format:\nExplanation: <explanation>\nCutlery: <cutlery>'
 user_msg_plat_refine = 'Improve upon the answer based on the feedback. Remember that the answer has to be chosen from the given list. Generate your answer in the following format:\nExplanation: <explanation>\nPlate: <plate>'
 
-def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
+def prompt_all_models_selfref(prompters: [Prompter], n_it: int, lower: int, bound):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         results = []
         logs_cut = []
         logs_plat = []
@@ -284,19 +284,19 @@ def prompt_all_models_selfref(prompters: [Prompter], num_runs: int, n_it: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name, 'selfref', 'table_setting')
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_selfref', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name, 'plate_selfref', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'selfref', 'table_setting', lower, bound)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_selfref'), 'table_setting', lower, bound)
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_selfref', 'table_setting', lower, bound)
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_selfref', 'table_setting', lower, bound)
 
 
 system_msg_cut_principle = 'You are given the title of a meal. Your task is to extract the underlying concepts and principles involved in choosing the right cutlery to eat that meal with.'
 system_msg_plat_principle = 'You are given the title of a meal. Your task is to extract the underlying concepts and principles involved in choosing the right plate to eat that meal on.'
 user_msg__principle = 'Only answer with the 5 most important concepts and principles.'
 
-def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
+def prompt_all_models_stepback(prompters: [Prompter], lower: int, bound):
     for prompter in prompters:
-        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         results = []
         logs_cut = []
         logs_plat = []
@@ -338,10 +338,10 @@ def prompt_all_models_stepback(prompters: [Prompter], num_runs: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name, 'stepback', 'table_setting')
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_stepback', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name, 'plate_stepback', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'stepback', 'table_setting', lower, bound)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_stepback'), 'table_setting', lower, bound)
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_stepback', 'table_setting', lower, bound)
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_stepback', 'table_setting', lower, bound)
 
 
 system_msg_example = 'You are helping to create questions regarding household environments.'
@@ -350,13 +350,13 @@ user_msg_plat_example = 'For the given plate, generate a a meal that can be eate
 user_msg_cut_sgicl = f'You are given a meal and some examples. What are the types of cutlery you would use to eat that meal? Please choose from the following and only answer with your choices: {utensils_string}'
 user_msg_plat_sgicl = f'You are given a meal and some examples. What is the type of plate you would use to eat that meal? Please choose one from the following and only answer with your choice: {plates_string}'
 
-def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
+def prompt_all_models_sgicl(prompters: [Prompter], n_ex: int, lower: int, bound):
     for prompter in prompters:
         # Generate examples if needed
         ex_file = f'table_setting/examples/table_setting_examples_{prompter.model_name}.csv'
         if not os.path.isfile(ex_file):
             results = []
-            questions = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=15)
+            questions = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=15)
             for index, row in tqdm(questions.iterrows(),
                                 f'Prompting {prompter.model_name} to generate Table Setting task examples'):
                 meal = row['name']
@@ -392,7 +392,7 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
             ex_plat_str = ex_plat_str + f'Meal: {meal_plat}\nPlate: {plate}\n'
 
         # few shot prompting
-        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=bound)
         results = []
         logs_cut = []
         logs_plat = []
@@ -420,10 +420,10 @@ def prompt_all_models_sgicl(prompters: [Prompter], num_runs: int, n_ex: int):
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name, 'sgicl', 'table_setting')
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_sgicl', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name, 'plate_sgicl', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'sgicl', 'table_setting', lower, bound)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_sgicl'), 'table_setting', lower, bound)
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_sgicl', 'table_setting', lower, bound)
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_sgicl', 'table_setting', lower, bound)
 
 
 system_msg_rewrite = 'You are helping in rewriting answers to questions regarding household environments.'
@@ -431,7 +431,7 @@ user_msg_rewrite = 'Rewrite the given answer by swapping key points with wrong f
 user_msg_cut_contr = f'You are given the title of a meal and some right and wrong answers to similar questions. What are the types of cutlery you would use to eat that meal? Please choose from the following: {utensils_string}, and generate your answer in the following format:\nExplanation: <explanation>\nCutlery: <cutlery>'
 user_msg_plat_contr = f'You are given the title of a meal and some right and wrong answers to similar questions. What is the type of plate you would use to eat that meal? Please choose one from the following: {plates_string}, and generate your answer in the following format:\nExplanation: <explanation>\nPlate: <plate>'
 
-def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_cot: int):
+def prompt_all_models_contr(prompters: [Prompter], n_ex: int, n_cot: int, lower: int, bound):
     for prompter in prompters:
         # Generate cutlery examples if needed
         ex_cut_file = f'table_setting/examples/table_setting_multichoice_cot_cut_examples_{prompter.model_name}.csv'
@@ -509,7 +509,7 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             ex_plat_str = ex_plat_str + f'Question: {question}\n\nRight Explanation: {cot_right}\n\nWrong Explanation: {cot_wrong}\n\n'
         
         # few shot prompting
-        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', nrows=num_runs)
+        data = pd.read_csv('table_setting/combined_prolific_data.csv', delimiter=',', on_bad_lines='skip', skiprows=range(1, lower), nrows=bound)
         results = []
         logs_cut = []
         logs_plat = []
@@ -537,10 +537,10 @@ def prompt_all_models_contr(prompters: [Prompter], num_runs: int, n_ex: int, n_c
             results.append(tup)
             logs_cut.append(log_cut)
             logs_plat.append(log_plat)
-        write_model_results_to_file(results, prompter.model_name, 'contr', 'table_setting')
-        add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'table_setting')
-        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_contr', 'table_setting')
-        write_log_to_file(logs_plat, prompter.model_name, 'plate_contr', 'table_setting')
+        write_model_results_to_file(results, prompter.model_name, 'contr', 'table_setting', lower, bound)
+        add_to_model_overview(calculate_average(results, prompter.model_name + '_contr'), 'table_setting', lower, bound)
+        write_log_to_file(logs_cut, prompter.model_name, 'cutlery_contr', 'table_setting', lower, bound)
+        write_log_to_file(logs_plat, prompter.model_name, 'plate_contr', 'table_setting', lower, bound)
 
 
 def prompt_dspy(lm: dspy.LM, mode: str):

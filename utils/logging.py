@@ -71,22 +71,38 @@ class StepbackLogEntry(ModelEvaluationResult):
         }
 
 
-def write_log_to_file(logs: [ModelEvaluationResult], model: str, tech: str, folder: str):
+def write_log_to_file(logs: [ModelEvaluationResult], model: str, tech: str, folder: str, lower: int, bound):
+    # Check for partial run
+    if not (lower == 1 and bound == None):
+        # encode end of dataset (bound = None) as -1, or return to upper
+        if bound == None:
+            upper = -1
+        else:
+            upper = bound + lower
+
     # create folder if needed
     logdir = f'{folder}/logs/{model}'
     if not os.path.isdir(logdir):
         os.makedirs(logdir)
-    file = f'{logdir}/{model}_{tech}.csv'
+    file = f'{logdir}/{model}_{tech}_{lower}_{upper}.csv'
     dict_list = [log.to_dict() for log in logs]
     df = pd.DataFrame(dict_list)
     df.to_csv(file, index=False)
 
 
-def write_general_log_to_file(logs: [dict], model: str, tech: str, folder: str):
+def write_general_log_to_file(logs: [dict], model: str, tech: str, folder: str, lower: int, bound):
+    # Check for partial run
+    if not (lower == 1 and bound == None):
+        # encode end of dataset (bound = None) as -1, or return to upper
+        if bound == None:
+            upper = -1
+        else:
+            upper = bound + lower
+
     # create folder if needed
     logdir = f'{folder}/logs/{model}'
     if not os.path.isdir(logdir):
         os.makedirs(logdir)
-    file = f'{logdir}/{model}_{tech}.csv'
+    file = f'{logdir}/{model}_{tech}_{lower}_{upper}.csv'
     df = pd.DataFrame(logs)
     df.to_csv(file, index=False)
