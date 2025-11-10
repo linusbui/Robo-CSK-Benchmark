@@ -173,8 +173,5 @@ cython_debug/
 credentials.json
 
 # Logging
-/meta_reasoning/logs
-#/procedural_knowledge/logs
-#/table_setting/logs
-#/tidy_up/logs
-#/tool_usage/logs
+# this file is too large!
+/meta_reasoning/logs/Llama-3.3-70B-Instruct/Llama-3.3-70B-Instruct_contr.csv
