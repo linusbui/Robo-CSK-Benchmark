@@ -1,0 +1,2001 @@
+question,full_answer,final_answer,correct_answer
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Lamb and Bean Nachos With Salsa Fresca
+Cutlery: ","Hands, Tongs, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Meatloaf With BBQ Sauce
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Tiramisu
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Loaded Potato Soup
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Vegan Sushi Roll with Avocado, Carrot and Cucumber
+Cutlery: ","Chopsticks, Hands","[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Spaghettini Bolognese
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Meatballs With Orzo and Italian Vegetables
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Orange Spinach Salmon Salad
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Moussaka with Rice
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Miso Broth Ramen
+Cutlery: ","Chopsticks, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.CHOPS: 'Chopsticks'>]","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Leg of Lamb With Garlic Sauce and Fresh Herbs
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Beer Battered Shrimp
+Cutlery: ","Hands, Tongs, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Beef Barbecue Casserole
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Baked Salmon with Sweet Olive Salsa
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Ginger Hazelnut Cookies
+Cutlery: ","Hands, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]",[<Utensil.HANDS: 'Hands'>]
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Cajun Chicken Sandwiches
+Cutlery: ","Hands, Knife, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]",[<Utensil.HANDS: 'Hands'>]
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Three Cheese Ravioli
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Stringy Macaroni & Cheese
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Mushroom Omelet
+Cutlery: ","Fork, Knife","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Baked Apples with Candied Walnuts
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Spring Green Salad
+Cutlery: ","Hands, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Hamburgers
+Cutlery: ","Hands, Tongs","[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Hot Apple Oatmeal
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Quinoa Salad
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Pan Fried Steak With Vegetables
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Strawberry Custard Cake
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Baked Breakfast Burritos
+Cutlery: ","Hands, Knife, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Teriyaki Pork Chops
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: White-Bean Soup with Bacon and Herbs
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Velveeta Chicken Spaghetti
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Greek Chickpea Stew
+Cutlery: ","Spoon, Fork","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Steamed Coconut Rice
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Caramelized Shallot and Mushroom Quiche
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Roasted Sweet Potato Slices
+Cutlery: ","Hands, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Sausage and Corn Quesadillas
+Cutlery: ","Hands, Knife, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Chicken Parmesan Panini
+Cutlery: ","Hands, Knife, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Eggplant Curry (Indian)
+Cutlery: ","Hands, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Eggs with Chickpeas, Spinach, and Tomato
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Brazilian Seafood Stew
+Cutlery: ","Spoon, Fork","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Asparagus and Artichoke Pasta Salad
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Chocolate Chip Cranberry Muffins
+Cutlery: ","Hands, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Baklava
+Cutlery: ","Hands, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Linguine Pasta with Shrimp and Tomatoes
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Sloppy Joes with Cornbread
+Cutlery: ","Hands, Knife, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Chillaquillas
+Cutlery: ","Hands, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Deep-Fried Plantain Rounds
+Cutlery: ","Hands, Tongs","[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Ranch and Avocado Pasta Salad
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Roasted Tomato Soup
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Mushrooms & Scrambled Eggs on Toast
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Baked Acorn Squash with Fruit
+Cutlery: ","Spoon, Fork","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Sea Bass with Gingered Vegetable Stir-Fry
+Cutlery: ","Knife, Fork, Chopsticks","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Rhubarb Bread Pudding
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Green Tomato Pie
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Classic Chili
+Cutlery: ","Spoon, Fork","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Pad Thai with Kale
+Cutlery: ","Fork, Chopsticks","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Korean-Style Cucumber Kimchi
+Cutlery: ","Hands, Chopsticks","[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: BBQ Oysters
+Cutlery: ","Hands, Knife, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Spicy Sausage Ragu With Red Peppers
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Garlic and Red Pepper Broccoli
+Cutlery: ","Hands, Tongs","[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Tropical Coleslaw
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Middle Eastern Fava Bean Stew
+Cutlery: ","Spoon, Fork","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Linguine With Sausage and Mushrooms
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Grilled Octopus with Ancho Chile Sauce
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Chicken Wings with Salsa Verde
+Cutlery: ","Hands, Tongs","[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Banh Mi (Vietnamese Pulled Pork Sandwich)
+Cutlery: ","Hands, Knife, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Veggie Pizza
+Cutlery: ","Hands, Knife, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Blueberry French Toast
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Baked Noodles and Eggplant
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Roasted Rosemary Turkey Breast
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Baked Carrots
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Dal With Chicken
+Cutlery: ","Hands, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Apple Walnut Cake
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Grilled Peaches with Cinnamon Ice Cream
+Cutlery: ","Spoon, Hands","[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Chili Prawn and Tomato Spaghetti
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Corn on the Cob with Cheese and Lime
+Cutlery: ","Hands, Tongs","[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.SKEWER: 'Skewer'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Brownies
+Cutlery: ","Hands, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Soft-Shell Crabs, With Lime Sauce
+Cutlery: ","Hands, Tongs","[<Utensil.HANDS: 'Hands'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Beef Stew with Dried Mushrooms
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Indian Spiced Shrimp
+Cutlery: ","Hands, Fork, Knife","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Stuffed Green Bell Peppers
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Herbal Tuna Salad
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Sweet and Sour Pork
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Caramel Oatmeal Bars
+Cutlery: ","Hands, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]",[<Utensil.HANDS: 'Hands'>]
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Snapper in Black Sauce
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: American Potato Salad
+Cutlery: ","Spoon, Fork","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Chicken Piccata
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Creamy Baked Mac and Cheese
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Chicken & Broccoli Cannelloni
+Cutlery: ","Knife, Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Rice With Lemon, Capers & Parsley
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Ham and Asparagus Pie
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Cauliflower in Chilli Butter Sauce
+Cutlery: ","Hands, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Fruit and Veggie Couscous
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Chicken Fingers with Tomato-Jalapeno Sauce
+Cutlery: ","Hands, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Chocolate Caramel Cake
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Mash Potatoes
+Cutlery: ","Spoon, Fork","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Tom Kha Gai (Thai Spicy Coconut Soup)
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Black Bean Chili
+Cutlery: ",Spoon,[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Lemon Garlic Salmon
+Cutlery: ","Knife, Fork","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Heirloom Tomato Salad with Basil Vinaigrette
+Cutlery: ","Fork, Spoon","[<Utensil.SPOON: 'Spoon'>, <Utensil.FORK: 'Fork'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Hands, Knife, Fork
+Meal: Steak with Mashed Potatoes
+Cutlery: Knife, Fork
+Meal: Pasta Primavera
+Cutlery: Fork, Spoon
+Meal: Creamy Tomato Basil Soup
+Cutlery: Spoon
+Meal: Vegan Spring Rolls with Peanut Dipping Sauce
+Cutlery: Hands, Chopsticks
+Meal: Chicken Alfredo Pasta
+Cutlery: Knife, Fork, Spoon
+Meal: Steak with Garlic Mashed Potatoes and Steamed Broccoli
+Cutlery: Knife, Fork
+Meal: Grilled Chicken Caesar Salad
+Cutlery: Knife, Fork
+
+Meal: Quinoa Veggie Burgers
+Cutlery: ","Hands, Knife, Fork","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"

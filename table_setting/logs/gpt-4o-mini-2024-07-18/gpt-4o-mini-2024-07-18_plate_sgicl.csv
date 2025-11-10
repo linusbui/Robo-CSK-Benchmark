@@ -1,0 +1,2001 @@
+question,full_answer,final_answer,correct_answer
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Lamb and Bean Nachos With Salsa Fresca
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Meatloaf With BBQ Sauce
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Tiramisu
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Loaded Potato Soup
+Plate: ",Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Vegan Sushi Roll with Avocado, Carrot and Cucumber
+Plate: ",None,None,"[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Spaghettini Bolognese
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Meatballs With Orzo and Italian Vegetables
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Orange Spinach Salmon Salad
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Moussaka with Rice
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Miso Broth Ramen
+Plate: ",Bowl,Bowl,"[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Leg of Lamb With Garlic Sauce and Fresh Herbs
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Beer Battered Shrimp
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Beef Barbecue Casserole
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Baked Salmon with Sweet Olive Salsa
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Ginger Hazelnut Cookies
+Plate: ",Dessert Plate,Dessert Plate,[<Utensil.HANDS: 'Hands'>]
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Cajun Chicken Sandwiches
+Plate: ",Dinner Plate,Dinner Plate,[<Utensil.HANDS: 'Hands'>]
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Three Cheese Ravioli
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Stringy Macaroni & Cheese
+Plate: ",Bowl,Bowl,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Mushroom Omelet
+Plate: ",None,None,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Baked Apples with Candied Walnuts
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Spring Green Salad
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Hamburgers
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Hot Apple Oatmeal
+Plate: ",Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Quinoa Salad
+Plate: ",Bowl,Bowl,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Pan Fried Steak With Vegetables
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Strawberry Custard Cake
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Baked Breakfast Burritos
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Teriyaki Pork Chops
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: White-Bean Soup with Bacon and Herbs
+Plate: ",Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Velveeta Chicken Spaghetti
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Greek Chickpea Stew
+Plate: ",Bowl,Bowl,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Steamed Coconut Rice
+Plate: ",Bowl,Bowl,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Caramelized Shallot and Mushroom Quiche
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Roasted Sweet Potato Slices
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Sausage and Corn Quesadillas
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Chicken Parmesan Panini
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Eggplant Curry (Indian)
+Plate: ",Bowl,Bowl,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Eggs with Chickpeas, Spinach, and Tomato
+Plate: ",Bowl,Bowl,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Brazilian Seafood Stew
+Plate: ",Bowl,Bowl,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Asparagus and Artichoke Pasta Salad
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Chocolate Chip Cranberry Muffins
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Baklava
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Linguine Pasta with Shrimp and Tomatoes
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Sloppy Joes with Cornbread
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Chillaquillas
+Plate: ",Bowl,Bowl,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Deep-Fried Plantain Rounds
+Plate: ",None,None,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Ranch and Avocado Pasta Salad
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Roasted Tomato Soup
+Plate: ",Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Mushrooms & Scrambled Eggs on Toast
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Baked Acorn Squash with Fruit
+Plate: ",Bowl,Bowl,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Sea Bass with Gingered Vegetable Stir-Fry
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Rhubarb Bread Pudding
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Green Tomato Pie
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Classic Chili
+Plate: ",Bowl,Bowl,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Pad Thai with Kale
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Korean-Style Cucumber Kimchi
+Plate: ",None,None,"[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: BBQ Oysters
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Spicy Sausage Ragu With Red Peppers
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Garlic and Red Pepper Broccoli
+Plate: ",Bowl,Bowl,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Tropical Coleslaw
+Plate: ",None,None,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Middle Eastern Fava Bean Stew
+Plate: ",Bowl,Bowl,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Linguine With Sausage and Mushrooms
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Grilled Octopus with Ancho Chile Sauce
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Chicken Wings with Salsa Verde
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Banh Mi (Vietnamese Pulled Pork Sandwich)
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Veggie Pizza
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Blueberry French Toast
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Baked Noodles and Eggplant
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Roasted Rosemary Turkey Breast
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Baked Carrots
+Plate: ",None,None,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Dal With Chicken
+Plate: ",Bowl,Bowl,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Apple Walnut Cake
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Grilled Peaches with Cinnamon Ice Cream
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Chili Prawn and Tomato Spaghetti
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Corn on the Cob with Cheese and Lime
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.SKEWER: 'Skewer'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Brownies
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Soft-Shell Crabs, With Lime Sauce
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Beef Stew with Dried Mushrooms
+Plate: ",Bowl,Bowl,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Indian Spiced Shrimp
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Stuffed Green Bell Peppers
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Herbal Tuna Salad
+Plate: ",Bowl,Bowl,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Sweet and Sour Pork
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Caramel Oatmeal Bars
+Plate: ",Dessert Plate,Dessert Plate,[<Utensil.HANDS: 'Hands'>]
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Snapper in Black Sauce
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: American Potato Salad
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Chicken Piccata
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Creamy Baked Mac and Cheese
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Chicken & Broccoli Cannelloni
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Rice With Lemon, Capers & Parsley
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Ham and Asparagus Pie
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Cauliflower in Chilli Butter Sauce
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Fruit and Veggie Couscous
+Plate: ",Bowl,Bowl,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Chicken Fingers with Tomato-Jalapeno Sauce
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Chocolate Caramel Cake
+Plate: ",Dessert Plate,Dessert Plate,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Mash Potatoes
+Plate: ",Bowl,Bowl,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Tom Kha Gai (Thai Spicy Coconut Soup)
+Plate: ",Bowl,Bowl,[<Utensil.SPOON: 'Spoon'>]
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Black Bean Chili
+Plate: ",Bowl,Bowl,"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Lemon Garlic Salmon
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Heirloom Tomato Salad with Basil Vinaigrette
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Here are a few examples:
+Meal: Grilled Chicken Alfredo Pasta
+Plate: Dinner Plate
+Meal: Spaghetti and Meatballs
+Plate: Dinner Plate
+Meal: Cheesecake
+Plate: Dessert Plate
+Meal: Chili con Carne
+Plate: Bowl
+Meal: Spaghetti Aglio e Olio with Garlic and Parsley
+Plate: Dinner Plate
+Meal: Minestrone soup
+Plate: Bowl
+Meal: Grilled Chicken with Roasted Potatoes and Steamed Broccoli
+Plate: Dinner Plate
+Meal: Grilled Chicken with Roasted Vegetables and Quinoa
+Plate: Dinner Plate
+
+Meal: Quinoa Veggie Burgers
+Plate: ",Dinner Plate,Dinner Plate,"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"

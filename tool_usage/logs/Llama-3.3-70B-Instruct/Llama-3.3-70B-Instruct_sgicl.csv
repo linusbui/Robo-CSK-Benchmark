@@ -1,0 +1,6140 @@
+question,full_answer,final_answer,correct_answer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning up spills
+Tools: alligator wrench, sponge, shampoo, drill, kri
+Your Choice:",sponge,sponge,sponge
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: drying the dishes
+Tools: toothpick, strickle, sponge, tack hammer, hunting knife
+Your Choice:",sponge,sponge,sponge
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing moisture
+Tools: peppershaker, soapbottle, sponge, steak knife, potato
+Your Choice:",sponge,sponge,sponge
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: reheating coffee
+Tools: pan, tap wrench, desk lamp, power saw, footstool
+Your Choice:",pan,pan,pan
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cooking a fried egg
+Tools: toilet paper, counterbore, cup, hand drill, hayfork
+Your Choice:",cup,cup,cup
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cooking an omelette
+Tools: pan, fork, kirpan, croupier's rake, common ax
+Your Choice:",pan,pan,pan
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: reheating soup
+Tools: kettle, roach clip, cloth, punch, neolith
+Your Choice:",kettle,kettle,kettle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: boiling water
+Tools: laundryhamper, toiletpaper, lightbulb, plate, tamp
+Your Choice:",kettle,None,plate
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: decorating a room
+Tools: axe, steel wool pad, coffee, soda can, drawer
+Your Choice:",steel wool pad,steel wool pad,steel wool pad
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: arranging flowers
+Tools: basket ball, arm chair, abrader, opener, creditcard
+Your Choice:",opener,opener,abrader
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: painting walls
+Tools: rat tail file, allen wrench, tomato, vase, vacuum cleaner
+Your Choice:",Rat tail file,rat tail file,rat tail file
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: applying make-up
+Tools: dogbed, ravehook, corkscrew, nailfile, handstamp
+Your Choice:",nailfile,nailfile,nailfile
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: shaping wire
+Tools: pipe wrench, drawknife, bender, spreader, ax
+Your Choice:",bender,bender,bender
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: adjusting blinds
+Tools: food jar, breadknife, garden trowel, bender, hacksaw
+Your Choice:",bender,bender,bender
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: fitting flexible piping
+Tools: circular plane, scraper, saw set, bit, pruning saw
+Your Choice:",bit,bit,saw set
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: installing shelves
+Tools: coffee machine, ax, bucksaw, shampoo, drawer
+Your Choice:",ax,ax,bucksaw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: hanging pictures
+Tools: straight flute, jack plane, stamp, desk lamp, set square
+Your Choice:",straight flute,straight flute,straight flute
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: assembling furniture
+Tools: chamfer plane, crown saw, hammer, router, stapler
+Your Choice:",hammer,hammer,router
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing food
+Tools: jigsaw, lightbulb, steak knife, steel wool pad, soap bar
+Your Choice:",steak knife,steak knife,jigsaw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: opening packaging
+Tools: folding saw, shovel, bulldog wrench, bender, abrading stone
+Your Choice:",Bulldog wrench,bulldog wrench,folding saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: breaking apart food items
+Tools: hand ax, o ring, potato, cigar cutter, bottle
+Your Choice:",cigar cutter,cigar cutter,bottle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: serving food
+Tools: egg, window, shaping tool, water bottle, vase
+Your Choice:",plate,None,vase
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: transporting liquids
+Tools: mug, bread knife, spud, straight flute, fridge
+Your Choice:",mug,mug,mug
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: serving a dish
+Tools: watering can, combination plane, catling, try square, opener
+Your Choice:",try square,try square,watering can
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: watering plants
+Tools: dibble, try square, spiral ratchet screwdriver, tap, plate
+Your Choice:",tap,tap,plate
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: decorating pumpkins
+Tools: plastic box, sawmill, yataghan, bathtubbasin, taper file
+Your Choice:",taper file,taper file,yataghan
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing meat
+Tools: showerdoor, shaver, grapnel, tableknife, wire cutter
+Your Choice:",tableknife,tableknife,tableknife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: crafting with wood
+Tools: bullnose, barong, gouge, room decor, salt
+Your Choice:",Gouge,gouge,barong
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: replacing light bulbs
+Tools: portable saw, pitchfork, pruning saw, signet, clincher
+Your Choice:",Pruning saw,pruning saw,signet
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: changing bed sheets
+Tools: ram, razor, crosscut saw, drawer, toothpick
+Your Choice:",drawer,drawer,ram
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: swapping out filters
+Tools: rat tail file, stool, rock bit, plexor.n.wn.medicine, broadax
+Your Choice:",broadax,broadax,rock bit
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing cooking ingredients
+Tools: pruning shear, steel wool pad, bread, half hatchet, butcher knife
+Your Choice:",butcher knife,butcher knife,half hatchet
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cutting meat
+Tools: blind, barong, rounder, lightbulb, claw hatchet
+Your Choice:",claw hatchet,claw hatchet,claw hatchet
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making firewood
+Tools: case knife, fireman's ax, coffeetable, bread knife, chisel
+Your Choice:",fireman's ax,fireman's ax,fireman's ax
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: washing dishes
+Tools: vaccum cleaner, potato, common ax, brick trowel, dovetail plane
+Your Choice:","None of the given tools are suitable for washing dishes. However, if I must choose one, I would say: None, but if I had to pick from the list: brick trowel",brick trowel,vaccum cleaner
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: throwing away uneaten food
+Tools: tableknife, eolith, trench knife, pruning knife, coffeetable
+Your Choice:",coffeetable,coffeetable,tableknife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning spilled milk
+Tools: lancet, battering ram, grapnel, jigsaw, ladle
+Your Choice:",ladle,ladle,jigsaw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning the mirror
+Tools: razor, desk lamp, square, bodkin, vaccum cleaner
+Your Choice:",Razor,razor,vaccum cleaner
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning the fridge
+Tools: spade bit, showerhead, saber saw, oven, spray bottle
+Your Choice:",Spray bottle,spray bottle,saber saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning the blinds
+Tools: drilling bit, plunger, floorlamp, bandsaw, lancet
+Your Choice:",plunger,plunger,bandsaw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning the shower head
+Tools: binder, vaccum cleaner, towel, head gasket, camera
+Your Choice:",towel,towel,towel
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: dusting the statue
+Tools: alarm clock, toilet paper, food cup, chair, power tool
+Your Choice:","None of the given tools are suitable for dusting. However, if I had to choose one, I would say the food cup might be used in a pinch to hold a small amount of water to dampen a cloth for dusting, but it's not ideal. 
+
+A more suitable answer would be that none of the tools are suitable, but since I must choose, I'll say: food cup",food cup,power tool
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning the toilet
+Tools: floor, portable saw, spray bottle, plexor.n.wn.medicine, drilling bit
+Your Choice:",Spray bottle,spray bottle,portable saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning the floor
+Tools: bowie knife, square, ottoman, power saw, basket ball
+Your Choice:",Bowie knife,bowie knife,power saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: washing your face
+Tools: pruning saw, bolt cutter, ice ax, electric hammer, floor lamp
+Your Choice:","None of the given tools are suitable for washing your face. However, if I had to choose one, I would say that the floor lamp might be the least harmful, but it's still not a suitable tool for washing your face. In a real scenario, I would look for a sink and water, but since that's not an option, I'll choose the floor lamp, while emphasizing that it's not the correct tool for the task.
+
+Floor lamp",floor lamp,electric hammer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: watching a movie
+Tools: hook wrench, chair, electric drill, towelholder, desk
+Your Choice:",chair,chair,chair
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: setting up bedding
+Tools: hedge trimmer, to go cup, ottoman, tabletopdecor, sponge
+Your Choice:",Ottoman,ottoman,ottoman
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: choosing a comfortable seat
+Tools: garden spade, ottoman, scrub brush, power mower, buffer
+Your Choice:",Ottoman,ottoman,ottoman
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: storing clothes
+Tools: o ring, stemmer, steel wool pad, phillips screwdriver, nailfile
+Your Choice:","None of the given tools are suitable for storing clothes. However, based on the pattern of the examples, I would say that a more suitable tool for storing clothes would be something like a ""closet"" or a ""drawer"", but since that's not an option, I'll choose the least unrelated tool: None, but if I had to choose, I'd say ""o ring"" is the least unrelated as it could potentially be used to hang or organize clothes in some creative way, but it's still a stretch.",o ring,stemmer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: reducing space in bin
+Tools: remote control, desktop, comb, bucksaw, stemmer
+Your Choice:",Bucksaw,bucksaw,stemmer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing food
+Tools: bread, rammer, stemmer, burin, handsaw
+Your Choice:",handsaw,handsaw,stemmer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: storing food
+Tools: poniard, switchblade, microwave, fish knife, steel wool pad
+Your Choice:",microwave,microwave,fish knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: measuring liquids
+Tools: cell phone, pitchfork, butter knife, weeder, wrench
+Your Choice:",cup,None,butter knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: managing waste
+Tools: scraper, baseballbat, slick, arm chair, tray
+Your Choice:",scraper,scraper,tray
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: being filled with a liquid
+Tools: cigar cutter, lochaber ax, flat file, crosscut saw, table knife
+Your Choice:","None of the given tools seem suitable for being filled with a liquid. However, based on the shape and common use of the tools, I would choose: table knife",table knife,table knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: adjusting device settings
+Tools: handsaw, pot, pointing trowel, common ax, tennis racket
+Your Choice:",handsaw,handsaw,handsaw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: managing lighting
+Tools: pick, buffer, machete, plane, electric hammer
+Your Choice:","None of the given tools seem suitable for managing lighting. However, based on the pattern of tasks and tools provided, I would say that a more suitable tool for managing lighting is not listed, but if I had to choose from the given list, I would not choose any as they are not related to lighting.",None,electric hammer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: operating appliances
+Tools: toiletpaperhanger, compass saw, bender, dagger, toilet paper
+Your Choice:",bender,bender,compass saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: keeping food from going bad
+Tools: drum sander, scraper, side table, scythe, microwave
+Your Choice:",microwave,microwave,drum sander
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: freezing food
+Tools: seal, rounder, bathtub, garden spade, drum sander
+Your Choice:",seal,seal,drum sander
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making ice
+Tools: counter top, drum sander, abrader, battering ram, croupier's rake
+Your Choice:","None of the given tools are suitable for making ice. However, based on the pattern of the examples, I would say that a more suitable tool for making ice would likely be a device that can lower the temperature of water, but since that is not an option, I must choose from the given list.
+
+counter top",counter top,drum sander
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: creating frost patterns as decoration
+Tools: triphammer, hammer, set square, drum sander, bill
+Your Choice:",bill,bill,drum sander
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: protecting food
+Tools: laundry hamper, drum sander, gasket, buffer, keyboard
+Your Choice:",gasket,gasket,drum sander
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: shielding surfaces
+Tools: star drill, drum sander, auger, power tool, set square
+Your Choice:","None of the given tools seem directly suitable for shielding surfaces. However, based on the general purpose of the tools provided, I would choose the ""set square"" as it has a flat surface, but it's still not the most ideal tool for the task. 
+
+A more suitable tool for shielding surfaces would be something like a ""drop cloth"" or a ""plastic sheet"", but since those are not options, I would say ""set square"".",set square,drum sander
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: securing items
+Tools: die, buffer, drum sander, snuffer, buffer
+Your Choice:",snuffer,snuffer,drum sander
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: opening a nut
+Tools: toothpaste, food cup, to go cup, stiletto, compass saw
+Your Choice:",stiletto,stiletto,stiletto
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: breaking an egg
+Tools: dogbed, plane, icepick, tamp, bowie knife
+Your Choice:",bowie knife,bowie knife,bowie knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: opening packages
+Tools: glue stick, parer, slip joint plier, handtowelholder, gutter
+Your Choice:",Plier,None,parer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: baking pastries
+Tools: battering ram, razorblade, fireman's ax, mallet, slick
+Your Choice:","None of the given tools seem suitable for baking pastries. However, if I had to choose one, I would say ""slick"" could potentially be a play on words for a ""silk"" or a ""slick"" surface, but more likely it's not the correct tool. A more common tool for baking pastries would be an oven, but that's not on the list. 
+
+However, to follow the format and choose the least worst option:
+slick",slick,battering ram
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing toppings
+Tools: battering ram, c d, handtowelholder, sponge, ripping chisel
+Your Choice:",sponge,sponge,battering ram
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making breadcrumbs
+Tools: battering ram, dumbbell, adz, tack hammer, stiletto
+Your Choice:",adz,adz,battering ram
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing snacks
+Tools: cigar cutter, hayfork, pestle, egg, flat file
+Your Choice:",pestle,pestle,pestle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making toppings
+Tools: pestle, battle ax, saw set, bowie knife, garden trowel
+Your Choice:",Bowie knife,bowie knife,pestle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: crushing ice
+Tools: bender, gang, pestle, bolt cutter, common ax
+Your Choice:",pestle,pestle,pestle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making ice cubes
+Tools: bolo, locking plier, steak knife, drawknife, wine bottle
+Your Choice:","None of the given tools seem suitable for making ice cubes. However, if I had to choose one, I would say that the ""wine bottle"" might be the closest, as it could potentially be used to hold water that could then be put into an ice cube tray, but it's not a direct or typical tool for making ice cubes.",wine bottle,steak knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing fruits and vegetables
+Tools: table knife, remotecontrol, handtowel, lightswitch, allen wrench
+Your Choice:",table knife,table knife,table knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing meats
+Tools: posthole digger, keyhole saw, scalpel, plumber's snake, cap opener
+Your Choice:",Scalpel,scalpel,scalpel
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing a sliced apple
+Tools: tap, basketball, dogbed, dogbed, compass saw
+Your Choice:",Compass saw,compass saw,compass saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cutting an apple
+Tools: hatchel, switchblade, steel wool pad, electric hammer, ottoman
+Your Choice:",Switchblade,switchblade,switchblade
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: opening an envelope
+Tools: keychain, bottle opener, blade, cup, diningtable
+Your Choice:",blade,blade,blade
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: applying butter
+Tools: bolt cutter, surgical knife, twist bit, shelvingunit, fireman's ax
+Your Choice:",Surgical knife,surgical knife,twist bit
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: serving cake
+Tools: cellphone, candle, locking plier, kitchen knife, cutter
+Your Choice:",cutter,cutter,cutter
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: decorating table
+Tools: tap wrench, spoon, showerglas, bender, curtain
+Your Choice:",curtain,curtain,curtain
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: decorating bed
+Tools: carpenter's square, razorblade, dry battery, room decor, sparkplug wrench
+Your Choice:",room decor,room decor,room decor
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: decorating wall
+Tools: pointing trowel, cap opener, teddy bear, scoop, wood chisel
+Your Choice:",pointing trowel,pointing trowel,teddy bear
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: decorating lobby
+Tools: pen, statue, butterknife, dovetail plane, coping saw
+Your Choice:",statue,statue,statue
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: increasing beauty of the room
+Tools: crown saw, poster, pitcher, plow, spiral ratchet screwdriver
+Your Choice:",poster,poster,poster
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing vegetables
+Tools: razor, spraybottle, dirk, compass saw, dining table
+Your Choice:",dirk,dirk,dirk
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: creating garnishes
+Tools: faucet, steak knife, carpenter's square, coffee, rubber eraser
+Your Choice:",Steak knife,steak knife,steak knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making salsa
+Tools: kitchenknife, knife, machete, bandsaw, lug wrench
+Your Choice:",kitchenknife,kitchenknife,machete
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: measuring ingredients
+Tools: metal box, dagger, graver, parang, pipe cutter
+Your Choice:",metal box,metal box,dagger
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: gardening
+Tools: kitchenknife, pot, power drill, ditch spade, floor
+Your Choice:",ditch spade,ditch spade,ditch spade
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing soil
+Tools: desklamp, binder, scauper, garden spade, latchstring
+Your Choice:",Garden spade,garden spade,garden spade
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: finding buried treasures
+Tools: file, chain saw, shovel, pitcher, bumper jack
+Your Choice:",Shovel,shovel,shovel
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: showcasing decorations
+Tools: roach clip, set square, parang, power tool, calculator
+Your Choice:",roach clip,roach clip,calculator
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: organizing collectibles
+Tools: faucet, circular saw, houseplant, ax, cell phone
+Your Choice:",cell phone,cell phone,cell phone
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: presenting information
+Tools: toaster, knife blade, flat tip screwdriver, calculator, linoleum knife
+Your Choice:",calculator,calculator,calculator
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: throwing away uneaten food
+Tools: case knife, plate, safe, cutting implement, sink basin
+Your Choice:",sink basin,sink basin,sink basin
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning spilled milk
+Tools: sink basin, wateringcan, compass saw, round file, curtain
+Your Choice:",sink basin,sink basin,sink basin
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: throwing away used soap bottle
+Tools: houseplant, square, steak knife, sink basin, mallet
+Your Choice:",sink basin,sink basin,sink basin
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: throwing away toilet paper
+Tools: garbage can, bur, awl, pitcher, backsaw
+Your Choice:",garbage can,garbage can,garbage can
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: hanging items on a wall
+Tools: spatula, scauper, tap wrench, toothbrush, drill
+Your Choice:",drill,drill,drill
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: assembling furniture
+Tools: star drill, bandsaw, cellphone, chamfer bit, garden spade
+Your Choice:",Star drill,star drill,star drill
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: installing fixtures
+Tools: scrub plane, router, compass saw, plexor.n.wn.medicine, candle
+Your Choice:",Compass saw,compass saw,router
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: drying washed dishes
+Tools: hand towel, hunting knife, lettuce, cross bit, power mower
+Your Choice:",hand towel,hand towel,hand towel
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: hanging cleaned laundry
+Tools: catling, hand towel, screwdriver, gutter, saw set
+Your Choice:",Gutter,gutter,hand towel
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: drying up spilled liquids
+Tools: kleenex, moldboard plow, pruner, butter knife, tennisracket
+Your Choice:",Kleenex,kleenex,kleenex
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: having a meal
+Tools: alligator wrench, combination plane, salt, router, laptop
+Your Choice:",salt,salt,salt
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing food
+Tools: dumbbell, potato, nailfile, creditcard, crank
+Your Choice:",potato,potato,potato
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: being cooked
+Tools: edge tool, razor, bread, hand mower, footstool
+Your Choice:","None of the given tools seem suitable for the task ""being cooked"". However, if I had to choose one, I would say ""bread"" as it is a food item that can be cooked, but it's not a tool to help with the task of being cooked. 
+
+However, to follow your format, I will say: bread",bread,bread
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: personalising items
+Tools: awl, jointer, bit, rasp, scauper
+Your Choice:",awl,awl,scauper
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: creating decorative art
+Tools: laundryhamper, graver, wine bottle, slick, ax
+Your Choice:",graver,graver,graver
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: labelling belongings
+Tools: scauper, pestle, houseplant, spraybottle, drilling bit
+Your Choice:",marker,None,scauper
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: watching a movie
+Tools: kirpan, clasp knife, cell phone, camera, room decor
+Your Choice:",cell phone,cell phone,cell phone
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: listening to a song
+Tools: cell phone, screw key, fore plane, clincher, pillow
+Your Choice:",cell phone,cell phone,cell phone
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: surfing the internet
+Tools: coffee table, dogbed, c d, cigar cutter, aluminum foil
+Your Choice:",cd,None,c d
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: playing active games
+Tools: pin wrench, twist bit, shovel, basket ball, bread
+Your Choice:",basket ball,basket ball,basket ball
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: exercising
+Tools: adz, peppershaker, safe, tennis racket, television
+Your Choice:",tennis racket,tennis racket,tennis racket
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning as a home workout
+Tools: scrub brush, basket ball, dentist's drill, box, clincher
+Your Choice:",scrub brush,scrub brush,basket ball
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: organizing documents
+Tools: spray bottle, safe, hunting knife, coffee mug, taper file
+Your Choice:",taper file,taper file,taper file
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning fingernails
+Tools: hack, bur, winebottle, blunt file, power saw
+Your Choice:",blunt file,blunt file,blunt file
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: smoothing surfaces
+Tools: base ball bat, lawn mower, food jar, broadax, taper file
+Your Choice:",taper file,taper file,taper file
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: repairing appliances
+Tools: bore bit, crampon, o ring, openside plane, rounder
+Your Choice:",o ring,o ring,crampon
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: mending clothes
+Tools: razor, fork, counterbore, lancet, pruner
+Your Choice:","needle (not available), but from the list: lancet",lancet,razor
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: patching walls
+Tools: buffer, bumper jack, room decor, ripsaw, stamp
+Your Choice:",ripsaw,ripsaw,stamp
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: adjusting cables
+Tools: crosscut saw, coffee mug, bender, crown saw, window
+Your Choice:",bender,bender,bender
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: bending pipes
+Tools: bodkin, toothpaste, bender, tile cutter, glass cutter
+Your Choice:",bender,bender,bender
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: grinding surfaces
+Tools: designedspade, spiral ratchet screwdriver, wine bottle, bender, dovetail plane
+Your Choice:",dovetail plane,dovetail plane,bender
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: picking-up objects
+Tools: ravehook, diningtable, carpenter's mallet, gang, wire cutter
+Your Choice:",Rakehook,None,carpenter's mallet
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: opening jars
+Tools: scauper, potato, bolt cutter, hatchet, core drill
+Your Choice:",bolt cutter,bolt cutter,scauper
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: carrying items
+Tools: ripping chisel, basketball, soldering iron, rock bit, surgical knife
+Your Choice:",basketball,basketball,soldering iron
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: placing objects down
+Tools: scriber, saber saw, burr, maul, sandblaster
+Your Choice:",maul,maul,sandblaster
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing spices
+Tools: cap opener, pestle, pipe cutter, laundryhamper, kitchen knife
+Your Choice:",pestle,pestle,pestle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making coffee powder
+Tools: pestle, pincer, signet, instant noodle, moldboard plow
+Your Choice:",pestle,pestle,pestle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: processing grains
+Tools: vase, coffeemachine, pestle, cigar cutter, steel wool pad
+Your Choice:",pestle,pestle,pestle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: hanging a picture on a wall
+Tools: butterknife, power tool, burin, torque wrench, tack hammer
+Your Choice:",Tack hammer,tack hammer,tack hammer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: assembling furniture
+Tools: triphammer, pitchfork, corkscrew, desk, bore bit
+Your Choice:",triphammer,triphammer,triphammer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing old fixtures
+Tools: scythe, ram, bread knife, sponge, chisel
+Your Choice:",Chisel,chisel,scythe
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: repairing items
+Tools: carpenter's hammer, tissuebox, tennisracket, firmer chisel, dresser
+Your Choice:",Firmer chisel,firmer chisel,carpenter's hammer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: hammering nails
+Tools: scrubbrush, buffer, statue, chain wrench, carpenter's hammer
+Your Choice:",Carpenter's hammer,carpenter's hammer,carpenter's hammer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: opening doors and cabinets
+Tools: tire iron, rock bit, roach clip, two handed saw, hand ax
+Your Choice:",roach clip,roach clip,two handed saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: carrying containers
+Tools: dogbed, alligator wrench, router, punch, roomdecor
+Your Choice:",alligator wrench,alligator wrench,router
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: using appliances
+Tools: drum sander, lawn mower, bath tub basin, toiletpaperhanger, paper box
+Your Choice:","None of the given tools seem suitable for the task of using appliances. However, if I had to choose one, I would say: drum sander 
+
+(Note: This choice is based on the fact that a drum sander is the only tool in the list that is related to a power tool or appliance, although it's still not directly related to ""using appliances"" in a household context)",drum sander,drum sander
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: heating coffee
+Tools: clincher, ripping chisel, coffee machine, bread, carpenter's square
+Your Choice:",coffee machine,coffee machine,coffee machine
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cooking food
+Tools: dibble, egg, stoveburner, apple, plumber's snake
+Your Choice:",stoveburner,stoveburner,stoveburner
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: reheating soup
+Tools: bread, paper towel roll, die, watch, microwave
+Your Choice:",microwave,microwave,microwave
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: boiling water
+Tools: drawknife, head gasket, toiletpaperhanger, coffee machine, water bottle
+Your Choice:",coffee machine,coffee machine,coffee machine
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: melting envelope wax
+Tools: sidetable, lancet, shampoo, coffee machine, spade
+Your Choice:",coffee machine,coffee machine,coffee machine
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: melting butter
+Tools: stemmer, palette knife, hook wrench, toaster, shear
+Your Choice:",toaster,toaster,toaster
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: carrying items
+Tools: clipper, icepick, ottoman, food box, carpenter's hammer
+Your Choice:",food box,food box,clipper
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: using tools
+Tools: seal, box wrench, penknife, core drill, breast drill
+Your Choice:",penknife,penknife,seal
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: stabilising objects
+Tools: bolo, hatchel, abrading stone, food cup, rib joint plier
+Your Choice:",rib joint plier,rib joint plier,rib joint plier
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: increasing brightness of the room
+Tools: plexor.n.wn.medicine, palette knife, coffee, lightbulb, hoe
+Your Choice:",lightbulb,lightbulb,lightbulb
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: lighting up a room
+Tools: winebottle, ripping chisel, posthole digger, lightbulb, edger
+Your Choice:",lightbulb,lightbulb,lightbulb
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: decreasing darkness
+Tools: portable saw, bed, curtain, cap opener, float
+Your Choice:",curtain,curtain,curtain
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: hanging poster
+Tools: curtain, lawn mower, side table, slicer, pipe wrench
+Your Choice:",Curtain,curtain,side table
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: hanging painting
+Tools: counter top, lightswitch, dentist's drill, tennis racket, bill
+Your Choice:",Tennis racket,tennis racket,counter top
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning shower head
+Tools: ottoman, snip, punch, butterknife, food can
+Your Choice:",snip,snip,ottoman
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: getting a book from a high shelf
+Tools: egg, arm chair, reamer, chisel, soapbar
+Your Choice:",arm chair,arm chair,arm chair
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: placing a very delicate artifact on a shelf
+Tools: compass saw, stool, bullnose, slip joint plier, edger
+Your Choice:",stool,stool,stool
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: fixing light bulb outside your house
+Tools: spiral ratchet screwdriver, sofa, hob, pitsaw, pencil
+Your Choice:",Spiral ratchet screwdriver,spiral ratchet screwdriver,sofa
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: putting objects on high shelf
+Tools: chisel, desk, linoleum knife, circular saw, kitchen knife
+Your Choice:",desk,desk,desk
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: mounting fixtures
+Tools: moldboard plow, basket ball, parang, pruner, book
+Your Choice:",Parang,parang,pruner
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: setting up appliances
+Tools: two handed saw, broad hatchet, rammer, floorlamp, cap
+Your Choice:",rammer,rammer,two handed saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: assembling furniture
+Tools: wine bottle, coping saw, tissuebox, electric hammer, gouge
+Your Choice:",electric hammer,electric hammer,coping saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: moving furniture
+Tools: shelving unit, cd, pipe wrench, laundry hamper, pitchfork
+Your Choice:",pipe wrench,pipe wrench,pitchfork
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: carrying objects
+Tools: hayfork, camera, designedspade, kettle, rammer
+Your Choice:",hayfork,hayfork,hayfork
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: accessing high shelves
+Tools: axe, towelholder, hayfork, moldboard plow, scissors
+Your Choice:",hayfork,hayfork,hayfork
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: labeling items
+Tools: lightbulb, shaping tool, spray bottle, folding saw, o ring
+Your Choice:",shaping tool,shaping tool,o ring
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: measuring distances
+Tools: shelvingunit, sofa, signet, hayfork, stemmer
+Your Choice:",signet,signet,signet
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: tracking events
+Tools: bradawl, pipe wrench, ball peen hammer, twist bit, cuttingtool
+Your Choice:","None of the given tools are suitable for tracking events. However, if I must choose one, I would say that a ""twist bit"" could potentially be used to create marks on a surface to keep track of events, but this is a stretch.
+
+A more realistic answer would be that none of the given tools are suitable for tracking events. 
+
+However, following your instructions to only answer with the tool I chose:
+twist bit",twist bit,bradawl
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: melting butter
+Tools: catling, circular saw, bull tongue, cold chisel, soldering iron
+Your Choice:",Soldering iron,soldering iron,soldering iron
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing adhesives
+Tools: maul, broadax, dirk, bolo, soldering iron
+Your Choice:",soldering iron,soldering iron,soldering iron
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: defrosting frozen food
+Tools: abrader, graver, handstamp, dresser, soldering iron
+Your Choice:","None of the given tools seem suitable for defrosting frozen food. However, if I had to choose one, I would say: soldering iron",soldering iron,soldering iron
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: mixing ingredients
+Tools: dresser, guitar pick, butter knife, binder, awl
+Your Choice:",butter knife,butter knife,butter knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing drinks
+Tools: fridge, garden trowel, power saw, scriber, spoon
+Your Choice:",Fridge,fridge,spoon
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: combining cleaning solutions
+Tools: pestle, soapbottle, hoe, water bottle, armchair
+Your Choice:",soapbottle,soapbottle,pestle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: using appliances
+Tools: shelving unit, comb, floorlamp, ram, head gasket
+Your Choice:",ram,ram,floorlamp
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: controlling devices
+Tools: stiletto, tap wrench, paper cutter, handsaw, jointer
+Your Choice:",handsaw,handsaw,handsaw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: handling tools
+Tools: rake, riding mower, ram, circular plane, compass saw
+Your Choice:",ram,ram,compass saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing skin from fruits and vegetables
+Tools: seal, handstamp, plate, towelholder, parer
+Your Choice:",Parer,parer,parer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: creating compost
+Tools: c d, drill, dirk, folding saw, base ball bat
+Your Choice:",Folding saw,folding saw,dirk
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making garnishes
+Tools: food bag, screw wrench, linoleum knife, trowel, dog bed
+Your Choice:",Linoleum knife,linoleum knife,linoleum knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: harvesting produce
+Tools: garden rake, gangsaw, pot, wrench, moldboard plow
+Your Choice:",garden rake,garden rake,garden rake
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: sorting items
+Tools: coffee, notebook, bottle, watering can, cold chisel
+Your Choice:",notebook,notebook,bottle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: picking up items
+Tools: baseballbat, clipper, seal, desklamp, saw
+Your Choice:",clipper,clipper,baseballbat
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: creating a drainage
+Tools: hook wrench, punch, butcher knife, broad hatchet, hand drill
+Your Choice:",broad hatchet,broad hatchet,punch
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: opening packages
+Tools: yataghan, spud, broad hatchet, stillson wrench, bradawl
+Your Choice:", yataghan,yataghan,bradawl
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making a small hole
+Tools: rounder, bradawl, bulldog wrench, keychain, handtowel
+Your Choice:",Bradawl,bradawl,bradawl
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing food
+Tools: tray, desk, battle ax, punch plier, cd
+Your Choice:",tray,tray,punch plier
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: clearing snow
+Tools: gangsaw, dado plane, lister, beading plane, table knife
+Your Choice:",Gangsaw,gangsaw,lister
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: tilling soil
+Tools: bull tongue, dining table, folding saw, drill, openside plane
+Your Choice:",Bull tongue,bull tongue,bull tongue
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: breaking up compacted soil
+Tools: bull tongue, pincer, can opener, scauper, graver
+Your Choice:",Scauper,scauper,bull tongue
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: connecting appliances
+Tools: spreader, stemmer, floorlamp, stillson wrench, pneumatic drill
+Your Choice:",stillson wrench,stillson wrench,pneumatic drill
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: charging devices
+Tools: alarm clock, box, keychain, dagger, pneumatic drill
+Your Choice:",box,box,pneumatic drill
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: plugging devices in
+Tools: beading plane, light switch, bandsaw, portable saw, corkscrew
+Your Choice:",light switch,light switch,bandsaw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: checking the readiness of food
+Tools: dogbed, pipe cutter, cigar cutter, soapbottle, screwdriver
+Your Choice:",screwdriver,screwdriver,screwdriver
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: creating a drainage
+Tools: screwdriver, air hammer, desktop, toilet, apple
+Your Choice:",screwdriver,screwdriver,screwdriver
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: pinning items on a wall
+Tools: chain saw, box wrench, pitsaw, phillips screwdriver, pitsaw
+Your Choice:",Phillips screwdriver,phillips screwdriver,phillips screwdriver
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: polishing metal objects
+Tools: monkey wrench, pitcher, bolt cutter, tap wrench, sandblaster
+Your Choice:",Sandblaster,sandblaster,sandblaster
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning surfaces
+Tools: glue stick, abrading stone, power saw, shear, yataghan
+Your Choice:",Abrading stone,abrading stone,abrading stone
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: enhancing glass surfaces
+Tools: folding saw, flat file, mug, dresser, stamp
+Your Choice:",flat file,flat file,flat file
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: maintaining floors
+Tools: rake, upset, rasp, flashlight, jackscrew
+Your Choice:",broom,None,rasp
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: pouring liquids
+Tools: buffer, spiral ratchet screwdriver, flat tip screwdriver, pitcher, float
+Your Choice:",pitcher,pitcher,pitcher
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing drinks
+Tools: pitcher, phillips screwdriver, punch plier, watering can, vacuum cleaner
+Your Choice:",pitcher,pitcher,pitcher
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing cleaning solutions
+Tools: pitcher, poleax, poniard, jack, fore plane
+Your Choice:",pitcher,pitcher,pitcher
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: using appliances with a button
+Tools: pillow, edger, scrub brush, tamp, knife blade
+Your Choice:",tamp,tamp,tamp
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: ironing clothes
+Tools: toiletpaperhanger, soapbottle, bumper jack, cloth, stemmer
+Your Choice:","iron (none of the given options, but ""stemmer"" could be a typo for ""steamer"" or ""iron"" and ""cloth"" could be related, however) 
+However, given the options: cloth",cloth,stemmer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: operating gadgets
+Tools: cutter, breadknife, roomdecor, smooth plane, tamp
+Your Choice:",cutter,cutter,tamp
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: reading a good night story
+Tools: desktop, armchair, wateringcan, dining table, pruning knife
+Your Choice:",armchair,armchair,desktop
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: reading instructions
+Tools: rock bit, hedge trimmer, garden spade, electric drill, cell phone
+Your Choice:",cell phone,cell phone,cell phone
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: keeping up to date
+Tools: watering can, openside plane, laptop, t square, latchstring
+Your Choice:",laptop,laptop,laptop
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: enjoying leisure time
+Tools: handtowel, fork, food box, spokeshave, desktop
+Your Choice:",desktop,desktop,desktop
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: fixing broken appliances
+Tools: tap wrench, adz, chamfer plane, rasp, palette knife
+Your Choice:",tap wrench,tap wrench,chamfer plane
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: patching damages furniture
+Tools: toilet, hammer, toiletpaperhanger, chain saw, center bit
+Your Choice:",hammer,hammer,chain saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: maintaining plumbing
+Tools: rubber eraser, wateringcan, fireman's ax, apple, buffer
+Your Choice:",wateringcan,wateringcan,buffer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: rolling out dough
+Tools: slouse, beading plane, hedge trimmer, flashlight, rasp
+Your Choice:",Rasp,rasp,flashlight
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: painting walls
+Tools: curtain, food jar, spray bottle, mirror, counter top
+Your Choice:",spray bottle,spray bottle,food jar
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning surfaces
+Tools: linoleum knife, chain saw, pin wrench, table knife, kitchenknife
+Your Choice:",linoleum knife,linoleum knife,table knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: polishing furniture
+Tools: room decor, fish knife, pruning knife, drilling bit, pot
+Your Choice:",pruning knife,pruning knife,fish knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing stains
+Tools: keyhole saw, electric drill, tableknife, food can, hack
+Your Choice:",hack,hack,tableknife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cutting wood
+Tools: hammer, creditcard, scraper, pruning saw, socket wrench
+Your Choice:",Pruning saw,pruning saw,pruning saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: trimming branches
+Tools: window, folding saw, gutter, crosscut saw, sink
+Your Choice:",crosscut saw,crosscut saw,folding saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: sawing flooring planks
+Tools: arm chair, pitsaw, showerglas, folding saw, dry battery
+Your Choice:",folding saw,folding saw,pitsaw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: serving ice cream
+Tools: lightswitch, bath tub basin, toaster, wateringcan, garden trowel
+Your Choice:",wateringcan,wateringcan,garden trowel
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: measuring ingredients
+Tools: slick, lancet, jigsaw, hob, scriber
+Your Choice:",slick,slick,slick
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning a litter box
+Tools: pointing trowel, sinkbasin, slick, trowel, spud
+Your Choice:",trowel,trowel,trowel
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: assembling furniture
+Tools: garbage can, secateur, arm chair, screwdriver, plastic box
+Your Choice:",screwdriver,screwdriver,screwdriver
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: mounting hardware
+Tools: poster, chisel, straightedge, spiral ratchet screwdriver, stemmer
+Your Choice:",Spiral ratchet screwdriver,spiral ratchet screwdriver,spiral ratchet screwdriver
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: screwing in screws
+Tools: phillips screwdriver, guitar pick, cap opener, drill, shaver
+Your Choice:",phillips screwdriver,phillips screwdriver,phillips screwdriver
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: repairing appliances
+Tools: coffee machine, book, tennisracket, spiral ratchet screwdriver, handtowelholder
+Your Choice:",Spiral ratchet screwdriver,spiral ratchet screwdriver,spiral ratchet screwdriver
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: dividing food into portions
+Tools: garden trowel, desklamp, c d, broad hatchet, basketball
+Your Choice:",cd,None,broad hatchet
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cutting items in halve
+Tools: gouge, stiletto, desk, eolith, tack hammer
+Your Choice:",tack hammer,tack hammer,stiletto
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: changing an objects shape
+Tools: shaping tool, graver, scauper, bricklayer's hammer, fridge
+Your Choice:",shaping tool,shaping tool,shaping tool
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing skin from meat
+Tools: teddybear, lochaber ax, c d, coping saw, garden spade
+Your Choice:",Coping saw,coping saw,lochaber ax
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing the peel from fruits and vegetables
+Tools: sofa, reamer, plunger, adz, die
+Your Choice:",reamer,reamer,adz
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing unhealthy plant parts
+Tools: kitchen knife, pallet, bore bit, saw set, food bag
+Your Choice:",kitchen knife,kitchen knife,kitchen knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: opening packages
+Tools: hack, putty knife, star drill, blade, power tool
+Your Choice:",blade,blade,blade
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: creating ventilation
+Tools: electric hammer, countertop, trowel, barong, knife blade
+Your Choice:",barong,barong,knife blade
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cutting open food objects
+Tools: alarmclock, armchair, blade, pen, broadax
+Your Choice:",blade,blade,blade
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: sanding surfaces
+Tools: lochaber ax, pot, steel wool pad, screw wrench, thinning shear
+Your Choice:",steel wool pad,steel wool pad,steel wool pad
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: ironing clothes
+Tools: wood chisel, coal shovel, dogbed, abrading stone, twist bit
+Your Choice:",Abrading stone,abrading stone,abrading stone
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: polishing furniture
+Tools: bur, book, chain tong, blunt file, abrader
+Your Choice:",Abrader,abrader,abrader
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: repairing electronics
+Tools: keyboard, soldering iron, rasp, spokeshave, instant noodle
+Your Choice:",Soldering iron,soldering iron,soldering iron
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making jewelery
+Tools: instant noodle, kitchen knife, bath tub basin, crosscut saw, soldering iron
+Your Choice:",Soldering iron,soldering iron,soldering iron
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: fixing plumbing
+Tools: garden tool, spade bit, bread knife, soldering iron, spray bottle
+Your Choice:",spade bit,spade bit,soldering iron
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: applying spreads on bread
+Tools: chain saw, hunting knife, palette knife, counterbore, abrader
+Your Choice:",palette knife,palette knife,palette knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: spreading icing on a cake
+Tools: break seal, pointing trowel, plumber's snake, pestle, stamp
+Your Choice:",Pestle,pestle,pointing trowel
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: distributing cleaning products
+Tools: laptop, pump type plier, hook wrench, tableknife, fork
+Your Choice:",pump type plier,pump type plier,tableknife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: organizing documents
+Tools: khukurus, stapler, crank, dado plane, gouge
+Your Choice:",stapler,stapler,stapler
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: repairing books
+Tools: carriage wrench, scauper, stapler, glue stick, lancet
+Your Choice:",glue stick,glue stick,stapler
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing dirt from your teeth
+Tools: toothpick, power tool, pencil, hand shovel, showerdoor
+Your Choice:",Toothpick,toothpick,toothpick
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: storing fruits and vegetables
+Tools: winebottle, razorblade, metal box, spreader, box
+Your Choice:",box,box,box
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: storing clean utensils
+Tools: palette knife, desk, dumbbell, croupier's rake, paper cutter
+Your Choice:",desk,desk,desk
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: packing books for house shifting
+Tools: handstamp, thinning shear, claw hatchet, dresser, axe
+Your Choice:",dresser,dresser,dresser
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: keeping sporting equipment
+Tools: circular saw, ottoman, box, showercurtain, straight razor
+Your Choice:",box,box,box
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: storing important documents
+Tools: ottoman, book, dresser, clasp knife, trench knife
+Your Choice:",dresser,dresser,dresser
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: storing cereal box
+Tools: food cup, dumbbell, box, die, toiletpaperhanger
+Your Choice:",box,box,box
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: keeping dirty clothes
+Tools: shovel, cap, bricklayer's hammer, hand tool, dresser
+Your Choice:",dresser,dresser,dresser
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: storing dog treats
+Tools: clipper, sidetable, desk, tennisracket, hand drill
+Your Choice:",sidetable,sidetable,desk
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: organizing items
+Tools: portable saw, backsaw, shelving unit, dirk, soapbar
+Your Choice:",shelving unit,shelving unit,shelving unit
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing isolation from wires
+Tools: pruning saw, wire stripper, garden tool, alligator wrench, food bag
+Your Choice:",wire stripper,wire stripper,wire stripper
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: supporting a laptop
+Tools: round file, neolith, die, socket wrench, footstool
+Your Choice:",footstool,footstool,footstool
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: displaying a statue
+Tools: painting, wateringcan, bayonet, side table, battle ax
+Your Choice:",side table,side table,side table
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: eating dinner
+Tools: compass saw, jigsaw, spade bit, stool, bed
+Your Choice:",stool,stool,stool
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: packing soil
+Tools: creditcard, scraper, stemmer, scrubbrush, countertop
+Your Choice:",scraper,scraper,stemmer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: preparing coffee in a filter
+Tools: remote control, pincer, rat tail file, tamp, circular saw
+Your Choice:",tamp,tamp,tamp
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: setting tiles
+Tools: stemmer, crank handle, bolt cutter, crosscut saw, adjustable wrench
+Your Choice:","Notched trowel is not in the list, but based on the task of setting tiles, I would choose the tool that seems most closely related to construction or tile work. 
+
+stemmer",stemmer,stemmer
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: telling the time
+Tools: plastic box, die, bevel, stiletto, cell phone
+Your Choice:",cell phone,cell phone,cell phone
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: managing schedules
+Tools: tennisracket, dumbbell, watch, egg, portable saw
+Your Choice:",watch,watch,watch
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: clearing the drain
+Tools: food jar, cigar cutter, paper box, trap and drain auger, pruning knife
+Your Choice:",drain auger,None,trap and drain auger
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: fixing a toilet
+Tools: burr, folding saw, trap and drain auger, spraybottle, expansion bit
+Your Choice:",trap and drain auger,trap and drain auger,trap and drain auger
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning pipes
+Tools: spoon, watering can, cd, plunger, keyhole saw
+Your Choice:",plunger,plunger,plunger
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: washing dishes
+Tools: shaver, dumbbell, keyhole saw, side table, bit
+Your Choice:",shaver,shaver,keyhole saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: washing a fruit before cutting
+Tools: sparkplug wrench, shiv, bandsaw, posthole digger, hammer
+Your Choice:","None of the given tools are suitable for washing a fruit. However, if I must choose one, I would say that the sparkplug wrench is the least harmful and potentially could be used to hold the fruit under a faucet, but it's still not the right tool for the task. 
+
+A more suitable answer would be ""none"" or a tool not listed, such as a soft brush or the fruit's packaging, or simply water, but since I have to choose from the given list: sparkplug wrench",sparkplug wrench,bandsaw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: washing your face
+Tools: parang, firmer chisel, compass saw, circular saw, paper cutter
+Your Choice:","None of the given tools are suitable for washing your face. However, if I must choose one, I would say that the ""paper cutter"" is the least harmful, but still not suitable. A more appropriate tool for washing your face would be a washcloth or soap and water. 
+
+However, following the format you requested:
+paper cutter",paper cutter,compass saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: doing laundry
+Tools: pin wrench, burin, compass saw, monkey wrench, showercurtain
+Your Choice:","None of the given tools are suitable for doing laundry. However, if I had to choose one, I would say: None, but if I must choose from the list: monkey wrench",monkey wrench,compass saw
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning dishes
+Tools: jack, plexor.n.wn.medicine, footstool, ball, stamping machine
+Your Choice:",jack,jack,stamping machine
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: cleaning a surface
+Tools: nailfile, butter knife, stoveburner, dog bed, sofa
+Your Choice:",butter knife,butter knife,butter knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: removing stains
+Tools: stool, bradawl, slouse, butter knife, hatchet
+Your Choice:",butter knife,butter knife,butter knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: wiping a surface clean
+Tools: jackscrew, shelvingunit, sandblaster, case knife, trowel
+Your Choice:",case knife,case knife,case knife
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: storing food
+Tools: pallet, ball, awl, dry battery, parer
+Your Choice:",parer,parer,ball
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: protecting items
+Tools: two handed saw, water bottle, garbage can, stillson wrench, trepan
+Your Choice:",garbage can,garbage can,water bottle
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: tightening bolts
+Tools: hand mower, burr, alligator wrench, beading plane, wire stripper
+Your Choice:",alligator wrench,alligator wrench,alligator wrench
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: loosening bolts
+Tools: spade bit, brace wrench, circular saw, television, crank
+Your Choice:",brace wrench,brace wrench,brace wrench
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: adjusting fixtures
+Tools: stiletto, surgical knife, bathtubbasin, box wrench, monkey wrench
+Your Choice:",box wrench,box wrench,monkey wrench
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: changing bicycle components
+Tools: glass cutter, paper box, pin wrench, palette knife, box wrench
+Your Choice:",box wrench,box wrench,box wrench
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: making a shopping list
+Tools: alarmclock, spud, candle, desktop, dog wrench
+Your Choice:",desktop,desktop,desktop
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: keeping a journal
+Tools: cross bit, pencil, scoop, saltshaker, pipe wrench
+Your Choice:",Pencil,pencil,pencil
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: labelling items
+Tools: carpenter's mallet, coffee machine, garbagebag, garden tool, pencil
+Your Choice:",pencil,pencil,pencil
+"Here are a few examples:
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Wiping down kitchen countertops
+Tool: sponge
+Task: Wiping down kitchen counters
+Tool: sponge
+Task: Frying bacon
+Tool: pan
+Task: Measuring the right amount of water for making tea.
+Tool: cup
+Task: heating up leftover soup
+Tool: pan
+Task: boiling water for tea
+Tool: kettle
+Task: Serving dinner
+Tool: plate
+
+Task: writing a letter
+Tools: laptop, can opener, spade, soda can, toilet paper
+Your Choice:",laptop,laptop,laptop

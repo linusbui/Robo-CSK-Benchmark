@@ -1,0 +1,8149 @@
+question,full_answer,final_answer,correct_answer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning up spills
+Tools: kri, drill, sponge, alligator wrench, shampoo
+Your Choice:","sponge 
+<end_of_turn>",sponge,sponge
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: drying the dishes
+Tools: sponge, tack hammer, strickle, toothpick, hunting knife
+Your Choice:","sponge 
+<end_of_turn>",sponge,sponge
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing moisture
+Tools: soapbottle, peppershaker, sponge, potato, steak knife
+Your Choice:","sponge 
+<end_of_turn>",sponge,sponge
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: reheating coffee
+Tools: power saw, footstool, pan, desk lamp, tap wrench
+Your Choice:","pan 
+<end_of_turn>",pan,pan
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cooking a fried egg
+Tools: cup, hayfork, counterbore, hand drill, toilet paper
+Your Choice:","pan 
+<end_of_turn>",None,cup
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cooking an omelette
+Tools: kirpan, fork, croupier's rake, pan, common ax
+Your Choice:","pan 
+<end_of_turn>",pan,pan
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: reheating soup
+Tools: kettle, punch, neolith, roach clip, cloth
+Your Choice:","kettle 
+<end_of_turn>",kettle,kettle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: boiling water
+Tools: tamp, lightbulb, laundryhamper, plate, toiletpaper
+Your Choice:","kettle 
+<end_of_turn>",None,plate
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: decorating a room
+Tools: soda can, coffee, axe, drawer, steel wool pad
+Your Choice:","drawer 
+<end_of_turn>",drawer,steel wool pad
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: arranging flowers
+Tools: creditcard, basket ball, abrader, arm chair, opener
+Your Choice:","basket ball 
+<end_of_turn>",basket ball,abrader
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: painting walls
+Tools: allen wrench, tomato, rat tail file, vacuum cleaner, vase
+Your Choice:","rat tail file 
+<end_of_turn>",rat tail file,rat tail file
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: applying make-up
+Tools: ravehook, nailfile, handstamp, corkscrew, dogbed
+Your Choice:","handstamp 
+<end_of_turn>",handstamp,nailfile
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: shaping wire
+Tools: spreader, ax, drawknife, pipe wrench, bender
+Your Choice:","bender 
+<end_of_turn>",bender,bender
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: adjusting blinds
+Tools: hacksaw, bender, garden trowel, food jar, breadknife
+Your Choice:","bender 
+<end_of_turn>",bender,bender
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: fitting flexible piping
+Tools: saw set, pruning saw, scraper, circular plane, bit
+Your Choice:","Saw set 
+<end_of_turn>",saw set,saw set
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: installing shelves
+Tools: drawer, ax, bucksaw, shampoo, coffee machine
+Your Choice:","bucksaw 
+<end_of_turn>",bucksaw,bucksaw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: hanging pictures
+Tools: set square, straight flute, stamp, desk lamp, jack plane
+Your Choice:","set square 
+<end_of_turn>",set square,straight flute
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: assembling furniture
+Tools: crown saw, router, stapler, chamfer plane, hammer
+Your Choice:","Hammer 
+<end_of_turn>",hammer,router
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing food
+Tools: soap bar, jigsaw, steel wool pad, lightbulb, steak knife
+Your Choice:","steak knife 
+<end_of_turn>",steak knife,jigsaw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: opening packaging
+Tools: shovel, abrading stone, folding saw, bulldog wrench, bender
+Your Choice:","Folding saw 
+<end_of_turn>",folding saw,folding saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: breaking apart food items
+Tools: o ring, cigar cutter, bottle, potato, hand ax
+Your Choice:","hand ax 
+<end_of_turn>",hand ax,bottle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: serving food
+Tools: shaping tool, window, vase, egg, water bottle
+Your Choice:","shaping tool 
+<end_of_turn>",shaping tool,vase
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: transporting liquids
+Tools: straight flute, bread knife, mug, spud, fridge
+Your Choice:","mug 
+<end_of_turn>",mug,mug
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: serving a dish
+Tools: combination plane, try square, catling, watering can, opener
+Your Choice:","opener 
+<end_of_turn>",opener,watering can
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: watering plants
+Tools: plate, tap, dibble, spiral ratchet screwdriver, try square
+Your Choice:","tap 
+<end_of_turn>",tap,plate
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: decorating pumpkins
+Tools: bathtubbasin, yataghan, taper file, sawmill, plastic box
+Your Choice:","plastic box 
+<end_of_turn>",plastic box,yataghan
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing meat
+Tools: grapnel, wire cutter, tableknife, shaver, showerdoor
+Your Choice:","tableknife 
+<end_of_turn>",tableknife,tableknife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: crafting with wood
+Tools: barong, room decor, salt, gouge, bullnose
+Your Choice:","gouge 
+<end_of_turn>",gouge,barong
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: replacing light bulbs
+Tools: pitchfork, portable saw, clincher, signet, pruning saw
+Your Choice:","portable saw 
+<end_of_turn>",portable saw,signet
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: changing bed sheets
+Tools: razor, ram, toothpick, crosscut saw, drawer
+Your Choice:","drawer 
+<end_of_turn>",drawer,ram
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: swapping out filters
+Tools: stool, plexor.n.wn.medicine, rock bit, broadax, rat tail file
+Your Choice:","stool 
+<end_of_turn>",stool,rock bit
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing cooking ingredients
+Tools: bread, pruning shear, steel wool pad, half hatchet, butcher knife
+Your Choice:","butcher knife 
+<end_of_turn>",butcher knife,half hatchet
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cutting meat
+Tools: rounder, blind, claw hatchet, lightbulb, barong
+Your Choice:","claw hatchet 
+<end_of_turn>",claw hatchet,claw hatchet
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making firewood
+Tools: fireman's ax, case knife, coffeetable, chisel, bread knife
+Your Choice:","fireman's ax 
+<end_of_turn>",fireman's ax,fireman's ax
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: washing dishes
+Tools: potato, dovetail plane, brick trowel, common ax, vaccum cleaner
+Your Choice:","vaccum cleaner 
+<end_of_turn>",vaccum cleaner,vaccum cleaner
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: throwing away uneaten food
+Tools: eolith, tableknife, trench knife, coffeetable, pruning knife
+Your Choice:","tableknife 
+<end_of_turn>",tableknife,tableknife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning spilled milk
+Tools: battering ram, jigsaw, ladle, lancet, grapnel
+Your Choice:","ladle 
+<end_of_turn>",ladle,jigsaw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning the mirror
+Tools: square, desk lamp, razor, bodkin, vaccum cleaner
+Your Choice:","Razor 
+<end_of_turn>",razor,vaccum cleaner
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning the fridge
+Tools: saber saw, oven, showerhead, spray bottle, spade bit
+Your Choice:","spray bottle 
+<end_of_turn>",spray bottle,saber saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning the blinds
+Tools: floorlamp, drilling bit, bandsaw, plunger, lancet
+Your Choice:","plunger 
+<end_of_turn>",plunger,bandsaw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning the shower head
+Tools: camera, vaccum cleaner, head gasket, towel, binder
+Your Choice:","towel 
+<end_of_turn>",towel,towel
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: dusting the statue
+Tools: food cup, alarm clock, chair, toilet paper, power tool
+Your Choice:","toilet paper 
+<end_of_turn>",toilet paper,power tool
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning the toilet
+Tools: drilling bit, floor, plexor.n.wn.medicine, spray bottle, portable saw
+Your Choice:","spray bottle 
+<end_of_turn>",spray bottle,portable saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning the floor
+Tools: bowie knife, square, power saw, ottoman, basket ball
+Your Choice:","basket ball 
+<end_of_turn>",basket ball,power saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: washing your face
+Tools: floor lamp, ice ax, electric hammer, pruning saw, bolt cutter
+Your Choice:","None of the above. 
+<end_of_turn>",None,electric hammer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: watching a movie
+Tools: desk, electric drill, towelholder, chair, hook wrench
+Your Choice:","chair 
+<end_of_turn>",chair,chair
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: setting up bedding
+Tools: to go cup, sponge, tabletopdecor, ottoman, hedge trimmer
+Your Choice:","ottoman 
+<end_of_turn>",ottoman,ottoman
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: choosing a comfortable seat
+Tools: ottoman, buffer, garden spade, scrub brush, power mower
+Your Choice:","ottoman 
+<end_of_turn>",ottoman,ottoman
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: storing clothes
+Tools: phillips screwdriver, o ring, nailfile, stemmer, steel wool pad
+Your Choice:","stemmer 
+<end_of_turn>",stemmer,stemmer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: reducing space in bin
+Tools: bucksaw, comb, remote control, desktop, stemmer
+Your Choice:","stemmer 
+<end_of_turn>",stemmer,stemmer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing food
+Tools: stemmer, bread, burin, rammer, handsaw
+Your Choice:","stemmer 
+<end_of_turn>",stemmer,stemmer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: storing food
+Tools: poniard, steel wool pad, microwave, switchblade, fish knife
+Your Choice:","microwave 
+<end_of_turn>",microwave,fish knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: measuring liquids
+Tools: wrench, pitchfork, butter knife, weeder, cell phone
+Your Choice:","butter knife 
+<end_of_turn>",butter knife,butter knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: managing waste
+Tools: arm chair, slick, tray, scraper, baseballbat
+Your Choice:","scraper 
+<end_of_turn>",scraper,tray
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: being filled with a liquid
+Tools: flat file, table knife, cigar cutter, crosscut saw, lochaber ax
+Your Choice:","table knife 
+<end_of_turn>",table knife,table knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: adjusting device settings
+Tools: common ax, pointing trowel, tennis racket, pot, handsaw
+Your Choice:","handsaw 
+<end_of_turn>",handsaw,handsaw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: managing lighting
+Tools: buffer, machete, pick, plane, electric hammer
+Your Choice:","electric hammer 
+<end_of_turn>",electric hammer,electric hammer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: operating appliances
+Tools: compass saw, toiletpaperhanger, bender, toilet paper, dagger
+Your Choice:","bender 
+<end_of_turn>",bender,compass saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: keeping food from going bad
+Tools: scythe, microwave, side table, scraper, drum sander
+Your Choice:","microwave 
+<end_of_turn>",microwave,drum sander
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: freezing food
+Tools: garden spade, rounder, drum sander, bathtub, seal
+Your Choice:","seal 
+<end_of_turn>",seal,drum sander
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making ice
+Tools: counter top, croupier's rake, battering ram, drum sander, abrader
+Your Choice:","counter top 
+<end_of_turn>",counter top,drum sander
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: creating frost patterns as decoration
+Tools: set square, triphammer, bill, hammer, drum sander
+Your Choice:","bill 
+<end_of_turn>",bill,drum sander
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: protecting food
+Tools: gasket, laundry hamper, drum sander, keyboard, buffer
+Your Choice:","gasket 
+<end_of_turn>",gasket,drum sander
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: shielding surfaces
+Tools: drum sander, star drill, auger, set square, power tool
+Your Choice:","set square 
+<end_of_turn>",set square,drum sander
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: securing items
+Tools: buffer, snuffer, buffer, die, drum sander
+Your Choice:","buffer 
+<end_of_turn>",buffer,drum sander
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: opening a nut
+Tools: stiletto, toothpaste, food cup, to go cup, compass saw
+Your Choice:","stiletto 
+<end_of_turn>",stiletto,stiletto
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: breaking an egg
+Tools: dogbed, bowie knife, icepick, tamp, plane
+Your Choice:","icepick 
+<end_of_turn>",icepick,bowie knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: opening packages
+Tools: parer, slip joint plier, gutter, glue stick, handtowelholder
+Your Choice:","Slip joint plier 
+<end_of_turn>",slip joint plier,parer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: baking pastries
+Tools: slick, razorblade, fireman's ax, mallet, battering ram
+Your Choice:","slick 
+<end_of_turn>",slick,battering ram
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing toppings
+Tools: ripping chisel, c d, sponge, handtowelholder, battering ram
+Your Choice:","ripping chisel 
+<end_of_turn>",ripping chisel,battering ram
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making breadcrumbs
+Tools: battering ram, adz, stiletto, dumbbell, tack hammer
+Your Choice:","tack hammer 
+<end_of_turn>",tack hammer,battering ram
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing snacks
+Tools: egg, flat file, hayfork, pestle, cigar cutter
+Your Choice:","egg 
+<end_of_turn>",egg,pestle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making toppings
+Tools: bowie knife, garden trowel, pestle, saw set, battle ax
+Your Choice:","Pestle 
+<end_of_turn>",pestle,pestle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: crushing ice
+Tools: common ax, gang, bender, pestle, bolt cutter
+Your Choice:","pestle 
+<end_of_turn>",pestle,pestle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making ice cubes
+Tools: drawknife, wine bottle, steak knife, locking plier, bolo
+Your Choice:","wine bottle 
+<end_of_turn>",wine bottle,steak knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing fruits and vegetables
+Tools: allen wrench, lightswitch, handtowel, table knife, remotecontrol
+Your Choice:","table knife 
+<end_of_turn>",table knife,table knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing meats
+Tools: plumber's snake, cap opener, posthole digger, scalpel, keyhole saw
+Your Choice:","scalpel 
+<end_of_turn>",scalpel,scalpel
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing a sliced apple
+Tools: compass saw, dogbed, basketball, tap, dogbed
+Your Choice:","compass saw 
+<end_of_turn>",compass saw,compass saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cutting an apple
+Tools: ottoman, electric hammer, steel wool pad, switchblade, hatchel
+Your Choice:","switchblade 
+<end_of_turn>",switchblade,switchblade
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: opening an envelope
+Tools: cup, diningtable, bottle opener, blade, keychain
+Your Choice:","blade 
+<end_of_turn>",blade,blade
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: applying butter
+Tools: shelvingunit, fireman's ax, twist bit, surgical knife, bolt cutter
+Your Choice:","surgical knife 
+<end_of_turn>",surgical knife,twist bit
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: serving cake
+Tools: cellphone, kitchen knife, locking plier, candle, cutter
+Your Choice:","cutter 
+<end_of_turn>",cutter,cutter
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: decorating table
+Tools: bender, showerglas, curtain, tap wrench, spoon
+Your Choice:","spoon 
+<end_of_turn>",spoon,curtain
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: decorating bed
+Tools: room decor, sparkplug wrench, carpenter's square, razorblade, dry battery
+Your Choice:","room decor 
+<end_of_turn>",room decor,room decor
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: decorating wall
+Tools: cap opener, wood chisel, pointing trowel, scoop, teddy bear
+Your Choice:","pointing trowel 
+<end_of_turn>",pointing trowel,teddy bear
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: decorating lobby
+Tools: dovetail plane, coping saw, butterknife, pen, statue
+Your Choice:","statue 
+<end_of_turn>",statue,statue
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: increasing beauty of the room
+Tools: spiral ratchet screwdriver, poster, plow, crown saw, pitcher
+Your Choice:","poster 
+<end_of_turn>",poster,poster
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing vegetables
+Tools: compass saw, razor, spraybottle, dining table, dirk
+Your Choice:","dirk 
+<end_of_turn>",dirk,dirk
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: creating garnishes
+Tools: rubber eraser, steak knife, carpenter's square, faucet, coffee
+Your Choice:","Steak knife 
+<end_of_turn>",steak knife,steak knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making salsa
+Tools: lug wrench, knife, bandsaw, machete, kitchenknife
+Your Choice:","kitchenknife 
+<end_of_turn>",kitchenknife,machete
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: measuring ingredients
+Tools: dagger, parang, graver, metal box, pipe cutter
+Your Choice:","metal box 
+<end_of_turn>",metal box,dagger
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: gardening
+Tools: pot, kitchenknife, ditch spade, floor, power drill
+Your Choice:","ditch spade 
+<end_of_turn>",ditch spade,ditch spade
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing soil
+Tools: latchstring, desklamp, garden spade, scauper, binder
+Your Choice:","garden spade 
+<end_of_turn>",garden spade,garden spade
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: finding buried treasures
+Tools: pitcher, chain saw, bumper jack, file, shovel
+Your Choice:","shovel 
+<end_of_turn>",shovel,shovel
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: showcasing decorations
+Tools: set square, parang, power tool, calculator, roach clip
+Your Choice:","roach clip 
+<end_of_turn>",roach clip,calculator
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: organizing collectibles
+Tools: ax, cell phone, circular saw, houseplant, faucet
+Your Choice:","houseplant 
+<end_of_turn>",houseplant,cell phone
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: presenting information
+Tools: calculator, linoleum knife, toaster, flat tip screwdriver, knife blade
+Your Choice:","flat tip screwdriver 
+<end_of_turn>",flat tip screwdriver,calculator
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: throwing away uneaten food
+Tools: plate, cutting implement, safe, sink basin, case knife
+Your Choice:","sink basin 
+<end_of_turn>",sink basin,sink basin
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning spilled milk
+Tools: wateringcan, round file, curtain, sink basin, compass saw
+Your Choice:","sink basin 
+<end_of_turn>",sink basin,sink basin
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: throwing away used soap bottle
+Tools: steak knife, square, mallet, houseplant, sink basin
+Your Choice:","sink basin 
+<end_of_turn>",sink basin,sink basin
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: throwing away toilet paper
+Tools: bur, pitcher, awl, backsaw, garbage can
+Your Choice:","garbage can 
+<end_of_turn>",garbage can,garbage can
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: hanging items on a wall
+Tools: tap wrench, scauper, toothbrush, spatula, drill
+Your Choice:","drill 
+<end_of_turn>",drill,drill
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: assembling furniture
+Tools: chamfer bit, star drill, bandsaw, garden spade, cellphone
+Your Choice:","star drill 
+<end_of_turn>",star drill,star drill
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: installing fixtures
+Tools: candle, compass saw, scrub plane, plexor.n.wn.medicine, router
+Your Choice:","router 
+<end_of_turn>",router,router
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: drying washed dishes
+Tools: hunting knife, power mower, hand towel, lettuce, cross bit
+Your Choice:","hand towel 
+<end_of_turn>",hand towel,hand towel
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: hanging cleaned laundry
+Tools: hand towel, catling, saw set, gutter, screwdriver
+Your Choice:","catling 
+<end_of_turn>",catling,hand towel
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: drying up spilled liquids
+Tools: moldboard plow, kleenex, tennisracket, butter knife, pruner
+Your Choice:","kleenex 
+<end_of_turn>",kleenex,kleenex
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: having a meal
+Tools: alligator wrench, salt, router, laptop, combination plane
+Your Choice:","salt 
+<end_of_turn>",salt,salt
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing food
+Tools: crank, creditcard, dumbbell, nailfile, potato
+Your Choice:","potato 
+<end_of_turn>",potato,potato
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: being cooked
+Tools: edge tool, razor, footstool, bread, hand mower
+Your Choice:","bread 
+<end_of_turn>",bread,bread
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: personalising items
+Tools: jointer, scauper, bit, rasp, awl
+Your Choice:","Awl 
+<end_of_turn>",awl,scauper
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: creating decorative art
+Tools: ax, graver, wine bottle, laundryhamper, slick
+Your Choice:","graver 
+<end_of_turn>",graver,graver
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: labelling belongings
+Tools: scauper, houseplant, drilling bit, pestle, spraybottle
+Your Choice:","scauper 
+<end_of_turn>",scauper,scauper
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: watching a movie
+Tools: camera, clasp knife, cell phone, room decor, kirpan
+Your Choice:","cell phone 
+<end_of_turn>",cell phone,cell phone
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: listening to a song
+Tools: screw key, pillow, cell phone, fore plane, clincher
+Your Choice:","cell phone 
+<end_of_turn>",cell phone,cell phone
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: surfing the internet
+Tools: dogbed, aluminum foil, cigar cutter, c d, coffee table
+Your Choice:","c d 
+<end_of_turn>",c d,c d
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: playing active games
+Tools: bread, basket ball, shovel, twist bit, pin wrench
+Your Choice:","basket ball 
+<end_of_turn>",basket ball,basket ball
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: exercising
+Tools: tennis racket, peppershaker, television, safe, adz
+Your Choice:","tennis racket 
+<end_of_turn>",tennis racket,tennis racket
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning as a home workout
+Tools: scrub brush, basket ball, clincher, box, dentist's drill
+Your Choice:","Scrub brush 
+<end_of_turn>",scrub brush,basket ball
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: organizing documents
+Tools: coffee mug, spray bottle, taper file, safe, hunting knife
+Your Choice:","taper file 
+<end_of_turn>",taper file,taper file
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning fingernails
+Tools: power saw, winebottle, hack, blunt file, bur
+Your Choice:","blunt file 
+<end_of_turn>",blunt file,blunt file
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: smoothing surfaces
+Tools: broadax, taper file, base ball bat, lawn mower, food jar
+Your Choice:","taper file 
+<end_of_turn>",taper file,taper file
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: repairing appliances
+Tools: bore bit, crampon, o ring, openside plane, rounder
+Your Choice:","bore bit 
+<end_of_turn>",bore bit,crampon
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: mending clothes
+Tools: counterbore, fork, pruner, razor, lancet
+Your Choice:","Lancet 
+<end_of_turn>",lancet,razor
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: patching walls
+Tools: ripsaw, buffer, stamp, room decor, bumper jack
+Your Choice:","Ripsaw 
+<end_of_turn>",ripsaw,stamp
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: adjusting cables
+Tools: window, bender, crosscut saw, crown saw, coffee mug
+Your Choice:","bender 
+<end_of_turn>",bender,bender
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: bending pipes
+Tools: tile cutter, bodkin, bender, toothpaste, glass cutter
+Your Choice:","bender 
+<end_of_turn>",bender,bender
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: grinding surfaces
+Tools: spiral ratchet screwdriver, dovetail plane, wine bottle, designedspade, bender
+Your Choice:","dovetail plane 
+<end_of_turn>",dovetail plane,bender
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: picking-up objects
+Tools: carpenter's mallet, gang, ravehook, wire cutter, diningtable
+Your Choice:","ravehook 
+<end_of_turn>",ravehook,carpenter's mallet
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: opening jars
+Tools: scauper, hatchet, potato, core drill, bolt cutter
+Your Choice:","Bolt cutter 
+<end_of_turn>",bolt cutter,scauper
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: carrying items
+Tools: ripping chisel, rock bit, surgical knife, soldering iron, basketball
+Your Choice:","basketball 
+<end_of_turn>",basketball,soldering iron
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: placing objects down
+Tools: burr, saber saw, sandblaster, maul, scriber
+Your Choice:","Maul 
+<end_of_turn>",maul,sandblaster
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing spices
+Tools: laundryhamper, pipe cutter, cap opener, kitchen knife, pestle
+Your Choice:","pestle 
+<end_of_turn>",pestle,pestle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making coffee powder
+Tools: instant noodle, moldboard plow, signet, pincer, pestle
+Your Choice:","pestle 
+<end_of_turn>",pestle,pestle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: processing grains
+Tools: cigar cutter, steel wool pad, coffeemachine, vase, pestle
+Your Choice:","pestle 
+<end_of_turn>",pestle,pestle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: hanging a picture on a wall
+Tools: butterknife, burin, power tool, tack hammer, torque wrench
+Your Choice:","tack hammer 
+<end_of_turn>",tack hammer,tack hammer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: assembling furniture
+Tools: triphammer, desk, corkscrew, bore bit, pitchfork
+Your Choice:","bore bit 
+<end_of_turn>",bore bit,triphammer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing old fixtures
+Tools: scythe, sponge, bread knife, chisel, ram
+Your Choice:","chisel 
+<end_of_turn>",chisel,scythe
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: repairing items
+Tools: dresser, firmer chisel, carpenter's hammer, tissuebox, tennisracket
+Your Choice:","firmer chisel 
+<end_of_turn>",firmer chisel,carpenter's hammer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: hammering nails
+Tools: carpenter's hammer, buffer, chain wrench, statue, scrubbrush
+Your Choice:","carpenter's hammer 
+<end_of_turn>",carpenter's hammer,carpenter's hammer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: opening doors and cabinets
+Tools: rock bit, roach clip, two handed saw, tire iron, hand ax
+Your Choice:","Tire iron 
+<end_of_turn>",tire iron,two handed saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: carrying containers
+Tools: router, punch, dogbed, roomdecor, alligator wrench
+Your Choice:","alligator wrench 
+<end_of_turn>",alligator wrench,router
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: using appliances
+Tools: drum sander, paper box, bath tub basin, lawn mower, toiletpaperhanger
+Your Choice:","toiletpaperhanger 
+<end_of_turn>",toiletpaperhanger,drum sander
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: heating coffee
+Tools: bread, carpenter's square, clincher, ripping chisel, coffee machine
+Your Choice:","coffee machine 
+<end_of_turn>",coffee machine,coffee machine
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cooking food
+Tools: apple, stoveburner, plumber's snake, dibble, egg
+Your Choice:","stoveburner 
+<end_of_turn>",stoveburner,stoveburner
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: reheating soup
+Tools: paper towel roll, die, microwave, bread, watch
+Your Choice:","microwave 
+<end_of_turn>",microwave,microwave
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: boiling water
+Tools: drawknife, toiletpaperhanger, head gasket, coffee machine, water bottle
+Your Choice:","coffee machine 
+<end_of_turn>",coffee machine,coffee machine
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: melting envelope wax
+Tools: coffee machine, lancet, sidetable, shampoo, spade
+Your Choice:","Lancet 
+<end_of_turn>",lancet,coffee machine
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: melting butter
+Tools: hook wrench, shear, stemmer, palette knife, toaster
+Your Choice:","Toaster 
+<end_of_turn>",toaster,toaster
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: carrying items
+Tools: ottoman, food box, icepick, carpenter's hammer, clipper
+Your Choice:","food box 
+<end_of_turn>",food box,clipper
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: using tools
+Tools: box wrench, breast drill, core drill, seal, penknife
+Your Choice:","box wrench 
+<end_of_turn>",box wrench,seal
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: stabilising objects
+Tools: abrading stone, hatchel, bolo, rib joint plier, food cup
+Your Choice:","rib joint plier 
+<end_of_turn>",rib joint plier,rib joint plier
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: increasing brightness of the room
+Tools: palette knife, plexor.n.wn.medicine, coffee, lightbulb, hoe
+Your Choice:","lightbulb 
+<end_of_turn>",lightbulb,lightbulb
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: lighting up a room
+Tools: lightbulb, edger, posthole digger, ripping chisel, winebottle
+Your Choice:","lightbulb 
+<end_of_turn>",lightbulb,lightbulb
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: decreasing darkness
+Tools: curtain, float, bed, portable saw, cap opener
+Your Choice:","curtain 
+<end_of_turn>",curtain,curtain
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: hanging poster
+Tools: pipe wrench, side table, lawn mower, slicer, curtain
+Your Choice:","curtain 
+<end_of_turn>",curtain,side table
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: hanging painting
+Tools: lightswitch, dentist's drill, tennis racket, counter top, bill
+Your Choice:","tennis racket 
+<end_of_turn>",tennis racket,counter top
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning shower head
+Tools: butterknife, ottoman, snip, food can, punch
+Your Choice:","snip 
+<end_of_turn>",snip,ottoman
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: getting a book from a high shelf
+Tools: soapbar, chisel, egg, arm chair, reamer
+Your Choice:","arm chair 
+<end_of_turn>",arm chair,arm chair
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: placing a very delicate artifact on a shelf
+Tools: compass saw, stool, edger, bullnose, slip joint plier
+Your Choice:","stool 
+<end_of_turn>",stool,stool
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: fixing light bulb outside your house
+Tools: pitsaw, pencil, hob, sofa, spiral ratchet screwdriver
+Your Choice:","spiral ratchet screwdriver 
+<end_of_turn>",spiral ratchet screwdriver,sofa
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: putting objects on high shelf
+Tools: desk, linoleum knife, kitchen knife, circular saw, chisel
+Your Choice:","desk 
+<end_of_turn>",desk,desk
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: mounting fixtures
+Tools: pruner, book, parang, moldboard plow, basket ball
+Your Choice:","pruner 
+<end_of_turn>",pruner,pruner
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: setting up appliances
+Tools: broad hatchet, rammer, two handed saw, floorlamp, cap
+Your Choice:","two handed saw 
+<end_of_turn>",two handed saw,two handed saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: assembling furniture
+Tools: wine bottle, electric hammer, gouge, coping saw, tissuebox
+Your Choice:","electric hammer 
+<end_of_turn>",electric hammer,coping saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: moving furniture
+Tools: pitchfork, pipe wrench, shelving unit, cd, laundry hamper
+Your Choice:","laundry hamper 
+<end_of_turn>",laundry hamper,pitchfork
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: carrying objects
+Tools: camera, hayfork, designedspade, rammer, kettle
+Your Choice:","hayfork 
+<end_of_turn>",hayfork,hayfork
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: accessing high shelves
+Tools: hayfork, moldboard plow, axe, scissors, towelholder
+Your Choice:","towelholder 
+<end_of_turn>",towelholder,hayfork
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: labeling items
+Tools: o ring, lightbulb, folding saw, shaping tool, spray bottle
+Your Choice:","shaping tool 
+<end_of_turn>",shaping tool,o ring
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: measuring distances
+Tools: hayfork, shelvingunit, stemmer, signet, sofa
+Your Choice:","stemmer 
+<end_of_turn>",stemmer,signet
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: tracking events
+Tools: cuttingtool, ball peen hammer, pipe wrench, bradawl, twist bit
+Your Choice:","bradawl 
+<end_of_turn>",bradawl,bradawl
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: melting butter
+Tools: catling, bull tongue, circular saw, soldering iron, cold chisel
+Your Choice:","Soldering iron 
+<end_of_turn>",soldering iron,soldering iron
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing adhesives
+Tools: soldering iron, bolo, broadax, dirk, maul
+Your Choice:","bolo 
+<end_of_turn>",bolo,soldering iron
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: defrosting frozen food
+Tools: graver, handstamp, dresser, abrader, soldering iron
+Your Choice:","defroster 
+<end_of_turn>",None,soldering iron
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: mixing ingredients
+Tools: butter knife, binder, awl, dresser, guitar pick
+Your Choice:","butter knife 
+<end_of_turn>",butter knife,butter knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing drinks
+Tools: fridge, spoon, scriber, power saw, garden trowel
+Your Choice:","fridge 
+<end_of_turn>",fridge,spoon
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: combining cleaning solutions
+Tools: soapbottle, pestle, hoe, armchair, water bottle
+Your Choice:","soapbottle 
+<end_of_turn>",soapbottle,pestle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: using appliances
+Tools: head gasket, ram, comb, floorlamp, shelving unit
+Your Choice:","ram 
+<end_of_turn>",ram,floorlamp
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: controlling devices
+Tools: stiletto, jointer, handsaw, paper cutter, tap wrench
+Your Choice:","tap wrench 
+<end_of_turn>",tap wrench,handsaw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: handling tools
+Tools: ram, compass saw, rake, riding mower, circular plane
+Your Choice:","ram 
+<end_of_turn>",ram,compass saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing skin from fruits and vegetables
+Tools: seal, handstamp, parer, plate, towelholder
+Your Choice:","parer 
+<end_of_turn>",parer,parer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: creating compost
+Tools: base ball bat, dirk, folding saw, c d, drill
+Your Choice:","folding saw 
+<end_of_turn>",folding saw,dirk
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making garnishes
+Tools: linoleum knife, food bag, trowel, dog bed, screw wrench
+Your Choice:","linoleum knife 
+<end_of_turn>",linoleum knife,linoleum knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: harvesting produce
+Tools: moldboard plow, pot, garden rake, wrench, gangsaw
+Your Choice:","garden rake 
+<end_of_turn>",garden rake,garden rake
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: sorting items
+Tools: cold chisel, coffee, notebook, bottle, watering can
+Your Choice:","notebook 
+<end_of_turn>",notebook,bottle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: picking up items
+Tools: seal, clipper, desklamp, baseballbat, saw
+Your Choice:","baseballbat 
+<end_of_turn>",baseballbat,baseballbat
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: creating a drainage
+Tools: hand drill, broad hatchet, butcher knife, hook wrench, punch
+Your Choice:","hand drill 
+<end_of_turn>",hand drill,punch
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: opening packages
+Tools: stillson wrench, bradawl, yataghan, broad hatchet, spud
+Your Choice:","bradawl 
+<end_of_turn>",bradawl,bradawl
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making a small hole
+Tools: handtowel, keychain, bradawl, bulldog wrench, rounder
+Your Choice:","bradawl 
+<end_of_turn>",bradawl,bradawl
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing food
+Tools: cd, punch plier, desk, battle ax, tray
+Your Choice:","tray 
+<end_of_turn>",tray,punch plier
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: clearing snow
+Tools: gangsaw, beading plane, lister, dado plane, table knife
+Your Choice:","lister 
+<end_of_turn>",lister,lister
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: tilling soil
+Tools: folding saw, openside plane, dining table, bull tongue, drill
+Your Choice:","bull tongue 
+<end_of_turn>",bull tongue,bull tongue
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: breaking up compacted soil
+Tools: scauper, bull tongue, pincer, graver, can opener
+Your Choice:","scauper 
+<end_of_turn>",scauper,bull tongue
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: connecting appliances
+Tools: pneumatic drill, stemmer, spreader, floorlamp, stillson wrench
+Your Choice:","stillson wrench 
+<end_of_turn>",stillson wrench,pneumatic drill
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: charging devices
+Tools: dagger, box, alarm clock, pneumatic drill, keychain
+Your Choice:","keychain 
+<end_of_turn>",keychain,pneumatic drill
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: plugging devices in
+Tools: beading plane, portable saw, light switch, bandsaw, corkscrew
+Your Choice:","light switch 
+<end_of_turn>",light switch,bandsaw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: checking the readiness of food
+Tools: dogbed, cigar cutter, screwdriver, pipe cutter, soapbottle
+Your Choice:","screwdriver 
+<end_of_turn>",screwdriver,screwdriver
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: creating a drainage
+Tools: air hammer, desktop, apple, toilet, screwdriver
+Your Choice:","Screwdriver 
+<end_of_turn>",screwdriver,screwdriver
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: pinning items on a wall
+Tools: chain saw, pitsaw, box wrench, pitsaw, phillips screwdriver
+Your Choice:","pitsaw 
+<end_of_turn>",pitsaw,phillips screwdriver
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: polishing metal objects
+Tools: monkey wrench, bolt cutter, pitcher, sandblaster, tap wrench
+Your Choice:","sandblaster 
+<end_of_turn>",sandblaster,sandblaster
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning surfaces
+Tools: yataghan, shear, abrading stone, power saw, glue stick
+Your Choice:","abrading stone 
+<end_of_turn>",abrading stone,abrading stone
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: enhancing glass surfaces
+Tools: folding saw, mug, stamp, flat file, dresser
+Your Choice:","flat file 
+<end_of_turn>",flat file,flat file
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: maintaining floors
+Tools: flashlight, upset, rasp, jackscrew, rake
+Your Choice:","rake 
+<end_of_turn>",rake,rasp
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: pouring liquids
+Tools: spiral ratchet screwdriver, float, buffer, flat tip screwdriver, pitcher
+Your Choice:","pitcher 
+<end_of_turn>",pitcher,pitcher
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing drinks
+Tools: vacuum cleaner, watering can, punch plier, pitcher, phillips screwdriver
+Your Choice:","pitcher 
+<end_of_turn>",pitcher,pitcher
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing cleaning solutions
+Tools: fore plane, poleax, jack, pitcher, poniard
+Your Choice:","pitcher 
+<end_of_turn>",pitcher,pitcher
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: using appliances with a button
+Tools: knife blade, edger, pillow, tamp, scrub brush
+Your Choice:","tamp 
+<end_of_turn>",tamp,tamp
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: ironing clothes
+Tools: toiletpaperhanger, soapbottle, bumper jack, stemmer, cloth
+Your Choice:","cloth 
+<end_of_turn>",cloth,stemmer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: operating gadgets
+Tools: roomdecor, breadknife, smooth plane, cutter, tamp
+Your Choice:","cutter 
+<end_of_turn>",cutter,tamp
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: reading a good night story
+Tools: desktop, dining table, wateringcan, pruning knife, armchair
+Your Choice:","armchair 
+<end_of_turn>",armchair,desktop
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: reading instructions
+Tools: hedge trimmer, electric drill, garden spade, rock bit, cell phone
+Your Choice:","cell phone 
+<end_of_turn>",cell phone,cell phone
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: keeping up to date
+Tools: watering can, openside plane, laptop, t square, latchstring
+Your Choice:","laptop 
+<end_of_turn>",laptop,laptop
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: enjoying leisure time
+Tools: food box, fork, handtowel, spokeshave, desktop
+Your Choice:","desktop 
+<end_of_turn>",desktop,desktop
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: fixing broken appliances
+Tools: chamfer plane, adz, palette knife, tap wrench, rasp
+Your Choice:","tap wrench 
+<end_of_turn>",tap wrench,chamfer plane
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: patching damages furniture
+Tools: toilet, toiletpaperhanger, chain saw, hammer, center bit
+Your Choice:","hammer 
+<end_of_turn>",hammer,chain saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: maintaining plumbing
+Tools: fireman's ax, rubber eraser, apple, wateringcan, buffer
+Your Choice:","Buffer 
+<end_of_turn>",buffer,buffer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: rolling out dough
+Tools: beading plane, hedge trimmer, flashlight, slouse, rasp
+Your Choice:","slouse 
+<end_of_turn>",slouse,flashlight
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: painting walls
+Tools: food jar, counter top, curtain, spray bottle, mirror
+Your Choice:","spray bottle 
+<end_of_turn>",spray bottle,food jar
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning surfaces
+Tools: chain saw, table knife, pin wrench, kitchenknife, linoleum knife
+Your Choice:","linoleum knife 
+<end_of_turn>",linoleum knife,table knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: polishing furniture
+Tools: fish knife, pruning knife, room decor, drilling bit, pot
+Your Choice:","Fish knife 
+<end_of_turn>",fish knife,fish knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing stains
+Tools: keyhole saw, hack, food can, electric drill, tableknife
+Your Choice:","tableknife 
+<end_of_turn>",tableknife,tableknife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cutting wood
+Tools: socket wrench, scraper, hammer, pruning saw, creditcard
+Your Choice:","pruning saw 
+<end_of_turn>",pruning saw,pruning saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: trimming branches
+Tools: sink, window, gutter, crosscut saw, folding saw
+Your Choice:","crosscut saw 
+<end_of_turn>",crosscut saw,folding saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: sawing flooring planks
+Tools: arm chair, folding saw, dry battery, pitsaw, showerglas
+Your Choice:","folding saw 
+<end_of_turn>",folding saw,pitsaw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: serving ice cream
+Tools: wateringcan, toaster, lightswitch, bath tub basin, garden trowel
+Your Choice:","bath tub basin 
+<end_of_turn>",bath tub basin,garden trowel
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: measuring ingredients
+Tools: lancet, slick, scriber, jigsaw, hob
+Your Choice:","Scriber 
+<end_of_turn>",scriber,slick
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning a litter box
+Tools: spud, slick, pointing trowel, sinkbasin, trowel
+Your Choice:","trowel 
+<end_of_turn>",trowel,trowel
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: assembling furniture
+Tools: screwdriver, garbage can, secateur, plastic box, arm chair
+Your Choice:","screwdriver 
+<end_of_turn>",screwdriver,screwdriver
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: mounting hardware
+Tools: chisel, stemmer, poster, spiral ratchet screwdriver, straightedge
+Your Choice:","spiral ratchet screwdriver 
+<end_of_turn>",spiral ratchet screwdriver,spiral ratchet screwdriver
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: screwing in screws
+Tools: drill, guitar pick, shaver, phillips screwdriver, cap opener
+Your Choice:","phillips screwdriver 
+<end_of_turn>",phillips screwdriver,phillips screwdriver
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: repairing appliances
+Tools: tennisracket, handtowelholder, book, spiral ratchet screwdriver, coffee machine
+Your Choice:","spiral ratchet screwdriver 
+<end_of_turn>",spiral ratchet screwdriver,spiral ratchet screwdriver
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: dividing food into portions
+Tools: basketball, desklamp, broad hatchet, garden trowel, c d
+Your Choice:","garden trowel 
+<end_of_turn>",garden trowel,broad hatchet
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cutting items in halve
+Tools: gouge, desk, stiletto, eolith, tack hammer
+Your Choice:","gouge 
+<end_of_turn>",gouge,stiletto
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: changing an objects shape
+Tools: bricklayer's hammer, fridge, graver, shaping tool, scauper
+Your Choice:","shaping tool 
+<end_of_turn>",shaping tool,shaping tool
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing skin from meat
+Tools: lochaber ax, coping saw, teddybear, c d, garden spade
+Your Choice:","Coping saw 
+<end_of_turn>",coping saw,lochaber ax
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing the peel from fruits and vegetables
+Tools: plunger, reamer, die, adz, sofa
+Your Choice:","reamer 
+<end_of_turn>",reamer,adz
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing unhealthy plant parts
+Tools: food bag, pallet, kitchen knife, saw set, bore bit
+Your Choice:","kitchen knife 
+<end_of_turn>",kitchen knife,kitchen knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: opening packages
+Tools: putty knife, star drill, blade, hack, power tool
+Your Choice:","blade 
+<end_of_turn>",blade,blade
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: creating ventilation
+Tools: knife blade, trowel, countertop, electric hammer, barong
+Your Choice:","knife blade 
+<end_of_turn>",knife blade,knife blade
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cutting open food objects
+Tools: blade, armchair, broadax, alarmclock, pen
+Your Choice:","blade 
+<end_of_turn>",blade,blade
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: sanding surfaces
+Tools: thinning shear, pot, screw wrench, lochaber ax, steel wool pad
+Your Choice:","steel wool pad 
+<end_of_turn>",steel wool pad,steel wool pad
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: ironing clothes
+Tools: dogbed, wood chisel, twist bit, abrading stone, coal shovel
+Your Choice:","abrading stone 
+<end_of_turn>",abrading stone,abrading stone
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: polishing furniture
+Tools: abrader, chain tong, blunt file, book, bur
+Your Choice:","abrader 
+<end_of_turn>",abrader,abrader
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: repairing electronics
+Tools: soldering iron, instant noodle, spokeshave, keyboard, rasp
+Your Choice:","soldering iron 
+<end_of_turn>",soldering iron,soldering iron
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making jewelery
+Tools: crosscut saw, soldering iron, bath tub basin, kitchen knife, instant noodle
+Your Choice:","soldering iron 
+<end_of_turn>",soldering iron,soldering iron
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: fixing plumbing
+Tools: spade bit, garden tool, soldering iron, bread knife, spray bottle
+Your Choice:","soldering iron 
+<end_of_turn>",soldering iron,soldering iron
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: applying spreads on bread
+Tools: abrader, palette knife, chain saw, hunting knife, counterbore
+Your Choice:","palette knife 
+<end_of_turn>",palette knife,palette knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: spreading icing on a cake
+Tools: pestle, stamp, break seal, plumber's snake, pointing trowel
+Your Choice:","pointing trowel 
+<end_of_turn>",pointing trowel,pointing trowel
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: distributing cleaning products
+Tools: hook wrench, tableknife, laptop, fork, pump type plier
+Your Choice:","pump type plier 
+<end_of_turn>",pump type plier,tableknife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: organizing documents
+Tools: stapler, crank, gouge, dado plane, khukurus
+Your Choice:","stapler 
+<end_of_turn>",stapler,stapler
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: repairing books
+Tools: stapler, glue stick, lancet, scauper, carriage wrench
+Your Choice:","Glue stick 
+<end_of_turn>",glue stick,stapler
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing dirt from your teeth
+Tools: pencil, power tool, hand shovel, showerdoor, toothpick
+Your Choice:","toothpick 
+<end_of_turn>",toothpick,toothpick
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: storing fruits and vegetables
+Tools: box, razorblade, metal box, spreader, winebottle
+Your Choice:","box 
+<end_of_turn>",box,box
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: storing clean utensils
+Tools: paper cutter, palette knife, desk, dumbbell, croupier's rake
+Your Choice:","desk 
+<end_of_turn>",desk,desk
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: packing books for house shifting
+Tools: handstamp, claw hatchet, dresser, axe, thinning shear
+Your Choice:","dresser 
+<end_of_turn>",dresser,dresser
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: keeping sporting equipment
+Tools: box, ottoman, straight razor, circular saw, showercurtain
+Your Choice:","box 
+<end_of_turn>",box,box
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: storing important documents
+Tools: dresser, clasp knife, book, ottoman, trench knife
+Your Choice:","dresser 
+<end_of_turn>",dresser,dresser
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: storing cereal box
+Tools: food cup, die, dumbbell, toiletpaperhanger, box
+Your Choice:","box 
+<end_of_turn>",box,box
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: keeping dirty clothes
+Tools: hand tool, cap, dresser, shovel, bricklayer's hammer
+Your Choice:","dresser 
+<end_of_turn>",dresser,dresser
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: storing dog treats
+Tools: hand drill, sidetable, tennisracket, desk, clipper
+Your Choice:","desk 
+<end_of_turn>",desk,desk
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: organizing items
+Tools: backsaw, portable saw, shelving unit, dirk, soapbar
+Your Choice:","shelving unit 
+<end_of_turn>",shelving unit,shelving unit
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing isolation from wires
+Tools: food bag, wire stripper, alligator wrench, garden tool, pruning saw
+Your Choice:","wire stripper 
+<end_of_turn>",wire stripper,wire stripper
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: supporting a laptop
+Tools: neolith, round file, socket wrench, die, footstool
+Your Choice:","footstool 
+<end_of_turn>",footstool,footstool
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: displaying a statue
+Tools: bayonet, side table, painting, wateringcan, battle ax
+Your Choice:","side table 
+<end_of_turn>",side table,side table
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: eating dinner
+Tools: stool, spade bit, bed, jigsaw, compass saw
+Your Choice:","stool 
+<end_of_turn>",stool,stool
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: packing soil
+Tools: scraper, countertop, stemmer, creditcard, scrubbrush
+Your Choice:","scraper 
+<end_of_turn>",scraper,stemmer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: preparing coffee in a filter
+Tools: circular saw, pincer, rat tail file, tamp, remote control
+Your Choice:","tamp 
+<end_of_turn>",tamp,tamp
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: setting tiles
+Tools: crosscut saw, bolt cutter, adjustable wrench, crank handle, stemmer
+Your Choice:","crosscut saw 
+<end_of_turn>",crosscut saw,stemmer
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: telling the time
+Tools: plastic box, die, cell phone, stiletto, bevel
+Your Choice:","cell phone 
+<end_of_turn>",cell phone,cell phone
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: managing schedules
+Tools: dumbbell, portable saw, egg, tennisracket, watch
+Your Choice:","watch 
+<end_of_turn>",watch,watch
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: clearing the drain
+Tools: trap and drain auger, food jar, cigar cutter, pruning knife, paper box
+Your Choice:","trap and drain auger 
+<end_of_turn>",trap and drain auger,trap and drain auger
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: fixing a toilet
+Tools: burr, spraybottle, trap and drain auger, folding saw, expansion bit
+Your Choice:","trap and drain auger 
+<end_of_turn>",trap and drain auger,trap and drain auger
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning pipes
+Tools: keyhole saw, plunger, cd, spoon, watering can
+Your Choice:","plunger 
+<end_of_turn>",plunger,plunger
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: washing dishes
+Tools: side table, bit, keyhole saw, shaver, dumbbell
+Your Choice:","shaver 
+<end_of_turn>",shaver,keyhole saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: washing a fruit before cutting
+Tools: posthole digger, hammer, sparkplug wrench, shiv, bandsaw
+Your Choice:","shiv 
+<end_of_turn>",shiv,bandsaw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: washing your face
+Tools: compass saw, circular saw, paper cutter, parang, firmer chisel
+Your Choice:","Paper cutter 
+<end_of_turn>",paper cutter,compass saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: doing laundry
+Tools: compass saw, showercurtain, monkey wrench, burin, pin wrench
+Your Choice:","pin wrench 
+<end_of_turn>",pin wrench,compass saw
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning dishes
+Tools: plexor.n.wn.medicine, stamping machine, ball, footstool, jack
+Your Choice:","plexor.n.wn.medicine 
+<end_of_turn>",None,stamping machine
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: cleaning a surface
+Tools: butter knife, nailfile, stoveburner, dog bed, sofa
+Your Choice:","butter knife 
+<end_of_turn>",butter knife,butter knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: removing stains
+Tools: stool, bradawl, slouse, butter knife, hatchet
+Your Choice:","slouse 
+<end_of_turn>",slouse,butter knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: wiping a surface clean
+Tools: shelvingunit, case knife, jackscrew, sandblaster, trowel
+Your Choice:","trowel 
+<end_of_turn>",trowel,case knife
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: storing food
+Tools: pallet, dry battery, ball, awl, parer
+Your Choice:","parer 
+<end_of_turn>",parer,ball
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: protecting items
+Tools: garbage can, two handed saw, water bottle, stillson wrench, trepan
+Your Choice:","garbage can 
+<end_of_turn>",garbage can,water bottle
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: tightening bolts
+Tools: hand mower, wire stripper, burr, alligator wrench, beading plane
+Your Choice:","alligator wrench 
+<end_of_turn>",alligator wrench,alligator wrench
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: loosening bolts
+Tools: spade bit, brace wrench, crank, television, circular saw
+Your Choice:","brace wrench 
+<end_of_turn>",brace wrench,brace wrench
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: adjusting fixtures
+Tools: surgical knife, bathtubbasin, monkey wrench, box wrench, stiletto
+Your Choice:","monkey wrench 
+<end_of_turn>",monkey wrench,monkey wrench
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: changing bicycle components
+Tools: pin wrench, glass cutter, paper box, box wrench, palette knife
+Your Choice:","box wrench 
+<end_of_turn>",box wrench,box wrench
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: making a shopping list
+Tools: spud, dog wrench, candle, desktop, alarmclock
+Your Choice:","desktop 
+<end_of_turn>",desktop,desktop
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: keeping a journal
+Tools: cross bit, pipe wrench, scoop, saltshaker, pencil
+Your Choice:","pencil 
+<end_of_turn>",pencil,pencil
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: labelling items
+Tools: garden tool, garbagebag, carpenter's mallet, coffee machine, pencil
+Your Choice:","pencil 
+<end_of_turn>",pencil,pencil
+"Here are a few examples:
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: cleaning up a spill<end_of_turn>
+Tool: sponge
+Task: washing dishes 
+<end_of_turn>
+Tool: sponge
+Task: frying an egg 
+<end_of_turn>
+Tool: pan
+Task: drinking water 
+<end_of_turn>
+Tool: cup
+Task: frying bacon 
+<end_of_turn>
+Tool: pan
+Task: boiling water for tea 
+<end_of_turn>
+Tool: kettle
+Task: Serving food<end_of_turn>
+Tool: plate
+
+Task: writing a letter
+Tools: toilet paper, spade, soda can, laptop, can opener
+Your Choice:","laptop 
+<end_of_turn>",laptop,laptop

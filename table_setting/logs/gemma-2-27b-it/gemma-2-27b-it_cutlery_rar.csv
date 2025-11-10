@@ -1,0 +1,503 @@
+question,full_answer,final_answer,correct_answer
+"Meal: Lamb and Bean Nachos With Salsa Fresca
+Cutlery:","To best enjoy a plate of Lamb and Bean Nachos with Salsa Fresca, which utensils would be most practical and efficient for picking up the various components?
+
+Knife, Fork, Hands 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Meatloaf With BBQ Sauce
+Cutlery:","To best enjoy a delicious meal of meatloaf with BBQ sauce, what utensils would be most appropriate for handling and consuming the food?
+
+Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Tiramisu
+Cutlery:","As a robot preparing to serve tiramisu, I need to determine the most appropriate utensils for consuming this delicate dessert. 
+
+Cutlery: **Spoon** 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Loaded Potato Soup
+Cutlery:","To best enjoy a bowl of Loaded Potato Soup, which utensils would be most practical and efficient for consuming both the soup and the toppings?
+
+Cutlery: Spoon, Fork 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",[<Utensil.SPOON: 'Spoon'>]
+"Meal: Vegan Sushi Roll with Avocado, Carrot and Cucumber
+Cutlery:","To best enjoy a delicious vegan sushi roll filled with avocado, carrot, and cucumber, which utensils would be most appropriate for picking up and eating the roll?
+
+**Cutlery:** Chopsticks 
+<end_of_turn>",[<Utensil.CHOPS: 'Chopsticks'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Meal: Spaghettini Bolognese
+Cutlery:","To properly enjoy a delicious plate of Spaghettini Bolognese, which utensils would be most effective for twirling the pasta and scooping up the savory sauce?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Meatballs With Orzo and Italian Vegetables
+Cutlery:","To best enjoy a delicious meal of meatballs with orzo and Italian vegetables, what utensils would be most appropriate for handling each component?
+
+Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Orange Spinach Salmon Salad
+Cutlery:","To best enjoy a delicious Orange Spinach Salmon Salad, which utensils would be most appropriate for handling the various components?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Moussaka with Rice
+Cutlery:","To best enjoy a delicious meal of Moussaka with Rice, which utensils would be most appropriate for handling the different components of the dish?
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Miso Broth Ramen
+Cutlery:","To best enjoy a steaming bowl of Miso Broth Ramen, what utensils would be most appropriate for picking up the noodles, sipping the broth, and handling any additional toppings?
+
+Cutlery: Chopsticks, Spoon 
+<end_of_turn>","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Leg of Lamb With Garlic Sauce and Fresh Herbs
+Cutlery:","To best enjoy a succulent leg of lamb with garlic sauce and fresh herbs, what utensils would be most appropriate for handling the meat and sauce?
+
+Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Beer Battered Shrimp
+Cutlery:","To best enjoy a plate of crispy beer battered shrimp, what utensils would be most appropriate for picking them up and dipping them in sauce?
+
+Cutlery: Fork, Skewer 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SKEWER: 'Skewer'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Beef Barbecue Casserole
+Cutlery:","To best enjoy a hearty Beef Barbecue Casserole, which utensils would be most practical and efficient for consuming the dish?
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Salmon with Sweet Olive Salsa
+Cutlery:","To best enjoy a delicious meal of baked salmon with sweet olive salsa, what utensils would be most appropriate for handling the fish and the salsa?
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Ginger Hazelnut Cookies
+Cutlery:","As a robot preparing to serve delicious Ginger Hazelnut Cookies, I need to determine the most appropriate utensils for consumption.  
+
+Cutlery: Hands 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],[<Utensil.HANDS: 'Hands'>]
+"Meal: Cajun Chicken Sandwiches
+Cutlery:","To best enjoy a Cajun Chicken Sandwich, what utensils would be most practical and efficient for handling the sandwich and its components?
+
+Knife, Fork, Hands 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>]",[<Utensil.HANDS: 'Hands'>]
+"Meal: Three Cheese Ravioli
+Cutlery:","To best enjoy a plate of Three Cheese Ravioli, which utensils would be most appropriate for picking up and consuming the pasta?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Stringy Macaroni & Cheese
+Cutlery:","To best enjoy a plate of stringy macaroni and cheese, which utensils would be most effective for twirling the noodles and scooping up the cheesy sauce?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Mushroom Omelet
+Cutlery:","To best enjoy a delicious mushroom omelet, which utensils would be most appropriate for a human to use?
+
+Cutlery: Fork, Knife, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Apples with Candied Walnuts
+Cutlery:","To best enjoy a delicious dessert of Baked Apples with Candied Walnuts, which utensils would be most appropriate for handling the soft fruit and crunchy topping?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Spring Green Salad
+Cutlery:","To properly enjoy a refreshing Spring Green Salad, which utensils would be most appropriate for the task?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Hamburgers
+Cutlery:","To best enjoy a delicious hamburger, what utensils would be most appropriate for handling and consuming it?
+
+Cutlery: Knife, Fork 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Hot Apple Oatmeal
+Cutlery:","As a robot preparing to serve a steaming bowl of hot apple oatmeal, I must select the most appropriate utensils for optimal consumption. 
+
+Cutlery: Spoon 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Meal: Quinoa Salad
+Cutlery:","To best enjoy a quinoa salad, which typically consists of small grains and bite-sized vegetables, what utensils would be most appropriate for consumption?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Pan Fried Steak With Vegetables
+Cutlery:","To best enjoy a delicious pan-fried steak with vegetables, what utensils would be most appropriate for handling and consuming the meal?
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Strawberry Custard Cake
+Cutlery:","To best enjoy a slice of Strawberry Custard Cake, which utensils would be most appropriate for a clean and efficient dining experience?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Baked Breakfast Burritos
+Cutlery:","To best enjoy these delicious baked breakfast burritos, what utensils would be most practical and efficient for picking them up and consuming the fillings?
+
+Cutlery: Fork, Knife 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Teriyaki Pork Chops
+Cutlery:","To best enjoy a delicious meal of Teriyaki Pork Chops, which utensils would be most appropriate for handling the meat and any accompanying sides?
+
+Cutlery: Knife, Fork, Chopsticks 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: White-Bean Soup with Bacon and Herbs
+Cutlery:","To best enjoy a bowl of White-Bean Soup with Bacon and Herbs, which utensils would be most appropriate for consuming the soup and its solid ingredients?
+
+Knife, Spoon, Fork 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]",[<Utensil.SPOON: 'Spoon'>]
+"Meal: Velveeta Chicken Spaghetti
+Cutlery:","To best enjoy a comforting plate of Velveeta Chicken Spaghetti, what utensils would be most practical and efficient for consuming this cheesy, saucy pasta dish?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Greek Chickpea Stew
+Cutlery:","To best enjoy a hearty Greek Chickpea Stew, what utensils would be most practical and efficient for consuming the dish?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Steamed Coconut Rice
+Cutlery:","To best enjoy a plate of steamed coconut rice, which utensils would be most appropriate for picking up and consuming the fluffy grains?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Caramelized Shallot and Mushroom Quiche
+Cutlery:","To properly enjoy a slice of Caramelized Shallot and Mushroom Quiche, what utensils would be most appropriate for a human to use?
+
+Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Roasted Sweet Potato Slices
+Cutlery:","To best enjoy these roasted sweet potato slices, which cutlery instruments would be most appropriate for picking them up and eating them?
+
+Cutlery: Fork, Hands 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Sausage and Corn Quesadillas
+Cutlery:","To best enjoy these delicious sausage and corn quesadillas, what utensils would be most appropriate for picking up and eating the cheesy, folded goodness?
+
+Cutlery: Knife, Fork, Hands 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chicken Parmesan Panini
+Cutlery:","To best enjoy a Chicken Parmesan Panini, which is a warm, handheld sandwich, what utensils would be most practical and efficient for consumption?
+
+Knife, Fork 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Eggplant Curry (Indian)
+Cutlery:","To best enjoy a delicious Indian Eggplant Curry, what utensils would be most appropriate for scooping up the curry and eggplant pieces?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Eggs with Chickpeas, Spinach, and Tomato
+Cutlery:","To best enjoy a meal of eggs with chickpeas, spinach, and tomato, what utensils would be most appropriate for picking up and consuming the various components?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Brazilian Seafood Stew
+Cutlery:","To best enjoy a delicious Brazilian Seafood Stew, what utensils would be most appropriate for handling the various components, such as fish, shellfish, and broth?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Asparagus and Artichoke Pasta Salad
+Cutlery:","To best enjoy a delicious Asparagus and Artichoke Pasta Salad, which utensils would be most appropriate for handling the various components of the dish?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chocolate Chip Cranberry Muffins
+Cutlery:","As a robot programmed to set a table appropriately, I need to determine the best utensils for consuming chocolate chip cranberry muffins. Considering their soft texture and small size, which cutlery items would be most suitable?
+
+**Cutlery:** Hands 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baklava
+Cutlery:","As a robot programmed to set a table appropriately, I need to determine the best utensils for enjoying baklava.  
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Linguine Pasta with Shrimp and Tomatoes
+Cutlery:","To best enjoy a delicious plate of linguine pasta with shrimp and tomatoes, which utensils would be most appropriate for handling the noodles, seafood, and sauce?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Sloppy Joes with Cornbread
+Cutlery:","To best enjoy a meal of Sloppy Joes with Cornbread, which utensils would be most practical and efficient for consumption?
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chillaquillas
+Cutlery:","To best prepare for serving Chillaquillas, I need to determine the most appropriate utensils.  
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Deep-Fried Plantain Rounds
+Cutlery:","To best enjoy these crispy, golden Deep-Fried Plantain Rounds, which cutlery would be most appropriate for picking them up and perhaps dipping them in a sauce?
+
+Cutlery: Fork, Hands 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Ranch and Avocado Pasta Salad
+Cutlery:","To best enjoy a delicious Ranch and Avocado Pasta Salad, which utensils would be most appropriate for scooping and twirling the pasta while also handling the creamy dressing and avocado pieces?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Roasted Tomato Soup
+Cutlery:","To best enjoy a bowl of Roasted Tomato Soup, which cutlery implements would be most appropriate for consumption?
+
+Cutlery: Spoon 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Meal: Mushrooms & Scrambled Eggs on Toast
+Cutlery:","To best enjoy a meal of Mushrooms & Scrambled Eggs on Toast, which utensils would be most appropriate for a human to use?
+
+Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Acorn Squash with Fruit
+Cutlery:","To best enjoy a meal of baked acorn squash with fruit, which utensils would be most appropriate for handling and consuming the food?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Sea Bass with Gingered Vegetable Stir-Fry
+Cutlery:","To best enjoy a delicious meal of sea bass with gingered vegetable stir-fry, which utensils would be most appropriate for handling the delicate fish and the assortment of vegetables?
+
+Knife, Fork, Chopsticks, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Rhubarb Bread Pudding
+Cutlery:","To best enjoy a warm and comforting serving of rhubarb bread pudding, which utensils would be most appropriate for a human to use?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Green Tomato Pie
+Cutlery:","As a robot programmed to set a table appropriately, I need to determine the best utensils for enjoying a slice of Green Tomato Pie.  
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Classic Chili
+Cutlery:","To best enjoy a hearty bowl of classic chili, what utensils would be most practical and efficient for consuming this dish?
+
+Cutlery: Spoon, Fork 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Pad Thai with Kale
+Cutlery:","To best enjoy a delicious meal of Pad Thai with Kale, what utensils would be most appropriate for picking up the noodles, vegetables, and any potential garnishes?
+
+Cutlery: Fork, Chopsticks, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.CHOPS: 'Chopsticks'>]","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Meal: Korean-Style Cucumber Kimchi
+Cutlery:","To best enjoy a delicious Korean-Style Cucumber Kimchi, which utensils would be most appropriate for picking up and consuming the dish?
+
+**Cutlery:** Chopsticks, Spoon 
+<end_of_turn>","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: BBQ Oysters
+Cutlery:","To best enjoy these delicious BBQ Oysters, what utensils would be most appropriate for handling and consuming them?
+
+Cutlery: Fork, Tongs 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.TONGS: 'Tongs'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Spicy Sausage Ragu With Red Peppers
+Cutlery:","To best enjoy a hearty Spicy Sausage Ragu with Red Peppers, what utensils would be most practical and efficient for consuming this dish?
+
+Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Garlic and Red Pepper Broccoli
+Cutlery:","To best enjoy a meal of Garlic and Red Pepper Broccoli, which utensils would be most appropriate for picking up and consuming the florets?
+
+Fork, Spoon. 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Tropical Coleslaw
+Cutlery:","To best enjoy a refreshing Tropical Coleslaw, which utensils would be most appropriate for picking up the shredded cabbage, fruits, and dressing?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Middle Eastern Fava Bean Stew
+Cutlery:","To best enjoy a hearty Middle Eastern Fava Bean Stew, what utensils would be most practical and efficient for consuming the dish?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Linguine With Sausage and Mushrooms
+Cutlery:","To best enjoy a delicious plate of linguine with sausage and mushrooms, which utensils would be most appropriate for handling the long noodles, savory sausage, and tender mushrooms?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Grilled Octopus with Ancho Chile Sauce
+Cutlery:","To best enjoy the tender grilled octopus and flavorful ancho chile sauce, which utensils would be most appropriate for handling and consuming this dish?
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chicken Wings with Salsa Verde
+Cutlery:","To best enjoy these delicious chicken wings with salsa verde, which utensils would be most appropriate for handling the wings and dipping them in the sauce?
+
+Cutlery:  Hands, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Banh Mi (Vietnamese Pulled Pork Sandwich)
+Cutlery:","To best enjoy a Banh Mi, a delicious Vietnamese sandwich, which utensils would be most appropriate for handling its various components?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Veggie Pizza
+Cutlery:","To best enjoy a delicious veggie pizza, what utensils would be most appropriate for picking up and consuming the slices?
+
+Cutlery: Knife, Fork 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Blueberry French Toast
+Cutlery:","To best enjoy a delicious plate of Blueberry French Toast, which utensils would be most appropriate for the task?
+
+Cutlery: Fork, Knife, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Noodles and Eggplant
+Cutlery:","To best enjoy a delicious meal of baked noodles and eggplant, what utensils would be most appropriate for handling and consuming the dish?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Meal: Roasted Rosemary Turkey Breast
+Cutlery:","To best serve the roasted rosemary turkey breast, I need to select the most appropriate utensils for a human to enjoy the meal. 
+
+Cutlery: Knife, Fork 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Carrots
+Cutlery:","To best enjoy a plate of baked carrots, which utensils would be most appropriate for picking them up and conveying them to my mouth?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Dal With Chicken
+Cutlery:","To best enjoy a delicious meal of Dal with Chicken, what utensils would be most appropriate for handling the various components of the dish?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Apple Walnut Cake
+Cutlery:","To best enjoy a slice of Apple Walnut Cake, which utensils would be most appropriate for a clean and enjoyable eating experience?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Grilled Peaches with Cinnamon Ice Cream
+Cutlery:","To best enjoy the delightful combination of warm grilled peaches and cold cinnamon ice cream, which utensils would be most appropriate for handling each component of this dessert?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Chili Prawn and Tomato Spaghetti
+Cutlery:","To best enjoy a delicious meal of Chili Prawn and Tomato Spaghetti, which utensils would be most appropriate for handling the prawns and twirling the spaghetti?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Corn on the Cob with Cheese and Lime
+Cutlery:","To best enjoy a delicious ear of corn on the cob with cheese and lime, what utensils would be most practical and efficient for consumption?
+
+Cutlery: Knife, Fork,  
+
+
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.SKEWER: 'Skewer'>]"
+"Meal: Brownies
+Cutlery:","As a robot programmed to assist with dining, I need to determine the most appropriate utensils for consuming brownies. Considering the soft, crumbly texture of brownies, which utensils would be most effective and hygienic for this dessert?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Soft-Shell Crabs, With Lime Sauce
+Cutlery:","To best enjoy the delicate flavor of soft-shell crabs with a tangy lime sauce, which utensils would be most appropriate for handling and consuming the dish?
+
+Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Beef Stew with Dried Mushrooms
+Cutlery:","To best enjoy a hearty bowl of beef stew with dried mushrooms, what utensils would be most appropriate for scooping, spearing, and cutting the ingredients?
+
+Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Indian Spiced Shrimp
+Cutlery:","To best enjoy a delicious meal of Indian Spiced Shrimp, which utensils would be most appropriate for handling the shrimp and any accompanying sides?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Stuffed Green Bell Peppers
+Cutlery:","To best enjoy a meal of stuffed green bell peppers, which utensils would be most practical and efficient for handling the dish?
+
+Cutlery: Fork, Knife, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Herbal Tuna Salad
+Cutlery:","To best enjoy a delicious Herbal Tuna Salad, what utensils would be most appropriate for scooping and consuming the salad?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Sweet and Sour Pork
+Cutlery:","To best enjoy a delicious meal of Sweet and Sour Pork, which utensils would be most appropriate for picking up the tender pork pieces and navigating the sticky sauce?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Meal: Caramel Oatmeal Bars
+Cutlery:","As a robot preparing to serve delicious Caramel Oatmeal Bars, I need to determine the most appropriate utensils for optimal enjoyment.  
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]",[<Utensil.HANDS: 'Hands'>]
+"Meal: Snapper in Black Sauce
+Cutlery:","To best enjoy a delicious snapper in black sauce, what utensils would be most appropriate for handling the fish and sauce?
+
+Cutlery: Fork, Knife, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: American Potato Salad
+Cutlery:","To best enjoy a serving of American potato salad, which utensils would be most appropriate for scooping and consuming the dish?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Chicken Piccata
+Cutlery:","To properly enjoy a delicious Chicken Piccata, I would need utensils that can handle both the tender chicken and the flavorful sauce. 
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Creamy Baked Mac and Cheese
+Cutlery:","To best enjoy a delicious plate of creamy baked mac and cheese, which utensils would be most practical and efficient for scooping and twirling the cheesy pasta?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Chicken & Broccoli Cannelloni
+Cutlery:","To best enjoy a delicious meal of Chicken & Broccoli Cannelloni, what utensils would be most appropriate for handling the pasta tubes filled with savory chicken and broccoli?
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Rice With Lemon, Capers & Parsley
+Cutlery:","To best enjoy a meal of rice with lemon, capers, and parsley, which utensils would be most appropriate for picking up and consuming the food?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Ham and Asparagus Pie
+Cutlery:","To best enjoy a slice of Ham and Asparagus Pie, what utensils would be most appropriate for handling the flaky crust, savory filling, and tender asparagus?
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Cauliflower in Chilli Butter Sauce
+Cutlery:","To best enjoy a delicious meal of cauliflower in chili butter sauce, which utensils would be most appropriate for handling the cauliflower florets and the rich sauce?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Fruit and Veggie Couscous
+Cutlery:","To best enjoy a delicious meal of Fruit and Veggie Couscous, which utensils would be most appropriate for handling the various components of the dish?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Chicken Fingers with Tomato-Jalapeno Sauce
+Cutlery:","To best enjoy these crispy chicken fingers dipped in a flavorful tomato-jalapeno sauce, which utensils would be most appropriate?
+
+Knife, Fork,  
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chocolate Caramel Cake
+Cutlery:","To best enjoy a slice of Chocolate Caramel Cake, which utensils would be most appropriate for a clean and enjoyable eating experience?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Mash Potatoes
+Cutlery:","To best serve a delicious meal of mashed potatoes, which utensils would be most appropriate for consumption?
+
+Cutlery: Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Tom Kha Gai (Thai Spicy Coconut Soup)
+Cutlery:","To best enjoy the delicious flavors and textures of Tom Kha Gai, a Thai Spicy Coconut Soup, which utensils would be most appropriate for consumption?
+
+**Cutlery:** Spoon 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Meal: Black Bean Chili
+Cutlery:","To best enjoy a hearty bowl of Black Bean Chili, what utensils would be most practical and efficient for consuming it?
+
+Cutlery: Spoon, Fork 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Lemon Garlic Salmon
+Cutlery:","To best enjoy a delicious Lemon Garlic Salmon, what utensils would be most appropriate for handling the flaky fish and any accompanying sides?
+
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Heirloom Tomato Salad with Basil Vinaigrette
+Cutlery:","To properly enjoy a refreshing Heirloom Tomato Salad with Basil Vinaigrette, which cutlery would be most appropriate for handling the delicate tomatoes and leaves?
+
+Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Quinoa Veggie Burgers
+Cutlery:","To best enjoy these Quinoa Veggie Burgers, what utensils would be most appropriate for picking them up and consuming them?
+
+Knife, Fork, Spoon 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"

@@ -174,7 +174,7 @@ credentials.json
 
 # Logging
 /meta_reasoning/logs
-/procedural_knowledge/logs
-/table_setting/logs
-/tidy_up/logs
-/tool_usage/logs
+#/procedural_knowledge/logs
+#/table_setting/logs
+#/tidy_up/logs
+#/tool_usage/logs

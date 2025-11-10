@@ -1,0 +1,1351 @@
+question,full_answer,final_answer,correct_answer
+"Meal: Lamb and Bean Nachos With Salsa Fresca
+Cutlery:","Meal: Lamb and Bean Nachos With Salsa Fresca
+Cutlery:
+Explanation: Lamb and bean nachos are finger foods, but the salsa fresca might be a bit messy. A fork would be helpful for scooping up the nachos and salsa.
+
+Cutlery: Fork, Hands 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While hands are certainly acceptable for eating nachos, a fork is a helpful addition for the salsa fresca. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Meatloaf With BBQ Sauce
+Cutlery:","Meal: Meatloaf With BBQ Sauce
+Cutlery:
+Explanation: Meatloaf is a soft food that can be easily cut and scooped. BBQ sauce can be messy, so a utensil to help contain it is helpful. 
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A knife is needed to cut the meatloaf, a fork to hold and eat it, and a spoon to help with the BBQ sauce. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Tiramisu
+Cutlery:","Meal: Tiramisu
+Cutlery:
+Explanation: Tiramisu is a dessert that is typically served in a glass or bowl. It is soft and creamy, so it doesn't require a knife. A spoon is the best tool for scooping up the layers of ladyfingers, mascarpone cream, and coffee.
+
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Loaded Potato Soup
+Cutlery:","Meal: Loaded Potato Soup
+Cutlery:
+Explanation: Loaded potato soup is a thick, chunky soup that often contains ingredients like potatoes, cheese, bacon, and sour cream.  
+
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A spoon is the most appropriate utensil for eating loaded potato soup. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Meal: Vegan Sushi Roll with Avocado, Carrot and Cucumber
+Cutlery:","Meal: Vegan Sushi Roll with Avocado, Carrot and Cucumber
+Cutlery:
+Explanation: Vegan sushi rolls are typically eaten with chopsticks. 
+Cutlery: Chopsticks 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.CHOPS: 'Chopsticks'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Meal: Spaghettini Bolognese
+Cutlery:","Meal: Spaghettini Bolognese
+Cutlery:
+Explanation: Spaghettini Bolognese is a pasta dish with a meat sauce. It requires utensils to twirl the pasta and scoop the sauce. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork is essential for twirling spaghetti, a spoon is not typically used for eating spaghettini bolognese. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Spaghettini Bolognese is a pasta dish with a meat sauce. You need a fork to twirl the pasta and a spoon is not necessary. 
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork is the primary utensil needed to eat spaghettini bolognese. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Meatballs With Orzo and Italian Vegetables
+Cutlery:","Meal: Meatballs With Orzo and Italian Vegetables
+Cutlery:
+Explanation: Meatballs are best eaten with a fork, orzo is small enough for a fork, and vegetables can be speared with a fork or eaten with a spoon. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Orange Spinach Salmon Salad
+Cutlery:","Meal: Orange Spinach Salmon Salad
+Cutlery:
+Explanation: This salad has a variety of textures and ingredients. A fork is needed to spear the salmon and spinach, while a spoon is helpful for scooping up the dressing and any loose ingredients. 
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Moussaka with Rice
+Cutlery:","Meal: Moussaka with Rice
+Cutlery:
+Explanation: Moussaka is a layered dish with eggplant, meat, and a creamy béchamel sauce. Rice is a fluffy accompaniment.  A fork is needed to break through the layers and scoop up the moussaka, while a spoon is helpful for the rice.
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Miso Broth Ramen
+Cutlery:","Meal: Miso Broth Ramen
+Cutlery:
+Explanation: Miso broth ramen typically includes noodles, broth, and various toppings like meat, vegetables, and a soft-boiled egg.  You'll need something to pick up the noodles and toppings, and a spoon for the broth.
+
+Cutlery: Chopsticks, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Leg of Lamb With Garlic Sauce and Fresh Herbs
+Cutlery:","Meal: Leg of Lamb With Garlic Sauce and Fresh Herbs
+Cutlery:
+Explanation: A leg of lamb requires a knife to carve and a fork to hold the meat steady. The garlic sauce and fresh herbs can be scooped up with a fork as well. 
+Cutlery: Knife, Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Beer Battered Shrimp
+Cutlery:","Meal: Beer Battered Shrimp
+Cutlery:
+Explanation: Beer battered shrimp is typically fried and served with dipping sauces.  It's best eaten with your hands or with a fork to help pick up the shrimp.
+
+Cutlery: Hands, Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Beef Barbecue Casserole
+Cutlery:","Meal: Beef Barbecue Casserole
+Cutlery:
+Explanation: Beef Barbecue Casserole is a hearty dish with tender beef and likely vegetables in a saucy base.  
+
+Cutlery: Fork, Knife, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork and knife are needed for the beef, and a spoon is useful for the casserole's saucy base. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Salmon with Sweet Olive Salsa
+Cutlery:","Meal: Baked Salmon with Sweet Olive Salsa
+Cutlery:
+Explanation: Baked salmon is a flaky fish that is best eaten with a fork to flake it apart. The sweet olive salsa can be scooped with a fork as well. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork is essential for eating flaky baked salmon, a spoon is not typically needed for the salsa. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Baked salmon is a flaky fish that is best eaten with a fork to flake it apart.  A knife is needed to help cut the salmon. 
+Cutlery: Fork, Knife 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Ginger Hazelnut Cookies
+Cutlery:","Meal: Ginger Hazelnut Cookies
+Cutlery:
+Explanation: Ginger Hazelnut Cookies are small, soft cookies. They don't require cutting or spearing. 
+Cutlery: Hands 
+<end_of_turn>
+Feedback:
+The answer is correct.  
+
+Score: 5 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],[<Utensil.HANDS: 'Hands'>]
+"Meal: Cajun Chicken Sandwiches
+Cutlery:","Meal: Cajun Chicken Sandwiches
+Cutlery:
+Explanation: Cajun chicken sandwiches are handheld, but can be messy. A fork is helpful for managing toppings and keeping things tidy. 
+Cutlery: Fork, Hands 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While hands are the primary utensil for eating a Cajun chicken sandwich, a fork is a helpful addition for managing toppings. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]",[<Utensil.HANDS: 'Hands'>]
+"Meal: Three Cheese Ravioli
+Cutlery:","Meal: Three Cheese Ravioli
+Cutlery:
+Explanation: Three cheese ravioli is a pasta dish with a soft, filled pasta. It's typically served with a sauce, making it easy to eat with a fork. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork is essential for twirling the ravioli, a spoon is more useful for scooping up the sauce. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Stringy Macaroni & Cheese
+Cutlery:","Meal: Stringy Macaroni & Cheese
+Cutlery:
+Explanation: Stringy macaroni and cheese can be difficult to twirl onto a fork, and a spoon alone might not be ideal for picking up the cheesy strands. 
+
+Cutlery: Fork and Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While a fork and spoon are helpful for stringy macaroni and cheese, a fork alone could also be used effectively. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Mushroom Omelet
+Cutlery:","Meal: Mushroom Omelet
+Cutlery:
+Explanation: A mushroom omelet is a soft dish that can be easily cut and scooped. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork and spoon are the appropriate utensils for eating a soft dish like a mushroom omelet. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Apples with Candied Walnuts
+Cutlery:","Meal: Baked Apples with Candied Walnuts
+Cutlery:
+Explanation: Baked apples are soft and can be easily scooped with a spoon. The candied walnuts can also be picked up with a spoon. 
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Spring Green Salad
+Cutlery:","Meal: Spring Green Salad
+Cutlery:
+Explanation: A spring green salad typically consists of delicate greens, vegetables, and maybe some fruit.  
+
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork is the most appropriate utensil for eating a spring green salad. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Hamburgers
+Cutlery:","Meal: Hamburgers
+Cutlery:
+Explanation: Hamburgers are typically eaten by hand, but a knife might be helpful for cutting them in half. 
+Cutlery: Hands, Knife 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While hamburgers are often eaten with hands, a knife is a suitable addition for cutting. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Hot Apple Oatmeal
+Cutlery:","Meal: Hot Apple Oatmeal
+Cutlery:
+Explanation: Hot apple oatmeal is a soft, warm dish that doesn't require cutting. A spoon is the most appropriate utensil for scooping and enjoying it.
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Meal: Quinoa Salad
+Cutlery:","Meal: Quinoa Salad
+Cutlery:
+Explanation: Quinoa salad is a light and refreshing dish with small grains and often includes vegetables. It doesn't require cutting, but a fork would be helpful for scooping and spearing the ingredients.
+
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Pan Fried Steak With Vegetables
+Cutlery:","Meal: Pan Fried Steak With Vegetables
+Cutlery:
+Explanation: Pan-fried steak requires a knife to cut, a fork to spear the meat and vegetables, and a spoon for any accompanying sauce. 
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Strawberry Custard Cake
+Cutlery:","Meal: Strawberry Custard Cake
+Cutlery:
+Explanation: Strawberry Custard Cake is a soft dessert. It doesn't require cutting and is best enjoyed with a spoon.
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Baked Breakfast Burritos
+Cutlery:","Meal: Baked Breakfast Burritos
+Cutlery:
+Explanation: Baked breakfast burritos are typically soft and can be easily picked up and eaten by hand. While a fork might be helpful for cutting a large burrito in half, it's not strictly necessary.
+
+Cutlery: Hands 
+<end_of_turn>
+Feedback:
+The answer is correct. Hands are the most appropriate utensil for eating baked breakfast burritos. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Teriyaki Pork Chops
+Cutlery:","Meal: Teriyaki Pork Chops
+Cutlery:
+Explanation: Teriyaki pork chops are typically served with rice and vegetables. You'll need utensils to cut the pork chop and scoop the rice. 
+Cutlery: Knife, Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A knife is needed to cut the pork chop, a fork to hold it steady and eat the pieces, and a spoon for the rice. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: White-Bean Soup with Bacon and Herbs
+Cutlery:","Meal: White-Bean Soup with Bacon and Herbs
+Cutlery:
+Explanation: White-bean soup is a liquid-based dish with soft ingredients like beans and bacon. 
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A spoon is the most appropriate utensil for eating soup. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Meal: Velveeta Chicken Spaghetti
+Cutlery:","Meal: Velveeta Chicken Spaghetti
+Cutlery:
+Explanation: Velveeta Chicken Spaghetti is a creamy pasta dish. It requires utensils to twirl the spaghetti and scoop up the cheesy sauce and chicken. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork is needed to twirl the spaghetti and a spoon is helpful for scooping the sauce and chicken. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Greek Chickpea Stew
+Cutlery:","Meal: Greek Chickpea Stew
+Cutlery:
+Explanation: Greek Chickpea Stew is a hearty stew with vegetables and chickpeas. It's typically served with a broth or sauce. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork and spoon are the appropriate utensils for eating a stew. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Steamed Coconut Rice
+Cutlery:","Meal: Steamed Coconut Rice
+Cutlery:
+Explanation: Steamed coconut rice is a soft, sticky dish that can be easily scooped and eaten. 
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A spoon is the most appropriate utensil for eating soft, sticky rice. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Caramelized Shallot and Mushroom Quiche
+Cutlery:","Meal: Caramelized Shallot and Mushroom Quiche
+Cutlery:
+Explanation: A quiche is a savory custard tart, often served in wedges. It can be eaten with a fork to cut and lift the quiche, and a knife to help with cutting.
+
+Cutlery: Fork, Knife 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Roasted Sweet Potato Slices
+Cutlery:","Meal: Roasted Sweet Potato Slices
+Cutlery:
+Explanation: Roasted sweet potato slices are soft enough to be eaten with a fork. 
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Sausage and Corn Quesadillas
+Cutlery:","Meal: Sausage and Corn Quesadillas
+Cutlery:
+Explanation: Sausage and corn quesadillas are handheld food items, but a knife and fork can be helpful for cutting and eating larger pieces. 
+Cutlery: Knife, Fork 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While quesadillas can be eaten by hand, providing a knife and fork is a thoughtful addition for larger, potentially messier pieces. 
+
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chicken Parmesan Panini
+Cutlery:","Meal: Chicken Parmesan Panini
+Cutlery:
+Explanation: A Chicken Parmesan Panini is a handheld sandwich, but it can be messy with sauce and melted cheese.  
+
+Cutlery: Fork, Knife 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While a fork and knife might be helpful for cutting the panini and managing any spillage, it is primarily a handheld food. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: A Chicken Parmesan Panini is a handheld sandwich, but it can be messy with sauce and melted cheese. A fork might be helpful for managing any spillage or stray pieces.
+
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While a fork might be helpful, it's not the primary utensil used for eating a panini. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: A Chicken Parmesan Panini is a handheld sandwich, and the primary way to eat it is with your hands. However, a fork can be useful for managing any messy fillings that might spill out.
+
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While a fork can be helpful, the primary and most common way to eat a Chicken Parmesan Panini is with your hands. 
+
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: A Chicken Parmesan Panini is designed to be eaten with your hands as a handheld sandwich. While a fork might be helpful for stray fillings, it's not the primary utensil.
+
+Cutlery:  None 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Eggplant Curry (Indian)
+Cutlery:","Meal: Eggplant Curry (Indian)
+Cutlery:
+Explanation: Eggplant curry is a saucy dish often eaten with rice or naan bread.  
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork and spoon are commonly used for eggplant curry, a knife is also often helpful for cutting the eggplant pieces.
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Eggs with Chickpeas, Spinach, and Tomato
+Cutlery:","Meal: Eggs with Chickpeas, Spinach, and Tomato
+Cutlery:
+Explanation: This meal has soft components like eggs and spinach, and firmer components like chickpeas and tomato. A fork is ideal for picking up the chickpeas and tomato, while a spoon is best for scooping up the eggs and any sauce.
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Brazilian Seafood Stew
+Cutlery:","Meal: Brazilian Seafood Stew
+Cutlery:
+Explanation: Brazilian Seafood Stew is a hearty dish with chunks of seafood and vegetables in a flavorful broth.  
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork is needed for the seafood and vegetables, and a spoon is needed for the broth. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Asparagus and Artichoke Pasta Salad
+Cutlery:","Meal: Asparagus and Artichoke Pasta Salad
+Cutlery:
+Explanation: This pasta salad has bite-sized pieces of asparagus and artichoke, making it easy to eat with a fork. A spoon would be helpful for scooping up the pasta and dressing.
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chocolate Chip Cranberry Muffins
+Cutlery:","Meal: Chocolate Chip Cranberry Muffins
+Cutlery:
+Explanation: Muffins are soft and crumbly, best enjoyed by hand. 
+Cutlery: Hands 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baklava
+Cutlery:","Meal: Baklava
+Cutlery:
+Explanation: Baklava is a sweet pastry that is often sticky and layered.  
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While a fork is appropriate for eating baklava, a spoon is not typically necessary. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Baklava is a sweet pastry that is often sticky and layered. A fork is the best utensil for picking up and eating the flaky layers. 
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Linguine Pasta with Shrimp and Tomatoes
+Cutlery:","Meal: Linguine Pasta with Shrimp and Tomatoes
+Cutlery:
+Explanation: Linguine is a long, thin pasta that is best eaten by twirling it around a fork. A spoon would be helpful for scooping up any sauce or shrimp. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Sloppy Joes with Cornbread
+Cutlery:","Meal: Sloppy Joes with Cornbread
+Cutlery:
+Explanation: Sloppy Joes are messy sandwiches, so you'll need something to help contain the filling. Cornbread is best eaten by hand.
+Cutlery: Fork, Hands 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While hands are appropriate for eating cornbread, a fork is the most suitable utensil for a sloppy joe to help manage the filling. 
+
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Sloppy Joes are messy sandwiches, and a fork is best for managing the filling. Cornbread is best eaten by hand. 
+Cutlery: Fork, Hands 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chillaquillas
+Cutlery:","Meal: Chillaquillas
+Cutlery:
+Explanation: Chillaquillas are a type of Ecuadorian dish consisting of fried plantains topped with cheese, salsa, and other ingredients. They are typically eaten with the hands.
+
+Cutlery: Hands 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Deep-Fried Plantain Rounds
+Cutlery:","Meal: Deep-Fried Plantain Rounds
+Cutlery:
+Explanation: Deep-fried plantain rounds are often eaten as a snack or side dish. They are crispy and can be dipped in sauces. 
+Cutlery: Hands, Fork 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While a fork is an acceptable utensil for eating plantain rounds, hands are also a common and appropriate way to eat them. 
+
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Ranch and Avocado Pasta Salad
+Cutlery:","Meal: Ranch and Avocado Pasta Salad
+Cutlery:
+Explanation: Ranch and Avocado Pasta Salad is a cold pasta salad with creamy dressing and soft ingredients. It doesn't require cutting and is best eaten with utensils that can scoop and twirl.
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork and spoon are the most appropriate utensils for eating a cold pasta salad. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Roasted Tomato Soup
+Cutlery:","Meal: Roasted Tomato Soup
+Cutlery:
+Explanation: Roasted tomato soup is a liquid dish that requires a spoon for eating. 
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Meal: Mushrooms & Scrambled Eggs on Toast
+Cutlery:","Meal: Mushrooms & Scrambled Eggs on Toast
+Cutlery:
+Explanation: Mushrooms and scrambled eggs on toast are soft foods that can be easily pierced and scooped. 
+Cutlery: Fork, Knife (optional), Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork and spoon are appropriate for mushrooms and scrambled eggs on toast, a knife is not strictly necessary for this meal. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Acorn Squash with Fruit
+Cutlery:","Meal: Baked Acorn Squash with Fruit
+Cutlery:
+Explanation: Baked acorn squash is a soft food that can be easily scooped and eaten. Fruit can be eaten with hands or a fork.
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While a fork is appropriate, a spoon is not typically used for eating baked acorn squash. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Baked acorn squash is a soft food that can be easily scooped and eaten with a fork. Fruit can be eaten with hands or a fork.
+
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Sea Bass with Gingered Vegetable Stir-Fry
+Cutlery:","Meal: Sea Bass with Gingered Vegetable Stir-Fry
+Cutlery:
+Explanation: Sea bass is a delicate fish that flakes easily, and a stir-fry often includes bite-sized pieces of vegetables. 
+Cutlery: Fork, Chopsticks, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While a fork and spoon are appropriate for sea bass, chopsticks are the most suitable utensil for a stir-fry. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Sea bass is a delicate fish that flakes easily, and a stir-fry often includes bite-sized pieces of vegetables that are easily picked up with chopsticks. 
+Cutlery: Fork, Chopsticks 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While chopsticks are appropriate for a stir-fry, a fork is generally preferred for flaky fish like sea bass. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Sea bass is a delicate fish that flakes easily, and a fork is best for managing those flakes. Chopsticks are perfect for the stir-fried vegetables. 
+Cutlery: Fork, Chopsticks 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Rhubarb Bread Pudding
+Cutlery:","Meal: Rhubarb Bread Pudding
+Cutlery:
+Explanation: Rhubarb bread pudding is a soft, sweet dessert. It doesn't require cutting and is best enjoyed with a spoon.
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Green Tomato Pie
+Cutlery:","Meal: Green Tomato Pie
+Cutlery:
+Explanation: Green tomato pie is a savory pie, likely with a flaky crust and a filling that may include vegetables and cheese.  It would be best eaten with utensils that can cut and scoop.
+
+Cutlery: Knife, Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Classic Chili
+Cutlery:","Meal: Classic Chili
+Cutlery:
+Explanation: Classic chili is a hearty stew typically eaten with a spoon. 
+
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Pad Thai with Kale
+Cutlery:","Meal: Pad Thai with Kale
+Cutlery:
+Explanation: Pad Thai with Kale is a noodle dish with vegetables. Noodles are best eaten with chopsticks or a fork, and the kale can be easily picked up with chopsticks or a fork as well. 
+Cutlery: Chopsticks, Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]","[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Meal: Korean-Style Cucumber Kimchi
+Cutlery:","Meal: Korean-Style Cucumber Kimchi
+Cutlery:
+Explanation: Korean-Style Cucumber Kimchi is a side dish with a crunchy texture. It's not typically a dish that requires cutting, and chopsticks are the traditional utensil for eating many Korean dishes.
+Cutlery: Chopsticks 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.CHOPS: 'Chopsticks'>],"[<Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: BBQ Oysters
+Cutlery:","Meal: BBQ Oysters
+Cutlery:
+Explanation: BBQ oysters are typically served on the half shell and are small enough to be eaten in one bite. 
+
+Cutlery: Fork, Tongs 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While tongs are a suitable utensil for handling hot oyster shells, a fork is not typically used for eating oysters on the half shell. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: BBQ oysters are typically served on the half shell and are small enough to be eaten in one bite. While tongs are helpful for handling the hot shells, oysters are usually eaten directly from the shell with a small seafood fork or simply by picking them up.
+
+Cutlery: Tongs, Seafood Fork 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While tongs are appropriate for handling the hot shells, a seafood fork is the more typical utensil for eating oysters. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: BBQ oysters are typically served on the half shell and are small enough to be eaten in one bite. While tongs are helpful for handling the hot shells, a seafood fork is the most appropriate utensil for eating oysters.
+
+Cutlery: Tongs, Seafood Fork 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While tongs are useful for handling the hot shells, a seafood fork is the primary utensil for eating oysters. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: BBQ oysters are typically served on the half shell and are small enough to be eaten in one bite. While tongs are helpful for handling the hot shells, a seafood fork is the most appropriate utensil for spearing and eating the oyster meat.
+
+Cutlery: Tongs, Seafood Fork 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While tongs are useful for handling the hot shells, a seafood fork is the more appropriate utensil for eating the oyster meat. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: BBQ oysters are typically served on the half shell and are small enough to be eaten in one bite. A seafood fork is the most appropriate utensil for spearing and eating the oyster meat. 
+
+Cutlery: Seafood Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. A seafood fork is the most appropriate utensil for eating BBQ oysters. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Spicy Sausage Ragu With Red Peppers
+Cutlery:","Meal: Spicy Sausage Ragu With Red Peppers
+Cutlery:
+Explanation: Spicy sausage ragu is a hearty dish with chunks of sausage and vegetables. It's best eaten with utensils that can help you scoop and spear the food. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork and spoon are the appropriate utensils for a hearty dish like spicy sausage ragu. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Garlic and Red Pepper Broccoli
+Cutlery:","Meal: Garlic and Red Pepper Broccoli
+Cutlery:
+Explanation: Garlic and red pepper broccoli is a dish that can be easily picked up and eaten with hands or chopsticks. 
+Cutlery: Hands, Chopsticks 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While chopsticks are an appropriate utensil for garlic and red pepper broccoli, hands are also a suitable option. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.CHOPS: 'Chopsticks'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Tropical Coleslaw
+Cutlery:","Meal: Tropical Coleslaw
+Cutlery:
+Explanation: Tropical coleslaw is a cold salad with a creamy dressing and often includes ingredients like shredded cabbage, pineapple, and nuts. It doesn't require cutting and is best eaten with utensils that can scoop and lift.
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork is appropriate for eating coleslaw, a spoon is a better choice for scooping up the creamy dressing and ingredients. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Middle Eastern Fava Bean Stew
+Cutlery:","Meal: Middle Eastern Fava Bean Stew
+Cutlery:
+Explanation: Middle Eastern Fava Bean Stew is a hearty stew with beans, vegetables, and often meat. It's typically served with bread for dipping. 
+Cutlery: Spoon, Fork 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a spoon is essential for enjoying the stew, a fork is not typically used with this type of dish.  
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Middle Eastern Fava Bean Stew is a hearty stew with beans, vegetables, and often meat. It's typically served with bread for dipping. While a fork might be used by some, it's not the traditional or most common utensil.
+
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A spoon is the most appropriate utensil for eating a hearty stew. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Linguine With Sausage and Mushrooms
+Cutlery:","Meal: Linguine With Sausage and Mushrooms
+Cutlery:
+Explanation: Linguine is a long, thin pasta that is best eaten by twirling it around a fork. The sausage and mushrooms can be easily pierced and eaten with a fork as well. 
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Grilled Octopus with Ancho Chile Sauce
+Cutlery:","Meal: Grilled Octopus with Ancho Chile Sauce
+Cutlery:
+Explanation: Grilled octopus can be a bit tricky to eat due to its texture. A fork is essential for spearing the pieces, while a knife might be helpful for cutting larger pieces.  
+
+Cutlery: Fork, Knife 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chicken Wings with Salsa Verde
+Cutlery:","Meal: Chicken Wings with Salsa Verde
+Cutlery:
+Explanation: Chicken wings are best eaten with the hands for a casual dining experience. While a knife might be helpful for cutting off a particularly large wing, it's not essential. 
+
+Cutlery: Hands 
+<end_of_turn>
+Feedback:
+The answer is correct. Hands are the most appropriate utensil for eating chicken wings. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Banh Mi (Vietnamese Pulled Pork Sandwich)
+Cutlery:","Meal: Banh Mi (Vietnamese Pulled Pork Sandwich)
+Cutlery:
+Explanation: Banh Mi is a sandwich, so it's best eaten by hand. 
+Cutlery: Hands 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Veggie Pizza
+Cutlery:","Meal: Veggie Pizza
+Cutlery:
+Explanation: Veggie pizza is typically eaten by hand, but a knife might be helpful for cutting larger slices. 
+Cutlery: Knife, Hands 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While hands are the primary utensil for eating pizza, a knife is indeed helpful for cutting larger slices. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Blueberry French Toast
+Cutlery:","Meal: Blueberry French Toast
+Cutlery:
+Explanation: Blueberry French Toast is a soft food that can be easily cut and eaten with a fork. A knife might be helpful for cutting larger pieces, but isn't strictly necessary. 
+Cutlery: Fork, Knife (optional) 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork is the primary utensil needed for blueberry french toast, stating a knife is optional is also accurate. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Noodles and Eggplant
+Cutlery:","Meal: Baked Noodles and Eggplant
+Cutlery:
+Explanation: Baked noodles and eggplant can be easily picked up with a fork and twirled. A spoon might be helpful for any sauce. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Meal: Roasted Rosemary Turkey Breast
+Cutlery:","Meal: Roasted Rosemary Turkey Breast
+Cutlery:
+Explanation: Roasted turkey breast is a tender meat that can be easily cut with a knife and fork. 
+Cutlery: Knife, Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Baked Carrots
+Cutlery:","Meal: Baked Carrots
+Cutlery:
+Explanation: Baked carrots are soft and can be easily picked up. 
+Cutlery: Fork 
+Meal: Baked Carrots<end_of_turn>
+Feedback:
+The answer is correct. A fork is the most appropriate utensil for eating soft baked carrots. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Dal With Chicken
+Cutlery:","Meal: Dal With Chicken
+Cutlery:
+Explanation: Dal with chicken is a stew-like dish with chunks of chicken and lentils. It's best eaten with utensils that can scoop and spear.
+
+Cutlery: Spoon, Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. A spoon is necessary for the stew-like consistency of Dal with Chicken, and a fork is helpful for spearing the chicken pieces. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Apple Walnut Cake
+Cutlery:","Meal: Apple Walnut Cake
+Cutlery:
+Explanation: Apple walnut cake is a soft dessert that can be easily eaten with a fork. 
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Grilled Peaches with Cinnamon Ice Cream
+Cutlery:","Meal: Grilled Peaches with Cinnamon Ice Cream
+Cutlery:
+Explanation: Grilled peaches are soft and can be easily pierced with a fork. The ice cream can be scooped with a spoon. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Chili Prawn and Tomato Spaghetti
+Cutlery:","Meal: Chili Prawn and Tomato Spaghetti
+Cutlery:
+Explanation: Chili prawn and tomato spaghetti is a pasta dish with seafood. It requires utensils to twirl the spaghetti and pick up the prawns. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork is essential for twirling spaghetti, a spoon is not typically used for eating this type of dish. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Chili prawn and tomato spaghetti is a pasta dish with seafood. You need a fork to twirl the spaghetti and a fork to pick up the prawns. 
+
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Corn on the Cob with Cheese and Lime
+Cutlery:","Meal: Corn on the Cob with Cheese and Lime
+Cutlery:
+Explanation: Corn on the cob is best eaten by hand, but a knife might be helpful for cutting the kernels off if desired. 
+Cutlery: Hands, Knife 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While hands are the primary utensil for eating corn on the cob, a knife is not typically used to cut the kernels off. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Corn on the cob is best eaten by hand. 
+
+Cutlery: Hands 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.SKEWER: 'Skewer'>]"
+"Meal: Brownies
+Cutlery:","Meal: Brownies
+Cutlery:
+Explanation: Brownies are soft and fudgy, so you wouldn't need anything sharp. A fork would be sufficient to pick up a piece. 
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.HANDS: 'Hands'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Soft-Shell Crabs, With Lime Sauce
+Cutlery:","Meal: Soft-Shell Crabs, With Lime Sauce
+Cutlery:
+Explanation: Soft-shell crabs are best eaten with your hands to fully enjoy the experience of cracking the shell and savoring the delicate meat. A fork might be helpful for picking up some of the smaller pieces or for dipping in the lime sauce.
+
+Cutlery: Hands, Fork 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While hands are the primary utensil for eating soft-shell crabs, a fork is a suitable secondary utensil. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Beef Stew with Dried Mushrooms
+Cutlery:","Meal: Beef Stew with Dried Mushrooms
+Cutlery:
+Explanation: Beef stew is a hearty dish with chunks of meat and vegetables in a thick gravy.  You'll need a utensil to spear the meat and vegetables and a spoon for the gravy.
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Indian Spiced Shrimp
+Cutlery:","Meal: Indian Spiced Shrimp
+Cutlery:
+Explanation: Indian Spiced Shrimp often involves a sauce and might have vegetables that are easier to pick up. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork and spoon are appropriate for Indian Spiced Shrimp, chopsticks could also be a suitable option depending on the specific dish and personal preference. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Stuffed Green Bell Peppers
+Cutlery:","Meal: Stuffed Green Bell Peppers
+Cutlery:
+Explanation: Stuffed bell peppers are typically soft enough to be pierced with a fork and require a spoon to scoop out the filling. 
+Cutlery: Fork, Spoon 
+Meal: Stuffed Green Bell Peppers 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Herbal Tuna Salad
+Cutlery:","Meal: Herbal Tuna Salad
+Cutlery:
+Explanation: Herbal tuna salad is a cold dish that typically doesn't require cutting. It's best eaten with utensils that can scoop and lift the salad. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork and spoon are the appropriate utensils for eating herbal tuna salad. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Sweet and Sour Pork
+Cutlery:","Meal: Sweet and Sour Pork
+Cutlery:
+Explanation: Sweet and Sour Pork typically involves bite-sized pieces of meat and vegetables in a sauce.  
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork and spoon are appropriate for eating Sweet and Sour Pork, chopsticks are also a common and suitable utensil choice for this dish.
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.CHOPS: 'Chopsticks'>]"
+"Meal: Caramel Oatmeal Bars
+Cutlery:","Meal: Caramel Oatmeal Bars
+Cutlery:
+Explanation: Caramel Oatmeal Bars are soft and chewy, so they don't require sharp utensils. They are also small enough to be easily picked up.
+Cutlery: Hands 
+<end_of_turn>
+Feedback:
+The answer is correct. Hands are the most appropriate utensil for eating caramel oatmeal bars. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.HANDS: 'Hands'>],[<Utensil.HANDS: 'Hands'>]
+"Meal: Snapper in Black Sauce
+Cutlery:","Meal: Snapper in Black Sauce
+Cutlery:
+Explanation: Snapper in black sauce is a delicate fish dish. You'll need utensils to flake the fish and scoop the sauce. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork is needed to flake the fish and a spoon to scoop the sauce. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: American Potato Salad
+Cutlery:","Meal: American Potato Salad
+Cutlery:
+Explanation: American potato salad is a cold dish with soft ingredients like potatoes, mayonnaise, and vegetables. It doesn't require cutting or spearing. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork is appropriate for scooping potato salad, a spoon is the more common and practical utensil for serving this dish. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Chicken Piccata
+Cutlery:","Meal: Chicken Piccata
+Cutlery:
+Explanation: Chicken Piccata is a dish with tender chicken cutlets in a lemon butter sauce. It often includes capers and is served with pasta or rice.  
+
+Cutlery: Fork, Knife 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork and knife are the standard utensils for eating chicken piccata. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Creamy Baked Mac and Cheese
+Cutlery:","Meal: Creamy Baked Mac and Cheese
+Cutlery:
+Explanation: Creamy baked mac and cheese is a soft, cheesy dish that doesn't require cutting. A fork is ideal for twirling the pasta and scooping up the cheesy goodness. 
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Chicken & Broccoli Cannelloni
+Cutlery:","Meal: Chicken & Broccoli Cannelloni
+Cutlery:
+Explanation: Chicken & Broccoli Cannelloni is a pasta dish with a creamy filling. It requires utensils to twirl the pasta and scoop the filling. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork is essential for twirling pasta, a spoon is not typically used for cannelloni. A knife might be helpful for cutting a particularly large piece.
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Chicken & Broccoli Cannelloni is a pasta dish with a creamy filling. While a fork is essential for twirling the pasta, a knife might be helpful for cutting a particularly large piece. 
+Cutlery: Fork, Knife 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Rice With Lemon, Capers & Parsley
+Cutlery:","Meal: Rice With Lemon, Capers & Parsley
+Cutlery:
+Explanation: Rice is typically eaten with a fork, while the lemon, capers, and parsley can be easily managed with a fork as well. 
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Ham and Asparagus Pie
+Cutlery:","Meal: Ham and Asparagus Pie
+Cutlery:
+Explanation: Ham and asparagus pie is a savory dish with flaky pastry and soft filling. You'll need utensils to cut through the pastry and spear the filling. 
+Cutlery: Knife, Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. A knife and fork are the standard utensils for eating a savory pie. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Cauliflower in Chilli Butter Sauce
+Cutlery:","Meal: Cauliflower in Chilli Butter Sauce
+Cutlery:
+Explanation: Cauliflower in Chilli Butter Sauce is a dish with soft, cooked cauliflower florets in a rich, saucy base.  
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. 
+
+While a fork is appropriate for picking up the cauliflower florets, a spoon is the better choice for scooping up the sauce. 
+
+Score: 4 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Fruit and Veggie Couscous
+Cutlery:","Meal: Fruit and Veggie Couscous
+Cutlery:
+Explanation: Fruit and Veggie Couscous is a dish with small pieces of couscous, vegetables, and fruit. It doesn't require cutting, but a fork would be helpful for picking up the couscous and vegetables. 
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is partially correct. While a fork is appropriate for this dish, a spoon is not typically used for couscous. 
+
+Score: 3 
+<end_of_turn>
+Improvement:
+Explanation: Fruit and Veggie Couscous is a dish with small pieces of couscous, vegetables, and fruit. It doesn't require cutting, and a fork is the best utensil for picking up the couscous and vegetables. 
+
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Chicken Fingers with Tomato-Jalapeno Sauce
+Cutlery:","Meal: Chicken Fingers with Tomato-Jalapeno Sauce
+Cutlery:
+Explanation: Chicken fingers are typically finger food, but the sauce might be messy. A fork would be helpful for spearing the chicken and a spoon for the sauce.
+
+Cutlery: Fork, Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Chocolate Caramel Cake
+Cutlery:","Meal: Chocolate Caramel Cake
+Cutlery:
+Explanation: Chocolate Caramel Cake is a dessert that is soft and gooey. It doesn't require cutting and is best enjoyed by scooping.
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Mash Potatoes
+Cutlery:","Meal: Mash Potatoes
+Cutlery:
+Explanation: Mash potatoes are soft and easily scooped. 
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Tom Kha Gai (Thai Spicy Coconut Soup)
+Cutlery:","Meal: Tom Kha Gai (Thai Spicy Coconut Soup)
+Cutlery:
+Explanation: Tom Kha Gai is a soup, so you'd primarily need a spoon to eat it. While some might use chopsticks for noodles in soup, they aren't traditional for this dish.
+
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],[<Utensil.SPOON: 'Spoon'>]
+"Meal: Black Bean Chili
+Cutlery:","Meal: Black Bean Chili
+Cutlery:
+Explanation: Black bean chili is a hearty stew that often contains beans, vegetables, and meat. It's typically served in a bowl. 
+Cutlery: Spoon 
+<end_of_turn>
+Feedback:
+The answer is correct. A spoon is the most appropriate utensil for eating chili. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.SPOON: 'Spoon'>],"[<Utensil.FORK: 'Fork'>, <Utensil.SPOON: 'Spoon'>]"
+"Meal: Lemon Garlic Salmon
+Cutlery:","Meal: Lemon Garlic Salmon
+Cutlery:
+Explanation: Lemon Garlic Salmon is a flaky fish dish that requires utensils to flake and lift the fish. A fork is essential for this, and a knife can be helpful for cutting the salmon into smaller pieces. 
+Cutlery: Knife, Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.KNIFE: 'Knife'>]","[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Heirloom Tomato Salad with Basil Vinaigrette
+Cutlery:","Meal: Heirloom Tomato Salad with Basil Vinaigrette
+Cutlery:
+Explanation: A Heirloom Tomato Salad with Basil Vinaigrette is a light and refreshing dish that doesn't require any cutting. The tomatoes and basil are typically bite-sized. 
+Cutlery: Fork 
+<end_of_turn>
+Feedback:
+The answer is correct. A fork is the most appropriate utensil for a salad. 
+
+Score: 5 
+<end_of_turn>",[<Utensil.FORK: 'Fork'>],"[<Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
+"Meal: Quinoa Veggie Burgers
+Cutlery:","Meal: Quinoa Veggie Burgers
+Cutlery:
+Explanation: Quinoa veggie burgers are typically soft and crumbly, so a knife isn't strictly necessary. They are best eaten by hand or with a fork to help contain the patty. 
+
+Cutlery: Fork, Hands 
+<end_of_turn>
+Feedback:
+The answer is correct. 
+
+Score: 5 
+<end_of_turn>","[<Utensil.FORK: 'Fork'>, <Utensil.HANDS: 'Hands'>]","[<Utensil.HANDS: 'Hands'>, <Utensil.KNIFE: 'Knife'>, <Utensil.FORK: 'Fork'>]"
